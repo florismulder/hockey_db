@@ -1,0 +1,104 @@
+{
+  "seizoen": "2025/26",
+  "geslacht": "heren",
+  "bron": "https://tulphoofdklasse.com/en/matches-standings",
+  "bijgewerkt": "2026-03-23T14:44:41.407287+00:00",
+  "wedstrijden": [
+    {
+      "datum": "March 22",
+      "thuis": "HDM H1",
+      "uit": "Schaerweijde H1",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Hurley H1",
+      "uit": "Rotterdam H1",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Kampong H1",
+      "uit": "Bloemendaal H1",
+      "score_thuis": 3,
+      "score_uit": 5,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Oranje-Rood H1",
+      "uit": "Klein Zwitserland H1",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Laren H1",
+      "uit": "Amsterdam H1",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 21",
+      "thuis": "Den Bosch H1",
+      "uit": "Pinoké H1",
+      "score_thuis": 6,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Laren H1",
+      "uit": "HDM H1",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Amsterdam H1",
+      "uit": "Oranje-Rood H1",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Klein Zwitserland H1",
+      "uit": "Den Bosch H1",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Pinoké H1",
+      "uit": "Kampong H1",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Bloemendaal H1",
+      "uit": "Hurley H1",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 14",
+      "thuis": "Rotterdam H1",
+      "uit": "Schaerweijde H1",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "gespeeld": true
+    }
+  ]
+}

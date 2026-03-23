@@ -1,0 +1,104 @@
+{
+  "seizoen": "2025/26",
+  "geslacht": "dames",
+  "bron": "https://tulphoofdklasse.com/en/matches-standings",
+  "bijgewerkt": "2026-03-23T14:44:41.484144+00:00",
+  "wedstrijden": [
+    {
+      "datum": "March 22",
+      "thuis": "HDM D1",
+      "uit": "Rotterdam D1",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Den Bosch D1",
+      "uit": "SCHC D1",
+      "score_thuis": 0,
+      "score_uit": 4,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Kampong D1",
+      "uit": "Bloemendaal D1",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Oranje-Rood D1",
+      "uit": "HGC D1",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 22",
+      "thuis": "Tilburg D1",
+      "uit": "Amsterdam D1",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 21",
+      "thuis": "Hurley D1",
+      "uit": "Pinoké D1",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Pinoké D1",
+      "uit": "Rotterdam D1",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Tilburg D1",
+      "uit": "HDM D1",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Amsterdam D1",
+      "uit": "Oranje-Rood D1",
+      "score_thuis": 6,
+      "score_uit": 0,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "Bloemendaal D1",
+      "uit": "Den Bosch D1",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 15",
+      "thuis": "SCHC D1",
+      "uit": "Hurley D1",
+      "score_thuis": 7,
+      "score_uit": 1,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 14",
+      "thuis": "HGC D1",
+      "uit": "Kampong D1",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "gespeeld": true
+    }
+  ]
+}
