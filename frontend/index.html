@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hockey DB — Tulp Hoofdklasse</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-type="module">
+const { useState, useEffect } = React;
+
+function App() {
+  const [geslacht, setGeslacht] = useState("heren");
+  const [page, setPage] = useState("dashboard");
+  const [pageId, setPageId] = useState(null);
+  const [data, setData] = useState(null);
+  const [nieuws, setNieuws] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const BASE = location.hostname === "localhost" ? ".." : "..";
+
+  useEffect(() => {
+    setLoading(true);
+    Promise.all([
+      fetch(`${BASE}/competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`${BASE}/competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`${BASE}/nieuws/${geslacht}.json`).then(r=>r.json()).catch(()=>null),
+    ]).then(([standen, programma, nieuwsData]) => {
+      setData({ standen, programma });
+      setNieuws(nieuwsData?.artikelen?.slice(0,8) || []);
+      setLoading(false);
+    });
+  }, [geslacht]);
+
+  const nav = (p, id=null) => { setPage(p); setPageId(id); window.scrollTo(0,0); };
+
+  const css = `
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0a0f0d;--surface:#111810;--surface2:#182118;--border:#1e2b1e;--green:#2aff6e;--orange:#ff6b1a;--text:#ddeedd;--muted:#556655}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px}
+    button{cursor:pointer;font-family:inherit}
+    .hdr{position:sticky;top:0;z-index:99;background:var(--bg);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;color:var(--green);background:none;border:none;display:flex;align-items:center;gap:8px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+    .nav{display:flex;gap:4px}
+    .nb{padding:5px 14px;background:none;border:1px solid transparent;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;border-radius:6px;transition:all .2s}
+    .nb:hover{color:var(--text);border-color:var(--border)}
+    .nb.on{color:var(--green);border-color:var(--green);background:rgba(42,255,110,.06)}
+    .gt{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:7px;overflow:hidden}
+    .gb{padding:5px 16px;background:none;border:none;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:all .2s}
+    .gb.on{background:var(--green);color:var(--bg)}
+    .grid{display:grid;grid-template-columns:1fr 300px;min-height:calc(100vh - 56px)}
+    .left{border-right:1px solid var(--border)}
+    .sec{padding:22px 24px}
+    .sec+.sec{border-top:1px solid var(--border)}
+    .sh{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
+    .st{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:1.5px}
+    .ss{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+    table{width:100%;border-collapse:collapse}
+    th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);text-align:right;padding:0 8px 10px;font-weight:400}
+    th:first-child,th:nth-child(2){text-align:left}
+    td{padding:8px 8px;text-align:right;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums}
+    td:first-child{text-align:left;width:24px}
+    td:nth-child(2){text-align:left;font-weight:500}
+    tr:hover td{background:var(--surface)}
+    tr.po td{background:rgba(42,255,110,.07)}
+    tr.re td{background:rgba(255,107,26,.07)}
+    .pnt{font-family:'DM Mono',monospace;font-weight:600;color:var(--green)}
+    .cb{background:none;border:none;font-family:inherit;font-size:13px;font-weight:500;color:var(--text);text-align:left;padding:0}
+    .cb:hover{color:var(--green);text-decoration:underline}
+    .pb{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:4px;font-size:11px}
+    .p1{background:var(--green);color:var(--bg);font-weight:700}
+    .p2{background:rgba(42,255,110,.2);color:var(--green)}
+    .p3{background:rgba(42,255,110,.1);color:var(--green)}
+    .ul{display:flex;flex-direction:column;gap:4px}
+    .ur{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+    .th{text-align:right;font-weight:500;font-size:13px}
+    .tu{text-align:left;font-weight:500;font-size:13px}
+    .sc{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--green);background:var(--surface2);border:1px solid var(--border);border-radius:5px;padding:1px 7px;text-align:center}
+    .pl{display:flex;flex-direction:column;gap:4px}
+    .pr{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+    .pd{font-family:'DM Mono',monospace;font-size:11px;color:var(--green);min-width:44px}
+    .pt{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);min-width:36px}
+    .pm{font-size:13px;font-weight:500;flex:1}
+    .vs{color:var(--muted);font-size:11px;margin:0 3px}
+    .ph{padding:13px 18px 10px;border-bottom:1px solid var(--border)}
+    .pt2{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:1.5px}
+    .nl{display:flex;flex-direction:column}
+    .nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s}
+    .nr:hover{background:var(--surface)}
+    .nm{display:flex;align-items:center;gap:7px;margin-bottom:3px}
+    .nd{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+    .tag{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 5px;border-radius:3px;background:rgba(42,255,110,.12);color:var(--green)}
+    .nt{font-size:12px;font-weight:500;line-height:1.4}
+    .loading{padding:40px;text-align:center;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px}
+    .fade{animation:fi .2s ease}
+    @keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+  `;
+
+  const stand = data?.standen?.stand || [];
+  const programma = data?.programma?.wedstrijden || [];
+  const bijgewerkt = data?.standen?.bijgewerkt || "";
+  const speelronde = data?.standen?.speelronde || "";
+
+  return <>
+    <style>{css}</style>
+    <header className="hdr">
+      <button className="logo" onClick={()=>nav("dashboard")}><div className="dot"/>HOCKEY DB</button>
+      <nav className="nav">
+        {[["dashboard","Stand"],["clubs","Clubs"]].map(([id,lbl])=>(
+          <button key={id} className={`nb ${page===id?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
+        ))}
+      </nav>
+      <div className="gt">
+        <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
+        <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
+      </div>
+    </header>
+
+    {loading ? <div className="loading">Data laden…</div> : (
+      <div className="grid fade">
+        <div className="left">
+          <div className="sec">
+            <div className="sh"><div className="st">Stand</div><div className="ss">Bijgewerkt {bijgewerkt}</div></div>
+            {stand.length > 0 ? (
+              <table>
+                <thead><tr><th>#</th><th>Club</th><th>G</th><th>W</th><th>Gk</th><th>V</th><th>Dsl</th><th>Pnt</th></tr></thead>
+                <tbody>
+                  {stand.map(r=>{
+                    const dsl=r.doelpunten_voor-r.doelpunten_tegen;
+                    return <tr key={r.club} className={r.positie<=4?"po":r.positie>=11?"re":""}>
+                      <td>{r.positie<=3?<span className={`pb p${r.positie}`}>{r.positie}</span>:<span style={{color:"var(--muted)",fontSize:12}}>{r.positie}</span>}</td>
+                      <td>{r.club}</td>
+                      <td>{r.gespeeld}</td><td>{r.gewonnen}</td><td>{r.gelijk}</td><td>{r.verloren}</td>
+                      <td style={{color:dsl>=0?"var(--green)":"var(--orange)"}}>{dsl>0?"+":""}{dsl}</td>
+                      <td className="pnt">{r.punten}</td>
+                    </tr>;
+                  })}
+                </tbody>
+              </table>
+            ) : <div style={{color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>Geen standdata beschikbaar.</div>}
+          </div>
+
+          <div className="sec">
+            <div className="sh"><div className="st">Programma</div><div className="ss">Komende wedstrijden</div></div>
+            {programma.length > 0 ? (
+              <div className="pl">
+                {programma.map((w,i)=>(
+                  <div className="pr" key={i}>
+                    <span className="pd">{w.datum}</span>
+                    <span className="pt">{w.tijdstip}</span>
+                    <div className="pm">{w.thuis}<span className="vs">vs</span>{w.uit}</div>
+                  </div>
+                ))}
+              </div>
+            ) : <div style={{color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>Geen programma beschikbaar.</div>}
+          </div>
+        </div>
+
+        <div>
+          <div className="ph"><div className="pt2">Nieuws — hockey.nl</div></div>
+          <div className="nl">
+            {nieuws.length > 0 ? nieuws.map((n,i)=>(
+              <a className="nr" key={i} href={n.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none",color:"inherit"}}>
+                <div className="nm">
+                  <span className="nd">{n.datum}</span>
+                  <span className="tag">{geslacht}</span>
+                </div>
+                <div className="nt">{n.titel}</div>
+              </a>
+            )) : <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
+          </div>
+        </div>
+      </div>
+    )}
+  </>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
+</script>
+</body>
+</html>

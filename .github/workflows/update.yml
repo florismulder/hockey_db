@@ -1,0 +1,33 @@
+name: Hockey DB updater
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python instellen
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Dependencies installeren
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+
+      - name: Database updaten
+        run: python scripts/update_db.py
+
+      - name: Wijzigingen committen
+        run: |
+          git config user.name "hockey-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add competities/ nieuws/ spelers/
+          git diff --staged --quiet || git commit -m "data: wekelijkse update $(date +%Y-%m-%d)"
+          git push
