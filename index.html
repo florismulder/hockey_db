@@ -294,7 +294,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
           <div className="ph"><div className="pt2">Nieuws — hockey.nl</div></div>
           <div className="nl">
             {nieuws.slice(0,12).map((n,i)=>(
-              <a className="nr" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
+              <a className="nr" key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer">
                 <div className="nm">
                   <span className="nd">{(n.datum||n.date||"").slice(0,10)}</span>
                   <span className="ntag">{geslacht}</span>
@@ -382,7 +382,7 @@ function SpelerDetail({speler,nav,nieuws}) {
       <div className="db">
         <div className="ds">Nieuws</div>
         {relevant.length>0?relevant.map((n,i)=>(
-          <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
+          <a className="ni" key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer">
             <div className="nid">{(n.datum||n.date||"").slice(0,10)}</div>
             <div className="nit">{n.titel||n.title||""}</div>
           </a>
