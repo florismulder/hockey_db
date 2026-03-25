@@ -7,184 +7,574 @@
 <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="root"></div>
 <script type="text/babel" data-type="module">
-const { useState, useEffect } = React;
+const { useState, useEffect, useMemo } = React;
 
+// ── Vandaag voor programma-filtering ──────────────────────────────────────────
+const VANDAAG = new Date();
+
+function parseDatum(str) {
+  if (!str) return null;
+  // Formaten: "29 mrt", "2026-03-29", "29-03-2026", "29/03/2026"
+  const maanden = {jan:0,feb:1,mrt:2,apr:3,mei:4,jun:5,jul:6,aug:7,sep:8,okt:9,nov:10,dec:11};
+  const m1 = str.match(/^(\d{1,2})\s+([a-z]{3})$/i);
+  if (m1) {
+    const jaar = VANDAAG.getFullYear();
+    const mnd  = maanden[m1[2].toLowerCase()];
+    if (mnd !== undefined) return new Date(jaar, mnd, parseInt(m1[1]));
+  }
+  const m2 = str.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (m2) return new Date(parseInt(m2[1]), parseInt(m2[2])-1, parseInt(m2[3]));
+  const m3 = str.match(/^(\d{2})[/-](\d{2})[/-](\d{4})/);
+  if (m3) return new Date(parseInt(m3[3]), parseInt(m3[2])-1, parseInt(m3[1]));
+  return null;
+}
+
+function isKomend(w) {
+  const d = parseDatum(w.datum || w.date || w.tijd || "");
+  if (!d) return true; // onbekend → toon altijd
+  return d >= VANDAAG;
+}
+
+// ── CSS ───────────────────────────────────────────────────────────────────────
+const CSS = `
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0f0d;--surface:#111810;--surface2:#182118;--border:#1e2b1e;
+  --green:#2aff6e;--orange:#ff6b1a;--text:#ddeedd;--muted:#556655;
+  --playoff:rgba(42,255,110,.07);--rel:rgba(255,107,26,.07);
+}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.5}
+button{cursor:pointer;font-family:inherit}
+a{color:inherit;text-decoration:none}
+
+/* HEADER */
+.hdr{position:sticky;top:0;z-index:200;background:var(--bg);border-bottom:1px solid var(--border);
+  padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;
+  color:var(--green);background:none;border:none;display:flex;align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.nav{display:flex;gap:4px}
+.nb{padding:5px 14px;background:none;border:1px solid transparent;color:var(--muted);
+  font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;border-radius:6px;transition:all .2s}
+.nb:hover{color:var(--text);border-color:var(--border)}
+.nb.on{color:var(--green);border-color:var(--green);background:rgba(42,255,110,.06)}
+.gt{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:7px;overflow:hidden}
+.gb{padding:5px 16px;background:none;border:none;color:var(--muted);
+  font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:all .2s}
+.gb.on{background:var(--green);color:var(--bg)}
+
+/* BREADCRUMB */
+.bc{display:flex;align-items:center;gap:8px;padding:10px 24px;
+  border-bottom:1px solid var(--border);background:var(--surface)}
+.bcb{background:none;border:none;color:var(--muted);font-size:12px;font-family:inherit;padding:0;transition:color .15s}
+.bcb:hover{color:var(--green)}
+.bcs{color:var(--border);font-size:12px}
+.bcc{font-size:12px;color:var(--text);font-weight:500}
+
+/* LAYOUT */
+.grid{display:grid;grid-template-columns:1fr 300px;min-height:calc(100vh - 56px)}
+.col-l{border-right:1px solid var(--border)}
+.col-r{}
+.sec{padding:22px 24px}
+.sec+.sec{border-top:1px solid var(--border)}
+.sh{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
+.st{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:1.5px}
+.ss{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+
+/* STAND */
+table{width:100%;border-collapse:collapse}
+th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;
+  color:var(--muted);text-align:right;padding:0 6px 10px;font-weight:400}
+th:first-child,th:nth-child(2){text-align:left}
+td{padding:8px 6px;text-align:right;border-top:1px solid var(--border);
+  font-size:13px;font-variant-numeric:tabular-nums;transition:background .12s}
+td:first-child{text-align:left;width:24px}
+td:nth-child(2){text-align:left;font-weight:500}
+tr:hover td{background:var(--surface)}
+tr.po td{background:var(--playoff)}
+tr.re td{background:var(--rel)}
+.pnt{font-family:'DM Mono',monospace;font-weight:600;color:var(--green)}
+.dsl-pos{color:var(--green)}
+.dsl-neg{color:var(--orange)}
+.pb{display:inline-flex;align-items:center;justify-content:center;
+  width:18px;height:18px;border-radius:4px;font-size:11px}
+.p1{background:var(--green);color:var(--bg);font-weight:700}
+.p2{background:rgba(42,255,110,.2);color:var(--green)}
+.p3{background:rgba(42,255,110,.1);color:var(--green)}
+.legend{display:flex;gap:16px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.ld{width:8px;height:8px;border-radius:2px}
+
+/* PROGRAMMA */
+.pl{display:flex;flex-direction:column;gap:4px}
+.pr{display:flex;align-items:center;gap:10px;padding:9px 12px;
+  background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  cursor:pointer;transition:border-color .15s}
+.pr:hover{border-color:var(--green)}
+.pd{font-family:'DM Mono',monospace;font-size:11px;color:var(--green);min-width:44px}
+.ptd{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);min-width:36px}
+.pm{font-size:13px;font-weight:500;flex:1}
+.vs{color:var(--muted);font-size:11px;margin:0 3px}
+
+/* NIEUWS */
+.ph{padding:13px 18px 10px;border-bottom:1px solid var(--border)}
+.pt2{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:1.5px}
+.nl{display:flex;flex-direction:column}
+.nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s}
+.nr:hover{background:var(--surface)}
+.nm{display:flex;align-items:center;gap:7px;margin-bottom:3px}
+.nd{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
+.ntag{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  padding:2px 5px;border-radius:3px;background:rgba(42,255,110,.12);color:var(--green)}
+.nt{font-size:12px;font-weight:500;line-height:1.4}
+
+/* SPELERS */
+.zoek-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.zoek-input{flex:1;min-width:200px;background:var(--surface);border:1px solid var(--border);
+  color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;
+  padding:8px 12px;border-radius:7px;outline:none;transition:border-color .15s}
+.zoek-input:focus{border-color:var(--green)}
+.zoek-input::placeholder{color:var(--muted)}
+.filter-select{background:var(--surface);border:1px solid var(--border);
+  color:var(--text);font-family:'DM Sans',sans-serif;font-size:12px;
+  padding:8px 10px;border-radius:7px;outline:none;cursor:pointer}
+.sp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.sp-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:16px 18px;cursor:pointer;transition:border-color .2s,transform .15s}
+.sp-card:hover{border-color:var(--green);transform:translateY(-2px)}
+.sp-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px}
+.sp-naam{font-weight:600;font-size:14px;margin-bottom:2px;line-height:1.3}
+.sp-meta{font-size:11px;color:var(--muted)}
+.sp-rug{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--green);line-height:1}
+.sp-badges{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.badge{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;
+  padding:3px 7px;border-radius:4px}
+.badge-club{background:rgba(42,255,110,.1);border:1px solid rgba(42,255,110,.2);color:var(--green)}
+.badge-keep{background:rgba(77,184,255,.1);border:1px solid rgba(77,184,255,.2);color:#4db8ff}
+.badge-aanv{background:rgba(255,107,26,.1);border:1px solid rgba(255,107,26,.2);color:var(--orange)}
+.sp-count{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);
+  margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+
+/* SPELER DETAIL */
+.det-hero{padding:28px 24px 22px;border-bottom:1px solid var(--border);
+  background:linear-gradient(to bottom,var(--surface2),var(--bg))}
+.det-rug{font-family:'Bebas Neue',sans-serif;font-size:14px;color:var(--muted);
+  letter-spacing:2px;margin-bottom:6px}
+.det-naam{font-family:'Bebas Neue',sans-serif;font-size:44px;letter-spacing:2px;line-height:1}
+.det-badges{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap}
+.det-badge{font-size:11px;font-weight:600;letter-spacing:.5px;padding:4px 10px;
+  border-radius:5px;background:var(--surface);border:1px solid var(--border);color:var(--muted)}
+.det-badge.green{background:rgba(42,255,110,.1);border-color:rgba(42,255,110,.3);color:var(--green)}
+.det-body{padding:22px 24px}
+.det-sec-title{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:1.5px;margin-bottom:10px}
+.nieuws-speler{display:flex;flex-direction:column;gap:6px}
+.nieuws-speler-item{padding:10px 14px;background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;transition:border-color .15s}
+.nieuws-speler-item:hover{border-color:var(--muted)}
+.nieuws-speler-datum{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:3px}
+.nieuws-speler-titel{font-size:13px;font-weight:500;line-height:1.4}
+.empty{padding:20px 0;color:var(--muted);font-size:13px;font-style:italic}
+
+/* WEDSTRIJD DETAIL */
+.wed-hero{padding:28px 24px 22px;border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg,var(--surface2) 0%,var(--bg) 70%)}
+.wed-teams{display:flex;align-items:center;gap:16px;margin-bottom:8px}
+.wed-team{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;flex:1}
+.wed-team.thuis{text-align:right}
+.wed-team.uit{text-align:left}
+.wed-score{font-family:'Bebas Neue',sans-serif;font-size:48px;letter-spacing:4px;
+  color:var(--green);min-width:120px;text-align:center}
+.wed-score.tbd{font-size:32px;color:var(--muted)}
+.wed-info{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);
+  text-align:center;margin-top:6px}
+
+/* UTIL */
+.fade{animation:fi .2s ease}
+@keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.loading{padding:40px;text-align:center;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px}
+.back-btn{display:inline-flex;align-items:center;gap:6px;background:none;
+  border:1px solid var(--border);color:var(--muted);font-size:12px;font-weight:500;
+  padding:6px 12px;border-radius:6px;transition:all .2s;margin-bottom:16px}
+.back-btn:hover{color:var(--text);border-color:var(--muted)}
+.volledig-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.vg-col{background:var(--bg);padding:22px 24px}
+`;
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function PosBadge({n}) {
+  if (n===1) return <span className="pb p1">{n}</span>;
+  if (n===2) return <span className="pb p2">{n}</span>;
+  if (n===3) return <span className="pb p3">{n}</span>;
+  return <span style={{color:"var(--muted)",fontSize:12}}>{n}</span>;
+}
+
+function Breadcrumb({page, pageId, nav}) {
+  const items = [{label:"Home",target:"dashboard"}];
+  if (page==="spelers")  items.push({label:"Spelers",target:null});
+  if (page==="speler")   { items.push({label:"Spelers",target:"spelers"}); items.push({label:pageId?.naam||"",target:null}); }
+  if (page==="wedstrijd"){ items.push({label:"Wedstrijden",target:null}); }
+  if (items.length<=1) return null;
+  return (
+    <div className="bc">
+      {items.map((it,i) => (
+        <span key={i} style={{display:"flex",alignItems:"center",gap:8}}>
+          {i>0 && <span className="bcs">/</span>}
+          {it.target
+            ? <button className="bcb" onClick={()=>nav(it.target)}>{it.label}</button>
+            : <span className="bcc">{it.label}</span>}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+// ── Pagina: Dashboard ─────────────────────────────────────────────────────────
+function Dashboard({geslacht, nav, stand, programma, nieuws, loading}) {
+  if (loading) return <div className="loading">Data laden…</div>;
+
+  const koploper = stand[0];
+  const komend = programma.filter(isKomend);
+
+  return (
+    <div className="fade">
+      <div className="grid">
+        <div className="col-l">
+
+          {/* Stand */}
+          <div className="sec">
+            <div className="sh">
+              <div className="st">Stand</div>
+              {stand.length > 0 && stand[0].bijgewerkt &&
+                <div className="ss">Bijgewerkt {stand[0].bijgewerkt}</div>}
+            </div>
+            {stand.length > 0 ? (
+              <>
+                <table>
+                  <thead><tr>
+                    <th>#</th><th>Club</th><th>G</th><th>W</th>
+                    <th>Gk</th><th>V</th><th>Dsl</th><th>Pnt</th>
+                  </tr></thead>
+                  <tbody>
+                    {stand.map(r => {
+                      const dsl = (r.doelpunten_voor||0) - (r.doelpunten_tegen||0);
+                      return (
+                        <tr key={r.club} className={r.positie<=4?"po":r.positie>=11?"re":""}>
+                          <td><PosBadge n={r.positie}/></td>
+                          <td>{r.club}</td>
+                          <td>{r.gespeeld}</td>
+                          <td>{r.gewonnen}</td>
+                          <td>{r.gelijk}</td>
+                          <td>{r.verloren}</td>
+                          <td className={dsl>=0?"dsl-pos":"dsl-neg"}>{dsl>0?"+":""}{dsl}</td>
+                          <td className="pnt">{r.punten}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                <div className="legend">
+                  <div className="li"><div className="ld" style={{background:"var(--green)",opacity:.5}}/>Play-offs</div>
+                  <div className="li"><div className="ld" style={{background:"var(--orange)",opacity:.5}}/>Degradatie</div>
+                </div>
+              </>
+            ) : <div className="empty">Geen standdata beschikbaar.</div>}
+          </div>
+
+          {/* Programma — alleen komende wedstrijden */}
+          <div className="sec">
+            <div className="sh">
+              <div className="st">Programma</div>
+              <div className="ss">Komende wedstrijden</div>
+            </div>
+            {komend.length > 0 ? (
+              <div className="pl">
+                {komend.map((w,i) => (
+                  <div className="pr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                    <span className="pd">{w.datum}</span>
+                    <span className="ptd">{w.tijdstip||w.tijd||""}</span>
+                    <div className="pm">{w.thuis}<span className="vs">vs</span>{w.uit}</div>
+                    <span style={{fontSize:10,color:"var(--muted)"}}>→</span>
+                  </div>
+                ))}
+              </div>
+            ) : <div className="empty">Geen komende wedstrijden gevonden.</div>}
+          </div>
+
+        </div>
+
+        {/* Nieuws */}
+        <div className="col-r">
+          <div className="ph"><div className="pt2">Nieuws — hockey.nl</div></div>
+          <div className="nl">
+            {nieuws.length > 0 ? nieuws.map((n,i) => (
+              <a className="nr" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
+                <div className="nm">
+                  <span className="nd">{n.datum||n.date||""}</span>
+                  <span className="ntag">{geslacht}</span>
+                </div>
+                <div className="nt">{n.titel||n.title||""}</div>
+              </a>
+            )) : <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Pagina: Spelers ───────────────────────────────────────────────────────────
+function SpelersOverzicht({geslacht, nav, spelers, nieuws}) {
+  const [zoek, setZoek] = useState("");
+  const [filterClub, setFilterClub] = useState("alle");
+
+  const clubs = useMemo(() => {
+    const set = new Set(spelers.map(s=>s.club));
+    return ["alle", ...Array.from(set).sort()];
+  }, [spelers]);
+
+  const gefilterd = useMemo(() => {
+    return spelers.filter(s => {
+      const matchZoek = !zoek || s.naam.toLowerCase().includes(zoek.toLowerCase());
+      const matchClub = filterClub==="alle" || s.club===filterClub;
+      return matchZoek && matchClub;
+    });
+  }, [spelers, zoek, filterClub]);
+
+  return (
+    <div className="fade">
+      <div className="sec" style={{borderBottom:"1px solid var(--border)"}}>
+        <div className="sh">
+          <div className="st">Spelers</div>
+          <div className="ss">{geslacht} · seizoen 2025-2026</div>
+        </div>
+        <div className="zoek-bar">
+          <input
+            className="zoek-input"
+            placeholder="Zoek op naam…"
+            value={zoek}
+            onChange={e=>setZoek(e.target.value)}
+          />
+          <select className="filter-select" value={filterClub} onChange={e=>setFilterClub(e.target.value)}>
+            {clubs.map(c => <option key={c} value={c}>{c==="alle"?"Alle clubs":c}</option>)}
+          </select>
+        </div>
+        <div className="sp-count">{gefilterd.length} speler{gefilterd.length!==1?"s":""}</div>
+        <div className="sp-grid">
+          {gefilterd.map((s,i) => (
+            <div className="sp-card" key={i} onClick={()=>nav("speler",s)}>
+              <div className="sp-top">
+                <div>
+                  <div className="sp-naam">{s.naam}</div>
+                  <div className="sp-meta">{s.club}</div>
+                </div>
+                <div className="sp-rug">#{s.rugnummer}</div>
+              </div>
+              <div className="sp-badges">
+                {s.keeper && <span className="badge badge-keep">Keeper</span>}
+                {s.aanvoerder && <span className="badge badge-aanv">Aanvoerder</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Pagina: Speler detail ─────────────────────────────────────────────────────
+function SpelerDetail({speler, nav, nieuws}) {
+  if (!speler) return <div className="loading">Speler niet gevonden.</div>;
+
+  // Zoek relevante nieuwsartikelen op naam
+  const voornaam = speler.naam.split(" ")[0];
+  const achternaam = speler.naam.split(" ").slice(-1)[0];
+  const relevant = nieuws.filter(n => {
+    const t = (n.titel||n.title||"").toLowerCase();
+    return t.includes(voornaam.toLowerCase()) || t.includes(achternaam.toLowerCase());
+  }).slice(0, 6);
+
+  return (
+    <div className="fade">
+      <div className="det-hero">
+        <div className="det-rug">#{speler.rugnummer}</div>
+        <div className="det-naam">{speler.naam}</div>
+        <div className="det-badges">
+          <span className="det-badge green">{speler.club}</span>
+          <span className="det-badge">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
+          {speler.keeper && <span className="det-badge" style={{color:"#4db8ff",borderColor:"rgba(77,184,255,.3)"}}>Keeper</span>}
+          {speler.aanvoerder && <span className="det-badge" style={{color:"var(--orange)",borderColor:"rgba(255,107,26,.3)"}}>Aanvoerder</span>}
+        </div>
+      </div>
+      <div className="det-body">
+        <div className="det-sec-title">Nieuws</div>
+        {relevant.length > 0 ? (
+          <div className="nieuws-speler">
+            {relevant.map((n,i) => (
+              <a className="nieuws-speler-item" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
+                <div className="nieuws-speler-datum">{n.datum||n.date||""}</div>
+                <div className="nieuws-speler-titel">{n.titel||n.title||""}</div>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div className="empty">Geen nieuws gevonden voor {speler.naam}.</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Pagina: Wedstrijd detail ──────────────────────────────────────────────────
+function WedstrijdDetail({wedstrijd, nav}) {
+  if (!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
+  const w = wedstrijd;
+  const uitslag = w.uitslag || w.score || null;
+
+  return (
+    <div className="fade">
+      <div className="wed-hero">
+        <div className="wed-teams">
+          <div className="wed-team thuis">{w.thuis}</div>
+          {uitslag
+            ? <div className="wed-score">{uitslag}</div>
+            : <div className="wed-score tbd">vs</div>}
+          <div className="wed-team uit">{w.uit}</div>
+        </div>
+        <div className="wed-info">
+          {w.datum && <span>{w.datum}</span>}
+          {(w.tijdstip||w.tijd) && <span> · {w.tijdstip||w.tijd}</span>}
+          {w.locatie && <span> · {w.locatie}</span>}
+        </div>
+      </div>
+      <div className="det-body">
+        {w.scorers && w.scorers.length > 0 && (
+          <>
+            <div className="det-sec-title">Doelpunten</div>
+            <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:20}}>
+              {w.scorers.map((s,i) => (
+                <div key={i} style={{display:"flex",alignItems:"center",gap:10,
+                  padding:"8px 12px",background:"var(--surface)",borderRadius:8,
+                  border:"1px solid var(--border)"}}>
+                  <span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:"var(--green)",minWidth:28}}>
+                    {s.minuut}'
+                  </span>
+                  <span style={{fontWeight:500}}>{s.naam}</span>
+                  <span style={{fontSize:11,color:"var(--muted)",marginLeft:"auto"}}>{s.club}</span>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {(!w.scorers || w.scorers.length===0) && (
+          <div className="empty">Geen scorersinformatie beschikbaar.</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── App ───────────────────────────────────────────────────────────────────────
 function App() {
-  const [geslacht, setGeslacht] = useState("heren");
-  const [page, setPage] = useState("dashboard");
-  const [pageId, setPageId] = useState(null);
-  const [data, setData] = useState(null);
-  const [nieuws, setNieuws] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [geslacht, setGeslacht]   = useState("heren");
+  const [page, setPage]           = useState("dashboard");
+  const [pageId, setPageId]       = useState(null);
+  const [stand, setStand]         = useState([]);
+  const [programma, setProgramma] = useState([]);
+  const [nieuws, setNieuws]       = useState([]);
+  const [spelers, setSpelers]     = useState([]);
+  const [loading, setLoading]     = useState(true);
 
-  
-
+  // Laad standen + programma bij geslacht-wissel
   useEffect(() => {
     setLoading(true);
     Promise.all([
       fetch(`competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
       fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
       fetch(`nieuws/${geslacht}.json`).then(r=>r.json()).catch(()=>null),
-    ]).then(([standen, programma, nieuwsData]) => {
-      setData({ standen, programma });
-      setNieuws(nieuwsData?.artikelen?.slice(0,8) || []);
+    ]).then(([standenData, programmaData, nieuwsData]) => {
+      const standLijst = standenData?.stand || [];
+      // Voeg bijgewerkt toe aan eerste rij voor display
+      if (standLijst.length > 0 && standenData?.bijgewerkt) {
+        standLijst[0].bijgewerkt = standenData.bijgewerkt;
+      }
+      setStand(standLijst);
+      setProgramma(programmaData?.wedstrijden || []);
+      const artikelen = nieuwsData?.artikelen || nieuwsData?.items || [];
+      setNieuws(artikelen.slice(0,20));
       setLoading(false);
     });
   }, [geslacht]);
 
-  const nav = (p, id=null) => { setPage(p); setPageId(id); window.scrollTo(0,0); };
+  // Laad spelersindex
+  useEffect(() => {
+    fetch(`spelers/${geslacht}/index.json`)
+      .then(r=>r.json())
+      .then(d => setSpelers(d?.spelers || []))
+      .catch(() => {
+        // Probeer centrale index
+        fetch("spelers/index.json")
+          .then(r=>r.json())
+          .then(d => setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht)))
+          .catch(()=>setSpelers([]));
+      });
+  }, [geslacht]);
 
-  const css = `
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#0a0f0d;--surface:#111810;--surface2:#182118;--border:#1e2b1e;--green:#2aff6e;--orange:#ff6b1a;--text:#ddeedd;--muted:#556655}
-    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px}
-    button{cursor:pointer;font-family:inherit}
-    .hdr{position:sticky;top:0;z-index:99;background:var(--bg);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:3px;color:var(--green);background:none;border:none;display:flex;align-items:center;gap:8px}
-    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-    .nav{display:flex;gap:4px}
-    .nb{padding:5px 14px;background:none;border:1px solid transparent;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;border-radius:6px;transition:all .2s}
-    .nb:hover{color:var(--text);border-color:var(--border)}
-    .nb.on{color:var(--green);border-color:var(--green);background:rgba(42,255,110,.06)}
-    .gt{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:7px;overflow:hidden}
-    .gb{padding:5px 16px;background:none;border:none;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:all .2s}
-    .gb.on{background:var(--green);color:var(--bg)}
-    .grid{display:grid;grid-template-columns:1fr 300px;min-height:calc(100vh - 56px)}
-    .left{border-right:1px solid var(--border)}
-    .sec{padding:22px 24px}
-    .sec+.sec{border-top:1px solid var(--border)}
-    .sh{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
-    .st{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:1.5px}
-    .ss{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
-    table{width:100%;border-collapse:collapse}
-    th{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);text-align:right;padding:0 8px 10px;font-weight:400}
-    th:first-child,th:nth-child(2){text-align:left}
-    td{padding:8px 8px;text-align:right;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums}
-    td:first-child{text-align:left;width:24px}
-    td:nth-child(2){text-align:left;font-weight:500}
-    tr:hover td{background:var(--surface)}
-    tr.po td{background:rgba(42,255,110,.07)}
-    tr.re td{background:rgba(255,107,26,.07)}
-    .pnt{font-family:'DM Mono',monospace;font-weight:600;color:var(--green)}
-    .cb{background:none;border:none;font-family:inherit;font-size:13px;font-weight:500;color:var(--text);text-align:left;padding:0}
-    .cb:hover{color:var(--green);text-decoration:underline}
-    .pb{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:4px;font-size:11px}
-    .p1{background:var(--green);color:var(--bg);font-weight:700}
-    .p2{background:rgba(42,255,110,.2);color:var(--green)}
-    .p3{background:rgba(42,255,110,.1);color:var(--green)}
-    .ul{display:flex;flex-direction:column;gap:4px}
-    .ur{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;gap:8px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
-    .th{text-align:right;font-weight:500;font-size:13px}
-    .tu{text-align:left;font-weight:500;font-size:13px}
-    .sc{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--green);background:var(--surface2);border:1px solid var(--border);border-radius:5px;padding:1px 7px;text-align:center}
-    .pl{display:flex;flex-direction:column;gap:4px}
-    .pr{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
-    .pd{font-family:'DM Mono',monospace;font-size:11px;color:var(--green);min-width:44px}
-    .pt{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);min-width:36px}
-    .pm{font-size:13px;font-weight:500;flex:1}
-    .vs{color:var(--muted);font-size:11px;margin:0 3px}
-    .ph{padding:13px 18px 10px;border-bottom:1px solid var(--border)}
-    .pt2{font-family:'Bebas Neue',sans-serif;font-size:14px;letter-spacing:1.5px}
-    .nl{display:flex;flex-direction:column}
-    .nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s}
-    .nr:hover{background:var(--surface)}
-    .nm{display:flex;align-items:center;gap:7px;margin-bottom:3px}
-    .nd{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted)}
-    .tag{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 5px;border-radius:3px;background:rgba(42,255,110,.12);color:var(--green)}
-    .nt{font-size:12px;font-weight:500;line-height:1.4}
-    .loading{padding:40px;text-align:center;color:var(--muted);font-family:'DM Mono',monospace;font-size:12px}
-    .fade{animation:fi .2s ease}
-    @keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-  `;
+  const nav = (p, id=null) => {
+    setPage(p);
+    setPageId(id);
+    window.scrollTo(0,0);
+  };
 
-  const stand = data?.standen?.stand || [];
-  const programma = data?.programma?.wedstrijden || [];
-  const bijgewerkt = data?.standen?.bijgewerkt || "";
-  const speelronde = data?.standen?.speelronde || "";
+  const showToggle = ["dashboard","spelers"].includes(page);
+  const isActive   = id => page===id || (page==="speler"&&id==="spelers");
 
-  return <>
-    <style>{css}</style>
-    <header className="hdr">
-      <button className="logo" onClick={()=>nav("dashboard")}><div className="dot"/>HOCKEY DB</button>
-      <nav className="nav">
-        {[["dashboard","Stand"],["clubs","Clubs"]].map(([id,lbl])=>(
-          <button key={id} className={`nb ${page===id?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
-        ))}
-      </nav>
-      <div className="gt">
-        <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
-        <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
-      </div>
-    </header>
+  return (
+    <>
+      <style>{CSS}</style>
 
-    {loading ? <div className="loading">Data laden…</div> : (
-      <div className="grid fade">
-        <div className="left">
-          <div className="sec">
-            <div className="sh"><div className="st">Stand</div><div className="ss">Bijgewerkt {bijgewerkt}</div></div>
-            {stand.length > 0 ? (
-              <table>
-                <thead><tr><th>#</th><th>Club</th><th>G</th><th>W</th><th>Gk</th><th>V</th><th>Dsl</th><th>Pnt</th></tr></thead>
-                <tbody>
-                  {stand.map(r=>{
-                    const dsl=r.doelpunten_voor-r.doelpunten_tegen;
-                    return <tr key={r.club} className={r.positie<=4?"po":r.positie>=11?"re":""}>
-                      <td>{r.positie<=3?<span className={`pb p${r.positie}`}>{r.positie}</span>:<span style={{color:"var(--muted)",fontSize:12}}>{r.positie}</span>}</td>
-                      <td>{r.club}</td>
-                      <td>{r.gespeeld}</td><td>{r.gewonnen}</td><td>{r.gelijk}</td><td>{r.verloren}</td>
-                      <td style={{color:dsl>=0?"var(--green)":"var(--orange)"}}>{dsl>0?"+":""}{dsl}</td>
-                      <td className="pnt">{r.punten}</td>
-                    </tr>;
-                  })}
-                </tbody>
-              </table>
-            ) : <div style={{color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>Geen standdata beschikbaar.</div>}
-          </div>
+      <header className="hdr">
+        <button className="logo" onClick={()=>nav("dashboard")}>
+          <div className="dot"/>HOCKEY DB
+        </button>
+        <nav className="nav">
+          {[["dashboard","Stand"],["spelers","Spelers"]].map(([id,lbl])=>(
+            <button key={id} className={`nb ${isActive(id)?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
+          ))}
+        </nav>
+        {showToggle
+          ? <div className="gt">
+              <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
+              <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
+            </div>
+          : <div style={{width:120}}/>}
+      </header>
 
-          <div className="sec">
-            <div className="sh"><div className="st">Programma</div><div className="ss">Komende wedstrijden</div></div>
-            {programma.length > 0 ? (
-              <div className="pl">
-                {programma.map((w,i)=>(
-                  <div className="pr" key={i}>
-                    <span className="pd">{w.datum}</span>
-                    <span className="pt">{w.tijdstip}</span>
-                    <div className="pm">{w.thuis}<span className="vs">vs</span>{w.uit}</div>
-                  </div>
-                ))}
-              </div>
-            ) : <div style={{color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>Geen programma beschikbaar.</div>}
-          </div>
-        </div>
+      <Breadcrumb page={page} pageId={pageId} nav={nav}/>
 
-        <div>
-          <div className="ph"><div className="pt2">Nieuws — hockey.nl</div></div>
-          <div className="nl">
-            {nieuws.length > 0 ? nieuws.map((n,i)=>(
-              <a className="nr" key={i} href={n.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none",color:"inherit"}}>
-                <div className="nm">
-                  <span className="nd">{n.datum}</span>
-                  <span className="tag">{geslacht}</span>
-                </div>
-                <div className="nt">{n.titel}</div>
-              </a>
-            )) : <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
-          </div>
-        </div>
-      </div>
-    )}
-  </>;
+      {page==="dashboard" &&
+        <Dashboard geslacht={geslacht} nav={nav}
+          stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
+
+      {page==="spelers" &&
+        <SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers} nieuws={nieuws}/>}
+
+      {page==="speler" &&
+        <SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
+
+      {page==="wedstrijd" &&
+        <WedstrijdDetail wedstrijd={pageId} nav={nav}/>}
+    </>
+  );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App/>);
 </script>
 </body>
