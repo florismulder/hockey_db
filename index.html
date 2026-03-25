@@ -23,14 +23,14 @@ function App() {
   const [nieuws, setNieuws] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const BASE = location.hostname === "localhost" ? ".." : "..";
+  
 
   useEffect(() => {
     setLoading(true);
     Promise.all([
-      fetch(`${BASE}/competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
-      fetch(`${BASE}/competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
-      fetch(`${BASE}/nieuws/${geslacht}.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`nieuws/${geslacht}.json`).then(r=>r.json()).catch(()=>null),
     ]).then(([standen, programma, nieuwsData]) => {
       setData({ standen, programma });
       setNieuws(nieuwsData?.artikelen?.slice(0,8) || []);
