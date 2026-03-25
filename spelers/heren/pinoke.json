@@ -1,0 +1,251 @@
+{
+  "club": "Pinoké",
+  "club_id": "pinoke",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Hidde Brink",
+      "id": "hidde_brink",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jack Waller",
+      "id": "jack_waller",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jacob Draper",
+      "id": "jacob_draper",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florent van Aubel",
+      "id": "florent_van_aubel",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Miles Bukkens",
+      "id": "miles_bukkens",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daan Bonhof",
+      "id": "daan_bonhof",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Luca Wolff",
+      "id": "luca_wolff",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teo Hinrichs",
+      "id": "teo_hinrichs",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thies Prinz",
+      "id": "thies_prinz",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pieter Sutorius",
+      "id": "pieter_sutorius",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tim Knapper",
+      "id": "tim_knapper",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jannis van Hattum",
+      "id": "jannis_van_hattum",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Boris Aardenburg",
+      "id": "boris_aardenburg",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joep Troost",
+      "id": "joep_troost",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Texas Bukkens",
+      "id": "texas_bukkens",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Indra Aerts",
+      "id": "indra_aerts",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joppe Stappenbelt",
+      "id": "joppe_stappenbelt",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iwan Roukema",
+      "id": "iwan_roukema",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn van der Valk",
+      "id": "pepijn_van_der_valk",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jimi Kummer",
+      "id": "jimi_kummer",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gijs Somers",
+      "id": "gijs_somers",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ralph Grevenstuk",
+      "id": "ralph_grevenstuk",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

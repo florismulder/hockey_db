@@ -1,0 +1,251 @@
+{
+  "club": "Den Bosch",
+  "club_id": "den_bosch",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Josine Koning",
+      "id": "josine_koning",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Charlotte Englebert",
+      "id": "charlotte_englebert",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rosa Fernig",
+      "id": "rosa_fernig",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pien Sanders",
+      "id": "pien_sanders",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sanne Koolen",
+      "id": "sanne_koolen",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Frédérique Matla",
+      "id": "frederique_matla",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joosje Burg",
+      "id": "joosje_burg",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Laura Nunnink",
+      "id": "laura_nunnink",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maartje Krekelaar",
+      "id": "maartje_krekelaar",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Danique van der Veerdonk",
+      "id": "danique_van_der_veerdonk",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imme van der Hoek",
+      "id": "imme_van_der_hoek",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Emma Reijnen",
+      "id": "emma_reijnen",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Babs Reijnen",
+      "id": "babs_reijnen",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anouk Brouwer",
+      "id": "anouk_brouwer",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lieve Wijckmans",
+      "id": "lieve_wijckmans",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teuntje de Wit",
+      "id": "teuntje_de_wit",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Romee Joosten",
+      "id": "romee_joosten",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Josephine Bekkers",
+      "id": "josephine_bekkers",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kim Peters",
+      "id": "kim_peters",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Janneke van de Venne",
+      "id": "janneke_van_de_venne",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Elke Boers",
+      "id": "elke_boers",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Laurette Abelen",
+      "id": "laurette_abelen",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

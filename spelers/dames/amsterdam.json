@@ -1,0 +1,251 @@
+{
+  "club": "Amsterdam",
+  "club_id": "amsterdam",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Anne Veenendaal",
+      "id": "anne_veenendaal",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Freeke Moes",
+      "id": "freeke_moes",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Felice Albers",
+      "id": "felice_albers",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fay van der Elst",
+      "id": "fay_van_der_elst",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imke Verstraeten",
+      "id": "imke_verstraeten",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marijn Veen",
+      "id": "marijn_veen",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Li Hong",
+      "id": "li_hong",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Stella van Gils",
+      "id": "stella_van_gils",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Trijntje Beljaars",
+      "id": "trijntje_beljaars",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daantje de Kruijff",
+      "id": "daantje_de_kruijff",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sabine Plönissen",
+      "id": "sabine_plonissen",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gabrielle Mosch",
+      "id": "gabrielle_mosch",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noa Muller",
+      "id": "noa_muller",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Alessia Norbiato",
+      "id": "alessia_norbiato",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ivy Tellier",
+      "id": "ivy_tellier",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Katerina Langedijk",
+      "id": "katerina_langedijk",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Renske Balemans",
+      "id": "renske_balemans",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merle Blaffert",
+      "id": "merle_blaffert",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Reese d'Ariano",
+      "id": "reese_dariano",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fere van der Maarel",
+      "id": "fere_van_der_maarel",
+      "rugnummer": "2",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Charlotte Adegeest",
+      "id": "charlotte_adegeest",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sarah Smit Sibinga",
+      "id": "sarah_smit_sibinga",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

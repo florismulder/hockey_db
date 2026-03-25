@@ -1,0 +1,251 @@
+{
+  "club": "Klein Zwitserland",
+  "club_id": "klein_zwitserland",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Nicolas Santiago Keenan",
+      "id": "nicolas_santiago_keenan",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Aki Käppeler",
+      "id": "aki_kappeler",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lars Daniels",
+      "id": "lars_daniels",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ties Klinkhamer",
+      "id": "ties_klinkhamer",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Douwe Steens",
+      "id": "douwe_steens",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Adrian Lehmann-Richter",
+      "id": "adrian_lehmann_richter",
+      "rugnummer": "35",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Chad Futcher",
+      "id": "chad_futcher",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas Toscani",
+      "id": "lucas_toscani",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn Jones",
+      "id": "pepijn_jones",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Koene Schaper",
+      "id": "koene_schaper",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": true,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Willem van Campen",
+      "id": "willem_van_campen",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joaquin Toscani",
+      "id": "joaquin_toscani",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jochem Bakker",
+      "id": "jochem_bakker",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florent Vaal",
+      "id": "florent_vaal",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Linus Michler",
+      "id": "linus_michler",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tom Schneider",
+      "id": "tom_schneider",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jonas Ellerman",
+      "id": "jonas_ellerman",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepe Bijlaard",
+      "id": "pepe_bijlaard",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Philip van Aken",
+      "id": "philip_van_aken",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Štěpán Klaban",
+      "id": "stepan_klaban",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julian Seckel",
+      "id": "julian_seckel",
+      "rugnummer": "77",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maurik Smits",
+      "id": "maurik_smits",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Klein Zwitserland",
+      "club_id": "klein_zwitserland",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

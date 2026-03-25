@@ -1,0 +1,229 @@
+{
+  "club": "Bloemendaal",
+  "club_id": "bloemendaal",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Ankelein Baardemans",
+      "id": "ankelein_baardemans",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sterre Bregman",
+      "id": "sterre_bregman",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pientje Molenaar",
+      "id": "pientje_molenaar",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Demi Hilterman",
+      "id": "demi_hilterman",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Phileine Hazen",
+      "id": "phileine_hazen",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Malou Nanninga",
+      "id": "malou_nanninga",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rosalie Rosman",
+      "id": "rosalie_rosman",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maud Preyde",
+      "id": "maud_preyde",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lilli de Nooijer",
+      "id": "lilli_de_nooijer",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Annelies Pos",
+      "id": "annelies_pos",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Luca Preyde",
+      "id": "luca_preyde",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isa Huijbers",
+      "id": "isa_huijbers",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ryanne van Dooijeweerd",
+      "id": "ryanne_van_dooijeweerd",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mijntje van Campen",
+      "id": "mijntje_van_campen",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florien Sondern",
+      "id": "florien_sondern",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floks van der Beek",
+      "id": "floks_van_der_beek",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sophie Thoolen",
+      "id": "sophie_thoolen",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julie Hoogendoorn",
+      "id": "julie_hoogendoorn",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isolde Otten",
+      "id": "isolde_otten",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Diana Beemster",
+      "id": "diana_beemster",
+      "rugnummer": "33",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "club": "Rotterdam",
+  "club_id": "rotterdam",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Emma van Santbrink",
+      "id": "emma_van_santbrink",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Myrthe van Kesteren",
+      "id": "myrthe_van_kesteren",
+      "rugnummer": "54",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Brechtje van Santbrink",
+      "id": "brechtje_van_santbrink",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Caoimhe Perdue",
+      "id": "caoimhe_perdue",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merel Boekhorst",
+      "id": "merel_boekhorst",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Amber van den Dijssel",
+      "id": "amber_van_den_dijssel",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lieke Elsman",
+      "id": "lieke_elsman",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julie van Dam",
+      "id": "julie_van_dam",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noor Omrani",
+      "id": "noor_omrani",
+      "rugnummer": "34",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daphne Koolhaas",
+      "id": "daphne_koolhaas",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kirsten Zennemers",
+      "id": "kirsten_zennemers",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iris Hollander",
+      "id": "iris_hollander",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Melle Vaessen",
+      "id": "melle_vaessen",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isis van der Kooij",
+      "id": "isis_van_der_kooij",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joy Haarman",
+      "id": "joy_haarman",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bobbi Dijk",
+      "id": "bobbi_dijk",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iris Langejans",
+      "id": "iris_langejans",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jaidy Greebe",
+      "id": "jaidy_greebe",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Danique Lucieer",
+      "id": "danique_lucieer",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kelsey Bing",
+      "id": "kelsey_bing",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Olivia van der Knaap",
+      "id": "olivia_van_der_knaap",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mascha Sterk",
+      "id": "mascha_sterk",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "club": "Rotterdam",
+  "club_id": "rotterdam",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Derk Meijer",
+      "id": "derk_meijer",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thijs van Dam",
+      "id": "thijs_van_dam",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn van der Heijden",
+      "id": "pepijn_van_der_heijden",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Justen Blok",
+      "id": "justen_blok",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Steijn van Heijningen",
+      "id": "steijn_van_heijningen",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Olivier Hortensius",
+      "id": "olivier_hortensius",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tjep Hoedemakers",
+      "id": "tjep_hoedemakers",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joaquín Menini",
+      "id": "joaquin_menini",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marc Recasens",
+      "id": "marc_recasens",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lars Zijderveld",
+      "id": "lars_zijderveld",
+      "rugnummer": "25",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas van Tetering",
+      "id": "lucas_van_tetering",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Vincent Langenhuijsen",
+      "id": "vincent_langenhuijsen",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bouwe Buitenhuis",
+      "id": "bouwe_buitenhuis",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Dylan Lucieer",
+      "id": "dylan_lucieer",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Timme van der Heijden",
+      "id": "timme_van_der_heijden",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nick van Trigt",
+      "id": "nick_van_trigt",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jesse Steenhoff",
+      "id": "jesse_steenhoff",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Matthijs van der Wielen",
+      "id": "matthijs_van_der_wielen",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Guus Jansen",
+      "id": "guus_jansen",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Menno Boeren",
+      "id": "menno_boeren",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jeroen Hertzberger",
+      "id": "jeroen_hertzberger",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Rotterdam",
+      "club_id": "rotterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

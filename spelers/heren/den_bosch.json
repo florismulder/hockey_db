@@ -1,0 +1,251 @@
+{
+  "club": "Den Bosch",
+  "club_id": "den_bosch",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Alexander Stadler",
+      "id": "alexander_stadler",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thierry Brinkman",
+      "id": "thierry_brinkman",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jasper Tukkers",
+      "id": "jasper_tukkers",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Koen Bijen",
+      "id": "koen_bijen",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Timo Boers",
+      "id": "timo_boers",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gijs Campbell",
+      "id": "gijs_campbell",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joppe Wolbert",
+      "id": "joppe_wolbert",
+      "rugnummer": "33",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eduard De Ignacio-Simó",
+      "id": "eduard_de_ignacio_simo",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn Reijenga",
+      "id": "pepijn_reijenga",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imre Vos",
+      "id": "imre_vos",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mees Kurvers",
+      "id": "mees_kurvers",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jaïr van der Horst",
+      "id": "jair_van_der_horst",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Max Kreft",
+      "id": "max_kreft",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas Driessen",
+      "id": "lucas_driessen",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Max Pastoor",
+      "id": "max_pastoor",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sweder Koens",
+      "id": "sweder_koens",
+      "rugnummer": "30",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sander van Berkel",
+      "id": "sander_van_berkel",
+      "rugnummer": "32",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Cedric van Otterlo",
+      "id": "cedric_van_otterlo",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marc Vizcaino",
+      "id": "marc_vizcaino",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thomas Sorsby",
+      "id": "thomas_sorsby",
+      "rugnummer": "29",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fabian Unterkircher",
+      "id": "fabian_unterkircher",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tijn van Groesen",
+      "id": "tijn_van_groesen",
+      "rugnummer": "35",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Den Bosch",
+      "club_id": "den_bosch",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

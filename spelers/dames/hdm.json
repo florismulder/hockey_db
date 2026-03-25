@@ -1,0 +1,251 @@
+{
+  "club": "HDM",
+  "club_id": "hdm",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Milou Klein",
+      "id": "milou_klein",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Belén van den Broek",
+      "id": "belen_van_den_broek",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tessa Clasener",
+      "id": "tessa_clasener",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Frederique Dekker",
+      "id": "frederique_dekker",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sabine van den Eijnden",
+      "id": "sabine_van_den_eijnden",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pien van der Heide",
+      "id": "pien_van_der_heide",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julia Remmerswaal",
+      "id": "julia_remmerswaal",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hester van der Veld",
+      "id": "hester_van_der_veld",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kaat Walhof",
+      "id": "kaat_walhof",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Phileine van den Bosch",
+      "id": "phileine_van_den_bosch",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Delany van den Broek",
+      "id": "delany_van_den_broek",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julia Duffhuis",
+      "id": "julia_duffhuis",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Juliette Hijdra",
+      "id": "juliette_hijdra",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eva van 't Hoog",
+      "id": "eva_van_t_hoog",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lotte Beetsma",
+      "id": "lotte_beetsma",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Claudia Negrete Garcia",
+      "id": "claudia_negrete_garcia",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anke Sanders",
+      "id": "anke_sanders",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isa van Spronsen",
+      "id": "isa_van_spronsen",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Dirkie Chamberlain",
+      "id": "dirkie_chamberlain",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Laila Dierkens Schuttevaer",
+      "id": "laila_dierkens_schuttevaer",
+      "rugnummer": "36",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pien van Nes",
+      "id": "pien_van_nes",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florien Vorderman",
+      "id": "florien_vorderman",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

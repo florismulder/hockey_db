@@ -1,0 +1,251 @@
+{
+  "club": "Hurley",
+  "club_id": "hurley",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Nikas Berendts",
+      "id": "nikas_berendts",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daan Dekker",
+      "id": "daan_dekker",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mees Loman",
+      "id": "mees_loman",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Harry Martin",
+      "id": "harry_martin",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fred Newbold",
+      "id": "fred_newbold",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Laurens Nievelstein",
+      "id": "laurens_nievelstein",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rutger Plat",
+      "id": "rutger_plat",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joren Romijn",
+      "id": "joren_romijn",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hjalmar Voskuil",
+      "id": "hjalmar_voskuil",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Grau Albert",
+      "id": "grau_albert",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Deegan Huisman",
+      "id": "deegan_huisman",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joshua Keaveney",
+      "id": "joshua_keaveney",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Theun de Leeuw",
+      "id": "theun_de_leeuw",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jake Raben",
+      "id": "jake_raben",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noam Sheridan",
+      "id": "noam_sheridan",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lex Tump",
+      "id": "lex_tump",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pim Wasser",
+      "id": "pim_wasser",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tieme Wiggers",
+      "id": "tieme_wiggers",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Camiel Erselina",
+      "id": "camiel_erselina",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "I-An van de Scheur",
+      "id": "i_an_van_de_scheur",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imko de Vries",
+      "id": "imko_de_vries",
+      "rugnummer": "25",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Benjamin Walker",
+      "id": "benjamin_walker",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

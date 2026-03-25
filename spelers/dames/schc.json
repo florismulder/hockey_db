@@ -1,0 +1,240 @@
+{
+  "club": "SCHC",
+  "club_id": "schc",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Xan de Waard",
+      "id": "xan_de_waard",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Yibbi Jansen",
+      "id": "yibbi_jansen",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Renee van Laarhoven",
+      "id": "renee_van_laarhoven",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lisa Post",
+      "id": "lisa_post",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pien Dicke",
+      "id": "pien_dicke",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marleen Jochems",
+      "id": "marleen_jochems",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mette Winter",
+      "id": "mette_winter",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maud van den Heuvel",
+      "id": "maud_van_den_heuvel",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jip Dicke",
+      "id": "jip_dicke",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marsha Zwezereijn",
+      "id": "marsha_zwezereijn",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rifka Bakker",
+      "id": "rifka_bakker",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Naomi Brunsveld",
+      "id": "naomi_brunsveld",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isa van Heerde",
+      "id": "isa_van_heerde",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Elzemiek Zandee",
+      "id": "elzemiek_zandee",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Elodie Picard",
+      "id": "elodie_picard",
+      "rugnummer": "29",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noa Boterman",
+      "id": "noa_boterman",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mariette Boot",
+      "id": "mariette_boot",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anna de Geus",
+      "id": "anna_de_geus",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Famke Richardson",
+      "id": "famke_richardson",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floortje Middelbos",
+      "id": "floortje_middelbos",
+      "rugnummer": "31",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nanieck Mengelberg",
+      "id": "nanieck_mengelberg",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "SCHC",
+      "club_id": "schc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

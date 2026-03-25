@@ -1,0 +1,229 @@
+{
+  "club": "Kampong",
+  "club_id": "kampong",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Babette Backers",
+      "id": "babette_backers",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Luna Fokke",
+      "id": "luna_fokke",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bente van der Veldt",
+      "id": "bente_van_der_veldt",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noor van den Nieuwenhof",
+      "id": "noor_van_den_nieuwenhof",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eline Jansen",
+      "id": "eline_jansen",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Guusje Moes",
+      "id": "guusje_moes",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Carlijn Tukkers",
+      "id": "carlijn_tukkers",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noor de Baat",
+      "id": "noor_de_baat",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sosha Benninga",
+      "id": "sosha_benninga",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Veere ter Horst",
+      "id": "veere_ter_horst",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fleur Wolfert",
+      "id": "fleur_wolfert",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maria de Vries",
+      "id": "maria_de_vries",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iris de Kemp",
+      "id": "iris_de_kemp",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julie Roovers",
+      "id": "julie_roovers",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kyra Fortuin",
+      "id": "kyra_fortuin",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Charlotte Hoctin Boes",
+      "id": "charlotte_hoctin_boes",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sofie Stomps",
+      "id": "sofie_stomps",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sophie van Grimbergen",
+      "id": "sophie_van_grimbergen",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imme Van es",
+      "id": "imme_van_es",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anne Berends",
+      "id": "anne_berends",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

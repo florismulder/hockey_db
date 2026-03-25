@@ -1,0 +1,251 @@
+{
+  "club": "HGC",
+  "club_id": "hgc",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Sofie ter Kuile",
+      "id": "sofie_ter_kuile",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isis van Loon",
+      "id": "isis_van_loon",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Cécile Pieper",
+      "id": "cecile_pieper",
+      "rugnummer": "29",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Valentina Raposo Ruiz De Los Llanos",
+      "id": "valentina_raposo_ruiz_de_los_llanos",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marta Segú Rueda",
+      "id": "marta_segu_rueda",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mariona Serrahima",
+      "id": "mariona_serrahima",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anna Serrahima",
+      "id": "anna_serrahima",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lilly Stoffelsma",
+      "id": "lilly_stoffelsma",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Zoë Admiraal",
+      "id": "zoe_admiraal",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jip Blaas",
+      "id": "jip_blaas",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Amy van den Bosch",
+      "id": "amy_van_den_bosch",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tessel Huibregtsen",
+      "id": "tessel_huibregtsen",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bente Kolmus",
+      "id": "bente_kolmus",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lisa Lejeune",
+      "id": "lisa_lejeune",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Faye Muijderman",
+      "id": "faye_muijderman",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julie Pieper",
+      "id": "julie_pieper",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mikki Roolaart",
+      "id": "mikki_roolaart",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julie Sytsema",
+      "id": "julie_sytsema",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Louisa Hopman",
+      "id": "louisa_hopman",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Valentine Hulsbergen",
+      "id": "valentine_hulsbergen",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ellie Vinh",
+      "id": "ellie_vinh",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pip Jong",
+      "id": "pip_jong",
+      "rugnummer": "26",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HGC",
+      "club_id": "hgc",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

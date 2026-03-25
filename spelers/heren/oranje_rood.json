@@ -1,0 +1,251 @@
+{
+  "club": "Oranje-Rood",
+  "club_id": "oranje_rood",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Joep de Mol",
+      "id": "joep_de_mol",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tijmen Reyenga",
+      "id": "tijmen_reyenga",
+      "rugnummer": "29",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Max de Bie",
+      "id": "max_de_bie",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Arthur de Sloover",
+      "id": "arthur_de_sloover",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gerard Clapes",
+      "id": "gerard_clapes",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Borja LaCalle",
+      "id": "borja_lacalle",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Struan Walker",
+      "id": "struan_walker",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Henrik Mertgens",
+      "id": "henrik_mertgens",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pol Cabre-Verdiell Badia",
+      "id": "pol_cabre_verdiell_badia",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jelle Galema",
+      "id": "jelle_galema",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bob de Voogd",
+      "id": "bob_de_voogd",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florian Gosselink",
+      "id": "florian_gosselink",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jacky van Hout",
+      "id": "jacky_van_hout",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sem de Roij",
+      "id": "sem_de_roij",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Boaz Houben",
+      "id": "boaz_houben",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gijs van Merriënboer",
+      "id": "gijs_van_merrienboer",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thijs Bams",
+      "id": "thijs_bams",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Isha Houben",
+      "id": "isha_houben",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noud van Deijck",
+      "id": "noud_van_deijck",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Niek van der Schoot",
+      "id": "niek_van_der_schoot",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tomas Santiago",
+      "id": "tomas_santiago",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nieki Verbeek",
+      "id": "nieki_verbeek",
+      "rugnummer": "26",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

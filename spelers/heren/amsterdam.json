@@ -1,0 +1,251 @@
+{
+  "club": "Amsterdam",
+  "club_id": "amsterdam",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Luke Dommershuijzen",
+      "id": "luke_dommershuijzen",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Oliver Payne",
+      "id": "oliver_payne",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas Middendorp",
+      "id": "lucas_middendorp",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Boris Burkhardt",
+      "id": "boris_burkhardt",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floris Middendorp",
+      "id": "floris_middendorp",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "David Huussen",
+      "id": "david_huussen",
+      "rugnummer": "35",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lee Morton",
+      "id": "lee_morton",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Dayaan Cassiem",
+      "id": "dayaan_cassiem",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Musthapha Cassiem",
+      "id": "musthapha_cassiem",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Casper Berkman",
+      "id": "casper_berkman",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Brent van Bijnen",
+      "id": "brent_van_bijnen",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tjeerd Boermans",
+      "id": "tjeerd_boermans",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Robbert Kemperman",
+      "id": "robbert_kemperman",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Karst Timmer",
+      "id": "karst_timmer",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thije Harm",
+      "id": "thije_harm",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sam Steins Bisschop",
+      "id": "sam_steins_bisschop",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas Corstens",
+      "id": "lucas_corstens",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sam van der Weijden",
+      "id": "sam_van_der_weijden",
+      "rugnummer": "28",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joost Tolboom",
+      "id": "joost_tolboom",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Olivier Paalman",
+      "id": "olivier_paalman",
+      "rugnummer": "21",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jochem Blok",
+      "id": "jochem_blok",
+      "rugnummer": "30",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mirco Pruyser",
+      "id": "mirco_pruyser",
+      "rugnummer": "31",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Amsterdam",
+      "club_id": "amsterdam",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "club": "Hurley",
+  "club_id": "hurley",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Maartje Kaptein",
+      "id": "maartje_kaptein",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sophie Schelfhout",
+      "id": "sophie_schelfhout",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Annelotte Nijhuis",
+      "id": "annelotte_nijhuis",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fiona Morgenstern",
+      "id": "fiona_morgenstern",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Chrisje van der Salm",
+      "id": "chrisje_van_der_salm",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Margot van Hecking Colenbrander",
+      "id": "margot_van_hecking_colenbrander",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sanne Caarls",
+      "id": "sanne_caarls",
+      "rugnummer": "30",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fleur Loomans",
+      "id": "fleur_loomans",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teuntje Horn",
+      "id": "teuntje_horn",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eliza Vermeulen",
+      "id": "eliza_vermeulen",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nora Bruinsma",
+      "id": "nora_bruinsma",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Dymph Luttge",
+      "id": "dymph_luttge",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Philine Vinkesteijn",
+      "id": "philine_vinkesteijn",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Taheera Augousti",
+      "id": "taheera_augousti",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Romée Corver",
+      "id": "romee_corver",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Michelle van der Drift",
+      "id": "michelle_van_der_drift",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floor van den Dungen",
+      "id": "floor_van_den_dungen",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floor van Gorkum",
+      "id": "floor_van_gorkum",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Olivia Huisman",
+      "id": "olivia_huisman",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ginella Zerbo",
+      "id": "ginella_zerbo",
+      "rugnummer": "27",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Laurien Leurink",
+      "id": "laurien_leurink",
+      "rugnummer": "26",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julia van den Heuvel",
+      "id": "julia_van_den_heuvel",
+      "rugnummer": "28",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Hurley",
+      "club_id": "hurley",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

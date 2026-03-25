@@ -1,0 +1,251 @@
+{
+  "club": "Schaerweijde",
+  "club_id": "schaerweijde",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Pepijn Leenhouts",
+      "id": "pepijn_leenhouts",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jelle Westendorp",
+      "id": "jelle_westendorp",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joost van Eijck",
+      "id": "joost_van_eijck",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Peppe Veen",
+      "id": "peppe_veen",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Stijn Draaijer",
+      "id": "stijn_draaijer",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lode Draaijer",
+      "id": "lode_draaijer",
+      "rugnummer": "77",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mick Bosse",
+      "id": "mick_bosse",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maarten Bruisten",
+      "id": "maarten_bruisten",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daan Troost",
+      "id": "daan_troost",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tijs van Horn",
+      "id": "tijs_van_horn",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Juup Veen",
+      "id": "juup_veen",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jaap Solleveld",
+      "id": "jaap_solleveld",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Graeme Scott",
+      "id": "graeme_scott",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Niels de Joode",
+      "id": "niels_de_joode",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jens Hagen",
+      "id": "jens_hagen",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Michiel Moret",
+      "id": "michiel_moret",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teun van Aalderen",
+      "id": "teun_van_aalderen",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thibaut Mordac",
+      "id": "thibaut_mordac",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Derk Moret",
+      "id": "derk_moret",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tom Vermeulen",
+      "id": "tom_vermeulen",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mahinder Terlouw",
+      "id": "mahinder_terlouw",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Guus van Holten",
+      "id": "guus_van_holten",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Schaerweijde",
+      "club_id": "schaerweijde",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

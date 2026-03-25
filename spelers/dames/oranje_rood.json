@@ -1,0 +1,251 @@
+{
+  "club": "Oranje-Rood",
+  "club_id": "oranje_rood",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Vivienne Peters",
+      "id": "vivienne_peters",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Amber Brouwer",
+      "id": "amber_brouwer",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Juul van der Velden",
+      "id": "juul_van_der_velden",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Madelief de Beer",
+      "id": "madelief_de_beer",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pheline Vos",
+      "id": "pheline_vos",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jolien Bogers",
+      "id": "jolien_bogers",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pieke van de Pas",
+      "id": "pieke_van_de_pas",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lynn Vasterink",
+      "id": "lynn_vasterink",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merel Voermans",
+      "id": "merel_voermans",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucie Ehrmann",
+      "id": "lucie_ehrmann",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Renske van Limpt",
+      "id": "renske_van_limpt",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Margje van der Loo",
+      "id": "margje_van_der_loo",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sara Puglisi",
+      "id": "sara_puglisi",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thirsa Kho",
+      "id": "thirsa_kho",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Loeki Treffers",
+      "id": "loeki_treffers",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Brechje Scheepers",
+      "id": "brechje_scheepers",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Charlotte Schrijvers",
+      "id": "charlotte_schrijvers",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bibi Donraadt",
+      "id": "bibi_donraadt",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Julianna Tornetta",
+      "id": "julianna_tornetta",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Babs van Hest",
+      "id": "babs_van_hest",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lara Raaijmakers",
+      "id": "lara_raaijmakers",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lisa Scheerlinck",
+      "id": "lisa_scheerlinck",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Oranje-Rood",
+      "club_id": "oranje_rood",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

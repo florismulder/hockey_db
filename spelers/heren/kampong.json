@@ -1,0 +1,251 @@
+{
+  "club": "Kampong",
+  "club_id": "kampong",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Luis Calzado",
+      "id": "luis_calzado",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bram van Battum",
+      "id": "bram_van_battum",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Caspar Dobbelaar",
+      "id": "caspar_dobbelaar",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jip Janssen",
+      "id": "jip_janssen",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lars Balk",
+      "id": "lars_balk",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Derck de Vilder",
+      "id": "derck_de_vilder",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jonas de Geus",
+      "id": "jonas_de_geus",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Duco Telgenkamp",
+      "id": "duco_telgenkamp",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Terrance Pieters",
+      "id": "terrance_pieters",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kjell Plantenga",
+      "id": "kjell_plantenga",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sander de Wijn",
+      "id": "sander_de_wijn",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jens de Vuijst",
+      "id": "jens_de_vuijst",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rik Sprengers",
+      "id": "rik_sprengers",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thies Bakker",
+      "id": "thies_bakker",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Finn van Bijnen",
+      "id": "finn_van_bijnen",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hidde Plantenga",
+      "id": "hidde_plantenga",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mats Gruter",
+      "id": "mats_gruter",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sander van de Putte",
+      "id": "sander_van_de_putte",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Diederik van den Hoek",
+      "id": "diederik_van_den_hoek",
+      "rugnummer": "32",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hugo van Beusekom",
+      "id": "hugo_van_beusekom",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Koen Meijerink",
+      "id": "koen_meijerink",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Silas Lageman",
+      "id": "silas_lageman",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Kampong",
+      "club_id": "kampong",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

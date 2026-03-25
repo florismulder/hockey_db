@@ -1,0 +1,251 @@
+{
+  "club": "Bloemendaal",
+  "club_id": "bloemendaal",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Jorrit Croon",
+      "id": "jorrit_croon",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floris Wortelboer",
+      "id": "floris_wortelboer",
+      "rugnummer": "28",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Maurits Visser",
+      "id": "maurits_visser",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jasper Brinkman",
+      "id": "jasper_brinkman",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Zachary Wallace",
+      "id": "zachary_wallace",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teun Beins",
+      "id": "teun_beins",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Arno van Dessel",
+      "id": "arno_van_dessel",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Casper van der Veen",
+      "id": "casper_van_der_veen",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marco Miltkau",
+      "id": "marco_miltkau",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Wiegert Schut",
+      "id": "wiegert_schut",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lucas Veen",
+      "id": "lucas_veen",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Elian Mazkour",
+      "id": "elian_mazkour",
+      "rugnummer": "26",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gijs ter Braak",
+      "id": "gijs_ter_braak",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teun Hogenhout",
+      "id": "teun_hogenhout",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sheldon Schouten",
+      "id": "sheldon_schouten",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jan van 't Land",
+      "id": "jan_van_t_land",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Max Langer",
+      "id": "max_langer",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tobias Bovelander",
+      "id": "tobias_bovelander",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ramses Zwijnenburg",
+      "id": "ramses_zwijnenburg",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Allard André de la Porte",
+      "id": "allard_andre_de_la_porte",
+      "rugnummer": "32",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Wouter Jolie",
+      "id": "wouter_jolie",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Matthijs Odekerken",
+      "id": "matthijs_odekerken",
+      "rugnummer": "33",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Bloemendaal",
+      "club_id": "bloemendaal",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

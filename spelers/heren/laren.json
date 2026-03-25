@@ -1,0 +1,251 @@
+{
+  "club": "Laren",
+  "club_id": "laren",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Estiaan Kriek",
+      "id": "estiaan_kriek",
+      "rugnummer": "29",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pelle Vos",
+      "id": "pelle_vos",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pieter Paul Houting",
+      "id": "pieter_paul_houting",
+      "rugnummer": "32",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thomas Vis",
+      "id": "thomas_vis",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Diederick van Berckel",
+      "id": "diederick_van_berckel",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Valentijn Charbon",
+      "id": "valentijn_charbon",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Luke Friederich",
+      "id": "luke_friederich",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thomas Selles",
+      "id": "thomas_selles",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Wout Kooijman",
+      "id": "wout_kooijman",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Balder Reyenga",
+      "id": "balder_reyenga",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Berend van Langeveld",
+      "id": "berend_van_langeveld",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ruben van Meer",
+      "id": "ruben_van_meer",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floris van der Wal",
+      "id": "floris_van_der_wal",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sybren Loman",
+      "id": "sybren_loman",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joep Hagendoorn",
+      "id": "joep_hagendoorn",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teun van Uunen",
+      "id": "teun_van_uunen",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Stan Thoolen",
+      "id": "stan_thoolen",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Quinten Moojen",
+      "id": "quinten_moojen",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bart de Nie",
+      "id": "bart_de_nie",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Giovanni Brand",
+      "id": "giovanni_brand",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kenneth Bain",
+      "id": "kenneth_bain",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Xavier van de Kasteele",
+      "id": "xavier_van_de_kasteele",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Laren",
+      "club_id": "laren",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "club": "HDM",
+  "club_id": "hdm",
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Luis Beckmann",
+      "id": "luis_beckmann",
+      "rugnummer": "1",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Cédric de Gier",
+      "id": "cedric_de_gier",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sander Groenheijde",
+      "id": "sander_groenheijde",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floris van der Kroon",
+      "id": "floris_van_der_kroon",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marc Boltó Gimó",
+      "id": "marc_bolto_gimo",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Yorben Fontaine",
+      "id": "yorben_fontaine",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merijn Maas",
+      "id": "merijn_maas",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jasper van der Looy",
+      "id": "jasper_van_der_looy",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Chris Taberima",
+      "id": "chris_taberima",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fabian Verzuu",
+      "id": "fabian_verzuu",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Alexander Weterings",
+      "id": "alexander_weterings",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jelte Kaptein",
+      "id": "jelte_kaptein",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rick van den IJssel",
+      "id": "rick_van_den_ijssel",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ruben Versteeg",
+      "id": "ruben_versteeg",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Guus van den Boezem",
+      "id": "guus_van_den_boezem",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sam Spencer",
+      "id": "sam_spencer",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tom Provily",
+      "id": "tom_provily",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mats Dicke",
+      "id": "mats_dicke",
+      "rugnummer": "25",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fenn Tellier",
+      "id": "fenn_tellier",
+      "rugnummer": "24",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Siebe Pijpers",
+      "id": "siebe_pijpers",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Duco Nieuwenhuizen Segaar",
+      "id": "duco_nieuwenhuizen_segaar",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "HDM",
+      "club_id": "hdm",
+      "geslacht": "heren",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

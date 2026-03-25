@@ -1,0 +1,251 @@
+{
+  "club": "Tilburg",
+  "club_id": "tilburg",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Mikki Roberts",
+      "id": "mikki_roberts",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hannah Salden",
+      "id": "hannah_salden",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daphne Nikkels",
+      "id": "daphne_nikkels",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iris Dominicus",
+      "id": "iris_dominicus",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Carmen Victoria",
+      "id": "carmen_victoria",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lotte de Heer",
+      "id": "lotte_de_heer",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sanne Koks",
+      "id": "sanne_koks",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merel Tukkers",
+      "id": "merel_tukkers",
+      "rugnummer": "18",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ingeborg Dijkstra",
+      "id": "ingeborg_dijkstra",
+      "rugnummer": "26",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pleun Wester",
+      "id": "pleun_wester",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Roos Ezendam",
+      "id": "roos_ezendam",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eef Hoyinck",
+      "id": "eef_hoyinck",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mijs Berkhemer",
+      "id": "mijs_berkhemer",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Carolin Hoffmann",
+      "id": "carolin_hoffmann",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floor de Bruin",
+      "id": "floor_de_bruin",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Precious Oud",
+      "id": "precious_oud",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Merlijn Roodenburg",
+      "id": "merlijn_roodenburg",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Emmely Bekker",
+      "id": "emmely_bekker",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Emma Staats",
+      "id": "emma_staats",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lieke Leeggangers",
+      "id": "lieke_leeggangers",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lieke Van otten",
+      "id": "lieke_van_otten",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sophie van de Velde",
+      "id": "sophie_van_de_velde",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Tilburg",
+      "club_id": "tilburg",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}

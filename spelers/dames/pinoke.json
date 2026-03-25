@@ -1,0 +1,251 @@
+{
+  "club": "Pinoké",
+  "club_id": "pinoke",
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "bron": "KNHB spelerslijst PDF v11-09-2025",
+  "spelers": [
+    {
+      "naam": "Maria Steensma",
+      "id": "maria_steensma",
+      "rugnummer": "7",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kiki Rozemeijer",
+      "id": "kiki_rozemeijer",
+      "rugnummer": "10",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Josephine Murray",
+      "id": "josephine_murray",
+      "rugnummer": "15",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pam van der Laan",
+      "id": "pam_van_der_laan",
+      "rugnummer": "6",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tessa Beetsma",
+      "id": "tessa_beetsma",
+      "rugnummer": "21",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Lana Kalse",
+      "id": "lana_kalse",
+      "rugnummer": "14",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Floor de Haan",
+      "id": "floor_de_haan",
+      "rugnummer": "4",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sam Luttmer",
+      "id": "sam_luttmer",
+      "rugnummer": "5",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marloes Timmermans",
+      "id": "marloes_timmermans",
+      "rugnummer": "23",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bente Jager",
+      "id": "bente_jager",
+      "rugnummer": "8",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anouk Stam",
+      "id": "anouk_stam",
+      "rugnummer": "9",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Elin van Erk",
+      "id": "elin_van_erk",
+      "rugnummer": "12",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Flo Klinkhamer",
+      "id": "flo_klinkhamer",
+      "rugnummer": "20",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Amber Ezechiels",
+      "id": "amber_ezechiels",
+      "rugnummer": "19",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nina van der Marel",
+      "id": "nina_van_der_marel",
+      "rugnummer": "17",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Florine Rodenburg",
+      "id": "florine_rodenburg",
+      "rugnummer": "11",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Eliana Boekhoven",
+      "id": "eliana_boekhoven",
+      "rugnummer": "22",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Juul Sauer",
+      "id": "juul_sauer",
+      "rugnummer": "2",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Anouk Slotema",
+      "id": "anouk_slotema",
+      "rugnummer": "3",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Meeuw Tulp",
+      "id": "meeuw_tulp",
+      "rugnummer": "16",
+      "keeper": false,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kiki Gunneman",
+      "id": "kiki_gunneman",
+      "rugnummer": "1",
+      "keeper": true,
+      "aanvoerder": false,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marit van Buul",
+      "id": "marit_van_buul",
+      "rugnummer": "13",
+      "keeper": false,
+      "aanvoerder": true,
+      "club": "Pinoké",
+      "club_id": "pinoke",
+      "geslacht": "dames",
+      "seizoen": "2025-2026"
+    }
+  ]
+}
