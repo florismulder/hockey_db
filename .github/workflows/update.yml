@@ -2,7 +2,8 @@ name: Hockey DB updater
 
 on:
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '0 8 * * 1'  # Maandag 08:00 UTC - volledige update
+    - cron: '0 8 * * 5'  # Vrijdag 08:00 UTC - alleen nieuws
   workflow_dispatch:
 
 jobs:
@@ -21,13 +22,18 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Database updaten
+      - name: Database updaten (maandag - alles)
+        if: github.event.schedule == '0 8 * * 1' || github.event_name == 'workflow_dispatch'
         run: python scripts/update_db.py || true
+
+      - name: Nieuws updaten (vrijdag - alleen RSS)
+        if: github.event.schedule == '0 8 * * 5'
+        run: python scripts/update_db.py --rss || true
 
       - name: Wijzigingen committen
         run: |
           git config user.name "hockey-bot"
           git config user.email "bot@users.noreply.github.com"
           git add competities/ nieuws/ spelers/
-          git diff --staged --quiet || git commit -m "data: wekelijkse update $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "data: update $(date +%Y-%m-%d)"
           git push
