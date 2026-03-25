@@ -5,14 +5,14 @@ Hoofdklasse feeds (gefilterd vanuit de algemene news_item feed op URL-pad):
     https://hockey.nl/?feed=rss2&post_type=news_item
 
 Oranje- en jeugd-feeds (directe WordPress category feeds):
-    https://hockey.nl/oranje/oranje-heren/feed/
-    https://hockey.nl/oranje/oranje-dames/feed/
-    https://hockey.nl/jong-oranje-heren/feed/
-    https://hockey.nl/jong-oranje-dames/feed/
-    https://hockey.nl/nederlands-jongens-a/feed/
-    https://hockey.nl/nederlands-meisjes-a/feed/
-    https://hockey.nl/nederlands-jongens-b/feed/
-    https://hockey.nl/nederlands-meisjes-b/feed/
+    https://www.hockey.nl/oranje/oranje-heren/feed/
+    https://www.hockey.nl/oranje/oranje-dames/feed/
+    https://www.hockey.nl/oranje/jong-oranje-heren/feed/
+    https://www.hockey.nl/oranje/jong-oranje-dames/feed/
+    https://www.hockey.nl/jeugd/jongens-o18/feed/
+    https://www.hockey.nl/jeugd/meisjes-o18/feed/
+    https://www.hockey.nl/jeugd/jongens-o16/feed/
+    https://www.hockey.nl/jeugd/meisjes-o16/feed/
 
 Output:
     nieuws/heren.json
@@ -46,7 +46,7 @@ BASE_DIR = Path(__file__).parent.parent
 NIEUWS_DIR = BASE_DIR / "nieuws"
 
 # Algemene hockey.nl nieuws feed (custom post type)
-HOOFDKLASSE_FEED_URL = "https://hockey.nl/?feed=rss2&post_type=news_item"
+HOOFDKLASSE_FEED_URL = "https://www.hockey.nl/?feed=rss2&post_type=news_item"
 
 # URL-padfilters voor hoofdklasse categorisering
 HEREN_PATH_FILTER = "/nieuws/tulp-hoofdklasse-heren/"
@@ -55,35 +55,35 @@ DAMES_PATH_FILTER = "/nieuws/tulp-hoofdklasse-dames/"
 # Oranje & jeugd-nieuwspagina's (HTML-scraping, geen RSS beschikbaar)
 ORANJE_FEEDS: dict[str, dict] = {
     "oranje-heren": {
-        "url": "https://hockey.nl/oranje/oranje-heren/",
+        "url": "https://www.hockey.nl/oranje/oranje-heren/",
         "output": NIEUWS_DIR / "oranje-heren.json",
     },
     "oranje-dames": {
-        "url": "https://hockey.nl/oranje/oranje-dames/",
+        "url": "https://www.hockey.nl/oranje/oranje-dames/",
         "output": NIEUWS_DIR / "oranje-dames.json",
     },
     "jong-oranje-heren": {
-        "url": "https://hockey.nl/jong-oranje-heren/",
+        "url": "https://www.hockey.nl/oranje/jong-oranje-heren",
         "output": NIEUWS_DIR / "jong-oranje-heren.json",
     },
     "jong-oranje-dames": {
-        "url": "https://hockey.nl/jong-oranje-dames/",
+        "url": "https://www.hockey.nl/oranje/jong-oranje-dames",
         "output": NIEUWS_DIR / "jong-oranje-dames.json",
     },
     "jongens-o18": {
-        "url": "https://hockey.nl/nederlands-jongens-a/",
+        "url": "https://www.hockey.nl/jeugd/jongens-o18",
         "output": NIEUWS_DIR / "jongens-o18.json",
     },
     "meisjes-o18": {
-        "url": "https://hockey.nl/nederlands-meisjes-a/",
+        "url": "https://www.hockey.nl/jeugd/meisjes-o18",
         "output": NIEUWS_DIR / "meisjes-o18.json",
     },
     "jongens-o16": {
-        "url": "https://hockey.nl/nederlands-jongens-b/",
+        "url": "https://www.hockey.nl/jeugd/jongens-o16",
         "output": NIEUWS_DIR / "jongens-o16.json",
     },
     "meisjes-o16": {
-        "url": "https://hockey.nl/nederlands-meisjes-b/",
+        "url": "https://www.hockey.nl/jeugd/meisjes-o16",
         "output": NIEUWS_DIR / "meisjes-o16.json",
     },
 }
@@ -326,7 +326,7 @@ def scrape_news_page(url: str) -> list[dict]:
             continue
         link = a_tag.get("href", "")
         if not link.startswith("http"):
-            link = f"https://hockey.nl{link}"
+            link = f"https://www.hockey.nl{link}"
 
         # Titel: h2 of h3 in de kaart, of de link-tekst
         titel_el = card.find(["h2", "h3", "h4"]) or a_tag

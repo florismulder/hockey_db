@@ -32,42 +32,42 @@ USER_AGENT = "HockeyDB/1.0 (github.com/hockey_db; data-only bot)"
 TEAMS: dict[str, dict] = {
     "oranje-heren": {
         "naam": "Oranje Heren",
-        "url": "https://hockey.nl/oranje/oranje-heren/",
+        "url": "https://www.hockey.nl/oranje/oranje-heren/",
         "output": OUTPUT_DIR / "oranje-heren.json",
     },
     "oranje-dames": {
         "naam": "Oranje Dames",
-        "url": "https://hockey.nl/oranje/oranje-dames/",
+        "url": "https://www.hockey.nl/oranje/oranje-dames/",
         "output": OUTPUT_DIR / "oranje-dames.json",
     },
     "jong-oranje-heren": {
         "naam": "Jong Oranje Heren",
-        "url": "https://hockey.nl/jong-oranje-heren/",
+        "url": "https://www.hockey.nl/oranje/jong-oranje-heren",
         "output": OUTPUT_DIR / "jong-oranje-heren.json",
     },
     "jong-oranje-dames": {
         "naam": "Jong Oranje Dames",
-        "url": "https://hockey.nl/jong-oranje-dames/",
+        "url": "https://www.hockey.nl/oranje/jong-oranje-dames",
         "output": OUTPUT_DIR / "jong-oranje-dames.json",
     },
     "jongens-o18": {
         "naam": "Jongens O18",
-        "url": "https://hockey.nl/nederlands-jongens-a/",
+        "url": "https://www.hockey.nl/jeugd/jongens-o18",
         "output": OUTPUT_DIR / "jongens-o18.json",
     },
     "meisjes-o18": {
         "naam": "Meisjes O18",
-        "url": "https://hockey.nl/nederlands-meisjes-a/",
+        "url": "https://www.hockey.nl/jeugd/meisjes-o18",
         "output": OUTPUT_DIR / "meisjes-o18.json",
     },
     "jongens-o16": {
         "naam": "Jongens O16",
-        "url": "https://hockey.nl/nederlands-jongens-b/",
+        "url": "https://www.hockey.nl/jeugd/jongens-o16",
         "output": OUTPUT_DIR / "jongens-o16.json",
     },
     "meisjes-o16": {
         "naam": "Meisjes O16",
-        "url": "https://hockey.nl/nederlands-meisjes-b/",
+        "url": "https://www.hockey.nl/jeugd/meisjes-o16",
         "output": OUTPUT_DIR / "meisjes-o16.json",
     },
 }

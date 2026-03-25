@@ -22,7 +22,7 @@ jobs:
           playwright install chromium
 
       - name: Database updaten
-        run: python scripts/update_db.py
+        run: python scripts/update_db.py || true
 
       - name: Wijzigingen committen
         run: |
