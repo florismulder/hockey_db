@@ -15,7 +15,9 @@
       "dv": "60",
       "dt": "10",
       "+/−": "+50",
-      "kwalificatieofdegradatie": "Plaatsingplay–offsenEHL"
+      "kwalificatieofdegradatie": "Plaatsingplay–offsenEHL",
+      "zone": "playoff",
+      "punten": 41
     },
     {
       "positie": 2,
@@ -28,7 +30,9 @@
       "dv": "37",
       "dt": "19",
       "+/−": "+18",
-      "kwalificatieofdegradatie": "Plaatsingplay–offs"
+      "kwalificatieofdegradatie": "Plaatsingplay–offs",
+      "zone": "playoff",
+      "punten": 35
     },
     {
       "positie": 3,
@@ -40,7 +44,9 @@
       "ptn": "32",
       "dv": "41",
       "dt": "18",
-      "+/−": "+23"
+      "+/−": "+23",
+      "zone": "playoff",
+      "punten": 32
     },
     {
       "positie": 4,
@@ -52,7 +58,9 @@
       "ptn": "30",
       "dv": "52",
       "dt": "20",
-      "+/−": "+32"
+      "+/−": "+32",
+      "zone": "playoff",
+      "punten": 30
     },
     {
       "positie": 5,
@@ -65,7 +73,9 @@
       "dv": "29",
       "dt": "30",
       "+/−": "−1",
-      "kwalificatieofdegradatie": ""
+      "kwalificatieofdegradatie": "",
+      "zone": "",
+      "punten": 21
     },
     {
       "positie": 6,
@@ -77,7 +87,9 @@
       "ptn": "18",
       "dv": "20",
       "dt": "23",
-      "+/−": "−3"
+      "+/−": "−3",
+      "zone": "",
+      "punten": 18
     },
     {
       "positie": 7,
@@ -89,7 +101,9 @@
       "ptn": "17",
       "dv": "15",
       "dt": "27",
-      "+/−": "−12"
+      "+/−": "−12",
+      "zone": "",
+      "punten": 17
     },
     {
       "positie": 8,
@@ -101,7 +115,9 @@
       "ptn": "16",
       "dv": "21",
       "dt": "37",
-      "+/−": "−16"
+      "+/−": "−16",
+      "zone": "",
+      "punten": 16
     },
     {
       "positie": 9,
@@ -113,7 +129,9 @@
       "ptn": "14",
       "dv": "29",
       "dt": "34",
-      "+/−": "−5"
+      "+/−": "−5",
+      "zone": "",
+      "punten": 14
     },
     {
       "positie": 10,
@@ -126,7 +144,9 @@
       "dv": "21",
       "dt": "42",
       "+/−": "−21",
-      "kwalificatieofdegradatie": "Plaatsingpromotie/degradatie play–offs"
+      "kwalificatieofdegradatie": "Plaatsingpromotie/degradatie play–offs",
+      "zone": "playout",
+      "punten": 10
     },
     {
       "positie": 11,
@@ -138,7 +158,9 @@
       "ptn": "10",
       "dv": "12",
       "dt": "42",
-      "+/−": "−30"
+      "+/−": "−30",
+      "zone": "playout",
+      "punten": 10
     },
     {
       "positie": 12,
@@ -151,7 +173,9 @@
       "dv": "20",
       "dt": "55",
       "+/−": "−35",
-      "kwalificatieofdegradatie": "Degradatie naarPromotieklasse"
+      "kwalificatieofdegradatie": "Degradatie naarPromotieklasse",
+      "zone": "degradatie",
+      "punten": 7
     }
   ],
   "uitslagen": [
