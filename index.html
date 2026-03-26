@@ -379,7 +379,10 @@ function SpelersOverzicht({geslacht,nav,spelers}) {
             <div className="sk" key={i} onClick={()=>nav("speler",s)}>
               <div className="skt">
                 <div><div className="sn">{s.naam}</div><div className="scl">{s.club}</div></div>
-                <div className="sr">#{s.rugnummer}</div>
+                <div style={{textAlign:"right"}}>
+                  <div className="sr">#{s.rugnummer}</div>
+                  {s.doelpunten_seizoen>0&&<div style={{fontSize:11,color:"var(--accent)",fontWeight:600,fontFamily:"'JetBrains Mono',monospace"}}>⚽ {s.doelpunten_seizoen}</div>}
+                </div>
               </div>
               {(s.keeper||s.aanvoerder)&&(
                 <div className="sb">
@@ -424,6 +427,25 @@ function SpelerDetail({speler,nav,nieuws}) {
         </div>
       </div>
       <div className="db">
+        {speler.doelpunten_seizoen>0&&(
+          <div style={{marginBottom:20}}>
+            <div className="ds">Statistieken 2025-2026</div>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:8}}>
+              {[
+                ["Goals", speler.doelpunten_seizoen],
+                ["Veld", speler.vd??0],
+                ["SC", speler.sc??0],
+                ["SB", speler.sb??0],
+              ].map(([lbl,val])=>(
+                <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",
+                  borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:"var(--accent)",fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="ds">Nieuws</div>
         {relevant.length>0?relevant.map((n,i)=>(
           <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
