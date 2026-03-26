@@ -23,7 +23,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 6,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Felice Albers",
@@ -34,7 +38,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 3,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Fay van der Elst",
@@ -45,7 +53,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 6,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Imke Verstraeten",
@@ -56,7 +68,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 13,
+      "vd": 0,
+      "sc": 9,
+      "sb": 4
     },
     {
       "naam": "Marijn Veen",
@@ -67,7 +83,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Li Hong",
@@ -100,7 +120,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 10,
+      "vd": 9,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Daantje de Kruijff",
@@ -166,7 +190,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Katerina Langedijk",
@@ -177,7 +205,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 3,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Renske Balemans",
@@ -188,7 +220,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Merle Blaffert",
@@ -210,7 +246,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Fere van der Maarel",
@@ -254,7 +294,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Oliver Payne",
@@ -287,7 +331,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 18,
+      "vd": 8,
+      "sc": 8,
+      "sb": 2
     },
     {
       "naam": "Floris Middendorp",
@@ -298,7 +346,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "David Huussen",
@@ -309,7 +361,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lee Morton",
@@ -331,7 +387,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 9,
+      "vd": 8,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Musthapha Cassiem",
@@ -408,7 +468,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sam Steins Bisschop",
@@ -419,7 +483,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lucas Corstens",
@@ -485,7 +553,11 @@
       "club": "Amsterdam",
       "club_id": "amsterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Ankelein Baardemans",
@@ -496,7 +568,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sterre Bregman",
@@ -529,7 +605,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 0,
+      "sc": 7,
+      "sb": 0
     },
     {
       "naam": "Phileine Hazen",
@@ -562,7 +642,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Maud Preyde",
@@ -628,7 +712,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Mijntje van Campen",
@@ -639,7 +727,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Florien Sondern",
@@ -672,7 +764,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Julie Hoogendoorn",
@@ -683,7 +779,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Isolde Otten",
@@ -716,7 +816,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Floris Wortelboer",
@@ -727,7 +831,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Maurits Visser",
@@ -749,7 +857,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Zachary Wallace",
@@ -771,7 +883,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 12,
+      "vd": 0,
+      "sc": 12,
+      "sb": 0
     },
     {
       "naam": "Arno van Dessel",
@@ -782,7 +898,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Casper van der Veen",
@@ -793,7 +913,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Marco Miltkau",
@@ -804,7 +928,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Wiegert Schut",
@@ -826,7 +954,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Elian Mazkour",
@@ -837,7 +969,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 4,
+      "sc": 0,
+      "sb": 2
     },
     {
       "naam": "Gijs ter Braak",
@@ -859,7 +995,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sheldon Schouten",
@@ -881,7 +1021,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Max Langer",
@@ -892,7 +1036,11 @@
       "club": "Bloemendaal",
       "club_id": "bloemendaal",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Tobias Bovelander",
@@ -969,7 +1117,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Rosa Fernig",
@@ -991,7 +1143,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Sanne Koolen",
@@ -1002,7 +1158,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Frédérique Matla",
@@ -1013,7 +1173,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 14,
+      "vd": 5,
+      "sc": 8,
+      "sb": 1
     },
     {
       "naam": "Joosje Burg",
@@ -1024,7 +1188,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 9,
+      "vd": 9,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Laura Nunnink",
@@ -1046,7 +1214,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Danique van der Veerdonk",
@@ -1068,7 +1240,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Emma Reijnen",
@@ -1090,7 +1266,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Anouk Brouwer",
@@ -1112,7 +1292,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Teuntje de Wit",
@@ -1123,7 +1307,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Romee Joosten",
@@ -1145,7 +1333,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Kim Peters",
@@ -1211,7 +1403,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 10,
+      "vd": 9,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Jasper Tukkers",
@@ -1233,7 +1429,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 8,
+      "vd": 7,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Timo Boers",
@@ -1244,7 +1444,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 18,
+      "vd": 0,
+      "sc": 15,
+      "sb": 3
     },
     {
       "naam": "Gijs Campbell",
@@ -1266,7 +1470,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Eduard De Ignacio-Simó",
@@ -1321,7 +1529,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 4,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Max Kreft",
@@ -1332,7 +1544,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 5,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Lucas Driessen",
@@ -1354,7 +1570,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sweder Koens",
@@ -1365,7 +1585,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sander van Berkel",
@@ -1409,7 +1633,11 @@
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Fabian Unterkircher",
@@ -1453,7 +1681,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 0,
+      "sc": 1,
+      "sb": 5
     },
     {
       "naam": "Tessa Clasener",
@@ -1464,7 +1696,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Frederique Dekker",
@@ -1475,7 +1711,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sabine van den Eijnden",
@@ -1486,7 +1726,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Pien van der Heide",
@@ -1497,7 +1741,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Julia Remmerswaal",
@@ -1530,7 +1778,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Phileine van den Bosch",
@@ -1541,7 +1793,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Delany van den Broek",
@@ -1552,7 +1808,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Julia Duffhuis",
@@ -1563,7 +1823,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Juliette Hijdra",
@@ -1717,7 +1981,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Marc Boltó Gimó",
@@ -1739,7 +2007,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Merijn Maas",
@@ -1772,7 +2044,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 8,
+      "vd": 0,
+      "sc": 6,
+      "sb": 2
     },
     {
       "naam": "Fabian Verzuu",
@@ -1783,7 +2059,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Alexander Weterings",
@@ -1838,7 +2118,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sam Spencer",
@@ -1860,7 +2144,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Mats Dicke",
@@ -1871,7 +2159,11 @@
       "club": "HDM",
       "club_id": "hdm",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Fenn Tellier",
@@ -1926,7 +2218,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Cécile Pieper",
@@ -1959,7 +2255,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Mariona Serrahima",
@@ -1970,7 +2270,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Anna Serrahima",
@@ -1992,7 +2296,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 0,
+      "sc": 4,
+      "sb": 0
     },
     {
       "naam": "Zoë Admiraal",
@@ -2014,7 +2322,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Amy van den Bosch",
@@ -2025,7 +2337,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Tessel Huibregtsen",
@@ -2069,7 +2385,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Julie Pieper",
@@ -2080,7 +2400,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Mikki Roolaart",
@@ -2091,7 +2415,11 @@
       "club": "HGC",
       "club_id": "hgc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 4,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Julie Sytsema",
@@ -2179,7 +2507,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Fiona Morgenstern",
@@ -2190,7 +2522,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Chrisje van der Salm",
@@ -2223,7 +2559,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 0,
+      "sb": 1
     },
     {
       "naam": "Fleur Loomans",
@@ -2234,7 +2574,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Teuntje Horn",
@@ -2245,7 +2589,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Eliza Vermeulen",
@@ -2300,7 +2648,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Romée Corver",
@@ -2311,7 +2663,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Michelle van der Drift",
@@ -2322,7 +2678,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Floor van den Dungen",
@@ -2333,7 +2693,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Floor van Gorkum",
@@ -2355,7 +2719,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Ginella Zerbo",
@@ -2443,7 +2811,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Laurens Nievelstein",
@@ -2487,7 +2859,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 1,
+      "sc": 5,
+      "sb": 0
     },
     {
       "naam": "Grau Albert",
@@ -2553,7 +2929,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lex Tump",
@@ -2619,7 +2999,11 @@
       "club": "Hurley",
       "club_id": "hurley",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Benjamin Walker",
@@ -2652,7 +3036,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 2,
+      "sc": 5,
+      "sb": 0
     },
     {
       "naam": "Bente van der Veldt",
@@ -2663,7 +3051,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 6,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Noor van den Nieuwenhof",
@@ -2674,7 +3066,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 0,
+      "sc": 2,
+      "sb": 3
     },
     {
       "naam": "Eline Jansen",
@@ -2685,7 +3081,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Guusje Moes",
@@ -2696,7 +3096,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 2,
+      "sc": 4,
+      "sb": 0
     },
     {
       "naam": "Carlijn Tukkers",
@@ -2707,7 +3111,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Noor de Baat",
@@ -2729,7 +3137,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 5,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Veere ter Horst",
@@ -2773,7 +3185,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Julie Roovers",
@@ -2828,7 +3244,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Imme Van es",
@@ -2839,7 +3259,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Anne Berends",
@@ -2894,7 +3318,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Lars Balk",
@@ -2916,7 +3344,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Jonas de Geus",
@@ -2927,7 +3359,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Duco Telgenkamp",
@@ -2938,7 +3374,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 12,
+      "vd": 12,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Terrance Pieters",
@@ -2949,7 +3389,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Kjell Plantenga",
@@ -2971,7 +3415,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jens de Vuijst",
@@ -2993,7 +3441,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 8,
+      "vd": 2,
+      "sc": 4,
+      "sb": 2
     },
     {
       "naam": "Thies Bakker",
@@ -3015,7 +3467,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 6,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Hidde Plantenga",
@@ -3026,7 +3482,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Mats Gruter",
@@ -3048,7 +3508,11 @@
       "club": "Kampong",
       "club_id": "kampong",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Diederik van den Hoek",
@@ -3114,7 +3578,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 0,
+      "sc": 6,
+      "sb": 1
     },
     {
       "naam": "Lars Daniels",
@@ -3125,7 +3593,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Ties Klinkhamer",
@@ -3136,7 +3608,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Douwe Steens",
@@ -3158,7 +3634,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Chad Futcher",
@@ -3169,7 +3649,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 1,
+      "sc": 4,
+      "sb": 0
     },
     {
       "naam": "Lucas Toscani",
@@ -3180,7 +3664,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Pepijn Jones",
@@ -3191,7 +3679,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Koene Schaper",
@@ -3213,7 +3705,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Joaquin Toscani",
@@ -3235,7 +3731,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 2,
+      "sb": 1
     },
     {
       "naam": "Florent Vaal",
@@ -3246,7 +3746,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Linus Michler",
@@ -3268,7 +3772,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jonas Ellerman",
@@ -3290,7 +3798,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Philip van Aken",
@@ -3312,7 +3824,11 @@
       "club": "Klein Zwitserland",
       "club_id": "klein_zwitserland",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Julian Seckel",
@@ -3367,7 +3883,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Thomas Vis",
@@ -3378,7 +3898,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Diederick van Berckel",
@@ -3389,7 +3913,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Valentijn Charbon",
@@ -3400,7 +3928,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 3,
+      "sc": 0,
+      "sb": 1
     },
     {
       "naam": "Luke Friederich",
@@ -3411,7 +3943,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Thomas Selles",
@@ -3444,7 +3980,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Berend van Langeveld",
@@ -3455,7 +3995,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Ruben van Meer",
@@ -3466,7 +4010,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Floris van der Wal",
@@ -3499,7 +4047,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Teun van Uunen",
@@ -3510,7 +4062,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Stan Thoolen",
@@ -3521,7 +4077,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Quinten Moojen",
@@ -3532,7 +4092,11 @@
       "club": "Laren",
       "club_id": "laren",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Bart de Nie",
@@ -3609,7 +4173,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Madelief de Beer",
@@ -3620,7 +4188,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 0,
+      "sb": 2
     },
     {
       "naam": "Pheline Vos",
@@ -3664,7 +4236,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Merel Voermans",
@@ -3675,7 +4251,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lucie Ehrmann",
@@ -3708,7 +4288,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Sara Puglisi",
@@ -3730,7 +4314,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Loeki Treffers",
@@ -3763,7 +4351,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Bibi Donraadt",
@@ -3785,7 +4377,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Babs van Hest",
@@ -3796,7 +4392,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lara Raaijmakers",
@@ -3840,7 +4440,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 0,
+      "sc": 6,
+      "sb": 0
     },
     {
       "naam": "Max de Bie",
@@ -3862,7 +4466,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Gerard Clapes",
@@ -3873,7 +4481,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Borja LaCalle",
@@ -3884,7 +4496,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 6,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Struan Walker",
@@ -3895,7 +4511,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 19,
+      "vd": 11,
+      "sc": 8,
+      "sb": 0
     },
     {
       "naam": "Henrik Mertgens",
@@ -3906,7 +4526,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 10,
+      "vd": 8,
+      "sc": 0,
+      "sb": 2
     },
     {
       "naam": "Pol Cabre-Verdiell Badia",
@@ -3928,7 +4552,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 3,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Bob de Voogd",
@@ -3939,7 +4567,11 @@
       "club": "Oranje-Rood",
       "club_id": "oranje_rood",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Florian Gosselink",
@@ -4071,7 +4703,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Kiki Rozemeijer",
@@ -4082,7 +4718,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Josephine Murray",
@@ -4093,7 +4733,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Pam van der Laan",
@@ -4104,7 +4748,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Tessa Beetsma",
@@ -4115,7 +4763,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lana Kalse",
@@ -4126,7 +4778,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 10,
+      "vd": 8,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Floor de Haan",
@@ -4137,7 +4793,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Sam Luttmer",
@@ -4148,7 +4808,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Marloes Timmermans",
@@ -4170,7 +4834,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Anouk Stam",
@@ -4192,7 +4860,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Flo Klinkhamer",
@@ -4203,7 +4875,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Amber Ezechiels",
@@ -4225,7 +4901,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Florine Rodenburg",
@@ -4236,7 +4916,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Eliana Boekhoven",
@@ -4335,7 +5019,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Florent van Aubel",
@@ -4346,7 +5034,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 12,
+      "vd": 10,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Miles Bukkens",
@@ -4357,7 +5049,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 13,
+      "vd": 6,
+      "sc": 7,
+      "sb": 0
     },
     {
       "naam": "Daan Bonhof",
@@ -4368,7 +5064,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Luca Wolff",
@@ -4412,7 +5112,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Tim Knapper",
@@ -4445,7 +5149,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Joep Troost",
@@ -4456,7 +5164,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 17,
+      "vd": 4,
+      "sc": 12,
+      "sb": 1
     },
     {
       "naam": "Texas Bukkens",
@@ -4467,7 +5179,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Indra Aerts",
@@ -4478,7 +5194,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Joppe Stappenbelt",
@@ -4500,7 +5220,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Pepijn van der Valk",
@@ -4511,7 +5235,11 @@
       "club": "Pinoké",
       "club_id": "pinoke",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jimi Kummer",
@@ -4555,7 +5283,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Myrthe van Kesteren",
@@ -4566,7 +5298,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Brechtje van Santbrink",
@@ -4577,7 +5313,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Caoimhe Perdue",
@@ -4610,7 +5350,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Lieke Elsman",
@@ -4632,7 +5376,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 1,
+      "sb": 1
     },
     {
       "naam": "Noor Omrani",
@@ -4665,7 +5413,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Iris Hollander",
@@ -4687,7 +5439,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Isis van der Kooij",
@@ -4720,7 +5476,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 0,
+      "sb": 2
     },
     {
       "naam": "Iris Langejans",
@@ -4742,7 +5502,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Danique Lucieer",
@@ -4808,7 +5572,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 3,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Pepijn van der Heijden",
@@ -4819,7 +5587,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 14,
+      "vd": 0,
+      "sc": 11,
+      "sb": 3
     },
     {
       "naam": "Justen Blok",
@@ -4830,7 +5602,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Steijn van Heijningen",
@@ -4841,7 +5617,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Olivier Hortensius",
@@ -4852,7 +5632,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 6,
+      "vd": 6,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Tjep Hoedemakers",
@@ -4863,7 +5647,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 8,
+      "vd": 7,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Joaquín Menini",
@@ -4874,7 +5662,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Marc Recasens",
@@ -4885,7 +5677,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Lars Zijderveld",
@@ -4940,7 +5736,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Timme van der Heijden",
@@ -4951,7 +5751,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 7,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Nick van Trigt",
@@ -4962,7 +5766,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 4,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jesse Steenhoff",
@@ -4984,7 +5792,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Guus Jansen",
@@ -4995,7 +5807,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 12,
+      "vd": 11,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Menno Boeren",
@@ -5006,7 +5822,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jeroen Hertzberger",
@@ -5017,7 +5837,11 @@
       "club": "Rotterdam",
       "club_id": "rotterdam",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Pepijn Leenhouts",
@@ -5028,7 +5852,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Jelle Westendorp",
@@ -5039,7 +5867,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 1,
+      "sc": 1,
+      "sb": 2
     },
     {
       "naam": "Joost van Eijck",
@@ -5050,7 +5882,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Peppe Veen",
@@ -5072,7 +5908,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0
     },
     {
       "naam": "Lode Draaijer",
@@ -5094,7 +5934,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Maarten Bruisten",
@@ -5116,7 +5960,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Tijs van Horn",
@@ -5171,7 +6019,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Jens Hagen",
@@ -5182,7 +6034,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Michiel Moret",
@@ -5204,7 +6060,11 @@
       "club": "Schaerweijde",
       "club_id": "schaerweijde",
       "geslacht": "heren",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Thibaut Mordac",
@@ -5270,7 +6130,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 3,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Yibbi Jansen",
@@ -5281,7 +6145,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 18,
+      "vd": 2,
+      "sc": 15,
+      "sb": 1
     },
     {
       "naam": "Renee van Laarhoven",
@@ -5292,7 +6160,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 0,
+      "sc": 1,
+      "sb": 1
     },
     {
       "naam": "Lisa Post",
@@ -5303,7 +6175,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Pien Dicke",
@@ -5314,7 +6190,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 8,
+      "vd": 7,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Marleen Jochems",
@@ -5336,7 +6216,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 6,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Maud van den Heuvel",
@@ -5347,7 +6231,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 7,
+      "vd": 7,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Jip Dicke",
@@ -5358,7 +6246,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 16,
+      "vd": 14,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Marsha Zwezereijn",
@@ -5413,7 +6305,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Elodie Picard",
@@ -5435,7 +6331,11 @@
       "club": "SCHC",
       "club_id": "schc",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Mariette Boot",
@@ -5501,7 +6401,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 0,
+      "sc": 2,
+      "sb": 1
     },
     {
       "naam": "Hannah Salden",
@@ -5523,7 +6427,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 4,
+      "vd": 3,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Iris Dominicus",
@@ -5534,7 +6442,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0
     },
     {
       "naam": "Carmen Victoria",
@@ -5545,7 +6457,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 5,
+      "vd": 4,
+      "sc": 1,
+      "sb": 0
     },
     {
       "naam": "Lotte de Heer",
@@ -5567,7 +6483,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Merel Tukkers",
@@ -5644,7 +6564,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Floor de Bruin",
@@ -5666,7 +6590,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Merlijn Roodenburg",
@@ -5688,7 +6616,11 @@
       "club": "Tilburg",
       "club_id": "tilburg",
       "geslacht": "dames",
-      "seizoen": "2025-2026"
+      "seizoen": "2025-2026",
+      "doelpunten_seizoen": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0
     },
     {
       "naam": "Emma Staats",
