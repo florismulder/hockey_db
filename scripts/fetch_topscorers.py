@@ -27,162 +27,138 @@ def slugify(naam):
         naam = naam.replace(a, b)
     return re.sub(r"[^a-z0-9]+", "_", naam).strip("_")
 
-def haal_topscorers(browser, url, geslacht):
-    """Haalt topscorers op via Playwright."""
-    page = browser.new_page()
-    try:
-        page.goto(url, wait_until="networkidle", timeout=30000)
-        time.sleep(3)
+def parse_topscorers(tekst):
+    """
+    Parseert de hockey.nl topscorerspagina.
+    Formaat per scorer (tab-gescheiden regels):
+      SPELER \t CLUB \t VD \t SC \t SB \t GOALS
+    """
+    scorers = []
+    if "SPELER" in tekst:
+        tekst = tekst[tekst.find("SPELER"):]
 
-        # Probeer tabel te vinden
-        scorers = []
+    regels = [r.strip() for r in tekst.split("\n") if r.strip()]
+    SKIP = {"SPELER","CLUB","VD","SC","SB","GOALS"}
 
-        # Strategie 1: zoek een tabel met score/goal kolom
-        rows = page.locator("table tr").all()
-        for row in rows:
-            tekst = row.inner_text()
-            delen = tekst.strip().split("\t")
-            if len(delen) < 3:
-                delen = tekst.strip().split()
-            # Zoek rijen met een getal (doelpunten)
-            if any(d.isdigit() for d in delen):
-                # Probeer naam en doelpunten te extraheren
-                try:
-                    # Kolommen: positie, naam, club, doelpunten
-                    nums = [i for i,d in enumerate(delen) if d.isdigit()]
-                    if nums and len(delen) >= 3:
-                        doelpunten = int(delen[nums[-1]])
-                        naam = " ".join(d for d in delen if not d.isdigit() and d.strip())
-                        naam = re.sub(r"^\d+\.\s*", "", naam).strip()
-                        if naam and doelpunten > 0:
-                            scorers.append({
-                                "naam": naam,
-                                "naam_slug": slugify(naam),
-                                "doelpunten": doelpunten,
-                                "seizoen": "2025-2026",
-                            })
-                except:
-                    continue
+    i = 0
+    while i < len(regels):
+        regel = regels[i]
+        if regel in SKIP or regel.startswith("VD =") or regel.startswith("Bijgewerkt"):
+            i += 1
+            continue
+        # Elke scorer staat als 6 opeenvolgende regels: naam, club, vd, sc, sb, goals
+        if i + 5 < len(regels):
+            naam = regel
+            club = regels[i+1]
+            try:
+                vd    = int(regels[i+2])
+                sc    = int(regels[i+3])
+                sb    = int(regels[i+4])
+                goals = int(regels[i+5])
+                scorers.append({
+                    "naam":       naam,
+                    "naam_slug":  slugify(naam),
+                    "club":       club,
+                    "vd":         vd,
+                    "sc":         sc,
+                    "sb":         sb,
+                    "doelpunten": goals,
+                    "seizoen":    "2025-2026",
+                })
+                i += 6
+                continue
+            except (ValueError, IndexError):
+                pass
+        i += 1
+    return scorers
 
-        # Strategie 2: zoek op specifieke CSS selectors
-        if not scorers:
-            items = page.locator(".scorer, .topscorer, [class*='scorer'], [class*='player']").all()
-            for item in items[:50]:
-                try:
-                    tekst = item.inner_text().strip()
-                    match = re.search(r"(\d+)\s*$", tekst)
-                    if match:
-                        doelpunten = int(match.group(1))
-                        naam = tekst[:match.start()].strip()
-                        naam = re.sub(r"^\d+\.\s*", "", naam).strip()
-                        if naam and doelpunten > 0:
-                            scorers.append({
-                                "naam": naam,
-                                "naam_slug": slugify(naam),
-                                "doelpunten": doelpunten,
-                                "seizoen": "2025-2026",
-                            })
-                except:
-                    continue
-
-        # Strategie 3: dump volledige paginatekst en parseer
-        if not scorers:
-            tekst = page.locator("main, article, .content, body").first.inner_text()
-            # Zoek patronen zoals "1. Naam Naam 15" of "Naam Naam - 15"
-            for lijn in tekst.split("\n"):
-                lijn = lijn.strip()
-                match = re.match(r"^\d+[\.\)]\s+(.+?)\s+(\d+)\s*$", lijn)
-                if match:
-                    naam = match.group(1).strip()
-                    doelpunten = int(match.group(2))
-                    if naam and doelpunten > 0 and len(naam) > 3:
-                        scorers.append({
-                            "naam": naam,
-                            "naam_slug": slugify(naam),
-                            "doelpunten": doelpunten,
-                            "seizoen": "2025-2026",
-                        })
-
-        return scorers
-    except Exception as e:
-        print(f"  ⚠️  Fout bij ophalen {url}: {e}")
-        return []
-    finally:
-        page.close()
-
-def koppel_aan_spelers(scorers, geslacht):
-    """Koppelt doelpunten aan spelersprofielen in de database."""
-    if not scorers:
+def koppel_aan_index(scorers, geslacht):
+    """Koppelt doelpunten aan spelersprofielen in de centrale index."""
+    index_pad = DB_ROOT / "spelers" / "index.json"
+    if not index_pad.exists():
+        print(f"  ⚠️  index.json niet gevonden")
         return 0
 
-    # Laad alle spelersbestanden voor dit geslacht
-    speler_paden = list((DB_ROOT / "spelers" / geslacht).glob("*.json"))
+    index = json.loads(index_pad.read_text())
     gekoppeld = 0
 
-    for pad in speler_paden:
+    for speler in index.get("spelers", []):
+        if speler.get("geslacht") != geslacht:
+            continue
+        slug = slugify(speler["naam"])
+        for scorer in scorers:
+            if scorer["naam_slug"] == slug:
+                speler["doelpunten_seizoen"] = scorer["doelpunten"]
+                speler["vd"] = scorer.get("vd", 0)
+                speler["sc"] = scorer.get("sc", 0)
+                speler["sb"] = scorer.get("sb", 0)
+                gekoppeld += 1
+                break
+
+    index_pad.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+
+    # Koppel ook aan individuele club-JSON's
+    for pad in (DB_ROOT / "spelers" / geslacht).glob("*.json"):
         try:
             data = json.loads(pad.read_text())
             gewijzigd = False
             for speler in data.get("spelers", []):
                 slug = slugify(speler["naam"])
                 for scorer in scorers:
-                    if scorer["naam_slug"] == slug or \
-                       scorer["naam"].lower() in speler["naam"].lower() or \
-                       speler["naam"].lower() in scorer["naam"].lower():
+                    if scorer["naam_slug"] == slug:
                         speler["doelpunten_seizoen"] = scorer["doelpunten"]
+                        speler["vd"] = scorer.get("vd", 0)
+                        speler["sc"] = scorer.get("sc", 0)
+                        speler["sb"] = scorer.get("sb", 0)
                         gewijzigd = True
-                        gekoppeld += 1
                         break
             if gewijzigd:
                 pad.write_text(json.dumps(data, indent=2, ensure_ascii=False))
         except Exception as e:
-            print(f"  ⚠️  Fout bij {pad}: {e}")
-
-    # Update ook de centrale index
-    index_pad = DB_ROOT / "spelers" / "index.json"
-    if index_pad.exists():
-        try:
-            index = json.loads(index_pad.read_text())
-            for speler in index.get("spelers", []):
-                if speler.get("geslacht") != geslacht:
-                    continue
-                slug = slugify(speler["naam"])
-                for scorer in scorers:
-                    if scorer["naam_slug"] == slug or \
-                       scorer["naam"].lower() in speler["naam"].lower():
-                        speler["doelpunten_seizoen"] = scorer["doelpunten"]
-                        break
-            index_pad.write_text(json.dumps(index, indent=2, ensure_ascii=False))
-        except Exception as e:
-            print(f"  ⚠️  Fout bij index: {e}")
+            print(f"  ⚠️  Fout bij {pad.name}: {e}")
 
     return gekoppeld
 
-def sla_topscorers_op(scorers, geslacht):
-    """Slaat topscorers op als apart JSON-bestand."""
-    pad = DB_ROOT / "competities" / geslacht / "topscorers.json"
-    pad.write_text(json.dumps({
-        "geslacht": geslacht,
-        "seizoen": "2025-2026",
-        "bron": URLS[geslacht],
-        "topscorers": scorers,
-    }, indent=2, ensure_ascii=False))
-    print(f"  ✅ {len(scorers)} topscorers opgeslagen → {pad.relative_to(DB_ROOT)}")
-
 def run():
+    from datetime import datetime
+    vandaag = datetime.now().strftime("%Y-%m-%d")
+
     print("🏒 Topscorers ophalen van hockey.nl...\n")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         for geslacht, url in URLS.items():
             print(f"📥 {geslacht.capitalize()} topscorers...")
-            scorers = haal_topscorers(browser, url, geslacht)
-            if scorers:
-                sla_topscorers_op(scorers, geslacht)
-                gekoppeld = koppel_aan_spelers(scorers, geslacht)
-                print(f"  🔗 {gekoppeld} spelers gekoppeld")
-            else:
-                print(f"  ⚠️  Geen topscorers gevonden — pagina mogelijk JS-rendered")
-                print(f"      Probeer handmatig: {url}")
+            try:
+                page = browser.new_page()
+                page.goto(url, wait_until="networkidle", timeout=30000)
+                time.sleep(4)
+                tekst = page.inner_text("body")
+                page.close()
+
+                scorers = parse_topscorers(tekst)
+                print(f"  {len(scorers)} scorers gevonden")
+                if scorers:
+                    for s in scorers[:3]:
+                        print(f"    {s['naam']} ({s['club']}): {s['doelpunten']} goals")
+
+                    # Opslaan als topscorers.json
+                    pad = DB_ROOT / "competities" / geslacht / "topscorers.json"
+                    pad.write_text(json.dumps({
+                        "geslacht":    geslacht,
+                        "seizoen":     "2025-2026",
+                        "bijgewerkt":  vandaag,
+                        "topscorers":  scorers,
+                    }, indent=2, ensure_ascii=False))
+                    print(f"  💾 Opgeslagen → competities/{geslacht}/topscorers.json")
+
+                    gekoppeld = koppel_aan_index(scorers, geslacht)
+                    print(f"  🔗 {gekoppeld} spelers gekoppeld")
+                else:
+                    print(f"  ⚠️  Geen scorers geparseerd — controleer de pagina")
+
+            except Exception as e:
+                print(f"  ❌ Fout: {e}")
+
         browser.close()
     print("\n✅ Klaar!")
 
