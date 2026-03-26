@@ -764,3 +764,83 @@ Geef ALLEEN een geldig JSON-object terug, geen uitleg, geen markdown:
 }
 
 
+function App() {
+  const [geslacht,setGeslacht]=useState("heren");
+  const [page,setPage]=useState("dashboard");
+  const [pageId,setPageId]=useState(null);
+  const [stand,setStand]=useState([]);
+  const [programma,setProgramma]=useState([]);
+  const [nieuws,setNieuws]=useState([]);
+  const [spelers,setSpelers]=useState([]);
+  const [loading,setLoading]=useState(true);
+
+  useEffect(()=>{
+    setLoading(true);
+    const nieuwsBronnen = geslacht === "heren"
+      ? ["nieuws/heren.json","nieuws/oranje-heren.json","nieuws/jong-oranje-heren.json"]
+      : ["nieuws/dames.json","nieuws/oranje-dames.json","nieuws/jong-oranje-dames.json"];
+    Promise.all([
+      fetch(`competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
+      ...nieuwsBronnen.map(url=>fetch(url).then(r=>r.json()).catch(()=>null)),
+    ]).then(([sd,pd,...nieuwsFeeds])=>{
+      const sl=sd?.stand||[];
+      if(sl.length>0&&sd?.bijgewerkt) sl[0]._bw=sd.bijgewerkt.slice(0,10);
+      setStand(sl);
+      setProgramma(pd?.wedstrijden||[]);
+      const alleArtikelen=[];
+      const gezieneTitels=new Set();
+      for(const feed of nieuwsFeeds){
+        const art=feed?.artikelen||feed?.items||[];
+        for(const a of art){
+          const titel=a.titel||a.title||"";
+          if(titel&&!gezieneTitels.has(titel)){gezieneTitels.add(titel);alleArtikelen.push(a);}
+        }
+      }
+      alleArtikelen.sort((a,b)=>new Date(b.datum||b.date||0)-new Date(a.datum||a.date||0));
+      setNieuws(alleArtikelen);
+      setLoading(false);
+    });
+  },[geslacht]);
+
+  useEffect(()=>{
+    fetch("spelers/index.json").then(r=>r.json())
+      .then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht)))
+      .catch(()=>setSpelers([]));
+  },[geslacht]);
+
+  const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
+  const isActive=id=>page===id||(page==="speler"&&id==="spelers");
+  const showToggle=["dashboard","spelers"].includes(page);
+
+  return (
+    <>
+      <style>{CSS}</style>
+      <header className="hdr">
+        <button className="logo" onClick={()=>nav("dashboard")}>🏑 Hockey DB</button>
+        <nav className="nav">
+          {[["dashboard","Stand"],["spelers","Spelers"],["invoer","+ Invoer"]].map(([id,lbl])=>(
+            <button key={id} className={`nb ${isActive(id)?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
+          ))}
+        </nav>
+        {showToggle
+          ?<div className="gt">
+            <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
+            <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
+          </div>
+          :<div style={{width:120}}/>}
+      </header>
+      <Breadcrumb page={page} pageId={pageId} nav={nav}/>
+      {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
+      {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
+      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
+      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav}/>}
+      {page==="invoer"&&<InvoerPagina geslacht={geslacht} programma={programma} spelers={spelers}/>}
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
