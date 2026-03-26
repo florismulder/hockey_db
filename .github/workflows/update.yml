@@ -2,13 +2,16 @@ name: Hockey DB updater
 
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Maandag 08:00 UTC - volledige update
-    - cron: '0 8 * * 5'  # Vrijdag 08:00 UTC - alleen nieuws
+    - cron: '0 7 * * *'    # Elke dag 07:00 UTC — nieuws ophalen
+    - cron: '0 8 * * 1'    # Maandag 08:00 UTC — volledige update
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,12 +25,12 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Database updaten (maandag - alles)
+      - name: Volledige update (maandag of handmatig)
         if: github.event.schedule == '0 8 * * 1' || github.event_name == 'workflow_dispatch'
         run: python scripts/update_db.py || true
 
-      - name: Nieuws updaten (vrijdag - alleen RSS)
-        if: github.event.schedule == '0 8 * * 5'
+      - name: Alleen nieuws (dagelijks)
+        if: github.event.schedule == '0 7 * * *'
         run: python scripts/update_db.py --rss || true
 
       - name: Wijzigingen committen
