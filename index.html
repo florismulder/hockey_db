@@ -511,7 +511,33 @@ function InvoerPagina({geslacht, spelers}) {
         body: JSON.stringify({
           model:"claude-sonnet-4-20250514",
           max_tokens:1500,
-          system:"Je analyseert hockey-artikelen over de Tulp Hoofdklasse. Bekende spelers: "+spelersLijst+". Geef ALLEEN een geldig JSON-object terug zonder markdown. Formaat: {wedstrijden:[{thuis,uit,score_thuis,score_uit,datum,scorers:[{naam,club,minuut,type}]}],highlights:[],spelers_vermeld:[]}",
+          system:`Je analyseert hockey-invoer over de Tulp Hoofdklasse. Dit kan een artikel zijn OF een wedstrijdformulier/match center tekst.
+
+Bij een wedstrijdformulier herken je dit formaat:
+- Teamnaam, datum, tijd, score
+- Events zoals "Doelpunt", "Groene kaart", "Gele kaart", "Rode kaart" + naam + minuut
+- "start wedstrijd", "einde 1ste kwart" etc. als structuuraanduiding
+
+Bepaal de club van elke scorer op basis van de teamnamen en de volgorde van events.
+Bekende spelers: ${spelersLijst}
+
+Geef ALLEEN een geldig JSON-object terug, geen uitleg, geen markdown. Formaat:
+{
+  "wedstrijden": [{
+    "thuis": "Club",
+    "uit": "Club", 
+    "score_thuis": 1,
+    "score_uit": 3,
+    "datum": "2026-03-22",
+    "tijdstip": "15:00",
+    "locatie": "Naam accommodatie",
+    "wedstrijdnummer": "1891257",
+    "scorers": [{"naam": "Naam", "club": "Club", "minuut": 25, "type": "veld"}],
+    "kaarten": [{"naam": "Naam", "club": "Club", "minuut": 12, "type": "groen"}]
+  }],
+  "highlights": ["Feit 1", "Feit 2"],
+  "spelers_vermeld": ["Naam1"]
+}`,
           messages:[{role:"user", content:invoer}]
         })
       });
@@ -549,14 +575,27 @@ function InvoerPagina({geslacht, spelers}) {
                   </div>
                   {w.datum&&<div style={{fontSize:11,color:"var(--muted)",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>{w.datum}</div>}
                   {w.scorers?.length>0&&(
-                    <div style={{borderTop:"1px solid var(--border)",paddingTop:10}}>
-                      <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>Scorers</div>
+                    <div style={{borderTop:"1px solid var(--border)",paddingTop:10,marginTop:8}}>
+                      <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>⚽ Doelpunten</div>
                       {w.scorers.map((s,j)=>(
-                        <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
-                          {s.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32}}>{s.minuut}'</span>}
+                        <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"6px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
+                          {s.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32,flexShrink:0}}>{s.minuut}'</span>}
                           <span style={{fontWeight:500}}>{s.naam}</span>
-                          <span style={{color:"var(--muted)",fontSize:11}}>{s.club}</span>
-                          {s.type&&<span style={{fontSize:10,color:"var(--muted)",marginLeft:"auto",textTransform:"uppercase"}}>{s.type}</span>}
+                          <span style={{color:"var(--muted)",fontSize:11,marginLeft:6}}>{s.club}</span>
+                          {s.type&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,marginLeft:"auto",textTransform:"uppercase",letterSpacing:".4px"}}>{s.type}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {w.kaarten?.length>0&&(
+                    <div style={{borderTop:"1px solid var(--border)",paddingTop:10,marginTop:8}}>
+                      <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>🟨 Kaarten</div>
+                      {w.kaarten.map((k,j)=>(
+                        <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
+                          {k.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--muted)",minWidth:32,flexShrink:0}}>{k.minuut}'</span>}
+                          <span style={{fontSize:14}}>{k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}</span>
+                          <span style={{fontWeight:500}}>{k.naam}</span>
+                          <span style={{color:"var(--muted)",fontSize:11,marginLeft:6}}>{k.club}</span>
                         </div>
                       ))}
                     </div>
