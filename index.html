@@ -168,11 +168,19 @@ a{color:inherit;text-decoration:none}
 @keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 `;
 
-function PosBadge({n}) {
-  if(n===1) return <span className="pb p1">{n}</span>;
-  if(n===2) return <span className="pb p2">{n}</span>;
-  if(n===3) return <span className="pb p3">{n}</span>;
-  return <span style={{fontSize:13,color:"var(--muted)",fontWeight:500}}>{n}</span>;
+function PosBadge({n, zone}) {
+  // Kleur op basis van zone
+  const style = zone==="playoff"
+    ? {background:"#166534",color:"#4ade80",border:"1px solid #166534"}
+    : zone==="playout"
+    ? {background:"#713f12",color:"#facc15",border:"1px solid #713f12"}
+    : zone==="degradatie"
+    ? {background:"#7f1d1d",color:"#f87171",border:"1px solid #7f1d1d"}
+    : n===1 ? {background:"#c9a227",color:"#1a1a1a"}
+    : n===2 ? {background:"#4a4a46",color:"#ccc"}
+    : n===3 ? {background:"#3a2e20",color:"#c9a27a"}
+    : {background:"none",border:"none",color:"var(--muted)"};
+  return <span className="pb" style={style}>{n}</span>;
 }
 
 function Breadcrumb({page,pageId,nav}) {
@@ -197,7 +205,25 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   if(loading) return <div className="loading">Data laden…</div>;
   const bijgewerkt = stand[0]?._bw||"";
   const komend = programma.filter(isKomend).slice(0,12);
-  const gespeeld = programma.filter(isGespeeld).reverse().slice(0,12);
+  // Groepeer gespeelde wedstrijden per datum/ronde, nieuwste eerst
+  const gespeeldGroepen = useMemo(() => {
+    const gespeeldLijst = programma.filter(isGespeeld);
+    // Groepeer op datum
+    const groepen = {};
+    gespeeldLijst.forEach(w => {
+      const key = w.datum || "onbekend";
+      if (!groepen[key]) groepen[key] = [];
+      groepen[key].push(w);
+    });
+    // Sorteer groepen nieuwste eerst
+    return Object.entries(groepen)
+      .map(([datum, wedstrijden]) => ({datum, wedstrijden}))
+      .sort((a,b) => {
+        const da = parseDatum(a.datum)||new Date(0);
+        const db = parseDatum(b.datum)||new Date(0);
+        return db-da;
+      });
+  }, [programma]);
 
   return (
     <div className="fade">
@@ -232,7 +258,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                       const zClass = zone==="playoff"?"zpo":zone==="playout"?"zpl":zone==="degradatie"?"zde":"";
                       return (
                         <tr key={r.club} className={zClass}>
-                          <td><PosBadge n={r.positie}/></td>
+                          <td><PosBadge n={r.positie} zone={zone}/></td>
                           <td className="cl">{r.club}</td>
                           <td>{r.gespeeld}</td>
                           <td>{r.gewonnen}</td>
@@ -260,15 +286,23 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
             <div className="tc-links">
               <div className="sec">
                 <div className="sec-hdr"><div className="sec-title">Uitslagen</div></div>
-                {gespeeld.length>0?(
-                  <div className="wl">
-                    {gespeeld.map((w,i)=>(
-                      <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                        <span className="wd">{formatDatum(w.datum)}</span>
-                        <div className="wh">{w.thuis}</div>
-                        <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                        <div className="wu">{w.uit}</div>
-                        <span className="wa">›</span>
+                {gespeeldGroepen.length>0?(
+                  <div>
+                    {gespeeldGroepen.map((groep,gi)=>(
+                      <div key={gi} style={{marginBottom:16}}>
+                        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>
+                          {formatDatum(groep.datum)}
+                        </div>
+                        <div className="wl">
+                          {groep.wedstrijden.map((w,i)=>(
+                            <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                              <div className="wh">{w.thuis}</div>
+                              <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                              <div className="wu">{w.uit}</div>
+                              <span className="wa">›</span>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </div>
