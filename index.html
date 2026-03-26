@@ -40,6 +40,11 @@ function formatDatum(str) {
   return d.toLocaleDateString("nl-NL",{day:"numeric",month:"short"});
 }
 
+function stripTeam(naam) {
+  if (!naam) return "";
+  return naam.replace(/\s+[HhDd]\d+$/,"").trim();
+}
+
 const VANDAAG = new Date(); VANDAAG.setHours(0,0,0,0);
 const isKomend = w => { if(w.gespeeld===true) return false; if(w.gespeeld===false) return true; const d=parseDatum(w.datum||""); return !d||d>=VANDAAG; };
 const isGespeeld = w => !isKomend(w);
@@ -47,15 +52,15 @@ const isGespeeld = w => !isKomend(w);
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#1a1a1a;--surface:#262624;--surface2:#2f2f2d;--border:#3a3a37;--border2:#4a4a46;
-  --text:#ececec;--muted:#8a8a85;--accent:#d4691e;--accent-light:#3a2416;
-  --green:#4caf76;--green-light:#1a3327;--red:#e05252;--orange:#d4691e;--orange-light:#3a2416;
-  --playoff-bg:#1a2e1a;--playout-bg:#2a2a18;--relegate-bg:#2e1a1a;
+  --bg:#f9f8f5;--surface:#ffffff;--surface2:#f1f0ed;--border:#e5e3de;--border2:#d0cdc6;
+  --text:#1a1916;--muted:#7a7672;--accent:#c4621a;--accent-light:#fdf0e8;
+  --green:#1a6b3a;--green-light:#e8f5ed;--red:#c0392b;--orange:#c4621a;--orange-light:#fdf0e8;
+  --playoff-bg:#edf7f0;--playout-bg:#fefbe8;--relegate-bg:#fdf0ee;
 }
-body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;font-size:14px;line-height:1.5}
+body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
 button{cursor:pointer;font-family:inherit}
 a{color:inherit;text-decoration:none}
-.hdr{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.hdr{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .logo{font-size:16px;font-weight:700;color:var(--accent);background:none;border:none;display:flex;align-items:center;gap:8px}
 .nav{display:flex;gap:2px}
 .nb{padding:6px 14px;background:none;border:none;color:var(--muted);font-size:13px;font-weight:500;border-radius:6px;transition:all .15s}
@@ -107,7 +112,7 @@ a{color:inherit;text-decoration:none}
 .wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
 .wh{text-align:right;font-weight:500;font-size:13px}
 .wu{text-align:left;font-weight:500;font-size:13px}
-.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:3px 10px;text-align:center;min-width:60px;white-space:nowrap}
+.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 10px;text-align:center;min-width:60px;white-space:nowrap}
 .ws.k{color:var(--muted);font-size:12px}
 .wa{color:var(--muted);font-size:12px;text-align:center}
 .ph{padding:14px 18px 12px;border-bottom:1px solid var(--border)}
@@ -121,7 +126,7 @@ a{color:inherit;text-decoration:none}
 .ntt{font-size:12px;font-weight:500;line-height:1.4}
 .zw{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
 .zi{flex:1;min-width:180px;background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;padding:8px 12px;border-radius:7px;outline:none;transition:border-color .15s}
-.zi:focus{border-color:var(--accent);background:white}
+.zi:focus{border-color:var(--accent);background:var(--surface)}
 .zi::placeholder{color:var(--muted)}
 .zs{background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:12px;padding:8px 10px;border-radius:7px;outline:none;cursor:pointer}
 .sc{font-size:12px;color:var(--muted);margin-bottom:14px}
@@ -134,15 +139,15 @@ a{color:inherit;text-decoration:none}
 .sr{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;color:var(--accent)}
 .sb{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
 .sba{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;padding:2px 7px;border-radius:4px}
-.sbk{background:#1a2a3a;color:#60a5fa}
+.sbk{background:#dbeafe;color:#1e40af}
 .sbv{background:var(--orange-light);color:var(--orange)}
-.dh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(to bottom,var(--surface2),var(--bg))}
+.dh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(to bottom,var(--surface2),var(--surface))}
 .dr{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-bottom:4px}
 .dn2{font-size:28px;font-weight:700;letter-spacing:-.5px;line-height:1.1}
 .dm{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-.dc{font-size:12px;font-weight:500;padding:4px 10px;border-radius:5px;background:white;border:1px solid var(--border);color:var(--muted)}
+.dc{font-size:12px;font-weight:500;padding:4px 10px;border-radius:5px;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
 .dc.ac{background:var(--accent-light);border-color:#93c5fd;color:var(--accent)}
-.dc.ke{background:#1a2a3a;border-color:#3b6ea0;color:#60a5fa}
+.dc.ke{background:#dbeafe;border-color:#93c5fd;color:#1e40af}
 .dc.av{background:var(--orange-light);border-color:#fcd34d;color:var(--orange)}
 .db{padding:20px 24px}
 .ds{font-size:13px;font-weight:700;margin-bottom:10px;margin-top:20px}
@@ -171,15 +176,15 @@ a{color:inherit;text-decoration:none}
 function PosBadge({n, zone}) {
   // Kleur op basis van zone
   const style = zone==="playoff"
-    ? {background:"#166534",color:"#4ade80",border:"1px solid #166534"}
+    ? {background:"#166534",color:"#ffffff",border:"none"}
     : zone==="playout"
-    ? {background:"#713f12",color:"#facc15",border:"1px solid #713f12"}
+    ? {background:"#854d0e",color:"#ffffff",border:"none"}
     : zone==="degradatie"
-    ? {background:"#7f1d1d",color:"#f87171",border:"1px solid #7f1d1d"}
-    : n===1 ? {background:"#c9a227",color:"#1a1a1a"}
-    : n===2 ? {background:"#4a4a46",color:"#ccc"}
-    : n===3 ? {background:"#3a2e20",color:"#c9a27a"}
-    : {background:"none",border:"none",color:"var(--muted)"};
+    ? {background:"#991b1b",color:"#ffffff",border:"none"}
+    : n===1 ? {background:"#b7791f",color:"#ffffff",border:"none"}
+    : n===2 ? {background:"#6b7280",color:"#ffffff",border:"none"}
+    : n===3 ? {background:"#92400e",color:"#ffffff",border:"none"}
+    : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
   return <span className="pb" style={style}>{n}</span>;
 }
 
@@ -296,9 +301,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         <div className="wl">
                           {groep.wedstrijden.map((w,i)=>(
                             <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                              <div className="wh">{w.thuis}</div>
+                              <div className="wh">{stripTeam(w.thuis)}</div>
                               <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                              <div className="wu">{w.uit}</div>
+                              <div className="wu">{stripTeam(w.uit)}</div>
                               <span className="wa">›</span>
                             </div>
                           ))}
@@ -317,9 +322,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                     {komend.map((w,i)=>(
                       <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
                         <span className="wd">{formatDatum(w.datum)}</span>
-                        <div className="wh">{w.thuis}</div>
+                        <div className="wh">{stripTeam(w.thuis)}</div>
                         <div className="ws k">{w.tijdstip||"–"}</div>
-                        <div className="wu">{w.uit}</div>
+                        <div className="wu">{stripTeam(w.uit)}</div>
                         <span className="wa">›</span>
                       </div>
                     ))}
