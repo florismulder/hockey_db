@@ -494,6 +494,106 @@ function WedstrijdDetail({wedstrijd}) {
   );
 }
 
+function InvoerPagina({geslacht, spelers}) {
+  const [invoer, setInvoer] = React.useState("");
+  const [resultaat, setResultaat] = React.useState(null);
+  const [laden, setLaden] = React.useState(false);
+  const [fout, setFout] = React.useState("");
+
+  const analyseer = async () => {
+    if (!invoer.trim()) return;
+    setLaden(true); setFout(""); setResultaat(null);
+    const spelersLijst = spelers.slice(0,150).map(s=>s.naam).join(", ");
+    try {
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({
+          model:"claude-sonnet-4-20250514",
+          max_tokens:1500,
+          system:"Je analyseert hockey-artikelen over de Tulp Hoofdklasse. Bekende spelers: "+spelersLijst+". Geef ALLEEN een geldig JSON-object terug zonder markdown. Formaat: {wedstrijden:[{thuis,uit,score_thuis,score_uit,datum,scorers:[{naam,club,minuut,type}]}],highlights:[],spelers_vermeld:[]}",
+          messages:[{role:"user", content:invoer}]
+        })
+      });
+      const data = await resp.json();
+      const tekst = (data.content?.[0]?.text||"").replace(/```json|```/g,"").trim();
+      setResultaat(JSON.parse(tekst));
+    } catch(e) { setFout("Analyse mislukt: "+e.message); }
+    setLaden(false);
+  };
+
+  return (
+    <div className="fade" style={{maxWidth:860,margin:"0 auto",padding:24}}>
+      <div style={{fontSize:20,fontWeight:700,marginBottom:6}}>Wedstrijdverslag invoer</div>
+      <div style={{fontSize:13,color:"var(--muted)",marginBottom:20}}>Plak een artikel van hockey.nl — Claude extraheert uitslagen, scorers en highlights automatisch.</div>
+      <textarea style={{width:"100%",minHeight:220,background:"var(--surface)",border:"1px solid var(--border)",color:"var(--text)",fontFamily:"'Inter',sans-serif",fontSize:13,padding:14,borderRadius:8,outline:"none",resize:"vertical",lineHeight:1.6}}
+        value={invoer} onChange={e=>setInvoer(e.target.value)} placeholder="Plak hier een wedstrijdverslag…"/>
+      <div style={{display:"flex",gap:10,marginTop:12}}>
+        <button onClick={analyseer} disabled={laden||!invoer.trim()} style={{background:"var(--accent)",color:"white",border:"none",padding:"10px 22px",borderRadius:7,fontSize:13,fontWeight:600,opacity:laden||!invoer.trim()?.5:1,cursor:laden||!invoer.trim()?"not-allowed":"pointer"}}>
+          {laden?"Analyseren…":"Analyseer met Claude"}
+        </button>
+        {invoer&&<button onClick={()=>{setInvoer("");setResultaat(null);}} style={{background:"none",border:"1px solid var(--border)",color:"var(--muted)",padding:"10px 16px",borderRadius:7,fontSize:13,cursor:"pointer"}}>Wissen</button>}
+      </div>
+      {fout&&<div style={{marginTop:16,padding:12,background:"#fef2f2",border:"1px solid #fecaca",borderRadius:8,color:"#991b1b",fontSize:13}}>{fout}</div>}
+      {resultaat&&(
+        <div style={{marginTop:28}}>
+          {resultaat.wedstrijden?.length>0&&(
+            <div style={{marginBottom:22}}>
+              <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Wedstrijden</div>
+              {resultaat.wedstrijden.map((w,i)=>(
+                <div key={i} style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:10,padding:16,marginBottom:10}}>
+                  <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:8}}>
+                    <div style={{flex:1,textAlign:"right",fontWeight:600,fontSize:15}}>{w.thuis}</div>
+                    <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:26,fontWeight:700,color:"var(--accent)",minWidth:80,textAlign:"center"}}>{w.score_thuis??"–"} – {w.score_uit??"–"}</div>
+                    <div style={{flex:1,fontWeight:600,fontSize:15}}>{w.uit}</div>
+                  </div>
+                  {w.datum&&<div style={{fontSize:11,color:"var(--muted)",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>{w.datum}</div>}
+                  {w.scorers?.length>0&&(
+                    <div style={{borderTop:"1px solid var(--border)",paddingTop:10}}>
+                      <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>Scorers</div>
+                      {w.scorers.map((s,j)=>(
+                        <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
+                          {s.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32}}>{s.minuut}'</span>}
+                          <span style={{fontWeight:500}}>{s.naam}</span>
+                          <span style={{color:"var(--muted)",fontSize:11}}>{s.club}</span>
+                          {s.type&&<span style={{fontSize:10,color:"var(--muted)",marginLeft:"auto",textTransform:"uppercase"}}>{s.type}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+          {resultaat.highlights?.length>0&&(
+            <div style={{marginBottom:22}}>
+              <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>Highlights</div>
+              {resultaat.highlights.map((h,i)=>(
+                <div key={i} style={{display:"flex",gap:10,padding:"8px 12px",background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:7,marginBottom:6,fontSize:13}}>
+                  <span style={{color:"var(--accent)"}}>→</span><span>{h}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          {resultaat.spelers_vermeld?.length>0&&(
+            <div>
+              <div style={{fontSize:13,fontWeight:700,marginBottom:8}}>Vermelde spelers</div>
+              <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
+                {resultaat.spelers_vermeld.map((s,i)=>(
+                  <span key={i} style={{fontSize:12,padding:"3px 10px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:5,fontWeight:500}}>{s}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          <div style={{marginTop:20,padding:12,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,fontSize:12,color:"var(--green)"}}>
+            ✅ Analyse klaar. Kopieer de data naar de juiste JSON-bestanden in de repo, of gebruik de topscorer-update functie.
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
   const [page,setPage]=useState("dashboard");
@@ -553,7 +653,7 @@ function App() {
       <header className="hdr">
         <button className="logo" onClick={()=>nav("dashboard")}>🏑 Hockey DB</button>
         <nav className="nav">
-          {[["dashboard","Stand"],["spelers","Spelers"]].map(([id,lbl])=>(
+          {[["dashboard","Stand"],["spelers","Spelers"],["invoer","+ Invoer"]].map(([id,lbl])=>(
             <button key={id} className={`nb ${isActive(id)?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
           ))}
         </nav>
@@ -569,6 +669,7 @@ function App() {
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav}/>}
+      {page==="invoer"&&<InvoerPagina geslacht={geslacht} programma={programma} spelers={spelers}/>}
     </>
   );
 }
