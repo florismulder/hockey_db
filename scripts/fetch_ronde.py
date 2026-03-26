@@ -186,10 +186,12 @@ def druk_af(wedstrijd, idx, totaal):
     if wedstrijd.get("locatie"):
         print(f"         📍 {wedstrijd['locatie']}")
     if wedstrijd.get("scorers"):
-        print(f"         ⚽ Scorers: {', '.join(f\"{s['naam']} {s['minuut']}\'\" for s in wedstrijd['scorers'])}")
+        sc_str = ", ".join(s["naam"] + " " + str(s["minuut"]) + "'" for s in wedstrijd["scorers"])
+        print(f"         ⚽ Scorers: {sc_str}")
     if wedstrijd.get("kaarten"):
         sym = {"groen":"🟩","geel":"🟨","rood":"🟥"}
-        print(f"         🟨 Kaarten: {', '.join(f\"{sym.get(k['type'],'?')}{k['naam']}\" for k in wedstrijd['kaarten'])}")
+        k_str = ", ".join(sym.get(k["type"],"?") + k["naam"] for k in wedstrijd["kaarten"])
+        print(f"         🟨 Kaarten: {k_str}")
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
@@ -276,6 +278,7 @@ if __name__ == "__main__":
 
         # Git commit tip
         print(f"\nVerget niet te committen:")
-        print(f"  git add competities/ && git commit -m 'data: ronde {resultaten[0].get(\"datum_tekst\",\"\")} toegevoegd' && git push")
+        datum_str = resultaten[0].get("datum_tekst","") if resultaten else ""
+        print(f"  git add competities/ && git commit -m 'data: ronde " + datum_str + " toegevoegd' && git push")
     else:
         print("Niet opgeslagen.")
