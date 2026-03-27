@@ -578,239 +578,248 @@ function WedstrijdDetail({wedstrijd}) {
 }
 
 function InvoerPagina({geslacht, programma, spelers}) {
-  const [tabbladen, setTabbladen] = React.useState([{id:1, tekst:"", titel:"Wedstrijd 1"}]);
-  const [actief, setActief] = React.useState(1);
-  const [resultaten, setResultaten] = React.useState({});
-  const [laden, setLaden] = React.useState({});
-  const [fout, setFout] = React.useState({});
-  const [opgeslagen, setOpgeslagen] = React.useState({});
+  const {useState, useMemo} = React;
+  const [tabbladen, setTabbladen] = useState([{id:1, tekst:"", titel:"Wedstrijd 1"}]);
+  const [actief, setActief] = useState(1);
+  const [resultaten, setResultaten] = useState({});
+  const [laden, setLaden] = useState({});
+  const [fout, setFout] = useState({});
+  const [afbeeldingen, setAfbeeldingen] = useState({});
 
-  const spelersLijst = React.useMemo(() => spelers.slice(0,150).map(s=>s.naam).join(", "), [spelers]);
+  const spelersLijst = useMemo(() => spelers.slice(0,150).map(s=>s.naam).join(", "), [spelers]);
 
-  const SYSTEM = `Je analyseert hockey-invoer over de Tulp Hoofdklasse. Dit kan een artikel zijn OF een wedstrijdformulier/match center tekst.
-
-Bij een wedstrijdformulier herken je dit formaat:
-- Teamnaam, datum, tijd, score
-- Events: "Doelpunt", "Groene kaart", "Gele kaart", "Rode kaart" + naam + minuut
-- "start wedstrijd", "einde 1ste kwart" etc.
-
-Bepaal de club van elke scorer op basis van de teamnamen en de spelerslijst.
-Bekende spelers: ${spelersLijst}
-
-Geef ALLEEN een geldig JSON-object terug, geen uitleg, geen markdown:
-{
-  "wedstrijden": [{
-    "thuis": "Club", "uit": "Club",
-    "score_thuis": 1, "score_uit": 3,
-    "datum": "2026-03-22", "tijdstip": "15:00",
-    "locatie": "Naam accommodatie",
-    "wedstrijdnummer": "1891257",
-    "scorers": [{"naam": "Naam", "club": "Club", "minuut": 25, "type": "veld"}],
-    "kaarten": [{"naam": "Naam", "club": "Club", "minuut": 12, "type": "groen"}]
-  }],
-  "highlights": [], "spelers_vermeld": []
-}`;
+  const SYSTEM = "Je analyseert hockey-invoer over de Tulp Hoofdklasse. Dit kan tekst, een artikel OF een screenshot zijn.\n\nBij een wedstrijdformulier/match center herken je: teamnamen, datum, tijd, score, events (Doelpunt/Groene kaart/Gele kaart + naam + minuut).\nBepaal de club van elke scorer op basis van de teamnamen.\nBekende spelers: " + spelersLijst + "\n\nGeef ALLEEN een geldig JSON-object terug:\n{\"wedstrijden\":[{\"thuis\":\"Club\",\"uit\":\"Club\",\"score_thuis\":1,\"score_uit\":3,\"datum\":\"2026-03-22\",\"tijdstip\":\"15:00\",\"locatie\":\"Naam\",\"wedstrijdnummer\":\"1891257\",\"scorers\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":25,\"type\":\"veld\"}],\"kaarten\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":12,\"type\":\"groen\"}]}],\"highlights\":[],\"spelers_vermeld\":[]}";
 
   const voegToe = () => {
-    const nieuwId = Date.now();
-    setTabbladen(t => [...t, {id:nieuwId, tekst:"", titel:`Wedstrijd ${t.length+1}`}]);
-    setActief(nieuwId);
+    const id = Date.now();
+    setTabbladen(t => [...t, {id, tekst:"", titel:"Wedstrijd "+(t.length+1)}]);
+    setActief(id);
   };
-
   const verwijder = (id) => {
-    if (tabbladen.length === 1) return;
-    const nieuweTabbladen = tabbladen.filter(t => t.id !== id);
-    setTabbladen(nieuweTabbladen);
-    if (actief === id) setActief(nieuweTabbladen[0].id);
+    if (tabbladen.length===1) return;
+    const nt = tabbladen.filter(t=>t.id!==id);
+    setTabbladen(nt);
+    if (actief===id) setActief(nt[0].id);
   };
+  const updateTekst = (id, tekst) => setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,tekst}:tab));
+  const voegAfbToe = (id, file) => {
+    const r = new FileReader();
+    r.onload = e => {
+      const base64 = e.target.result.split(",")[1];
+      setAfbeeldingen(a=>({...a,[id]:{base64,mediaType:file.type||"image/jpeg"}}));
+    };
+    r.readAsDataURL(file);
+  };
+  const verwijderAfb = (id) => setAfbeeldingen(a=>{const n={...a};delete n[id];return n;});
 
-  const updateTekst = (id, tekst) => {
-    setTabbladen(t => t.map(tab => tab.id === id ? {...tab, tekst} : tab));
-  };
+  const isMatchUrl = (t) => /hockey\.nl\/match-center/i.test(t);
+  const isArtikelUrl = (t) => /^https?:\/\/[^\s]+/i.test(t) && !isMatchUrl(t);
 
   const analyseer = async (id) => {
-    const tab = tabbladen.find(t => t.id === id);
-    if (!tab?.tekst.trim()) return;
-    setLaden(l => ({...l, [id]: true}));
-    setFout(f => ({...f, [id]: ""}));
+    const tab = tabbladen.find(t=>t.id===id);
+    const afb = afbeeldingen[id];
+    if (!tab?.tekst.trim() && !afb) return;
+    const invoer = tab?.tekst.trim()||"";
+
+    if (isMatchUrl(invoer)) {
+      setFout(f=>({...f,[id]:"Match center is JavaScript-rendered.\n\nGebruik het lokale script:\n  python3 scripts/fetch_ronde.py "+invoer+"\n\nOf kopieer de paginatekst en plak die hier."}));
+      return;
+    }
+
+    setLaden(l=>({...l,[id]:true}));
+    setFout(f=>({...f,[id]:""}));
+
     try {
-      const resp = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 2000,
-          system: SYSTEM,
-          messages: [{role: "user", content: tab.tekst}]
-        })
+      let messages;
+      if (afb) {
+        messages = [{role:"user", content:[
+          {type:"image", source:{type:"base64", media_type:afb.mediaType, data:afb.base64}},
+          {type:"text", text: invoer ? "Analyseer deze hockey wedstrijd afbeelding. Extra context: "+invoer : "Analyseer deze hockey afbeelding. Extraheer wedstrijdinfo, scorers en kaarten."}
+        ]}];
+      } else if (isArtikelUrl(invoer)) {
+        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,status:"ophalen"}:tab));
+        let tekst = invoer;
+        try {
+          const proxy = "https://api.allorigins.win/get?url="+encodeURIComponent(invoer);
+          const pr = await fetch(proxy);
+          const pd = await pr.json();
+          tekst = pd.contents
+            .replace(/<script[\s\S]*?<\/script>/gi,"")
+            .replace(/<style[\s\S]*?<\/style>/gi,"")
+            .replace(/<[^>]+>/g," ")
+            .replace(/\s+/g," ")
+            .slice(0,8000);
+        } catch(e) {}
+        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,status:""}:tab));
+        messages = [{role:"user", content:tekst}];
+      } else {
+        messages = [{role:"user", content:invoer}];
+      }
+
+      const resp = await fetch("https://api.anthropic.com/v1/messages",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:2000,system:SYSTEM,messages})
       });
       const data = await resp.json();
-      const tekst = (data.content?.[0]?.text || "").replace(/```json|```/g, "").trim();
-      const parsed = JSON.parse(tekst);
-      setResultaten(r => ({...r, [id]: parsed}));
-      // Update tabbladtitel met wedstrijdnaam
+      const txt = (data.content?.[0]?.text||"").replace(/```json|```/g,"").trim();
+      const parsed = JSON.parse(txt);
+      setResultaten(r=>({...r,[id]:parsed}));
       if (parsed.wedstrijden?.[0]) {
         const w = parsed.wedstrijden[0];
-        const titel = `${w.thuis} ${w.score_thuis??""}-${w.score_uit??""} ${w.uit}`;
-        setTabbladen(t => t.map(tab => tab.id === id ? {...tab, titel} : tab));
+        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,titel:`${w.thuis} ${w.score_thuis??""}-${w.score_uit??""} ${w.uit}`}:tab));
       }
-    } catch(e) {
-      setFout(f => ({...f, [id]: "Analyse mislukt: " + e.message}));
-    }
-    setLaden(l => ({...l, [id]: false}));
+    } catch(e) { setFout(f=>({...f,[id]:"Mislukt: "+e.message})); }
+    setLaden(l=>({...l,[id]:false}));
   };
 
   const analyseerAlle = async () => {
     for (const tab of tabbladen) {
-      if (tab.tekst.trim() && !resultaten[tab.id]) {
-        await analyseer(tab.id);
-      }
+      if ((tab.tekst.trim()||afbeeldingen[tab.id]) && !resultaten[tab.id]) await analyseer(tab.id);
     }
   };
 
-  const aantalMetTekst = tabbladen.filter(t => t.tekst.trim()).length;
-  const aantalGeparseerd = Object.keys(resultaten).length;
-
-  const S = {
-    wrap: {maxWidth:960, margin:"0 auto", padding:24},
-    tabs: {display:"flex", gap:4, marginBottom:0, flexWrap:"wrap", alignItems:"center"},
-    tab: (actf) => ({
-      padding:"7px 14px", borderRadius:"6px 6px 0 0",
-      border:"1px solid var(--border)", borderBottom: actf ? "1px solid var(--surface)" : "1px solid var(--border)",
-      background: actf ? "var(--surface)" : "var(--surface2)",
-      color: actf ? "var(--text)" : "var(--muted)",
-      fontSize:12, fontWeight: actf ? 600 : 400,
-      cursor:"pointer", marginBottom: actf ? -1 : 0,
-      maxWidth:160, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"
-    }),
-    content: {
-      background:"var(--surface)", border:"1px solid var(--border)",
-      borderRadius:"0 8px 8px 8px", padding:20
-    },
-    ta: {
-      width:"100%", minHeight:180,
-      background:"var(--surface2)", border:"1px solid var(--border)",
-      color:"var(--text)", fontFamily:"'Inter',sans-serif",
-      fontSize:13, padding:12, borderRadius:8, outline:"none",
-      resize:"vertical", lineHeight:1.6
-    },
-    btn: (dis, variant="primary") => ({
-      background: variant==="primary" ? "var(--accent)" : "none",
-      color: variant==="primary" ? "white" : "var(--muted)",
-      border: variant==="primary" ? "none" : "1px solid var(--border)",
-      padding:"8px 18px", borderRadius:7, fontSize:13, fontWeight:600,
-      opacity: dis ? 0.5 : 1, cursor: dis ? "not-allowed" : "pointer"
-    }),
-  };
-
-  const actieveTab = tabbladen.find(t => t.id === actief);
+  const actieveTab = tabbladen.find(t=>t.id===actief);
   const actieveResultaat = resultaten[actief];
   const actiefLaden = laden[actief];
   const actiefFout = fout[actief];
+  const actieveAfb = afbeeldingen[actief];
+  const aantalMetInvoer = tabbladen.filter(t=>t.tekst.trim()||afbeeldingen[t.id]).length;
+  const aantalGeparseerd = Object.keys(resultaten).length;
+
+  const Btn = ({onClick,disabled,children,secondary}) => (
+    <button onClick={onClick} disabled={disabled} style={{
+      background:secondary?"none":"var(--accent)", color:secondary?"var(--muted)":"white",
+      border:secondary?"1px solid var(--border)":"none", padding:"8px 18px",
+      borderRadius:7, fontSize:13, fontWeight:600,
+      opacity:disabled?.5:1, cursor:disabled?"not-allowed":"pointer"
+    }}>{children}</button>
+  );
 
   return (
-    <div className="fade" style={S.wrap}>
-      <div style={{display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:20}}>
+    <div className="fade" style={{maxWidth:960,margin:"0 auto",padding:24}}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:20}}>
         <div>
           <div style={{fontSize:20,fontWeight:700,marginBottom:4}}>Wedstrijdinvoer</div>
           <div style={{fontSize:13,color:"var(--muted)"}}>
-            Plak wedstrijdformulieren van het match center of artikelen van hockey.nl.
-            {aantalGeparseerd > 0 && <span style={{color:"var(--green)",marginLeft:8}}>✓ {aantalGeparseerd} geparseerd</span>}
+            Upload een screenshot of plak tekst/URL van hockey.nl
+            {aantalGeparseerd>0 && <span style={{color:"var(--green)",marginLeft:8}}>✓ {aantalGeparseerd} geparseerd</span>}
           </div>
         </div>
-        {aantalMetTekst > 1 && !Object.keys(resultaten).length && (
-          <button onClick={analyseerAlle} style={S.btn(false)}>
-            Analyseer alle {aantalMetTekst} →
-          </button>
+        {aantalMetInvoer>1 && aantalGeparseerd===0 && (
+          <Btn onClick={analyseerAlle}>Analyseer alle {aantalMetInvoer} →</Btn>
         )}
       </div>
 
       {/* Tabbladen */}
-      <div style={S.tabs}>
-        {tabbladen.map(tab => (
-          <div key={tab.id} style={{position:"relative", display:"flex", alignItems:"center"}}>
-            <button style={S.tab(tab.id === actief)} onClick={() => setActief(tab.id)}>
-              {resultaten[tab.id] ? "✓ " : ""}{tab.titel}
+      <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:-1}}>
+        {tabbladen.map(tab=>(
+          <div key={tab.id} style={{position:"relative",display:"flex",alignItems:"center"}}>
+            <button onClick={()=>setActief(tab.id)} style={{
+              padding:"7px 20px 7px 12px", borderRadius:"6px 6px 0 0",
+              border:"1px solid var(--border)", borderBottom:tab.id===actief?"1px solid var(--surface)":"1px solid var(--border)",
+              background:tab.id===actief?"var(--surface)":"var(--surface2)",
+              color:tab.id===actief?"var(--text)":"var(--muted)",
+              fontSize:12, fontWeight:tab.id===actief?600:400, cursor:"pointer",
+              maxWidth:160, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"
+            }}>
+              {resultaten[tab.id]?"✓ ":""}{afbeeldingen[tab.id]?"📸 ":""}{tab.titel}
             </button>
-            {tabbladen.length > 1 && (
-              <button onClick={() => verwijder(tab.id)} style={{
-                position:"absolute", top:2, right:2,
-                background:"none", border:"none", color:"var(--muted)",
-                fontSize:10, cursor:"pointer", padding:"0 2px", lineHeight:1
-              }}>×</button>
-            )}
+            {tabbladen.length>1&&<button onClick={()=>verwijder(tab.id)} style={{
+              position:"absolute",top:3,right:3,background:"none",border:"none",
+              color:"var(--muted)",fontSize:10,cursor:"pointer",padding:"0 2px"
+            }}>×</button>}
           </div>
         ))}
         <button onClick={voegToe} style={{
-          padding:"6px 12px", background:"none",
-          border:"1px dashed var(--border)", borderRadius:"6px 6px 0 0",
-          color:"var(--muted)", fontSize:12, cursor:"pointer"
+          padding:"6px 12px",background:"none",border:"1px dashed var(--border)",
+          borderRadius:"6px 6px 0 0",color:"var(--muted)",fontSize:12,cursor:"pointer"
         }}>+ Wedstrijd</button>
       </div>
 
       {/* Tab inhoud */}
-      <div style={S.content}>
+      <div style={{background:"var(--surface)",border:"1px solid var(--border)",borderRadius:"0 8px 8px 8px",padding:20}}>
         {actieveTab && (
           <>
-            <textarea style={S.ta}
+            {/* Afbeelding upload */}
+            {actieveAfb ? (
+              <div style={{marginBottom:12,padding:10,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,display:"flex",alignItems:"center",gap:10}}>
+                <span style={{fontSize:13}}>📸</span>
+                <span style={{fontSize:12,color:"var(--green)",flex:1,fontWeight:500}}>Screenshot geladen — wordt visueel geanalyseerd</span>
+                <button onClick={()=>verwijderAfb(actief)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:18,lineHeight:1}}>×</button>
+              </div>
+            ) : (
+              <label style={{display:"block",marginBottom:10,padding:"12px",background:"var(--surface2)",border:"2px dashed var(--border)",borderRadius:8,cursor:"pointer",textAlign:"center",transition:"border-color .15s"}}
+                onMouseEnter={e=>e.currentTarget.style.borderColor="var(--accent)"}
+                onMouseLeave={e=>e.currentTarget.style.borderColor="var(--border)"}>
+                <span style={{fontSize:12,color:"var(--muted)"}}>📸 <strong style={{color:"var(--text)"}}>Screenshot uploaden</strong> — match center of infosheet</span>
+                <input type="file" accept="image/*" style={{display:"none"}} onChange={e=>e.target.files[0]&&voegAfbToe(actief,e.target.files[0])}/>
+              </label>
+            )}
+
+            <textarea
+              style={{width:"100%",minHeight:actieveAfb?80:160,background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--text)",fontFamily:"'Inter',sans-serif",fontSize:13,padding:12,borderRadius:8,outline:"none",resize:"vertical",lineHeight:1.6}}
               value={actieveTab.tekst}
-              onChange={e => updateTekst(actief, e.target.value)}
-              placeholder="Plak hier een wedstrijdformulier of artikel…&#10;&#10;Voorbeeld match center tekst:&#10;Laren H1&#10;22 maart&#10;15:00&#10;1 - 3&#10;Amsterdam H1&#10;start wedstrijd&#10;Doelpunt&#10;Ruben van Meer&#10;25'&#10;..."/>
-            <div style={{display:"flex", gap:10, marginTop:12}}>
-              <button onClick={() => analyseer(actief)}
-                disabled={actiefLaden || !actieveTab.tekst.trim()}
-                style={S.btn(actiefLaden || !actieveTab.tekst.trim())}>
-                {actiefLaden ? "Analyseren…" : "Analyseer met Claude"}
-              </button>
-              {actieveTab.tekst && (
-                <button onClick={() => {
-                  updateTekst(actief, "");
-                  setResultaten(r => {const n={...r}; delete n[actief]; return n;});
-                }} style={S.btn(false,"secondary")}>Wissen</button>
+              onChange={e=>updateTekst(actief,e.target.value)}
+              placeholder={actieveAfb
+                ? "Optioneel: extra context (datum, wedstrijdnummer…)"
+                : "Plak hier:\n• URL van hockey.nl artikel → wordt automatisch opgehaald\n• Match center tekst (gekopieerd van de pagina)\n• Wedstrijdverslag\n\nVoorbeeld:\nLaren H1 / 22 maart / 15:00 / 1-3 / Amsterdam H1\nDoelpunt Ruben van Meer 25'..."}
+            />
+
+            <div style={{display:"flex",gap:10,marginTop:12,alignItems:"center",flexWrap:"wrap"}}>
+              <Btn onClick={()=>analyseer(actief)} disabled={actiefLaden||(!actieveTab.tekst.trim()&&!actieveAfb)}>
+                {actiefLaden?(actieveTab.status==="ophalen"?"Artikel ophalen…":"Analyseren…"):"Analyseer met Claude"}
+              </Btn>
+              {(actieveTab.tekst||actieveAfb)&&(
+                <Btn secondary onClick={()=>{updateTekst(actief,"");verwijderAfb(actief);setResultaten(r=>{const n={...r};delete n[actief];return n;})}}>
+                  Wissen
+                </Btn>
+              )}
+              {isArtikelUrl(actieveTab.tekst) && !isMatchUrl(actieveTab.tekst) && (
+                <span style={{fontSize:11,color:"var(--accent)"}}>🔗 URL → wordt opgehaald via proxy</span>
+              )}
+              {isMatchUrl(actieveTab.tekst) && (
+                <span style={{fontSize:11,color:"var(--orange)"}}>⚠️ Match center → gebruik lokaal script</span>
               )}
             </div>
           </>
         )}
 
         {actiefFout && (
-          <div style={{marginTop:12,padding:12,background:"#fef2f2",border:"1px solid #fecaca",borderRadius:8,color:"#991b1b",fontSize:13}}>
-            {actiefFout}
-          </div>
+          <div style={{marginTop:12,padding:12,background:"#fef2f2",border:"1px solid #fecaca",borderRadius:8,color:"#991b1b",fontSize:12,whiteSpace:"pre-line"}}>{actiefFout}</div>
         )}
 
         {actieveResultaat && (
           <div style={{marginTop:20}}>
-            {actieveResultaat.wedstrijden?.map((w,i) => (
+            {actieveResultaat.wedstrijden?.map((w,i)=>(
               <div key={i} style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:10,padding:16,marginBottom:10}}>
                 <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:8}}>
-                  <div style={{flex:1,textAlign:"right",fontWeight:600,fontSize:16}}>{w.thuis}</div>
-                  <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:28,fontWeight:700,color:"var(--accent)",minWidth:90,textAlign:"center"}}>
-                    {w.score_thuis??"-"} – {w.score_uit??"-"}
-                  </div>
-                  <div style={{flex:1,fontWeight:600,fontSize:16}}>{w.uit}</div>
+                  <div style={{flex:1,textAlign:"right",fontWeight:600,fontSize:15}}>{w.thuis}</div>
+                  <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:26,fontWeight:700,color:"var(--accent)",minWidth:80,textAlign:"center"}}>{w.score_thuis??"-"} – {w.score_uit??"-"}</div>
+                  <div style={{flex:1,fontWeight:600,fontSize:15}}>{w.uit}</div>
                 </div>
-                <div style={{textAlign:"center",fontSize:11,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:10}}>
-                  {w.datum}{w.tijdstip ? " · "+w.tijdstip : ""}{w.locatie ? " · "+w.locatie : ""}
+                <div style={{textAlign:"center",fontSize:11,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>
+                  {w.datum}{w.tijdstip?" · "+w.tijdstip:""}{w.locatie?" · "+w.locatie:""}
                 </div>
-                {w.scorers?.length>0 && (
-                  <div style={{borderTop:"1px solid var(--border)",paddingTop:10,marginTop:4}}>
-                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>⚽ Doelpunten</div>
-                    {w.scorers.map((s,j) => (
+                {w.scorers?.length>0&&(
+                  <div style={{borderTop:"1px solid var(--border)",paddingTop:10}}>
+                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:6}}>⚽ Doelpunten</div>
+                    {w.scorers.map((s,j)=>(
                       <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
-                        {s.minuut!=null && <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32}}>{s.minuut}&apos;</span>}
+                        {s.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32}}>{s.minuut}&apos;</span>}
                         <span style={{fontWeight:500}}>{s.naam}</span>
                         <span style={{color:"var(--muted)",fontSize:11,marginLeft:4}}>{s.club}</span>
-                        {s.type && <span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,marginLeft:"auto",textTransform:"uppercase"}}>{s.type}</span>}
+                        {s.type&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,marginLeft:"auto",textTransform:"uppercase"}}>{s.type}</span>}
                       </div>
                     ))}
                   </div>
                 )}
-                {w.kaarten?.length>0 && (
+                {w.kaarten?.length>0&&(
                   <div style={{borderTop:"1px solid var(--border)",paddingTop:10,marginTop:8}}>
-                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:8}}>🟨 Kaarten</div>
-                    {w.kaarten.map((k,j) => (
+                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:6}}>🟨 Kaarten</div>
+                    {w.kaarten.map((k,j)=>(
                       <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
-                        {k.minuut!=null && <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--muted)",minWidth:32}}>{k.minuut}&apos;</span>}
+                        {k.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--muted)",minWidth:32}}>{k.minuut}&apos;</span>}
                         <span style={{fontSize:14}}>{k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}</span>
                         <span style={{fontWeight:500,marginLeft:4}}>{k.naam}</span>
                         <span style={{color:"var(--muted)",fontSize:11,marginLeft:4}}>{k.club}</span>
@@ -820,213 +829,42 @@ Geef ALLEEN een geldig JSON-object terug, geen uitleg, geen markdown:
                 )}
               </div>
             ))}
-            {actieveResultaat.highlights?.length>0 && (
+            {actieveResultaat.highlights?.length>0&&(
               <div style={{marginTop:12}}>
                 <div style={{fontSize:13,fontWeight:700,marginBottom:8}}>Highlights</div>
-                {actieveResultaat.highlights.map((h,i) => (
+                {actieveResultaat.highlights.map((h,i)=>(
                   <div key={i} style={{display:"flex",gap:10,padding:"8px 12px",background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:7,marginBottom:6,fontSize:13}}>
                     <span style={{color:"var(--accent)"}}>→</span><span>{h}</span>
                   </div>
                 ))}
               </div>
             )}
+            {actieveResultaat.spelers_vermeld?.length>0&&(
+              <div style={{marginTop:12}}>
+                <div style={{fontSize:13,fontWeight:700,marginBottom:8}}>Vermelde spelers</div>
+                <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
+                  {actieveResultaat.spelers_vermeld.map((s,i)=>(
+                    <span key={i} style={{fontSize:12,padding:"3px 10px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:5,fontWeight:500}}>{s}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+            <div style={{marginTop:16,padding:12,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,fontSize:12,color:"var(--green)"}}>
+              ✅ Analyse klaar.
+            </div>
           </div>
         )}
       </div>
 
-      {/* Overzicht onderaan als meerdere geparseerd */}
-      {aantalGeparseerd > 0 && (
-        <div style={{marginTop:20,padding:16,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,fontSize:13,color:"var(--green)"}}>
-          ✅ {aantalGeparseerd} wedstrijd{aantalGeparseerd!==1?"en":""} geanalyseerd.
-          Kopieer de JSON-data naar <code style={{fontSize:11}}>competities/{geslacht}/programma.json</code> via GitHub,
-          of gebruik het <code style={{fontSize:11}}>fetch_ronde.py</code> script.
+      {aantalGeparseerd>0&&(
+        <div style={{marginTop:16,padding:12,background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,fontSize:12,color:"var(--muted)"}}>
+          {aantalGeparseerd} wedstrijd{aantalGeparseerd!==1?"en":""} geanalyseerd · seizoen {geslacht}
         </div>
       )}
     </div>
   );
 }
 
-
-
-// ── Club Pagina ───────────────────────────────────────────────
-function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
-  const clubSpelers = spelers
-    .filter(s => s.club === club)
-    .sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
-
-  const clubNieuws = nieuws.filter(n => {
-    const t = (n.titel||n.title||"").toLowerCase();
-    return t.includes(club.toLowerCase()) ||
-           clubSpelers.some(s => {
-             const delen = s.naam.split(" ");
-             const vn = delen[0].toLowerCase();
-             const an = delen[delen.length-1].toLowerCase();
-             return an.length > 3 && t.includes(vn) && t.includes(an);
-           });
-  }).slice(0, 25);
-
-  const clubWedstrijden = programma.filter(w =>
-    (w.thuis||"").includes(club) || (w.uit||"").includes(club)
-  );
-  const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).sort((a,b)=>new Date(b.datum||0)-new Date(a.datum||0));
-  const komend   = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b)=>new Date(a.datum||0)-new Date(b.datum||0));
-
-  // Oranje badge
-  // Vlaggetje op basis van land_code
-  const Vlag = ({s}) => {
-    if (!s.land_code || s.land_code.toLowerCase()==="nl") return null;
-    const emoji = s.land_code.toUpperCase().replace(/./g, c =>
-      String.fromCodePoint(c.charCodeAt(0)+127397));
-    return <span style={{fontSize:12,flexShrink:0}}>{emoji}</span>;
-  };
-
-  const Td = ({children, right, mono, muted, accent, bold, w}) => (
-    <td style={{
-      padding:"6px 8px", textAlign:right?"right":"left",
-      fontFamily:mono?"'JetBrains Mono',monospace":"inherit",
-      fontSize:mono?12:13, fontWeight:bold?700:400,
-      color:muted?"var(--muted)":accent?"var(--accent)":"var(--text)",
-      whiteSpace:"nowrap", width:w||"1px",
-      borderBottom:"1px solid var(--border)"
-    }}>{children}</td>
-  );
-
-  return (
-    <div className="fade">
-      {/* Hero */}
-      <div style={{padding:"20px 24px 16px",borderBottom:"1px solid var(--border)",
-        background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
-        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",
-          letterSpacing:1,marginBottom:4}}>
-          {geslacht==="heren"?"Tulp Hoofdklasse Heren":"Tulp Hoofdklasse Dames"}
-        </div>
-        <div style={{fontSize:28,fontWeight:700,letterSpacing:"-.5px"}}>{club}</div>
-        <div style={{fontSize:12,color:"var(--muted)",marginTop:4}}>
-          {clubSpelers.length} spelers · seizoen 2025-2026
-        </div>
-      </div>
-
-      {/* Twee kolommen */}
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
-
-        {/* Links: spelers + wedstrijden */}
-        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
-          <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
-          {/* Spelers tabel */}
-          <table style={{width:"100%",borderCollapse:"collapse",marginBottom:20}}>
-            <thead>
-              <tr>
-                {["#","Naam","","Goals","V","SC","SB"].map((h,i) => (
-                  <th key={i} style={{
-                    fontSize:10,fontWeight:600,textTransform:"uppercase",
-                    letterSpacing:.5,color:"var(--muted)",
-                    padding:"0 8px 8px",
-                    textAlign:i===0||i>=3?"right":"left",
-                    whiteSpace:"nowrap",
-                    borderBottom:"1px solid var(--border2)"
-                  }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {clubSpelers.map((s,i) => (
-                <tr key={i} style={{cursor:"pointer"}}
-                  onClick={()=>nav("speler_via_club",{...s,_vanClub:club})}
-                  onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}}
-                  onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
-                  <Td right mono accent bold>{s.rugnummer}</Td>
-                  <td style={{padding:"6px 8px",whiteSpace:"nowrap",borderBottom:"1px solid var(--border)"}}>
-                    <div style={{display:"flex",alignItems:"center",gap:5}}>
-                      <span style={{fontSize:13,fontWeight:500,cursor:"pointer"}}>{s.naam}</span>
-                      {s.keeper     && <span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
-                      {s.aanvoerder && <span style={{fontSize:9,padding:"1px 4px",background:"var(--surface2)",color:"var(--muted)",border:"1px solid var(--border)",borderRadius:3,fontWeight:600,flexShrink:0}}>A</span>}
-                    </div>
-                  </td>
-                  <Td>
-                    <Vlag s={s}/>
-                  </Td>
-                  <Td right mono bold accent>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</Td>
-                  <Td right mono muted>{s.vd>0?s.vd:""}</Td>
-                  <Td right mono muted>{s.sc>0?s.sc:""}</Td>
-                  <Td right mono muted>{s.sb>0?s.sb:""}</Td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-        </div>
-
-        {/* Rechts: nieuws */}
-        <div>
-          <div style={{padding:"14px 18px 12px",borderBottom:"1px solid var(--border)"}}>
-            <div style={{fontSize:13,fontWeight:700}}>Nieuws</div>
-          </div>
-          {clubNieuws.length > 0 ? clubNieuws.map((n,i) => (
-            <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer"
-              style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",
-                textDecoration:"none",transition:"background .12s"}}
-              onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
-              onMouseLeave={e=>e.currentTarget.style.background=""}>
-              <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
-                {(n.datum||n.date||"").slice(0,10)}
-              </div>
-              <div style={{fontSize:12,fontWeight:600,lineHeight:1.4,color:"var(--text)",marginBottom:2}}>
-                {n.titel||n.title||""}
-              </div>
-              {(n.samenvatting||n.beschrijving) && (
-                <div style={{fontSize:11,color:"var(--muted)",lineHeight:1.4,marginTop:2}}>
-                  {(n.samenvatting||n.beschrijving||"").slice(0,100)}…
-                </div>
-              )}
-            </a>
-          )) : (
-            <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>
-              Geen nieuws gevonden.
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Wedstrijden: twee kolommen */}
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
-        {/* Uitslagen */}
-        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
-          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
-          {gespeeld.length > 0 ? (
-            <div className="wl">
-              {gespeeld.map((w,i) => (
-                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                  <span className="wd">{formatDatum(w.datum)}</span>
-                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
-                  <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
-                  <span className="wa">›</span>
-                </div>
-              ))}
-            </div>
-          ) : <div className="empty">Geen uitslagen beschikbaar.</div>}
-        </div>
-        {/* Komende wedstrijden */}
-        <div style={{padding:"20px 24px"}}>
-          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Programma</div>
-          {komend.length > 0 ? (
-            <div className="wl">
-              {komend.map((w,i) => (
-                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                  <span className="wd">{formatDatum(w.datum)}</span>
-                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
-                  <div className="ws k">{w.tijdstip||"–"}</div>
-                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
-                  <span className="wa">›</span>
-                </div>
-              ))}
-            </div>
-          ) : <div className="empty">Geen wedstrijden gepland.</div>}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
