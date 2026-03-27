@@ -302,14 +302,24 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                 </div>
                 {clubFilter && (() => {
                   const gefilterd = programma.filter(w => {
+                    // Alleen gespeelde wedstrijden
+                    if (w.gespeeld !== true && w.score_thuis == null) return false;
+                    const st = w.score_thuis ?? -1;
+                    const su = w.score_uit   ?? -1;
                     const thuisMatch = (w.thuis||"").includes(clubFilter.club||"");
                     const uitMatch   = (w.uit||"").includes(clubFilter.club||"");
                     const inClub = clubFilter.club ? (thuisMatch || uitMatch) : true;
                     if (!inClub) return false;
-                    if (clubFilter.type === "G")  return w.gespeeld===true && (w.score_thuis??-1) > (w.score_uit??-1) === thuisMatch || (w.score_uit??-1) > (w.score_thuis??-1) === uitMatch;
-                    if (clubFilter.type === "Gk") return w.gespeeld===true && w.score_thuis === w.score_uit && w.score_thuis != null;
-                    if (clubFilter.type === "V")  return w.gespeeld===true && ((w.score_thuis??-1) < (w.score_uit??-1)) === thuisMatch || ((w.score_uit??-1) < (w.score_thuis??-1)) === uitMatch;
-                    return w.gespeeld===true;
+                    if (clubFilter.type === "Gk") return st === su && st >= 0;
+                    if (!clubFilter.club) {
+                      // Geen specifieke club: alle gewonnen/verloren
+                      if (clubFilter.type === "G") return st !== su;
+                      if (clubFilter.type === "V") return st === su; // n.v.t. zonder club
+                      return true;
+                    }
+                    if (clubFilter.type === "G") return (thuisMatch && st > su) || (uitMatch && su > st);
+                    if (clubFilter.type === "V") return (thuisMatch && st < su) || (uitMatch && su < st);
+                    return true;
                   });
                   const label = clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren";
                   return (
@@ -844,29 +854,25 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
 
   const SpelerRij = ({s}) => (
     <div onClick={()=>nav("speler_via_club",{...s, _vanClub: club})}
-      style={{display:"flex",alignItems:"center",gap:0,padding:"8px 0",
-        borderBottom:"1px solid var(--border)",cursor:"pointer",transition:"background .1s"}}
+      style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
+        borderBottom:"1px solid var(--border)",cursor:"pointer",borderRadius:5,transition:"background .1s"}}
       onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
       onMouseLeave={e=>e.currentTarget.style.background=""}>
       {/* Rugnummer */}
-      <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:13,fontWeight:700,
-        color:"var(--accent)",minWidth:32,flexShrink:0}}>
+      <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:12,fontWeight:700,
+        color:"var(--accent)",minWidth:28,flexShrink:0,textAlign:"right"}}>
         {s.rugnummer}
       </span>
       {/* Naam + badges */}
-      <div style={{flex:1,minWidth:0}}>
+      <div style={{flex:1,minWidth:0,display:"flex",alignItems:"center",gap:5}}>
         <span style={{fontSize:13,fontWeight:500}}>{s.naam}</span>
-        <span style={{display:"inline-flex",gap:4,marginLeft:6}}>
-          {s.keeper    && <span style={{fontSize:9,padding:"1px 5px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700}}>K</span>}
-          {s.aanvoerder && <span style={{fontSize:9,padding:"1px 5px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700}}>A</span>}
-        </span>
+        {s.keeper     && <span style={{fontSize:9,padding:"1px 5px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
+        {s.aanvoerder && <span style={{fontSize:9,padding:"1px 5px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700,flexShrink:0}}>A</span>}
       </div>
-      {/* Stats */}
+      {/* Stats direct naast naam */}
       {s.doelpunten_seizoen > 0 && (
-        <div style={{display:"flex",gap:8,marginLeft:8,flexShrink:0}}>
-          <span style={{fontSize:11,color:"var(--accent)",fontWeight:700,fontFamily:"'JetBrains Mono',monospace"}}>
-            ⚽{s.doelpunten_seizoen}
-          </span>
+        <div style={{display:"flex",gap:5,flexShrink:0}}>
+          <span style={{fontSize:11,color:"var(--accent)",fontWeight:700,fontFamily:"'JetBrains Mono',monospace"}}>⚽{s.doelpunten_seizoen}</span>
           {s.vd>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>V{s.vd}</span>}
           {s.sc>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>SC{s.sc}</span>}
           {s.sb>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>SB{s.sb}</span>}
@@ -947,10 +953,17 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
                 textDecoration:"none",transition:"background .12s"}}
               onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
               onMouseLeave={e=>e.currentTarget.style.background=""}>
-              <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:3}}>
+              <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
                 {(n.datum||n.date||"").slice(0,10)}
               </div>
-              <div style={{fontSize:12,fontWeight:500,lineHeight:1.4}}>{n.titel||n.title||""}</div>
+              <div style={{fontSize:12,fontWeight:600,lineHeight:1.4,color:"var(--text)",marginBottom:2}}>
+                {n.titel||n.title||""}
+              </div>
+              {(n.samenvatting||n.beschrijving) && (
+                <div style={{fontSize:11,color:"var(--muted)",lineHeight:1.4,marginTop:2}}>
+                  {(n.samenvatting||n.beschrijving||"").slice(0,100)}…
+                </div>
+              )}
             </a>
           )) : (
             <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>
