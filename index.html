@@ -176,11 +176,13 @@ a{color:inherit;text-decoration:none}
 `;
 
 function PosBadge({n, zone}) {
-  const style = zone==="playoff"
+  // Bepaal zone op basis van zone-veld OF positienummer als fallback
+  const z = zone || (n<=4?"playoff":n<=9?"":n<=11?"playout":"degradatie");
+  const style = z==="playoff"
     ? {background:"#166534",color:"#ffffff",border:"none"}
-    : zone==="playout"
+    : z==="playout"
     ? {background:"#854d0e",color:"#facc15",border:"none"}
-    : zone==="degradatie"
+    : z==="degradatie"
     ? {background:"#991b1b",color:"#ffffff",border:"none"}
     : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
   return <span className="pb" style={style}>{n}</span>;
