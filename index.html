@@ -631,35 +631,27 @@ function InvoerPagina({geslacht, programma, spelers}) {
 
     try {
       let messages;
+      let extraTools = [];
       if (afb) {
         messages = [{role:"user", content:[
           {type:"image", source:{type:"base64", media_type:afb.mediaType, data:afb.base64}},
           {type:"text", text: invoer ? "Analyseer deze hockey wedstrijd afbeelding. Extra context: "+invoer : "Analyseer deze hockey afbeelding. Extraheer wedstrijdinfo, scorers en kaarten."}
         ]}];
       } else if (isArtikelUrl(invoer)) {
-        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,status:"ophalen"}:tab));
-        let tekst = invoer;
-        try {
-          const proxy = "https://api.allorigins.win/get?url="+encodeURIComponent(invoer);
-          const pr = await fetch(proxy);
-          const pd = await pr.json();
-          tekst = pd.contents
-            .replace(/<script[\s\S]*?<\/script>/gi,"")
-            .replace(/<style[\s\S]*?<\/style>/gi,"")
-            .replace(/<[^>]+>/g," ")
-            .replace(/\s+/g," ")
-            .slice(0,8000);
-        } catch(e) {}
-        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,status:""}:tab));
-        messages = [{role:"user", content:tekst}];
+        // Geef URL direct mee aan Claude met web_search tool
+        messages = [{role:"user", content:"Haal dit hockey artikel op en analyseer het voor wedstrijddata, scorers en highlights: "+invoer}];
+        // Voeg web_search tool toe aan request
+        extraTools = [{"type":"web_search_20250305","name":"web_search"}];
       } else {
         messages = [{role:"user", content:invoer}];
       }
 
+      const body = {model:"claude-sonnet-4-20250514",max_tokens:2000,system:SYSTEM,messages};
+      if (typeof extraTools !== "undefined" && extraTools.length) body.tools = extraTools;
       const resp = await fetch("https://api.anthropic.com/v1/messages",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:2000,system:SYSTEM,messages})
+        body:JSON.stringify(body)
       });
       const data = await resp.json();
       const txt = (data.content?.[0]?.text||"").replace(/```json|```/g,"").trim();
