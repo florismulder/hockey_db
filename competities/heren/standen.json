@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_2025/26",
-  "bijgewerkt": "2026-03-25T05:14:47.814751+00:00",
+  "bijgewerkt": "2026-03-27T08:44:30.968056+00:00",
   "stand": [
     {
       "positie": 1,
@@ -15,9 +15,7 @@
       "dv": "53",
       "dt": "25",
       "+/−": "+28",
-      "kwalificatieofdegradatie": "Plaatsingplay–offsenEHL",
-      "zone": "playoff",
-      "punten": 35
+      "kwalificatieofdegradatie": "Plaatsingplay–offsenEHL"
     },
     {
       "positie": 2,
@@ -30,9 +28,7 @@
       "dv": "61",
       "dt": "28",
       "+/−": "+33",
-      "kwalificatieofdegradatie": "Plaatsingplay–offs",
-      "zone": "playoff",
-      "punten": 32
+      "kwalificatieofdegradatie": "Plaatsingplay–offs"
     },
     {
       "positie": 3,
@@ -44,9 +40,7 @@
       "ptn": "32",
       "dv": "58",
       "dt": "25",
-      "+/−": "+33",
-      "zone": "playoff",
-      "punten": 32
+      "+/−": "+33"
     },
     {
       "positie": 4,
@@ -58,9 +52,7 @@
       "ptn": "28",
       "dv": "48",
       "dt": "31",
-      "+/−": "+17",
-      "zone": "playoff",
-      "punten": 28
+      "+/−": "+17"
     },
     {
       "positie": 5,
@@ -73,9 +65,7 @@
       "dv": "53",
       "dt": "29",
       "+/−": "+24",
-      "kwalificatieofdegradatie": "",
-      "zone": "",
-      "punten": 27
+      "kwalificatieofdegradatie": ""
     },
     {
       "positie": 6,
@@ -87,9 +77,7 @@
       "ptn": "27",
       "dv": "42",
       "dt": "25",
-      "+/−": "+17",
-      "zone": "",
-      "punten": 27
+      "+/−": "+17"
     },
     {
       "positie": 7,
@@ -101,9 +89,7 @@
       "ptn": "21",
       "dv": "37",
       "dt": "33",
-      "+/−": "+4",
-      "zone": "",
-      "punten": 21
+      "+/−": "+4"
     },
     {
       "positie": 8,
@@ -115,9 +101,7 @@
       "ptn": "21",
       "dv": "33",
       "dt": "30",
-      "+/−": "+3",
-      "zone": "",
-      "punten": 21
+      "+/−": "+3"
     },
     {
       "positie": 9,
@@ -129,9 +113,7 @@
       "ptn": "13",
       "dv": "24",
       "dt": "52",
-      "+/−": "−28",
-      "zone": "",
-      "punten": 13
+      "+/−": "−28"
     },
     {
       "positie": 10,
@@ -144,9 +126,7 @@
       "dv": "20",
       "dt": "56",
       "+/−": "−36",
-      "kwalificatieofdegradatie": "Plaatsingpromotie/degradatie play–offs",
-      "zone": "playout",
-      "punten": 9
+      "kwalificatieofdegradatie": "Plaatsingpromotie/degradatie play–offs"
     },
     {
       "positie": 11,
@@ -158,9 +138,7 @@
       "ptn": "5",
       "dv": "22",
       "dt": "66",
-      "+/−": "−44",
-      "zone": "playout",
-      "punten": 5
+      "+/−": "−44"
     },
     {
       "positie": 12,
@@ -173,9 +151,7 @@
       "dv": "12",
       "dt": "63",
       "+/−": "−51",
-      "kwalificatieofdegradatie": "Degradatie naarPromotieklasse",
-      "zone": "degradatie",
-      "punten": 1
+      "kwalificatieofdegradatie": "Degradatie naarPromotieklasse"
     }
   ],
   "uitslagen": [
