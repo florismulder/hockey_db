@@ -211,6 +211,7 @@ function Breadcrumb({page,pageId,nav}) {
 
 function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   if(loading) return <div className="loading">Data laden…</div>;
+  const [clubFilter, setClubFilter] = React.useState(null); // {club, type} of null
   const bijgewerkt = stand[0]?._bw||"";
   const komend = programma.filter(isKomend).slice(0,12);
   // Groepeer gespeelde wedstrijden per datum/ronde, nieuwste eerst
@@ -248,9 +249,13 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                   <thead><tr>
                     <th>#</th><th className="cl">Club</th>
                     <th title="Wedstrijden gespeeld">W</th>
-                    <th title="Gewonnen">G</th>
-                    <th title="Gelijk">Gk</th>
-                    <th title="Verloren">V</th>
+                    {["G","Gk","V"].map(type => (
+                      <th key={type} title={type==="G"?"Gewonnen":type==="Gk"?"Gelijk":"Verloren"}
+                        style={{cursor:"pointer",userSelect:"none"}}
+                        onClick={()=>setClubFilter(f=>f?.type===type&&!f.club?null:{type,club:null})}>
+                        {type}{clubFilter?.type===type&&!clubFilter.club?" ▾":""}
+                      </th>
+                    ))}
                     <th title="Doelpunten voor">DV</th>
                     <th title="Doelpunten tegen">DT</th>
                     <th title="Doelsaldo">Dsl</th>
@@ -273,9 +278,13 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                             </button>
                           </td>
                           <td>{r.gespeeld}</td>
-                          <td>{r.gewonnen}</td>
-                          <td>{r.gelijk}</td>
-                          <td>{r.verloren}</td>
+                          {[["G",r.gewonnen,"gewonnen"],["Gk",r.gelijk,"gelijk"],["V",r.verloren,"verloren"]].map(([type,val,label])=>(
+                            <td key={type}
+                              style={{cursor:"pointer",color:clubFilter?.club===r.club&&clubFilter?.type===type?"var(--accent)":"inherit",fontWeight:clubFilter?.club===r.club&&clubFilter?.type===type?700:"inherit"}}
+                              onClick={e=>{e.stopPropagation();setClubFilter(f=>f?.club===r.club&&f?.type===type?null:{club:r.club,type,label});}}>
+                              {val}
+                            </td>
+                          ))}
                           <td>{dv||"–"}</td>
                           <td>{dt||"–"}</td>
                           <td className={dslNum>0?"dp":dslNum<0?"dn":""}>{dslNum>0?`+${dslNum}`:dslNum}</td>
@@ -290,6 +299,40 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                   <div className="li"><div className="ld" style={{background:"#facc15"}}/> 10-11 Play-outs</div>
                   <div className="li"><div className="ld" style={{background:"#f87171"}}/> 12 Degradatie</div>
                 </div>
+                {clubFilter && (() => {
+                  const gefilterd = programma.filter(w => {
+                    const thuisMatch = (w.thuis||"").includes(clubFilter.club||"");
+                    const uitMatch   = (w.uit||"").includes(clubFilter.club||"");
+                    const inClub = clubFilter.club ? (thuisMatch || uitMatch) : true;
+                    if (!inClub) return false;
+                    if (clubFilter.type === "G")  return w.gespeeld===true && (w.score_thuis??-1) > (w.score_uit??-1) === thuisMatch || (w.score_uit??-1) > (w.score_thuis??-1) === uitMatch;
+                    if (clubFilter.type === "Gk") return w.gespeeld===true && w.score_thuis === w.score_uit && w.score_thuis != null;
+                    if (clubFilter.type === "V")  return w.gespeeld===true && ((w.score_thuis??-1) < (w.score_uit??-1)) === thuisMatch || ((w.score_uit??-1) < (w.score_thuis??-1)) === uitMatch;
+                    return w.gespeeld===true;
+                  });
+                  const label = clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren";
+                  return (
+                    <div style={{marginTop:16,padding:16,background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8}}>
+                      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
+                        <div style={{fontSize:13,fontWeight:700}}>
+                          {clubFilter.club ? `${clubFilter.club} — ${label}` : label} ({gefilterd.length})
+                        </div>
+                        <button onClick={()=>setClubFilter(null)} style={{background:"none",border:"none",color:"var(--muted)",fontSize:18,cursor:"pointer",lineHeight:1}}>×</button>
+                      </div>
+                      <div className="wl">
+                        {gefilterd.length > 0 ? gefilterd.reverse().map((w,i) => (
+                          <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                            <span className="wd">{w.datum}</span>
+                            <div className="wh">{w.thuis}</div>
+                            <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                            <div className="wu">{w.uit}</div>
+                            <span className="wa">›</span>
+                          </div>
+                        )) : <div className="empty">Geen wedstrijden gevonden.</div>}
+                      </div>
+                    </div>
+                  );
+                })()}
               </>
             ):<div className="empty">Geen standdata beschikbaar.</div>}
           </div>
