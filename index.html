@@ -376,19 +376,41 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
             <div className="tc-rechts">
               <div className="sec">
                 <div className="sec-hdr"><div className="sec-title">Programma</div><div className="sec-sub">Komend</div></div>
-                {komend.length>0?(
-                  <div className="wl">
-                    {komend.map((w,i)=>(
-                      <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                        <span className="wd">{formatDatum(w.datum)}</span>
-                        <div className="wh">{stripTeam(w.thuis)}</div>
-                        <div className="ws k">{w.tijdstip||"–"}</div>
-                        <div className="wu">{stripTeam(w.uit)}</div>
-                        <span className="wa">›</span>
-                      </div>
-                    ))}
-                  </div>
-                ):<div className="empty">Geen programma beschikbaar.</div>}
+                {komend.length>0?(()=>{
+                  // Groepeer op datum, vroegste eerst
+                  const groepen={};
+                  komend.forEach(w=>{
+                    const k=w.datum||"onbekend";
+                    if(!groepen[k]) groepen[k]=[];
+                    groepen[k].push(w);
+                  });
+                  const gesorteerd=Object.entries(groepen).sort((a,b)=>{
+                    const da=parseDatum(a[0])||new Date(9999,0);
+                    const db=parseDatum(b[0])||new Date(9999,0);
+                    return da-db;
+                  });
+                  return (
+                    <div>
+                      {gesorteerd.map(([datum,wedstrijden],gi)=>(
+                        <div key={gi} style={{marginBottom:16}}>
+                          <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>
+                            {formatDatum(datum)}
+                          </div>
+                          <div className="wl">
+                            {wedstrijden.map((w,i)=>(
+                              <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                                <div className="wh">{stripTeam(w.thuis)}</div>
+                                <div className="ws k">{w.tijdstip||"–"}</div>
+                                <div className="wu">{stripTeam(w.uit)}</div>
+                                <span className="wa">›</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })():<div className="empty">Geen programma beschikbaar.</div>}
               </div>
             </div>
           </div>
@@ -887,13 +909,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
   const komend   = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b)=>new Date(a.datum||0)-new Date(b.datum||0));
 
   // Oranje badge
-  const OrangeBadge = ({s}) => {
-    const o = (s.oranje||"").toLowerCase();
-    if (!o) return null;
-    const label = o.includes("u16")?"U16":o.includes("u18")?"U18":o.includes("jong")?"JO":"O";
-    return <span style={{fontSize:9,padding:"1px 5px",background:"#ea580c",color:"white",borderRadius:3,fontWeight:700,flexShrink:0}}>{label}</span>;
-  };
-
   // Vlaggetje op basis van land_code
   const Vlag = ({s}) => {
     if (!s.land_code || s.land_code.toLowerCase()==="nl") return null;
