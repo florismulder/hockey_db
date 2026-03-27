@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '0 7 * * *'    # Elke dag 07:00 UTC — nieuws ophalen
     - cron: '0 8 * * 1'    # Maandag 08:00 UTC — volledige update
+    - cron: '0 8 * * 5'    # Vrijdag 08:00 UTC — stand check
+    - cron: '0 6 * * 0'    # Zondag 06:00 UTC — stand check
   workflow_dispatch:
 
 jobs:
@@ -14,6 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Python instellen
         uses: actions/setup-python@v5
@@ -25,18 +29,27 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
 
-      - name: Volledige update (maandag of handmatig)
-        if: github.event.schedule == '0 8 * * 1' || github.event_name == 'workflow_dispatch'
+      - name: Volledige update (maandag/vrijdag/zondag of handmatig)
+        if: >
+          github.event.schedule == '0 8 * * 1' ||
+          github.event.schedule == '0 8 * * 5' ||
+          github.event.schedule == '0 6 * * 0' ||
+          github.event_name == 'workflow_dispatch'
         run: python scripts/update_db.py || true
 
       - name: Alleen nieuws (dagelijks)
         if: github.event.schedule == '0 7 * * *'
         run: python scripts/update_db.py --rss || true
 
-      - name: Wijzigingen committen
+      - name: Wijzigingen committen en pushen
         run: |
           git config user.name "hockey-bot"
           git config user.email "bot@users.noreply.github.com"
           git add competities/ nieuws/ spelers/
-          git diff --staged --quiet || git commit -m "data: update $(date +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then
+            echo "Geen wijzigingen"
+          else
+            git commit -m "data: update $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push origin main
+          fi
