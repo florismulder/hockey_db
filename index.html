@@ -107,12 +107,12 @@ a{color:inherit;text-decoration:none}
 .tc-links{border-right:1px solid var(--border)}
 .tc-rechts{}
 .wl{display:flex;flex-direction:column;gap:4px}
-.wr{display:grid;grid-template-columns:60px 1fr auto 1fr 18px;align-items:center;gap:10px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s}
+.wr{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s}
 .wr:hover{border-color:var(--accent);background:var(--accent-light)}
-.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted)}
-.wh{text-align:right;font-weight:500;font-size:13px}
-.wu{text-align:left;font-weight:500;font-size:13px}
-.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 10px;text-align:center;min-width:60px;white-space:nowrap}
+.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:52px}
+.wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 8px;text-align:center;flex-shrink:0;white-space:nowrap}
 .ws.k{color:var(--muted);font-size:12px}
 .wa{color:var(--muted);font-size:12px;text-align:center}
 .ph{padding:14px 18px 12px;border-bottom:1px solid var(--border)}
@@ -176,16 +176,12 @@ a{color:inherit;text-decoration:none}
 `;
 
 function PosBadge({n, zone}) {
-  // Kleur op basis van zone
   const style = zone==="playoff"
     ? {background:"#166534",color:"#ffffff",border:"none"}
     : zone==="playout"
-    ? {background:"#854d0e",color:"#ffffff",border:"none"}
+    ? {background:"#854d0e",color:"#facc15",border:"none"}
     : zone==="degradatie"
     ? {background:"#991b1b",color:"#ffffff",border:"none"}
-    : n===1 ? {background:"#b7791f",color:"#ffffff",border:"none"}
-    : n===2 ? {background:"#6b7280",color:"#ffffff",border:"none"}
-    : n===3 ? {background:"#92400e",color:"#ffffff",border:"none"}
     : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
   return <span className="pb" style={style}>{n}</span>;
 }
@@ -214,7 +210,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   if(loading) return <div className="loading">Data laden…</div>;
   const [clubFilter, setClubFilter] = React.useState(null); // {club, type} of null
   const bijgewerkt = stand[0]?._bw||"";
-  const komend = programma.filter(isKomend).slice(0,12);
+  const komend = programma.filter(isKomend);
   // Groepeer gespeelde wedstrijden per datum/ronde, nieuwste eerst
   const gespeeldGroepen = useMemo(() => {
     const gespeeldLijst = programma.filter(isGespeeld);
