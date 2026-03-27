@@ -408,6 +408,44 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
           </div>
         </div>
       </div>
+
+      {/* Wedstrijden: twee kolommen */}
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
+        {/* Uitslagen */}
+        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
+          {gespeeld.length > 0 ? (
+            <div className="wl">
+              {gespeeld.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen uitslagen beschikbaar.</div>}
+        </div>
+        {/* Komende wedstrijden */}
+        <div style={{padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Programma</div>
+          {komend.length > 0 ? (
+            <div className="wl">
+              {komend.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws k">{w.tijdstip||"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen wedstrijden gepland.</div>}
+        </div>
+      </div>
     </div>
   );
 }
@@ -451,6 +489,44 @@ function SpelersOverzicht({geslacht,nav,spelers}) {
               )}
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Wedstrijden: twee kolommen */}
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
+        {/* Uitslagen */}
+        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
+          {gespeeld.length > 0 ? (
+            <div className="wl">
+              {gespeeld.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen uitslagen beschikbaar.</div>}
+        </div>
+        {/* Komende wedstrijden */}
+        <div style={{padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Programma</div>
+          {komend.length > 0 ? (
+            <div className="wl">
+              {komend.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws k">{w.tijdstip||"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen wedstrijden gepland.</div>}
         </div>
       </div>
     </div>
@@ -844,8 +920,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
   const clubWedstrijden = programma.filter(w =>
     (w.thuis||"").includes(club) || (w.uit||"").includes(club)
   );
-  const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).reverse().slice(0,6);
-  const komend   = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).slice(0,4);
+  const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).sort((a,b)=>new Date(b.datum||0)-new Date(a.datum||0));
+  const komend   = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b)=>new Date(a.datum||0)-new Date(b.datum||0));
 
   // Oranje badge
   const OrangeBadge = ({s}) => {
@@ -937,40 +1013,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
             </tbody>
           </table>
 
-          {/* Recente uitslagen */}
-          {gespeeld.length > 0 && (
-            <div style={{marginTop:20}}>
-              <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>Recente uitslagen</div>
-              <div className="wl">
-                {gespeeld.map((w,i) => (
-                  <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                    <span className="wd">{w.datum}</span>
-                    <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
-                    <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                    <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
-                    <span className="wa">›</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {komend.length > 0 && (
-            <div style={{marginTop:16}}>
-              <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>Komende wedstrijden</div>
-              <div className="wl">
-                {komend.map((w,i) => (
-                  <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                    <span className="wd">{w.datum}</span>
-                    <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
-                    <div className="ws k">{w.tijdstip||"–"}</div>
-                    <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
-                    <span className="wa">›</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Rechts: nieuws */}
@@ -1001,6 +1043,44 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
               Geen nieuws gevonden.
             </div>
           )}
+        </div>
+      </div>
+
+      {/* Wedstrijden: twee kolommen */}
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
+        {/* Uitslagen */}
+        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
+          {gespeeld.length > 0 ? (
+            <div className="wl">
+              {gespeeld.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen uitslagen beschikbaar.</div>}
+        </div>
+        {/* Komende wedstrijden */}
+        <div style={{padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Programma</div>
+          {komend.length > 0 ? (
+            <div className="wl">
+              {komend.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws k">{w.tijdstip||"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen wedstrijden gepland.</div>}
         </div>
       </div>
     </div>
