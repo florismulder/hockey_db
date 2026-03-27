@@ -826,12 +826,10 @@ Geef ALLEEN een geldig JSON-object terug, geen uitleg, geen markdown:
 
 // ── Club Pagina ───────────────────────────────────────────────
 function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
-  // Spelers gesorteerd op rugnummer
   const clubSpelers = spelers
     .filter(s => s.club === club)
     .sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
 
-  // Nieuws gefilterd op clubnaam of spelernamen
   const clubNieuws = nieuws.filter(n => {
     const t = (n.titel||n.title||"").toLowerCase();
     return t.includes(club.toLowerCase()) ||
@@ -841,42 +839,39 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
              const an = delen[delen.length-1].toLowerCase();
              return an.length > 3 && t.includes(vn) && t.includes(an);
            });
-  }).slice(0, 20);
+  }).slice(0, 25);
 
-  // Wedstrijden van deze club
   const clubWedstrijden = programma.filter(w =>
     (w.thuis||"").includes(club) || (w.uit||"").includes(club)
   );
   const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).reverse().slice(0,6);
   const komend   = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).slice(0,4);
 
-  const SpelerRij = ({s}) => (
-    <div onClick={()=>nav("speler_via_club",{...s, _vanClub: club})}
-      style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",
-        borderBottom:"1px solid var(--border)",cursor:"pointer",borderRadius:5,transition:"background .1s"}}
-      onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
-      onMouseLeave={e=>e.currentTarget.style.background=""}>
-      {/* Rugnummer */}
-      <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:12,fontWeight:700,
-        color:"var(--accent)",minWidth:28,flexShrink:0,textAlign:"right"}}>
-        {s.rugnummer}
-      </span>
-      {/* Naam + badges */}
-      <div style={{flex:1,minWidth:0,display:"flex",alignItems:"center",gap:5}}>
-        <span style={{fontSize:13,fontWeight:500}}>{s.naam}</span>
-        {s.keeper     && <span style={{fontSize:9,padding:"1px 5px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
-        {s.aanvoerder && <span style={{fontSize:9,padding:"1px 5px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700,flexShrink:0}}>A</span>}
-      </div>
-      {/* Stats direct naast naam */}
-      {s.doelpunten_seizoen > 0 && (
-        <div style={{display:"flex",gap:5,flexShrink:0}}>
-          <span style={{fontSize:11,color:"var(--accent)",fontWeight:700,fontFamily:"'JetBrains Mono',monospace"}}>⚽{s.doelpunten_seizoen}</span>
-          {s.vd>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>V{s.vd}</span>}
-          {s.sc>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>SC{s.sc}</span>}
-          {s.sb>0 && <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>SB{s.sb}</span>}
-        </div>
-      )}
-    </div>
+  // Oranje badge
+  const OrangeBadge = ({s}) => {
+    const o = (s.oranje||"").toLowerCase();
+    if (!o) return null;
+    const label = o.includes("u16")?"U16":o.includes("u18")?"U18":o.includes("jong")?"JO":"O";
+    return <span style={{fontSize:9,padding:"1px 5px",background:"#ea580c",color:"white",borderRadius:3,fontWeight:700,flexShrink:0}}>{label}</span>;
+  };
+
+  // Vlaggetje op basis van land_code
+  const Vlag = ({s}) => {
+    if (!s.land_code || s.land_code.toLowerCase()==="nl") return null;
+    const emoji = s.land_code.toUpperCase().replace(/./g, c =>
+      String.fromCodePoint(c.charCodeAt(0)+127397));
+    return <span style={{fontSize:12,flexShrink:0}}>{emoji}</span>;
+  };
+
+  const Td = ({children, right, mono, muted, accent, bold, w}) => (
+    <td style={{
+      padding:"6px 8px", textAlign:right?"right":"left",
+      fontFamily:mono?"'JetBrains Mono',monospace":"inherit",
+      fontSize:mono?12:13, fontWeight:bold?700:400,
+      color:muted?"var(--muted)":accent?"var(--accent)":"var(--text)",
+      whiteSpace:"nowrap", width:w||"auto",
+      borderBottom:"1px solid var(--border)"
+    }}>{children}</td>
   );
 
   return (
@@ -900,9 +895,48 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
         {/* Links: spelers + wedstrijden */}
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
-          <div style={{marginBottom:20}}>
-            {clubSpelers.map((s,i) => <SpelerRij key={i} s={s}/>)}
-          </div>
+          {/* Spelers tabel */}
+          <table style={{width:"100%",borderCollapse:"collapse",marginBottom:20}}>
+            <thead>
+              <tr>
+                {["#","Naam","","Goals","V","SC","SB"].map((h,i) => (
+                  <th key={i} style={{
+                    fontSize:10,fontWeight:600,textTransform:"uppercase",
+                    letterSpacing:.5,color:"var(--muted)",
+                    padding:"0 8px 8px",textAlign:i===0||i>=3?"right":"left",
+                    borderBottom:"1px solid var(--border2)"
+                  }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {clubSpelers.map((s,i) => (
+                <tr key={i} style={{cursor:"pointer"}}
+                  onClick={()=>nav("speler_via_club",{...s,_vanClub:club})}
+                  onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}}
+                  onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
+                  <Td right mono accent bold>{s.rugnummer}</Td>
+                  <Td>
+                    <div style={{display:"flex",alignItems:"center",gap:5}}>
+                      <span>{s.naam}</span>
+                      {s.keeper     && <span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700}}>K</span>}
+                      {s.aanvoerder && <span style={{fontSize:9,padding:"1px 4px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700}}>A</span>}
+                    </div>
+                  </Td>
+                  <Td>
+                    <div style={{display:"flex",gap:4,alignItems:"center"}}>
+                      <Vlag s={s}/>
+                      <OrangeBadge s={s}/>
+                    </div>
+                  </Td>
+                  <Td right mono bold accent>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</Td>
+                  <Td right mono muted>{s.vd>0?s.vd:""}</Td>
+                  <Td right mono muted>{s.sc>0?s.sc:""}</Td>
+                  <Td right mono muted>{s.sb>0?s.sb:""}</Td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
           {/* Recente uitslagen */}
           {gespeeld.length > 0 && (
