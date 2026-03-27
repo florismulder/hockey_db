@@ -217,18 +217,36 @@ def parse_page(html: str) -> tuple[list[dict], list[dict]]:
 # ── Opslaan ───────────────────────────────────────────────────────────────────
 
 def save_programma(wedstrijden: list[dict], geslacht: str, path: Path) -> None:
-    """Sla wedstrijdprogramma op als JSON."""
+    """Sla wedstrijdprogramma op als JSON.
+    Bestaande komende fixtures blijven bewaard.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
+    bestaande_komend = []
+    if path.exists():
+        try:
+            bestaand = json.loads(path.read_text())
+            bestaande_komend = [
+                w for w in bestaand.get("wedstrijden", [])
+                if not w.get("gespeeld", False) and w.get("score_thuis") is None
+            ]
+        except Exception:
+            pass
+    gespeeld = [w for w in wedstrijden if w.get("gespeeld", False)]
+    def key(w):
+        return (w.get("thuis","").lower(), w.get("uit","").lower())
+    gespeelde_keys = {key(w) for w in gespeeld}
+    komend_gefilterd = [w for w in bestaande_komend if key(w) not in gespeelde_keys]
+    alle = gespeeld + komend_gefilterd
     output = {
         "seizoen": "2025/26",
         "geslacht": geslacht,
         "bron": TULP_URL,
         "bijgewerkt": datetime.now(timezone.utc).isoformat(),
-        "wedstrijden": wedstrijden,
+        "wedstrijden": alle,
     }
     with path.open("w", encoding="utf-8") as fh:
         json.dump(output, fh, ensure_ascii=False, indent=2)
-    log.info("Opgeslagen: %s (%d wedstrijden)", path, len(wedstrijden))
+    log.info("Opgeslagen: %s (%d gespeeld, %d komend)", path, len(gespeeld), len(komend_gefilterd))
 
 
 # ── Hoofdfunctie ──────────────────────────────────────────────────────────────
