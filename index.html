@@ -869,7 +869,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
       fontFamily:mono?"'JetBrains Mono',monospace":"inherit",
       fontSize:mono?12:13, fontWeight:bold?700:400,
       color:muted?"var(--muted)":accent?"var(--accent)":"var(--text)",
-      whiteSpace:"nowrap", width:w||"auto",
+      whiteSpace:"nowrap", width:w||"1px",
       borderBottom:"1px solid var(--border)"
     }}>{children}</td>
   );
@@ -890,7 +890,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
       </div>
 
       {/* Twee kolommen */}
-      <div style={{display:"grid",gridTemplateColumns:"1fr 300px",minHeight:"60vh"}}>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
 
         {/* Links: spelers + wedstrijden */}
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
@@ -903,7 +903,9 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
                   <th key={i} style={{
                     fontSize:10,fontWeight:600,textTransform:"uppercase",
                     letterSpacing:.5,color:"var(--muted)",
-                    padding:"0 8px 8px",textAlign:i===0||i>=3?"right":"left",
+                    padding:"0 8px 8px",
+                    textAlign:i===0||i>=3?"right":"left",
+                    whiteSpace:"nowrap",
                     borderBottom:"1px solid var(--border2)"
                   }}>{h}</th>
                 ))}
@@ -916,18 +918,15 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
                   onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}}
                   onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
                   <Td right mono accent bold>{s.rugnummer}</Td>
-                  <Td>
+                  <td style={{padding:"6px 8px",whiteSpace:"nowrap",borderBottom:"1px solid var(--border)"}}>
                     <div style={{display:"flex",alignItems:"center",gap:5}}>
-                      <span>{s.naam}</span>
-                      {s.keeper     && <span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700}}>K</span>}
-                      {s.aanvoerder && <span style={{fontSize:9,padding:"1px 4px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700}}>A</span>}
+                      <span style={{fontSize:13,fontWeight:500,cursor:"pointer"}}>{s.naam}</span>
+                      {s.keeper     && <span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
+                      {s.aanvoerder && <span style={{fontSize:9,padding:"1px 4px",background:"var(--orange-light)",color:"var(--orange)",borderRadius:3,fontWeight:700,flexShrink:0}}>A</span>}
                     </div>
-                  </Td>
+                  </td>
                   <Td>
-                    <div style={{display:"flex",gap:4,alignItems:"center"}}>
-                      <Vlag s={s}/>
-                      <OrangeBadge s={s}/>
-                    </div>
+                    <Vlag s={s}/>
                   </Td>
                   <Td right mono bold accent>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</Td>
                   <Td right mono muted>{s.vd>0?s.vd:""}</Td>
