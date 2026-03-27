@@ -248,6 +248,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                   <thead><tr>
                     <th>#</th><th className="cl">Club</th>
                     <th title="Wedstrijden gespeeld">W</th>
+                    <th title="Punten">Pnt</th>
                     {["G","Gk","V"].map(type => (
                       <th key={type} title={type==="G"?"Gewonnen":type==="Gk"?"Gelijk":"Verloren"}
                         style={{cursor:"pointer",userSelect:"none"}}
@@ -258,7 +259,6 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                     <th title="Doelpunten voor">DV</th>
                     <th title="Doelpunten tegen">DT</th>
                     <th title="Doelsaldo">Dsl</th>
-                    <th title="Punten">Pnt</th>
                   </tr></thead>
                   <tbody>
                     {stand.map(r=>{
@@ -277,6 +277,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                             </button>
                           </td>
                           <td>{r.gespeeld}</td>
+                          <td className="pnt">{r.punten??r.ptn??0}</td>
                           {[["G",r.gewonnen,"gewonnen"],["Gk",r.gelijk,"gelijk"],["V",r.verloren,"verloren"]].map(([type,val,label])=>(
                             <td key={type}
                               style={{cursor:"pointer",color:clubFilter?.club===r.club&&clubFilter?.type===type?"var(--accent)":"inherit",fontWeight:clubFilter?.club===r.club&&clubFilter?.type===type?700:"inherit"}}
@@ -287,7 +288,6 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                           <td>{dv||"–"}</td>
                           <td>{dt||"–"}</td>
                           <td className={dslNum>0?"dp":dslNum<0?"dn":""}>{dslNum>0?`+${dslNum}`:dslNum}</td>
-                          <td className="pnt">{r.punten??r.ptn??r.pts??r.pt??r.pts??r["ptn"]??r["punten"]??r["pnt"]??r["pts"]??r["pt"]??r["p"]??0}</td>
                         </tr>
                       );
                     })}
