@@ -62,11 +62,17 @@ def parse_type(tekst: str) -> str:
     return "veld"
 
 def parse_scorers(regel: str, club: str) -> list:
-    """Parseer een scorersregel zoals: Naam (25'), Naam (30', SC)"""
+    """Parseer een scorersregel zoals: Naam (25'), Naam (30', SC) en Naam (35')"""
     scorers = []
     # Verwijder prefix zoals "Doelpuntenmakers Club:"
     if ":" in regel:
         regel = regel.split(":", 1)[1]
+
+    # Verwijder trailing punt
+    regel = regel.rstrip(".")
+
+    # Vervang " en " door komma voor uniforme verwerking
+    regel = re.sub(r"\s+en\s+", ", ", regel)
 
     # Splits op komma, maar niet binnen haakjes
     delen = re.split(r",\s*(?![^()]*\))", regel)
@@ -134,22 +140,16 @@ def parse_wedstrijden(tekst: str, datum: str = None, geslacht: str = "heren") ->
         if huidige is None:
             continue
 
-        # Scorers thuis
-        m_thuis = re.match(
-            r"(?:Doelpuntenmaker(?:s)?\s+)" + re.escape(huidige["thuis"]) + r"\s*[:\-]\s*(.+)",
-            regel, re.IGNORECASE
-        )
-        if m_thuis:
-            huidige["scorers"].extend(parse_scorers(m_thuis.group(1), huidige["thuis"]))
-            continue
-
-        # Scorers uit
-        m_uit = re.match(
-            r"(?:Doelpuntenmaker(?:s)?\s+)" + re.escape(huidige["uit"]) + r"\s*[:\-]\s*(.+)",
-            regel, re.IGNORECASE
-        )
-        if m_uit:
-            huidige["scorers"].extend(parse_scorers(m_uit.group(1), huidige["uit"]))
+        # Scorers thuis of uit
+        m_scorer = re.match(r"Doelpuntenmaker(?:s)?\s+(.+?)\s*[:\-]\s*(.+)", regel, re.IGNORECASE)
+        if m_scorer:
+            club_naam = m_scorer.group(1).strip().rstrip(":")
+            scorer_tekst = m_scorer.group(2)
+            # Match op clubnaam (gedeeltelijk)
+            club_match = huidige["thuis"] if club_naam.lower() in huidige["thuis"].lower() or huidige["thuis"].lower() in club_naam.lower() else None
+            if not club_match:
+                club_match = huidige["uit"] if club_naam.lower() in huidige["uit"].lower() or huidige["uit"].lower() in club_naam.lower() else club_naam
+            huidige["scorers"].extend(parse_scorers(scorer_tekst, club_match))
             continue
 
         # Algemene scorers (geen clubnaam erbij, bijv. bij 1 team)
