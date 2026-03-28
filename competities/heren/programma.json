@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:19:47.116Z",
+  "bijgewerkt": "2026-03-28T08:19:58.733Z",
   "wedstrijden": [
     {
       "datum": "2026-03-14",
@@ -131,7 +131,78 @@
       "uit": "Oranje-Rood",
       "score_thuis": 3,
       "score_uit": 3,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "15:00",
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 30,
+          "type": "sc"
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood",
+          "minuut": 39,
+          "type": "sc"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 50,
+          "type": "sc"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Robbert Kemperman",
+          "club": "Amsterdam",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 28,
+          "type": "groen"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Amsterdam",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Gerard Clapes",
+          "club": "Oranje-Rood",
+          "minuut": 46,
+          "type": "groen"
+        },
+        {
+          "naam": "Arthur de Sloover",
+          "club": "Oranje-Rood",
+          "minuut": 49,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-03-15",
