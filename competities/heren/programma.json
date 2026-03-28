@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:13:43.756Z",
+  "bijgewerkt": "2026-03-28T08:19:37.732Z",
   "wedstrijden": [
     {
       "datum": "2026-03-14",
@@ -10,7 +10,47 @@
       "uit": "Schaerweijde",
       "score_thuis": 5,
       "score_uit": 1,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "16:30",
+      "scorers": [
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 1,
+          "type": "sc"
+        },
+        {
+          "naam": "Joaquín Menini",
+          "club": "Rotterdam",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde",
+          "minuut": 37,
+          "type": "sb"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-03-15",
