@@ -2,8 +2,51 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:20:34.125Z",
+  "bijgewerkt": "2026-03-28T10:25:50.958Z",
   "wedstrijden": [
+    {
+      "thuis": "Schaerweijde",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun Beins",
+          "club": "Schaerweijde",
+          "minuut": 29,
+          "type": "sc"
+        },
+        {
+          "naam": "Mick Bosse",
+          "club": "Bloemendaal",
+          "minuut": 40,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Maarten Bruisten",
+          "club": "Schaerweijde",
+          "minuut": 17,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Schaerweijde",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ]
+    },
     {
       "datum": "2026-03-14",
       "thuis": "Rotterdam",
