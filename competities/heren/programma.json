@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:24:55.223Z",
+  "bijgewerkt": "2026-03-28T11:25:40.138Z",
   "wedstrijden": [
     {
       "thuis": "Amsterdam",
@@ -141,6 +141,67 @@
           "naam": "Hjalmar Voskuil",
           "club": "Hurley",
           "minuut": 46,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "Schaerweijde",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 0,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Valk",
+          "club": "Pinoké",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde",
+          "minuut": 13,
+          "type": "sc"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 46,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joppe Stappenbelt",
+          "club": "Pinoké",
+          "minuut": 6,
+          "type": "groen"
+        },
+        {
+          "naam": "Stijn Draaijer",
+          "club": "Pinoké",
+          "minuut": 18,
+          "type": "groen"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde",
+          "minuut": 36,
           "type": "groen"
         }
       ]
