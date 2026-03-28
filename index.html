@@ -561,10 +561,10 @@ function WedstrijdDetail({wedstrijd}) {
       </div>
       <div className="db">
         {w.scorers&&w.scorers.length>0?(
-          <>
-            <div className="ds">Doelpunten</div>
-            <div style={{display:"flex",justifyContent:"center"}}>
-              <table style={{borderCollapse:"collapse",width:"auto",minWidth:320,maxWidth:560}}>
+          <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+            <div style={{width:"100%",maxWidth:560}}>
+              <div className="ds">Doelpunten</div>
+              <table style={{borderCollapse:"collapse",width:"100%"}}>
                 <thead>
                   <tr>
                     {["'","Stand","Naam","Club","Type"].map((h,i)=>(
@@ -609,13 +609,25 @@ function WedstrijdDetail({wedstrijd}) {
                 </tbody>
               </table>
             </div>
-          </>
+          </div>
         ):<div className="empty">{gespeeld?"Geen scorersinformatie beschikbaar.":"Wedstrijd nog niet gespeeld."}</div>}
         {w.kaarten&&w.kaarten.length>0&&(
-          <div style={{marginTop:20}}>
-            <div className="ds">Kaarten</div>
-            <div style={{display:"flex",justifyContent:"center"}}>
-              <table style={{borderCollapse:"collapse",width:"auto",minWidth:280,maxWidth:480}}>
+          <div style={{marginTop:20,display:"flex",flexDirection:"column",alignItems:"center"}}>
+            <div style={{width:"100%",maxWidth:480}}>
+              <div className="ds">Kaarten</div>
+              <table style={{borderCollapse:"collapse",width:"100%"}}>
+                <thead>
+                  <tr>
+                    {["'","","Naam","Club"].map((h,i)=>(
+                      <th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",
+                        letterSpacing:.5,color:"var(--muted)",padding:"0 10px 8px",
+                        textAlign:i===0?"center":"left",
+                        borderBottom:"1px solid var(--border2)",whiteSpace:"nowrap"}}>
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
                 <tbody>
                   {w.kaarten.map((k,i)=>(
                     <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
