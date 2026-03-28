@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T10:25:50.958Z",
+  "bijgewerkt": "2026-03-28T10:26:03.486Z",
   "wedstrijden": [
     {
       "thuis": "Schaerweijde",
@@ -44,6 +44,91 @@
           "club": "Bloemendaal",
           "minuut": 47,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Hurley",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 8,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 3,
+          "type": "sc"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Indra Aerts",
+          "club": "Pinoké",
+          "minuut": 25,
+          "type": "sc"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 31,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn van der Valk",
+          "club": "Pinoké",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 56,
+          "type": "sc"
+        },
+        {
+          "naam": "Noam Sheridan",
+          "club": "Hurley",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley",
+          "minuut": 17,
+          "type": "groen"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Daan Dekker",
+          "club": "Pinoké",
+          "minuut": 44,
+          "type": "geel"
         }
       ]
     },
