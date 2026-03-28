@@ -563,15 +563,82 @@ function WedstrijdDetail({wedstrijd}) {
         {w.scorers&&w.scorers.length>0?(
           <>
             <div className="ds">Doelpunten</div>
-            {w.scorers.map((s,i)=>(
-              <div className="scrow" key={i}>
-                <span className="scmin">{s.minuut}'</span>
-                <span className="scnm">{s.naam}</span>
-                <span className="sccl">{s.club}</span>
-              </div>
-            ))}
+            <div style={{display:"flex",justifyContent:"center"}}>
+              <table style={{borderCollapse:"collapse",width:"auto",minWidth:320,maxWidth:560}}>
+                <thead>
+                  <tr>
+                    {["'","Stand","Naam","Club","Type"].map((h,i)=>(
+                      <th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",
+                        letterSpacing:.5,color:"var(--muted)",padding:"0 10px 8px",
+                        textAlign:i===0||i===1?"center":"left",
+                        borderBottom:"1px solid var(--border2)",whiteSpace:"nowrap"}}>
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {w.scorers.map((s,i)=>(
+                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
+                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
+                        fontSize:12,color:"var(--accent)",fontWeight:700,whiteSpace:"nowrap"}}>
+                        {s.minuut!=null?s.minuut+"'":"–"}
+                      </td>
+                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
+                        fontSize:12,fontWeight:700,whiteSpace:"nowrap",color:"var(--text)"}}>
+                        {s.stand||""}
+                      </td>
+                      <td style={{padding:"7px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
+                        {s.naam}
+                      </td>
+                      <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
+                        {s.club}
+                      </td>
+                      <td style={{padding:"7px 10px",whiteSpace:"nowrap"}}>
+                        {s.type&&s.type!=="veld"&&(
+                          <span style={{fontSize:10,padding:"2px 6px",
+                            background:"var(--accent-light)",color:"var(--accent)",
+                            borderRadius:4,textTransform:"uppercase",fontWeight:600,
+                            letterSpacing:".3px"}}>
+                            {s.type.toUpperCase()}
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </>
         ):<div className="empty">{gespeeld?"Geen scorersinformatie beschikbaar.":"Wedstrijd nog niet gespeeld."}</div>}
+        {w.kaarten&&w.kaarten.length>0&&(
+          <div style={{marginTop:20}}>
+            <div className="ds">Kaarten</div>
+            <div style={{display:"flex",justifyContent:"center"}}>
+              <table style={{borderCollapse:"collapse",width:"auto",minWidth:280,maxWidth:480}}>
+                <tbody>
+                  {w.kaarten.map((k,i)=>(
+                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
+                      <td style={{padding:"6px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
+                        fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
+                        {k.minuut!=null?k.minuut+"'":"–"}
+                      </td>
+                      <td style={{padding:"6px 10px",fontSize:14}}>
+                        {k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}
+                      </td>
+                      <td style={{padding:"6px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
+                        {k.naam}
+                      </td>
+                      <td style={{padding:"6px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
+                        {k.club}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
