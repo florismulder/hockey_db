@@ -101,13 +101,14 @@ def parse_wedstrijden(tekst: str, datum: str = None, geslacht: str = "heren") ->
     regels = tekst.split("\n")
 
     for regel in regels:
+        regel = regel.lstrip('•·*\-– ').strip()
         regel = regel.strip()
         if not regel or regel.startswith("*") and len(regel) < 3:
             continue
 
         # Wedstrijd header: "Club A – Club B (score-score)" of "Club A - Club B (score-score)"
         m = re.match(
-            r"^(.+?)\s*[–\-]\s*(.+?)\s*\((\d+)\s*[-–]\s*(\d+)\)",
+            r"^(.+?)\s*[–]\s*(.+?)\s*\((\d+)\s*[-–]\s*(\d+)\)",
             regel
         )
         if m:
@@ -151,12 +152,13 @@ def parse_wedstrijden(tekst: str, datum: str = None, geslacht: str = "heren") ->
             huidige["scorers"].extend(parse_scorers(m_uit.group(1), huidige["uit"]))
             continue
 
-        # Algemene scorers (geen clubnaam erbij)
-        if re.match(r"^\*?\s*Doelpuntenmaker", regel, re.IGNORECASE):
-            # Probeer club te bepalen op basis van score context
-            rest = re.sub(r"^\*?\s*Doelpuntenmaker[s]?\s*[:\-]?\s*", "", regel, flags=re.IGNORECASE)
-            # Voeg toe als onbekende club
-            huidige["scorers"].extend(parse_scorers(rest, "?"))
+        # Algemene scorers (geen clubnaam erbij, bijv. bij 1 team)
+        if re.match(r"Doelpuntenmaker", regel, re.IGNORECASE):
+            rest = re.sub(r"Doelpuntenmaker[s]?\s*[:\-]?\s*", "", regel, flags=re.IGNORECASE).strip()
+            if rest:
+                # Bepaal club op basis van wie er maar 1 scoorde
+                club = huidige["thuis"] if huidige["score_thuis"] == 1 else huidige["uit"]
+                huidige["scorers"].extend(parse_scorers(rest, club))
 
     if huidige:
         wedstrijden.append(huidige)
