@@ -2,8 +2,135 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T07:27:47.780Z",
+  "bijgewerkt": "2026-03-28T08:13:43.756Z",
   "wedstrijden": [
+    {
+      "datum": "2026-03-14",
+      "thuis": "Rotterdam",
+      "uit": "Schaerweijde",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-15",
+      "thuis": "Laren",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-15",
+      "thuis": "Amsterdam",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-15",
+      "thuis": "Klein Zwitserland",
+      "uit": "Den Bosch",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-15",
+      "thuis": "Pinoké",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-15",
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "gespeeld": true
+    },
+    {
+      "datum": "2026-03-21",
+      "thuis": "Den Bosch",
+      "uit": "Pinoké",
+      "score_thuis": 6,
+      "score_uit": 3,
+      "gespeeld": true,
+      "tijdstip": "16:30",
+      "scorers": [
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Den Bosch",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Sorsby",
+          "club": "Den Bosch",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 18,
+          "type": "sc"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 28,
+          "type": "sc"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Den Bosch",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Den Bosch",
+          "minuut": 35,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 37,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 47,
+          "type": "sc"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tim Knapper",
+          "club": "Den Bosch",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 51,
+          "type": "groen"
+        }
+      ]
+    },
     {
       "thuis": "Kampong",
       "uit": "Bloemendaal",
@@ -531,133 +658,6 @@
       "uit": "HDM",
       "tijdstip": "16:30",
       "gespeeld": false
-    },
-    {
-      "datum": "2026-03-14",
-      "thuis": "Rotterdam",
-      "uit": "Schaerweijde",
-      "score_thuis": 5,
-      "score_uit": 1,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Laren",
-      "uit": "HDM",
-      "score_thuis": 2,
-      "score_uit": 3,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Amsterdam",
-      "uit": "Oranje-Rood",
-      "score_thuis": 3,
-      "score_uit": 3,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Klein Zwitserland",
-      "uit": "Den Bosch",
-      "score_thuis": 2,
-      "score_uit": 4,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Pinoké",
-      "uit": "Kampong",
-      "score_thuis": 3,
-      "score_uit": 3,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Bloemendaal",
-      "uit": "Hurley",
-      "score_thuis": 1,
-      "score_uit": 0,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-21",
-      "thuis": "Den Bosch",
-      "uit": "Pinoké",
-      "score_thuis": 6,
-      "score_uit": 3,
-      "gespeeld": true,
-      "tijdstip": "16:30",
-      "scorers": [
-        {
-          "naam": "Jaïr van der Horst",
-          "club": "Den Bosch",
-          "minuut": 13,
-          "type": "veld"
-        },
-        {
-          "naam": "Thomas Sorsby",
-          "club": "Den Bosch",
-          "minuut": 15,
-          "type": "veld"
-        },
-        {
-          "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 18,
-          "type": "sc"
-        },
-        {
-          "naam": "Miles Bukkens",
-          "club": "Pinoké",
-          "minuut": 28,
-          "type": "sc"
-        },
-        {
-          "naam": "Florent van Aubel",
-          "club": "Den Bosch",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Florent van Aubel",
-          "club": "Den Bosch",
-          "minuut": 35,
-          "type": "sc"
-        },
-        {
-          "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 37,
-          "type": "sc"
-        },
-        {
-          "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 47,
-          "type": "sc"
-        },
-        {
-          "naam": "Koen Bijen",
-          "club": "Den Bosch",
-          "minuut": 53,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Tim Knapper",
-          "club": "Pinoké",
-          "minuut": 20,
-          "type": "groen"
-        },
-        {
-          "naam": "Miles Bukkens",
-          "club": "Pinoké",
-          "minuut": 51,
-          "type": "groen"
-        }
-      ]
     }
   ]
 }
