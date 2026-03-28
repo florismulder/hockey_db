@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:24:21.421Z",
+  "bijgewerkt": "2026-03-28T11:24:32.130Z",
   "wedstrijden": [
     {
       "thuis": "Amsterdam",
@@ -31,6 +31,67 @@
           "naam": "Luke Dommershuijzen",
           "club": "Amsterdam",
           "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Oranje-Rood",
+      "uit": "HDM",
+      "score_thuis": 5,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 55,
+          "type": "sb"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood",
+          "minuut": 56,
+          "type": "sc"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 58,
           "type": "groen"
         }
       ]
