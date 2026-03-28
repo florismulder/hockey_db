@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T10:26:13.171Z",
+  "bijgewerkt": "2026-03-28T10:26:26.669Z",
   "wedstrijden": [
     {
       "thuis": "Schaerweijde",
@@ -172,6 +172,43 @@
           "club": "Kampong",
           "minuut": 34,
           "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 48,
+          "type": "sc"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 53,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 59,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Max Kreft",
+          "club": "Amsterdam",
+          "minuut": 52,
+          "type": "groen"
         }
       ]
     },
