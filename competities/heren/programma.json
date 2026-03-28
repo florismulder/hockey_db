@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:19:37.732Z",
+  "bijgewerkt": "2026-03-28T08:19:47.116Z",
   "wedstrijden": [
     {
       "datum": "2026-03-14",
@@ -58,7 +58,72 @@
       "uit": "HDM",
       "score_thuis": 2,
       "score_uit": 3,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "15:00",
+      "scorers": [
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Balder Reyenga",
+          "club": "Laren",
+          "minuut": 33,
+          "type": "sc"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM",
+          "minuut": 49,
+          "type": "sc"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM",
+          "minuut": 56,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren",
+          "minuut": 14,
+          "type": "groen"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren",
+          "minuut": 46,
+          "type": "geel"
+        },
+        {
+          "naam": "Quinten Mooijen",
+          "club": "HDM",
+          "minuut": 48,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-03-15",
