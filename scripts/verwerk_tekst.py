@@ -51,7 +51,7 @@ def normaliseer_club(naam: str) -> str:
     key = naam.lower().strip()
     return CLUB_MAPPING.get(key, naam.strip())
 
-def parse_minuut(tekst: str) -> int | None:
+def parse_minuut(tekst: str):
     m = re.search(r"(\d+)'", tekst)
     return int(m.group(1)) if m else None
 
