@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:25:40.138Z",
+  "bijgewerkt": "2026-03-28T11:25:49.890Z",
   "wedstrijden": [
     {
       "thuis": "Amsterdam",
@@ -202,6 +202,49 @@
           "naam": "Jelle Westendorp",
           "club": "Schaerweijde",
           "minuut": 36,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal",
+          "minuut": 59,
+          "type": "sb"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tobias Bovelander",
+          "club": "Bloemendaal",
+          "minuut": 40,
+          "type": "groen"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 55,
           "type": "groen"
         }
       ]
