@@ -17,61 +17,69 @@
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal",
           "minuut": 8,
-          "type": "sc"
+          "type": "sc",
+          "stand": "0-1"
         },
         {
           "naam": "Sander van de Putte",
           "club": "Kampong",
           "minuut": 22,
-          "type": "veld"
+          "type": "veld",
+          "stand": "1-1"
         },
         {
           "naam": "Teun Beins",
           "club": "Bloemendaal",
           "minuut": 22,
-          "type": "sc"
+          "type": "sc",
+          "stand": "1-2"
         },
         {
           "naam": "Zachary Wallace",
           "club": "Bloemendaal",
           "minuut": 31,
-          "type": "veld"
+          "type": "veld",
+          "stand": "1-3"
         },
         {
           "naam": "Teun Hogenhout",
           "club": "Bloemendaal",
           "minuut": 42,
-          "type": "veld"
+          "type": "veld",
+          "stand": "1-4"
         },
         {
           "naam": "Derck de Vilder",
           "club": "Kampong",
           "minuut": 50,
-          "type": "sc"
+          "type": "sc",
+          "stand": "2-4"
         },
         {
-          "naam": "Elian Mazkour",
+          "naam": "onbekend",
           "club": "Kampong",
           "minuut": 55,
-          "type": "veld"
+          "type": "veld",
+          "stand": "3-4"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Kampong",
+          "club": "Bloemendaal",
           "minuut": 58,
-          "type": "veld"
+          "type": "veld",
+          "stand": "3-5"
         }
       ],
       "kaarten": [
         {
           "naam": "Sander van de Putte",
           "club": "Kampong",
-          "minuut": 52,
+          "minuut": 55,
           "type": "groen"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Kampong",
+          "club": "Bloemendaal",
           "minuut": 55,
           "type": "groen"
         }
