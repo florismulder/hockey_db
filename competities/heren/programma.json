@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:20:15.037Z",
+  "bijgewerkt": "2026-03-28T08:20:25.215Z",
   "wedstrijden": [
     {
       "datum": "2026-03-14",
@@ -297,7 +297,36 @@
       "uit": "Hurley",
       "score_thuis": 1,
       "score_uit": 0,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "15:00",
+      "scorers": [
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal",
+          "minuut": 28,
+          "type": "sb"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Nikas Berendts",
+          "club": "Hurley",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Theun de Leeuw",
+          "club": "Hurley",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal",
+          "minuut": 46,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-03-21",
