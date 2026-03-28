@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:24:44.794Z",
+  "bijgewerkt": "2026-03-28T11:24:55.223Z",
   "wedstrijden": [
     {
       "thuis": "Amsterdam",
@@ -92,6 +92,55 @@
           "naam": "Fabian Verzuu",
           "club": "HDM",
           "minuut": 58,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Klein Zwitserland",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Imko de Vries",
+          "club": "Klein Zwitserland",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Štěpán Klaban",
+          "club": "Klein Zwitserland",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn Jones",
+          "club": "Klein Zwitserland",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Ties Klinkhamer",
+          "club": "Hurley",
+          "minuut": 46,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley",
+          "minuut": 46,
           "type": "groen"
         }
       ]
