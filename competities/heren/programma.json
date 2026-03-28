@@ -586,7 +586,78 @@
       "uit": "Pinoké",
       "score_thuis": 6,
       "score_uit": 3,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "16:30",
+      "scorers": [
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Den Bosch",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Sorsby",
+          "club": "Den Bosch",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 18,
+          "type": "sc"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 28,
+          "type": "sc"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Den Bosch",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Den Bosch",
+          "minuut": 35,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 37,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Pinoké",
+          "minuut": 47,
+          "type": "sc"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tim Knapper",
+          "club": "Pinoké",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 51,
+          "type": "groen"
+        }
+      ]
     }
   ]
 }
