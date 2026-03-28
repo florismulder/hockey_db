@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:25:49.890Z",
+  "bijgewerkt": "2026-03-28T11:26:00.146Z",
   "wedstrijden": [
     {
       "thuis": "Amsterdam",
@@ -245,6 +245,61 @@
           "naam": "Guus Jansen",
           "club": "Rotterdam",
           "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "HDM",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-03-07",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Dylan Lucieer",
+          "club": "Rotterdam",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 15,
+          "type": "sb"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM",
+          "minuut": 46,
+          "type": "sb"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Matthijs van der Wielen",
+          "club": "HDM",
+          "minuut": 17,
+          "type": "groen"
+        },
+        {
+          "naam": "Cédric de Gier",
+          "club": "HDM",
+          "minuut": 34,
           "type": "groen"
         }
       ]
