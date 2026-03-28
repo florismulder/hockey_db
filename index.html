@@ -858,6 +858,177 @@ function InvoerPagina({geslacht, programma, spelers}) {
 }
 
 
+
+function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
+  const clubSpelers = spelers
+    .filter(s => s.club === club)
+    .sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
+
+  const clubNieuws = nieuws.filter(n => {
+    const t = (n.titel||n.title||"").toLowerCase();
+    return t.includes(club.toLowerCase()) ||
+           clubSpelers.some(s => {
+             const delen = s.naam.split(" ");
+             const vn = delen[0].toLowerCase();
+             const an = delen[delen.length-1].toLowerCase();
+             return an.length > 3 && t.includes(vn) && t.includes(an);
+           });
+  }).slice(0, 25);
+
+  const clubWedstrijden = programma.filter(w =>
+    (w.thuis||"").includes(club) || (w.uit||"").includes(club)
+  );
+  const gespeeld = clubWedstrijden
+    .filter(w => w.gespeeld===true || w.score_thuis!=null)
+    .sort((a,b) => new Date(b.datum||0) - new Date(a.datum||0));
+  const komend = clubWedstrijden
+    .filter(w => w.gespeeld!==true && w.score_thuis==null)
+    .sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
+
+  const Vlag = ({s}) => {
+    if (!s.land_code || s.land_code.toLowerCase()==="nl") return null;
+    const emoji = s.land_code.toUpperCase().replace(/./g, c =>
+      String.fromCodePoint(c.charCodeAt(0)+127397));
+    return <span style={{fontSize:12,flexShrink:0}}>{emoji}</span>;
+  };
+
+  const Td = ({children, right, mono, muted, accent, bold}) => (
+    <td style={{
+      padding:"6px 8px", textAlign:right?"right":"left",
+      fontFamily:mono?"'JetBrains Mono',monospace":"inherit",
+      fontSize:mono?12:13, fontWeight:bold?700:400,
+      color:muted?"var(--muted)":accent?"var(--accent)":"var(--text)",
+      whiteSpace:"nowrap", width:"1px",
+      borderBottom:"1px solid var(--border)"
+    }}>{children}</td>
+  );
+
+  return (
+    <div className="fade">
+      {/* Hero */}
+      <div style={{padding:"20px 24px 16px",borderBottom:"1px solid var(--border)",
+        background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
+        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>
+          {geslacht==="heren"?"Tulp Hoofdklasse Heren":"Tulp Hoofdklasse Dames"}
+        </div>
+        <div style={{fontSize:28,fontWeight:700,letterSpacing:"-.5px"}}>{club}</div>
+        <div style={{fontSize:12,color:"var(--muted)",marginTop:4}}>
+          {clubSpelers.length} spelers · seizoen 2025-2026
+        </div>
+      </div>
+
+      {/* Twee kolommen: spelers + nieuws */}
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
+        {/* Links: spelers */}
+        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
+          <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
+          <table style={{width:"100%",borderCollapse:"collapse",marginBottom:20}}>
+            <thead>
+              <tr>
+                {["#","Naam","","Goals","V","SC","SB"].map((h,i) => (
+                  <th key={i} style={{
+                    fontSize:10,fontWeight:600,textTransform:"uppercase",
+                    letterSpacing:.5,color:"var(--muted)",
+                    padding:"0 8px 8px",textAlign:i===0||i>=3?"right":"left",
+                    whiteSpace:"nowrap",borderBottom:"1px solid var(--border2)"
+                  }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {clubSpelers.map((s,i) => (
+                <tr key={i} style={{cursor:"pointer"}}
+                  onClick={()=>nav("speler_via_club",{...s,_vanClub:club})}
+                  onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}}
+                  onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
+                  <Td right mono accent bold>{s.rugnummer}</Td>
+                  <td style={{padding:"6px 8px",whiteSpace:"nowrap",borderBottom:"1px solid var(--border)"}}>
+                    <div style={{display:"flex",alignItems:"center",gap:5}}>
+                      <span style={{fontSize:13,fontWeight:500}}>{s.naam}</span>
+                      {s.keeper&&<span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
+                      {s.aanvoerder&&<span style={{fontSize:9,padding:"1px 4px",background:"var(--surface2)",color:"var(--muted)",border:"1px solid var(--border)",borderRadius:3,fontWeight:600,flexShrink:0}}>A</span>}
+                    </div>
+                  </td>
+                  <Td><Vlag s={s}/></Td>
+                  <Td right mono bold accent>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</Td>
+                  <Td right mono muted>{s.vd>0?s.vd:""}</Td>
+                  <Td right mono muted>{s.sc>0?s.sc:""}</Td>
+                  <Td right mono muted>{s.sb>0?s.sb:""}</Td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Rechts: nieuws */}
+        <div>
+          <div style={{padding:"14px 18px 12px",borderBottom:"1px solid var(--border)"}}>
+            <div style={{fontSize:13,fontWeight:700}}>Nieuws</div>
+          </div>
+          {clubNieuws.length > 0 ? clubNieuws.map((n,i) => (
+            <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer"
+              style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",textDecoration:"none",transition:"background .12s"}}
+              onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
+              onMouseLeave={e=>e.currentTarget.style.background=""}>
+              <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
+                {(n.datum||n.date||"").slice(0,10)}
+              </div>
+              <div style={{fontSize:12,fontWeight:600,lineHeight:1.4,color:"var(--text)",marginBottom:2}}>
+                {n.titel||n.title||""}
+              </div>
+              {(n.samenvatting||n.beschrijving)&&(
+                <div style={{fontSize:11,color:"var(--muted)",lineHeight:1.4}}>
+                  {(n.samenvatting||n.beschrijving||"").slice(0,120)}…
+                </div>
+              )}
+            </a>
+          )) : (
+            <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>
+              Geen nieuws gevonden.
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Wedstrijden: twee kolommen */}
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
+        <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
+          {gespeeld.length > 0 ? (
+            <div className="wl">
+              {gespeeld.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen uitslagen beschikbaar.</div>}
+        </div>
+        <div style={{padding:"20px 24px"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Programma</div>
+          {komend.length > 0 ? (
+            <div className="wl">
+              {komend.map((w,i) => (
+                <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                  <span className="wd">{formatDatum(w.datum)}</span>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="ws k">{w.tijdstip||"–"}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <span className="wa">›</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">Geen wedstrijden gepland.</div>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
   const [page,setPage]=useState("dashboard");
