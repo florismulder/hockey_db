@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T08:19:58.733Z",
+  "bijgewerkt": "2026-03-28T08:20:15.037Z",
   "wedstrijden": [
     {
       "datum": "2026-03-14",
@@ -210,7 +210,78 @@
       "uit": "Den Bosch",
       "score_thuis": 2,
       "score_uit": 4,
-      "gespeeld": true
+      "gespeeld": true,
+      "tijdstip": "15:00",
+      "scorers": [
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Tom Schneider",
+          "club": "Klein Zwitserland",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Eduard De Ignacio - Simó",
+          "club": "Den Bosch",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 35,
+          "type": "sc"
+        },
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch",
+          "minuut": 52,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "geel"
+        },
+        {
+          "naam": "Douwe Steens",
+          "club": "Klein Zwitserland",
+          "minuut": 54,
+          "type": "groen"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Reyenga",
+          "club": "Klein Zwitserland",
+          "minuut": 58,
+          "type": "geel"
+        },
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Den Bosch",
+          "minuut": 59,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-03-15",
