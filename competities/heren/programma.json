@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T10:26:26.669Z",
+  "bijgewerkt": "2026-03-28T10:26:36.116Z",
   "wedstrijden": [
     {
       "thuis": "Schaerweijde",
@@ -209,6 +209,79 @@
           "club": "Amsterdam",
           "minuut": 52,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Oranje-Rood",
+      "uit": "Laren",
+      "score_thuis": 5,
+      "score_uit": 2,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Gerard Clapes",
+          "club": "Oranje-Rood",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "minuut": 11,
+          "type": "sc"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren",
+          "minuut": 16,
+          "type": "sc"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "minuut": 26,
+          "type": "sc"
+        },
+        {
+          "naam": "Quinten Moojen",
+          "club": "Oranje-Rood",
+          "minuut": 53,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Laren",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pelle Vos",
+          "club": "Laren",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Thomas Selles",
+          "club": "Laren",
+          "minuut": 40,
+          "type": "groen"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren",
+          "minuut": 59,
+          "type": "geel"
         }
       ]
     },
