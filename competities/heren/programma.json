@@ -2,8 +2,39 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T10:26:36.116Z",
+  "bijgewerkt": "2026-03-28T11:24:21.421Z",
   "wedstrijden": [
+    {
+      "thuis": "Amsterdam",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Kampong",
+          "minuut": 53,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam",
+          "minuut": 38,
+          "type": "groen"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Amsterdam",
+          "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
     {
       "thuis": "Schaerweijde",
       "uit": "Bloemendaal",
