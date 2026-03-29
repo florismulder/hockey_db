@@ -2,7 +2,7 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-29T06:38:21.823Z",
+  "bijgewerkt": "2026-03-29T06:38:31.981Z",
   "wedstrijden": [
     {
       "thuis": "Laren",
@@ -1386,6 +1386,73 @@
           "naam": "Justen Blok",
           "club": "Hurley",
           "minuut": 11,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "Oranje-Rood",
+      "score_thuis": 1,
+      "score_uit": 6,
+      "datum": "2026-03-28",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood",
+          "minuut": 5,
+          "type": "sc"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "minuut": 14,
+          "type": "sc"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 15,
+          "type": "sc"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 40,
+          "type": "sc"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Pieter Sutorius",
+          "club": "Pinoké",
+          "minuut": 48,
           "type": "groen"
         }
       ]
