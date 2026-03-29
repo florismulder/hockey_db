@@ -2,8 +2,75 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T11:26:00.146Z",
+  "bijgewerkt": "2026-03-29T06:38:21.823Z",
   "wedstrijden": [
+    {
+      "thuis": "Laren",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2026-02-28",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 4,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 13,
+          "type": "sc"
+        },
+        {
+          "naam": "Eduard De Ignacio - Simó",
+          "club": "Den Bosch",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren",
+          "minuut": 6,
+          "type": "geel"
+        },
+        {
+          "naam": "Joppe Wolbert",
+          "club": "Laren",
+          "minuut": 7,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Reyenga",
+          "club": "Laren",
+          "minuut": 10,
+          "type": "groen"
+        }
+      ]
+    },
     {
       "thuis": "Amsterdam",
       "uit": "Kampong",
