@@ -198,27 +198,33 @@ function InvoerPagina() {
   const stuurNaarDrive = async () => {
     setStatus("busy");
     try {
-      // Verstuur tekst en wacht even
-      if (tekst.trim()) {
-        await fetch(APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify({ map: popup, tekst: tekst }) });
-        await new Promise(r => setTimeout(r, 1500));
-      }
-      
-      // Verstuur bestanden één voor één met een pauze
-      for (const bestand of bestanden) {
-        await new Promise((resolve, reject) => {
+      // Lees eerst alle geselecteerde bestanden in
+      const bestandenData = await Promise.all(bestanden.map(bestand => {
+        return new Promise((resolve, reject) => {
           const reader = new FileReader();
           reader.readAsDataURL(bestand);
-          reader.onload = async () => {
-            const payload = { map: popup, bestand: { naam: bestand.name, type: bestand.type, base64: reader.result.split(',')[1] } };
-            try { 
-              await fetch(APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) }); 
-              setTimeout(resolve, 1500); // 1.5 seconde pauze om blokkades te voorkomen
-            } 
-            catch(e) { reject(e); }
-          };
+          reader.onload = () => resolve({
+            naam: bestand.name,
+            type: bestand.type,
+            base64: reader.result.split(',')[1]
+          });
+          reader.onerror = reject;
         });
-      }
+      }));
+
+      // Bouw 1 pakket met alles erin
+      const payload = {
+        map: popup,
+        tekst: tekst,
+        bestanden: bestandenData
+      };
+
+      // Stuur alles in één keer
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload)
+      });
+
       setStatus("done");
       setTimeout(sluitPopup, 2000);
     } catch(e) {
