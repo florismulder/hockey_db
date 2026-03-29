@@ -39,7 +39,10 @@ function formatDatum(str) {
   if (!str) return "";
   const d = parseDatum(str);
   if (!d) return str;
-  return d.toLocaleDateString("nl-NL",{day:"numeric",month:"short"});
+  const dag = String(d.getDate()).padStart(2, '0');
+  const mnd = String(d.getMonth() + 1).padStart(2, '0');
+  const jaar = d.getFullYear();
+  return `${dag}-${mnd}-${jaar}`;
 }
 
 function stripTeam(naam) {
@@ -206,6 +209,7 @@ function PosBadge({n, zone}) {
 function Breadcrumb({page,pageId,nav}) {
   const items=[{label:"Home",target:"dashboard"}];
   if(page==="spelers") items.push({label:"Spelers",target:null});
+  if(page==="topscorers") items.push({label:"Topscorers",target:null});
   if(page==="speler") { items.push({label:"Spelers",target:"spelers"}); items.push({label:pageId?.naam||"",target:null}); }
   if(page==="speler_via_club") { items.push({label:pageId?._vanClub||"Club",target:"club",targetId:pageId?._vanClub}); items.push({label:pageId?.naam||"",target:null}); }
   if(page==="club") items.push({label:pageId||"",target:null});
@@ -219,6 +223,44 @@ function Breadcrumb({page,pageId,nav}) {
           {it.target?<button className="bcb" onClick={()=>nav(it.target,it.targetId||null)}>{it.label}</button>:<span className="bcc">{it.label}</span>}
         </span>
       ))}
+    </div>
+  );
+}
+
+function TopscorersOverzicht({topscorers}) {
+  return (
+    <div className="fade">
+      <div className="sec">
+        <div className="sec-hdr"><div className="sec-title">Topscorers Seizoen 25/26</div></div>
+        {topscorers.length > 0 ? (
+          <table className="stand-tbl">
+            <thead>
+              <tr>
+                <th style={{textAlign:'left', width: 30}}>#</th>
+                <th style={{textAlign:'left'}}>Naam</th>
+                <th style={{textAlign:'left'}}>Club</th>
+                <th style={{textAlign:'right'}}>Goals</th>
+                <th style={{textAlign:'right'}} title="Veld">V</th>
+                <th style={{textAlign:'right'}} title="Strafcorner">SC</th>
+                <th style={{textAlign:'right'}} title="Strafbal">SB</th>
+              </tr>
+            </thead>
+            <tbody>
+              {topscorers.map((t, i) => (
+                <tr key={i}>
+                  <td style={{textAlign:'left'}}>{i + 1}</td>
+                  <td style={{textAlign:'left', fontWeight:600}}><Vlag s={t}/>{t.naam}</td>
+                  <td style={{textAlign:'left'}}>{t.club}</td>
+                  <td style={{color:'var(--accent)', fontWeight:700, textAlign:'right'}}>{t.doelpunten}</td>
+                  <td style={{textAlign:'right'}}>{t.vd}</td>
+                  <td style={{textAlign:'right'}}>{t.sc}</td>
+                  <td style={{textAlign:'right'}}>{t.sb}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : <div className="empty">Geen topscorers beschikbaar.</div>}
+      </div>
     </div>
   );
 }
@@ -250,9 +292,12 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
       <div className="main-grid">
         <div className="col-l">
           <div className="sec">
-            <div className="sec-hdr">
-              <div className="sec-title">Stand</div>
-              {bijgewerkt&&<div className="sec-sub">Bijgewerkt {bijgewerkt}</div>}
+            <div className="sec-hdr" style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:14}}>
+              <div style={{display:"flex",alignItems:"baseline",gap:10}}>
+                <div className="sec-title">Stand</div>
+                {bijgewerkt&&<div className="sec-sub">Bijgewerkt {bijgewerkt}</div>}
+              </div>
+              <button onClick={()=>nav("topscorers")} style={{background:"none",border:"none",color:"var(--accent)",fontWeight:600,fontSize:13,cursor:"pointer",padding:0}}>Topscorers ›</button>
             </div>
             {stand.length>0?(
               <>
@@ -703,300 +748,114 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
   );
 }
 
-function InvoerPagina({geslacht, programma, spelers}) {
-  const {useState, useMemo} = React;
-  const [tabbladen, setTabbladen] = useState([{id:1, tekst:"", titel:"Wedstrijd 1"}]);
-  const [actief, setActief] = useState(1);
-  const [resultaten, setResultaten] = useState({});
-  const [laden, setLaden] = useState({});
-  const [fout, setFout] = useState({});
-  const [afbeeldingen, setAfbeeldingen] = useState({});
-  const [driveStatus, setDriveStatus] = useState(null);
+function InvoerPagina() {
+  const {useState} = React;
+  const [popup, setPopup] = useState(null);
+  const [bestand, setBestand] = useState(null);
+  const [tekst, setTekst] = useState("");
+  const [status, setStatus] = useState("idle");
 
-  const spelersLijst = useMemo(() => spelers.slice(0,150).map(s=>s.naam).join(", "), [spelers]);
-  const SYSTEM = "Je analyseert hockey-invoer over de Tulp Hoofdklasse. Dit kan tekst, een artikel OF een screenshot zijn.\n\nBij een wedstrijdformulier/match center herken je: teamnamen, datum, tijd, score, events (Doelpunt/Groene kaart/Gele kaart + naam + minuut).\nBepaal de club van elke scorer op basis van de teamnamen.\nBekende spelers: " + spelersLijst + "\n\nGeef ALLEEN een geldig JSON-object terug:\n{\"wedstrijden\":[{\"thuis\":\"Club\",\"uit\":\"Club\",\"score_thuis\":1,\"score_uit\":3,\"datum\":\"2026-03-22\",\"tijdstip\":\"15:00\",\"locatie\":\"Naam\",\"wedstrijdnummer\":\"1891257\",\"scorers\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":25,\"type\":\"veld\"}],\"kaarten\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":12,\"type\":\"groen\"}]}],\"highlights\":[],\"spelers_vermeld\":[]}";
-
-  const handleDriveUpload = async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    setDriveStatus("Bezig met verzenden naar Google Drive...");
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = async () => {
-      const base64 = reader.result.split(',')[1];
-      try {
-        await fetch(APPS_SCRIPT_URL, {
-          method: 'POST',
-          body: JSON.stringify({ name: file.name, type: file.type, base64: base64, folder: "Matchstatistieken" })
-        });
-        setDriveStatus("✅ Bestand geüpload naar de wachtrij (Matchstatistieken). Gemini verwerkt de rest.");
-        setTimeout(() => setDriveStatus(null), 6000);
-      } catch (err) {
-        setDriveStatus("❌ Upload naar Drive mislukt.");
-      }
-    };
+  const openPopup = (type) => {
+    setPopup(type);
+    setBestand(null);
+    setTekst("");
+    setStatus("idle");
   };
 
-  const voegToe = () => {
-    const id = Date.now();
-    setTabbladen(t => [...t, {id, tekst:"", titel:"Wedstrijd "+(t.length+1)}]);
-    setActief(id);
-  };
-  const verwijder = (id) => {
-    if (tabbladen.length===1) return;
-    const nt = tabbladen.filter(t=>t.id!==id);
-    setTabbladen(nt);
-    if (actief===id) setActief(nt[0].id);
-  };
-  const updateTekst = (id, tekst) => setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,tekst}:tab));
-  const voegAfbToe = (id, file) => {
-    const r = new FileReader();
-    r.onload = e => {
-      const base64 = e.target.result.split(",")[1];
-      setAfbeeldingen(a=>({...a,[id]:{base64,mediaType:file.type||"image/jpeg"}}));
-    };
-    r.readAsDataURL(file);
-  };
-  const verwijderAfb = (id) => setAfbeeldingen(a=>{const n={...a};delete n[id];return n;});
+  const sluitPopup = () => setPopup(null);
 
-  const isMatchUrl = (t) => /hockey\.nl\/match-center/i.test(t);
-  const isArtikelUrl = (t) => /^https?:\/\/[^\s]+/i.test(t) && !isMatchUrl(t);
+  const stuurNaarDrive = async () => {
+    setStatus("busy");
+    let payload = { map: popup, tekst: tekst };
 
-  const analyseer = async (id) => {
-    const tab = tabbladen.find(t=>t.id===id);
-    const afb = afbeeldingen[id];
-    if (!tab?.tekst.trim() && !afb) return;
-    const invoer = tab?.tekst.trim()||"";
-
-    if (isMatchUrl(invoer)) {
-      setFout(f=>({...f,[id]:"Match center is JavaScript-rendered.\n\nGebruik het lokale script:\n  python3 scripts/fetch_ronde.py "+invoer+"\n\nOf kopieer de paginatekst en plak die hier."}));
-      return;
+    if (bestand) {
+      const reader = new FileReader();
+      reader.readAsDataURL(bestand);
+      reader.onload = async () => {
+        payload.bestand = {
+          naam: bestand.name,
+          type: bestand.type,
+          base64: reader.result.split(',')[1]
+        };
+        verzendPayload(payload);
+      };
+    } else {
+      verzendPayload(payload);
     }
+  };
 
-    setLaden(l=>({...l,[id]:true}));
-    setFout(f=>({...f,[id]:""}));
-
+  const verzendPayload = async (payload) => {
     try {
-      let messages;
-      let extraTools = [];
-      if (afb) {
-        messages = [{role:"user", content:[
-          {type:"image", source:{type:"base64", media_type:afb.mediaType, data:afb.base64}},
-          {type:"text", text: invoer ? "Analyseer deze hockey wedstrijd afbeelding. Extra context: "+invoer : "Analyseer deze hockey afbeelding. Extraheer wedstrijdinfo, scorers en kaarten."}
-        ]}];
-      } else if (isArtikelUrl(invoer)) {
-        messages = [{role:"user", content:"Haal dit hockey artikel op en analyseer het voor wedstrijddata, scorers en highlights: "+invoer}];
-        extraTools = [{"type":"web_search_20250305","name":"web_search"}];
-      } else {
-        messages = [{role:"user", content:invoer}];
-      }
-
-      const body = {model:"claude-sonnet-4-20250514",max_tokens:2000,system:SYSTEM,messages};
-      if (typeof extraTools !== "undefined" && extraTools.length) body.tools = extraTools;
-      const resp = await fetch("https://api.anthropic.com/v1/messages",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify(body)
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload)
       });
-      const data = await resp.json();
-      const txt = (data.content?.[0]?.text||"").replace(/```json|```/g,"").trim();
-      const parsed = JSON.parse(txt);
-      setResultaten(r=>({...r,[id]:parsed}));
-      if (parsed.wedstrijden?.[0]) {
-        const w = parsed.wedstrijden[0];
-        setTabbladen(t=>t.map(tab=>tab.id===id?{...tab,titel:`${w.thuis} ${w.score_thuis??""}-${w.score_uit??""} ${w.uit}`}:tab));
-      }
-    } catch(e) { setFout(f=>({...f,[id]:"Mislukt: "+e.message})); }
-    setLaden(l=>({...l,[id]:false}));
-  };
-
-  const analyseerAlle = async () => {
-    for (const tab of tabbladen) {
-      if ((tab.tekst.trim()||afbeeldingen[tab.id]) && !resultaten[tab.id]) await analyseer(tab.id);
+      setStatus("done");
+      setTimeout(sluitPopup, 2000);
+    } catch(e) {
+      setStatus("error");
     }
   };
 
-  const actieveTab = tabbladen.find(t=>t.id===actief);
-  const actieveResultaat = resultaten[actief];
-  const actiefLaden = laden[actief];
-  const actiefFout = fout[actief];
-  const actieveAfb = afbeeldingen[actief];
-  const aantalMetInvoer = tabbladen.filter(t=>t.tekst.trim()||afbeeldingen[t.id]).length;
-  const aantalGeparseerd = Object.keys(resultaten).length;
-
-  const Btn = ({onClick,disabled,children,secondary}) => (
-    <button onClick={onClick} disabled={disabled} style={{
-      background:secondary?"none":"var(--accent)", color:secondary?"var(--muted)":"white",
-      border:secondary?"1px solid var(--border)":"none", padding:"8px 18px",
-      borderRadius:7, fontSize:13, fontWeight:600,
-      opacity:disabled?.5:1, cursor:disabled?"not-allowed":"pointer"
-    }}>{children}</button>
-  );
+  const opties = [
+    { id: "Matchstatistieken", label: "Wedstrijden", icon: "🏑" },
+    { id: "Topscorers", label: "Topscorers", icon: "🏆" },
+    { id: "Hockeynieuws", label: "Nieuws", icon: "📰" },
+    { id: "Oranje", label: "Oranje", icon: "🦁" },
+    { id: "Actuele_Stand", label: "Actuele Stand", icon: "📊" }
+  ];
 
   return (
-    <div className="fade" style={{maxWidth:960,margin:"0 auto",padding:24}}>
+    <div className="fade" style={{maxWidth: 800, margin: "0 auto", padding: "40px 24px"}}>
+      <div style={{fontSize: 22, fontWeight: 700, marginBottom: 8}}>Data Invoer</div>
+      <div style={{fontSize: 14, color: "var(--muted)", marginBottom: 30}}>
+        Selecteer een categorie om bestanden of links direct naar de backend te sturen.
+      </div>
       
-      <div style={{marginBottom: 30, padding: 20, background: "var(--surface2)", borderRadius: 8, border: "2px dashed var(--border)"}}>
-        <div style={{fontSize: 15, fontWeight: 700, marginBottom: 8}}>Direct naar Google Drive uploaden</div>
-        <p style={{fontSize: 13, color: "var(--muted)", marginBottom: 14}}>Stuur een PDF of screenshot rechtstreeks naar de Apps Script wachtrij.</p>
-        <input type="file" id="drive-upload" onChange={handleDriveUpload} style={{display: 'none'}} accept="application/pdf,image/*" />
-        <label htmlFor="drive-upload" style={{cursor: 'pointer', padding: '10px 20px', background: 'var(--accent)', color: 'white', borderRadius: 6, fontSize: 13, fontWeight: 600}}>
-          Bestand Selecteren
-        </label>
-        {driveStatus && <div style={{marginTop: 12, fontSize: 13, fontWeight: 600, color: "var(--accent)"}}>{driveStatus}</div>}
+      <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 16}}>
+        {opties.map(o => (
+          <button key={o.id} onClick={() => openPopup(o.id)} style={{
+            background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: 12, padding: "30px 20px",
+            fontSize: 15, fontWeight: 600, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 12, transition: "0.2s"
+          }} onMouseEnter={e => e.currentTarget.style.borderColor = "var(--accent)"} onMouseLeave={e => e.currentTarget.style.borderColor = "var(--border)"}>
+            <span style={{fontSize: 32}}>{o.icon}</span>
+            {o.label}
+          </button>
+        ))}
       </div>
 
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:20}}>
-        <div>
-          <div style={{fontSize:20,fontWeight:700,marginBottom:4}}>Lokale Wedstrijdinvoer (Claude API)</div>
-          <div style={{fontSize:13,color:"var(--muted)"}}>
-            Analyseer direct via de browser (plak tekst of URL)
-            {aantalGeparseerd>0 && <span style={{color:"var(--green)",marginLeft:8}}>✓ {aantalGeparseerd} geparseerd</span>}
+      {popup && (
+        <div style={{
+          position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.6)",
+          display: "flex", justifyContent: "center", alignItems: "center", zIndex: 1000
+        }}>
+          <div className="fade" style={{background: "var(--surface)", padding: 30, borderRadius: 12, width: "100%", maxWidth: 500, boxShadow: "0 10px 40px rgba(0,0,0,0.2)"}}>
+            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20}}>
+              <div style={{fontSize: 18, fontWeight: 700}}>Invoer: {opties.find(o => o.id === popup).label}</div>
+              <button onClick={sluitPopup} style={{background: "none", border: "none", fontSize: 24, cursor: "pointer", color: "var(--muted)", lineHeight: 1}}>×</button>
+            </div>
+
+            <div style={{marginBottom: 20}}>
+              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Bestand (PDF of Screenshot)</label>
+              <input type="file" onChange={e => setBestand(e.target.files[0])} style={{width: "100%", padding: "10px", border: "1px solid var(--border)", borderRadius: 6, fontSize: 13}} />
+            </div>
+
+            <div style={{marginBottom: 24}}>
+              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Tekst of URL</label>
+              <textarea rows="4" value={tekst} onChange={e => setTekst(e.target.value)} style={{width: "100%", padding: "12px", border: "1px solid var(--border)", borderRadius: 6, fontFamily: "inherit", fontSize: 13, resize: "vertical"}} placeholder="Plak hier een URL of ruwe tekst..."></textarea>
+            </div>
+
+            <div style={{display: "flex", justifyContent: "flex-end", gap: 10}}>
+              <button onClick={sluitPopup} style={{padding: "10px 16px", background: "var(--surface2)", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, color: "var(--text)"}}>Annuleren</button>
+              <button onClick={stuurNaarDrive} disabled={status === "busy" || (!bestand && !tekst.trim())} style={{padding: "10px 16px", background: "var(--accent)", color: "white", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, opacity: (status === "busy" || (!bestand && !tekst.trim())) ? 0.5 : 1}}>
+                {status === "busy" ? "Verzenden..." : "Verzenden"}
+              </button>
+            </div>
+            {status === "done" && <div style={{marginTop: 15, padding: 10, background: "var(--green-light)", color: "var(--green)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>✓ Succesvol in de wachtrij gezet.</div>}
+            {status === "error" && <div style={{marginTop: 15, padding: 10, background: "#fef2f2", color: "var(--red)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>❌ Er ging iets mis. Probeer het opnieuw.</div>}
           </div>
         </div>
-        {aantalMetInvoer>1 && aantalGeparseerd===0 && (
-          <Btn onClick={analyseerAlle}>Analyseer alle {aantalMetInvoer} →</Btn>
-        )}
-      </div>
-
-      <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:-1}}>
-        {tabbladen.map(tab=>(
-          <div key={tab.id} style={{position:"relative",display:"flex",alignItems:"center"}}>
-            <button onClick={()=>setActief(tab.id)} style={{
-              padding:"7px 20px 7px 12px", borderRadius:"6px 6px 0 0",
-              border:"1px solid var(--border)", borderBottom:tab.id===actief?"1px solid var(--surface)":"1px solid var(--border)",
-              background:tab.id===actief?"var(--surface)":"var(--surface2)",
-              color:tab.id===actief?"var(--text)":"var(--muted)",
-              fontSize:12, fontWeight:tab.id===actief?600:400, cursor:"pointer",
-              maxWidth:160, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"
-            }}>
-              {resultaten[tab.id]?"✓ ":""}{afbeeldingen[tab.id]?"📸 ":""}{tab.titel}
-            </button>
-            {tabbladen.length>1&&<button onClick={()=>verwijder(tab.id)} style={{
-              position:"absolute",top:3,right:3,background:"none",border:"none",
-              color:"var(--muted)",fontSize:10,cursor:"pointer",padding:"0 2px"
-            }}>×</button>}
-          </div>
-        ))}
-        <button onClick={voegToe} style={{
-          padding:"6px 12px",background:"none",border:"1px dashed var(--border)",
-          borderRadius:"6px 6px 0 0",color:"var(--muted)",fontSize:12,cursor:"pointer"
-        }}>+ Wedstrijd</button>
-      </div>
-
-      <div style={{background:"var(--surface)",border:"1px solid var(--border)",borderRadius:"0 8px 8px 8px",padding:20}}>
-        {actieveTab && (
-          <>
-            {actieveAfb ? (
-              <div style={{marginBottom:12,padding:10,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,display:"flex",alignItems:"center",gap:10}}>
-                <span style={{fontSize:13}}>📸</span>
-                <span style={{fontSize:12,color:"var(--green)",flex:1,fontWeight:500}}>Screenshot geladen — wordt visueel geanalyseerd</span>
-                <button onClick={()=>verwijderAfb(actief)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:18,lineHeight:1}}>×</button>
-              </div>
-            ) : (
-              <label style={{display:"block",marginBottom:10,padding:"12px",background:"var(--surface2)",border:"2px dashed var(--border)",borderRadius:8,cursor:"pointer",textAlign:"center",transition:"border-color .15s"}}
-                onMouseEnter={e=>e.currentTarget.style.borderColor="var(--accent)"}
-                onMouseLeave={e=>e.currentTarget.style.borderColor="var(--border)"}>
-                <span style={{fontSize:12,color:"var(--muted)"}}>📸 <strong style={{color:"var(--text)"}}>Screenshot uploaden</strong> — match center of infosheet</span>
-                <input type="file" accept="image/*" style={{display:"none"}} onChange={e=>e.target.files[0]&&voegAfbToe(actief,e.target.files[0])}/>
-              </label>
-            )}
-
-            <textarea
-              style={{width:"100%",minHeight:actieveAfb?80:160,background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--text)",fontFamily:"'Inter',sans-serif",fontSize:13,padding:12,borderRadius:8,outline:"none",resize:"vertical",lineHeight:1.6}}
-              value={actieveTab.tekst}
-              onChange={e=>updateTekst(actief,e.target.value)}
-              placeholder={actieveAfb
-                ? "Optioneel: extra context (datum, wedstrijdnummer…)"
-                : "Plak hier:\n• URL van hockey.nl artikel → wordt automatisch opgehaald\n• Match center tekst (gekopieerd van de pagina)\n• Wedstrijdverslag\n\nVoorbeeld:\nLaren H1 / 22 maart / 15:00 / 1-3 / Amsterdam H1\nDoelpunt Ruben van Meer 25'..."}
-            />
-
-            <div style={{display:"flex",gap:10,marginTop:12,alignItems:"center",flexWrap:"wrap"}}>
-              <Btn onClick={()=>analyseer(actief)} disabled={actiefLaden||(!actieveTab.tekst.trim()&&!actieveAfb)}>
-                {actiefLaden?(actieveTab.status==="ophalen"?"Artikel ophalen…":"Analyseren…"):"Analyseer met Claude"}
-              </Btn>
-              {(actieveTab.tekst||actieveAfb)&&(
-                <Btn secondary onClick={()=>{updateTekst(actief,"");verwijderAfb(actief);setResultaten(r=>{const n={...r};delete n[actief];return n;})}}>
-                  Wissen
-                </Btn>
-              )}
-              {isArtikelUrl(actieveTab.tekst) && !isMatchUrl(actieveTab.tekst) && (
-                <span style={{fontSize:11,color:"var(--accent)"}}>🔗 URL → wordt opgehaald via proxy</span>
-              )}
-              {isMatchUrl(actieveTab.tekst) && (
-                <span style={{fontSize:11,color:"var(--orange)"}}>⚠️ Match center → gebruik lokaal script</span>
-              )}
-            </div>
-          </>
-        )}
-
-        {actiefFout && (
-          <div style={{marginTop:12,padding:12,background:"#fef2f2",border:"1px solid #fecaca",borderRadius:8,color:"#991b1b",fontSize:12,whiteSpace:"pre-line"}}>{actiefFout}</div>
-        )}
-
-        {actieveResultaat && (
-          <div style={{marginTop:20}}>
-            {actieveResultaat.wedstrijden?.map((w,i)=>(
-              <div key={i} style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:10,padding:16,marginBottom:10}}>
-                <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:8}}>
-                  <div style={{flex:1,textAlign:"right",fontWeight:600,fontSize:15}}>{w.thuis}</div>
-                  <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:26,fontWeight:700,color:"var(--accent)",minWidth:80,textAlign:"center"}}>{w.score_thuis??"-"} – {w.score_uit??"-"}</div>
-                  <div style={{flex:1,fontWeight:600,fontSize:15}}>{w.uit}</div>
-                </div>
-                <div style={{textAlign:"center",fontSize:11,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:8}}>
-                  {w.datum}{w.tijdstip?" · "+w.tijdstip:""}{w.locatie?" · "+w.locatie:""}
-                </div>
-                {w.scorers?.length>0&&(
-                  <div style={{borderTop:"1px solid var(--border)",paddingTop:10}}>
-                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:6}}>⚽ Doelpunten</div>
-                    {w.scorers.map((s,j)=>(
-                      <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
-                        {s.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--accent)",minWidth:32}}>{s.minuut}&apos;</span>}
-                        <span style={{fontWeight:500}}>{s.naam}</span>
-                        <span style={{color:"var(--muted)",fontSize:11,marginLeft:4}}>{s.club}</span>
-                        {s.type&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,marginLeft:"auto",textTransform:"uppercase"}}>{s.type}</span>}
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {w.kaarten?.length>0&&(
-                  <div style={{borderTop:"1px solid var(--border)",paddingTop:10,marginTop:8}}>
-                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginBottom:6}}>🟨 Kaarten</div>
-                    {w.kaarten.map((k,j)=>(
-                      <div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"5px 0",fontSize:13,borderBottom:"1px solid var(--border)"}}>
-                        {k.minuut!=null&&<span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:11,color:"var(--muted)",minWidth:32}}>{k.minuut}&apos;</span>}
-                        <span style={{fontSize:14}}>{k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}</span>
-                        <span style={{fontWeight:500,marginLeft:4}}>{k.naam}</span>
-                        <span style={{color:"var(--muted)",fontSize:11,marginLeft:4}}>{k.club}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-            {actieveResultaat.highlights?.length>0&&(
-              <div style={{marginTop:12}}>
-                <div style={{fontSize:13,fontWeight:700,marginBottom:8}}>Highlights</div>
-                {actieveResultaat.highlights.map((h,i)=>(
-                  <div key={i} style={{display:"flex",gap:10,padding:"8px 12px",background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:7,marginBottom:6,fontSize:13}}>
-                    <span style={{color:"var(--accent)"}}>→</span><span>{h}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-            {actieveResultaat.spelers_vermeld?.length>0&&(
-              <div style={{marginTop:12}}>
-                <div style={{fontSize:13,fontWeight:700,marginBottom:8}}>Vermelde spelers</div>
-                <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
-                  {actieveResultaat.spelers_vermeld.map((s,i)=>(
-                    <span key={i} style={{fontSize:12,padding:"3px 10px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:5,fontWeight:500}}>{s}</span>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
+      )}
     </div>
   );
 }
@@ -1165,6 +1024,7 @@ function App() {
   const [pageId,setPageId]=useState(null);
   const [stand,setStand]=useState([]);
   const [programma,setProgramma]=useState([]);
+  const [topscorers,setTopscorers]=useState([]);
   const [nieuws,setNieuws]=useState([]);
   const [spelers,setSpelers]=useState([]);
   const [loading,setLoading]=useState(true);
@@ -1177,12 +1037,14 @@ function App() {
     Promise.all([
       fetch(`competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
       fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`competities/${geslacht}/topscorers.json`).then(r=>r.json()).catch(()=>null),
       ...nieuwsBronnen.map(url=>fetch(url).then(r=>r.json()).catch(()=>null)),
-    ]).then(([sd,pd,...nieuwsFeeds])=>{
+    ]).then(([sd,pd,td,...nieuwsFeeds])=>{
       const sl=sd?.stand||[];
       if(sl.length>0&&sd?.bijgewerkt) sl[0]._bw=sd.bijgewerkt.slice(0,10);
       setStand(sl);
       setProgramma(pd?.wedstrijden||[]);
+      setTopscorers(td?.topscorers||[]);
       const alleArtikelen=[];
       const gezieneTitels=new Set();
       for(const feed of nieuwsFeeds){
@@ -1228,9 +1090,10 @@ function App() {
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
+      {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
-      {page==="invoer"&&<InvoerPagina geslacht={geslacht} programma={programma} spelers={spelers}/>}
+      {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav}/>}
       {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
     </>
