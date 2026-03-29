@@ -14,6 +14,8 @@
 <script type="text/babel" data-type="module">
 const { useState, useEffect, useMemo } = React;
 
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
+
 const MAANDEN = {
   january:0,february:1,march:2,april:3,may:4,june:5,
   july:6,august:7,september:8,october:9,november:10,december:11,
@@ -57,7 +59,23 @@ const CSS = `
   --green:#1a6b3a;--green-light:#e8f5ed;--red:#c0392b;--orange:#c4621a;--orange-light:#fdf0e8;
   --playoff-bg:#edf7f0;--playout-bg:#fefbe8;--relegate-bg:#fdf0ee;
 }
-body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',-apple-system,sans-serif;
+  font-size:14px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  display: flex;
+  justify-content: center;
+}
+#root{
+  width:100%;
+  max-width:1200px;
+  background:var(--surface);
+  min-height:100vh;
+  box-shadow:0 0 40px rgba(0,0,0,.05);
+}
 button{cursor:pointer;font-family:inherit}
 a{color:inherit;text-decoration:none}
 .hdr{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 2px rgba(0,0,0,.04)}
@@ -96,9 +114,6 @@ a{color:inherit;text-decoration:none}
 .dp{color:var(--green);font-weight:500}
 .dn{color:var(--red);font-weight:500}
 .pb{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;font-size:12px;font-weight:700}
-.p1{background:#c9a227;color:#1a1a1a}
-.p2{background:#4a4a46;color:#ccc}
-.p3{background:#3a2e20;color:#c9a27a}
 .legend{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);flex-wrap:wrap}
 .li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
 .ld{width:10px;height:10px;border-radius:3px}
@@ -133,8 +148,6 @@ a{color:inherit;text-decoration:none}
 .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
 .sk{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;transition:all .15s}
 .sk:hover{border-color:var(--accent);background:var(--accent-light);transform:translateY(-1px)}
-.sp-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;cursor:pointer;transition:all .15s}
-.sp-card:hover{border-color:var(--accent);background:var(--accent-light)}
 .skt{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
 .sn{font-weight:600;font-size:13px;line-height:1.3}
 .scl{font-size:11px;color:var(--muted);margin-top:2px}
@@ -165,18 +178,20 @@ a{color:inherit;text-decoration:none}
 .wdsc{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:var(--accent);min-width:90px;text-align:center}
 .wdsc.k{color:var(--muted);font-size:18px;letter-spacing:2px}
 .wdi{text-align:center;font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.scrow{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;margin-bottom:5px}
-.scmin{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);min-width:30px}
-.scnm{font-weight:500;font-size:13px}
-.sccl{font-size:11px;color:var(--muted);margin-left:auto}
 .empty{color:var(--muted);font-size:13px;font-style:italic;padding:12px 0}
 .loading{padding:40px;text-align:center;color:var(--muted);font-size:13px}
 .fade{animation:fi .18s ease}
 @keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 `;
 
+function Vlag({s}) {
+  if (!s || !s.land_code || s.land_code.toLowerCase()==="nl") return null;
+  const emoji = s.land_code.toUpperCase().replace(/./g, c =>
+    String.fromCodePoint(c.charCodeAt(0)+127397));
+  return <span style={{fontSize:14,marginRight:6,verticalAlign:"middle"}}>{emoji}</span>;
+}
+
 function PosBadge({n, zone}) {
-  // Bepaal zone op basis van zone-veld OF positienummer als fallback
   const z = zone || (n<=4?"playoff":n<=9?"":n<=11?"playout":"degradatie");
   const style = z==="playoff"
     ? {background:"#166534",color:"#ffffff",border:"none"}
@@ -210,20 +225,17 @@ function Breadcrumb({page,pageId,nav}) {
 
 function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   if(loading) return <div className="loading">Data laden…</div>;
-  const [clubFilter, setClubFilter] = React.useState(null); // {club, type} of null
+  const [clubFilter, setClubFilter] = React.useState(null);
   const bijgewerkt = stand[0]?._bw||"";
   const komend = programma.filter(isKomend);
-  // Groepeer gespeelde wedstrijden per datum/ronde, nieuwste eerst
   const gespeeldGroepen = useMemo(() => {
     const gespeeldLijst = programma.filter(isGespeeld);
-    // Groepeer op datum
     const groepen = {};
     gespeeldLijst.forEach(w => {
       const key = w.datum || "onbekend";
       if (!groepen[key]) groepen[key] = [];
       groepen[key].push(w);
     });
-    // Sorteer groepen nieuwste eerst
     return Object.entries(groepen)
       .map(([datum, wedstrijden]) => ({datum, wedstrijden}))
       .sort((a,b) => {
@@ -278,10 +290,10 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                           </td>
                           <td>{r.gespeeld}</td>
                           <td className="pnt">{r.punten??r.ptn??0}</td>
-                          {[["G",r.gewonnen,"gewonnen"],["Gk",r.gelijk,"gelijk"],["V",r.verloren,"verloren"]].map(([type,val,label])=>(
+                          {[["G",r.gewonnen,"gewonnen"],["Gk",r.gelijk,"gelijk"],["V",r.verloren,"verloren"]].map(([type,val])=>(
                             <td key={type}
                               style={{cursor:"pointer",color:clubFilter?.club===r.club&&clubFilter?.type===type?"var(--accent)":"inherit",fontWeight:clubFilter?.club===r.club&&clubFilter?.type===type?700:"inherit"}}
-                              onClick={e=>{e.stopPropagation();setClubFilter(f=>f?.club===r.club&&f?.type===type?null:{club:r.club,type,label});}}>
+                              onClick={e=>{e.stopPropagation();setClubFilter(f=>f?.club===r.club&&f?.type===type?null:{club:r.club,type});}}>
                               {val}
                             </td>
                           ))}
@@ -300,7 +312,6 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                 </div>
                 {clubFilter && (() => {
                   const gefilterd = programma.filter(w => {
-                    // Alleen gespeelde wedstrijden
                     if (w.gespeeld !== true && w.score_thuis == null) return false;
                     const st = w.score_thuis ?? -1;
                     const su = w.score_uit   ?? -1;
@@ -310,9 +321,8 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                     if (!inClub) return false;
                     if (clubFilter.type === "Gk") return st === su && st >= 0;
                     if (!clubFilter.club) {
-                      // Geen specifieke club: alle gewonnen/verloren
                       if (clubFilter.type === "G") return st !== su;
-                      if (clubFilter.type === "V") return st === su; // n.v.t. zonder club
+                      if (clubFilter.type === "V") return st === su;
                       return true;
                     }
                     if (clubFilter.type === "G") return (thuisMatch && st > su) || (uitMatch && su > st);
@@ -377,7 +387,6 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
               <div className="sec">
                 <div className="sec-hdr"><div className="sec-title">Programma</div><div className="sec-sub">Komend</div></div>
                 {komend.length>0?(()=>{
-                  // Groepeer op datum, vroegste eerst
                   const groepen={};
                   komend.forEach(w=>{
                     const k=w.datum||"onbekend";
@@ -430,7 +439,6 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
@@ -460,7 +468,7 @@ function SpelersOverzicht({geslacht,nav,spelers}) {
           {gefilterd.map((s,i)=>(
             <div className="sk" key={i} onClick={()=>nav("speler",s)}>
               <div className="skt">
-                <div><div className="sn">{s.naam}</div><div className="scl">{s.club}</div></div>
+                <div><div className="sn"><Vlag s={s}/>{s.naam}</div><div className="scl">{s.club}</div></div>
                 <div style={{textAlign:"right"}}>
                   <div className="sr">#{s.rugnummer}</div>
                   {s.doelpunten_seizoen>0&&<div style={{fontSize:11,color:"var(--accent)",fontWeight:600,fontFamily:"'JetBrains Mono',monospace"}}>⚽ {s.doelpunten_seizoen}</div>}
@@ -476,18 +484,28 @@ function SpelersOverzicht({geslacht,nav,spelers}) {
           ))}
         </div>
       </div>
-
     </div>
   );
 }
 
-function SpelerDetail({speler,nav,nieuws}) {
+function SpelerDetail({speler,nav,nieuws,programma}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
   const delen=speler.naam.split(" ");
   const vn=delen[0];
   const an=delen[delen.length-1];
-  // Zoek op voornaam, achternaam én volledige naam
   const volledigeNaam=speler.naam.toLowerCase();
+
+  const groeneKaarten = useMemo(()=>{
+    if(!programma||!programma.length) return 0;
+    let tel=0;
+    programma.forEach(w=>{
+      (w.kaarten||[]).forEach(k=>{
+        if(k.type==="groen" && k.naam&&k.naam.toLowerCase()===volledigeNaam) tel++;
+      });
+    });
+    return tel;
+  },[programma,volledigeNaam]);
+
   const relevant=nieuws.filter(n=>{
     const t=(n.titel||n.title||"").toLowerCase();
     const s=(n.samenvatting||n.summary||"").toLowerCase();
@@ -497,11 +515,13 @@ function SpelerDetail({speler,nav,nieuws}) {
       || (an.length>4 && tekst.includes(an.toLowerCase()));
   }).slice(0,10);
 
+  const heeftStats = speler.doelpunten_seizoen>0 || groeneKaarten>0;
+
   return (
     <div className="fade">
       <div className="dh">
         <div className="dr">#{speler.rugnummer}</div>
-        <div className="dn2">{speler.naam}</div>
+        <div className="dn2"><Vlag s={speler}/>{speler.naam}</div>
         <div className="dm">
           <span className="dc ac">{speler.club}</span>
           <span className="dc">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
@@ -510,22 +530,29 @@ function SpelerDetail({speler,nav,nieuws}) {
         </div>
       </div>
       <div className="db">
-        {speler.doelpunten_seizoen>0&&(
+        {heeftStats&&(
           <div style={{marginBottom:20}}>
             <div className="ds">Statistieken 2025-2026</div>
-            <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:8}}>
-              {[
-                ["Goals", speler.doelpunten_seizoen],
-                ["Veld", speler.vd??0],
-                ["SC", speler.sc??0],
-                ["SB", speler.sb??0],
-              ].map(([lbl,val])=>(
+            <div style={{display:"grid",gridTemplateColumns:`repeat(${speler.doelpunten_seizoen>0?5:1},1fr)`,gap:8}}>
+              {speler.doelpunten_seizoen>0&&[
+                ["Goals", speler.doelpunten_seizoen, "var(--accent)"],
+                ["Veld",  speler.vd??0,              "var(--muted)"],
+                ["SC",    speler.sc??0,               "var(--muted)"],
+                ["SB",    speler.sb??0,               "var(--muted)"],
+              ].map(([lbl,val,kleur])=>(
                 <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",
                   borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
-                  <div style={{fontSize:20,fontWeight:700,color:"var(--accent)",fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
+                  <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
                   <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
                 </div>
               ))}
+              {groeneKaarten>0&&(
+                <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
+                  borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -541,11 +568,31 @@ function SpelerDetail({speler,nav,nieuws}) {
   );
 }
 
-function WedstrijdDetail({wedstrijd}) {
+function WedstrijdDetail({wedstrijd, nav, spelers}) {
   if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
   const w=wedstrijd;
   const gespeeld=w.gespeeld===true||(w.score_thuis!=null);
   const score=gespeeld?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
+
+  const vindSpeler = (naam) => {
+    if(!naam||!spelers||!spelers.length) return null;
+    const nl=naam.toLowerCase();
+    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
+      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
+  };
+
+  const SpelerLink = ({naam}) => {
+    const speler = vindSpeler(naam);
+    if(!speler) return <span>{naam}</span>;
+    return (
+      <button onClick={()=>nav("speler",speler)} style={{
+        background:"none",border:"none",padding:0,fontSize:"inherit",
+        fontWeight:"inherit",color:"var(--accent)",cursor:"pointer",
+        textDecoration:"underline",textDecorationColor:"var(--accent-light)",
+        textUnderlineOffset:2,fontFamily:"inherit"
+      }}>{naam}</button>
+    );
+  };
   return (
     <div className="fade">
       <div className="wdh">
@@ -589,7 +636,7 @@ function WedstrijdDetail({wedstrijd}) {
                         {s.stand||""}
                       </td>
                       <td style={{padding:"7px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        {s.naam}
+                        <SpelerLink naam={s.naam}/>
                       </td>
                       <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
                         {s.club}
@@ -639,7 +686,7 @@ function WedstrijdDetail({wedstrijd}) {
                         {k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}
                       </td>
                       <td style={{padding:"6px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        {k.naam}
+                        <SpelerLink naam={k.naam}/>
                       </td>
                       <td style={{padding:"6px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
                         {k.club}
@@ -664,10 +711,31 @@ function InvoerPagina({geslacht, programma, spelers}) {
   const [laden, setLaden] = useState({});
   const [fout, setFout] = useState({});
   const [afbeeldingen, setAfbeeldingen] = useState({});
+  const [driveStatus, setDriveStatus] = useState(null);
 
   const spelersLijst = useMemo(() => spelers.slice(0,150).map(s=>s.naam).join(", "), [spelers]);
-
   const SYSTEM = "Je analyseert hockey-invoer over de Tulp Hoofdklasse. Dit kan tekst, een artikel OF een screenshot zijn.\n\nBij een wedstrijdformulier/match center herken je: teamnamen, datum, tijd, score, events (Doelpunt/Groene kaart/Gele kaart + naam + minuut).\nBepaal de club van elke scorer op basis van de teamnamen.\nBekende spelers: " + spelersLijst + "\n\nGeef ALLEEN een geldig JSON-object terug:\n{\"wedstrijden\":[{\"thuis\":\"Club\",\"uit\":\"Club\",\"score_thuis\":1,\"score_uit\":3,\"datum\":\"2026-03-22\",\"tijdstip\":\"15:00\",\"locatie\":\"Naam\",\"wedstrijdnummer\":\"1891257\",\"scorers\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":25,\"type\":\"veld\"}],\"kaarten\":[{\"naam\":\"Naam\",\"club\":\"Club\",\"minuut\":12,\"type\":\"groen\"}]}],\"highlights\":[],\"spelers_vermeld\":[]}";
+
+  const handleDriveUpload = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    setDriveStatus("Bezig met verzenden naar Google Drive...");
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = async () => {
+      const base64 = reader.result.split(',')[1];
+      try {
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          body: JSON.stringify({ name: file.name, type: file.type, base64: base64, folder: "Matchstatistieken" })
+        });
+        setDriveStatus("✅ Bestand geüpload naar de wachtrij (Matchstatistieken). Gemini verwerkt de rest.");
+        setTimeout(() => setDriveStatus(null), 6000);
+      } catch (err) {
+        setDriveStatus("❌ Upload naar Drive mislukt.");
+      }
+    };
+  };
 
   const voegToe = () => {
     const id = Date.now();
@@ -717,9 +785,7 @@ function InvoerPagina({geslacht, programma, spelers}) {
           {type:"text", text: invoer ? "Analyseer deze hockey wedstrijd afbeelding. Extra context: "+invoer : "Analyseer deze hockey afbeelding. Extraheer wedstrijdinfo, scorers en kaarten."}
         ]}];
       } else if (isArtikelUrl(invoer)) {
-        // Geef URL direct mee aan Claude met web_search tool
         messages = [{role:"user", content:"Haal dit hockey artikel op en analyseer het voor wedstrijddata, scorers en highlights: "+invoer}];
-        // Voeg web_search tool toe aan request
         extraTools = [{"type":"web_search_20250305","name":"web_search"}];
       } else {
         messages = [{role:"user", content:invoer}];
@@ -769,11 +835,22 @@ function InvoerPagina({geslacht, programma, spelers}) {
 
   return (
     <div className="fade" style={{maxWidth:960,margin:"0 auto",padding:24}}>
+      
+      <div style={{marginBottom: 30, padding: 20, background: "var(--surface2)", borderRadius: 8, border: "2px dashed var(--border)"}}>
+        <div style={{fontSize: 15, fontWeight: 700, marginBottom: 8}}>Direct naar Google Drive uploaden</div>
+        <p style={{fontSize: 13, color: "var(--muted)", marginBottom: 14}}>Stuur een PDF of screenshot rechtstreeks naar de Apps Script wachtrij.</p>
+        <input type="file" id="drive-upload" onChange={handleDriveUpload} style={{display: 'none'}} accept="application/pdf,image/*" />
+        <label htmlFor="drive-upload" style={{cursor: 'pointer', padding: '10px 20px', background: 'var(--accent)', color: 'white', borderRadius: 6, fontSize: 13, fontWeight: 600}}>
+          Bestand Selecteren
+        </label>
+        {driveStatus && <div style={{marginTop: 12, fontSize: 13, fontWeight: 600, color: "var(--accent)"}}>{driveStatus}</div>}
+      </div>
+
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:20}}>
         <div>
-          <div style={{fontSize:20,fontWeight:700,marginBottom:4}}>Wedstrijdinvoer</div>
+          <div style={{fontSize:20,fontWeight:700,marginBottom:4}}>Lokale Wedstrijdinvoer (Claude API)</div>
           <div style={{fontSize:13,color:"var(--muted)"}}>
-            Upload een screenshot of plak tekst/URL van hockey.nl
+            Analyseer direct via de browser (plak tekst of URL)
             {aantalGeparseerd>0 && <span style={{color:"var(--green)",marginLeft:8}}>✓ {aantalGeparseerd} geparseerd</span>}
           </div>
         </div>
@@ -782,7 +859,6 @@ function InvoerPagina({geslacht, programma, spelers}) {
         )}
       </div>
 
-      {/* Tabbladen */}
       <div style={{display:"flex",gap:4,flexWrap:"wrap",alignItems:"center",marginBottom:-1}}>
         {tabbladen.map(tab=>(
           <div key={tab.id} style={{position:"relative",display:"flex",alignItems:"center"}}>
@@ -808,11 +884,9 @@ function InvoerPagina({geslacht, programma, spelers}) {
         }}>+ Wedstrijd</button>
       </div>
 
-      {/* Tab inhoud */}
       <div style={{background:"var(--surface)",border:"1px solid var(--border)",borderRadius:"0 8px 8px 8px",padding:20}}>
         {actieveTab && (
           <>
-            {/* Afbeelding upload */}
             {actieveAfb ? (
               <div style={{marginBottom:12,padding:10,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,display:"flex",alignItems:"center",gap:10}}>
                 <span style={{fontSize:13}}>📸</span>
@@ -920,23 +994,12 @@ function InvoerPagina({geslacht, programma, spelers}) {
                 </div>
               </div>
             )}
-            <div style={{marginTop:16,padding:12,background:"var(--green-light)",border:"1px solid #bbf7d0",borderRadius:8,fontSize:12,color:"var(--green)"}}>
-              ✅ Analyse klaar.
-            </div>
           </div>
         )}
       </div>
-
-      {aantalGeparseerd>0&&(
-        <div style={{marginTop:16,padding:12,background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,fontSize:12,color:"var(--muted)"}}>
-          {aantalGeparseerd} wedstrijd{aantalGeparseerd!==1?"en":""} geanalyseerd · seizoen {geslacht}
-        </div>
-      )}
     </div>
   );
 }
-
-
 
 function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
   const clubSpelers = spelers
@@ -964,13 +1027,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
     .filter(w => w.gespeeld!==true && w.score_thuis==null)
     .sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
 
-  const Vlag = ({s}) => {
-    if (!s.land_code || s.land_code.toLowerCase()==="nl") return null;
-    const emoji = s.land_code.toUpperCase().replace(/./g, c =>
-      String.fromCodePoint(c.charCodeAt(0)+127397));
-    return <span style={{fontSize:12,flexShrink:0}}>{emoji}</span>;
-  };
-
   const Td = ({children, right, mono, muted, accent, bold}) => (
     <td style={{
       padding:"6px 8px", textAlign:right?"right":"left",
@@ -984,7 +1040,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
 
   return (
     <div className="fade">
-      {/* Hero */}
       <div style={{padding:"20px 24px 16px",borderBottom:"1px solid var(--border)",
         background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
         <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>
@@ -996,9 +1051,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
         </div>
       </div>
 
-      {/* Twee kolommen: spelers + nieuws */}
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
-        {/* Links: spelers */}
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
           <table style={{width:"100%",borderCollapse:"collapse",marginBottom:20}}>
@@ -1039,7 +1092,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
           </table>
         </div>
 
-        {/* Rechts: nieuws */}
         <div>
           <div style={{padding:"14px 18px 12px",borderBottom:"1px solid var(--border)"}}>
             <div style={{fontSize:13,fontWeight:700}}>Nieuws</div>
@@ -1069,7 +1121,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
         </div>
       </div>
 
-      {/* Wedstrijden: twee kolommen */}
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
@@ -1177,11 +1228,11 @@ function App() {
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
-      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
-      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav}/>}
+      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
+      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
       {page==="invoer"&&<InvoerPagina geslacht={geslacht} programma={programma} spelers={spelers}/>}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav}/>}
-      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
+      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
     </>
   );
 }
