@@ -481,13 +481,25 @@ function SpelersOverzicht({geslacht,nav,spelers}) {
   );
 }
 
-function SpelerDetail({speler,nav,nieuws}) {
+function SpelerDetail({speler,nav,nieuws,programma}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
   const delen=speler.naam.split(" ");
   const vn=delen[0];
   const an=delen[delen.length-1];
-  // Zoek op voornaam, achternaam én volledige naam
   const volledigeNaam=speler.naam.toLowerCase();
+
+  // Tel groene kaarten uit programma
+  const groeneKaarten = useMemo(()=>{
+    if(!programma||!programma.length) return 0;
+    let tel=0;
+    programma.forEach(w=>{
+      (w.kaarten||[]).forEach(k=>{
+        if(k.type==="groen" && k.naam&&k.naam.toLowerCase()===volledigeNaam) tel++;
+      });
+    });
+    return tel;
+  },[programma,volledigeNaam]);
+
   const relevant=nieuws.filter(n=>{
     const t=(n.titel||n.title||"").toLowerCase();
     const s=(n.samenvatting||n.summary||"").toLowerCase();
@@ -496,6 +508,8 @@ function SpelerDetail({speler,nav,nieuws}) {
       || (vn.length>2 && an.length>3 && tekst.includes(vn.toLowerCase()) && tekst.includes(an.toLowerCase()))
       || (an.length>4 && tekst.includes(an.toLowerCase()));
   }).slice(0,10);
+
+  const heeftStats = speler.doelpunten_seizoen>0 || groeneKaarten>0;
 
   return (
     <div className="fade">
@@ -510,22 +524,29 @@ function SpelerDetail({speler,nav,nieuws}) {
         </div>
       </div>
       <div className="db">
-        {speler.doelpunten_seizoen>0&&(
+        {heeftStats&&(
           <div style={{marginBottom:20}}>
             <div className="ds">Statistieken 2025-2026</div>
-            <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:8}}>
-              {[
-                ["Goals", speler.doelpunten_seizoen],
-                ["Veld", speler.vd??0],
-                ["SC", speler.sc??0],
-                ["SB", speler.sb??0],
-              ].map(([lbl,val])=>(
+            <div style={{display:"grid",gridTemplateColumns:`repeat(${speler.doelpunten_seizoen>0?5:1},1fr)`,gap:8}}>
+              {speler.doelpunten_seizoen>0&&[
+                ["Goals", speler.doelpunten_seizoen, "var(--accent)"],
+                ["Veld",  speler.vd??0,              "var(--muted)"],
+                ["SC",    speler.sc??0,               "var(--muted)"],
+                ["SB",    speler.sb??0,               "var(--muted)"],
+              ].map(([lbl,val,kleur])=>(
                 <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",
                   borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
-                  <div style={{fontSize:20,fontWeight:700,color:"var(--accent)",fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
+                  <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
                   <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
                 </div>
               ))}
+              {groeneKaarten>0&&(
+                <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
+                  borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -541,11 +562,33 @@ function SpelerDetail({speler,nav,nieuws}) {
   );
 }
 
-function WedstrijdDetail({wedstrijd}) {
+function WedstrijdDetail({wedstrijd, nav, spelers}) {
   if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
   const w=wedstrijd;
   const gespeeld=w.gespeeld===true||(w.score_thuis!=null);
   const score=gespeeld?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
+
+  // Zoek spelerobject op naam (voor navigatie)
+  const vindSpeler = (naam) => {
+    if(!naam||!spelers||!spelers.length) return null;
+    const nl=naam.toLowerCase();
+    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
+      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
+  };
+
+  // Klikbare spelernaam — navigeert naar spelersprofiel als speler bekend is
+  const SpelerLink = ({naam}) => {
+    const speler = vindSpeler(naam);
+    if(!speler) return <span>{naam}</span>;
+    return (
+      <button onClick={()=>nav("speler",speler)} style={{
+        background:"none",border:"none",padding:0,fontSize:"inherit",
+        fontWeight:"inherit",color:"var(--accent)",cursor:"pointer",
+        textDecoration:"underline",textDecorationColor:"var(--accent-light)",
+        textUnderlineOffset:2,fontFamily:"inherit"
+      }}>{naam}</button>
+    );
+  };
   return (
     <div className="fade">
       <div className="wdh">
@@ -589,7 +632,7 @@ function WedstrijdDetail({wedstrijd}) {
                         {s.stand||""}
                       </td>
                       <td style={{padding:"7px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        {s.naam}
+                        <SpelerLink naam={s.naam}/>
                       </td>
                       <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
                         {s.club}
@@ -639,7 +682,7 @@ function WedstrijdDetail({wedstrijd}) {
                         {k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}
                       </td>
                       <td style={{padding:"6px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        {k.naam}
+                        <SpelerLink naam={k.naam}/>
                       </td>
                       <td style={{padding:"6px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
                         {k.club}
@@ -1177,11 +1220,11 @@ function App() {
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
-      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
-      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav}/>}
+      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
+      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
       {page==="invoer"&&<InvoerPagina geslacht={geslacht} programma={programma} spelers={spelers}/>}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav}/>}
-      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws}/>}
+      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
     </>
   );
 }
