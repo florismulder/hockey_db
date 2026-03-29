@@ -2,14 +2,327 @@
   "seizoen": "2025/26",
   "geslacht": "heren",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-29T06:53:36.167661+00:00",
+  "bijgewerkt": "2026-03-29T08:21:34.072Z",
   "wedstrijden": [
     {
-      "datum": "March 28",
-      "thuis": "Pinoké H1",
-      "uit": "Oranje-Rood H1",
-      "score_thuis": 1,
-      "score_uit": 6,
+      "thuis": "Amsterdam",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 3,
+      "datum": "2025-09-13",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 9,
+          "type": "sc"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Fiona Morgenstern",
+          "club": "Hurley",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 34,
+          "type": "sc"
+        },
+        {
+          "naam": "Michelle van der Drift",
+          "club": "Hurley",
+          "minuut": 50,
+          "type": "sc"
+        },
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 43,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "Bloemendaal",
+      "uit": "Den Bosch",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "Pinoké",
+      "uit": "Oranje-Rood",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "HDM",
+      "uit": "Kampong",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "Klein Zwitserland",
+      "uit": "Laren",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-03-29",
+      "thuis": "Schaerweijde",
+      "uit": "Hurley",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Amsterdam",
+      "uit": "Pinoké",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Oranje-Rood",
+      "uit": "Bloemendaal",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Kampong",
+      "uit": "Schaerweijde",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Hurley",
+      "uit": "Klein Zwitserland",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-05",
+      "thuis": "Laren",
+      "uit": "HDM",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "Rotterdam",
+      "uit": "Oranje-Rood",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "Pinoké",
+      "uit": "Den Bosch",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "HDM",
+      "uit": "Laren",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "Klein Zwitserland",
+      "uit": "Kampong",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-19",
+      "thuis": "Hurley",
+      "uit": "Schaerweijde",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Oranje-Rood",
+      "uit": "Pinoké",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Kampong",
+      "uit": "HDM",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Schaerweijde",
+      "uit": "Klein Zwitserland",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-04-26",
+      "thuis": "Hurley",
+      "uit": "Laren",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "Rotterdam",
+      "uit": "Pinoké",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "Bloemendaal",
+      "uit": "Oranje-Rood",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "HDM",
+      "uit": "Hurley",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "Laren",
+      "uit": "Schaerweijde",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-03",
+      "thuis": "Klein Zwitserland",
+      "uit": "Kampong",
+      "tijdstip": "15:00",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Pinoké",
+      "uit": "Rotterdam",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Oranje-Rood",
+      "uit": "Amsterdam",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Kampong",
+      "uit": "Klein Zwitserland",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Schaerweijde",
+      "uit": "Laren",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "2026-05-09",
+      "thuis": "Hurley",
+      "uit": "HDM",
+      "tijdstip": "16:30",
+      "gespeeld": false
+    },
+    {
+      "datum": "March 21",
+      "thuis": "Den Bosch H1",
+      "uit": "Pinoké H1",
+      "score_thuis": 6,
+      "score_uit": 3,
       "gespeeld": true
     },
     {
@@ -53,264 +366,12 @@
       "gespeeld": true
     },
     {
-      "datum": "March 21",
-      "thuis": "Den Bosch H1",
-      "uit": "Pinoké H1",
-      "score_thuis": 6,
-      "score_uit": 3,
+      "datum": "March 28",
+      "thuis": "Pinoké H1",
+      "uit": "Oranje-Rood H1",
+      "score_thuis": 1,
+      "score_uit": 6,
       "gespeeld": true
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "Rotterdam",
-      "uit": "Amsterdam",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "Bloemendaal",
-      "uit": "Den Bosch",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "Pinoké",
-      "uit": "Oranje-Rood",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "HDM",
-      "uit": "Kampong",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "Klein Zwitserland",
-      "uit": "Laren",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-03-29",
-      "thuis": "Schaerweijde",
-      "uit": "Hurley",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Amsterdam",
-      "uit": "Pinoké",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Den Bosch",
-      "uit": "Rotterdam",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Oranje-Rood",
-      "uit": "Bloemendaal",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Kampong",
-      "uit": "Schaerweijde",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Hurley",
-      "uit": "Klein Zwitserland",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-05",
-      "thuis": "Laren",
-      "uit": "HDM",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "Rotterdam",
-      "uit": "Oranje-Rood",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "Bloemendaal",
-      "uit": "Amsterdam",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "Pinoké",
-      "uit": "Den Bosch",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "HDM",
-      "uit": "Laren",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "Klein Zwitserland",
-      "uit": "Kampong",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-19",
-      "thuis": "Hurley",
-      "uit": "Schaerweijde",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Amsterdam",
-      "uit": "Rotterdam",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Den Bosch",
-      "uit": "Bloemendaal",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Oranje-Rood",
-      "uit": "Pinoké",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Kampong",
-      "uit": "HDM",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Schaerweijde",
-      "uit": "Klein Zwitserland",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-04-26",
-      "thuis": "Hurley",
-      "uit": "Laren",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "Rotterdam",
-      "uit": "Pinoké",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "Bloemendaal",
-      "uit": "Oranje-Rood",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "Amsterdam",
-      "uit": "Den Bosch",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "HDM",
-      "uit": "Hurley",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "Laren",
-      "uit": "Schaerweijde",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-03",
-      "thuis": "Klein Zwitserland",
-      "uit": "Kampong",
-      "tijdstip": "15:00",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Pinoké",
-      "uit": "Rotterdam",
-      "tijdstip": "16:30",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Oranje-Rood",
-      "uit": "Amsterdam",
-      "tijdstip": "16:30",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Den Bosch",
-      "uit": "Bloemendaal",
-      "tijdstip": "16:30",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Kampong",
-      "uit": "Klein Zwitserland",
-      "tijdstip": "16:30",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Schaerweijde",
-      "uit": "Laren",
-      "tijdstip": "16:30",
-      "gespeeld": false
-    },
-    {
-      "datum": "2026-05-09",
-      "thuis": "Hurley",
-      "uit": "HDM",
-      "tijdstip": "16:30",
-      "gespeeld": false
     }
   ]
 }
