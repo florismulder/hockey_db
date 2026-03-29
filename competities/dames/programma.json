@@ -2,337 +2,63 @@
   "seizoen": "2025/26",
   "geslacht": "dames",
   "bron": "https://tulphoofdklasse.com/en/matches-standings",
-  "bijgewerkt": "2026-03-28T07:39:53.063Z",
+  "bijgewerkt": "2026-03-29T06:53:36.168523+00:00",
   "wedstrijden": [
     {
-      "datum": "2026-03-14",
-      "thuis": "HGC",
-      "uit": "Kampong",
-      "score_thuis": 1,
-      "score_uit": 2,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Pinoké",
-      "uit": "Rotterdam",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Tilburg",
-      "uit": "HDM",
+      "datum": "March 28",
+      "thuis": "Pinoké D1",
+      "uit": "Den Bosch D1",
       "score_thuis": 1,
       "score_uit": 3,
       "gespeeld": true
     },
     {
-      "datum": "2026-03-15",
-      "thuis": "Amsterdam",
-      "uit": "Oranje-Rood",
-      "score_thuis": 6,
-      "score_uit": 0,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-15",
-      "thuis": "Bloemendaal",
-      "uit": "Den Bosch",
+      "datum": "March 22",
+      "thuis": "Tilburg D1",
+      "uit": "Amsterdam D1",
       "score_thuis": 0,
       "score_uit": 2,
       "gespeeld": true
     },
     {
-      "datum": "2026-03-15",
-      "thuis": "SCHC",
-      "uit": "Hurley",
-      "score_thuis": 7,
-      "score_uit": 1,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-21",
-      "thuis": "Hurley",
-      "uit": "Pinoké",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "gespeeld": true
-    },
-    {
-      "datum": "2026-03-22",
-      "thuis": "HDM",
-      "uit": "Rotterdam",
+      "datum": "March 22",
+      "thuis": "Oranje-Rood D1",
+      "uit": "HGC D1",
       "score_thuis": 2,
-      "score_uit": 3,
-      "gespeeld": true,
-      "tijdstip": "12:45",
-      "scorers": [
-        {
-          "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 11,
-          "type": "veld"
-        },
-        {
-          "naam": "Roos Alkemade",
-          "club": "HDM",
-          "minuut": 19,
-          "type": "sc"
-        },
-        {
-          "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 35,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien van der Heide",
-          "club": "HDM",
-          "minuut": 45,
-          "type": "veld"
-        },
-        {
-          "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 50,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 20,
-          "type": "groen"
-        },
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 28,
-          "type": "groen"
-        },
-        {
-          "naam": "Delany van den Broek",
-          "club": "HDM",
-          "minuut": 31,
-          "type": "groen"
-        },
-        {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 34,
-          "type": "groen"
-        },
-        {
-          "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 57,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "datum": "2026-03-22",
-      "thuis": "Den Bosch",
-      "uit": "SCHC",
-      "score_thuis": 0,
       "score_uit": 4,
-      "gespeeld": true,
-      "tijdstip": "12:45",
-      "scorers": [
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 3,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 28,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 55,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 56,
-          "type": "sc"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Charlotte Englebert",
-          "club": "Den Bosch",
-          "minuut": 27,
-          "type": "groen"
-        },
-        {
-          "naam": "Xan de Waard",
-          "club": "SCHC",
-          "minuut": 44,
-          "type": "groen"
-        },
-        {
-          "naam": "Rosa Fernig",
-          "club": "Den Bosch",
-          "minuut": 56,
-          "type": "geel"
-        }
-      ]
+      "gespeeld": true
     },
     {
-      "datum": "2026-03-22",
-      "thuis": "Kampong",
-      "uit": "Bloemendaal",
+      "datum": "March 22",
+      "thuis": "Kampong D1",
+      "uit": "Bloemendaal D1",
       "score_thuis": 4,
       "score_uit": 0,
-      "gespeeld": true,
-      "tijdstip": "12:45",
-      "scorers": [
-        {
-          "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 38,
-          "type": "veld"
-        },
-        {
-          "naam": "Luna Fokke",
-          "club": "Kampong",
-          "minuut": 48,
-          "type": "sc"
-        },
-        {
-          "naam": "Carlijn Tukkers",
-          "club": "Kampong",
-          "minuut": 58,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
+      "gespeeld": true
     },
     {
-      "datum": "2026-03-22",
-      "thuis": "Oranje-Rood",
-      "uit": "HGC",
-      "score_thuis": 2,
+      "datum": "March 22",
+      "thuis": "Den Bosch D1",
+      "uit": "SCHC D1",
+      "score_thuis": 0,
       "score_uit": 4,
-      "gespeeld": true,
-      "tijdstip": "12:45",
-      "scorers": [
-        {
-          "naam": "Carlijn van Geest",
-          "club": "HGC",
-          "minuut": 3,
-          "type": "sc"
-        },
-        {
-          "naam": "Julianna Tornetta",
-          "club": "Oranje-Rood",
-          "minuut": 19,
-          "type": "sc"
-        },
-        {
-          "naam": "Juul van der Velden",
-          "club": "Oranje-Rood",
-          "minuut": 27,
-          "type": "sc"
-        },
-        {
-          "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 33,
-          "type": "veld"
-        },
-        {
-          "naam": "Amy van den Bosch",
-          "club": "HGC",
-          "minuut": 37,
-          "type": "sc"
-        },
-        {
-          "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 49,
-          "type": "sc"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 20,
-          "type": "groen"
-        },
-        {
-          "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
-          "minuut": 23,
-          "type": "groen"
-        },
-        {
-          "naam": "Faye Muijderman",
-          "club": "Oranje-Rood",
-          "minuut": 44,
-          "type": "groen"
-        },
-        {
-          "naam": "Pieke van de Pas",
-          "club": "HGC",
-          "minuut": 48,
-          "type": "groen"
-        }
-      ]
+      "gespeeld": true
     },
     {
-      "datum": "2026-03-22",
-      "thuis": "Tilburg",
-      "uit": "Amsterdam",
+      "datum": "March 22",
+      "thuis": "HDM D1",
+      "uit": "Rotterdam D1",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "gespeeld": true
+    },
+    {
+      "datum": "March 21",
+      "thuis": "Hurley D1",
+      "uit": "Pinoké D1",
       "score_thuis": 0,
       "score_uit": 2,
-      "gespeeld": true,
-      "tijdstip": "12:45",
-      "scorers": [
-        {
-          "naam": "Katerina Langedijk",
-          "club": "Amsterdam",
-          "minuut": 32,
-          "type": "veld"
-        },
-        {
-          "naam": "Ivy Tellier",
-          "club": "Amsterdam",
-          "minuut": 55,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Stella van Gils",
-          "club": "Tilburg",
-          "minuut": 52,
-          "type": "groen"
-        },
-        {
-          "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 56,
-          "type": "groen"
-        }
-      ]
+      "gespeeld": true
     },
     {
       "datum": "2026-03-29",
