@@ -17,10 +17,8 @@ const { useState, useEffect, useMemo } = React;
 const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
 
 const MAANDEN = {
-  january:0,february:1,march:2,april:3,may:4,june:5,
-  july:6,august:7,september:8,october:9,november:10,december:11,
-  jan:0,feb:1,mar:2,apr:3,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11,
-  mrt:2,mei:4,okt:9
+  january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11,
+  jan:0,feb:1,mar:2,apr:3,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11,mrt:2,mei:4,okt:9
 };
 
 function parseDatum(str) {
@@ -39,16 +37,10 @@ function formatDatum(str) {
   if (!str) return "";
   const d = parseDatum(str);
   if (!d) return str;
-  const dag = String(d.getDate()).padStart(2, '0');
-  const mnd = String(d.getMonth() + 1).padStart(2, '0');
-  const jaar = d.getFullYear();
-  return `${dag}-${mnd}-${jaar}`;
+  return `${String(d.getDate()).padStart(2, '0')}-${String(d.getMonth() + 1).padStart(2, '0')}-${d.getFullYear()}`;
 }
 
-function stripTeam(naam) {
-  if (!naam) return "";
-  return naam.replace(/\s+[HhDd]\d+$/,"").trim();
-}
+function stripTeam(naam) { return naam ? naam.replace(/\s+[HhDd]\d+$/,"").trim() : ""; }
 
 const VANDAAG = new Date(); VANDAAG.setHours(0,0,0,0);
 const isKomend = w => { if(w.gespeeld===true) return false; if(w.gespeeld===false) return true; const d=parseDatum(w.datum||""); return !d||d>=VANDAAG; };
@@ -56,153 +48,62 @@ const isGespeeld = w => !isKomend(w);
 
 const CSS = `
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#f9f8f5;--surface:#ffffff;--surface2:#f1f0ed;--border:#e5e3de;--border2:#d0cdc6;
-  --text:#1a1916;--muted:#7a7672;--accent:#c4621a;--accent-light:#fdf0e8;
-  --green:#1a6b3a;--green-light:#e8f5ed;--red:#c0392b;--orange:#c4621a;--orange-light:#fdf0e8;
-  --playoff-bg:#edf7f0;--playout-bg:#fefbe8;--relegate-bg:#fdf0ee;
-}
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Inter',-apple-system,sans-serif;
-  font-size:14px;
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-  display: flex;
-  justify-content: center;
-}
-#root{
-  width:100%;
-  max-width:1200px;
-  background:var(--surface);
-  min-height:100vh;
-  box-shadow:0 0 40px rgba(0,0,0,.05);
-}
-button{cursor:pointer;font-family:inherit}
-a{color:inherit;text-decoration:none}
+:root{--bg:#f9f8f5;--surface:#ffffff;--surface2:#f1f0ed;--border:#e5e3de;--border2:#d0cdc6;--text:#1a1916;--muted:#7a7672;--accent:#c4621a;--accent-light:#fdf0e8;--green:#1a6b3a;--green-light:#e8f5ed;--red:#c0392b;--orange:#c4621a;--orange-light:#fdf0e8;--playoff-bg:#edf7f0;--playout-bg:#fefbe8;--relegate-bg:#fdf0ee;--oranje-bg:#fff7ed;--oranje-text:#ea580c;--oranje-border:#fed7aa;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;line-height:1.5;display:flex;justify-content:center}
+#root{width:100%;max-width:1200px;background:var(--surface);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.05)}
+button{cursor:pointer;font-family:inherit} a{color:inherit;text-decoration:none}
 .hdr{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .logo{font-size:16px;font-weight:700;color:var(--accent);background:none;border:none;display:flex;align-items:center;gap:8px}
-.nav{display:flex;gap:2px}
-.nb{padding:6px 14px;background:none;border:none;color:var(--muted);font-size:13px;font-weight:500;border-radius:6px;transition:all .15s}
-.nb:hover{background:var(--surface2);color:var(--text)}
-.nb.on{background:var(--accent-light);color:var(--accent);font-weight:600}
+.nav{display:flex;gap:2px} .nb{padding:6px 14px;background:none;border:none;color:var(--muted);font-size:13px;font-weight:500;border-radius:6px;transition:all .15s}
+.nb:hover{background:var(--surface2);color:var(--text)} .nb.on{background:var(--accent-light);color:var(--accent);font-weight:600}
 .gt{display:flex;background:var(--surface2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
-.gb{padding:6px 16px;background:none;border:none;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:all .15s}
-.gb.on{background:var(--accent);color:white}
+.gb{padding:6px 16px;background:none;border:none;color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase;} .gb.on{background:var(--accent);color:white}
 .bc{display:flex;align-items:center;gap:8px;padding:10px 24px;border-bottom:1px solid var(--border);background:var(--surface);font-size:12px}
-.bcb{background:none;border:none;color:var(--muted);font-family:inherit;font-size:12px;padding:0}
-.bcb:hover{color:var(--accent)}
-.bcs{color:var(--border2)}
-.bcc{color:var(--text);font-weight:500}
+.bcb{background:none;border:none;color:var(--muted);font-family:inherit;font-size:12px;padding:0} .bcb:hover{color:var(--accent)}
+.bcs{color:var(--border2)} .bcc{color:var(--text);font-weight:500}
 .main-grid{display:grid;grid-template-columns:1fr 300px;min-height:calc(100vh - 56px)}
-.col-l{border-right:1px solid var(--border);background:var(--surface)}
-.col-r{background:var(--surface)}
-.sec{padding:20px 24px}
-.sec+.sec{border-top:1px solid var(--border)}
-.sec-hdr{display:flex;align-items:baseline;gap:10px;margin-bottom:14px}
-.sec-title{font-size:15px;font-weight:700}
-.sec-sub{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.stand-tbl{width:100%;border-collapse:collapse}
-.stand-tbl th{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);text-align:right;padding:0 8px 10px;white-space:nowrap}
-.stand-tbl th:first-child,.stand-tbl th.cl{text-align:left}
-.stand-tbl td{padding:9px 8px;text-align:right;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums}
-.stand-tbl td:first-child{text-align:left;width:28px}
-.stand-tbl td.cl{text-align:left;font-weight:500}
-.stand-tbl tr:hover td{background:var(--surface2)}
-.stand-tbl tr.zpo td{background:var(--playoff-bg)}
-.stand-tbl tr.zpl td{background:var(--playout-bg)}
-.stand-tbl tr.zde td{background:var(--relegate-bg)}
-.pnt{font-weight:700;color:var(--accent)}
-.dp{color:var(--green);font-weight:500}
-.dn{color:var(--red);font-weight:500}
+.col-l{border-right:1px solid var(--border);background:var(--surface)} .col-r{background:var(--surface)}
+.sec{padding:20px 24px} .sec+.sec{border-top:1px solid var(--border)}
+.sec-hdr{display:flex;align-items:baseline;gap:10px;margin-bottom:14px} .sec-title{font-size:15px;font-weight:700} .sec-sub{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.stand-tbl{width:100%;border-collapse:collapse} .stand-tbl th{font-size:11px;font-weight:600;text-transform:uppercase;color:var(--muted);text-align:right;padding:0 8px 10px;white-space:nowrap}
+.stand-tbl th:first-child,.stand-tbl th.cl{text-align:left} .stand-tbl td{padding:9px 8px;text-align:right;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums}
+.stand-tbl td:first-child{text-align:left;width:28px} .stand-tbl td.cl{text-align:left;font-weight:500}
+.stand-tbl tr:hover td{background:var(--surface2)} .stand-tbl tr.zpo td{background:var(--playoff-bg)} .stand-tbl tr.zpl td{background:var(--playout-bg)} .stand-tbl tr.zde td{background:var(--relegate-bg)}
+.pnt{font-weight:700;color:var(--accent)} .dp{color:var(--green);font-weight:500} .dn{color:var(--red);font-weight:500}
 .pb{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;font-size:12px;font-weight:700}
-.legend{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);flex-wrap:wrap}
-.li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
-.ld{width:10px;height:10px;border-radius:3px}
-
-.twee-col{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
-.tc-links{border-right:1px solid var(--border)}
-.tc-rechts{}
-.wl{display:flex;flex-direction:column;gap:4px}
-.wr{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s}
-.wr:hover{border-color:var(--accent);background:var(--accent-light)}
-.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:52px}
-.wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 8px;text-align:center;flex-shrink:0;white-space:nowrap}
-.ws.k{color:var(--muted);font-size:12px}
-.wa{color:var(--muted);font-size:12px;text-align:center}
-.ph{padding:14px 18px 12px;border-bottom:1px solid var(--border)}
-.pt2{font-size:13px;font-weight:700}
-.nl{display:flex;flex-direction:column}
-.nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s}
-.nr:hover{background:var(--surface2)}
-.nm{display:flex;align-items:center;gap:7px;margin-bottom:4px}
-.nd{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)}
-.ntag{font-size:9px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:2px 6px;border-radius:3px;background:var(--accent-light);color:var(--accent)}
-.ntt{font-size:12px;font-weight:500;line-height:1.4}
-.zw{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
-.zi{flex:1;min-width:180px;background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;padding:8px 12px;border-radius:7px;outline:none;transition:border-color .15s}
-.zi:focus{border-color:var(--accent);background:var(--surface)}
-.zi::placeholder{color:var(--muted)}
+.legend{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);flex-wrap:wrap} .li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)} .ld{width:10px;height:10px;border-radius:3px}
+.twee-col{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)} .tc-links{border-right:1px solid var(--border)}
+.wl{display:flex;flex-direction:column;gap:4px} .wr{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;} .wr:hover{border-color:var(--accent);background:var(--accent-light)}
+.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:52px} .wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 8px;text-align:center;flex-shrink:0;} .ws.k{color:var(--muted);font-size:12px} .wa{color:var(--muted);font-size:12px;text-align:center}
+.ph{padding:14px 18px 12px;border-bottom:1px solid var(--border)} .pt2{font-size:13px;font-weight:700} .nl{display:flex;flex-direction:column}
+.nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s} .nr:hover{background:var(--surface2)}
+.nm{display:flex;align-items:center;gap:7px;margin-bottom:4px} .nd{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)} .ntt{font-size:12px;font-weight:500;line-height:1.4}
+.zw{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap} .zi{flex:1;min-width:180px;background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;padding:8px 12px;border-radius:7px;outline:none;} .zi:focus{border-color:var(--accent);background:var(--surface)}
 .zs{background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:12px;padding:8px 10px;border-radius:7px;outline:none;cursor:pointer}
-.sc{font-size:12px;color:var(--muted);margin-bottom:14px}
-.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
-.sk{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;transition:all .15s}
-.sk:hover{border-color:var(--accent);background:var(--accent-light);transform:translateY(-1px)}
-.skt{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
-.sn{font-weight:600;font-size:13px;line-height:1.3}
-.scl{font-size:11px;color:var(--muted);margin-top:2px}
-.sr{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;color:var(--accent)}
-.sb{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
-.sba{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;padding:2px 7px;border-radius:4px}
-.sbk{background:#dbeafe;color:#1e40af}
-.sbv{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
-.dh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(to bottom,var(--surface2),var(--surface))}
-.dr{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-bottom:4px}
-.dn2{font-size:28px;font-weight:700;letter-spacing:-.5px;line-height:1.1}
-.dm{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-.dc{font-size:12px;font-weight:500;padding:4px 10px;border-radius:5px;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
-.dc.ac{background:var(--accent-light);border-color:#93c5fd;color:var(--accent)}
-.dc.ke{background:#dbeafe;border-color:#93c5fd;color:#1e40af}
-.dc.av{background:var(--orange-light);border-color:#fcd34d;color:var(--orange)}
-.db{padding:20px 24px}
-.ds{font-size:13px;font-weight:700;margin-bottom:10px;margin-top:20px}
-.ds:first-child{margin-top:0}
-.ni{display:flex;flex-direction:column;gap:3px;padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;margin-bottom:6px;transition:border-color .15s}
-.ni:hover{border-color:var(--accent)}
-.nid{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)}
-.nit{font-size:13px;font-weight:500;line-height:1.4}
-.wdh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--surface2) 0%,var(--surface) 100%)}
-.wdt{display:flex;align-items:center;gap:12px;margin-bottom:10px}
-.wdtm{font-size:20px;font-weight:700;flex:1}
-.wdtm.t{text-align:right}
-.wdsc{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:var(--accent);min-width:90px;text-align:center}
-.wdsc.k{color:var(--muted);font-size:18px;letter-spacing:2px}
-.wdi{text-align:center;font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace}
-.empty{color:var(--muted);font-size:13px;font-style:italic;padding:12px 0}
-.loading{padding:40px;text-align:center;color:var(--muted);font-size:13px}
-.fade{animation:fi .18s ease}
-@keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.sc{font-size:12px;color:var(--muted);margin-bottom:14px} .sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.sk{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;cursor:pointer;} .sk:hover{border-color:var(--accent);background:var(--accent-light);transform:translateY(-1px)}
+.skt{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px} .sn{font-weight:600;font-size:13px;line-height:1.3} .scl{font-size:11px;color:var(--muted);margin-top:2px} .sr{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;color:var(--accent)}
+.sb{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap} .sba{font-size:10px;font-weight:600;text-transform:uppercase;padding:2px 7px;border-radius:4px} .sbk{background:#dbeafe;color:#1e40af} .sbv{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.dh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(to bottom,var(--surface2),var(--surface))} .dr{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-bottom:4px} .dn2{font-size:28px;font-weight:700;letter-spacing:-.5px;line-height:1.1}
+.dm{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap} .dc{font-size:12px;font-weight:500;padding:4px 10px;border-radius:5px;background:var(--surface2);border:1px solid var(--border);color:var(--muted)} .dc.ac{background:var(--accent-light);border-color:#93c5fd;color:var(--accent)} .dc.ke{background:#dbeafe;border-color:#93c5fd;color:#1e40af} .dc.av{background:var(--orange-light);border-color:#fcd34d;color:var(--orange)}
+.db{padding:20px 24px} .ds{font-size:13px;font-weight:700;margin-bottom:10px;margin-top:20px} .ds:first-child{margin-top:0}
+.ni{display:flex;flex-direction:column;gap:3px;padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;margin-bottom:6px;} .ni:hover{border-color:var(--accent)} .nid{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)} .nit{font-size:13px;font-weight:500;line-height:1.4}
+.wdh{padding:24px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--surface2) 0%,var(--surface) 100%)} .wdt{display:flex;align-items:center;gap:12px;margin-bottom:10px} .wdtm{font-size:20px;font-weight:700;flex:1} .wdtm.t{text-align:right}
+.wdsc{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:var(--accent);min-width:90px;text-align:center} .wdsc.k{color:var(--muted);font-size:18px;letter-spacing:2px} .wdi{text-align:center;font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.empty{color:var(--muted);font-size:13px;font-style:italic;padding:12px 0} .loading{padding:40px;text-align:center;color:var(--muted);font-size:13px}
+.fade{animation:fi .18s ease} @keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 `;
 
 function Vlag({s}) {
   if (!s || !s.land_code || s.land_code.toLowerCase()==="nl") return null;
-  const emoji = s.land_code.toUpperCase().replace(/./g, c =>
-    String.fromCodePoint(c.charCodeAt(0)+127397));
+  const emoji = s.land_code.toUpperCase().replace(/./g, c => String.fromCodePoint(c.charCodeAt(0)+127397));
   return <span style={{fontSize:14,marginRight:6,verticalAlign:"middle"}}>{emoji}</span>;
 }
 
 function PosBadge({n, zone}) {
   const z = zone || (n<=4?"playoff":n<=9?"":n<=11?"playout":"degradatie");
-  const style = z==="playoff"
-    ? {background:"#166534",color:"#ffffff",border:"none"}
-    : z==="playout"
-    ? {background:"#facc15",color:"#1a1a1a",border:"none"}
-    : z==="degradatie"
-    ? {background:"#991b1b",color:"#ffffff",border:"none"}
-    : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
+  const style = z==="playoff" ? {background:"#166534",color:"#ffffff",border:"none"} : z==="playout" ? {background:"#facc15",color:"#1a1a1a",border:"none"} : z==="degradatie" ? {background:"#991b1b",color:"#ffffff",border:"none"} : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
   return <span className="pb" style={style}>{n}</span>;
 }
 
@@ -210,6 +111,7 @@ function Breadcrumb({page,pageId,nav}) {
   const items=[{label:"Home",target:"dashboard"}];
   if(page==="spelers") items.push({label:"Spelers",target:null});
   if(page==="topscorers") items.push({label:"Topscorers",target:null});
+  if(page==="oranje") items.push({label:"Oranje",target:null});
   if(page==="speler") { items.push({label:"Spelers",target:"spelers"}); items.push({label:pageId?.naam||"",target:null}); }
   if(page==="speler_via_club") { items.push({label:pageId?._vanClub||"Club",target:"club",targetId:pageId?._vanClub}); items.push({label:pageId?.naam||"",target:null}); }
   if(page==="club") items.push({label:pageId||"",target:null});
@@ -265,6 +167,117 @@ function TopscorersOverzicht({topscorers}) {
   );
 }
 
+function OranjePagina({oranje}) {
+  if (!oranje || oranje.length === 0) return <div className="loading">Geen Oranje data gevonden.</div>;
+  return (
+    <div className="fade">
+      <div className="sec">
+        <div className="sec-hdr"><div className="sec-title">Nationale Selectie</div></div>
+        <div className="sg">
+          {oranje.map((speler_naam, i) => (
+            <div className="sk" key={i} style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+              <div className="sn" style={{fontWeight: 700, color: 'var(--oranje-text)'}}>🦁 {speler_naam}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function InvoerPagina() {
+  const {useState} = React;
+  const [popup, setPopup] = useState(null);
+  const [bestanden, setBestanden] = useState([]);
+  const [tekst, setTekst] = useState("");
+  const [status, setStatus] = useState("idle");
+
+  const openPopup = (type) => { setPopup(type); setBestanden([]); setTekst(""); setStatus("idle"); };
+  const sluitPopup = () => setPopup(null);
+
+  const stuurNaarDrive = async () => {
+    setStatus("busy");
+    try {
+      if (tekst.trim()) {
+        await fetch(APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify({ map: popup, tekst: tekst }) });
+      }
+      for (const bestand of bestanden) {
+        await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.readAsDataURL(bestand);
+          reader.onload = async () => {
+            const payload = { map: popup, bestand: { naam: bestand.name, type: bestand.type, base64: reader.result.split(',')[1] } };
+            try { await fetch(APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) }); resolve(); } 
+            catch(e) { reject(e); }
+          };
+        });
+      }
+      setStatus("done");
+      setTimeout(sluitPopup, 2000);
+    } catch(e) {
+      setStatus("error");
+    }
+  };
+
+  const opties = [
+    { id: "Matchstatistieken", label: "Wedstrijden", icon: "🏑" },
+    { id: "Topscorers", label: "Topscorers", icon: "🏆" },
+    { id: "Hockeynieuws", label: "Nieuws", icon: "📰" },
+    { id: "Oranje", label: "Oranje", icon: "🦁" },
+    { id: "Actuele_Stand", label: "Actuele Stand", icon: "📊" }
+  ];
+
+  return (
+    <div className="fade" style={{maxWidth: 800, margin: "0 auto", padding: "40px 24px"}}>
+      <div style={{fontSize: 22, fontWeight: 700, marginBottom: 8}}>Data Invoer</div>
+      <div style={{fontSize: 14, color: "var(--muted)", marginBottom: 30}}>Selecteer een categorie om bestanden of links direct naar de Drive mappen te sturen.</div>
+      
+      <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 16}}>
+        {opties.map(o => (
+          <button key={o.id} onClick={() => openPopup(o.id)} style={{
+            background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: 12, padding: "30px 20px",
+            fontSize: 15, fontWeight: 600, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 12, transition: "0.2s"
+          }} onMouseEnter={e => e.currentTarget.style.borderColor = "var(--accent)"} onMouseLeave={e => e.currentTarget.style.borderColor = "var(--border)"}>
+            <span style={{fontSize: 32}}>{o.icon}</span>{o.label}
+          </button>
+        ))}
+      </div>
+
+      {popup && (
+        <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.6)", display: "flex", justifyContent: "center", alignItems: "center", zIndex: 1000 }}>
+          <div className="fade" style={{background: "var(--surface)", padding: 30, borderRadius: 12, width: "100%", maxWidth: 500, boxShadow: "0 10px 40px rgba(0,0,0,0.2)"}}>
+            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20}}>
+              <div style={{fontSize: 18, fontWeight: 700}}>Invoer: {opties.find(o => o.id === popup).label}</div>
+              <button onClick={sluitPopup} style={{background: "none", border: "none", fontSize: 24, cursor: "pointer", color: "var(--muted)", lineHeight: 1}}>×</button>
+            </div>
+            <div style={{marginBottom: 20}}>
+              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Bestanden (Meerdere mogelijk)</label>
+              <input type="file" multiple onChange={e => setBestanden(Array.from(e.target.files))} style={{width: "100%", padding: "10px", border: "1px solid var(--border)", borderRadius: 6, fontSize: 13}} />
+              {bestanden.length > 0 && (
+                <ul style={{fontSize: 12, marginTop: 10, color: "var(--text)", listStyle: "none", padding: 0}}>
+                  {bestanden.map((b, i) => <li key={i} style={{marginBottom: 4}}>📄 {b.name}</li>)}
+                </ul>
+              )}
+            </div>
+            <div style={{marginBottom: 24}}>
+              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Tekst of URL</label>
+              <textarea rows="4" value={tekst} onChange={e => setTekst(e.target.value)} style={{width: "100%", padding: "12px", border: "1px solid var(--border)", borderRadius: 6, fontFamily: "inherit", fontSize: 13, resize: "vertical"}} placeholder="Plak hier een URL of ruwe tekst..."></textarea>
+            </div>
+            <div style={{display: "flex", justifyContent: "flex-end", gap: 10}}>
+              <button onClick={sluitPopup} style={{padding: "10px 16px", background: "var(--surface2)", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, color: "var(--text)"}}>Annuleren</button>
+              <button onClick={stuurNaarDrive} disabled={status === "busy" || (bestanden.length === 0 && !tekst.trim())} style={{padding: "10px 16px", background: "var(--accent)", color: "white", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, opacity: (status === "busy" || (bestanden.length === 0 && !tekst.trim())) ? 0.5 : 1}}>
+                {status === "busy" ? "Verzenden..." : "Verzenden"}
+              </button>
+            </div>
+            {status === "done" && <div style={{marginTop: 15, padding: 10, background: "var(--green-light)", color: "var(--green)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>✓ Succesvol verstuurd.</div>}
+            {status === "error" && <div style={{marginTop: 15, padding: 10, background: "#fef2f2", color: "var(--red)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>❌ Er ging iets mis. Probeer het opnieuw.</div>}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   if(loading) return <div className="loading">Data laden…</div>;
   const [clubFilter, setClubFilter] = React.useState(null);
@@ -280,11 +293,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
     });
     return Object.entries(groepen)
       .map(([datum, wedstrijden]) => ({datum, wedstrijden}))
-      .sort((a,b) => {
-        const da = parseDatum(a.datum)||new Date(0);
-        const db = parseDatum(b.datum)||new Date(0);
-        return db-da;
-      });
+      .sort((a,b) => (parseDatum(b.datum)||new Date(0)) - (parseDatum(a.datum)||new Date(0)));
   }, [programma]);
 
   return (
@@ -303,9 +312,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
               <>
                 <table className="stand-tbl">
                   <thead><tr>
-                    <th>#</th><th className="cl">Club</th>
-                    <th title="Wedstrijden gespeeld">W</th>
-                    <th title="Punten">Pnt</th>
+                    <th>#</th><th className="cl">Club</th><th title="Wedstrijden gespeeld">W</th><th title="Punten">Pnt</th>
                     {["G","Gk","V"].map(type => (
                       <th key={type} title={type==="G"?"Gewonnen":type==="Gk"?"Gelijk":"Verloren"}
                         style={{cursor:"pointer",userSelect:"none"}}
@@ -313,9 +320,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         {type}{clubFilter?.type===type&&!clubFilter.club?" ▾":""}
                       </th>
                     ))}
-                    <th title="Doelpunten voor">DV</th>
-                    <th title="Doelpunten tegen">DT</th>
-                    <th title="Doelsaldo">Dsl</th>
+                    <th title="Doelpunten voor">DV</th><th title="Doelpunten tegen">DT</th><th title="Doelsaldo">Dsl</th>
                   </tr></thead>
                   <tbody>
                     {stand.map(r=>{
@@ -329,22 +334,17 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         <tr key={r.club} className={zClass}>
                           <td><PosBadge n={r.positie} zone={zone}/></td>
                           <td className="cl">
-                            <button onClick={()=>nav("club",r.club)} style={{background:"none",border:"none",color:"var(--text)",fontWeight:500,fontSize:13,cursor:"pointer",padding:0,textAlign:"left",textDecoration:"underline",textDecorationColor:"var(--border)",textUnderlineOffset:3}}>
-                              {r.club}
-                            </button>
+                            <button onClick={()=>nav("club",r.club)} style={{background:"none",border:"none",color:"var(--text)",fontWeight:500,fontSize:13,cursor:"pointer",padding:0,textAlign:"left",textDecoration:"underline",textDecorationColor:"var(--border)",textUnderlineOffset:3}}>{r.club}</button>
                           </td>
-                          <td>{r.gespeeld}</td>
-                          <td className="pnt">{r.punten??r.ptn??0}</td>
-                          {[["G",r.gewonnen,"gewonnen"],["Gk",r.gelijk,"gelijk"],["V",r.verloren,"verloren"]].map(([type,val])=>(
+                          <td>{r.gespeeld}</td><td className="pnt">{r.punten??r.ptn??0}</td>
+                          {[["G",r.gewonnen],["Gk",r.gelijk],["V",r.verloren]].map(([type,val])=>(
                             <td key={type}
                               style={{cursor:"pointer",color:clubFilter?.club===r.club&&clubFilter?.type===type?"var(--accent)":"inherit",fontWeight:clubFilter?.club===r.club&&clubFilter?.type===type?700:"inherit"}}
                               onClick={e=>{e.stopPropagation();setClubFilter(f=>f?.club===r.club&&f?.type===type?null:{club:r.club,type});}}>
                               {val}
                             </td>
                           ))}
-                          <td>{dv||"–"}</td>
-                          <td>{dt||"–"}</td>
-                          <td className={dslNum>0?"dp":dslNum<0?"dn":""}>{dslNum>0?`+${dslNum}`:dslNum}</td>
+                          <td>{dv||"–"}</td><td>{dt||"–"}</td><td className={dslNum>0?"dp":dslNum<0?"dn":""}>{dslNum>0?`+${dslNum}`:dslNum}</td>
                         </tr>
                       );
                     })}
@@ -355,52 +355,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                   <div className="li"><div className="ld" style={{background:"#facc15"}}/> 10-11 Play-outs</div>
                   <div className="li"><div className="ld" style={{background:"#f87171"}}/> 12 Degradatie</div>
                 </div>
-                {clubFilter && (() => {
-                  const gefilterd = programma.filter(w => {
-                    if (w.gespeeld !== true && w.score_thuis == null) return false;
-                    const st = w.score_thuis ?? -1;
-                    const su = w.score_uit   ?? -1;
-                    const thuisMatch = (w.thuis||"").includes(clubFilter.club||"");
-                    const uitMatch   = (w.uit||"").includes(clubFilter.club||"");
-                    const inClub = clubFilter.club ? (thuisMatch || uitMatch) : true;
-                    if (!inClub) return false;
-                    if (clubFilter.type === "Gk") return st === su && st >= 0;
-                    if (!clubFilter.club) {
-                      if (clubFilter.type === "G") return st !== su;
-                      if (clubFilter.type === "V") return st === su;
-                      return true;
-                    }
-                    if (clubFilter.type === "G") return (thuisMatch && st > su) || (uitMatch && su > st);
-                    if (clubFilter.type === "V") return (thuisMatch && st < su) || (uitMatch && su < st);
-                    return true;
-                  });
-                  const label = clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren";
-                  return (
-                    <div style={{marginTop:16,padding:16,background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8}}>
-                      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
-                        <div style={{fontSize:13,fontWeight:700}}>
-                          {clubFilter.club ? `${clubFilter.club} — ${label}` : label} ({gefilterd.length})
-                        </div>
-                        <button onClick={()=>setClubFilter(null)} style={{background:"none",border:"none",color:"var(--muted)",fontSize:18,cursor:"pointer",lineHeight:1}}>×</button>
-                      </div>
-                      <div className="wl">
-                        {gefilterd.length > 0 ? gefilterd.reverse().map((w,i) => (
-                          <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                            <span className="wd">{w.datum}</span>
-                            <div className="wh">{w.thuis}</div>
-                            <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                            <div className="wu">{w.uit}</div>
-                            <span className="wa">›</span>
-                          </div>
-                        )) : <div className="empty">Geen wedstrijden gevonden.</div>}
-                      </div>
-                    </div>
-                  );
-                })()}
               </>
             ):<div className="empty">Geen standdata beschikbaar.</div>}
           </div>
-
           <div className="twee-col">
             <div className="tc-links">
               <div className="sec">
@@ -409,9 +366,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                   <div>
                     {gespeeldGroepen.map((groep,gi)=>(
                       <div key={gi} style={{marginBottom:16}}>
-                        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>
-                          {formatDatum(groep.datum)}
-                        </div>
+                        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>{formatDatum(groep.datum)}</div>
                         <div className="wl">
                           {groep.wedstrijden.map((w,i)=>(
                             <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
@@ -433,23 +388,13 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                 <div className="sec-hdr"><div className="sec-title">Programma</div><div className="sec-sub">Komend</div></div>
                 {komend.length>0?(()=>{
                   const groepen={};
-                  komend.forEach(w=>{
-                    const k=w.datum||"onbekend";
-                    if(!groepen[k]) groepen[k]=[];
-                    groepen[k].push(w);
-                  });
-                  const gesorteerd=Object.entries(groepen).sort((a,b)=>{
-                    const da=parseDatum(a[0])||new Date(9999,0);
-                    const db=parseDatum(b[0])||new Date(9999,0);
-                    return da-db;
-                  });
+                  komend.forEach(w=>{ const k=w.datum||"onbekend"; if(!groepen[k]) groepen[k]=[]; groepen[k].push(w); });
+                  const gesorteerd=Object.entries(groepen).sort((a,b)=>(parseDatum(a[0])||new Date(9999,0)) - (parseDatum(b[0])||new Date(9999,0)));
                   return (
                     <div>
                       {gesorteerd.map(([datum,wedstrijden],gi)=>(
                         <div key={gi} style={{marginBottom:16}}>
-                          <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>
-                            {formatDatum(datum)}
-                          </div>
+                          <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",letterSpacing:".5px",textTransform:"uppercase",padding:"0 0 8px",fontFamily:"'JetBrains Mono',monospace"}}>{formatDatum(datum)}</div>
                           <div className="wl">
                             {wedstrijden.map((w,i)=>(
                               <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
@@ -469,15 +414,12 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
             </div>
           </div>
         </div>
-
         <div className="col-r">
           <div className="ph"><div className="pt2">Nieuws</div></div>
           <div className="nl">
             {nieuws.length>0?nieuws.slice(0,15).map((n,i)=>(
               <a className="nr" key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer">
-                <div className="nm">
-                  <span className="nd">{(n.datum||n.date||"").slice(0,10)}</span>
-                </div>
+                <div className="nm"><span className="nd">{(n.datum||n.date||"").slice(0,10)}</span></div>
                 <div className="ntt">{n.titel||n.title||""}</div>
               </a>
             )):<div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
@@ -488,498 +430,53 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   );
 }
 
-function SpelersOverzicht({geslacht,nav,spelers}) {
-  const [zoek,setZoek]=useState("");
-  const [filterClub,setFilterClub]=useState("alle");
-  const clubs=useMemo(()=>{const s=new Set(spelers.map(x=>x.club));return["alle",...Array.from(s).sort()];},[spelers]);
-  const gefilterd=useMemo(()=>spelers.filter(s=>{
-    const mz=!zoek||s.naam.toLowerCase().includes(zoek.toLowerCase());
-    const mc=filterClub==="alle"||s.club===filterClub;
-    return mz&&mc;
-  }),[spelers,zoek,filterClub]);
-
-  return (
-    <div className="fade">
-      <div className="sec">
-        <div className="sec-hdr"><div className="sec-title">Spelers</div><div className="sec-sub">{geslacht} · 2025-2026</div></div>
-        <div className="zw">
-          <input className="zi" placeholder="Zoek op naam…" value={zoek} onChange={e=>setZoek(e.target.value)}/>
-          <select className="zs" value={filterClub} onChange={e=>setFilterClub(e.target.value)}>
-            {clubs.map(c=><option key={c} value={c}>{c==="alle"?"Alle clubs":c}</option>)}
-          </select>
-        </div>
-        <div className="sc">{gefilterd.length} speler{gefilterd.length!==1?"s":""}</div>
-        <div className="sg">
-          {gefilterd.map((s,i)=>(
-            <div className="sk" key={i} onClick={()=>nav("speler",s)}>
-              <div className="skt">
-                <div><div className="sn"><Vlag s={s}/>{s.naam}</div><div className="scl">{s.club}</div></div>
-                <div style={{textAlign:"right"}}>
-                  <div className="sr">#{s.rugnummer}</div>
-                  {s.doelpunten_seizoen>0&&<div style={{fontSize:11,color:"var(--accent)",fontWeight:600,fontFamily:"'JetBrains Mono',monospace"}}>⚽ {s.doelpunten_seizoen}</div>}
-                </div>
-              </div>
-              {(s.keeper||s.aanvoerder)&&(
-                <div className="sb">
-                  {s.keeper&&<span className="sba sbk">Keeper</span>}
-                  {s.aanvoerder&&<span className="sba sbv">Aanvoerder</span>}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function SpelerDetail({speler,nav,nieuws,programma}) {
-  if(!speler) return <div className="loading">Speler niet gevonden.</div>;
-  const delen=speler.naam.split(" ");
-  const vn=delen[0];
-  const an=delen[delen.length-1];
-  const volledigeNaam=speler.naam.toLowerCase();
-
-  const groeneKaarten = useMemo(()=>{
-    if(!programma||!programma.length) return 0;
-    let tel=0;
-    programma.forEach(w=>{
-      (w.kaarten||[]).forEach(k=>{
-        if(k.type==="groen" && k.naam&&k.naam.toLowerCase()===volledigeNaam) tel++;
-      });
-    });
-    return tel;
-  },[programma,volledigeNaam]);
-
-  const relevant=nieuws.filter(n=>{
-    const t=(n.titel||n.title||"").toLowerCase();
-    const s=(n.samenvatting||n.summary||"").toLowerCase();
-    const tekst=t+" "+s;
-    return tekst.includes(volledigeNaam)
-      || (vn.length>2 && an.length>3 && tekst.includes(vn.toLowerCase()) && tekst.includes(an.toLowerCase()))
-      || (an.length>4 && tekst.includes(an.toLowerCase()));
-  }).slice(0,10);
-
-  const heeftStats = speler.doelpunten_seizoen>0 || groeneKaarten>0;
-
-  return (
-    <div className="fade">
-      <div className="dh">
-        <div className="dr">#{speler.rugnummer}</div>
-        <div className="dn2"><Vlag s={speler}/>{speler.naam}</div>
-        <div className="dm">
-          <span className="dc ac">{speler.club}</span>
-          <span className="dc">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
-          {speler.keeper&&<span className="dc ke">Keeper</span>}
-          {speler.aanvoerder&&<span className="dc av">Aanvoerder</span>}
-        </div>
-      </div>
-      <div className="db">
-        {heeftStats&&(
-          <div style={{marginBottom:20}}>
-            <div className="ds">Statistieken 2025-2026</div>
-            <div style={{display:"grid",gridTemplateColumns:`repeat(${speler.doelpunten_seizoen>0?5:1},1fr)`,gap:8}}>
-              {speler.doelpunten_seizoen>0&&[
-                ["Goals", speler.doelpunten_seizoen, "var(--accent)"],
-                ["Veld",  speler.vd??0,              "var(--muted)"],
-                ["SC",    speler.sc??0,               "var(--muted)"],
-                ["SB",    speler.sb??0,               "var(--muted)"],
-              ].map(([lbl,val,kleur])=>(
-                <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",
-                  borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
-                  <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
-                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
-                </div>
-              ))}
-              {groeneKaarten>0&&(
-                <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
-                  borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
-                  <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
-                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-        <div className="ds">Nieuws</div>
-        {relevant.length>0?relevant.map((n,i)=>(
-          <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
-            <div className="nid">{(n.datum||n.date||"").slice(0,10)}</div>
-            <div className="nit">{n.titel||n.title||""}</div>
-          </a>
-        )):<div className="empty">Geen nieuws gevonden voor {speler.naam}.</div>}
-      </div>
-    </div>
-  );
-}
-
-function WedstrijdDetail({wedstrijd, nav, spelers}) {
-  if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
-  const w=wedstrijd;
-  const gespeeld=w.gespeeld===true||(w.score_thuis!=null);
-  const score=gespeeld?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
-
-  const vindSpeler = (naam) => {
-    if(!naam||!spelers||!spelers.length) return null;
-    const nl=naam.toLowerCase();
-    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
-      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
-  };
-
-  const SpelerLink = ({naam}) => {
-    const speler = vindSpeler(naam);
-    if(!speler) return <span>{naam}</span>;
-    return (
-      <button onClick={()=>nav("speler",speler)} style={{
-        background:"none",border:"none",padding:0,fontSize:"inherit",
-        fontWeight:"inherit",color:"var(--accent)",cursor:"pointer",
-        textDecoration:"underline",textDecorationColor:"var(--accent-light)",
-        textUnderlineOffset:2,fontFamily:"inherit"
-      }}>{naam}</button>
-    );
-  };
-  return (
-    <div className="fade">
-      <div className="wdh">
-        <div className="wdt">
-          <div className="wdtm t">{w.thuis}</div>
-          {score?<div className="wdsc">{score}</div>:<div className="wdsc k">vs</div>}
-          <div className="wdtm">{w.uit}</div>
-        </div>
-        <div className="wdi">
-          {formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""}
-          {w.locatie?` · ${w.locatie}`:""}
-        </div>
-      </div>
-      <div className="db">
-        {w.scorers&&w.scorers.length>0?(
-          <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
-            <div style={{width:"100%",maxWidth:560}}>
-              <div className="ds">Doelpunten</div>
-              <table style={{borderCollapse:"collapse",width:"100%"}}>
-                <thead>
-                  <tr>
-                    {["'","Stand","Naam","Club","Type"].map((h,i)=>(
-                      <th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",
-                        letterSpacing:.5,color:"var(--muted)",padding:"0 10px 8px",
-                        textAlign:i===0||i===1?"center":"left",
-                        borderBottom:"1px solid var(--border2)",whiteSpace:"nowrap"}}>
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {w.scorers.map((s,i)=>(
-                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
-                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
-                        fontSize:12,color:"var(--accent)",fontWeight:700,whiteSpace:"nowrap"}}>
-                        {s.minuut!=null?s.minuut+"'":"–"}
-                      </td>
-                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
-                        fontSize:12,fontWeight:700,whiteSpace:"nowrap",color:"var(--text)"}}>
-                        {s.stand||""}
-                      </td>
-                      <td style={{padding:"7px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        <SpelerLink naam={s.naam}/>
-                      </td>
-                      <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
-                        {s.club}
-                      </td>
-                      <td style={{padding:"7px 10px",whiteSpace:"nowrap"}}>
-                        {s.type&&s.type!=="veld"&&(
-                          <span style={{fontSize:10,padding:"2px 6px",
-                            background:"var(--accent-light)",color:"var(--accent)",
-                            borderRadius:4,textTransform:"uppercase",fontWeight:600,
-                            letterSpacing:".3px"}}>
-                            {s.type.toUpperCase()}
-                          </span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        ):<div className="empty">{gespeeld?"Geen scorersinformatie beschikbaar.":"Wedstrijd nog niet gespeeld."}</div>}
-        {w.kaarten&&w.kaarten.length>0&&(
-          <div style={{marginTop:20,display:"flex",flexDirection:"column",alignItems:"center"}}>
-            <div style={{width:"100%",maxWidth:480}}>
-              <div className="ds">Kaarten</div>
-              <table style={{borderCollapse:"collapse",width:"100%"}}>
-                <thead>
-                  <tr>
-                    {["'","","Naam","Club"].map((h,i)=>(
-                      <th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",
-                        letterSpacing:.5,color:"var(--muted)",padding:"0 10px 8px",
-                        textAlign:i===0?"center":"left",
-                        borderBottom:"1px solid var(--border2)",whiteSpace:"nowrap"}}>
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {w.kaarten.map((k,i)=>(
-                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
-                      <td style={{padding:"6px 10px",textAlign:"center",fontFamily:"'JetBrains Mono',monospace",
-                        fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
-                        {k.minuut!=null?k.minuut+"'":"–"}
-                      </td>
-                      <td style={{padding:"6px 10px",fontSize:14}}>
-                        {k.type==="rood"?"🟥":k.type==="geel"?"🟨":"🟩"}
-                      </td>
-                      <td style={{padding:"6px 10px",fontSize:13,fontWeight:500,whiteSpace:"nowrap"}}>
-                        <SpelerLink naam={k.naam}/>
-                      </td>
-                      <td style={{padding:"6px 10px",fontSize:12,color:"var(--muted)",whiteSpace:"nowrap"}}>
-                        {k.club}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function InvoerPagina() {
-  const {useState} = React;
-  const [popup, setPopup] = useState(null);
-  const [bestand, setBestand] = useState(null);
-  const [tekst, setTekst] = useState("");
-  const [status, setStatus] = useState("idle");
-
-  const openPopup = (type) => {
-    setPopup(type);
-    setBestand(null);
-    setTekst("");
-    setStatus("idle");
-  };
-
-  const sluitPopup = () => setPopup(null);
-
-  const stuurNaarDrive = async () => {
-    setStatus("busy");
-    let payload = { map: popup, tekst: tekst };
-
-    if (bestand) {
-      const reader = new FileReader();
-      reader.readAsDataURL(bestand);
-      reader.onload = async () => {
-        payload.bestand = {
-          naam: bestand.name,
-          type: bestand.type,
-          base64: reader.result.split(',')[1]
-        };
-        verzendPayload(payload);
-      };
-    } else {
-      verzendPayload(payload);
-    }
-  };
-
-  const verzendPayload = async (payload) => {
-    try {
-      await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        body: JSON.stringify(payload)
-      });
-      setStatus("done");
-      setTimeout(sluitPopup, 2000);
-    } catch(e) {
-      setStatus("error");
-    }
-  };
-
-  const opties = [
-    { id: "Matchstatistieken", label: "Wedstrijden", icon: "🏑" },
-    { id: "Topscorers", label: "Topscorers", icon: "🏆" },
-    { id: "Hockeynieuws", label: "Nieuws", icon: "📰" },
-    { id: "Oranje", label: "Oranje", icon: "🦁" },
-    { id: "Actuele_Stand", label: "Actuele Stand", icon: "📊" }
-  ];
-
-  return (
-    <div className="fade" style={{maxWidth: 800, margin: "0 auto", padding: "40px 24px"}}>
-      <div style={{fontSize: 22, fontWeight: 700, marginBottom: 8}}>Data Invoer</div>
-      <div style={{fontSize: 14, color: "var(--muted)", marginBottom: 30}}>
-        Selecteer een categorie om bestanden of links direct naar de backend te sturen.
-      </div>
-      
-      <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 16}}>
-        {opties.map(o => (
-          <button key={o.id} onClick={() => openPopup(o.id)} style={{
-            background: "var(--surface2)", border: "1px solid var(--border)", borderRadius: 12, padding: "30px 20px",
-            fontSize: 15, fontWeight: 600, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 12, transition: "0.2s"
-          }} onMouseEnter={e => e.currentTarget.style.borderColor = "var(--accent)"} onMouseLeave={e => e.currentTarget.style.borderColor = "var(--border)"}>
-            <span style={{fontSize: 32}}>{o.icon}</span>
-            {o.label}
-          </button>
-        ))}
-      </div>
-
-      {popup && (
-        <div style={{
-          position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.6)",
-          display: "flex", justifyContent: "center", alignItems: "center", zIndex: 1000
-        }}>
-          <div className="fade" style={{background: "var(--surface)", padding: 30, borderRadius: 12, width: "100%", maxWidth: 500, boxShadow: "0 10px 40px rgba(0,0,0,0.2)"}}>
-            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20}}>
-              <div style={{fontSize: 18, fontWeight: 700}}>Invoer: {opties.find(o => o.id === popup).label}</div>
-              <button onClick={sluitPopup} style={{background: "none", border: "none", fontSize: 24, cursor: "pointer", color: "var(--muted)", lineHeight: 1}}>×</button>
-            </div>
-
-            <div style={{marginBottom: 20}}>
-              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Bestand (PDF of Screenshot)</label>
-              <input type="file" onChange={e => setBestand(e.target.files[0])} style={{width: "100%", padding: "10px", border: "1px solid var(--border)", borderRadius: 6, fontSize: 13}} />
-            </div>
-
-            <div style={{marginBottom: 24}}>
-              <label style={{display: "block", marginBottom: 8, fontWeight: 600, fontSize: 13}}>Tekst of URL</label>
-              <textarea rows="4" value={tekst} onChange={e => setTekst(e.target.value)} style={{width: "100%", padding: "12px", border: "1px solid var(--border)", borderRadius: 6, fontFamily: "inherit", fontSize: 13, resize: "vertical"}} placeholder="Plak hier een URL of ruwe tekst..."></textarea>
-            </div>
-
-            <div style={{display: "flex", justifyContent: "flex-end", gap: 10}}>
-              <button onClick={sluitPopup} style={{padding: "10px 16px", background: "var(--surface2)", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, color: "var(--text)"}}>Annuleren</button>
-              <button onClick={stuurNaarDrive} disabled={status === "busy" || (!bestand && !tekst.trim())} style={{padding: "10px 16px", background: "var(--accent)", color: "white", border: "none", borderRadius: 6, cursor: "pointer", fontWeight: 600, opacity: (status === "busy" || (!bestand && !tekst.trim())) ? 0.5 : 1}}>
-                {status === "busy" ? "Verzenden..." : "Verzenden"}
-              </button>
-            </div>
-            {status === "done" && <div style={{marginTop: 15, padding: 10, background: "var(--green-light)", color: "var(--green)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>✓ Succesvol in de wachtrij gezet.</div>}
-            {status === "error" && <div style={{marginTop: 15, padding: 10, background: "#fef2f2", color: "var(--red)", fontWeight: 600, fontSize: 13, borderRadius: 6}}>❌ Er ging iets mis. Probeer het opnieuw.</div>}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
 function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
-  const clubSpelers = spelers
-    .filter(s => s.club === club)
-    .sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
-
+  const clubSpelers = spelers.filter(s => s.club === club).sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
   const clubNieuws = nieuws.filter(n => {
     const t = (n.titel||n.title||"").toLowerCase();
-    return t.includes(club.toLowerCase()) ||
-           clubSpelers.some(s => {
-             const delen = s.naam.split(" ");
-             const vn = delen[0].toLowerCase();
-             const an = delen[delen.length-1].toLowerCase();
-             return an.length > 3 && t.includes(vn) && t.includes(an);
-           });
+    return t.includes(club.toLowerCase()) || clubSpelers.some(s => {
+      const delen = s.naam.split(" ");
+      return delen[delen.length-1].length > 3 && t.includes(delen[0].toLowerCase()) && t.includes(delen[delen.length-1].toLowerCase());
+    });
   }).slice(0, 25);
-
-  const clubWedstrijden = programma.filter(w =>
-    (w.thuis||"").includes(club) || (w.uit||"").includes(club)
-  );
-  const gespeeld = clubWedstrijden
-    .filter(w => w.gespeeld===true || w.score_thuis!=null)
-    .sort((a,b) => new Date(b.datum||0) - new Date(a.datum||0));
-  const komend = clubWedstrijden
-    .filter(w => w.gespeeld!==true && w.score_thuis==null)
-    .sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
-
-  const Td = ({children, right, mono, muted, accent, bold}) => (
-    <td style={{
-      padding:"6px 8px", textAlign:right?"right":"left",
-      fontFamily:mono?"'JetBrains Mono',monospace":"inherit",
-      fontSize:mono?12:13, fontWeight:bold?700:400,
-      color:muted?"var(--muted)":accent?"var(--accent)":"var(--text)",
-      whiteSpace:"nowrap", width:"1px",
-      borderBottom:"1px solid var(--border)"
-    }}>{children}</td>
-  );
+  const clubWedstrijden = programma.filter(w => (w.thuis||"").includes(club) || (w.uit||"").includes(club));
+  const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).sort((a,b) => new Date(b.datum||0) - new Date(a.datum||0));
+  const komend = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
 
   return (
     <div className="fade">
-      <div style={{padding:"20px 24px 16px",borderBottom:"1px solid var(--border)",
-        background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
-        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>
-          {geslacht==="heren"?"Tulp Hoofdklasse Heren":"Tulp Hoofdklasse Dames"}
-        </div>
+      <div style={{padding:"20px 24px 16px",borderBottom:"1px solid var(--border)",background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
+        <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",textTransform:"uppercase",letterSpacing:1,marginBottom:4}}>{geslacht==="heren"?"Tulp Hoofdklasse Heren":"Tulp Hoofdklasse Dames"}</div>
         <div style={{fontSize:28,fontWeight:700,letterSpacing:"-.5px"}}>{club}</div>
-        <div style={{fontSize:12,color:"var(--muted)",marginTop:4}}>
-          {clubSpelers.length} spelers · seizoen 2025-2026
-        </div>
+        <div style={{fontSize:12,color:"var(--muted)",marginTop:4}}>{clubSpelers.length} spelers · seizoen 2025-2026</div>
       </div>
-
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
           <table style={{width:"100%",borderCollapse:"collapse",marginBottom:20}}>
-            <thead>
-              <tr>
-                {["#","Naam","","Goals","V","SC","SB"].map((h,i) => (
-                  <th key={i} style={{
-                    fontSize:10,fontWeight:600,textTransform:"uppercase",
-                    letterSpacing:.5,color:"var(--muted)",
-                    padding:"0 8px 8px",textAlign:i===0||i>=3?"right":"left",
-                    whiteSpace:"nowrap",borderBottom:"1px solid var(--border2)"
-                  }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
+            <thead><tr><th style={{textAlign:"right",paddingRight:8}}>#</th><th style={{textAlign:"left"}}>Naam</th><th></th><th style={{textAlign:"right"}}>Goals</th></tr></thead>
             <tbody>
               {clubSpelers.map((s,i) => (
-                <tr key={i} style={{cursor:"pointer"}}
-                  onClick={()=>nav("speler_via_club",{...s,_vanClub:club})}
-                  onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}}
-                  onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
-                  <Td right mono accent bold>{s.rugnummer}</Td>
-                  <td style={{padding:"6px 8px",whiteSpace:"nowrap",borderBottom:"1px solid var(--border)"}}>
-                    <div style={{display:"flex",alignItems:"center",gap:5}}>
-                      <span style={{fontSize:13,fontWeight:500}}>{s.naam}</span>
-                      {s.keeper&&<span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,flexShrink:0}}>K</span>}
-                      {s.aanvoerder&&<span style={{fontSize:9,padding:"1px 4px",background:"var(--surface2)",color:"var(--muted)",border:"1px solid var(--border)",borderRadius:3,fontWeight:600,flexShrink:0}}>A</span>}
-                    </div>
-                  </td>
-                  <Td><Vlag s={s}/></Td>
-                  <Td right mono bold accent>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</Td>
-                  <Td right mono muted>{s.vd>0?s.vd:""}</Td>
-                  <Td right mono muted>{s.sc>0?s.sc:""}</Td>
-                  <Td right mono muted>{s.sb>0?s.sb:""}</Td>
+                <tr key={i} style={{cursor:"pointer",borderBottom:"1px solid var(--border)"}} onClick={()=>nav("speler_via_club",{...s,_vanClub:club})} onMouseEnter={e=>{for(let td of e.currentTarget.cells) td.style.background="var(--surface2)"}} onMouseLeave={e=>{for(let td of e.currentTarget.cells) td.style.background=""}}>
+                  <td style={{textAlign:"right",fontFamily:"monospace",padding:"6px 8px",color:"var(--accent)",fontWeight:700}}>{s.rugnummer}</td>
+                  <td style={{padding:"6px 8px",fontWeight:500}}>{s.naam} {s.keeper&&<span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,marginLeft:5}}>K</span>}</td>
+                  <td><Vlag s={s}/></td>
+                  <td style={{textAlign:"right",color:"var(--accent)",fontWeight:700,padding:"6px 8px"}}>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
         <div>
-          <div style={{padding:"14px 18px 12px",borderBottom:"1px solid var(--border)"}}>
-            <div style={{fontSize:13,fontWeight:700}}>Nieuws</div>
-          </div>
+          <div style={{padding:"14px 18px 12px",borderBottom:"1px solid var(--border)"}}><div style={{fontSize:13,fontWeight:700}}>Nieuws</div></div>
           {clubNieuws.length > 0 ? clubNieuws.map((n,i) => (
-            <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer"
-              style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",textDecoration:"none",transition:"background .12s"}}
-              onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
-              onMouseLeave={e=>e.currentTarget.style.background=""}>
-              <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
-                {(n.datum||n.date||"").slice(0,10)}
-              </div>
-              <div style={{fontSize:12,fontWeight:600,lineHeight:1.4,color:"var(--text)",marginBottom:2}}>
-                {n.titel||n.title||""}
-              </div>
-              {(n.samenvatting||n.beschrijving)&&(
-                <div style={{fontSize:11,color:"var(--muted)",lineHeight:1.4}}>
-                  {(n.samenvatting||n.beschrijving||"").slice(0,120)}…
-                </div>
-              )}
+            <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",textDecoration:"none"}} onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"} onMouseLeave={e=>e.currentTarget.style.background=""}>
+              <div style={{fontSize:10,color:"var(--muted)",marginBottom:4}}>{(n.datum||n.date||"").slice(0,10)}</div>
+              <div style={{fontSize:12,fontWeight:600}}>{n.titel||n.title||""}</div>
             </a>
-          )) : (
-            <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>
-              Geen nieuws gevonden.
-            </div>
-          )}
+          )) : <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws gevonden.</div>}
         </div>
       </div>
-
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:13,fontWeight:700,marginBottom:12}}>Uitslagen</div>
@@ -1018,6 +515,138 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav}) {
   );
 }
 
+function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
+  const [zoek,setZoek]=useState("");
+  const [filterClub,setFilterClub]=useState("alle");
+  const clubs=useMemo(()=>{const s=new Set(spelers.map(x=>x.club));return["alle",...Array.from(s).sort()];},[spelers]);
+  const gefilterd=useMemo(()=>spelers.filter(s=>{
+    const mz=!zoek||s.naam.toLowerCase().includes(zoek.toLowerCase());
+    const mc=filterClub==="alle"||s.club===filterClub;
+    return mz&&mc;
+  }),[spelers,zoek,filterClub]);
+
+  return (
+    <div className="fade">
+      <div className="sec">
+        <div className="sec-hdr"><div className="sec-title">Spelers</div></div>
+        <div className="zw">
+          <input className="zi" placeholder="Zoek op naam…" value={zoek} onChange={e=>setZoek(e.target.value)}/>
+          <select className="zs" value={filterClub} onChange={e=>setFilterClub(e.target.value)}>
+            {clubs.map(c=><option key={c} value={c}>{c==="alle"?"Alle clubs":c}</option>)}
+          </select>
+        </div>
+        <div className="sc">{gefilterd.length} spelers</div>
+        <div className="sg">
+          {gefilterd.map((s,i)=>(
+            <div className="sk" key={i} onClick={()=>nav("speler",s)}>
+              <div className="skt">
+                <div><div className="sn"><Vlag s={s}/>{s.naam}</div><div className="scl">{s.club}</div></div>
+                <div style={{textAlign:"right"}}><div className="sr">#{s.rugnummer}</div></div>
+              </div>
+              <div style={{display:"flex",gap:5,marginTop:8}}>
+                {s.keeper&&<span className="sba sbk">Keeper</span>}
+                {s.aanvoerder&&<span className="sba sbv">Aanvoerder</span>}
+                {oranje.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Oranje</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SpelerDetail({speler,nav,nieuws,programma}) {
+  if(!speler) return <div className="loading">Speler niet gevonden.</div>;
+  const volledigeNaam=speler.naam.toLowerCase();
+  const groeneKaarten = useMemo(()=>{
+    let tel=0;
+    (programma||[]).forEach(w=>{(w.kaarten||[]).forEach(k=>{if(k.type==="groen" && k.naam&&k.naam.toLowerCase()===volledigeNaam) tel++;});});
+    return tel;
+  },[programma,volledigeNaam]);
+  
+  return (
+    <div className="fade">
+      <div className="dh">
+        <div className="dr">#{speler.rugnummer}</div>
+        <div className="dn2"><Vlag s={speler}/>{speler.naam}</div>
+        <div className="dm">
+          <span className="dc ac">{speler.club}</span>
+          <span className="dc">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
+          {speler.keeper&&<span className="dc ke">Keeper</span>}
+        </div>
+      </div>
+      <div className="db">
+        {(speler.doelpunten_seizoen>0 || groeneKaarten>0)&&(
+          <div style={{marginBottom:20}}>
+            <div className="ds">Statistieken 2025-2026</div>
+            <div style={{display:"grid",gridTemplateColumns:`repeat(${speler.doelpunten_seizoen>0?4:0 + (groeneKaarten>0?1:0)},1fr)`,gap:8}}>
+              {speler.doelpunten_seizoen>0&&[
+                ["Goals", speler.doelpunten_seizoen, "var(--accent)"], ["Veld", speler.vd??0, "var(--muted)"],
+                ["SC", speler.sc??0, "var(--muted)"], ["SB", speler.sb??0, "var(--muted)"]
+              ].map(([lbl,val,kleur])=>(
+                <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
+                </div>
+              ))}
+              {groeneKaarten>0&&(
+                <div style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function WedstrijdDetail({wedstrijd, nav, spelers}) {
+  if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
+  const w=wedstrijd;
+  const score=(w.gespeeld===true||w.score_thuis!=null)?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
+  const vindSpeler = (naam) => { const nl=(naam||"").toLowerCase(); return (spelers||[]).find(s=>s.naam&&s.naam.toLowerCase().includes(nl)); };
+  const SpelerLink = ({naam}) => {
+    const speler = vindSpeler(naam);
+    return speler ? <button onClick={()=>nav("speler",speler)} style={{background:"none",border:"none",padding:0,fontSize:"inherit",fontWeight:"inherit",color:"var(--accent)",cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--accent-light)",textUnderlineOffset:2,fontFamily:"inherit"}}>{naam}</button> : <span>{naam}</span>;
+  };
+
+  return (
+    <div className="fade">
+      <div className="wdh">
+        <div className="wdt"><div className="wdtm t">{w.thuis}</div>{score?<div className="wdsc">{score}</div>:<div className="wdsc k">vs</div>}<div className="wdtm">{w.uit}</div></div>
+        <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
+      </div>
+      <div className="db">
+        {w.scorers&&w.scorers.length>0?(
+          <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+            <div style={{width:"100%",maxWidth:560}}>
+              <div className="ds">Doelpunten</div>
+              <table style={{borderCollapse:"collapse",width:"100%"}}>
+                <thead><tr>{["'","Stand","Naam","Club","Type"].map((h,i)=><th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",color:"var(--muted)",padding:"0 10px 8px",textAlign:i<=1?"center":"left",borderBottom:"1px solid var(--border2)"}}>{h}</th>)}</tr></thead>
+                <tbody>
+                  {w.scorers.map((s,i)=>(
+                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
+                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,color:"var(--accent)",fontWeight:700}}>{s.minuut!=null?s.minuut+"'":"–"}</td>
+                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,fontWeight:700}}>{s.stand||""}</td>
+                      <td style={{padding:"7px 10px",fontSize:13,fontWeight:500}}><SpelerLink naam={s.naam}/></td>
+                      <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)"}}>{s.club}</td>
+                      <td style={{padding:"7px 10px"}}>{s.type&&s.type!=="veld"&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:600}}>{s.type.toUpperCase()}</span>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ):<div className="empty">Geen scorersinformatie beschikbaar.</div>}
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
   const [page,setPage]=useState("dashboard");
@@ -1025,6 +654,7 @@ function App() {
   const [stand,setStand]=useState([]);
   const [programma,setProgramma]=useState([]);
   const [topscorers,setTopscorers]=useState([]);
+  const [oranje,setOranje]=useState([]);
   const [nieuws,setNieuws]=useState([]);
   const [spelers,setSpelers]=useState([]);
   const [loading,setLoading]=useState(true);
@@ -1038,37 +668,34 @@ function App() {
       fetch(`competities/${geslacht}/standen.json`).then(r=>r.json()).catch(()=>null),
       fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
       fetch(`competities/${geslacht}/topscorers.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`spelers/oranje/oranje-${geslacht}.json`).then(r=>r.json()).catch(()=>null),
       ...nieuwsBronnen.map(url=>fetch(url).then(r=>r.json()).catch(()=>null)),
-    ]).then(([sd,pd,td,...nieuwsFeeds])=>{
+    ]).then(([sd,pd,td,od,...nieuwsFeeds])=>{
       const sl=sd?.stand||[];
       if(sl.length>0&&sd?.bijgewerkt) sl[0]._bw=sd.bijgewerkt.slice(0,10);
       setStand(sl);
       setProgramma(pd?.wedstrijden||[]);
       setTopscorers(td?.topscorers||[]);
-      const alleArtikelen=[];
-      const gezieneTitels=new Set();
+      setOranje(od?.alle_namen||[]);
+      
+      const alleArtikelen=[]; const gezieneTitels=new Set();
       for(const feed of nieuwsFeeds){
-        const art=feed?.artikelen||feed?.items||[];
-        for(const a of art){
+        for(const a of (feed?.artikelen||feed?.items||[])){
           const titel=a.titel||a.title||"";
           if(titel&&!gezieneTitels.has(titel)){gezieneTitels.add(titel);alleArtikelen.push(a);}
         }
       }
       alleArtikelen.sort((a,b)=>new Date(b.datum||b.date||0)-new Date(a.datum||a.date||0));
-      setNieuws(alleArtikelen);
-      setLoading(false);
+      setNieuws(alleArtikelen); setLoading(false);
     });
   },[geslacht]);
 
   useEffect(()=>{
-    fetch("spelers/index.json").then(r=>r.json())
-      .then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht)))
-      .catch(()=>setSpelers([]));
+    fetch("spelers/index.json").then(r=>r.json()).then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht))).catch(()=>setSpelers([]));
   },[geslacht]);
 
   const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
   const isActive=id=>page===id||(page==="speler"&&id==="spelers");
-  const showToggle=["dashboard","spelers"].includes(page);
 
   return (
     <>
@@ -1076,21 +703,20 @@ function App() {
       <header className="hdr">
         <button className="logo" onClick={()=>nav("dashboard")}>🏑 Hockey DB</button>
         <nav className="nav">
-          {[["dashboard","Stand"],["spelers","Spelers"],["invoer","+ Invoer"]].map(([id,lbl])=>(
+          {[["dashboard","Stand"],["spelers","Spelers"],["oranje","Oranje"],["invoer","+ Invoer"]].map(([id,lbl])=>(
             <button key={id} className={`nb ${isActive(id)?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
           ))}
         </nav>
-        {showToggle
-          ?<div className="gt">
-            <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
-            <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
-          </div>
-          :<div style={{width:120}}/>}
+        <div className="gt">
+          <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
+          <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
+        </div>
       </header>
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
-      {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers}/>}
+      {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers} oranje={oranje}/>}
       {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers}/>}
+      {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
       {page==="invoer"&&<InvoerPagina />}
