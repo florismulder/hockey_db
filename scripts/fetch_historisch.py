@@ -229,48 +229,98 @@ def _int(s,f=0):
 
 def _is_stand_tabel(tabel_tekst):
     """Controleer of dit een standentabel is (niet een resultatenmatrix of legenda)."""
-    tl = tabel_tekst.lower()
+    # Resultatenmatrix heeft bgcolor="#808080" op de diagonaal
     if 'bgcolor="#808080"' in tabel_tekst or "bgcolor='#808080'" in tabel_tekst:
         return False
-    stand_indicatoren = ["gespeeld", "gewonnen", "verloren", "punten", "doelpunten",
-                         "| gs", "| w ", "| g ", "| v ", "| p ", "| dv", "| dt",
-                         "{{afkorting|gs", "{{afkorting|w|", "{{afkorting|g|"]
+    tl = tabel_tekst.lower()
+    # Legenda-tabel heeft 'afk.' of 'betekenis'
+    if "afk." in tl or "betekenis" in tl:
+        return False
+    # Topscorers-tabel heeft 'goals' of 'speler'
+    if "! goals" in tl or "! speler" in tl:
+        return False
+    # Standentabel heeft kolommen voor punten/doelpunten
+    stand_indicatoren = [
+        "gespeeld", "gewonnen", "verloren", "doelpunten",
+        "|gs", "|w\n", "|g\n", "|v\n", "|p\n", "|dv", "|dt", "|ds",
+        "| gs", "| w ", "| dv", "| dt",
+        "{{afkorting|gs", "{{afkorting|w|", "{{afkorting|pnt",
+        "width=25|gs", "width=25|w", "width=28|dv",
+    ]
     return any(ind in tl for ind in stand_indicatoren)
 
 def _parse_tabel_rijen(tabel):
-    """Parseer rijen uit een standentabel."""
+    """
+    Parseer rijen uit een standentabel.
+    Ondersteunt twee kolomformaten:
+      - Oud (1999-2015 ish): pos | club | gs | w | g | v | pnt | dv | dt | ds  (10 kolommen)
+      - Nieuw (2016-2023):   indicator | pos | club | gs | w | g | v | pnt | dv | dt | ds (11 kolommen)
+    """
     stand = []
     for rij in tabel.split("|-"):
         rij = rij.strip()
         if not rij or rij.startswith("!") or rij.startswith("|+"): continue
+
+        # Zone uit achtergrondkleur — zowel bgcolor=ACE1AF als bgcolor="#ACE1AF"
         zone = ""
-        km = re.search(r'background[:\s]*["\']?#?([a-zA-Z0-9]+)', rij)
+        km = re.search(r'bgcolor\s*=\s*["\']?#?([a-zA-Z0-9]+)', rij)
+        if not km:
+            km = re.search(r'background[:\s]*["\']?#?([a-zA-Z0-9]+)', rij)
         if km:
             k = km.group(1).lower()
-            if any(x in k for x in ["ace1af","c0f0d0","b0e0e6","ccffcc","aaffaa"]): zone = "playoff"
-            elif any(x in k for x in ["bisque","ffd700","ffe4c4","ffff99","lightblue","add8e6"]): zone = "playout"
-            elif any(x in k for x in ["ffaaaa","ffa07a","ff6666","ffcccc","ffd0d0"]): zone = "degradatie"
+            if any(x in k for x in ["ace1af","c0f0d0","b0e0e6","ccffcc","aaffaa","acffac"]): zone = "playoff"
+            elif any(x in k for x in ["bisque","ffd700","ffe4c4","ffff99","lightblue","add8e6","fffacd"]): zone = "playout"
+            elif any(x in k for x in ["ffaaaa","ffa07a","ff6666","ffcccc","ffd0d0","ffb6b6"]): zone = "degradatie"
+
+        # Verwijder leidende stijl van de rij zelf
         ri = re.sub(r'^[^|]*\|', '', rij, count=1)
         cellen = re.split(r'\|\|', ri)
-        if len(cellen) < 10: continue
+
+        # Bepaal kolomformaat op basis van aantal cellen
+        # Oud formaat: 10 kolommen (pos, club, gs, w, g, v, pnt, dv, dt, ds)
+        # Nieuw formaat: 11 kolommen (indicator, pos, club, gs, w, g, v, pnt, dv, dt, ds)
+        if len(cellen) >= 11:
+            # Nieuw formaat met indicator vooraan
+            i_pos, i_club, i_gs = 1, 2, 3
+        elif len(cellen) >= 10:
+            # Oud formaat zonder indicator
+            i_pos, i_club, i_gs = 0, 1, 2
+        else:
+            continue
+
         try:
-            club = _cel(cellen[2])
+            club = _cel(cellen[i_club])
             if not club or len(club) < 2: continue
-            if re.match(r'^\d+[-]\d+$', club.strip()): continue
-            pr = re.sub(r"[^\d]", "", cellen[1])
+            if re.match(r'^\d+[-]\d+$', club.strip()): continue  # score uit matrix
+
+            pr = re.sub(r"[^\d]", "", cellen[i_pos])
             pos = int(pr) if pr else 0
             if pos == 0: continue
-            gs  = _int(_cel(cellen[3])); w = _int(_cel(cellen[4])); g = _int(_cel(cellen[5]))
-            v   = _int(_cel(cellen[6])); pnt = _int(_cel(cellen[7]))
-            dv  = _int(_cel(cellen[8])); dt = _int(_cel(cellen[9]))
-            ds  = _int(_cel(cellen[10])) if len(cellen) > 10 else dv - dt
+
+            gs  = _int(_cel(cellen[i_gs]))
+            w   = _int(_cel(cellen[i_gs+1]))
+            g   = _int(_cel(cellen[i_gs+2]))
+            v   = _int(_cel(cellen[i_gs+3]))
+            pnt = _int(_cel(cellen[i_gs+4]))
+            dv  = _int(_cel(cellen[i_gs+5])) if len(cellen) > i_gs+5 else 0
+            dt  = _int(_cel(cellen[i_gs+6])) if len(cellen) > i_gs+6 else 0
+            ds  = _int(_cel(cellen[i_gs+7])) if len(cellen) > i_gs+7 else dv - dt
+
+            # Validatie: bij resultatenmatrix zijn alle getallen 0
             if gs == 0 and w == 0 and g == 0 and v == 0: continue
+
             if not zone:
-                zone = ("playoff" if pos <= 4 else "playout" if pos in (10, 11) else "degradatie" if pos == 12 else "")
-            stand.append({"positie": pos, "club": club, "gespeeld": gs, "gewonnen": w,
-                "gelijk": g, "verloren": v, "doelpunten_voor": dv, "doelpunten_tegen": dt,
+                zone = ("playoff" if pos <= 4
+                        else "playout" if pos in (10, 11)
+                        else "degradatie" if pos == 12
+                        else "")
+
+            stand.append({"positie": pos, "club": club, "gespeeld": gs,
+                "gewonnen": w, "gelijk": g, "verloren": v,
+                "doelpunten_voor": dv, "doelpunten_tegen": dt,
                 "doelsaldo": ds, "punten": pnt, "zone": zone})
         except: continue
+
     stand.sort(key=lambda r: r["positie"])
     return stand
 
