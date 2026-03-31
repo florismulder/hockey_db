@@ -276,14 +276,14 @@ def _parse_tabel_rijen(tabel):
         ri = re.sub(r'^[^|]*\|', '', rij, count=1)
         cellen = re.split(r'\|\|', ri)
 
-        # Bepaal kolomformaat op basis van aantal cellen
-        # Oud formaat: 10 kolommen (pos, club, gs, w, g, v, pnt, dv, dt, ds)
-        # Nieuw formaat: 11 kolommen (indicator, pos, club, gs, w, g, v, pnt, dv, dt, ds)
+        # Bepaal kolomformaat op basis van aantal cellen na || split
+        # 9 cellen:  pos+zone in cel[0] | club | gs | w | g | v | pnt | dv | dt
+        # 10 cellen: pos | club | gs | w | g | v | pnt | dv | dt | ds
+        # 11 cellen: indicator | pos | club | gs | w | g | v | pnt | dv | dt | ds
         if len(cellen) >= 11:
-            # Nieuw formaat met indicator vooraan
             i_pos, i_club, i_gs = 1, 2, 3
-        elif len(cellen) >= 10:
-            # Oud formaat zonder indicator
+        elif len(cellen) >= 9:
+            # Zowel 9 als 10 cellen: pos zit in cel[0]
             i_pos, i_club, i_gs = 0, 1, 2
         else:
             continue
