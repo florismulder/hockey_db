@@ -40,6 +40,17 @@ function formatDatum(str) {
   return `${String(d.getDate()).padStart(2, '0')}-${String(d.getMonth() + 1).padStart(2, '0')}-${d.getFullYear()}`;
 }
 
+function formatNieuwsDatum(str) {
+  if (!str) return "";
+  const s = String(str).trim();
+  // dd-mm-yyyy → toon als dd-mm-yyyy
+  if (/^\d{2}-\d{2}-\d{4}$/.test(s)) return s;
+  // yyyy-mm-dd → zet om naar dd-mm-yyyy
+  const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (m) return `${m[3]}-${m[2]}-${m[1]}`;
+  return s.slice(0,10);
+}
+
 function stripTeam(naam) { return naam ? naam.replace(/\s+[HhDd]\d+$/,"").trim() : ""; }
 
 const VANDAAG = new Date(); VANDAAG.setHours(0,0,0,0);
@@ -434,7 +445,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
           <div className="nl">
             {nieuws.length>0?nieuws.slice(0,15).map((n,i)=>(
               <a className="nr" key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer">
-                <div className="nm"><span className="nd">{(n.datum||n.date||"").slice(0,10)}</span></div>
+                <div className="nm"><span className="nd">{formatNieuwsDatum(n.datum||n.date||"")}</span></div>
                 <div className="ntt">{n.titel||n.title||""}</div>
               </a>
             )):<div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
@@ -950,6 +961,14 @@ function HistoriePagina({nav}) {
                     </div>
                   )}
                 </div>
+              </div>
+              {/* Terugknop */}
+              <div style={{padding:"16px 24px",borderTop:"1px solid var(--border)",textAlign:"center"}}>
+                <button onClick={()=>document.querySelector(".fade").scrollIntoView({behavior:"smooth",block:"start"})}
+                  style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:6,
+                    padding:"7px 20px",fontSize:12,fontWeight:600,color:"var(--muted)",cursor:"pointer"}}>
+                  ↑ Terug naar overzicht
+                </button>
               </div>
             </>
           )}
