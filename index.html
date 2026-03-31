@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hockey DB — Tulp Hoofdklasse</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏑</text></svg>">
 <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -141,7 +142,13 @@ function Breadcrumb({page,pageId,nav}) {
   );
 }
 
-function TopscorersOverzicht({topscorers}) {
+function TopscorersOverzicht({topscorers, spelers, nav}) {
+  const vindSpeler = (naam) => {
+    if(!naam||!spelers?.length) return null;
+    const nl = naam.toLowerCase();
+    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
+      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
+  };
   return (
     <div className="fade">
       <div className="sec">
@@ -160,17 +167,25 @@ function TopscorersOverzicht({topscorers}) {
               </tr>
             </thead>
             <tbody>
-              {topscorers.map((t, i) => (
+              {topscorers.map((t, i) => {
+                const speler = vindSpeler(t.naam);
+                return (
                 <tr key={i}>
                   <td style={{textAlign:'left'}}>{i + 1}</td>
-                  <td style={{textAlign:'left', fontWeight:600}}><Vlag s={t}/>{t.naam}</td>
+                  <td style={{textAlign:'left', fontWeight:600}}>
+                    <Vlag s={t}/>
+                    {speler
+                      ? <button onClick={()=>nav("speler",speler)} style={{background:"none",border:"none",padding:0,fontWeight:600,color:"var(--accent)",cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--accent-light)",textUnderlineOffset:2,fontFamily:"inherit",fontSize:"inherit"}}>{t.naam}</button>
+                      : t.naam}
+                  </td>
                   <td style={{textAlign:'left'}}>{t.club}</td>
                   <td style={{color:'var(--accent)', fontWeight:700, textAlign:'right'}}>{t.doelpunten}</td>
                   <td style={{textAlign:'right'}}>{t.vd}</td>
                   <td style={{textAlign:'right'}}>{t.sc}</td>
                   <td style={{textAlign:'right'}}>{t.sb}</td>
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         ) : <div className="empty">Geen topscorers beschikbaar.</div>}
@@ -309,6 +324,27 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   const [clubFilter, setClubFilter] = React.useState(null);
   const bijgewerkt = stand[0]?._bw||"";
   const komend = programma.filter(isKomend);
+
+  // Gefilterde wedstrijden op basis van clubFilter
+  const gefilterdWedstrijden = useMemo(()=>{
+    if(!clubFilter?.club || !clubFilter?.type) return null;
+    const {club, type} = clubFilter;
+    return programma.filter(w=>{
+      if(!isGespeeld(w)) return false;
+      const st = w.score_thuis??w.doelpunten_thuis??null;
+      const su = w.score_uit??w.doelpunten_uit??null;
+      if(st===null||su===null) return false;
+      const isThuis = (w.thuis||"").includes(club);
+      const isUit   = (w.uit||"").includes(club);
+      if(!isThuis && !isUit) return false;
+      const th = parseInt(st), tu = parseInt(su);
+      if(type==="G")  return isThuis ? th>tu : tu>th;
+      if(type==="Gk") return th===tu;
+      if(type==="V")  return isThuis ? th<tu : tu<th;
+      return false;
+    }).sort((a,b)=>(parseDatum(b.datum)||new Date(0))-(parseDatum(a.datum)||new Date(0)));
+  },[clubFilter, programma]);
+
   const gespeeldGroepen = useMemo(() => {
     const gespeeldLijst = programma.filter(isGespeeld);
     const groepen = {};
@@ -383,6 +419,31 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                 </div>
               </>
             ):<div className="empty">Geen standdata beschikbaar.</div>}
+            {/* Gefilterd wedstrijdenpaneel */}
+            {clubFilter?.club&&gefilterdWedstrijden&&(
+              <div style={{marginTop:16,borderTop:"2px solid var(--accent-light)",paddingTop:14}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
+                  <div style={{fontSize:13,fontWeight:700}}>
+                    {clubFilter.club} — {clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren"}
+                    <span style={{fontSize:12,fontWeight:400,color:"var(--muted)",marginLeft:8}}>({gefilterdWedstrijden.length} wedstrijden)</span>
+                  </div>
+                  <button onClick={()=>setClubFilter(null)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:18,lineHeight:1}}>×</button>
+                </div>
+                {gefilterdWedstrijden.length>0?(
+                  <div className="wl">
+                    {gefilterdWedstrijden.map((w,i)=>(
+                      <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
+                        <span className="wd">{formatDatum(w.datum)}</span>
+                        <div className="wh" style={{fontWeight:(w.thuis||"").includes(clubFilter.club)?700:400}}>{stripTeam(w.thuis)}</div>
+                        <div className="ws">{w.score_thuis??w.doelpunten_thuis??""} – {w.score_uit??w.doelpunten_uit??""}</div>
+                        <div className="wu" style={{fontWeight:(w.uit||"").includes(clubFilter.club)?700:400}}>{stripTeam(w.uit)}</div>
+                        <span className="wa">›</span>
+                      </div>
+                    ))}
+                  </div>
+                ):<div className="empty">Geen wedstrijden gevonden.</div>}
+              </div>
+            )}
           </div>
           <div className="twee-col">
             <div className="tc-links">
@@ -1055,7 +1116,7 @@ function App() {
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers} oranje={oranje}/>}
-      {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers}/>}
+      {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers} spelers={spelers} nav={nav}/>}
       {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
