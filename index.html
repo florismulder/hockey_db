@@ -725,15 +725,7 @@ function HistoriePagina({nav}) {
     setDetail(null);
     fetch(`seizoenen/${geselecteerd.slug}/${geselecteerd.geslacht}.json`)
       .then(r=>r.json())
-      .then(d=>{
-        setDetail(d);
-        setLoadingDetail(false);
-        // Auto-scroll naar detail sectie
-        setTimeout(()=>{
-          const el = document.getElementById("historie-detail");
-          if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
-        }, 100);
-      })
+      .then(d=>{ setDetail(d); setLoadingDetail(false); })
       .catch(()=>setLoadingDetail(false));
   },[geselecteerd]);
 
@@ -792,13 +784,12 @@ function HistoriePagina({nav}) {
     if(!playoffs) return null;
     const hf = playoffs.halve_finales||[];
     const fin = playoffs.finale;
-    const kamp = playoffs.kampioen||"";
-    // Toon dit blok alleen als er echte play-off details zijn
+    const kamp = playoffs.kampioen||kampioen||"";
     if(!kamp && !fin && !hf.length) return null;
     return (
       <div>
         <div className="ds" style={{marginTop:0}}>Play-offs</div>
-        {kamp&&(
+        {kamp&&kamp!=="Geen (COVID)"&&(
           <div style={{background:"var(--playoff-bg)",border:"1px solid #86efac",
             borderRadius:8,padding:"10px 14px",marginBottom:12}}>
             <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.5,marginBottom:4}}>Kampioen</div>
@@ -877,7 +868,7 @@ function HistoriePagina({nav}) {
 
       {/* Detail sectie */}
       {geselecteerd&&(
-        <div id="historie-detail">
+        <div>
           {loadingDetail&&<div className="loading">Laden…</div>}
           {detail&&!loadingDetail&&(
             <>
@@ -887,9 +878,6 @@ function HistoriePagina({nav}) {
                 <div style={{fontSize:18,fontWeight:700}}>{detail.seizoen}</div>
                 <div style={{fontSize:12,color:"var(--muted)",textTransform:"capitalize",
                   background:"var(--surface2)",padding:"2px 8px",borderRadius:4,border:"1px solid var(--border)"}}>{detail.geslacht}</div>
-                {detail.kampioen&&detail.kampioen!=="Geen (COVID)"&&(
-                  <div style={{fontSize:14,fontWeight:700,color:"#166534"}}>🏆 {detail.kampioen}</div>
-                )}
                 {detail.kampioen==="Geen (COVID)"&&(
                   <div style={{fontSize:12,color:"var(--muted)"}}>⚠️ Seizoen afgebroken door COVID-19</div>
                 )}
@@ -910,32 +898,32 @@ function HistoriePagina({nav}) {
                         <div className="li"><div className="ld" style={{background:"#f87171"}}/> Degradatie</div>
                       </div>
                     </>
-                  ):(
-                    <div>
-                      <div className="ds" style={{marginTop:0}}>Eindstand</div>
-                      <div className="empty">Gedetailleerde standdata niet beschikbaar voor dit seizoen.</div>
-                    </div>
-                  )}
+                  ):<div className="empty">Geen standdata beschikbaar.</div>}
                 </div>
 
                 {/* Rechts: playoffs */}
                 <div style={{borderBottom:"1px solid var(--border)",padding:"20px 24px"}}>
                   <PlayoffBlok playoffs={detail.playoffs} kampioen={detail.kampioen}/>
-                  {/* Alleen tonen als PlayoffBlok niets toont (geen echte play-off details) */}
-                  {(!detail.playoffs?.kampioen&&!detail.playoffs?.finale&&!(detail.playoffs?.halve_finales?.length))&&(
+                  {!detail.playoffs?.kampioen&&!detail.playoffs?.finale&&detail.kampioen&&detail.kampioen!=="Geen (COVID)"&&(
                     <div>
-                      <div className="ds" style={{marginTop:0}}>Play-offs</div>
-                      {detail.kampioen==="Geen (COVID)"?(
-                        <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
-                          borderRadius:8,padding:"14px"}}>
-                          <div style={{fontSize:14,fontWeight:600,marginBottom:6}}>⚠️ COVID-19</div>
-                          <div style={{fontSize:12,color:"var(--muted)",lineHeight:1.6}}>
-                            Het seizoen werd vroegtijdig beëindigd. Er werd geen kampioen aangewezen en er vonden geen play-offs plaats.
-                          </div>
-                        </div>
-                      ):(
-                        <div className="empty">Gedetailleerde play-offdata wordt later toegevoegd.</div>
-                      )}
+                      <div className="ds" style={{marginTop:0}}>Kampioen</div>
+                      <div style={{background:"var(--playoff-bg)",border:"1px solid #86efac",
+                        borderRadius:8,padding:"10px 14px"}}>
+                        <div style={{fontSize:18,fontWeight:700,color:"#166534"}}>🏆 {detail.kampioen}</div>
+                      </div>
+                      <div style={{marginTop:12,fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
+                        Gedetailleerde play-offdata niet beschikbaar voor dit seizoen.
+                      </div>
+                    </div>
+                  )}
+                  {detail.kampioen==="Geen (COVID)"&&(
+                    <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
+                      borderRadius:8,padding:"14px",marginTop:8}}>
+                      <div style={{fontSize:14,fontWeight:600,marginBottom:6}}>⚠️ COVID-19</div>
+                      <div style={{fontSize:12,color:"var(--muted)",lineHeight:1.6}}>
+                        Het seizoen 2019-2020 werd vroegtijdig beëindigd vanwege de coronapandemie.
+                        Er werd geen kampioen aangewezen en er vonden geen play-offs plaats.
+                      </div>
                     </div>
                   )}
                 </div>
@@ -943,6 +931,7 @@ function HistoriePagina({nav}) {
 
               {/* Tweede rij: uitslagen links, play-outs rechts */}
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr"}}>
+                {/* Links: uitslagen */}
                 <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
                   <div className="ds" style={{marginTop:0}}>Uitslagen</div>
                   {detail.uitslagen?.length>0?(
@@ -958,15 +947,20 @@ function HistoriePagina({nav}) {
                       ))}
                     </div>
                   ):(
-                    <div className="empty">Uitslagen voor dit seizoen worden later toegevoegd.</div>
+                    <div className="empty">
+                      Uitslagen voor historische seizoenen worden later toegevoegd via Wikipedia.
+                    </div>
                   )}
                 </div>
+
+                {/* Rechts: play-outs */}
                 <div style={{padding:"20px 24px"}}>
                   <PlayoutBlok playoffs={detail.playoffs}/>
                   {!detail.playoffs?.playout&&!detail.playoffs?.play_outs&&(
-                    <div>
-                      <div className="ds" style={{marginTop:0}}>Play-outs</div>
-                      <div className="empty">{detail.kampioen==="Geen (COVID)"?"Geen play-outs gespeeld.":"Play-outdata wordt later toegevoegd."}</div>
+                    <div className="empty">
+                      {detail.kampioen==="Geen (COVID)"
+                        ? "Geen play-outs gespeeld."
+                        : "Play-outdata niet beschikbaar voor dit seizoen."}
                     </div>
                   )}
                 </div>
