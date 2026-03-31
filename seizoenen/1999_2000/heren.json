@@ -161,7 +161,49 @@
     }
   ],
   "playoffs": {
-    "halve_finales": [],
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "1-6",
+        "winnaar": "Bloemendaal",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "0-3",
+            "uit": "Bloemendaal"
+          },
+          {
+            "thuis": "Bloemendaal",
+            "score": "3-1",
+            "uit": "HGC"
+          }
+        ]
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "11-9",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Den Bosch",
+            "score": "6-4",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "3-2",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "2-3",
+            "uit": "Den Bosch"
+          }
+        ]
+      }
+    ],
     "finale": null,
     "kampioen": "",
     "playout": []

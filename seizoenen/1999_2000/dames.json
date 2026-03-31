@@ -164,8 +164,44 @@
     "halve_finales": [
       {
         "thuis": "Rotterdam",
-        "score": "1-2",
-        "uit": "Den Bosch"
+        "uit": "Den Bosch",
+        "score": "2-5",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Rotterdam",
+            "score": "1-2",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "3-1",
+            "uit": "Rotterdam"
+          }
+        ]
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "2-5",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Kampong",
+            "score": "2-1",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "3-0",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "1-0",
+            "uit": "Kampong"
+          }
+        ]
       }
     ],
     "finale": null,
