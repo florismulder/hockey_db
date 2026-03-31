@@ -131,7 +131,7 @@
       "doelpunten_tegen": 80,
       "doelsaldo": 49,
       "punten": 11,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 11,
@@ -144,7 +144,7 @@
       "doelpunten_tegen": 83,
       "doelsaldo": 46,
       "punten": 11,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 12,
