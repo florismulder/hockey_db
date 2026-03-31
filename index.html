@@ -877,7 +877,7 @@ function HistoriePagina({nav}) {
           <div key={g} style={{borderRight:g==="heren"?"1px solid var(--border)":"none",padding:"14px 16px"}}>
             <div style={{fontSize:11,fontWeight:700,textTransform:"uppercase",letterSpacing:1,
               color:"var(--muted)",marginBottom:10}}>{g}</div>
-            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:5}}>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:5}}>
               {seizoenen.map(s=>blok(s,g))}
             </div>
           </div>
