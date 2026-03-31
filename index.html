@@ -114,7 +114,8 @@ function Vlag({s}) {
 }
 
 function PosBadge({n, zone}) {
-  const z = zone || (n<=4?"playoff":n<=9?"":n<=11?"playout":"degradatie");
+  // Overschrijf zone altijd op basis van positie voor een 12-teams competitie
+  const z = n<=4?"playoff":n>=10&&n<=11?"playout":n>=12?"degradatie":"";
   const style = z==="playoff" ? {background:"#166534",color:"#ffffff",border:"none"} : z==="playout" ? {background:"#facc15",color:"#1a1a1a",border:"none"} : z==="degradatie" ? {background:"#991b1b",color:"#ffffff",border:"none"} : {background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"};
   return <span className="pb" style={style}>{n}</span>;
 }
@@ -390,7 +391,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                       const dt = r.doelpunten_tegen??r.dt??0;
                       const dsl = r.doelsaldo??r["+/−"]??(dv-dt);
                       const dslNum = typeof dsl==="string"?parseInt(dsl)||0:dsl;
-                      const zone = r.zone||"";
+                      const pos = r.positie;
+                      // Zone altijd op basis van positie, niet op data
+                      const zone = pos<=4?"playoff":pos>=10&&pos<=11?"playout":pos>=12?"degradatie":"";
                       const zClass = zone==="playoff"?"zpo":zone==="playout"?"zpl":zone==="degradatie"?"zde":"";
                       return (
                         <tr key={r.club} className={zClass}>
@@ -647,13 +650,29 @@ function SpelerDetail({speler,nav,nieuws,programma}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
   const volledigeNaam=speler.naam.toLowerCase();
   const delen=speler.naam.split(" ");
-  const vn=delen[0];
-  const an=delen[delen.length-1];
+  const vn=delen[0]; const an=delen[delen.length-1];
+  const [toontDoelpunten,setToontDoelpunten]=useState(false);
+  const [spelersNieuws,setSpelersNieuws]=useState([]);
 
-  const groeneKaarten = useMemo(()=>{
+  // Laad bullets uit Nieuws_Spelers via web app
+  useEffect(()=>{
+    if(!speler.id) return;
+    fetch(`${APPS_SCRIPT_URL}?actie=nieuws_speler&speler_id=${speler.id}`)
+      .then(r=>r.json()).then(d=>setSpelersNieuws(Array.isArray(d)?d:[]))
+      .catch(()=>{});
+  },[speler.id]);
+
+  const groeneKaarten=useMemo(()=>{
     let tel=0;
     (programma||[]).forEach(w=>{(w.kaarten||[]).forEach(k=>{if(k.type==="groen"&&k.naam&&k.naam.toLowerCase()===volledigeNaam) tel++;});});
     return tel;
+  },[programma,volledigeNaam]);
+
+  // Wedstrijden waarin speler scoorde
+  const gescoordIn=useMemo(()=>{
+    return (programma||[]).filter(w=>
+      (w.scorers||[]).some(s=>s.naam&&s.naam.toLowerCase()===volledigeNaam)
+    ).sort((a,b)=>(parseDatum(b.datum)||new Date(0))-(parseDatum(a.datum)||new Date(0)));
   },[programma,volledigeNaam]);
 
   const relevant=(nieuws||[]).filter(n=>{
@@ -661,11 +680,11 @@ function SpelerDetail({speler,nav,nieuws,programma}) {
     const s=(n.samenvatting||n.summary||"").toLowerCase();
     const tekst=t+" "+s;
     return tekst.includes(volledigeNaam)
-      || (vn.length>2 && an.length>3 && tekst.includes(vn.toLowerCase()) && tekst.includes(an.toLowerCase()))
-      || (an.length>4 && tekst.includes(an.toLowerCase()));
+      ||(vn.length>2&&an.length>3&&tekst.includes(vn.toLowerCase())&&tekst.includes(an.toLowerCase()))
+      ||(an.length>4&&tekst.includes(an.toLowerCase()));
   }).slice(0,10);
 
-  const aantalStats = (speler.doelpunten_seizoen>0?4:0) + (groeneKaarten>0?1:0);
+  const aantalStats=(speler.doelpunten_seizoen>0?4:0)+(groeneKaarten>0?1:0);
 
   return (
     <div className="fade">
@@ -680,19 +699,27 @@ function SpelerDetail({speler,nav,nieuws,programma}) {
         </div>
       </div>
       <div className="db">
+        {/* Statistieken */}
         {aantalStats>0&&(
           <div style={{marginBottom:20}}>
-            <div className="ds">Statistieken 2025-2026</div>
+            <div className="ds" style={{marginTop:0}}>Statistieken 2025-2026</div>
             <div style={{display:"grid",gridTemplateColumns:`repeat(${aantalStats},1fr)`,gap:8}}>
               {speler.doelpunten_seizoen>0&&[
-                ["Goals", speler.doelpunten_seizoen, "var(--accent)"],
-                ["Veld",  speler.vd??0,              "var(--muted)"],
-                ["SC",    speler.sc??0,               "var(--muted)"],
-                ["SB",    speler.sb??0,               "var(--muted)"],
-              ].map(([lbl,val,kleur])=>(
-                <div key={lbl} style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                ["Goals",speler.doelpunten_seizoen,"var(--accent)",true],
+                ["Veld",speler.vd??0,"var(--muted)",false],
+                ["SC",speler.sc??0,"var(--muted)",false],
+                ["SB",speler.sb??0,"var(--muted)",false],
+              ].map(([lbl,val,kleur,klikbaar])=>(
+                <div key={lbl}
+                  onClick={klikbaar&&gescoordIn.length>0?()=>setToontDoelpunten(t=>!t):undefined}
+                  style={{background:"var(--surface2)",border:`1px solid ${klikbaar&&gescoordIn.length>0?toontDoelpunten?"var(--accent)":"var(--border2)":"var(--border)"}`,
+                    borderRadius:8,padding:"10px 12px",textAlign:"center",
+                    cursor:klikbaar&&gescoordIn.length>0?"pointer":"default",
+                    transition:"border-color .15s"}}>
                   <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
-                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>{lbl}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>
+                    {lbl}{klikbaar&&gescoordIn.length>0?" ›":""}
+                  </div>
                 </div>
               ))}
               {groeneKaarten>0&&(
@@ -704,13 +731,76 @@ function SpelerDetail({speler,nav,nieuws,programma}) {
             </div>
           </div>
         )}
+
+        {/* Doelpunten detail */}
+        {toontDoelpunten&&gescoordIn.length>0&&(
+          <div style={{marginBottom:20,background:"var(--surface2)",borderRadius:8,padding:"14px",border:"1px solid var(--border)"}}>
+            <div style={{fontSize:12,fontWeight:700,marginBottom:10,display:"flex",justifyContent:"space-between"}}>
+              <span>Doelpunten per wedstrijd</span>
+              <button onClick={()=>setToontDoelpunten(false)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:16}}>×</button>
+            </div>
+            {gescoordIn.map((w,i)=>{
+              const goals=(w.scorers||[]).filter(s=>s.naam&&s.naam.toLowerCase()===volledigeNaam);
+              return (
+                <div key={i} onClick={()=>nav("wedstrijd",w)}
+                  style={{display:"flex",alignItems:"center",gap:10,padding:"6px 0",
+                    borderBottom:"1px solid var(--border)",cursor:"pointer",fontSize:12}}
+                  onMouseEnter={e=>e.currentTarget.style.opacity=".7"}
+                  onMouseLeave={e=>e.currentTarget.style.opacity="1"}>
+                  <span style={{fontFamily:"monospace",color:"var(--muted)",width:52,flexShrink:0}}>{formatDatum(w.datum)}</span>
+                  <span style={{flex:1}}>{w.thuis} – {w.uit}</span>
+                  <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0}}>
+                    {goals.map((g,j)=>(
+                      <span key={j} style={{marginLeft:j>0?6:0}}>
+                        ⚽{g.minuut!=null?` ${g.minuut}'`:""}
+                        {g.type&&g.type!=="veld"?` (${g.type})` :""}
+                      </span>
+                    ))}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Nieuws twee kolommen */}
         <div className="ds">Nieuws</div>
-        {relevant.length>0?relevant.map((n,i)=>(
-          <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
-            <div className="nid">{(n.datum||n.date||"").slice(0,10)}</div>
-            <div className="nit">{n.titel||n.title||""}</div>
-          </a>
-        )):<div className="empty">Geen nieuws gevonden voor {speler.naam}.</div>}
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}}>
+          {/* Links: AI bullets */}
+          <div>
+            {spelersNieuws.length>0?(
+              <div>
+                {Object.entries(
+                  spelersNieuws.reduce((acc,item)=>{
+                    const key=item.artikel_titel||item.datum||"";
+                    if(!acc[key]) acc[key]={datum:item.datum,titel:item.artikel_titel,link:item.artikel_link,bullets:[]};
+                    acc[key].bullets.push(item.bullet);
+                    return acc;
+                  },{}
+                )).map(([key,item],i)=>(
+                  <div key={i} style={{marginBottom:12,background:"var(--surface2)",borderRadius:7,padding:"10px 12px",border:"1px solid var(--border)"}}>
+                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{item.datum}</div>
+                    <div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel}</div>
+                    <ul style={{paddingLeft:14,margin:0}}>
+                      {item.bullets.map((b,j)=>(
+                        <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:3}}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ):<div className="empty">Nog geen nieuwsbullets beschikbaar.</div>}
+          </div>
+          {/* Rechts: artikelen */}
+          <div>
+            {relevant.length>0?relevant.map((n,i)=>(
+              <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
+                <div className="nid">{formatNieuwsDatum(n.datum||n.date||"")}</div>
+                <div className="nit">{n.titel||n.title||""}</div>
+              </a>
+            )):<div className="empty">Geen nieuws gevonden.</div>}
+          </div>
+        </div>
       </div>
     </div>
   );
