@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "3-5",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Bloemendaal",
+            "score": "1-2",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "3-2",
+            "uit": "Bloemendaal"
+          }
+        ]
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Den Bosch",
+        "score": "4-7",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "3-2",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "1-1",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "4-0",
+            "uit": "HGC"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1996/97",
   "bijgewerkt": "2026-03-31"
 }

@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "7-10",
+        "winnaar": "Bloemendaal",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "4-5",
+            "uit": "Bloemendaal"
+          },
+          {
+            "thuis": "Bloemendaal",
+            "score": "5-3",
+            "uit": "HGC"
+          }
+        ]
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Oranje Zwart",
+        "score": "3-9",
+        "winnaar": "Oranje Zwart",
+        "wedstrijden": [
+          {
+            "thuis": "Den Bosch",
+            "score": "3-3",
+            "uit": "Oranje Zwart"
+          },
+          {
+            "thuis": "Oranje Zwart",
+            "score": "5-0",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Oranje Zwart",
+            "score": "1-0",
+            "uit": "Den Bosch"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1998/99",
   "bijgewerkt": "2026-03-31"
 }

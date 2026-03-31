@@ -160,7 +160,59 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "4-6",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "2-2",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "0-2",
+            "uit": "Laren"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "4-0",
+            "uit": "Laren"
+          }
+        ]
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "7-5",
+        "winnaar": "HGC",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "2-1",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Kampong",
+            "score": "3-0",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "Kampong",
+            "score": "1-5",
+            "uit": "HGC"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1996/97",
   "bijgewerkt": "2026-03-31"
 }

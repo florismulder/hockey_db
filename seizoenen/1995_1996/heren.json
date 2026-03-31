@@ -160,7 +160,49 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Bloemendaal",
+        "score": "2-5",
+        "winnaar": "Bloemendaal",
+        "wedstrijden": [
+          {
+            "thuis": "Klein Zwitserland",
+            "score": "1-2",
+            "uit": "Bloemendaal"
+          },
+          {
+            "thuis": "Bloemendaal",
+            "score": "3-1",
+            "uit": "Klein Zwitserland"
+          }
+        ]
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "4-5",
+        "winnaar": "HGC",
+        "wedstrijden": [
+          {
+            "thuis": "Amsterdam",
+            "score": "2-1",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "HGC",
+            "score": "4-2",
+            "uit": "Amsterdam"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1995/96",
   "bijgewerkt": "2026-03-31"
 }

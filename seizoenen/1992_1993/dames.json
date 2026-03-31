@@ -160,7 +160,65 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "0-3",
+        "winnaar": "HGC",
+        "wedstrijden": [
+          {
+            "thuis": "Kampong",
+            "score": "0-1",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "HGC",
+            "score": "2-0",
+            "uit": "Kampong"
+          }
+        ]
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "3-3",
+        "winnaar": "Laren",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "3-1",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "2-0",
+            "uit": "Laren"
+          }
+        ]
+      }
+    ],
+    "finale": {
+      "thuis": "Amsterdam",
+      "uit": "HGC",
+      "score": "0-1",
+      "wedstrijden": [
+        {
+          "thuis": "Amsterdam",
+          "score": "0-1",
+          "uit": "HGC"
+        },
+        {
+          "thuis": "HGC",
+          "score": "1-2",
+          "uit": "Amsterdam"
+        }
+      ]
+    },
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1992/93",
   "bijgewerkt": "2026-03-31"
 }

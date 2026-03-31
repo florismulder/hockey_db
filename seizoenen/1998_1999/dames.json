@@ -160,7 +160,59 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "4-6",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "2-1",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "3-1",
+            "uit": "Laren"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "2-1",
+            "uit": "Laren"
+          }
+        ]
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Amsterdam",
+        "score": "2-4",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Rotterdam",
+            "score": "0-1",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "1-1",
+            "uit": "Rotterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "2-1",
+            "uit": "Rotterdam"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1998/99",
   "bijgewerkt": "2026-03-31"
 }

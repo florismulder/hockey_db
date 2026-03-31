@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Den Bosch",
+        "score": "8-10",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Bloemendaal",
+            "score": "5-3",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "5-1",
+            "uit": "Bloemendaal"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "2-2",
+            "uit": "Bloemendaal"
+          }
+        ]
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "6-4",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Amsterdam",
+            "score": "2-1",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "HGC",
+            "score": "3-4",
+            "uit": "Amsterdam"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1997/98",
   "bijgewerkt": "2026-03-31"
 }

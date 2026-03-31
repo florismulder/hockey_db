@@ -160,7 +160,49 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "2-4",
+        "winnaar": "Amsterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Oranje Zwart",
+            "score": "0-0",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "4-2",
+            "uit": "Oranje Zwart"
+          }
+        ]
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HDM",
+        "score": "1-5",
+        "winnaar": "HDM",
+        "wedstrijden": [
+          {
+            "thuis": "Bloemendaal",
+            "score": "0-2",
+            "uit": "HDM"
+          },
+          {
+            "thuis": "HDM",
+            "score": "3-1",
+            "uit": "Bloemendaal"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1994/95",
   "bijgewerkt": "2026-03-31"
 }

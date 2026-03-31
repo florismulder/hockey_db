@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "3-3",
+        "winnaar": "Kampong",
+        "wedstrijden": [
+          {
+            "thuis": "Kampong",
+            "score": "0-0",
+            "uit": "Amsterdam"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "1-3",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Amsterdam",
+            "score": "2-0",
+            "uit": "Kampong"
+          }
+        ]
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Den Bosch",
+        "score": "3-4",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "2-3",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "1-1",
+            "uit": "HGC"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1997/98",
   "bijgewerkt": "2026-03-31"
 }

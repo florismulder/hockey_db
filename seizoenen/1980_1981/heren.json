@@ -134,7 +134,12 @@
       "zone": "playout"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_1980/81",
   "bijgewerkt": "2026-03-31"
 }

@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "5-7",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "4-2",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "4-1",
+            "uit": "Laren"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "1-0",
+            "uit": "Laren"
+          }
+        ]
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Rotterdam",
+        "score": "3-4",
+        "winnaar": "Rotterdam",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "1-1",
+            "uit": "Rotterdam"
+          },
+          {
+            "thuis": "Rotterdam",
+            "score": "3-2",
+            "uit": "HGC"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_2001/02",
   "bijgewerkt": "2026-03-31"
 }

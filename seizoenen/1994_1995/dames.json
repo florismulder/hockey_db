@@ -160,7 +160,49 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "HGC",
+        "score": "2-6",
+        "winnaar": "HGC",
+        "wedstrijden": [
+          {
+            "thuis": "Den Bosch",
+            "score": "2-5",
+            "uit": "HGC"
+          },
+          {
+            "thuis": "HGC",
+            "score": "1-0",
+            "uit": "Den Bosch"
+          }
+        ]
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Kampong",
+        "score": "0-5",
+        "winnaar": "Kampong",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "0-3",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Kampong",
+            "score": "2-0",
+            "uit": "Laren"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1994/95",
   "bijgewerkt": "2026-03-31"
 }

@@ -160,7 +160,49 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "1-3",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Rotterdam",
+            "score": "0-1",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "2-1",
+            "uit": "Rotterdam"
+          }
+        ]
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "3-5",
+        "winnaar": "Laren",
+        "wedstrijden": [
+          {
+            "thuis": "Amsterdam",
+            "score": "2-3",
+            "uit": "Laren"
+          },
+          {
+            "thuis": "Laren",
+            "score": "2-1",
+            "uit": "Amsterdam"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_2002/03",
   "bijgewerkt": "2026-03-31"
 }

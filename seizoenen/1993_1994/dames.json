@@ -160,7 +160,65 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "MOP",
+        "score": "2-2",
+        "winnaar": "HGC",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "0-1",
+            "uit": "MOP"
+          },
+          {
+            "thuis": "MOP",
+            "score": "1-2",
+            "uit": "HGC"
+          }
+        ]
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Kampong",
+        "score": "1-3",
+        "winnaar": "Kampong",
+        "wedstrijden": [
+          {
+            "thuis": "Laren",
+            "score": "1-1",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Kampong",
+            "score": "2-0",
+            "uit": "Laren"
+          }
+        ]
+      }
+    ],
+    "finale": {
+      "thuis": "Kampong",
+      "uit": "MOP",
+      "score": "2-0",
+      "wedstrijden": [
+        {
+          "thuis": "Kampong",
+          "score": "2-0",
+          "uit": "MOP"
+        },
+        {
+          "thuis": "MOP",
+          "score": "0-1",
+          "uit": "Kampong"
+        }
+      ]
+    },
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_1993/94",
   "bijgewerkt": "2026-03-31"
 }

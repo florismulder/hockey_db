@@ -160,7 +160,31 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Den Bosch",
+        "score": "2-4",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "HGC",
+            "score": "1-2",
+            "uit": "Den Bosch"
+          },
+          {
+            "thuis": "Den Bosch",
+            "score": "2-1",
+            "uit": "HGC"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_2000/01",
   "bijgewerkt": "2026-03-31"
 }

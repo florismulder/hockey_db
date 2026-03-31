@@ -160,7 +160,54 @@
       "zone": "degradatie"
     }
   ],
-  "playoffs": {},
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Rotterdam",
+        "score": "4-6",
+        "winnaar": "Rotterdam",
+        "wedstrijden": [
+          {
+            "thuis": "Kampong",
+            "score": "3-2",
+            "uit": "Rotterdam"
+          },
+          {
+            "thuis": "Rotterdam",
+            "score": "1-0",
+            "uit": "Kampong"
+          },
+          {
+            "thuis": "Rotterdam",
+            "score": "3-1",
+            "uit": "Kampong"
+          }
+        ]
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "6-1",
+        "winnaar": "Den Bosch",
+        "wedstrijden": [
+          {
+            "thuis": "Den Bosch",
+            "score": "2-1",
+            "uit": "Laren"
+          },
+          {
+            "thuis": "Laren",
+            "score": "0-4",
+            "uit": "Den Bosch"
+          }
+        ]
+      }
+    ],
+    "finale": null,
+    "kampioen": "",
+    "playout": []
+  },
   "wiki_pagina": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_dames_2000/01",
   "bijgewerkt": "2026-03-31"
 }
