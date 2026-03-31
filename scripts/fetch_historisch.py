@@ -227,41 +227,61 @@ def _int(s,f=0):
     try: return int(s) if s else f
     except: return f
 
-def parse_wikitable(wt):
-    tabellen = wt.split('{| class="wikitable')
-    if len(tabellen)<3: return []
-    tabel = tabellen[2]
+def _is_stand_tabel(tabel_tekst):
+    """Controleer of dit een standentabel is (niet een resultatenmatrix of legenda)."""
+    tl = tabel_tekst.lower()
+    if 'bgcolor="#808080"' in tabel_tekst or "bgcolor='#808080'" in tabel_tekst:
+        return False
+    stand_indicatoren = ["gespeeld", "gewonnen", "verloren", "punten", "doelpunten",
+                         "| gs", "| w ", "| g ", "| v ", "| p ", "| dv", "| dt",
+                         "{{afkorting|gs", "{{afkorting|w|", "{{afkorting|g|"]
+    return any(ind in tl for ind in stand_indicatoren)
+
+def _parse_tabel_rijen(tabel):
+    """Parseer rijen uit een standentabel."""
     stand = []
     for rij in tabel.split("|-"):
-        rij=rij.strip()
+        rij = rij.strip()
         if not rij or rij.startswith("!") or rij.startswith("|+"): continue
-        zone=""
-        km=re.search(r'background[:\s#]*([a-zA-Z0-9]+)',rij)
+        zone = ""
+        km = re.search(r'background[:\s]*["\']?#?([a-zA-Z0-9]+)', rij)
         if km:
-            k=km.group(1).lower()
-            if any(x in k for x in ["ace1af","c0f0d0","b0e0e6"]): zone="playoff"
-            elif any(x in k for x in ["bisque","ffd700","ffe4c4"]): zone="playout"
-            elif any(x in k for x in ["ffaaaa","ffa07a","ff6666"]): zone="degradatie"
-        ri=re.sub(r'^[^|]*\|','',rij,count=1)
-        cellen=re.split(r'\|\|',ri)
-        if len(cellen)<10: continue
+            k = km.group(1).lower()
+            if any(x in k for x in ["ace1af","c0f0d0","b0e0e6","ccffcc","aaffaa"]): zone = "playoff"
+            elif any(x in k for x in ["bisque","ffd700","ffe4c4","ffff99","lightblue","add8e6"]): zone = "playout"
+            elif any(x in k for x in ["ffaaaa","ffa07a","ff6666","ffcccc","ffd0d0"]): zone = "degradatie"
+        ri = re.sub(r'^[^|]*\|', '', rij, count=1)
+        cellen = re.split(r'\|\|', ri)
+        if len(cellen) < 10: continue
         try:
-            club=_cel(cellen[2])
-            if not club or len(club)<2: continue
-            pr=re.sub(r"[^\d]","",cellen[1])
-            pos=int(pr) if pr else 0
-            if pos==0: continue
-            gs=_int(_cel(cellen[3])); w=_int(_cel(cellen[4])); g=_int(_cel(cellen[5]))
-            v=_int(_cel(cellen[6])); pnt=_int(_cel(cellen[7]))
-            dv=_int(_cel(cellen[8])); dt=_int(_cel(cellen[9]))
-            ds=_int(_cel(cellen[10])) if len(cellen)>10 else dv-dt
+            club = _cel(cellen[2])
+            if not club or len(club) < 2: continue
+            if re.match(r'^\d+[-]\d+$', club.strip()): continue
+            pr = re.sub(r"[^\d]", "", cellen[1])
+            pos = int(pr) if pr else 0
+            if pos == 0: continue
+            gs  = _int(_cel(cellen[3])); w = _int(_cel(cellen[4])); g = _int(_cel(cellen[5]))
+            v   = _int(_cel(cellen[6])); pnt = _int(_cel(cellen[7]))
+            dv  = _int(_cel(cellen[8])); dt = _int(_cel(cellen[9]))
+            ds  = _int(_cel(cellen[10])) if len(cellen) > 10 else dv - dt
+            if gs == 0 and w == 0 and g == 0 and v == 0: continue
             if not zone:
-                zone="playoff" if pos<=4 else "playout" if pos in(10,11) else "degradatie" if pos==12 else ""
-            stand.append({"positie":pos,"club":club,"gespeeld":gs,"gewonnen":w,"gelijk":g,
-                "verloren":v,"doelpunten_voor":dv,"doelpunten_tegen":dt,"doelsaldo":ds,"punten":pnt,"zone":zone})
+                zone = ("playoff" if pos <= 4 else "playout" if pos in (10, 11) else "degradatie" if pos == 12 else "")
+            stand.append({"positie": pos, "club": club, "gespeeld": gs, "gewonnen": w,
+                "gelijk": g, "verloren": v, "doelpunten_voor": dv, "doelpunten_tegen": dt,
+                "doelsaldo": ds, "punten": pnt, "zone": zone})
         except: continue
-    stand.sort(key=lambda r:r["positie"])
+    stand.sort(key=lambda r: r["positie"])
     return stand
+
+def parse_wikitable(wt):
+    """Doorzoek alle tabellen en vind de standentabel."""
+    for tabel in re.split(r'\{\|', wt)[1:]:
+        if not _is_stand_tabel(tabel): continue
+        stand = _parse_tabel_rijen(tabel)
+        if len(stand) >= 8:
+            return stand
+    return []
 
 def parse_stand(wt):
     s=parse_sports_table(wt)
