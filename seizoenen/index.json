@@ -1,0 +1,82 @@
+{
+  "seizoenen": [
+    {
+      "seizoen": "2025-2026",
+      "slug": "2025_2026"
+    },
+    {
+      "seizoen": "2024-2025",
+      "slug": "2024_2025",
+      "kampioen_heren": "Amsterdam",
+      "clubs_heren": 12,
+      "kampioen_dames": "SCHC",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2023-2024",
+      "slug": "2023_2024",
+      "kampioen_heren": "Kampong",
+      "clubs_heren": 12,
+      "kampioen_dames": "Den Bosch",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2022-2023",
+      "slug": "2022_2023",
+      "kampioen_heren": "Pinoké",
+      "clubs_heren": 12,
+      "kampioen_dames": "Amsterdam",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2021-2022",
+      "slug": "2021_2022",
+      "kampioen_heren": "Amsterdam",
+      "clubs_heren": 12,
+      "kampioen_dames": "Den Bosch",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2020-2021",
+      "slug": "2020_2021",
+      "kampioen_heren": "Amsterdam",
+      "clubs_heren": 12,
+      "kampioen_dames": "Den Bosch",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2019-2020",
+      "slug": "2019_2020",
+      "kampioen_heren": "Geen (COVID)",
+      "clubs_heren": 12,
+      "kampioen_dames": "Geen (COVID)",
+      "clubs_dames": 12
+    },
+    {
+      "seizoen": "2018-2019",
+      "slug": "2018_2019",
+      "kampioen_heren": "Amsterdam",
+      "clubs_heren": 12
+    },
+    {
+      "seizoen": "2017-2018",
+      "slug": "2017_2018",
+      "kampioen_heren": "Kampong",
+      "clubs_heren": 12
+    },
+    {
+      "seizoen": "2016-2017",
+      "slug": "2016_2017",
+      "kampioen_heren": "Amsterdam",
+      "clubs_heren": 12
+    },
+    {
+      "seizoen": "2015-2016",
+      "slug": "2015_2016",
+      "kampioen_heren": "Bloemendaal",
+      "clubs_heren": 12,
+      "kampioen_dames": "Den Bosch",
+      "clubs_dames": 12
+    }
+  ]
+}
