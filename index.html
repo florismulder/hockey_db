@@ -126,7 +126,15 @@ function Breadcrumb({page,pageId,nav}) {
   if(page==="topscorers") items.push({label:"Topscorers",target:null});
   if(page==="oranje") items.push({label:"Oranje",target:null});
   if(page==="historie") items.push({label:"Historie",target:null});
-  if(page==="speler") { items.push({label:"Spelers",target:"spelers"}); items.push({label:pageId?.naam||"",target:null}); }
+  if(page==="speler") {
+    // Bepaal herkomst op basis van _vanPagina
+    if(pageId?._vanPagina==="topscorers") {
+      items.push({label:"Topscorers",target:"topscorers"});
+    } else {
+      items.push({label:"Spelers",target:"spelers"});
+    }
+    items.push({label:pageId?.naam||"",target:null});
+  }
   if(page==="speler_via_club") { items.push({label:pageId?._vanClub||"Club",target:"club",targetId:pageId?._vanClub}); items.push({label:pageId?.naam||"",target:null}); }
   if(page==="club") items.push({label:pageId||"",target:null});
   if(page==="wedstrijd") items.push({label:`${pageId?.thuis} vs ${pageId?.uit}`,target:null});
@@ -176,7 +184,7 @@ function TopscorersOverzicht({topscorers, spelers, nav}) {
                   <td style={{textAlign:'left', fontWeight:600}}>
                     <Vlag s={t}/>
                     {speler
-                      ? <button onClick={()=>nav("speler",speler)} style={{background:"none",border:"none",padding:0,fontWeight:600,color:"var(--accent)",cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--accent-light)",textUnderlineOffset:2,fontFamily:"inherit",fontSize:"inherit"}}>{t.naam}</button>
+                      ? <button onClick={()=>nav("speler",{...speler,_vanPagina:"topscorers"})} style={{background:"none",border:"none",padding:0,fontWeight:600,color:"var(--accent)",cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--accent-light)",textUnderlineOffset:2,fontFamily:"inherit",fontSize:"inherit"}}>{t.naam}</button>
                       : t.naam}
                   </td>
                   <td style={{textAlign:'left'}}>{t.club}</td>
