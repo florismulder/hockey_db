@@ -1,0 +1,195 @@
+{
+  "seizoen": "2025/26",
+  "geslacht": "heren",
+  "bron": "https://nl.wikipedia.org/wiki/Hoofdklasse_hockey_heren_2025/26",
+  "bijgewerkt": "2026-03-27T08:44:30.968056+00:00",
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Oranje-Rood",
+      "gespeeld": 15,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 0,
+      "ptn": "35",
+      "dv": "53",
+      "dt": "25",
+      "+/−": "+28",
+      "kwalificatieofdegradatie": "Plaatsingplay–offsenEHL"
+    },
+    {
+      "positie": 2,
+      "club": "Rotterdam",
+      "gespeeld": 15,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 3,
+      "ptn": "32",
+      "dv": "61",
+      "dt": "28",
+      "+/−": "+33",
+      "kwalificatieofdegradatie": "Plaatsingplay–offs"
+    },
+    {
+      "positie": 3,
+      "club": "Pinoké",
+      "gespeeld": 15,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 1,
+      "ptn": "32",
+      "dv": "58",
+      "dt": "25",
+      "+/−": "+33"
+    },
+    {
+      "positie": 4,
+      "club": "Amsterdam",
+      "gespeeld": 15,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 3,
+      "ptn": "28",
+      "dv": "48",
+      "dt": "31",
+      "+/−": "+17"
+    },
+    {
+      "positie": 5,
+      "club": "Den Bosch",
+      "gespeeld": 15,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 4,
+      "ptn": "27",
+      "dv": "53",
+      "dt": "29",
+      "+/−": "+24",
+      "kwalificatieofdegradatie": ""
+    },
+    {
+      "positie": 6,
+      "club": "Bloemendaal",
+      "gespeeld": 15,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 4,
+      "ptn": "27",
+      "dv": "42",
+      "dt": "25",
+      "+/−": "+17"
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 15,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 6,
+      "ptn": "21",
+      "dv": "37",
+      "dt": "33",
+      "+/−": "+4"
+    },
+    {
+      "positie": 8,
+      "club": "Klein Zwitserland",
+      "gespeeld": 15,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 4,
+      "ptn": "21",
+      "dv": "33",
+      "dt": "30",
+      "+/−": "+3"
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 15,
+      "gewonnen": 4,
+      "gelijk": 1,
+      "verloren": 10,
+      "ptn": "13",
+      "dv": "24",
+      "dt": "52",
+      "+/−": "−28"
+    },
+    {
+      "positie": 10,
+      "club": "Schaerweijde",
+      "gespeeld": 15,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 10,
+      "ptn": "9",
+      "dv": "20",
+      "dt": "56",
+      "+/−": "−36",
+      "kwalificatieofdegradatie": "Plaatsingpromotie/degradatie play–offs"
+    },
+    {
+      "positie": 11,
+      "club": "Laren",
+      "gespeeld": 15,
+      "gewonnen": 1,
+      "gelijk": 2,
+      "verloren": 12,
+      "ptn": "5",
+      "dv": "22",
+      "dt": "66",
+      "+/−": "−44"
+    },
+    {
+      "positie": 12,
+      "club": "Hurley",
+      "gespeeld": 15,
+      "gewonnen": 0,
+      "gelijk": 1,
+      "verloren": 14,
+      "ptn": "1",
+      "dv": "12",
+      "dt": "63",
+      "+/−": "−51",
+      "kwalificatieofdegradatie": "Degradatie naarPromotieklasse"
+    }
+  ],
+  "uitslagen": [
+    {
+      "thuis": "Bloemendaal",
+      "score_thuis": 5,
+      "score_uit": 3,
+      "uit": "—"
+    },
+    {
+      "thuis": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "uit": "1–1"
+    },
+    {
+      "thuis": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "uit": "0–2"
+    },
+    {
+      "thuis": "Hurley",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "uit": "0–5"
+    },
+    {
+      "thuis": "Klein Zwitserland",
+      "score_thuis": 4,
+      "score_uit": 3,
+      "uit": "0–2"
+    },
+    {
+      "thuis": "Schaerweijde",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "uit": "1–1"
+    }
+  ]
+}
