@@ -338,13 +338,14 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
   const gefilterdWedstrijden = useMemo(()=>{
     if(!clubFilter?.club || !clubFilter?.type) return null;
     const {club, type} = clubFilter;
+    const clubSchoon = club.replace(/\s+[HhDd]\d+$/,"").trim();
     return programma.filter(w=>{
       if(!isGespeeld(w)) return false;
       const st = w.score_thuis??w.doelpunten_thuis??null;
       const su = w.score_uit??w.doelpunten_uit??null;
       if(st===null||su===null) return false;
-      const isThuis = (w.thuis||"").includes(club);
-      const isUit   = (w.uit||"").includes(club);
+      const isThuis = (w.thuis||"").toLowerCase().includes(clubSchoon.toLowerCase());
+      const isUit   = (w.uit||"").toLowerCase().includes(clubSchoon.toLowerCase());
       if(!isThuis && !isUit) return false;
       const th = parseInt(st), tu = parseInt(su);
       if(type==="G")  return isThuis ? th>tu : tu>th;
@@ -435,7 +436,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
               <div style={{marginTop:16,borderTop:"2px solid var(--accent-light)",paddingTop:14}}>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
                   <div style={{fontSize:13,fontWeight:700}}>
-                    {clubFilter.club} — {clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren"}
+                    {clubFilter.club.replace(/\s+[HhDd]\d+$/,"").trim()} — {clubFilter.type==="G"?"Gewonnen":clubFilter.type==="Gk"?"Gelijk gespeeld":"Verloren"}
                     <span style={{fontSize:12,fontWeight:400,color:"var(--muted)",marginLeft:8}}>({gefilterdWedstrijden.length} wedstrijden)</span>
                   </div>
                   <button onClick={()=>setClubFilter(null)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:18,lineHeight:1}}>×</button>
