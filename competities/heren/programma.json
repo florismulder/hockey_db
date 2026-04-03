@@ -1,6 +1,61 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Den Bosch",
+      "uit": "Laren",
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2025-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren H1",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 59,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 44,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -609,5 +664,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T08:42:28.141Z"
+  "bijgewerkt": "2026-04-03T13:33:47.534Z"
 }
