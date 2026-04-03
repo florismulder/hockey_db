@@ -107,6 +107,13 @@ button{cursor:pointer;font-family:inherit} a{color:inherit;text-decoration:none}
 .fade{animation:fi .18s ease} @keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
 `;
 
+function slugify(naam) {
+  return (naam||"").toLowerCase()
+    .replace(/[àáâä]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
+    .replace(/[òóôö]/g,"o").replace(/[ùúûü]/g,"u").replace(/ñ/g,"n").replace(/ç/g,"c")
+    .replace(/['']/g,"").replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
+}
+
 function Vlag({s}) {
   if (!s || !s.land_code || s.land_code.toLowerCase()==="nl") return null;
   const emoji = s.land_code.toUpperCase().replace(/./g, c => String.fromCodePoint(c.charCodeAt(0)+127397));
@@ -763,11 +770,12 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
 
   // Laad bullets uit Nieuws_Spelers via web app
   useEffect(()=>{
-    if(!speler.id) return;
-    fetch(`${APPS_SCRIPT_URL}?actie=nieuws_speler&speler_id=${speler.id}`)
+    const spelerId = speler.id || slugify(speler.naam);
+    if(!spelerId) return;
+    fetch(`${APPS_SCRIPT_URL}?actie=nieuws_speler&speler_id=${encodeURIComponent(spelerId)}`)
       .then(r=>r.json()).then(d=>setSpelersNieuws(Array.isArray(d)?d:[]))
       .catch(()=>{});
-  },[speler.id]);
+  },[speler.id, speler.naam]);
 
   const groeneKaarten=useMemo(()=>{
     let tel=0;
