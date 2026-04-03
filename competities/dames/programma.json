@@ -254,7 +254,50 @@
         }
       ],
       "kaarten": []
+    },
+    {
+      "thuis": "SCHC",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-03-29",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Club",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Club",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Dicke",
+          "club": "Club",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "Club",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Yibbi Jansen",
+          "club": "Club",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:03.745Z"
+  "bijgewerkt": "2026-04-03T06:37:04.844Z"
 }
