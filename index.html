@@ -768,12 +768,16 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   const [toontDoelpunten,setToontDoelpunten]=useState(false);
   const [spelersNieuws,setSpelersNieuws]=useState([]);
 
-  // Laad bullets uit Nieuws_Spelers via web app
+  // Laad bullets uit nieuws/spelersnieuws.json
   useEffect(()=>{
     const spelerId = speler.id || slugify(speler.naam);
     if(!spelerId) return;
-    fetch(`${APPS_SCRIPT_URL}?actie=nieuws_speler&speler_id=${encodeURIComponent(spelerId)}`)
-      .then(r=>r.json()).then(d=>setSpelersNieuws(Array.isArray(d)?d:[]))
+    fetch("nieuws/spelersnieuws.json")
+      .then(r=>r.json())
+      .then(d=>{
+        const items = d[spelerId] || [];
+        setSpelersNieuws(items);
+      })
       .catch(()=>{});
   },[speler.id, speler.naam]);
 
