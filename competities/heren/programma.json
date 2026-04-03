@@ -178,6 +178,60 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 6,
+      "datum": "2025-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Schaerweijde H1",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Pinoké H1",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 60,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -786,5 +840,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:50.284Z"
+  "bijgewerkt": "2026-04-03T13:33:51.674Z"
 }
