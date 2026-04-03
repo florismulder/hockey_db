@@ -163,7 +163,74 @@
         }
       ],
       "kaarten": []
+    },
+    {
+      "thuis": "Amsterdam",
+      "uit": "HDM",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-29",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Tom Provily",
+          "club": "Amsterdam H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "David Huussen",
+          "club": "HDM H1",
+          "minuut": 46,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Amsterdam H1",
+          "minuut": 53,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pepijn Schras",
+          "club": "HDM H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 25,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Corstens",
+          "club": "HDM H1",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 56,
+          "type": "geel"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:08.188Z"
+  "bijgewerkt": "2026-04-03T06:37:09.279Z"
 }
