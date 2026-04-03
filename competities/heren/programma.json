@@ -230,7 +230,62 @@
           "type": "geel"
         }
       ]
+    },
+    {
+      "thuis": "Klein Zwitserland",
+      "uit": "Laren",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-29",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 12,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland H1",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Ties Klinkhamer",
+          "club": "Klein Zwitserland H1",
+          "minuut": 27,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 40,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren H1",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Wout Kooijman",
+          "club": "Klein Zwitserland H1",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Chad Futcher",
+          "club": "Klein Zwitserland H1",
+          "minuut": 50,
+          "type": "groen"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:09.279Z"
+  "bijgewerkt": "2026-04-03T06:37:10.363Z"
 }
