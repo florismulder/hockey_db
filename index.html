@@ -224,11 +224,15 @@ function OranjePagina({oranje, nav, geslacht, spelers}) {
     });
   },[geslacht]);
 
+  const normaliseer = s => s ? s.toLowerCase()
+    .replace(/[àáâä]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
+    .replace(/[òóôö]/g,"o").replace(/[ùúûü]/g,"u") : "";
+
   const vindSpeler = (naam) => {
-    if(!naam||!spelers?.length) return null;
-    const nl = naam.toLowerCase();
-    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
-      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
+    if(!naam||!spelers||!spelers.length) return null;
+    const nl = normaliseer(naam);
+    return spelers.find(s=>s.naam&&normaliseer(s.naam)===nl)
+      || spelers.find(s=>s.naam&&(normaliseer(s.naam).includes(nl)||nl.includes(normaliseer(s.naam))));
   };
 
   const tabs = [
