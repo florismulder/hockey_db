@@ -203,19 +203,103 @@ function TopscorersOverzicht({topscorers, spelers, nav}) {
   );
 }
 
-function OranjePagina({oranje}) {
-  if (!oranje || oranje.length === 0) return <div className="loading">Geen Oranje data gevonden.</div>;
+function OranjePagina({oranje, nav, geslacht, spelers}) {
+  const [tab, setTab] = useState("senior");
+  const [selecties, setSelecties] = useState({});
+
+  useEffect(()=>{
+    const bestanden = {
+      senior:    `spelers/oranje/oranje-${geslacht}.json`,
+      jong:      `spelers/oranje/jong-oranje-${geslacht}.json`,
+      u18:       `spelers/oranje/u18-${geslacht}.json`,
+      u16:       `spelers/oranje/u16-${geslacht}.json`,
+    };
+    const promises = Object.entries(bestanden).map(([key,url])=>
+      fetch(url).then(r=>r.json()).then(d=>({key,data:d})).catch(()=>({key,data:null}))
+    );
+    Promise.all(promises).then(results=>{
+      const s = {};
+      results.forEach(({key,data})=>{ if(data) s[key]=data; });
+      setSelecties(s);
+    });
+  },[geslacht]);
+
+  const vindSpeler = (naam) => {
+    if(!naam||!spelers?.length) return null;
+    const nl = naam.toLowerCase();
+    return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
+      || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
+  };
+
+  const tabs = [
+    {id:"senior", label:"🦁 Senior"},
+    {id:"jong",   label:"Jong Oranje"},
+    {id:"u18",    label:"U18"},
+    {id:"u16",    label:"U16"},
+  ];
+
+  const huidig = selecties[tab];
+  const namen = huidig?.alle_namen || huidig?.spelers || huidig?.namen || [];
+  const datum = huidig?.datum || huidig?.bijgewerkt || "";
+
   return (
     <div className="fade">
-      <div className="sec">
-        <div className="sec-hdr"><div className="sec-title">Nationale Selectie</div></div>
-        <div className="sg">
-          {oranje.map((speler_naam, i) => (
-            <div className="sk" key={i} style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
-              <div className="sn" style={{fontWeight: 700, color: 'var(--oranje-text)'}}>🦁 {speler_naam}</div>
-            </div>
-          ))}
-        </div>
+      {/* Header */}
+      <div style={{padding:"16px 24px 12px",borderBottom:"1px solid var(--border)",
+        background:"linear-gradient(to bottom,var(--surface2),var(--surface))"}}>
+        <div style={{fontSize:20,fontWeight:700,letterSpacing:"-.5px"}}>Oranje</div>
+        <div style={{fontSize:12,color:"var(--muted)",marginTop:2}}>Nationale selecties — {geslacht}</div>
+      </div>
+
+      {/* Tabs */}
+      <div style={{display:"flex",gap:4,padding:"12px 24px",borderBottom:"1px solid var(--border)"}}>
+        {tabs.map(t=>(
+          <button key={t.id} onClick={()=>setTab(t.id)}
+            style={{padding:"6px 14px",borderRadius:6,border:"1px solid",fontSize:12,fontWeight:600,cursor:"pointer",
+              background:tab===t.id?"var(--accent)":"var(--surface2)",
+              color:tab===t.id?"white":"var(--muted)",
+              borderColor:tab===t.id?"var(--accent)":"var(--border)"}}>
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Inhoud */}
+      <div style={{padding:"20px 24px"}}>
+        {!huidig?(
+          <div className="empty">Geen data beschikbaar voor deze categorie.</div>
+        ):(
+          <>
+            {datum&&<div style={{fontSize:11,color:"var(--muted)",marginBottom:14,fontFamily:"'JetBrains Mono',monospace"}}>Selectie: {datum}</div>}
+            {namen.length>0?(
+              <div className="sg">
+                {namen.map((naam,i)=>{
+                  const speler = vindSpeler(naam);
+                  return (
+                    <div key={i} className="sk"
+                      onClick={speler?()=>nav("speler",speler):undefined}
+                      style={{cursor:speler?"pointer":"default",opacity:speler?1:0.7}}>
+                      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start"}}>
+                        <div>
+                          <div className="sn" style={{color:"var(--oranje-text)"}}>🦁 {naam}</div>
+                          {speler&&<div className="scl">{speler.club}</div>}
+                        </div>
+                        {speler&&<div className="sr" style={{fontSize:14}}>#{speler.rugnummer}</div>}
+                      </div>
+                      {speler&&(
+                        <div style={{display:"flex",gap:4,marginTop:6,flexWrap:"wrap"}}>
+                          {speler.keeper&&<span className="sba sbk">Keeper</span>}
+                          {speler.aanvoerder&&<span className="sba sbv">Aanvoerder</span>}
+                          {speler.doelpunten_seizoen>0&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:600}}>{speler.doelpunten_seizoen} goals</span>}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            ):<div className="empty">Geen spelers in deze selectie.</div>}
+          </>
+        )}
       </div>
     </div>
   );
@@ -408,7 +492,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         <tr key={r.club} className={zClass}>
                           <td><PosBadge n={r.positie} zone={zone}/></td>
                           <td className="cl">
-                            <button onClick={()=>nav("club",r.club)} style={{background:"none",border:"none",color:"var(--text)",fontWeight:500,fontSize:13,cursor:"pointer",padding:0,textAlign:"left",textDecoration:"underline",textDecorationColor:"var(--border)",textUnderlineOffset:3}}>{r.club}</button>
+                            <button onClick={()=>nav("club",r.club)} style={{background:"none",border:"none",color:"var(--text)",fontWeight:500,fontSize:13,cursor:"pointer",padding:0,textAlign:"left",textDecoration:"underline",textDecorationColor:"var(--border)",textUnderlineOffset:3}}>{stripTeam(r.club)}</button>
                           </td>
                           <td>{r.gespeeld}</td><td className="pnt">{r.punten??r.ptn??0}</td>
                           {[["G",r.gewonnen],["Gk",r.gelijk],["V",r.verloren]].map(([type,val])=>(
@@ -645,7 +729,10 @@ function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
               <div style={{display:"flex",gap:5,marginTop:8}}>
                 {s.keeper&&<span className="sba sbk">Keeper</span>}
                 {s.aanvoerder&&<span className="sba sbv">Aanvoerder</span>}
-                {oranje.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Oranje</span>}
+                {oranje.senior.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Oranje</span>}
+                {!oranje.senior.includes(s.naam)&&oranje.jong.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Jong Oranje</span>}
+                {!oranje.senior.includes(s.naam)&&!oranje.jong.includes(s.naam)&&oranje.u18.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"#fef9c3",color:"#854d0e",borderRadius:4}}>U18</span>}
+                {!oranje.senior.includes(s.naam)&&!oranje.jong.includes(s.naam)&&!oranje.u18.includes(s.naam)&&oranje.u16.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"#fef9c3",color:"#854d0e",borderRadius:4}}>U16</span>}
               </div>
             </div>
           ))}
@@ -655,7 +742,7 @@ function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
   );
 }
 
-function SpelerDetail({speler,nav,nieuws,programma}) {
+function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
   const volledigeNaam=speler.naam.toLowerCase();
   const delen=speler.naam.split(" ");
@@ -705,6 +792,10 @@ function SpelerDetail({speler,nav,nieuws,programma}) {
           <span className="dc">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
           {speler.keeper&&<span className="dc ke">Keeper</span>}
           {speler.aanvoerder&&<span className="dc av">Aanvoerder</span>}
+          {oranje&&oranje.senior&&oranje.senior.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>🦁 Oranje</span>}
+          {oranje&&oranje.jong&&!oranje.senior?.includes(speler.naam)&&oranje.jong.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>🦁 Jong Oranje</span>}
+          {oranje&&oranje.u18&&!oranje.senior?.includes(speler.naam)&&!oranje.jong?.includes(speler.naam)&&oranje.u18.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"#fef9c3",color:"#854d0e",borderRadius:5}}>U18</span>}
+          {oranje&&oranje.u16&&!oranje.senior?.includes(speler.naam)&&!oranje.jong?.includes(speler.naam)&&!oranje.u18?.includes(speler.naam)&&oranje.u16.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"#fef9c3",color:"#854d0e",borderRadius:5}}>U16</span>}
         </div>
       </div>
       <div className="db">
@@ -1145,7 +1236,7 @@ function App() {
   const [stand,setStand]=useState([]);
   const [programma,setProgramma]=useState([]);
   const [topscorers,setTopscorers]=useState([]);
-  const [oranje,setOranje]=useState([]);
+  const [oranje,setOranje]=useState({senior:[],jong:[],u18:[],u16:[]});
   const [nieuws,setNieuws]=useState([]);
   const [spelers,setSpelers]=useState([]);
   const [loading,setLoading]=useState(true);
@@ -1160,14 +1251,22 @@ function App() {
       fetch(`competities/${geslacht}/programma.json`).then(r=>r.json()).catch(()=>null),
       fetch(`competities/${geslacht}/topscorers.json`).then(r=>r.json()).catch(()=>null),
       fetch(`spelers/oranje/oranje-${geslacht}.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`spelers/oranje/jong-oranje-${geslacht}.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`spelers/oranje/u18-${geslacht}.json`).then(r=>r.json()).catch(()=>null),
+      fetch(`spelers/oranje/u16-${geslacht}.json`).then(r=>r.json()).catch(()=>null),
       ...nieuwsBronnen.map(url=>fetch(url).then(r=>r.json()).catch(()=>null)),
-    ]).then(([sd,pd,td,od,...nieuwsFeeds])=>{
+    ]).then(([sd,pd,td,od,jod,u18d,u16d,...nieuwsFeeds])=>{
       const sl=sd?.stand||[];
       if(sl.length>0&&sd?.bijgewerkt) sl[0]._bw=sd.bijgewerkt.slice(0,10);
       setStand(sl);
       setProgramma(pd?.wedstrijden||[]);
       setTopscorers(td?.topscorers||[]);
-      setOranje(od?.alle_namen||[]);
+      setOranje({
+        senior: od?.alle_namen||[],
+        jong:   jod?.alle_namen||[],
+        u18:    u18d?.alle_namen||[],
+        u16:    u16d?.alle_namen||[],
+      });
       
       const alleArtikelen=[]; const gezieneTitels=new Set();
       for(const feed of nieuwsFeeds){
@@ -1216,13 +1315,13 @@ function App() {
       {page==="dashboard"&&<Dashboard geslacht={geslacht} nav={nav} stand={stand} programma={programma} nieuws={nieuws} loading={loading}/>}
       {page==="spelers"&&<SpelersOverzicht geslacht={geslacht} nav={nav} spelers={spelers} oranje={oranje}/>}
       {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers} spelers={spelers} nav={nav}/>}
-      {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav}/>}
+      {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav} geslacht={geslacht} spelers={spelers}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
-      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
+      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
       {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav}/>}
-      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma}/>}
+      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
     </>
   );
 }
