@@ -751,6 +751,61 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Pinoké",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "datum": "2025-09-28",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 21,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 45,
+          "type": "strafbal"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 53,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "Kampong H1",
+          "minuut": 43,
+          "type": "groen"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong H1",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Bram van Battum",
+          "club": "Kampong H1",
+          "minuut": 51,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -1359,5 +1414,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:01.420Z"
+  "bijgewerkt": "2026-04-03T15:34:02.950Z"
 }
