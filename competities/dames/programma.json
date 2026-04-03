@@ -297,7 +297,358 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "datum": "2026-04-11",
+      "tijdstip": "16:30",
+      "thuis": "Kampong",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "thuis": "Amsterdam",
+      "uit": "HGC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "thuis": "Tilburg",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "thuis": "Oranje-Rood",
+      "uit": "SCHC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "thuis": "HDM",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-18",
+      "tijdstip": "16:30",
+      "thuis": "HGC",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "thuis": "SCHC",
+      "uit": "Tilburg",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "thuis": "Hurley",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "thuis": "Rotterdam",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "thuis": "Pinoké",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-25",
+      "tijdstip": "16:30",
+      "thuis": "Oranje-Rood",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "HGC",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "Amsterdam",
+      "uit": "SCHC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "Tilburg",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "Kampong",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-01",
+      "tijdstip": "12:45",
+      "thuis": "HDM",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "SCHC",
+      "uit": "HGC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Hurley",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Pinoké",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "HDM",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Bloemendaal",
+      "uit": "SCHC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "HGC",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Tilburg",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Oranje-Rood",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Kampong",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-15",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 4",
+      "uit": "Hoofdklasse nr 1",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-15",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 3",
+      "uit": "Hoofdklasse nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 1",
+      "uit": "Hoofdklasse nr 4",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 2",
+      "uit": "Hoofdklasse nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-23",
+      "tijdstip": null,
+      "thuis": "Play-Offs Winnaar Halve finale",
+      "uit": "Play-Offs Winnaar Halve finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Promotieklasse nr 3",
+      "uit": "Hoofdklasse nr 10",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Promotieklasse nr 2",
+      "uit": "Hoofdklasse nr 11",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 10",
+      "uit": "Promotieklasse nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 11",
+      "uit": "Promotieklasse nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:04.844Z"
+  "bijgewerkt": "2026-04-03T08:41:48.464Z"
 }
