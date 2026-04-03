@@ -232,6 +232,67 @@
       "kaarten": []
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2025-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 1,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 10,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam H1",
+          "minuut": 57,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam H1",
+          "minuut": 13,
+          "type": "groen"
+        },
+        {
+          "naam": "Michel van den Heuvel",
+          "club": "Bloemendaal H1",
+          "minuut": 59,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -840,5 +901,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:51.674Z"
+  "bijgewerkt": "2026-04-03T13:33:53.021Z"
 }
