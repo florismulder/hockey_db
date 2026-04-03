@@ -836,6 +836,127 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 8,
+      "score_uit": 6,
+      "datum": "2025-09-21",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Eduard De Ignacio - Simó",
+          "club": "Den Bosch H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch H1",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Sweder Koens",
+          "club": "Den Bosch H1",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 47,
+          "type": "sc"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 58,
+          "type": "sc"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pepijn Reijenga",
+          "club": "Den Bosch H1",
+          "minuut": 33,
+          "type": "groen"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Max Pastoor",
+          "club": "Den Bosch H1",
+          "minuut": 40,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 53,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
       "score_thuis": 4,
@@ -1822,5 +1943,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:13.479Z"
+  "bijgewerkt": "2026-04-03T15:34:14.942Z"
 }
