@@ -105,6 +105,91 @@
       ]
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "Schaerweijde",
+      "score_thuis": 7,
+      "score_uit": 1,
+      "datum": "2025-09-14",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pepe Bijlaard",
+          "club": "Klein Zwitserland H1",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Schaerweijde H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Niels de Joode",
+          "club": "Klein Zwitserland H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Chad Futcher",
+          "club": "Klein Zwitserland H1",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Lars Daniels",
+          "club": "Klein Zwitserland H1",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland H1",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepe Bijlaard",
+          "club": "Klein Zwitserland H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Chad Futcher",
+          "club": "Klein Zwitserland H1",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Juup Veen",
+          "club": "Klein Zwitserland H1",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 49,
+          "type": "groen"
+        },
+        {
+          "naam": "Lode Draaijer",
+          "club": "Klein Zwitserland H1",
+          "minuut": 56,
+          "type": "groen"
+        },
+        {
+          "naam": "Maarten Bruisten",
+          "club": "Klein Zwitserland H1",
+          "minuut": 57,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Laren",
       "score_thuis": 4,
@@ -1078,5 +1163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:57.129Z"
+  "bijgewerkt": "2026-04-03T13:33:58.469Z"
 }
