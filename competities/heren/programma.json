@@ -56,6 +56,55 @@
       ]
     },
     {
+      "thuis": "Pinoké",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-09-14",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam H1",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Indra Aerts",
+          "club": "Pinoké H1",
+          "minuut": 55,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Laren",
       "score_thuis": 4,
@@ -1029,5 +1078,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:55.746Z"
+  "bijgewerkt": "2026-04-03T13:33:57.129Z"
 }
