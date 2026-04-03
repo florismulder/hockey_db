@@ -895,15 +895,27 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
               <div>
                 {Object.entries(
                   spelersNieuws.reduce((acc,item)=>{
-                    const key=item.artikel_titel||item.datum||"";
-                    if(!acc[key]) acc[key]={datum:item.datum,titel:item.artikel_titel,link:item.artikel_link,bullets:[]};
-                    acc[key].bullets.push(item.bullet);
+                    const key=item.artikel_titel||item.link||item.datum||"";
+                    if(!acc[key]) acc[key]={datum:item.datum,titel:item.artikel_titel,link:item.link||item.artikel_link,bullets:[]};
+                    if(item.bullet && !acc[key].bullets.includes(item.bullet)) acc[key].bullets.push(item.bullet);
                     return acc;
                   },{}
-                )).map(([key,item],i)=>(
+                )).sort((a,b)=>{
+                  const pd = s => { const m=String(s[1].datum||"").match(/^(\d{4})-(\d{2})-(\d{2})/); return m?new Date(m[1],m[2]-1,m[3]).getTime():0; };
+                  return pd(b)-pd(a);
+                }).map(([key,item],i)=>(
                   <div key={i} style={{marginBottom:12,background:"var(--surface2)",borderRadius:7,padding:"10px 12px",border:"1px solid var(--border)"}}>
-                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{item.datum}</div>
-                    <div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel}</div>
+                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum(item.datum)}</div>
+                    {item.titel&&item.link?(
+                      <a href={item.link} target="_blank" rel="noopener noreferrer"
+                        style={{fontSize:12,fontWeight:600,marginBottom:6,display:"block",color:"var(--accent)",textDecoration:"none"}}
+                        onMouseEnter={e=>e.currentTarget.style.textDecoration="underline"}
+                        onMouseLeave={e=>e.currentTarget.style.textDecoration="none"}>
+                        {item.titel} ›
+                      </a>
+                    ):item.titel?(
+                      <div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel}</div>
+                    ):null}
                     <ul style={{paddingLeft:14,margin:0}}>
                       {item.bullets.map((b,j)=>(
                         <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:3}}>{b}</li>
