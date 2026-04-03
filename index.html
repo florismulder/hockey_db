@@ -116,7 +116,14 @@ function slugify(naam) {
 
 function Vlag({s}) {
   if (!s || !s.land_code || s.land_code.toLowerCase()==="nl") return null;
-  const emoji = s.land_code.toUpperCase().replace(/./g, c => String.fromCodePoint(c.charCodeAt(0)+127397));
+  const code = s.land_code.toUpperCase();
+  // Speciale regio-vlaggen via tag sequences
+  const regio = {
+    "GB-SCT": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F",
+    "GB-ENG": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F",
+    "GB-WLS": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73\uDB40\uDC7F",
+  };
+  const emoji = regio[code] || code.replace(/./g, c => String.fromCodePoint(c.charCodeAt(0)+127397));
   return <span style={{fontSize:14,marginRight:6,verticalAlign:"middle"}}>{emoji}</span>;
 }
 
