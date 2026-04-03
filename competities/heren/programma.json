@@ -133,7 +133,37 @@
           "type": "geel"
         }
       ]
+    },
+    {
+      "thuis": "Schaerweijde",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-03-29",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Niels de Joode",
+          "club": "Schaerweijde H1",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Nikas Berendts",
+          "club": "Hurley H1",
+          "minuut": 59,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": []
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:07.040Z"
+  "bijgewerkt": "2026-04-03T06:37:08.188Z"
 }
