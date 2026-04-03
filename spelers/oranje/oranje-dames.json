@@ -1,8 +1,33 @@
 {
   "team": "Oranje Dames",
-  "bron": "https://www.hockey.nl/oranje/oranje-dames/",
-  "bijgewerkt": "2026-03-27T08:44:48.583301+00:00",
-  "spelers": [],
-  "alle_namen": [],
-  "changelog": []
+  "geslacht": "dames",
+  "categorie": "senior",
+  "datum": "Niet gevonden",
+  "bijgewerkt": "2026-04-03",
+  "alle_namen": [
+    "Felice Albers",
+    "Trijntje Beljaars",
+    "Joosje Burg",
+    "Jip Dicke",
+    "Pien Dicke",
+    "Fay van der Elst",
+    "Rosa Fernig",
+    "Luna Fokke",
+    "Eline Jansen",
+    "Yibbi Jansen",
+    "Marleen Jochems",
+    "Josine Koning",
+    "Sanne Koolen",
+    "Daantje de Kruijff",
+    "Renée van Laarhoven",
+    "Frédérique Matla",
+    "Freeke Moes",
+    "Noor van den Nieuwenhof",
+    "Lisa Post",
+    "Pien Sanders",
+    "Marijn Veen",
+    "Anne Veenendaal",
+    "Danique van der Veerdonk",
+    "Xan de Waard"
+  ]
 }
