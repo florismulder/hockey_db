@@ -129,6 +129,55 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Chad Futcher",
+          "club": "Hurley H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Fred Newbold",
+          "club": "Klein Zwitserland H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Willem van Campen",
+          "club": "Hurley H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Laurens Nievelstein",
+          "club": "Hurley H1",
+          "minuut": 43,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -737,5 +786,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:48.849Z"
+  "bijgewerkt": "2026-04-03T13:33:50.284Z"
 }
