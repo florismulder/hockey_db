@@ -928,6 +928,61 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Laren",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guus van den Boezem",
+          "club": "HDM H1",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun van Uunen",
+          "club": "Laren H1",
+          "minuut": 26,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Mats Dicke",
+          "club": "HDM H1",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Berend van Langeveld",
+          "club": "HDM H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "Laren H1",
+          "minuut": 55,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Ruben van Meer",
+          "club": "HDM H1",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Merijn Maas",
+          "club": "Laren H1",
+          "minuut": 59,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -1536,5 +1591,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:05.925Z"
+  "bijgewerkt": "2026-04-03T15:34:07.431Z"
 }
