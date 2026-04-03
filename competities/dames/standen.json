@@ -1,7 +1,7 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-03T06:27:38.661Z",
+  "bijgewerkt": "2026-04-03T07:09:43.641Z",
   "stand": [
     {
       "positie": 1,
@@ -14,7 +14,7 @@
       "doelpunten_tegen": 12,
       "doelsaldo": 54,
       "punten": 45,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
@@ -27,7 +27,7 @@
       "doelpunten_tegen": 21,
       "doelsaldo": 22,
       "punten": 39,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 3,
@@ -40,7 +40,7 @@
       "doelpunten_tegen": 21,
       "doelsaldo": 40,
       "punten": 36,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 4,
@@ -53,7 +53,7 @@
       "doelpunten_tegen": 23,
       "doelsaldo": 21,
       "punten": 35,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 5,
@@ -144,7 +144,7 @@
       "doelpunten_tegen": 47,
       "doelsaldo": -30,
       "punten": 13,
-      "zone": ""
+      "zone": "degradatie"
     },
     {
       "positie": 12,
@@ -157,7 +157,7 @@
       "doelpunten_tegen": 59,
       "doelsaldo": -35,
       "punten": 10,
-      "zone": ""
+      "zone": "degradatie"
     }
   ]
 }
