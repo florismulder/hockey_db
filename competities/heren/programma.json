@@ -994,6 +994,79 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "HDM",
+      "score_thuis": 7,
+      "score_uit": 2,
+      "datum": "2025-09-21",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Tom Provily",
+          "club": "Rotterdam H1",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Thijs van Dam",
+          "club": "HDM H1",
+          "minuut": 30,
+          "type": "SC"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Floris van der Kroon",
+          "club": "Rotterdam H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Marc Recasens",
+          "club": "HDM H1",
+          "minuut": 49,
+          "type": "SC"
+        },
+        {
+          "naam": "Justen Blok",
+          "club": "Rotterdam H1",
+          "minuut": 50,
+          "type": "SC"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sander Groenheijde",
+          "club": "HDM H1",
+          "minuut": 20,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
       "score_thuis": 4,
@@ -1980,5 +2053,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:16.332Z"
+  "bijgewerkt": "2026-04-03T15:34:17.786Z"
 }
