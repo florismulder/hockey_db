@@ -806,6 +806,55 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 5,
+      "datum": "2025-09-28",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Marco Miltkau",
+          "club": "Bloemendaal H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Casper van der Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Jorrit Croon",
+          "club": "Bloemendaal H1",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Jan van 't Land",
+          "club": "Bloemendaal H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Nikas Berendts",
+          "club": "Hurley H1",
+          "minuut": 2,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -1414,5 +1463,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:02.950Z"
+  "bijgewerkt": "2026-04-03T15:34:04.523Z"
 }
