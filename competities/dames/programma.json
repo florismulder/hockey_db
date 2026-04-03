@@ -151,7 +151,74 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "thuis": "HGC",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "datum": "2026-03-29",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carolin Hoffmann",
+          "club": "Tilburg D1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC D1",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg D1",
+          "minuut": 43,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Hannah Salden",
+          "club": "Tilburg D1",
+          "minuut": 50,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Emmely Bekker",
+          "club": "HGC D1",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Amy van den Bosch",
+          "club": "Tilburg D1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC D1",
+          "minuut": 34,
+          "type": "geel"
+        },
+        {
+          "naam": "Roos Ezendam",
+          "club": "Tilburg D1",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Zoë Admiraal",
+          "club": "HGC D1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:01.556Z"
+  "bijgewerkt": "2026-04-03T06:37:02.676Z"
 }
