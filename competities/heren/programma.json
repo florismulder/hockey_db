@@ -66,7 +66,74 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 1,
+      "datum": "2026-03-29",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 36,
+          "type": "SC"
+        },
+        {
+          "naam": "Nick van Trigt",
+          "club": "Rotterdam",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam",
+          "minuut": 13,
+          "type": "groen"
+        },
+        {
+          "naam": "Derck de Vilder",
+          "club": "Rotterdam",
+          "minuut": 19,
+          "type": "groen"
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "Rotterdam",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Bouwe Buitenhuis",
+          "club": "Rotterdam",
+          "minuut": 25,
+          "type": "groen"
+        },
+        {
+          "naam": "Bouwe Buitenhuis",
+          "club": "Rotterdam",
+          "minuut": 34,
+          "type": "geel"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:05.911Z"
+  "bijgewerkt": "2026-04-03T06:37:07.040Z"
 }
