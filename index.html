@@ -745,7 +745,7 @@ function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
                 <div style={{textAlign:"right"}}><div className="sr">#{s.rugnummer}</div></div>
               </div>
               <div style={{display:"flex",gap:5,marginTop:8}}>
-                {s.keeper&&<span className="sba sbk">Keeper</span>}
+                {s.keeper&&<span className="sba sbk">K</span>}
                 {s.aanvoerder&&<span className="sba sbv">Aanvoerder</span>}
                 {oranje&&oranje.senior&&oranje.senior.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Oranje</span>}
                 {oranje&&oranje.senior&&oranje.jong&&!oranje.senior.includes(s.naam)&&oranje.jong.includes(s.naam) && <span style={{fontSize:10,fontWeight:600,padding:"2px 6px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:4}}>🦁 Jong Oranje</span>}
