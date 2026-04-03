@@ -855,6 +855,79 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "datum": "2025-09-28",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Schaerweijde H1",
+          "minuut": 22,
+          "type": "SC"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Joost van Eijck",
+          "club": "Schaerweijde H1",
+          "minuut": 35,
+          "type": "SC"
+        },
+        {
+          "naam": "Jens Hagen",
+          "club": "Rotterdam H1",
+          "minuut": 44,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Tijs van Horn",
+          "club": "Schaerweijde H1",
+          "minuut": 31,
+          "type": "groen"
+        },
+        {
+          "naam": "Nick van Trigt",
+          "club": "Rotterdam H1",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Tijs van Horn",
+          "club": "Schaerweijde H1",
+          "minuut": 58,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -1463,5 +1536,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:04.523Z"
+  "bijgewerkt": "2026-04-03T15:34:05.925Z"
 }
