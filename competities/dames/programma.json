@@ -78,7 +78,80 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "thuis": "Amsterdam",
+      "uit": "HDM",
+      "score_thuis": 7,
+      "score_uit": 1,
+      "datum": "2026-03-29",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam D1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam D1",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam D1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam D1",
+          "minuut": 24,
+          "type": "sc"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam D1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM D1",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam D1",
+          "minuut": 52,
+          "type": "sc"
+        },
+        {
+          "naam": "Daantje de Kruijff",
+          "club": "Amsterdam D1",
+          "minuut": 60,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Julia Duffhuis",
+          "club": "Amsterdam D1",
+          "minuut": 12,
+          "type": "groen"
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "HDM D1",
+          "minuut": 48,
+          "type": "groen"
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:00.436Z"
+  "bijgewerkt": "2026-04-03T06:37:01.556Z"
 }
