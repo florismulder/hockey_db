@@ -340,6 +340,136 @@ def parse_stand(wt):
     if s: return s,"wikitable"
     return [],"geen"
 
+# ── Play-off parser ────────────────────────────────────────────────────────────
+
+def _safe_score(s):
+    m = re.search(r"(\d+)[-–](\d+)", str(s))
+    return (int(m.group(1)), int(m.group(2))) if m else (0, 0)
+
+def _club_uit_cel(cel):
+    cel = re.sub(r"'''", "", cel)
+    cel = re.sub(r"\(\d+\)", "", cel)
+    m = re.search(r"\[\[[^\]|]+\|([^\]]+)\]\]", cel)
+    if m: return fix(m.group(1).strip())
+    m = re.search(r"\[\[([^\]|]+)\]\]", cel)
+    if m: return fix(m.group(1).strip())
+    return fix(cel.strip())
+
+def _score_uit_cel(cel):
+    m = re.search(r"(\d+[-–]\d+)", cel)
+    return m.group(1) if m else cel.strip()
+
+def parse_playoffs(wt):
+    """
+    Parseer play-off resultaten.
+    Structuur: ==Play offs...== sectie met '''Subsectienaam''' koppen op eigen regel.
+    """
+    playoffs = {"halve_finales": [], "finale": None, "kampioen": "", "playout": []}
+
+    # Isoleer de play-off sectie
+    po_idx = -1
+    for zoek in ["==Play offs", "==Play-offs", "==Playoffs", "== Play offs", "== Play-offs"]:
+        idx = wt.lower().find(zoek.lower())
+        if idx >= 0:
+            po_idx = idx
+            break
+    if po_idx == -1:
+        return playoffs
+
+    rest = wt[po_idx:]
+    # Stop bij de volgende hoofdsectie (== op eigen regel)
+    volgende = re.search(r'\n==[^=]', rest[5:])
+    po_sectie = rest[:volgende.start()+5] if volgende else rest
+
+    # Splits op subsectiekoppen die op een EIGEN REGEL staan
+    # Patroon: newline + ''' + tekst zonder [[ + ''' + newline
+    delen = re.split(r"\n'''([^'\[\]]{3,50})'''\n", po_sectie)
+
+    huidig_type = ""
+    halve_finales_paren = {}
+
+    for i, deel in enumerate(delen):
+        if i % 2 == 1:
+            # Sectienaam
+            dl = deel.strip().lower()
+            if re.search(r'halve\s*finale', dl):
+                huidig_type = "halve_finale"
+            elif re.search(r'finale|final', dl) and 'halve' not in dl:
+                huidig_type = "finale"
+            elif re.search(r'play.?out|degradatie play|promotie.?degradatie', dl):
+                huidig_type = "playout"
+            continue
+
+        # Inhoud — parseer wikitabellen
+        for tabel_tekst in re.split(r'\{\|', deel)[1:]:
+            tl = tabel_tekst.lower()
+            if '! team' not in tl and '!! team' not in tl:
+                continue
+
+            wedstrijden = []
+            for rij in tabel_tekst.split("|-"):
+                rij = rij.strip()
+                if not rij or rij.startswith("!") or rij.startswith("|+"): continue
+                ri = re.sub(r'^[^|]*\|', '', rij, count=1)
+                cellen = re.split(r'\|\|', ri)
+                if len(cellen) < 3: continue
+                try:
+                    thuis = _club_uit_cel(cellen[0])
+                    score = _score_uit_cel(cellen[1])
+                    uit   = _club_uit_cel(cellen[2])
+                    if not thuis or not uit or len(thuis) < 2: continue
+                    wedstrijden.append({"thuis": thuis, "score": score, "uit": uit})
+                except: continue
+
+            if not wedstrijden:
+                continue
+
+            if huidig_type == "halve_finale":
+                sleutel = frozenset([wedstrijden[0]["thuis"], wedstrijden[0]["uit"]])
+                if sleutel not in halve_finales_paren:
+                    halve_finales_paren[sleutel] = []
+                halve_finales_paren[sleutel].extend(wedstrijden)
+
+            elif huidig_type == "finale":
+                if not playoffs["finale"]:
+                    playoffs["finale"] = {
+                        "thuis": wedstrijden[0]["thuis"],
+                        "uit": wedstrijden[0]["uit"],
+                        "score": wedstrijden[0]["score"],
+                        "wedstrijden": wedstrijden,
+                    }
+
+            elif huidig_type == "playout":
+                playoffs["playout"].extend(wedstrijden)
+
+    # Verwerk halve finale paren
+    for sleutel, wedstrijden in halve_finales_paren.items():
+        thuis = wedstrijden[0]["thuis"]
+        uit   = wedstrijden[0]["uit"]
+        t = sum(_safe_score(w["score"])[0] for w in wedstrijden if w["thuis"]==thuis)
+        t += sum(_safe_score(w["score"])[1] for w in wedstrijden if w["uit"]==thuis)
+        u = sum(_safe_score(w["score"])[0] for w in wedstrijden if w["thuis"]==uit)
+        u += sum(_safe_score(w["score"])[1] for w in wedstrijden if w["uit"]==uit)
+        winnaar = thuis if t >= u else uit
+        playoffs["halve_finales"].append({
+            "thuis": thuis, "uit": uit,
+            "score": f"{t}-{u}", "winnaar": winnaar,
+            "wedstrijden": wedstrijden,
+        })
+
+    # Kampioen uit finale
+    if playoffs["finale"]:
+        fin = playoffs["finale"]
+        wed = fin.get("wedstrijden", [fin])
+        thuis = fin["thuis"]; uit = fin["uit"]
+        t = sum(_safe_score(w["score"])[0] for w in wed if w["thuis"]==thuis)
+        t += sum(_safe_score(w["score"])[1] for w in wed if w["uit"]==thuis)
+        u = sum(_safe_score(w["score"])[0] for w in wed if w["thuis"]==uit)
+        u += sum(_safe_score(w["score"])[1] for w in wed if w["uit"]==uit)
+        playoffs["kampioen"] = thuis if t > u else uit
+
+    return playoffs
+
 # ── Opslaan ────────────────────────────────────────────────────────────────────
 def sla_op(data, seizoen, geslacht):
     pad=BASE_DIR/"seizoenen"/seizoen/f"{geslacht}.json"
@@ -368,10 +498,17 @@ def verwerk(seizoen, geslacht):
     stand,formaat=parse_stand(wt)
     for r in stand: r["club"]=fix(r["club"])
 
-    if not kampioen and stand: kampioen=stand[0]["club"]
+    playoffs = parse_playoffs(wt)
+
+    if not kampioen:
+        kampioen = playoffs.get("kampioen","")
+    if not kampioen and stand:
+        kampioen = stand[0]["club"]
+    if playoffs.get("kampioen"):
+        playoffs["kampioen"] = kampioen  # gebruik de override versie
 
     data={"seizoen":label(seizoen),"geslacht":geslacht,"kampioen":kampioen,
-        "stand":stand,"playoffs":{},
+        "stand":stand,"playoffs":playoffs,
         "wiki_pagina":f"https://nl.wikipedia.org/wiki/{quote(pagina)}",
         "bijgewerkt":datetime.now(timezone.utc).isoformat()[:10]}
     sla_op(data,seizoen,geslacht)
