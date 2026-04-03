@@ -346,7 +346,268 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "18:45",
+      "thuis": "Kampong",
+      "uit": "Schaerweijde",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "thuis": "Amsterdam",
+      "uit": "Klein Zwitserland",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "thuis": "Laren",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "thuis": "HDM",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-18",
+      "tijdstip": "16:30",
+      "thuis": "Bloemendaal",
+      "uit": "Laren",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "thuis": "Pinoké",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "thuis": "Klein Zwitserland",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "thuis": "Hurley",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "thuis": "Schaerweijde",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "thuis": "Rotterdam",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-25",
+      "tijdstip": "16:30",
+      "thuis": "Klein Zwitserland",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "thuis": "Amsterdam",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "thuis": "Laren",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "thuis": "Oranje-Rood",
+      "uit": "Schaerweijde",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "thuis": "Den Bosch",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "thuis": "HDM",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "Bloemendaal",
+      "uit": "Klein Zwitserland",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "Kampong",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "Hurley",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "Schaerweijde",
+      "uit": "Laren",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "thuis": "HDM",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Pinoké",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Klein Zwitserland",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Amsterdam",
+      "uit": "Schaerweijde",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Laren",
+      "uit": "Hurley",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Oranje-Rood",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "thuis": "Den Bosch",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T06:37:11.615Z"
+  "bijgewerkt": "2026-04-03T08:42:28.141Z"
 }
