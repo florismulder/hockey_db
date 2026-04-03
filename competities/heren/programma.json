@@ -702,6 +702,103 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Amsterdam",
+      "score_thuis": 4,
+      "score_uit": 4,
+      "datum": "2025-09-27",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 15,
+          "type": "SB"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 26,
+          "type": "SB"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Brent van Bijnen",
+          "club": "Amsterdam H1",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Sem de Roij",
+          "club": "Oranje-Rood H1",
+          "minuut": 28,
+          "type": "groen"
+        },
+        {
+          "naam": "Bob de Voogd",
+          "club": "Oranje-Rood H1",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Florian Gosselink",
+          "club": "Oranje-Rood H1",
+          "minuut": 54,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -1591,5 +1688,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:07.431Z"
+  "bijgewerkt": "2026-04-03T15:34:08.964Z"
 }
