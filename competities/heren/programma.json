@@ -702,6 +702,61 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Schaerweijde",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2025-09-21",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lucas Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Max Langer",
+          "club": "Bloemendaal H1",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 36,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lode Draaijer",
+          "club": "Bloemendaal H1",
+          "minuut": 33,
+          "type": "groen"
+        },
+        {
+          "naam": "Jorrit Croon",
+          "club": "Bloemendaal H1",
+          "minuut": 44,
+          "type": "groen"
+        },
+        {
+          "naam": "Daan Troost",
+          "club": "Bloemendaal H1",
+          "minuut": 48,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
       "score_thuis": 4,
@@ -1688,5 +1743,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:08.964Z"
+  "bijgewerkt": "2026-04-03T15:34:10.487Z"
 }
