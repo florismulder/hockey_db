@@ -1,11 +1,11 @@
 {
   "geslacht": "heren",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-03T06:27:59.648Z",
+  "bijgewerkt": "2026-04-03T07:09:21.436Z",
   "stand": [
     {
       "positie": 1,
-      "club": "Oranje-Rood H1",
+      "club": "Oranje-Rood",
       "gespeeld": 17,
       "gewonnen": 12,
       "gelijk": 5,
@@ -14,11 +14,11 @@
       "doelpunten_tegen": 26,
       "doelsaldo": 34,
       "punten": 41,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
-      "club": "Rotterdam H1",
+      "club": "Rotterdam",
       "gespeeld": 17,
       "gewonnen": 12,
       "gelijk": 2,
@@ -27,11 +27,11 @@
       "doelpunten_tegen": 29,
       "doelsaldo": 41,
       "punten": 38,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 3,
-      "club": "Amsterdam H1",
+      "club": "Amsterdam",
       "gespeeld": 17,
       "gewonnen": 10,
       "gelijk": 4,
@@ -40,11 +40,11 @@
       "doelpunten_tegen": 33,
       "doelsaldo": 22,
       "punten": 34,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 4,
-      "club": "Den Bosch H1",
+      "club": "Den Bosch",
       "gespeeld": 17,
       "gewonnen": 10,
       "gelijk": 3,
@@ -53,11 +53,11 @@
       "doelpunten_tegen": 34,
       "doelsaldo": 28,
       "punten": 33,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 5,
-      "club": "Pinoké H1",
+      "club": "Pinoké",
       "gespeeld": 17,
       "gewonnen": 9,
       "gelijk": 5,
@@ -70,7 +70,7 @@
     },
     {
       "positie": 6,
-      "club": "Bloemendaal H1",
+      "club": "Bloemendaal",
       "gespeeld": 17,
       "gewonnen": 9,
       "gelijk": 3,
@@ -83,7 +83,7 @@
     },
     {
       "positie": 7,
-      "club": "Klein Zwitserland H1",
+      "club": "Klein Zwitserland",
       "gespeeld": 17,
       "gewonnen": 6,
       "gelijk": 6,
@@ -96,7 +96,7 @@
     },
     {
       "positie": 8,
-      "club": "Kampong H1",
+      "club": "Kampong",
       "gespeeld": 17,
       "gewonnen": 6,
       "gelijk": 3,
@@ -109,7 +109,7 @@
     },
     {
       "positie": 9,
-      "club": "HDM H1",
+      "club": "HDM",
       "gespeeld": 17,
       "gewonnen": 4,
       "gelijk": 2,
@@ -122,7 +122,7 @@
     },
     {
       "positie": 10,
-      "club": "Schaerweijde H1",
+      "club": "Schaerweijde",
       "gespeeld": 17,
       "gewonnen": 3,
       "gelijk": 4,
@@ -135,7 +135,7 @@
     },
     {
       "positie": 11,
-      "club": "Laren H1",
+      "club": "Laren",
       "gespeeld": 17,
       "gewonnen": 1,
       "gelijk": 2,
@@ -144,11 +144,11 @@
       "doelpunten_tegen": 73,
       "doelsaldo": -49,
       "punten": 5,
-      "zone": ""
+      "zone": "playout"
     },
     {
       "positie": 12,
-      "club": "Hurley H1",
+      "club": "Hurley",
       "gespeeld": 17,
       "gewonnen": 0,
       "gelijk": 1,
@@ -157,7 +157,7 @@
       "doelpunten_tegen": 71,
       "doelsaldo": -58,
       "punten": 1,
-      "zone": ""
+      "zone": "degradatie"
     }
   ]
 }
