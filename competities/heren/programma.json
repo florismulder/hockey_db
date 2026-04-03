@@ -702,6 +702,55 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Willem van Campen",
+          "club": "Den Bosch H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch H1",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 42,
+          "type": "SB"
+        },
+        {
+          "naam": "Pepijn Reijenga",
+          "club": "Klein Zwitserland H1",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Jones",
+          "club": "Klein Zwitserland H1",
+          "minuut": 50,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -1310,5 +1359,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:34:02.703Z"
+  "bijgewerkt": "2026-04-03T15:34:01.420Z"
 }
