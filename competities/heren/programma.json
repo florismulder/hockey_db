@@ -1,6 +1,61 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Amsterdam",
+      "uit": "Hurley",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2025-09-13",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam H1",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "David Huussen",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 51,
+          "type": "sc"
+        },
+        {
+          "naam": "Thije Harm",
+          "club": "Amsterdam H1",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 59,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "HDM",
       "score_thuis": 5,
@@ -1255,5 +1310,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:34:01.270Z"
+  "bijgewerkt": "2026-04-03T13:34:02.703Z"
 }
