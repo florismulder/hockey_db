@@ -56,6 +56,79 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong H1",
+          "minuut": 4,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Kampong H1",
+          "minuut": 24,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 33,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong H1",
+          "minuut": 34,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Brent van Bijnen",
+          "club": "Kampong H1",
+          "minuut": 9,
+          "type": "groen"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 11,
+          "type": "groen"
+        },
+        {
+          "naam": "Kjell Plantenga",
+          "club": "Kampong H1",
+          "minuut": 24,
+          "type": "groen"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 32,
+          "type": "geel"
+        },
+        {
+          "naam": "Derck de Vilder",
+          "club": "Kampong H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Kjell Plantenga",
+          "club": "Kampong H1",
+          "minuut": 53,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -664,5 +737,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:47.534Z"
+  "bijgewerkt": "2026-04-03T13:33:48.849Z"
 }
