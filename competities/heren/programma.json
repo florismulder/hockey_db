@@ -1,0 +1,72 @@
+{
+  "wedstrijden": [
+    {
+      "thuis": "Pinoké",
+      "uit": "Oranje-Rood",
+      "score_thuis": 1,
+      "score_uit": 6,
+      "datum": "2026-03-28",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood H1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Oranje-Rood H1",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Pieter Sutorius",
+          "club": "Pinoké H1",
+          "minuut": 49,
+          "type": "groen"
+        }
+      ]
+    }
+  ],
+  "bijgewerkt": "2026-04-03T06:37:05.911Z"
+}
