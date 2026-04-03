@@ -1,6 +1,61 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Bloemendaal",
+      "uit": "HDM",
+      "score_thuis": 5,
+      "score_uit": 0,
+      "datum": "2025-09-14",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Casper van der Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Casper van der Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Lucas Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Marco Miltkau",
+          "club": "Bloemendaal H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Casper van der Veen",
+          "club": "Bloemendaal H1",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM H1",
+          "minuut": 46,
+          "type": "groen"
+        },
+        {
+          "naam": "Jorrit Croon",
+          "club": "HDM H1",
+          "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Laren",
       "score_thuis": 4,
@@ -974,5 +1029,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T13:33:54.321Z"
+  "bijgewerkt": "2026-04-03T13:33:55.746Z"
 }
