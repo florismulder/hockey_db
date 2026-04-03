@@ -957,6 +957,43 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Oranje-Rood",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "datum": "2025-09-21",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood H1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Pol Cabre-Verdiell Badia",
+          "club": "Oranje-Rood H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 60,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Ruben van Meer",
+          "club": "Laren H1",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
       "score_thuis": 4,
@@ -1943,5 +1980,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:14.942Z"
+  "bijgewerkt": "2026-04-03T15:34:16.332Z"
 }
