@@ -4352,6 +4352,67 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "HDM",
+      "score_thuis": 5,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM H1",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood H1",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 56,
+          "type": "SB"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood H1",
+          "minuut": 57,
+          "type": "SC"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 59,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM H1",
+          "minuut": 59,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Rotterdam",
       "score_thuis": 2,
@@ -5296,5 +5357,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:55.515Z"
+  "bijgewerkt": "2026-04-04T17:30:57.057Z"
 }
