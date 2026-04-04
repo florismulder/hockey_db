@@ -2017,6 +2017,73 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-10-25",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Chad Futcher",
+          "club": "Klein Zwitserland H1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus van den Boezem",
+          "club": "HDM H1",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 53,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Jochem Bakker",
+          "club": "Klein Zwitserland H1",
+          "minuut": 60,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Ruben Versteeg",
+          "club": "HDM H1",
+          "minuut": 3,
+          "type": "groen"
+        },
+        {
+          "naam": "Cédric de Gier",
+          "club": "HDM H1",
+          "minuut": 16,
+          "type": "groen"
+        },
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Klein Zwitserland H1",
+          "minuut": 18,
+          "type": "groen"
+        },
+        {
+          "naam": "Jelte Kaptein",
+          "club": "HDM H1",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 33,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Rotterdam",
       "score_thuis": 0,
@@ -2795,5 +2862,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:08.445Z"
+  "bijgewerkt": "2026-04-04T07:31:10.353Z"
 }
