@@ -4999,6 +4999,85 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2026-03-15",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Niet gespecificeerd",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Niet gespecificeerd",
+          "minuut": 31,
+          "type": "SC"
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Niet gespecificeerd",
+          "minuut": 40,
+          "type": "SC"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Niet gespecificeerd",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Niet gespecificeerd",
+          "minuut": 51,
+          "type": "SC"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Niet gespecificeerd",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Robbert Kemperman",
+          "club": "Niet gespecificeerd",
+          "minuut": 28,
+          "type": "groen"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Niet gespecificeerd",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Niet gespecificeerd",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Gerard Clapes",
+          "club": "Niet gespecificeerd",
+          "minuut": 47,
+          "type": "groen"
+        },
+        {
+          "naam": "Arthur de Sloover",
+          "club": "Niet gespecificeerd",
+          "minuut": 50,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5607,5 +5686,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:55:45.657Z"
+  "bijgewerkt": "2026-04-04T17:55:47.143Z"
 }
