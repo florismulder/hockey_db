@@ -2770,6 +2770,55 @@
     },
     {
       "thuis": "Pinoké",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-30",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 13,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Jochem Bakker",
+          "club": "Klein Zwitserland H1",
+          "minuut": 35,
+          "type": "strafbal"
+        },
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké H1",
+          "minuut": 43,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Daan Bonhof",
+          "club": "Club",
+          "minuut": 35,
+          "type": "groen"
+        },
+        {
+          "naam": "Douwe Steens",
+          "club": "Club",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Tom Schneider",
+          "club": "Club",
+          "minuut": 39,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
       "uit": "HDM",
       "score_thuis": 4,
       "score_uit": 0,
@@ -3662,5 +3711,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:20.313Z"
+  "bijgewerkt": "2026-04-04T07:49:22.165Z"
 }
