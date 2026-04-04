@@ -2684,6 +2684,61 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-10-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Berend van Langeveld",
+          "club": "Laren H1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Jorrit Croon",
+          "club": "Bloemendaal H1",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun van Uunen",
+          "club": "Laren H1",
+          "minuut": 49,
+          "type": "straffcorner"
+        },
+        {
+          "naam": "Diederick van Berckel",
+          "club": "Laren H1",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 59,
+          "type": "straffcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Diederick van Berckel",
+          "club": "Laren H1",
+          "minuut": 25,
+          "type": "geel"
+        },
+        {
+          "naam": "Diederick van Berckel",
+          "club": "Laren H1",
+          "minuut": 40,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Amsterdam",
       "score_thuis": 5,
@@ -3978,5 +4033,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:30.145Z"
+  "bijgewerkt": "2026-04-04T07:49:32.504Z"
 }
