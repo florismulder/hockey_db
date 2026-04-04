@@ -4816,6 +4816,54 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Schaerweijde",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2026-03-14",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Schaerweijde H1",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Joaquín Menini",
+          "club": "Rotterdam H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Rotterdam H1",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Hurley",
       "score_thuis": 1,
@@ -5759,5 +5807,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:55:48.784Z"
+  "bijgewerkt": "2026-04-04T17:55:50.414Z"
 }
