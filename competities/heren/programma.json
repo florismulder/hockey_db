@@ -3366,8 +3366,8 @@
     {
       "thuis": "Den Bosch",
       "uit": "Kampong",
-      "score_thuis": 1,
-      "score_uit": 4,
+      "score_thuis": 4,
+      "score_uit": 1,
       "datum": "2025-11-02",
       "tijdstip": "15:00",
       "gespeeld": true,
@@ -3382,23 +3382,23 @@
           "naam": "Joppe Wolbert",
           "club": "Kampong H1",
           "minuut": 41,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Kampong H1",
+          "club": "Den Bosch H1",
           "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Kampong H1",
+          "club": "Den Bosch H1",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Den Bosch H1",
           "minuut": 47,
           "type": "veld"
         }
@@ -3418,7 +3418,7 @@
         },
         {
           "naam": "Cedric van Otterlo",
-          "club": "Den Bosch H1",
+          "club": "Kampong H1",
           "minuut": 44,
           "type": "geel"
         }
@@ -6168,5 +6168,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:11:02.463Z"
+  "bijgewerkt": "2026-04-04T19:09:44.214Z"
 }
