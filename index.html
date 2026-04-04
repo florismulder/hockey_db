@@ -919,15 +919,17 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                     borderBottom:"1px solid var(--border)",cursor:"pointer",fontSize:12}}
                   onMouseEnter={e=>e.currentTarget.style.opacity=".7"}
                   onMouseLeave={e=>e.currentTarget.style.opacity="1"}>
-                  <span style={{fontFamily:"monospace",color:"var(--muted)",width:52,flexShrink:0}}>{formatDatum(w.datum)}</span>
-                  <span style={{flex:1}}>{w.thuis} – {w.uit}</span>
-                  <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0}}>
-                    {goals.map((g,j)=>(
-                      <span key={j} style={{marginLeft:j>0?6:0}}>
-                        ⚽{g.minuut!=null?` ${g.minuut}'`:""}
-                        {g.type&&g.type!=="veld"?` (${g.type})` :""}
-                      </span>
-                    ))}
+                  <span style={{fontFamily:"monospace",color:"var(--muted)",width:82,flexShrink:0,whiteSpace:"nowrap"}}>{formatDatum(w.datum)}</span>
+                  <span style={{flex:1,display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
+                    <span>{w.thuis} – {w.uit}</span>
+                    <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)"}}>
+                      {goals.map((g,j)=>(
+                        <span key={j} style={{marginLeft:j>0?6:0}}>
+                          ⚽{g.minuut!=null?` ${g.minuut}'`:""}
+                          {g.type&&g.type!=="veld"?` (${g.type})` :""}
+                        </span>
+                      ))}
+                    </span>
                   </span>
                 </div>
               );
