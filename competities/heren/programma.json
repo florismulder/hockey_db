@@ -4854,6 +4854,73 @@
     },
     {
       "thuis": "Pinoké",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2026-03-15",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong H1",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké H1",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Terrance Pieters",
+          "club": "Kampong H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Sander de Wijn",
+          "club": "Kampong H1",
+          "minuut": 55,
+          "type": "geel"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké H1",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
       "score_uit": 6,
@@ -5461,5 +5528,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:55:42.293Z"
+  "bijgewerkt": "2026-04-04T17:55:44.022Z"
 }
