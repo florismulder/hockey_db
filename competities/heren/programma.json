@@ -2017,6 +2017,103 @@
       ]
     },
     {
+      "thuis": "Pinoké",
+      "uit": "Laren",
+      "score_thuis": 8,
+      "score_uit": 3,
+      "datum": "2025-10-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 12,
+          "type": "sc"
+        },
+        {
+          "naam": "Iwan Roukema",
+          "club": "Pinoké H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 29,
+          "type": "sc"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 34,
+          "type": "sc"
+        },
+        {
+          "naam": "Pieter Sutorius",
+          "club": "Pinoké H1",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Stan Thoolen",
+          "club": "Laren H1",
+          "minuut": 45,
+          "type": "sc"
+        },
+        {
+          "naam": "Quinten Moojen",
+          "club": "Laren H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 49,
+          "type": "sc"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren H1",
+          "minuut": 53,
+          "type": "sb"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren H1",
+          "minuut": 14,
+          "type": "geel"
+        },
+        {
+          "naam": "Pelle Vos",
+          "club": "Laren H1",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Jack Waller",
+          "club": "Pinoké H1",
+          "minuut": 40,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -2862,5 +2959,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:10.353Z"
+  "bijgewerkt": "2026-04-04T07:31:12.223Z"
 }
