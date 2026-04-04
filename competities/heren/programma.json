@@ -3468,6 +3468,67 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Laren",
+      "score_thuis": 7,
+      "score_uit": 0,
+      "datum": "2025-11-16",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "Kampong H1",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong H1",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 32,
+          "type": "SC"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 38,
+          "type": "SB"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 40,
+          "type": "SC"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 48,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren H1",
+          "minuut": 38,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4076,5 +4137,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:23.504Z"
+  "bijgewerkt": "2026-04-04T17:02:25.334Z"
 }
