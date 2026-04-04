@@ -5425,6 +5425,55 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Schaerweijde",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-03-22",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tom Provily",
+          "club": "HDM H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Niels de Joode",
+          "club": "Schaerweijde H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Schaerweijde H1",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Peppe Veen",
+          "club": "Schaerweijde H1",
+          "minuut": 30,
+          "type": "groen"
+        },
+        {
+          "naam": "Cédric de Gier",
+          "club": "Schaerweijde H1",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Ruben Versteeg",
+          "club": "Schaerweijde H1",
+          "minuut": 45,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -6040,5 +6089,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:57.251Z"
+  "bijgewerkt": "2026-04-04T18:10:58.956Z"
 }
