@@ -2818,6 +2818,60 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "HDM",
+      "score_thuis": 6,
+      "score_uit": 1,
+      "datum": "2025-10-30",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong H1",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 25,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Hidde Plantenga",
+          "club": "Kampong H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "HDM H1",
+          "minuut": 43,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 47,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "HDM",
       "score_thuis": 4,
@@ -3711,5 +3765,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:22.165Z"
+  "bijgewerkt": "2026-04-04T07:49:24.207Z"
 }
