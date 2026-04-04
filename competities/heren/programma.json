@@ -4315,6 +4315,91 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 8,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Onbekend",
+          "club": "Hurley H1",
+          "minuut": null,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 4,
+          "type": "SC"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké H1",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké H1",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Indra Aerts",
+          "club": "Pinoké H1",
+          "minuut": 26,
+          "type": "SC"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 32,
+          "type": "SC"
+        },
+        {
+          "naam": "Pepijn van der Valk",
+          "club": "Pinoké H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 57,
+          "type": "SC"
+        },
+        {
+          "naam": "Noam Sheridan",
+          "club": "Pinoké H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Pinoké H1",
+          "minuut": 18,
+          "type": "groen"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Daan Dekker",
+          "club": "Pinoké H1",
+          "minuut": 45,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4923,5 +5008,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:44.426Z"
+  "bijgewerkt": "2026-04-04T17:30:45.964Z"
 }
