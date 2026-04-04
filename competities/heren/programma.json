@@ -5199,6 +5199,73 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-03-22",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Ruben van Meer",
+          "club": "Laren H1",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pelle Vos",
+          "club": "Laren H1",
+          "minuut": 13,
+          "type": "groen"
+        },
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Corstens",
+          "club": "Amsterdam H1",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Diederick van Berckel",
+          "club": "Laren H1",
+          "minuut": 56,
+          "type": "geel"
+        },
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren H1",
+          "minuut": 59,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5814,5 +5881,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:50.395Z"
+  "bijgewerkt": "2026-04-04T18:10:52.060Z"
 }
