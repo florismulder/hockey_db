@@ -3425,6 +3425,54 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Pinoké",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2025-11-09",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Texas Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Jan van 't Land",
+          "club": "Bloemendaal H1",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Marco Miltkau",
+          "club": "Bloemendaal H1",
+          "minuut": 48,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Bloemendaal",
       "score_thuis": 1,
@@ -4436,5 +4484,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:35.700Z"
+  "bijgewerkt": "2026-04-04T17:02:37.348Z"
 }
