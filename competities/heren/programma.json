@@ -5211,25 +5211,25 @@
           "naam": "Jelle Galema",
           "club": "Oranje-Rood H1",
           "minuut": 6,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Tijmen Reyenga",
           "club": "Oranje-Rood H1",
           "minuut": 15,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Oranje-Rood H1",
+          "club": "Pinoké H1",
           "minuut": 16,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 41,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Henrik Mertgens",
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:48.719Z"
+  "bijgewerkt": "2026-04-04T18:10:50.395Z"
 }
