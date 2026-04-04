@@ -2872,6 +2872,67 @@
       "kaarten": []
     },
     {
+      "thuis": "Hurley",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2025-10-30",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 53,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Max Kreft",
+          "club": "Hurley H1",
+          "minuut": 10,
+          "type": "groen"
+        },
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Hurley H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 44,
+          "type": "groen"
+        },
+        {
+          "naam": "Marc Vizcaino",
+          "club": "Hurley H1",
+          "minuut": 56,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "HDM",
       "score_thuis": 4,
@@ -3765,5 +3826,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:24.207Z"
+  "bijgewerkt": "2026-04-04T07:49:25.987Z"
 }
