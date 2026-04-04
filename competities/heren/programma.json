@@ -4162,6 +4162,79 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Laren",
+      "score_thuis": 5,
+      "score_uit": 2,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Gerard Clapes",
+          "club": "Oranje-Rood H1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Laren H1",
+          "minuut": 12,
+          "type": "sc"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren H1",
+          "minuut": 17,
+          "type": "sc"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Laren H1",
+          "minuut": 26,
+          "type": "sc"
+        },
+        {
+          "naam": "Quinten Moojen",
+          "club": "Oranje-Rood H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pelle Vos",
+          "club": "Laren H1",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Thomas Selles",
+          "club": "Laren H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren H1",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4770,5 +4843,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:46.242Z"
+  "bijgewerkt": "2026-04-04T17:30:41.254Z"
 }
