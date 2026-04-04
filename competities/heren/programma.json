@@ -2733,6 +2733,30 @@
       ]
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jan van 't Land",
+          "club": "Bloemendaal H1",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 30,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -3341,5 +3365,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:06.467Z"
+  "bijgewerkt": "2026-04-04T07:49:09.253Z"
 }
