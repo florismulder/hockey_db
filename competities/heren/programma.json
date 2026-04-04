@@ -3559,6 +3559,79 @@
       "kaarten": []
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Pinoké",
+      "score_thuis": 4,
+      "score_uit": 5,
+      "datum": "2025-11-16",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jeroen Hertzberger",
+          "club": "Rotterdam H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Dylan Lucieer",
+          "club": "Rotterdam H1",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 43,
+          "type": "SB"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 44,
+          "type": "SC"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 56,
+          "type": "SC"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 60,
+          "type": "SC"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Menno Boeren",
+          "club": "Rotterdam H1",
+          "minuut": 30,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4167,5 +4240,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:27.113Z"
+  "bijgewerkt": "2026-04-04T17:02:28.859Z"
 }
