@@ -2684,6 +2684,91 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "score_thuis": 5,
+      "score_uit": 3,
+      "datum": "2025-10-30",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 13,
+          "type": "SC"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 14,
+          "type": "SC"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 14,
+          "type": "SC"
+        },
+        {
+          "naam": "Jasper Brinkman",
+          "club": "Bloemendaal H1",
+          "minuut": 19,
+          "type": "SC"
+        },
+        {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal H1",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "SC"
+        },
+        {
+          "naam": "Marco Miltkau",
+          "club": "Bloemendaal H1",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Veen",
+          "club": "Amsterdam H1",
+          "minuut": 24,
+          "type": "groen"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 43,
+          "type": "groen"
+        },
+        {
+          "naam": "Casper Berkman",
+          "club": "Amsterdam H1",
+          "minuut": 49,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "HDM",
       "score_thuis": 4,
@@ -3577,5 +3662,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:18.374Z"
+  "bijgewerkt": "2026-04-04T07:49:20.313Z"
 }
