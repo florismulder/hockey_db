@@ -2113,6 +2113,49 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Terrance Pieters",
+          "club": "Kampong H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Laurens Nievelstein",
+          "club": "Hurley H1",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Terrance Pieters",
+          "club": "Kampong H1",
+          "minuut": 45,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mees Loman",
+          "club": "Hurley H1",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Rutger Plat",
+          "club": "Hurley H1",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2721,5 +2764,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:04.699Z"
+  "bijgewerkt": "2026-04-04T07:31:06.579Z"
 }
