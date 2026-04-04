@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-03",
+  "bijgewerkt": "2026-04-04",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -4439,8 +4439,8 @@
       "club": "Kampong",
       "geslacht": "heren",
       "rugnummer": 32,
-      "keeper": false,
-      "aanvoerder": true,
+      "keeper": true,
+      "aanvoerder": false,
       "nationaliteit": "",
       "land_code": "",
       "oranje": "jong",
