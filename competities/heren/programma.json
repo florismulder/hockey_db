@@ -1445,6 +1445,55 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-10-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun van Uunen",
+          "club": "Laren H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Chad Futcher",
+          "club": "Klein Zwitserland H1",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pelle Vos",
+          "club": "Laren H1",
+          "minuut": 31,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Jones",
+          "club": "Laren H1",
+          "minuut": 46,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2053,5 +2102,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T15:34:17.786Z"
+  "bijgewerkt": "2026-04-04T07:19:01.493Z"
 }
