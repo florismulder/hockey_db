@@ -1494,6 +1494,55 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-10-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 19,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 45,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Arthur de Sloover",
+          "club": "Pinoké H1",
+          "minuut": 34,
+          "type": "groen"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood H1",
+          "minuut": 42,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2102,5 +2151,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:01.493Z"
+  "bijgewerkt": "2026-04-04T07:19:02.917Z"
 }
