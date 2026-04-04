@@ -2017,6 +2017,17 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-10-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2625,5 +2636,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:14.401Z"
+  "bijgewerkt": "2026-04-04T07:31:02.844Z"
 }
