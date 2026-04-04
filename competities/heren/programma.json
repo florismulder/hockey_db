@@ -4272,6 +4272,49 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland H1",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Sander de Wijn",
+          "club": "Kampong H1",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Bram van Battum",
+          "club": "Kampong H1",
+          "minuut": 35,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4880,5 +4923,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:42.798Z"
+  "bijgewerkt": "2026-04-04T17:30:44.426Z"
 }
