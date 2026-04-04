@@ -5266,6 +5266,31 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-03-22",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 30,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joaquin Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 53,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5881,5 +5906,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:52.060Z"
+  "bijgewerkt": "2026-04-04T18:10:53.779Z"
 }
