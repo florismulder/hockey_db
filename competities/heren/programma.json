@@ -4315,6 +4315,43 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 45,
+          "type": "sc"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 54,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Kampong H1",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Rotterdam",
       "score_thuis": 2,
@@ -5259,5 +5296,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:54.011Z"
+  "bijgewerkt": "2026-04-04T17:30:55.515Z"
 }
