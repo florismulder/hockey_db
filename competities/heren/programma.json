@@ -3468,6 +3468,61 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Rotterdam",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-11-13",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 14,
+          "type": "strafbal"
+        },
+        {
+          "naam": "Rik Sprengers",
+          "club": "Kampong H1",
+          "minuut": 15,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Terrance Pieters",
+          "club": "Kampong H1",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 33,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Steijn van Heijningen",
+          "club": "Rotterdam H1",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Sander de Wijn",
+          "club": "Kampong H1",
+          "minuut": 33,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Schaerweijde",
       "uit": "Klein Zwitserland",
       "score_thuis": 1,
@@ -4381,5 +4436,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:33.956Z"
+  "bijgewerkt": "2026-04-04T17:02:35.700Z"
 }
