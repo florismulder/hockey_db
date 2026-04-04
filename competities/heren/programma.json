@@ -1445,6 +1445,49 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-10-04",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun van Aalderen",
+          "club": "Schaerweijde H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus van den Boezem",
+          "club": "HDM H1",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mick Bosse",
+          "club": "Schaerweijde H1",
+          "minuut": 26,
+          "type": "geel"
+        },
+        {
+          "naam": "Juup Veen",
+          "club": "HDM H1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Kampong",
       "score_thuis": 5,
@@ -2582,5 +2625,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:12.950Z"
+  "bijgewerkt": "2026-04-04T07:19:14.401Z"
 }
