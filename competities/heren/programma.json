@@ -3632,6 +3632,49 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-11-16",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Arno van Dessel",
+          "club": "Bloemendaal H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Arno van Dessel",
+          "club": "Bloemendaal H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Jan van 't Land",
+          "club": "HDM H1",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Tom Provily",
+          "club": "HDM H1",
+          "minuut": 31,
+          "type": "groen"
+        },
+        {
+          "naam": "Jasper Brinkman",
+          "club": "Bloemendaal H1",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4240,5 +4283,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:28.859Z"
+  "bijgewerkt": "2026-04-04T17:02:30.468Z"
 }
