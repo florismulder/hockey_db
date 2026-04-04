@@ -1590,6 +1590,43 @@
       "kaarten": []
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "Oranje-Rood",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2025-10-05",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Klein Zwitserland H1",
+          "minuut": 26,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Adrian Lehmann-Richter",
+          "club": "Oranje-Rood H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Klein Zwitserland H1",
+          "minuut": 44,
+          "type": "groen"
+        },
+        {
+          "naam": "Joep de Mol",
+          "club": "Oranje-Rood H1",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Laren",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -2400,5 +2437,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:08.680Z"
+  "bijgewerkt": "2026-04-04T07:19:10.038Z"
 }
