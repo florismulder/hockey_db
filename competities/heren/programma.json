@@ -2156,6 +2156,37 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2025-10-26",
+      "tijdstip": "14:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 33,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 16,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Corstens",
+          "club": "Amsterdam H1",
+          "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2764,5 +2795,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:06.579Z"
+  "bijgewerkt": "2026-04-04T07:31:08.445Z"
 }
