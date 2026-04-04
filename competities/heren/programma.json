@@ -5442,7 +5442,7 @@
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland H1",
           "minuut": 12,
-          "type": "strafcorner"
+          "type": "veld"
         },
         {
           "naam": "Willem van Campen",
@@ -5454,13 +5454,13 @@
           "naam": "Ties Klinkhamer",
           "club": "Klein Zwitserland H1",
           "minuut": 27,
-          "type": "strafcorner"
+          "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland H1",
           "minuut": 40,
-          "type": "strafcorner"
+          "type": "veld"
         },
         {
           "naam": "Luke Friederich",
@@ -5472,13 +5472,13 @@
       "kaarten": [
         {
           "naam": "Wout Kooijman",
-          "club": "Klein Zwitserland H1",
+          "club": "Laren H1",
           "minuut": 36,
           "type": "groen"
         },
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "Laren H1",
           "minuut": 50,
           "type": "groen"
         }
@@ -5807,5 +5807,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:41.751Z"
+  "bijgewerkt": "2026-04-04T18:10:43.503Z"
 }
