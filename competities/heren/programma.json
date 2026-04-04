@@ -1627,6 +1627,85 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Laren",
+      "score_thuis": 9,
+      "score_uit": 0,
+      "datum": "2025-10-05",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Amsterdam H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Luke Dommershuijzen",
+          "club": "Amsterdam H1",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren H1",
+          "minuut": 38,
+          "type": "groen"
+        },
+        {
+          "naam": "Joost Tolboom",
+          "club": "Laren H1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Laren",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -2437,5 +2516,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:10.038Z"
+  "bijgewerkt": "2026-04-04T07:19:11.516Z"
 }
