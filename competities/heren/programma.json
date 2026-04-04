@@ -4400,6 +4400,49 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 30,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Mick Bosse",
+          "club": "Schaerweijde H1",
+          "minuut": 41,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Maarten Bruisten",
+          "club": "Schaerweijde H1",
+          "minuut": 18,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Schaerweijde H1",
+          "minuut": 24,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal H1",
+          "minuut": 48,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5008,5 +5051,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:45.964Z"
+  "bijgewerkt": "2026-04-04T17:30:47.614Z"
 }
