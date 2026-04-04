@@ -5357,10 +5357,17 @@
           "naam": "Nikas Berendts",
           "club": "Hurley H1",
           "minuut": 59,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Fred Newbold",
+          "club": "Hurley H1",
+          "minuut": 34,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "Amsterdam",
@@ -5807,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:45.272Z"
+  "bijgewerkt": "2026-04-04T18:10:46.995Z"
 }
