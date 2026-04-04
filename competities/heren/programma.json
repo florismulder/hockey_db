@@ -4162,6 +4162,49 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 60,
+          "type": "SB"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tobias Bovelander",
+          "club": "Bloemendaal H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Rotterdam",
       "score_thuis": 2,
@@ -5106,5 +5149,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:49.136Z"
+  "bijgewerkt": "2026-04-04T17:30:50.778Z"
 }
