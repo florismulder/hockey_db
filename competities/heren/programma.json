@@ -4162,6 +4162,73 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2026-02-28",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Eduard De Ignacio-Simó",
+          "club": "Den Bosch H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch H1",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joppe Wolbert",
+          "club": "Laren H1",
+          "minuut": 8,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Reyenga",
+          "club": "Laren H1",
+          "minuut": 11,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren H1",
+          "minuut": 52,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Rotterdam",
       "score_thuis": 1,
@@ -5357,5 +5424,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:57.057Z"
+  "bijgewerkt": "2026-04-04T17:30:58.631Z"
 }
