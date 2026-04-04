@@ -5364,6 +5364,67 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2026-03-22",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Nick van Trigt",
+          "club": "Rotterdam H1",
+          "minuut": 48,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Noam Sheridan",
+          "club": "Rotterdam H1",
+          "minuut": 9,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Justen Blok",
+          "club": "Rotterdam H1",
+          "minuut": 12,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5979,5 +6040,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:55.474Z"
+  "bijgewerkt": "2026-04-04T18:10:57.251Z"
 }
