@@ -49,6 +49,11 @@ function formatNieuwsDatum(str) {
   // yyyy-mm-dd → zet om naar dd-mm-yyyy
   const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (m) return `${m[3]}-${m[2]}-${m[1]}`;
+  // Fallback: probeer als generieke datumstring te parsen (bijv. "Tue Aug 12 2025...")
+  const d = new Date(s);
+  if (!isNaN(d.getTime())) {
+    return `${String(d.getDate()).padStart(2,'0')}-${String(d.getMonth()+1).padStart(2,'0')}-${d.getFullYear()}`;
+  }
   return s.slice(0,10);
 }
 
@@ -916,7 +921,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                   return pd(b)-pd(a);
                 }).map(([key,item],i)=>(
                   <div key={i} style={{marginBottom:12,background:"var(--surface2)",borderRadius:7,padding:"10px 12px",border:"1px solid var(--border)"}}>
-                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum(item.datum.slice(0,10))}</div>
+                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum(item.datum)}</div>
                     {item.titel&&item.link?(
                       <a href={item.link} target="_blank" rel="noopener noreferrer"
                         style={{fontSize:12,fontWeight:600,marginBottom:6,display:"block",color:"var(--accent)",textDecoration:"none"}}
