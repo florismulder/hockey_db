@@ -1,0 +1,189 @@
+{
+  "seizoen": "1982-1983",
+  "slug": "1982_1983",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Nijmegen",
+    "Bloemendaal"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 6,
+      "verloren": 2,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 38,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 29,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 3,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 7,
+      "verloren": 6,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 10,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 7,
+      "verloren": 6,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 5,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 1,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 22,
+      "doelsaldo": -7,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 11,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -7,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "GHBS",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 13,
+      "doelpunten_tegen": 26,
+      "doelsaldo": -13,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 27,
+      "doelsaldo": -9,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -24,
+      "punten": 13,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -27,
+      "punten": 11,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Lisanne Lejeune",
+      "club": null,
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": null,
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-04"
+}
