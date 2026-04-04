@@ -5385,9 +5385,9 @@
         },
         {
           "naam": "David Huussen",
-          "club": "HDM H1",
+          "club": "Amsterdam H1",
           "minuut": 46,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Dayaan Cassiem",
@@ -5397,15 +5397,15 @@
         },
         {
           "naam": "Luke Dommershuijzen",
-          "club": "Amsterdam H1",
+          "club": "HDM H1",
           "minuut": 53,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Pepijn Schras",
-          "club": "HDM H1",
+          "club": "Amsterdam H1",
           "minuut": 15,
           "type": "groen"
         },
@@ -5417,7 +5417,7 @@
         },
         {
           "naam": "Lucas Corstens",
-          "club": "HDM H1",
+          "club": "Amsterdam H1",
           "minuut": 29,
           "type": "groen"
         },
@@ -5807,5 +5807,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:43.503Z"
+  "bijgewerkt": "2026-04-04T18:10:45.272Z"
 }
