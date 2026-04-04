@@ -1,0 +1,183 @@
+{
+  "seizoen": "1981-1982",
+  "slug": "1981_1982",
+  "geslacht": "dames",
+  "kampioen": "HGC",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Groningen",
+    "Gooische"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 39,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 81,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 63,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 9,
+      "verloren": 4,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 8,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 1,
+      "punten": 24,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -6,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 26,
+      "doelsaldo": -4,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 37,
+      "doelsaldo": -15,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -6,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -18,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "GHBS",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 8,
+      "verloren": 11,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -18,
+      "punten": 14,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 8,
+      "verloren": 11,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 30,
+      "doelsaldo": -15,
+      "punten": 14,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Gooische",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -32,
+      "punten": 13,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Sandra Le Poole",
+      "club": null,
+      "doelpunten": 31,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": null,
+  "bijgewerkt": "2026-04-04"
+}
