@@ -3528,6 +3528,43 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2025-11-09",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam H1",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 52,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tijs van Horn",
+          "club": "Schaerweijde H1",
+          "minuut": 33,
+          "type": "groen"
+        },
+        {
+          "naam": "Jens Hagen",
+          "club": "Amsterdam H1",
+          "minuut": 45,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Bloemendaal",
       "score_thuis": 1,
@@ -4539,5 +4576,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:39.078Z"
+  "bijgewerkt": "2026-04-04T17:02:40.999Z"
 }
