@@ -2757,6 +2757,67 @@
       "kaarten": []
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 22,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Nick van Trigt",
+          "club": "Rotterdam H1",
+          "minuut": 25,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Justen Blok",
+          "club": "Rotterdam H1",
+          "minuut": 2,
+          "type": "groen"
+        },
+        {
+          "naam": "Joaquín Menini",
+          "club": "Rotterdam H1",
+          "minuut": 24,
+          "type": "geel"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 31,
+          "type": "groen"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Rotterdam H1",
+          "minuut": 46,
+          "type": "groen"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Rotterdam H1",
+          "minuut": 55,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -3365,5 +3426,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:09.253Z"
+  "bijgewerkt": "2026-04-04T07:49:11.817Z"
 }
