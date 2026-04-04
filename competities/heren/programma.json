@@ -4235,6 +4235,43 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-08",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 49,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 60,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 53,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4843,5 +4880,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:41.254Z"
+  "bijgewerkt": "2026-04-04T17:30:42.798Z"
 }
