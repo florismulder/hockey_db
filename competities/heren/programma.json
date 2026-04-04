@@ -2933,6 +2933,79 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Oranje-Rood",
+      "score_thuis": 1,
+      "score_uit": 5,
+      "datum": "2025-10-30",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Arthur de Sloover",
+          "club": "Oranje-Rood H1",
+          "minuut": 17,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun van Aalderen",
+          "club": "Schaerweijde H1",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Bob de Voogd",
+          "club": "Oranje-Rood H1",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Florian Gosselink",
+          "club": "Oranje-Rood H1",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Michiel Moret",
+          "club": "Schaerweijde H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Juup Veen",
+          "club": "Schaerweijde H1",
+          "minuut": 54,
+          "type": "groen"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood H1",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "HDM",
       "score_thuis": 4,
@@ -3826,5 +3899,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:25.987Z"
+  "bijgewerkt": "2026-04-04T07:49:27.738Z"
 }
