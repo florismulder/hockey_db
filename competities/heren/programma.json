@@ -3425,6 +3425,61 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Klein Zwitserland",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2025-11-15",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Niels de Joode",
+          "club": "Schaerweijde H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Klein Zwitserland H1",
+          "minuut": 28,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Graeme Scott",
+          "club": "Schaerweijde H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland H1",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Douwe Steens",
+          "club": "Klein Zwitserland H1",
+          "minuut": 56,
+          "type": "groen"
+        },
+        {
+          "naam": "Peppe Veen",
+          "club": "Schaerweijde H1",
+          "minuut": 56,
+          "type": "groen"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 57,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4283,5 +4338,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:30.468Z"
+  "bijgewerkt": "2026-04-04T17:02:32.249Z"
 }
