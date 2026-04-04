@@ -2017,6 +2017,60 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 4,
+      "datum": "2025-10-18",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Arno van Dessel",
+          "club": "Bloemendaal H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal H1",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Bob de Voogd",
+          "club": "Oranje-Rood H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood H1",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Laren",
       "score_thuis": 8,
@@ -3238,5 +3292,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:19.704Z"
+  "bijgewerkt": "2026-04-04T07:31:21.901Z"
 }
