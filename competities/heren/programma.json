@@ -2854,6 +2854,60 @@
       "kaarten": []
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Hurley",
+      "score_thuis": 6,
+      "score_uit": 1,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Pol Cabre-Verdiell Badia",
+          "club": "Oranje-Rood H1",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Hurley H1",
+          "minuut": 30,
+          "type": "SC"
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 36,
+          "type": "SC"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood H1",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -3462,5 +3516,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:14.391Z"
+  "bijgewerkt": "2026-04-04T07:49:16.383Z"
 }
