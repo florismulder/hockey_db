@@ -4205,6 +4205,67 @@
       ]
     },
     {
+      "thuis": "Pinoké",
+      "uit": "Schaerweijde",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké H1",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Valk",
+          "club": "Pinoké H1",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 47,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joppe Stappenbelt",
+          "club": "Pinoké H1",
+          "minuut": 7,
+          "type": "groen"
+        },
+        {
+          "naam": "Stijn Draaijer",
+          "club": "Schaerweijde H1",
+          "minuut": 19,
+          "type": "groen"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde H1",
+          "minuut": 37,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Rotterdam",
       "score_thuis": 2,
@@ -5149,5 +5210,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:50.778Z"
+  "bijgewerkt": "2026-04-04T17:30:52.369Z"
 }
