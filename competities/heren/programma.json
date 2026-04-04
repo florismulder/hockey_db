@@ -1542,6 +1542,54 @@
       ]
     },
     {
+      "thuis": "Pinoké",
+      "uit": "Den Bosch",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2025-10-05",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Miles Bukkens",
+          "club": "Onbekend",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Jacob Draper",
+          "club": "Onbekend",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Onbekend",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Indra Aerts",
+          "club": "Onbekend",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Onbekend",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Onbekend",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Laren",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -2352,5 +2400,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:07.220Z"
+  "bijgewerkt": "2026-04-04T07:19:08.680Z"
 }
