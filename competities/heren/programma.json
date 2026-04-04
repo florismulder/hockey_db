@@ -3529,6 +3529,36 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "datum": "2025-11-16",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam H1",
+          "minuut": 56,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -4137,5 +4167,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:25.334Z"
+  "bijgewerkt": "2026-04-04T17:02:27.113Z"
 }
