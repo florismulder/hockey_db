@@ -2818,6 +2818,42 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "Schaerweijde",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Schaerweijde H1",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Stijn Draaijer",
+          "club": "Schaerweijde H1",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Jens Hagen",
+          "club": "Schaerweijde H1",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren H1",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -3426,5 +3462,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:11.817Z"
+  "bijgewerkt": "2026-04-04T07:49:14.391Z"
 }
