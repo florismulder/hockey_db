@@ -1706,6 +1706,72 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Hurley",
+      "score_thuis": 9,
+      "score_uit": 0,
+      "datum": "2025-10-05",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 3,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 10,
+          "type": "sc"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam H1",
+          "minuut": 41,
+          "type": "sc"
+        },
+        {
+          "naam": "Menno Boeren",
+          "club": "Rotterdam H1",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 57,
+          "type": "sc"
+        },
+        {
+          "naam": "Matthijs van der Wielen",
+          "club": "Rotterdam H1",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Laren",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -2516,5 +2582,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:11.516Z"
+  "bijgewerkt": "2026-04-04T07:19:12.950Z"
 }
