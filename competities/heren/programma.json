@@ -1604,6 +1604,49 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-10-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 59,
+          "type": "strafbal"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Ruben Versteeg",
+          "club": "HDM H1",
+          "minuut": 8,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -2212,5 +2255,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:19:04.283Z"
+  "bijgewerkt": "2026-04-04T07:19:05.749Z"
 }
