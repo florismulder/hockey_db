@@ -4266,6 +4266,55 @@
       ]
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-03-01",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Willem van Campen",
+          "club": "Klein Zwitserland H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Imko de Vries",
+          "club": "Hurley H1",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Štěpán Klaban",
+          "club": "Klein Zwitserland H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn Jones",
+          "club": "Klein Zwitserland H1",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Ties Klinkhamer",
+          "club": "Klein Zwitserland H1",
+          "minuut": 47,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Rotterdam",
       "score_thuis": 2,
@@ -5210,5 +5259,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:30:52.369Z"
+  "bijgewerkt": "2026-04-04T17:30:54.011Z"
 }
