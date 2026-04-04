@@ -2199,6 +2199,42 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "HDM",
+      "score_thuis": 0,
+      "score_uit": 4,
+      "datum": "2025-10-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tom Provily",
+          "club": "HDM H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Mats Dicke",
+          "club": "HDM H1",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM H1",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM H1",
+          "minuut": 54,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "HDM",
       "uit": "Klein Zwitserland",
       "score_thuis": 2,
@@ -3044,5 +3080,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:14.122Z"
+  "bijgewerkt": "2026-04-04T07:31:16.169Z"
 }
