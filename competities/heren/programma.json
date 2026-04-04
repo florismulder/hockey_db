@@ -5078,6 +5078,79 @@
       ]
     },
     {
+      "thuis": "Laren",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-03-15",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Balder Reyenga",
+          "club": "HDM H1",
+          "minuut": 34,
+          "type": "sc"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM H1",
+          "minuut": 50,
+          "type": "sc"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "Laren H1",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM H1",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren H1",
+          "minuut": 15,
+          "type": "groen"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM H1",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM H1",
+          "minuut": 38,
+          "type": "groen"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Laren H1",
+          "minuut": 46,
+          "type": "geel"
+        },
+        {
+          "naam": "Quinten Moojen",
+          "club": "Laren H1",
+          "minuut": 49,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5686,5 +5759,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:55:47.143Z"
+  "bijgewerkt": "2026-04-04T17:55:48.784Z"
 }
