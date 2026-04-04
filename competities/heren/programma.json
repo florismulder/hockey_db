@@ -5199,6 +5199,85 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Pinoké",
+      "score_thuis": 6,
+      "score_uit": 3,
+      "datum": "2026-03-21",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Den Bosch H1",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Sorsby",
+          "club": "Den Bosch H1",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 19,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 29,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 36,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 38,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch H1",
+          "minuut": 48,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Pinoké H1",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tim Knapper",
+          "club": "Pinoké H1",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Laren",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -6089,5 +6168,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:58.956Z"
+  "bijgewerkt": "2026-04-04T18:11:00.692Z"
 }
