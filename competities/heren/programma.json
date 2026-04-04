@@ -5495,33 +5495,33 @@
       "scorers": [
         {
           "naam": "Koen Bijen",
-          "club": "Den Bosch H1",
+          "club": "Bloemendaal H1",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
+          "club": "Bloemendaal H1",
           "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Den Bosch H1",
           "minuut": 52,
-          "type": "SC"
+          "type": "strafcorner"
         },
         {
           "naam": "Timo Boers",
-          "club": "Bloemendaal H1",
+          "club": "Den Bosch H1",
           "minuut": 57,
-          "type": "SC"
+          "type": "strafcorner"
         },
         {
           "naam": "Zachary Wallace",
           "club": "Den Bosch H1",
           "minuut": 60,
-          "type": "SB"
+          "type": "strafbal"
         }
       ],
       "kaarten": [
@@ -5807,5 +5807,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:58:46.412Z"
+  "bijgewerkt": "2026-04-04T18:10:41.751Z"
 }
