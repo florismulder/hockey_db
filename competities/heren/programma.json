@@ -4816,6 +4816,43 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-03-15",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 29,
+          "type": "strafbal"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Nikas Berendts",
+          "club": "Hurley H1",
+          "minuut": 30,
+          "type": "groen"
+        },
+        {
+          "naam": "Theun de Leeuw",
+          "club": "Hurley H1",
+          "minuut": 40,
+          "type": "groen"
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal H1",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5424,5 +5461,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:32:56.324Z"
+  "bijgewerkt": "2026-04-04T17:55:42.293Z"
 }
