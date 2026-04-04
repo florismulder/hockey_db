@@ -1,0 +1,519 @@
+{
+  "seizoen": "2016-2017",
+  "slug": "2016_2017",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Pinoké",
+    "MOP"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 3,
+      "verloren": 0,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 13,
+      "doelsaldo": 54,
+      "punten": 60,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 14,
+      "doelsaldo": 45,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 34,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 1,
+      "verloren": 9,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 22,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 7,
+      "verloren": 5,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 12,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -4,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -11,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 9,
+      "verloren": 8,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -15,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -17,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -33,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -44,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 5,
+      "verloren": 16,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -43,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 23,
+      "vd": 0,
+      "sc": 21,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Yibbi Jansen",
+      "club": "Oranje Rood",
+      "doelpunten": 20,
+      "vd": 2,
+      "sc": 17,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 16,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Sophie Bray",
+      "club": "Kampong",
+      "doelpunten": 16,
+      "vd": 16,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Lieke van Wijk",
+      "club": "Laren",
+      "doelpunten": 13,
+      "vd": 1,
+      "sc": 11,
+      "sb": 1
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Teun de Nooijer"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "Groningen",
+      "naam": "Marc Materek"
+    },
+    {
+      "club": "hdm",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Santi Freixa"
+    },
+    {
+      "club": "Laren",
+      "naam": "Donald Drost"
+    },
+    {
+      "club": "MOP",
+      "naam": "Karel Alferink"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Robert Justus"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Tina Bachmann"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Den Bosch",
+        "score": "0-2",
+        "datum": "14-05-2017",
+        "scorers": [
+          {
+            "naam": "Keetels",
+            "club": "Den Bosch",
+            "minuut": 18
+          },
+          {
+            "naam": "Matla",
+            "club": "Den Bosch",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "0-1",
+        "datum": "14-05-2017",
+        "scorers": [
+          {
+            "naam": "Wijsman",
+            "club": "SCHC",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Oranje-Rood",
+        "score": "5-0",
+        "datum": "20-05-2017",
+        "scorers": [
+          {
+            "naam": "Paumen",
+            "club": "Den Bosch",
+            "minuut": 12
+          },
+          {
+            "naam": "Paumen",
+            "club": "Den Bosch",
+            "minuut": 32
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 34
+          },
+          {
+            "naam": "Keil",
+            "club": "Den Bosch",
+            "minuut": 40
+          },
+          {
+            "naam": "Krekelaar",
+            "club": "Den Bosch",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "1-1",
+        "datum": "20-05-2017",
+        "scorers": [
+          {
+            "naam": "Van Maasakker",
+            "club": "SCHC",
+            "minuut": 50
+          },
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 69
+          }
+        ],
+        "notitie": "Shoot-out 3-4"
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "0-1",
+        "datum": "21-05-2017",
+        "scorers": [
+          {
+            "naam": "Deetman",
+            "club": "Amsterdam",
+            "minuut": 9
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale": {
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "score": "0-1",
+      "datum": "25-05-2017",
+      "scorers": [
+        {
+          "naam": "Krekelaar",
+          "club": "Den Bosch",
+          "minuut": 41
+        }
+      ],
+      "notitie": ""
+    },
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Nijmegen",
+        "uit": "MOP",
+        "score": "2-1",
+        "datum": "03-06-2017",
+        "scorers": [
+          {
+            "naam": "Mathilde Hotting",
+            "club": "MOP",
+            "minuut": 5
+          },
+          {
+            "naam": "Klaartje Mientjes",
+            "club": "Nijmegen",
+            "minuut": 38
+          },
+          {
+            "naam": "Catherin",
+            "club": "Nijmegen",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "MOP",
+        "uit": "Nijmegen",
+        "score": "1-1",
+        "datum": "10-06-2017",
+        "scorers": [
+          {
+            "naam": "Lotte van Dongen",
+            "club": "MOP",
+            "minuut": 55
+          },
+          {
+            "naam": "Senna Bombach",
+            "club": "Nijmegen",
+            "minuut": 68
+          }
+        ],
+        "notitie": "Nijmegen wins shoot-out 1-3"
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "3-2",
+        "datum": "03-06-2017",
+        "scorers": [
+          {
+            "naam": "Melle Spruijt",
+            "club": "Bloemendaal",
+            "minuut": 4
+          },
+          {
+            "naam": "Karlijn Scheepens",
+            "club": "HGC",
+            "minuut": 14
+          },
+          {
+            "naam": "Josien Galama",
+            "club": "Bloemendaal",
+            "minuut": 16
+          },
+          {
+            "naam": "Elselieke van Aken",
+            "club": "HGC",
+            "minuut": 28
+          },
+          {
+            "naam": "Anne Abendroth",
+            "club": "HGC",
+            "minuut": 38
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "2-0",
+        "datum": "10-06-2017",
+        "scorers": [
+          {
+            "naam": "Josien Galama",
+            "club": "Bloemendaal",
+            "minuut": 37
+          },
+          {
+            "naam": "Josien Galama",
+            "club": "Bloemendaal",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "11-06-2017",
+        "scorers": [
+          {
+            "naam": "Joëlle Ketting",
+            "club": "Bloemendaal",
+            "minuut": 10
+          },
+          {
+            "naam": "Anna van den Putten",
+            "club": "HGC",
+            "minuut": 11
+          },
+          {
+            "naam": "Damy Sistermans",
+            "club": "HGC",
+            "minuut": 22
+          },
+          {
+            "naam": "Josien Galama",
+            "club": "Bloemendaal",
+            "minuut": 34
+          },
+          {
+            "naam": "Kate Richardson-Walsh",
+            "club": "Bloemendaal",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-04"
+}
