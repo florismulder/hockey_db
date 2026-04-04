@@ -3425,6 +3425,73 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Laren",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2025-11-08",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imko de Vries",
+          "club": "Hurley H1",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 21,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Joep Hagendoorn",
+          "club": "Hurley H1",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Hurley H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Kenneth Bain",
+          "club": "Laren H1",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley H1",
+          "minuut": 60,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Diederick van Berckel",
+          "club": "Hurley H1",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Valentijn Charbon",
+          "club": "Hurley H1",
+          "minuut": 48,
+          "type": "groen"
+        },
+        {
+          "naam": "Pieter Paul Houting",
+          "club": "Hurley H1",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Pinoké",
       "score_thuis": 3,
@@ -4703,5 +4770,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T17:02:44.594Z"
+  "bijgewerkt": "2026-04-04T17:02:46.242Z"
 }
