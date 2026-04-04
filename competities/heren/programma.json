@@ -2685,6 +2685,55 @@
     },
     {
       "thuis": "Pinoké",
+      "uit": "HDM",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 17,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Daan Bonhof",
+          "club": "Pinoké H1",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké H1",
+          "minuut": 25,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké H1",
+          "minuut": 35,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tom Provily",
+          "club": "HDM H1",
+          "minuut": 28,
+          "type": "groen"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM H1",
+          "minuut": 45,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
       "score_uit": 6,
@@ -3292,5 +3341,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:31:21.901Z"
+  "bijgewerkt": "2026-04-04T07:49:06.467Z"
 }
