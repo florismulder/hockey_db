@@ -5291,6 +5291,79 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 5,
+      "datum": "2026-03-22",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal H1",
+          "minuut": 9,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "Kampong H1",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal H1",
+          "minuut": 23,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Zachary Wallace",
+          "club": "Kampong H1",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Hogenhout",
+          "club": "Kampong H1",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Derck de Vilder",
+          "club": "Bloemendaal H1",
+          "minuut": 51,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sander van de Putte",
+          "club": "Kampong H1",
+          "minuut": 53,
+          "type": "groen"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal H1",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -5906,5 +5979,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T18:10:53.779Z"
+  "bijgewerkt": "2026-04-04T18:10:55.474Z"
 }
