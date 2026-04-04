@@ -2908,6 +2908,67 @@
       "kaarten": []
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2025-11-02",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch H1",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Joppe Wolbert",
+          "club": "Kampong H1",
+          "minuut": 41,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Kampong H1",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Kampong H1",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong H1",
+          "minuut": 47,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pepijn Reijenga",
+          "club": "Den Bosch H1",
+          "minuut": 12,
+          "type": "groen"
+        },
+        {
+          "naam": "Thies Bakker",
+          "club": "Kampong H1",
+          "minuut": 33,
+          "type": "geel"
+        },
+        {
+          "naam": "Cedric van Otterlo",
+          "club": "Den Bosch H1",
+          "minuut": 44,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -3516,5 +3577,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T07:49:16.383Z"
+  "bijgewerkt": "2026-04-04T07:49:18.374Z"
 }
