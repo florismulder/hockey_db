@@ -330,6 +330,43 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lilli de Nooijer",
+          "club": "Bloemendaal",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 48,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Kampong",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -1633,5 +1670,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:36.485Z"
+  "bijgewerkt": "2026-04-05T17:04:37.753Z"
 }
