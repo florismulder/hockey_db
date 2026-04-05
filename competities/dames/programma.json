@@ -330,6 +330,17 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": []
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "Tilburg",
       "score_thuis": 4,
@@ -1399,5 +1410,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:29.098Z"
+  "bijgewerkt": "2026-04-05T17:04:30.363Z"
 }
