@@ -177,7 +177,7 @@
       "sb": null
     },
     {
-      "rang": 2,
+      "rang": null,
       "naam": "Lisanne Lejeune",
       "club": "HGC",
       "doelpunten": 20,
@@ -195,7 +195,7 @@
       "sb": null
     },
     {
-      "rang": 2,
+      "rang": null,
       "naam": "Martine Ohr",
       "club": "HDM",
       "doelpunten": 20,
@@ -205,6 +205,12 @@
     }
   ],
   "coaches": [],
-  "playoffs": null,
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
   "bijgewerkt": "2026-04-05"
 }
