@@ -1,0 +1,183 @@
+{
+  "seizoen": "1984-1985",
+  "slug": "1984_1985",
+  "geslacht": "dames",
+  "kampioen": "HGC",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "GHBS",
+    "Laren"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 2,
+      "verloren": 1,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 63,
+      "punten": 40,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 6,
+      "verloren": 3,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 18,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 7,
+      "verloren": 4,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 22,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 9,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 2,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 9,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -4,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 5,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -5,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 7,
+      "verloren": 10,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -14,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -10,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "GHBS",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -20,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 1,
+      "verloren": 21,
+      "doelpunten_voor": 3,
+      "doelpunten_tegen": 69,
+      "doelsaldo": -66,
+      "punten": 1,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Lisanne Lejeune",
+      "club": "HGC",
+      "doelpunten": 31,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": null,
+  "bijgewerkt": "2026-04-05"
+}
