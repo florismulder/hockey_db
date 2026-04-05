@@ -1,0 +1,659 @@
+{
+  "seizoen": "2012-2013",
+  "slug": "2012_2013",
+  "geslacht": "heren",
+  "kampioen": "Rotterdam",
+  "vicekampioen": "Oranje Zwart",
+  "gedegradeerd": [
+    "Voordaan",
+    "SCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 33,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 0,
+      "verloren": 5,
+      "doelpunten_voor": 90,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 53,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 81,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 36,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 2,
+      "verloren": 4,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 35,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 55,
+      "doelsaldo": 22,
+      "punten": 44,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 1,
+      "verloren": 13,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -3,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -8,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -18,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -17,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 77,
+      "doelsaldo": -23,
+      "punten": 18,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 74,
+      "doelsaldo": -48,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Voordaan",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 97,
+      "doelsaldo": -62,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 26,
+      "vd": 12,
+      "sc": 13,
+      "sb": 1
+    },
+    {
+      "rang": 2,
+      "naam": "Roderick Weusthof",
+      "club": "Kampong",
+      "doelpunten": 24,
+      "vd": 8,
+      "sc": 11,
+      "sb": 5
+    },
+    {
+      "rang": 3,
+      "naam": "Constantijn Jonker",
+      "club": "Kampong",
+      "doelpunten": 20,
+      "vd": 19,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Matt L'Huillier",
+      "club": "Schaerweijde",
+      "doelpunten": 20,
+      "vd": 1,
+      "sc": 19,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Chris Ciriello",
+      "club": "Bloemendaal",
+      "doelpunten": 20,
+      "vd": 0,
+      "sc": 18,
+      "sb": 2
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Taco van den Honert"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Russell Garcia"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "HGC",
+      "naam": "Alejandro Verga"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Joost Bellaart"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Bart Looije"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Pim Wijzenbeek"
+    },
+    {
+      "club": "Voordaan",
+      "naam": "Peter Kalfsterman"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Oranje Zwart",
+        "score": "4-1",
+        "datum": "09-05-2013",
+        "scorers": [
+          {
+            "naam": "Roderick Weusthof",
+            "club": "Kampong",
+            "minuut": 9
+          },
+          {
+            "naam": "Pieter Wiegman",
+            "club": "Kampong",
+            "minuut": 20
+          },
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 44
+          },
+          {
+            "naam": "Bruno van den Bosch",
+            "club": "Kampong",
+            "minuut": 55
+          },
+          {
+            "naam": "Niek van der Schoot",
+            "club": "Kampong",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "1-1 (SO winst Rotterdam)",
+        "datum": "09-05-2013",
+        "scorers": [
+          {
+            "naam": "Fergus Kavanagh",
+            "club": "Bloemendaal",
+            "minuut": 16
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 43
+          }
+        ],
+        "notitie": "Rotterdam wint na shoot-outs"
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Kampong",
+        "score": "3-2",
+        "datum": "11-05-2013",
+        "scorers": [
+          {
+            "naam": "Bruno van den Bosch",
+            "club": "Kampong",
+            "minuut": 11
+          },
+          {
+            "naam": "Jelle Galema",
+            "club": "Oranje Zwart",
+            "minuut": 33
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 43
+          },
+          {
+            "naam": "Sander Baart",
+            "club": "Kampong",
+            "minuut": 45
+          },
+          {
+            "naam": "Sander Baart",
+            "club": "Oranje Zwart",
+            "minuut": 50
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "1-4",
+        "datum": "11-05-2013",
+        "scorers": [
+          {
+            "naam": "Simon Child",
+            "club": "Rotterdam",
+            "minuut": 6
+          },
+          {
+            "naam": "Simon Child",
+            "club": "Rotterdam",
+            "minuut": 37
+          },
+          {
+            "naam": "Chris Ciriello",
+            "club": "Bloemendaal",
+            "minuut": 38
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Kampong",
+        "score": "4-0",
+        "datum": "12-05-2013",
+        "scorers": [
+          {
+            "naam": "Muhammad Rizwan",
+            "club": "Oranje Zwart",
+            "minuut": 25
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 30
+          },
+          {
+            "naam": "Paul Maas",
+            "club": "Oranje Zwart",
+            "minuut": 49
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Oranje Zwart",
+        "score": "2-0",
+        "datum": "25-05-2013",
+        "scorers": [
+          {
+            "naam": "Steve Edwards",
+            "club": "Rotterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Rotterdam",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Jelle Galema",
+            "club": "Oranje Zwart",
+            "minuut": 37
+          },
+          {
+            "naam": "Willem Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 59
+          },
+          {
+            "naam": "Thomas Briels",
+            "club": "Oranje Zwart",
+            "minuut": 53
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 66
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 76
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Rotterdam",
+        "score": "2-3",
+        "datum": "02-06-2013",
+        "scorers": [
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 28
+          },
+          {
+            "naam": "Simon Child",
+            "club": "Rotterdam",
+            "minuut": 42
+          },
+          {
+            "naam": "Niek van der Schoot",
+            "club": "Oranje Zwart",
+            "minuut": 49
+          },
+          {
+            "naam": "Timmo Kranstauber",
+            "club": "Rotterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "Bas Campbell",
+            "club": "Rotterdam",
+            "minuut": 64
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Rotterdam",
+    "playout": [
+      {
+        "thuis": "HIC",
+        "uit": "Schaerweijde",
+        "score": "3-5",
+        "datum": "25-05-2013",
+        "scorers": [
+          {
+            "naam": "Philip Engelkens",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Barend van den Berg",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Floris van Son",
+            "club": "HIC",
+            "minuut": null
+          },
+          {
+            "naam": "Blair Hilton",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Floris van Son",
+            "club": "HIC",
+            "minuut": null
+          },
+          {
+            "naam": "Lloyd Norris-Jones",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Luc Nefkens",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Joris Eshuis",
+            "club": "HIC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "HIC",
+        "score": "6-1",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Matt L'Hullier",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Leonard Posthumus Meyjes",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Lloyd Norris-Jones",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Philip Engelkens",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Matt L'Hullier",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Jos Dauwma",
+            "club": "HIC",
+            "minuut": null
+          },
+          {
+            "naam": "Blair Hilton",
+            "club": "Schaerweijde",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "SCHC",
+        "score": "2-2 (SO winst Tilburg)",
+        "datum": "25-05-2013",
+        "scorers": [
+          {
+            "naam": "Wouter van Griensven",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Jelte van Gennip",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Conor Harte",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Eigen doelpunt",
+            "club": "SCHC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Tilburg",
+        "score": "2-0",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Conor Harte",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Conor Harte",
+            "club": "SCHC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "SCHC",
+        "score": "1-0",
+        "datum": "29-05-2013",
+        "scorers": [
+          {
+            "naam": "Ben Rutten",
+            "club": "Tilburg",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
