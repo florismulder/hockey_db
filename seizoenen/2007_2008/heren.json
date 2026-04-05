@@ -1,0 +1,508 @@
+{
+  "seizoen": "2007-2008",
+  "slug": "2007_2008",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Voordaan"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 93,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 60,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Bloemendaal",
+      "gespeled": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 35,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 53,
+      "doelsaldo": 16,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 6,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 57,
+      "doelsaldo": 7,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 66,
+      "doelsaldo": 1,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -1,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -5,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 60,
+      "doelsaldo": 5,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 57,
+      "doelsaldo": 7,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 75,
+      "doelsaldo": -35,
+      "punten": 19,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 86,
+      "doelsaldo": -46,
+      "punten": 9,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Voordaan",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 76,
+      "doelsaldo": -44,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Taeke Taekema",
+      "club": "Amsterdam",
+      "doelpunten": 43,
+      "vd": 0,
+      "sc": 40,
+      "sb": 3
+    },
+    {
+      "rang": 2,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 28,
+      "vd": 8,
+      "sc": 20,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Wouter Hermkens",
+      "club": "Tilburg",
+      "doelpunten": 26,
+      "vd": 0,
+      "sc": 26,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Sohail Abbas",
+      "club": "Rotterdam",
+      "doelpunten": 22,
+      "vd": 0,
+      "sc": 22,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Rob Reckers",
+      "club": "Oranje Zwart",
+      "doelpunten": 22,
+      "vd": 19,
+      "sc": 0,
+      "sb": 3
+    },
+    {
+      "rang": 6,
+      "naam": "Melchior Looijen",
+      "club": "Kampong",
+      "doelpunten": 21,
+      "vd": 1,
+      "sc": 20,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Ronald Brouwer",
+      "club": "Bloemendaal",
+      "doelpunten": 16,
+      "vd": 10,
+      "sc": 5,
+      "sb": 1
+    },
+    {
+      "rang": 7,
+      "naam": "Constantijn Jonker",
+      "club": "Kampong",
+      "doelpunten": 16,
+      "vd": 16,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Daan Meurer",
+      "club": "Pinoké",
+      "doelpunten": 16,
+      "vd": 1,
+      "sc": 12,
+      "sb": 3
+    },
+    {
+      "rang": 7,
+      "naam": "Lucas Vila",
+      "club": "Tilburg",
+      "doelpunten": 16,
+      "vd": 15,
+      "sc": 0,
+      "sb": 1
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Tilburg",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "01-05-2008",
+        "scorers": [
+          {
+            "naam": "Timman",
+            "club": "Amsterdam",
+            "minuut": 39
+          },
+          {
+            "naam": "Buissant",
+            "club": "Amsterdam",
+            "minuut": 46
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "4-5",
+        "datum": "01-05-2008",
+        "scorers": [
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 13
+          },
+          {
+            "naam": "De Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 34
+          },
+          {
+            "naam": "Taylor",
+            "club": "Rotterdam",
+            "minuut": 34
+          },
+          {
+            "naam": "De Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 36
+          },
+          {
+            "naam": "Jolie",
+            "club": "Bloemendaal",
+            "minuut": 41
+          },
+          {
+            "naam": "Sohail Abbas",
+            "club": "Rotterdam",
+            "minuut": 44
+          },
+          {
+            "naam": "Gommers",
+            "club": "Rotterdam",
+            "minuut": 63
+          },
+          {
+            "naam": "Gommers",
+            "club": "Rotterdam",
+            "minuut": 65
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Tilburg",
+        "score": "4-2",
+        "datum": "03-05-2008",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 31
+          },
+          {
+            "naam": "Lucas Vila",
+            "club": "Tilburg",
+            "minuut": 55
+          },
+          {
+            "naam": "Van der Loo",
+            "club": "Tilburg",
+            "minuut": 60
+          },
+          {
+            "naam": "Huber",
+            "club": "Amsterdam",
+            "minuut": 64
+          },
+          {
+            "naam": "Verga",
+            "club": "Amsterdam",
+            "minuut": 65
+          },
+          {
+            "naam": "Rohof",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "1-0",
+        "datum": "03-05-2008",
+        "scorers": [
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 79
+          }
+        ],
+        "notitie": "golden goal"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HC Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "3-2",
+        "datum": "18-05-2008",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 17
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 29
+          },
+          {
+            "naam": "Laurence Docherty",
+            "club": "Bloemendaal",
+            "minuut": 39
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "0-1",
+        "datum": "24-05-2008",
+        "scorers": [
+          {
+            "naam": "Laurence Docherty",
+            "club": "Bloemendaal",
+            "minuut": 22
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": {
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "score": "2-1",
+      "datum": "25-05-2008",
+      "scorers": [
+        {
+          "naam": "Peter Taylor",
+          "club": "Rotterdam",
+          "minuut": 4
+        },
+        {
+          "naam": "Sohail Abbas",
+          "club": "Rotterdam",
+          "minuut": 10
+        },
+        {
+          "naam": "Wouter Hermkens",
+          "club": "Tilburg",
+          "minuut": 35
+        }
+      ]
+    },
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Hurley",
+        "uit": "Pinoké",
+        "score": "2-1",
+        "datum": "17-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Laren",
+        "score": "1-4",
+        "datum": "17-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Hurley",
+        "score": "4-2",
+        "datum": "18-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Schaerweijde",
+        "score": "1-1 (SO)",
+        "datum": "18-05-2008",
+        "scorers": [],
+        "notitie": "Laren wint na strafballen"
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Pinoké",
+        "score": "0-1",
+        "datum": "24-05-2008",
+        "scorers": [],
+        "notitie": "Pinoké handhaaft zich in de hoofdklasse"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
