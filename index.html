@@ -1259,7 +1259,13 @@ function HistoriePagina({nav}) {
     if(!kamp && !fin && !hf.length) return null;
 
     const hfGroepen = groeperPerMatchup(hf);
-    const finGroep = fin ? {label:`${fin.thuis} – ${fin.uit}`, wedstrijden:[fin]} : null;
+    // finale kan een array zijn (meerduels) of een enkel object
+    const finaleWedstrijden = playoffs.finale_wedstrijden
+      ? (Array.isArray(playoffs.finale_wedstrijden) ? playoffs.finale_wedstrijden : [playoffs.finale_wedstrijden])
+      : fin ? [fin] : [];
+    const finGroep = finaleWedstrijden.length > 0
+      ? groeperPerMatchup(finaleWedstrijden)[0] || {label:`${finaleWedstrijden[0].thuis} – ${finaleWedstrijden[0].uit}`, wedstrijden:finaleWedstrijden}
+      : null;
 
     return (
       <div>
