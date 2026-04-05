@@ -410,6 +410,55 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Julia Duffhuis",
+          "club": "HDM",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Julie van Dam",
+          "club": "Rotterdam",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Melle Vaessen",
+          "club": "Rotterdam",
+          "minuut": 46,
+          "type": "groen"
+        },
+        {
+          "naam": "Floor Holzenbosch",
+          "club": "HDM",
+          "minuut": 46,
+          "type": "geel"
+        },
+        {
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
+          "minuut": 56,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Kampong",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -1713,5 +1762,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:39.044Z"
+  "bijgewerkt": "2026-04-05T17:04:40.330Z"
 }
