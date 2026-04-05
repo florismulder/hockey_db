@@ -464,6 +464,67 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "HDM",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje Horn",
+          "club": "Hurley",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivia Huisman",
+          "club": "Hurley",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Suus Meininger",
+          "club": "Hurley",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lotte Beetsma",
+          "club": "HDM",
+          "minuut": 3,
+          "type": "groen"
+        },
+        {
+          "naam": "Teuntje Horn",
+          "club": "Hurley",
+          "minuut": 31,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "SCHC",
       "score_thuis": 0,
@@ -1229,5 +1290,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:24.203Z"
+  "bijgewerkt": "2026-04-05T17:04:25.436Z"
 }
