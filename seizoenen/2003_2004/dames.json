@@ -1,0 +1,494 @@
+{
+  "seizoen": "2003-2004",
+  "slug": "2003_2004",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Bloemendaal",
+    "Groningen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 2,
+      "verloren": 1,
+      "doelpunten_voor": 103,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 84,
+      "punten": 59,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 51,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 2,
+      "verloren": 3,
+      "doelpunten_voor": 88,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 65,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 0,
+      "verloren": 8,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 30,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 5,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 1,
+      "verloren": 11,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -10,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 1,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -15,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 7,
+      "verloren": 10,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -12,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 0,
+      "verloren": 15,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -36,
+      "punten": 21,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 104,
+      "doelsaldo": -85,
+      "punten": 8,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 3,
+      "verloren": 19,
+      "doelpunten_voor": 9,
+      "doelpunten_tegen": 87,
+      "doelsaldo": -78,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Ageeth Boomgaardt",
+      "club": "Den Bosch",
+      "doelpunten": 36,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 31,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Eefke Mulder",
+      "club": "Nijmegen",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Alyson Annan",
+      "club": "Klein Zwitserland",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Claire Visser",
+      "club": "Rotterdam",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Saskia Fuchs",
+      "club": "Kampong",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Kim de Haas",
+      "club": "Den Bosch",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Florien Cornelis",
+      "club": "Rotterdam",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Lieve van Kessel",
+      "club": "Pinoké",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Eveline Wisse Smit",
+      "club": "Amsterdam",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "0-3",
+        "datum": "06-05-2004",
+        "scorers": [
+          {
+            "naam": "Kim de Haas",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Lieve van Kessel",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Kim de Haas",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "8-2",
+        "datum": "09-05-2004",
+        "scorers": [
+          {
+            "naam": "Minke Booij",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Kim de Haas",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Marjolijn Spruijt",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "4-3",
+        "datum": "06-05-2004",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "3-3 (SO 1-2)",
+        "datum": "09-05-2004",
+        "scorers": [],
+        "notitie": "Amsterdam wint na strafballen: 1-2"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "1-3",
+        "datum": "16-05-2004",
+        "scorers": [
+          {
+            "naam": "Jiske Snoeks",
+            "club": "Amsterdam",
+            "minuut": 53
+          },
+          {
+            "naam": "Maartje Goderie",
+            "club": "Den Bosch",
+            "minuut": 38
+          },
+          {
+            "naam": "Janneke Schopman",
+            "club": "Den Bosch",
+            "minuut": 40
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 42
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-1",
+        "datum": "20-05-2004",
+        "scorers": [
+          {
+            "naam": "Kim de Haas",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Lieve van Kessel",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 12
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "SCHC",
+        "uit": "Hurley",
+        "score": "6-2",
+        "datum": "12-05-2004",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "SCHC",
+        "score": "2-4",
+        "datum": "15-05-2004",
+        "scorers": [],
+        "notitie": "SCHC is gepromoveerd"
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "HIC",
+        "score": "0-1",
+        "datum": "12-05-2004",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Victoria",
+        "score": "0-1",
+        "datum": "20-05-2004",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "Push",
+        "score": "1-2",
+        "datum": "20-05-2004",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Victoria",
+        "uit": "Hurley",
+        "score": "2-1",
+        "datum": "22-05-2004",
+        "scorers": [],
+        "notitie": "Victoria heeft zich gehandhaafd"
+      },
+      {
+        "thuis": "Push",
+        "uit": "HIC",
+        "score": "1-1 (SO 5-4)",
+        "datum": "22-05-2004",
+        "scorers": [],
+        "notitie": "Push heeft zich gehandhaafd"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
