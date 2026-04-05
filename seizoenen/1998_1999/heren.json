@@ -1,0 +1,351 @@
+{
+  "seizoen": "1998-1999",
+  "slug": "1998_1999",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Oranje Zwart",
+  "gedegradeerd": [
+    "Hattem",
+    "Venlo"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 34,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 2,
+      "verloren": 4,
+      "doelpunten_voor": 81,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 34,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 32,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 33,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 0,
+      "verloren": 10,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 13,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 2,
+      "verloren": 9,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 23,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 60,
+      "doelsaldo": 0,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 2,
+      "verloren": 12,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -18,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -10,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 1,
+      "verloren": 15,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 79,
+      "doelsaldo": -32,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Venlo",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 84,
+      "doelsaldo": -52,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 1,
+      "verloren": 19,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 84,
+      "doelsaldo": -58,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 29,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Richard de Snaijer",
+      "club": "HDM",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Piet-Hein Geeris",
+      "club": "Den Bosch",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "4-5",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "5-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Oranje Zwart",
+        "score": "3-3 (SO winnaar Oranje Zwart)",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Den Bosch",
+        "score": "5-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Den Bosch",
+        "score": "1-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "2-2 (SO winnaar Bloemendaal)",
+        "datum": "02-05-1999",
+        "scorers": [
+          {
+            "naam": "Remco van Wijk",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Sander van Heeswijk",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Björn Fiedeldij",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Remco van Wijk",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "3-4",
+        "datum": "08-05-1999",
+        "scorers": [
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Max Albers",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Jaap-Derk Buma",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Wibo Wijzenbeek",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Erik Jazet",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Wibo Wijzenbeek",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Marnix van Rijn",
+            "club": "Oranje Zwart",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "2-2 (SO winnaar Bloemendaal)",
+        "datum": "09-05-1999",
+        "scorers": [
+          {
+            "naam": "Gerald Dewamme",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Diederik van Weel",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Wibo Wijzenbeek",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Menno Booij",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
