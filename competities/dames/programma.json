@@ -391,6 +391,79 @@
       ]
     },
     {
+      "thuis": "HGC",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 8,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tessel Huibregtsen",
+          "club": "HGC",
+          "minuut": 17,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "SCHC",
       "score_thuis": 0,
@@ -1156,5 +1229,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:22.934Z"
+  "bijgewerkt": "2026-04-05T17:04:24.203Z"
 }
