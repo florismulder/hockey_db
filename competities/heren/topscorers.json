@@ -1,7 +1,7 @@
 {
   "geslacht": "heren",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-03",
+  "bijgewerkt": "2026-04-05",
   "topscorers": [
     {
       "naam": "Struan Walker",
@@ -68,8 +68,8 @@
       "naam_slug": "teun_beins",
       "club": "Bloemendaal",
       "doelpunten": 13,
-      "vd": 13,
-      "sc": 0,
+      "vd": 0,
+      "sc": 13,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -134,13 +134,13 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Aki Käppeler",
-      "naam_slug": "aki_kappeler",
-      "club": "Klein Zwitserland",
+      "naam": "Mustapha Cassiem",
+      "naam_slug": "mustapha_cassiem",
+      "club": "Amsterdam",
       "doelpunten": 9,
-      "vd": 0,
-      "sc": 8,
-      "sb": 1,
+      "vd": 6,
+      "sc": 3,
+      "sb": 0,
       "seizoen": "2025-2026"
     },
     {
@@ -154,13 +154,13 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Mustapha Cassiem",
-      "naam_slug": "mustapha_cassiem",
-      "club": "Amsterdam",
+      "naam": "Aki Käppeler",
+      "naam_slug": "aki_kappeler",
+      "club": "Klein Zwitserland",
       "doelpunten": 9,
-      "vd": 6,
-      "sc": 3,
-      "sb": 0,
+      "vd": 0,
+      "sc": 8,
+      "sb": 1,
       "seizoen": "2025-2026"
     },
     {
@@ -174,16 +174,6 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Chris Taberima",
-      "naam_slug": "chris_taberima",
-      "club": "HDM",
-      "doelpunten": 8,
-      "vd": 0,
-      "sc": 6,
-      "sb": 2,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Max Kreft",
       "naam_slug": "max_kreft",
       "club": "Den Bosch",
@@ -191,6 +181,16 @@
       "vd": 6,
       "sc": 2,
       "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Chris Taberima",
+      "naam_slug": "chris_taberima",
+      "club": "HDM",
+      "doelpunten": 8,
+      "vd": 0,
+      "sc": 6,
+      "sb": 2,
       "seizoen": "2025-2026"
     },
     {
@@ -244,22 +244,22 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Finn van Bijnen",
-      "naam_slug": "finn_van_bijnen",
-      "club": "Kampong",
-      "doelpunten": 6,
-      "vd": 6,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Hjalmar Voskuil",
       "naam_slug": "hjalmar_voskuil",
       "club": "Hurley",
       "doelpunten": 6,
       "vd": 1,
       "sc": 5,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Finn van Bijnen",
+      "naam_slug": "finn_van_bijnen",
+      "club": "Kampong",
+      "doelpunten": 6,
+      "vd": 6,
+      "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -274,29 +274,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Boris Aardenburg",
-      "naam_slug": "boris_aardenburg",
-      "club": "Pinoké",
-      "doelpunten": 5,
-      "vd": 5,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Chad Futcher",
-      "naam_slug": "chad_futcher",
-      "club": "Klein Zwitserland",
-      "doelpunten": 5,
-      "vd": 1,
-      "sc": 4,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Fabian Verzuu",
-      "naam_slug": "fabian_verzuu",
-      "club": "HDM",
+      "naam": "Mirco Pruyser",
+      "naam_slug": "mirco_pruyser",
+      "club": "Amsterdam",
       "doelpunten": 5,
       "vd": 5,
       "sc": 0,
@@ -314,6 +294,36 @@
       "seizoen": "2025-2026"
     },
     {
+      "naam": "Fabian Verzuu",
+      "naam_slug": "fabian_verzuu",
+      "club": "HDM",
+      "doelpunten": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Chad Futcher",
+      "naam_slug": "chad_futcher",
+      "club": "Klein Zwitserland",
+      "doelpunten": 5,
+      "vd": 1,
+      "sc": 4,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Willem van Campen",
+      "naam_slug": "willem_van_campen",
+      "club": "Klein Zwitserland",
+      "doelpunten": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
       "naam": "Jelle Galema",
       "naam_slug": "jelle_galema",
       "club": "Oranje-Rood",
@@ -324,29 +334,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Jelle Westendorp",
-      "naam_slug": "jelle_westendorp",
-      "club": "Schaerweijde",
-      "doelpunten": 5,
-      "vd": 2,
-      "sc": 1,
-      "sb": 2,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Mirco Pruyser",
-      "naam_slug": "mirco_pruyser",
-      "club": "Amsterdam",
-      "doelpunten": 5,
-      "vd": 5,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Nick van Trigt",
-      "naam_slug": "nick_van_trigt",
-      "club": "Rotterdam",
+      "naam": "Boris Aardenburg",
+      "naam_slug": "boris_aardenburg",
+      "club": "Pinoké",
       "doelpunten": 5,
       "vd": 5,
       "sc": 0,
@@ -364,11 +354,31 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Willem van Campen",
-      "naam_slug": "willem_van_campen",
-      "club": "Klein Zwitserland",
+      "naam": "Nick van Trigt",
+      "naam_slug": "nick_van_trigt",
+      "club": "Rotterdam",
       "doelpunten": 5,
       "vd": 5,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jelle Westendorp",
+      "naam_slug": "jelle_westendorp",
+      "club": "Schaerweijde",
+      "doelpunten": 5,
+      "vd": 2,
+      "sc": 1,
+      "sb": 2,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sam Steins Bisschop",
+      "naam_slug": "sam_steins_bisschop",
+      "club": "Amsterdam",
+      "doelpunten": 4,
+      "vd": 4,
       "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
@@ -384,9 +394,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Eduardo De Ignacio-Simó",
-      "naam_slug": "eduardo_de_ignacio_simo",
-      "club": "Den Bosch",
+      "naam": "Marco Miltkau",
+      "naam_slug": "marco_miltkau",
+      "club": "Bloemendaal",
       "doelpunten": 4,
       "vd": 4,
       "sc": 0,
@@ -404,59 +414,19 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Jip Janssen",
-      "naam_slug": "jip_janssen",
-      "club": "Kampong",
-      "doelpunten": 4,
-      "vd": 0,
-      "sc": 4,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Luke Friederich",
-      "naam_slug": "luke_friederich",
-      "club": "Laren",
-      "doelpunten": 4,
-      "vd": 2,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Marco Miltkau",
-      "naam_slug": "marco_miltkau",
+      "naam": "Zach Wallace",
+      "naam_slug": "zach_wallace",
       "club": "Bloemendaal",
       "doelpunten": 4,
-      "vd": 4,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Niels de Joode",
-      "naam_slug": "niels_de_joode",
-      "club": "Schaerweijde",
-      "doelpunten": 4,
       "vd": 3,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Sam Steins Bisschop",
-      "naam_slug": "sam_steins_bisschop",
-      "club": "Amsterdam",
-      "doelpunten": 4,
-      "vd": 4,
       "sc": 0,
-      "sb": 0,
+      "sb": 1,
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Thies Pinz",
-      "naam_slug": "thies_pinz",
-      "club": "Pinoké",
+      "naam": "Eduardo De Ignacio-Simó",
+      "naam_slug": "eduardo_de_ignacio_simo",
+      "club": "Den Bosch",
       "doelpunten": 4,
       "vd": 4,
       "sc": 0,
@@ -474,6 +444,16 @@
       "seizoen": "2025-2026"
     },
     {
+      "naam": "Jip Janssen",
+      "naam_slug": "jip_janssen",
+      "club": "Kampong",
+      "doelpunten": 4,
+      "vd": 0,
+      "sc": 4,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
       "naam": "Valentijn Charbon",
       "naam_slug": "valentijn_charbon",
       "club": "Laren",
@@ -484,22 +464,32 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Zach Wallace",
-      "naam_slug": "zach_wallace",
-      "club": "Bloemendaal",
+      "naam": "Luke Friederich",
+      "naam_slug": "luke_friederich",
+      "club": "Laren",
       "doelpunten": 4,
-      "vd": 3,
-      "sc": 0,
-      "sb": 1,
+      "vd": 2,
+      "sc": 2,
+      "sb": 0,
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Arno Van Dessel",
-      "naam_slug": "arno_van_dessel",
-      "club": "Bloemendaal",
-      "doelpunten": 3,
-      "vd": 3,
+      "naam": "Thies Pinz",
+      "naam_slug": "thies_pinz",
+      "club": "Pinoké",
+      "doelpunten": 4,
+      "vd": 4,
       "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Niels de Joode",
+      "naam_slug": "niels_de_joode",
+      "club": "Schaerweijde",
+      "doelpunten": 4,
+      "vd": 3,
+      "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -510,6 +500,26 @@
       "doelpunten": 3,
       "vd": 1,
       "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Luke Dommershuijzen",
+      "naam_slug": "luke_dommershuijzen",
+      "club": "Amsterdam",
+      "doelpunten": 3,
+      "vd": 1,
+      "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Arno Van Dessel",
+      "naam_slug": "arno_van_dessel",
+      "club": "Bloemendaal",
+      "doelpunten": 3,
+      "vd": 3,
+      "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -534,49 +544,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Indra Aerts",
-      "naam_slug": "indra_aerts",
-      "club": "Pinoké",
-      "doelpunten": 3,
-      "vd": 1,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Jens Hagen",
-      "naam_slug": "jens_hagen",
-      "club": "Schaerweijde",
-      "doelpunten": 3,
-      "vd": 3,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Jochem Bakker",
-      "naam_slug": "jochem_bakker",
-      "club": "Klein Zwitserland",
-      "doelpunten": 3,
-      "vd": 0,
-      "sc": 2,
-      "sb": 1,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Luke Dommershuijzen",
-      "naam_slug": "luke_dommershuijzen",
-      "club": "Amsterdam",
-      "doelpunten": 3,
-      "vd": 1,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pepe Bijlaard",
-      "naam_slug": "pepe_bijlaard",
-      "club": "Klein Zwitserland",
+      "naam": "Terrance Pieters",
+      "naam_slug": "terrance_pieters",
+      "club": "Kampong",
       "doelpunten": 3,
       "vd": 2,
       "sc": 1,
@@ -594,13 +564,23 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Stijn Draaijer",
-      "naam_slug": "stijn_draaijer",
-      "club": "Schaerweijde",
+      "naam": "Pepe Bijlaard",
+      "naam_slug": "pepe_bijlaard",
+      "club": "Klein Zwitserland",
+      "doelpunten": 3,
+      "vd": 2,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jochem Bakker",
+      "naam_slug": "jochem_bakker",
+      "club": "Klein Zwitserland",
       "doelpunten": 3,
       "vd": 0,
-      "sc": 3,
-      "sb": 0,
+      "sc": 2,
+      "sb": 1,
       "seizoen": "2025-2026"
     },
     {
@@ -614,51 +594,31 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Terrance Pieters",
-      "naam_slug": "terrance_pieters",
-      "club": "Kampong",
+      "naam": "Indra Aerts",
+      "naam_slug": "indra_aerts",
+      "club": "Pinoké",
       "doelpunten": 3,
-      "vd": 2,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Arthur De Sloover",
-      "naam_slug": "arthur_de_sloover",
-      "club": "Oranje-Rood",
-      "doelpunten": 2,
       "vd": 1,
-      "sc": 1,
+      "sc": 2,
       "sb": 0,
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Berend van Langeveld",
-      "naam_slug": "berend_van_langeveld",
-      "club": "Laren",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Bob de Voogd",
-      "naam_slug": "bob_de_voogd",
-      "club": "Oranje-Rood",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Daan Troost",
-      "naam_slug": "daan_troost",
+      "naam": "Stijn Draaijer",
+      "naam_slug": "stijn_draaijer",
       "club": "Schaerweijde",
-      "doelpunten": 2,
-      "vd": 2,
+      "doelpunten": 3,
+      "vd": 0,
+      "sc": 3,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jens Hagen",
+      "naam_slug": "jens_hagen",
+      "club": "Schaerweijde",
+      "doelpunten": 3,
+      "vd": 3,
       "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
@@ -674,9 +634,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Dylan Lucieer",
-      "naam_slug": "dylan_lucieer",
-      "club": "Rotterdam",
+      "naam": "Lucas Veen",
+      "naam_slug": "lucas_veen",
+      "club": "Bloemendaal",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -684,9 +644,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Fred Newbold",
-      "naam_slug": "fred_newbold",
-      "club": "Hurley",
+      "naam": "Jorrit Croon",
+      "naam_slug": "jorrit_croon",
+      "club": "Bloemendaal",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -694,29 +654,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Gerard Clapes",
-      "naam_slug": "gerard_clapes",
-      "club": "Oranje-Rood",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Hidde Plantenga",
-      "naam_slug": "hidde_plantenga",
-      "club": "Kampong",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Imko de Vries",
-      "naam_slug": "imko_de_vries",
-      "club": "Hurley",
+      "naam": "Teun Hogenhout",
+      "naam_slug": "teun_hogenhout",
+      "club": "Bloemendaal",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -734,9 +674,59 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Jorrit Croon",
-      "naam_slug": "jorrit_croon",
-      "club": "Bloemendaal",
+      "naam": "Thomas Sorsby",
+      "naam_slug": "thomas_sorsby",
+      "club": "Den Bosch",
+      "doelpunten": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Mats Dicke",
+      "naam_slug": "mats_dicke",
+      "club": "HDM",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Yorben Fontaine",
+      "naam_slug": "yorben_fontaine",
+      "club": "HDM",
+      "doelpunten": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Fred Newbold",
+      "naam_slug": "fred_newbold",
+      "club": "Hurley",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Imko de Vries",
+      "naam_slug": "imko_de_vries",
+      "club": "Hurley",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Hidde Plantenga",
+      "naam_slug": "hidde_plantenga",
+      "club": "Kampong",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -764,9 +754,89 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Lucas Veen",
-      "naam_slug": "lucas_veen",
-      "club": "Bloemendaal",
+      "naam": "Ties Klinkhamer",
+      "naam_slug": "ties_klinkhamer",
+      "club": "Klein Zwitserland",
+      "doelpunten": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Berend van Langeveld",
+      "naam_slug": "berend_van_langeveld",
+      "club": "Laren",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Thomas Vis",
+      "naam_slug": "thomas_vis",
+      "club": "Laren",
+      "doelpunten": 2,
+      "vd": 0,
+      "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Quinten Moojen",
+      "naam_slug": "quinten_moojen",
+      "club": "Laren",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Arthur De Sloover",
+      "naam_slug": "arthur_de_sloover",
+      "club": "Oranje-Rood",
+      "doelpunten": 2,
+      "vd": 1,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Bob de Voogd",
+      "naam_slug": "bob_de_voogd",
+      "club": "Oranje-Rood",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pol Cabre-Verdiell",
+      "naam_slug": "pol_cabre_verdiell",
+      "club": "Oranje-Rood",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Gerard Clapes",
+      "naam_slug": "gerard_clapes",
+      "club": "Oranje-Rood",
+      "doelpunten": 2,
+      "vd": 2,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn van der Valk",
+      "naam_slug": "pepijn_van_der_valk",
+      "club": "Pinoké",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -784,9 +854,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Mats Dicke",
-      "naam_slug": "mats_dicke",
-      "club": "HDM",
+      "naam": "Matthijs van der Wielen",
+      "naam_slug": "matthijs_van_der_wielen",
+      "club": "Rotterdam",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -794,8 +864,8 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Matthijs van der Wielen",
-      "naam_slug": "matthijs_van_der_wielen",
+      "naam": "Dylan Lucieer",
+      "naam_slug": "dylan_lucieer",
       "club": "Rotterdam",
       "doelpunten": 2,
       "vd": 2,
@@ -814,39 +884,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Pepijn van der Valk",
-      "naam_slug": "pepijn_van_der_valk",
-      "club": "Pinoké",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pol Cabre-Verdiell",
-      "naam_slug": "pol_cabre_verdiell",
-      "club": "Oranje-Rood",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Quinten Moojen",
-      "naam_slug": "quinten_moojen",
-      "club": "Laren",
-      "doelpunten": 2,
-      "vd": 2,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Teun Hogenhout",
-      "naam_slug": "teun_hogenhout",
-      "club": "Bloemendaal",
+      "naam": "Daan Troost",
+      "naam_slug": "daan_troost",
+      "club": "Schaerweijde",
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
@@ -864,69 +904,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Thomas Sorsby",
-      "naam_slug": "thomas_sorsby",
-      "club": "Den Bosch",
-      "doelpunten": 2,
-      "vd": 1,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Thomas Vis",
-      "naam_slug": "thomas_vis",
-      "club": "Laren",
-      "doelpunten": 2,
-      "vd": 0,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Ties Klinkhamer",
-      "naam_slug": "ties_klinkhamer",
-      "club": "Klein Zwitserland",
-      "doelpunten": 2,
-      "vd": 0,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Yorben Fontaine",
-      "naam_slug": "yorben_fontaine",
-      "club": "HDM",
-      "doelpunten": 2,
-      "vd": 0,
-      "sc": 2,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Adrian Lehmann-Richter",
-      "naam_slug": "adrian_lehmann_richter",
-      "club": "Klein Zwitserland",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Balder Reyenga",
-      "naam_slug": "balder_reyenga",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Daan Bonhof",
-      "naam_slug": "daan_bonhof",
-      "club": "Pinoké",
+      "naam": "Thije Harm",
+      "naam_slug": "thije_harm",
+      "club": "Amsterdam",
       "doelpunten": 1,
       "vd": 1,
       "sc": 0,
@@ -934,9 +914,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Derck de Vilder",
-      "naam_slug": "derck_de_vilder",
-      "club": "Kampong",
+      "naam": "Jasper Brinkman",
+      "naam_slug": "jasper_brinkman",
+      "club": "Bloemendaal",
       "doelpunten": 1,
       "vd": 0,
       "sc": 1,
@@ -944,9 +924,49 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Diederick van Berckel",
-      "naam_slug": "diederick_van_berckel",
-      "club": "Laren",
+      "naam": "Max Langer",
+      "naam_slug": "max_langer",
+      "club": "Bloemendaal",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sweder Koens",
+      "naam_slug": "sweder_koens",
+      "club": "Den Bosch",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn Reyenga",
+      "naam_slug": "pepijn_reyenga",
+      "club": "Den Bosch",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Max Pastoor",
+      "naam_slug": "max_pastoor",
+      "club": "Den Bosch",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Rick van de IJssel",
+      "naam_slug": "rick_van_de_ijssel",
+      "club": "HDM",
       "doelpunten": 1,
       "vd": 1,
       "sc": 0,
@@ -964,6 +984,76 @@
       "seizoen": "2025-2026"
     },
     {
+      "naam": "Laurens van Nievelstein",
+      "naam_slug": "laurens_van_nievelstein",
+      "club": "Hurley",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Noam Sheridan",
+      "naam_slug": "noam_sheridan",
+      "club": "Hurley",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Nikas Berendts",
+      "naam_slug": "nikas_berendts",
+      "club": "Hurley",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 0,
+      "sb": 1,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Jonas de Geus",
+      "naam_slug": "jonas_de_geus",
+      "club": "Kampong",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sander de Wijn",
+      "naam_slug": "sander_de_wijn",
+      "club": "Kampong",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Derck de Vilder",
+      "naam_slug": "derck_de_vilder",
+      "club": "Kampong",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Adrian Lehmann-Richter",
+      "naam_slug": "adrian_lehmann_richter",
+      "club": "Klein Zwitserland",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
       "naam": "Florent Vaal",
       "naam_slug": "florent_vaal",
       "club": "Klein Zwitserland",
@@ -974,9 +1064,109 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Iwan Roukema",
-      "naam_slug": "iwan_roukema",
-      "club": "Pinoké",
+      "naam": "Nico Keenan",
+      "naam_slug": "nico_keenan",
+      "club": "Klein Zwitserland",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Stépan Klaban",
+      "naam_slug": "stepan_klaban",
+      "club": "Klein Zwitserland",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pepijn Jones",
+      "naam_slug": "pepijn_jones",
+      "club": "Klein Zwitserland",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Tom Schneider",
+      "naam_slug": "tom_schneider",
+      "club": "Klein Zwitserland",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Stan Thoolen",
+      "naam_slug": "stan_thoolen",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Diederick van Berckel",
+      "naam_slug": "diederick_van_berckel",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Pieter Paul Houting",
+      "naam_slug": "pieter_paul_houting",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Kenny Bain",
+      "naam_slug": "kenny_bain",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joep Hagendoorn",
+      "naam_slug": "joep_hagendoorn",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Balder Reyenga",
+      "naam_slug": "balder_reyenga",
+      "club": "Laren",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Ruben van Meer",
+      "naam_slug": "ruben_van_meer",
+      "club": "Laren",
       "doelpunten": 1,
       "vd": 1,
       "sc": 0,
@@ -994,9 +1184,69 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Jasper Brinkman",
-      "naam_slug": "jasper_brinkman",
-      "club": "Bloemendaal",
+      "naam": "Pieter Sutorius",
+      "naam_slug": "pieter_sutorius",
+      "club": "Pinoké",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Iwan Roukema",
+      "naam_slug": "iwan_roukema",
+      "club": "Pinoké",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daan Bonhof",
+      "naam_slug": "daan_bonhof",
+      "club": "Pinoké",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Texas Bukkens",
+      "naam_slug": "texas_bukkens",
+      "club": "Pinoké",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Justen Blok",
+      "naam_slug": "justen_blok",
+      "club": "Rotterdam",
+      "doelpunten": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Menno Boeren",
+      "naam_slug": "menno_boeren",
+      "club": "Rotterdam",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Steijn van Heijningen",
+      "naam_slug": "steijn_van_heijningen",
+      "club": "Rotterdam",
       "doelpunten": 1,
       "vd": 0,
       "sc": 1,
@@ -1024,26 +1274,6 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Joep Hagendoorn",
-      "naam_slug": "joep_hagendoorn",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Jonas de Geus",
-      "naam_slug": "jonas_de_geus",
-      "club": "Kampong",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Joost van Eijck",
       "naam_slug": "joost_van_eijck",
       "club": "Schaerweijde",
@@ -1054,242 +1284,12 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Justen Blok",
-      "naam_slug": "justen_blok",
-      "club": "Rotterdam",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Kenny Bain",
-      "naam_slug": "kenny_bain",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Laurens van Nievelstein",
-      "naam_slug": "laurens_van_nievelstein",
-      "club": "Hurley",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Max Langer",
-      "naam_slug": "max_langer",
-      "club": "Bloemendaal",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Max Pastoor",
-      "naam_slug": "max_pastoor",
-      "club": "Den Bosch",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Menno Boeren",
-      "naam_slug": "menno_boeren",
-      "club": "Rotterdam",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Mick Bosse",
       "naam_slug": "mick_bosse",
       "club": "Schaerweijde",
       "doelpunten": 1,
       "vd": 0,
       "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Nico Keenan",
-      "naam_slug": "nico_keenan",
-      "club": "Klein Zwitserland",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Nikas Berendts",
-      "naam_slug": "nikas_berendts",
-      "club": "Hurley",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 0,
-      "sb": 1,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Noam Sheridan",
-      "naam_slug": "noam_sheridan",
-      "club": "Hurley",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pepijn Jones",
-      "naam_slug": "pepijn_jones",
-      "club": "Klein Zwitserland",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pepijn Reyenga",
-      "naam_slug": "pepijn_reyenga",
-      "club": "Den Bosch",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pieter Paul Houting",
-      "naam_slug": "pieter_paul_houting",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Pieter Sutorius",
-      "naam_slug": "pieter_sutorius",
-      "club": "Pinoké",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Rick van de IJssel",
-      "naam_slug": "rick_van_de_ijssel",
-      "club": "HDM",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Ruben van Meer",
-      "naam_slug": "ruben_van_meer",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Sander de Wijn",
-      "naam_slug": "sander_de_wijn",
-      "club": "Kampong",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Stan Thoolen",
-      "naam_slug": "stan_thoolen",
-      "club": "Laren",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Steijn van Heijningen",
-      "naam_slug": "steijn_van_heijningen",
-      "club": "Rotterdam",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Stépan Klaban",
-      "naam_slug": "stepan_klaban",
-      "club": "Klein Zwitserland",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Sweder Koens",
-      "naam_slug": "sweder_koens",
-      "club": "Den Bosch",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Texas Bukkens",
-      "naam_slug": "texas_bukkens",
-      "club": "Pinoké",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Thije Harm",
-      "naam_slug": "thije_harm",
-      "club": "Amsterdam",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Tom Schneider",
-      "naam_slug": "tom_schneider",
-      "club": "Klein Zwitserland",
-      "doelpunten": 1,
-      "vd": 1,
-      "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
     }
