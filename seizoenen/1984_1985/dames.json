@@ -20,7 +20,7 @@
       "doelpunten_tegen": 16,
       "doelsaldo": 63,
       "punten": 40,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
@@ -168,7 +168,7 @@
   ],
   "topscorers": [
     {
-      "rang": 1,
+      "rang": null,
       "naam": "Lisanne Lejeune",
       "club": "HGC",
       "doelpunten": 31,
@@ -178,6 +178,12 @@
     }
   ],
   "coaches": [],
-  "playoffs": null,
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "HGC",
+    "playout": []
+  },
   "bijgewerkt": "2026-04-05"
 }
