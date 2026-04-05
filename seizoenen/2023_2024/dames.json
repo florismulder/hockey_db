@@ -1,0 +1,525 @@
+{
+  "seizoen": "2023-2024",
+  "slug": "2023_2024",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "SCHC",
+  "gedegradeerd": [
+    "Bloemendaal"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 5,
+      "verloren": 0,
+      "doelpunten_voor": 76,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 57,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 46,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 41,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 7,
+      "verloren": 4,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 11,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 4,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -3,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -10,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -15,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 71,
+      "doelsaldo": -34,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 1,
+      "verloren": 15,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 72,
+      "doelsaldo": -39,
+      "punten": 19,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 6,
+      "verloren": 13,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -21,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 6,
+      "verloren": 15,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -37,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Frédérique Matla",
+      "club": "Den Bosch",
+      "doelpunten": 27,
+      "vd": 8,
+      "sc": 15,
+      "sb": 4
+    },
+    {
+      "rang": 2,
+      "naam": "Yibbi Jansen",
+      "club": "SCHC",
+      "doelpunten": 21,
+      "vd": 1,
+      "sc": 19,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Michelle Fillet",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": 11,
+      "sc": 4,
+      "sb": 2
+    },
+    {
+      "rang": 4,
+      "naam": "Fay van der Elst",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 14,
+      "sc": 1,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Jip Dicke",
+      "club": "HDM",
+      "doelpunten": 15,
+      "vd": 7,
+      "sc": 7,
+      "sb": 1
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Teun de Nooijer"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Jeroen Visser"
+    },
+    {
+      "club": "HDM",
+      "naam": "Ivar Knötschke"
+    },
+    {
+      "club": "HGC",
+      "naam": "Yara Casteleijn"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Marieke Dijkstra"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Robbert van de Peppel"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Kai de Jager"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Rob Haantjes"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Daan Sabel"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Brian Vervoort"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Lucas Judge"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Ageeth Boomgaardt"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Den Bosch",
+        "score": "0-3",
+        "datum": "18 mei 2024 11:45 UTC+2",
+        "scorers": [
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 30
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 33
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 44
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Kampong",
+        "score": "7-0",
+        "datum": "20 mei 2024 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 10
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 11
+          },
+          {
+            "naam": "Krekelaar",
+            "club": "Den Bosch",
+            "minuut": 26
+          },
+          {
+            "naam": "Van der Veerdonk",
+            "club": "Den Bosch",
+            "minuut": 31
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 33
+          },
+          {
+            "naam": "Reijnen",
+            "club": "Den Bosch",
+            "minuut": 34
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 43
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 44
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "0-0",
+        "datum": "18 mei 2024 16:00 UTC+2",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "1-2",
+        "datum": "20 mei 2024 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 8
+          },
+          {
+            "naam": "Van den Heuvel",
+            "club": "SCHC",
+            "minuut": 50
+          },
+          {
+            "naam": "Van Gils",
+            "club": "Amsterdam",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "25 mei 2024 14:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 57
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "3-2",
+        "datum": "26 mei 2024 13:15 UTC+2",
+        "scorers": [
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 8
+          },
+          {
+            "naam": "Van Laarhoven",
+            "club": "SCHC",
+            "minuut": 9
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 50
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 59
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Push",
+        "score": "2-0",
+        "datum": "1 juni 2024 12:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Van Santbrink",
+            "club": "Rotterdam",
+            "minuut": 37
+          },
+          {
+            "naam": "Haarman",
+            "club": "Rotterdam",
+            "minuut": 60
+          }
+        ],
+        "notitie": "Rotterdam handhaaft zich in Hoofdklasse"
+      },
+      {
+        "thuis": "Push",
+        "uit": "Rotterdam",
+        "score": "0-2",
+        "datum": "2 juni 2024 12:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Dijk",
+            "club": "Rotterdam",
+            "minuut": 8
+          },
+          {
+            "naam": "Van den Dijssel",
+            "club": "Rotterdam",
+            "minuut": 55
+          }
+        ],
+        "notitie": "Rotterdam handhaaft zich in Hoofdklasse"
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Victoria",
+        "score": "4-1",
+        "datum": "1 juni 2024 12:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Dominicus",
+            "club": "Tilburg",
+            "minuut": 6
+          },
+          {
+            "naam": "Versavel",
+            "club": "Tilburg",
+            "minuut": 16
+          },
+          {
+            "naam": "Versavel",
+            "club": "Tilburg",
+            "minuut": 29
+          },
+          {
+            "naam": "Hoyinck",
+            "club": "Tilburg",
+            "minuut": 58
+          },
+          {
+            "naam": "Lubbers",
+            "club": "Victoria",
+            "minuut": 45
+          }
+        ],
+        "notitie": "Tilburg handhaaft zich in Hoofdklasse"
+      },
+      {
+        "thuis": "Victoria",
+        "uit": "Tilburg",
+        "score": "1-2",
+        "datum": "2 juni 2024 12:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Dankers",
+            "club": "Tilburg",
+            "minuut": 8
+          },
+          {
+            "naam": "Roberts",
+            "club": "Tilburg",
+            "minuut": 39
+          },
+          {
+            "naam": "Moerman",
+            "club": "Victoria",
+            "minuut": 47
+          }
+        ],
+        "notitie": "Tilburg handhaaft zich in Hoofdklasse"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
