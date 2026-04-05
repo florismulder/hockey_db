@@ -1,0 +1,539 @@
+{
+  "seizoen": "2005-2006",
+  "slug": "2005_2006",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Push",
+    "Hurley"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 2,
+      "verloren": 1,
+      "doelpunten_voor": 91,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 68,
+      "punten": 59,
+      "zone": "playoff",
+      "notitie": "Landskampioen Den Bosch plaatst zich voor de Europacup I 2007"
+    },
+    {
+      "positie": 2,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 1,
+      "verloren": 4,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 44,
+      "punten": 52,
+      "zone": "playoff",
+      "notitie": "Laren en Rotterdam hebben zich alleen weten te plaatsen voor de play offs"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 1,
+      "verloren": 5,
+      "doelpunten_voor": 85,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 60,
+      "punten": 49,
+      "zone": "playoff",
+      "notitie": "Verliezend play off-finalist Amsterdam plaatst zich voor de Europacup II 2007"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 2,
+      "verloren": 7,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 7,
+      "punten": 41,
+      "zone": "playoff",
+      "notitie": "Laren en Rotterdam hebben zich alleen weten te plaatsen voor de play offs"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 7,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 5,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -8,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -24,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -14,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -14,
+      "punten": 19,
+      "zone": "playout",
+      "notitie": "Klein Zwitserland heeft zich weten te handhaven dankzij winst in de play offs."
+    },
+    {
+      "positie": 11,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 0,
+      "verloren": 18,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 85,
+      "doelsaldo": -64,
+      "punten": 12,
+      "zone": "playout",
+      "notitie": "Hurley is gedegradeerd door verlies in de play offs"
+    },
+    {
+      "positie": 12,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 17,
+      "doelpunten_voor": 13,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -67,
+      "punten": 11,
+      "zone": "degradatie",
+      "notitie": "Push is rechtstreeks gedegradeerd"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Eveline Wisse Smit",
+      "club": "Amsterdam",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Carolien van Batenburg",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Soledad García",
+      "club": "Laren",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Eefke Mulder",
+      "club": "Nijmegen",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Minke Booij",
+      "club": "Den Bosch",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Wieke Dijkstra",
+      "club": "Laren",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Nicci de Haas",
+      "club": "Pinoké",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "1-4",
+        "datum": "13 mei 2006",
+        "scorers": [
+          {
+            "naam": "Thomas",
+            "club": "Rotterdam",
+            "minuut": 55
+          },
+          {
+            "naam": "C. Dirkse van den Heuvel",
+            "club": "Den Bosch",
+            "minuut": 14
+          },
+          {
+            "naam": "Minke Booij",
+            "club": "Den Bosch",
+            "minuut": 27
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 42
+          },
+          {
+            "naam": "Kremers",
+            "club": "Den Bosch",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "1-0",
+        "datum": "13 mei 2006",
+        "scorers": [
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 30
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "5-1",
+        "datum": "14 mei 2006",
+        "scorers": [
+          {
+            "naam": "Minke Booij",
+            "club": "Den Bosch",
+            "minuut": 6
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 40
+          },
+          {
+            "naam": "Schopman",
+            "club": "Den Bosch",
+            "minuut": 45
+          },
+          {
+            "naam": "Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 53
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 64
+          },
+          {
+            "naam": "S. Muñoz Escudé",
+            "club": "Rotterdam",
+            "minuut": 11
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "0-1",
+        "datum": "14 mei 2006",
+        "scorers": [
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 51
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "1-4",
+        "datum": "8 juni 2006",
+        "scorers": [
+          {
+            "naam": "Carolien van Batenburg",
+            "club": "Amsterdam",
+            "minuut": 50
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 9
+          },
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 23
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 32
+          },
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 62
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-1 (SO 5-4)",
+        "datum": "20 mei 2006",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 68
+          },
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 25
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Forward",
+        "uit": "Groningen",
+        "score": "3-2",
+        "datum": "13 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Forward",
+        "score": "4-2",
+        "datum": "14 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Forward",
+        "score": "1-2",
+        "datum": "17 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "HIC",
+        "score": "1-0",
+        "datum": "13 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "HGC",
+        "score": "3-2",
+        "datum": "14 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": "17 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Hurley",
+        "score": "3-2",
+        "datum": "20 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "Klein Zwitserland",
+        "score": "3-4",
+        "datum": "20 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Groningen",
+        "score": "4-1",
+        "datum": "21 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "HIC",
+        "score": "1-2",
+        "datum": "21 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Hurley",
+        "score": "1-0",
+        "datum": "25 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "Klein Zwitserland",
+        "score": "0-1",
+        "datum": "25 mei 2006",
+        "scorers": [],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
