@@ -263,6 +263,73 @@
       ]
     },
     {
+      "thuis": "SCHC",
+      "uit": "Den Bosch",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Babs Reijnen",
+          "club": "Den Bosch",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Renee van Laarhoven",
+          "club": "SCHC",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sanne Koolen",
+          "club": "Den Bosch",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Anna de Geus",
+          "club": "SCHC",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 37,
+          "type": "groen"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 50,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Kampong",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -1566,5 +1633,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:35.271Z"
+  "bijgewerkt": "2026-04-05T17:04:36.485Z"
 }
