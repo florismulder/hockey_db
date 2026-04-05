@@ -258,10 +258,10 @@
       "sb": null
     }
   ],
-  "coaches": [],
+  "coaches": null,
   "playoffs": {
     "halve_finales": [],
-    "finale": null,
+    "finale_wedstrijden": [],
     "troostfinale": null,
     "kampioen": "Amsterdam",
     "playout": []
