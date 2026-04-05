@@ -1,0 +1,353 @@
+{
+  "seizoen": "1995-1996",
+  "slug": "1995_1996",
+  "geslacht": "heren",
+  "kampioen": "HGC",
+  "vicekampioen": "Bloemendaal",
+  "gedegradeerd": [
+    "Hattem",
+    "Victoria"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 63,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 31,
+      "punten": 33,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 10,
+      "verloren": 1,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 29,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 36,
+      "punten": 30,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 7,
+      "verloren": 4,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 10,
+      "punten": 29,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 1,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -4,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -16,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 8,
+      "verloren": 8,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -10,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -6,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 9,
+      "verloren": 9,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -11,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -16,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -44,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Taco van den Honert",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Cas Wolbert",
+      "club": "Den Bosch",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Wouter van Pelt",
+      "club": "HDM",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Remco van Wijk",
+      "club": "Bloemendaal",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Rochus Westbroek",
+      "club": "Klein Zwitserland",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Floris Jan Bovelander",
+      "club": "Bloemendaal",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Jeroen Delmee",
+      "club": "Tilburg",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Stephan Veen",
+      "club": "HGC",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Klein Zwitserland",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Amsterdam",
+        "score": "4-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "2-1",
+        "datum": "11-05-1996",
+        "scorers": [
+          {
+            "naam": "Floris Jan Bovelander",
+            "club": "Bloemendaal",
+            "minuut": 20
+          },
+          {
+            "naam": "Stephan Veen",
+            "club": "HGC",
+            "minuut": 36
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "HGC",
+            "minuut": 51
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "1-4",
+        "datum": "12-05-1996",
+        "scorers": [
+          {
+            "naam": "Floris Jan Bovelander",
+            "club": "Bloemendaal",
+            "minuut": 22
+          },
+          {
+            "naam": "Stephan Veen",
+            "club": "HGC",
+            "minuut": 24
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "HGC",
+            "minuut": 57
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "HGC",
+            "minuut": 61
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "HGC",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
