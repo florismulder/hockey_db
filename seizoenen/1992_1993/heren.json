@@ -1,0 +1,270 @@
+{
+  "seizoen": "1992-1993",
+  "slug": "1992_1993",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Venlo",
+    "SCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 4,
+      "verloren": 1,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 49,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 6,
+      "verloren": 1,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 53,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 31,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 7,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 1,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 14,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 9,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 50,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 3,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -27,
+      "punten": 13,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 4,
+      "verloren": 14,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -26,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Venlo",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 74,
+      "doelsaldo": -58,
+      "punten": 10,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 74,
+      "doelsaldo": -56,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Taco van den Honert",
+      "club": "Amsterdam",
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Stephan Veen",
+      "club": "HGC",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Floris Jan Bovelander",
+      "club": "Bloemendaal",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Koen Pijpers",
+      "club": "HDM",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Richard Brinkman",
+      "club": "Kampong",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Piet-Hein Geeris",
+      "club": "Tilburg",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Rochus Westbroek",
+      "club": "Klein Zwitserland",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Wouter van Pelt",
+      "club": "HDM",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Fokke Jan Middendorp",
+      "club": "Hattem",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Martijn van Westerop",
+      "club": "Bloemendaal",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
