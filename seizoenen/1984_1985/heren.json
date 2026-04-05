@@ -1,0 +1,189 @@
+{
+  "seizoen": "1984-1985",
+  "slug": "1984_1985",
+  "geslacht": "heren",
+  "kampioen": "Kampong",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Laren",
+    "Den Bosch"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 5,
+      "verloren": 2,
+      "doelpunten_voor": 76,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 47,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 37,
+      "punten": 33,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 18,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 29,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 26,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -8,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 7,
+      "verloren": 10,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -21,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -22,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -10,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Leiden",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -28,
+      "punten": 14,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -20,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 76,
+      "doelsaldo": -48,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Rick Volkers",
+      "club": "Kampong",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Kampong",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
