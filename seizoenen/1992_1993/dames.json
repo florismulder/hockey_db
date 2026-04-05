@@ -1,0 +1,329 @@
+{
+  "seizoen": "1992-1993",
+  "slug": "1992_1993",
+  "geslacht": "dames",
+  "kampioen": "HGC",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "EMHC",
+    "Groningen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 30,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 28,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 15,
+      "punten": 29,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 28,
+      "punten": 28,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 13,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 13,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -11,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 11,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -21,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Zwolle",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -18,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -28,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 11,
+      "doelpunten_tegen": 28,
+      "doelsaldo": -17,
+      "punten": 13,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 6,
+      "verloren": 13,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -32,
+      "punten": 12,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Wietske de Ruiter",
+      "club": "HGC",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 1,
+      "naam": "Mieketine Wouters",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Ellen Kuipers",
+      "club": "Kampong",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Miranda van Grimbergen",
+      "club": "HGC",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Frederiek Grijpma",
+      "club": "Laren",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Martine Ohr",
+      "club": "HDM",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Ageeth Boomgaardt",
+      "club": "MOP",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Els Kodde",
+      "club": "Amsterdam",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Jeannette Lewin",
+      "club": "Kampong",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Irvy Scheepstra",
+      "club": "MOP",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Harriët Dijsselhof",
+      "club": "Zwolle",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "0-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "2-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "2-0 (SO 3-1)",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "0-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Amsterdam",
+        "score": "1-2 (SO 3-0)",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "HGC",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
