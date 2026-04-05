@@ -1,0 +1,611 @@
+{
+  "seizoen": "2013-2014",
+  "slug": "2013_2014",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "SCHC",
+  "gedegradeerd": [
+    "HIC",
+    "Nijmegen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 50,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 84,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 59,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 42,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 4,
+      "verloren": 5,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 28,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 9,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 1,
+      "verloren": 11,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -12,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 4,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 14,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -24,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 4,
+      "verloren": 15,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -36,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 5,
+      "verloren": 15,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 73,
+      "doelsaldo": -51,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "HIC",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 2,
+      "verloren": 20,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 97,
+      "doelsaldo": -83,
+      "punten": 2,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 29,
+      "vd": 1,
+      "sc": 24,
+      "sb": 4
+    },
+    {
+      "rang": 2,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 20,
+      "vd": 1,
+      "sc": 19,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Tina Bachmann",
+      "club": "Oranje Zwart",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 16,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Roos Drost",
+      "club": "SCHC",
+      "doelpunten": 16,
+      "vd": 13,
+      "sc": 2,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Eva de Goede",
+      "club": "Amsterdam",
+      "doelpunten": 15,
+      "vd": 3,
+      "sc": 11,
+      "sb": 1
+    },
+    {
+      "rang": 6,
+      "naam": "Pien van Nes",
+      "club": "hdm",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 13,
+      "sb": 1
+    },
+    {
+      "rang": 7,
+      "naam": "Kelly Jonker",
+      "club": "Amsterdam",
+      "doelpunten": 13,
+      "vd": 12,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 8,
+      "naam": "Sabine Mol",
+      "club": "Den Bosch",
+      "doelpunten": 12,
+      "vd": 12,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 9,
+      "naam": "Julia Müller",
+      "club": "Kampong",
+      "doelpunten": 12,
+      "vd": 1,
+      "sc": 8,
+      "sb": 3
+    },
+    {
+      "rang": 10,
+      "naam": "Lieke van Wijk",
+      "club": "MOP",
+      "doelpunten": 12,
+      "vd": 0,
+      "sc": 11,
+      "sb": 1
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Alyson Annan"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "hdm",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "HIC",
+      "naam": "Gilles van Hesteren"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Stijn van Roosendaal"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Etienne Spee"
+    },
+    {
+      "club": "MOP",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "NMHC Nijmegen",
+      "naam": "Roy Bax"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Kai de Jager"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Maarten Stenvers"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Janneke Schopman"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "SCHC",
+        "score": "0-1",
+        "datum": "05-04-2014",
+        "scorers": [
+          {
+            "naam": "Maike Stöckel",
+            "club": "SCHC",
+            "minuut": 12
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-1",
+        "datum": "05-04-2014",
+        "scorers": [
+          {
+            "naam": "Ellen Hoog",
+            "club": "Amsterdam",
+            "minuut": 38
+          },
+          {
+            "naam": "Lieke Hulsen",
+            "club": "Den Bosch",
+            "minuut": 46
+          },
+          {
+            "naam": "Ellen Hoog",
+            "club": "Amsterdam",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-0",
+        "datum": "06-04-2014",
+        "scorers": [
+          {
+            "naam": "Lidewij Welten",
+            "club": "Den Bosch",
+            "minuut": 2
+          },
+          {
+            "naam": "Lidewij Welten",
+            "club": "Den Bosch",
+            "minuut": 7
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 43
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Laren",
+        "score": "3-3",
+        "datum": "06-04-2014",
+        "scorers": [
+          {
+            "naam": "Claire Verhage",
+            "club": "SCHC",
+            "minuut": 13
+          },
+          {
+            "naam": "Carlien Dirkse van den Heuvel",
+            "club": "SCHC",
+            "minuut": 32
+          },
+          {
+            "naam": "Willemijn Bos",
+            "club": "Laren",
+            "minuut": 41
+          },
+          {
+            "naam": "Kim Lammers",
+            "club": "Laren",
+            "minuut": 62
+          },
+          {
+            "naam": "Roos Drost",
+            "club": "SCHC",
+            "minuut": 60
+          },
+          {
+            "naam": "Willemijn Bos",
+            "club": "Laren",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "4-2",
+        "datum": "12-04-2014",
+        "scorers": [
+          {
+            "naam": "Maike Stöckel",
+            "club": "SCHC",
+            "minuut": 1
+          },
+          {
+            "naam": "Lidewij Welten",
+            "club": "Den Bosch",
+            "minuut": 8
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 19
+          },
+          {
+            "naam": "Renske Siersema",
+            "club": "SCHC",
+            "minuut": 33
+          },
+          {
+            "naam": "Maartje Krekelaar",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Maartje Goderie",
+            "club": "Den Bosch",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "2-1",
+        "datum": "13-04-2014",
+        "scorers": [
+          {
+            "naam": "Claire Verhage",
+            "club": "SCHC",
+            "minuut": 40
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 58
+          },
+          {
+            "naam": "Claire Verhage",
+            "club": "SCHC",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Nijmegen",
+        "score": "1-0",
+        "datum": "21-05-2014",
+        "scorers": [
+          {
+            "naam": "Joelle Ketting",
+            "club": "Bloemendaal",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Bloemendaal",
+        "score": "1-3",
+        "datum": "24-05-2014",
+        "scorers": [
+          {
+            "naam": "Simons",
+            "club": "Nijmegen",
+            "minuut": 15
+          },
+          {
+            "naam": "Oosterveer",
+            "club": "Bloemendaal",
+            "minuut": 46
+          },
+          {
+            "naam": "Goeman Borgesius",
+            "club": "Bloemendaal",
+            "minuut": 59
+          },
+          {
+            "naam": "Florie",
+            "club": "Bloemendaal",
+            "minuut": 64
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Pinoké",
+        "score": "3-1",
+        "datum": "21-05-2014",
+        "scorers": [
+          {
+            "naam": "Maxime Westerdorp",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Ginella Zerbo",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Lisa de Graaf",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Lisa de Graaf",
+            "club": "Tilburg",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Tilburg",
+        "score": "4-0",
+        "datum": "24-05-2014",
+        "scorers": [
+          {
+            "naam": "Sierou Frankema",
+            "club": "Pinoké",
+            "minuut": 5
+          },
+          {
+            "naam": "Ginella Zerbo",
+            "club": "Pinoké",
+            "minuut": 7
+          },
+          {
+            "naam": "Sierou Frankema",
+            "club": "Pinoké",
+            "minuut": 16
+          },
+          {
+            "naam": "Tessa Schwarz",
+            "club": "Pinoké",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Pinoké",
+        "score": "0-3",
+        "datum": "25-05-2014",
+        "scorers": [
+          {
+            "naam": "Sierou Frankema",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Bo Peijs",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Ginella Zerbo",
+            "club": "Pinoké",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
