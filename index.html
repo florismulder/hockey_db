@@ -1323,7 +1323,9 @@ function HistoriePagina({nav}) {
             <div style={{fontSize:11,fontWeight:700,textTransform:"uppercase",letterSpacing:1,
               color:"var(--muted)",marginBottom:10}}>{g}</div>
             <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:5}}>
-              {seizoenen.map(s=>blok(s,g))}
+              {seizoenen
+                .filter(s => g==="heren" || s.seizoen>="1981-1982")
+                .map(s=>blok(s,g))}
             </div>
           </div>
         ))}
