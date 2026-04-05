@@ -1,0 +1,540 @@
+{
+  "seizoen": "2017-2018",
+  "slug": "2017_2018",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Nijmegen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 21,
+      "gelijk": 0,
+      "verloren": 1,
+      "doelpunten_voor": 70,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 54,
+      "punten": 63,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 12,
+      "doelsaldo": 65,
+      "punten": 61,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 1,
+      "verloren": 6,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 32,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 19,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 2,
+      "verloren": 7,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 18,
+      "punten": 41,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 1,
+      "verloren": 10,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -2,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -9,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 0,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -45,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Huizen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 17,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -36,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 69,
+      "doelsaldo": -52,
+      "punten": 8,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 2,
+      "verloren": 19,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -44,
+      "punten": 5,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Charlotte Vega",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 14,
+      "sc": 2,
+      "sb": 0
+    },
+    {
+      "rang": 2,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 16,
+      "vd": 2,
+      "sc": 14,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Pien van Nes",
+      "club": "hdm",
+      "doelpunten": 16,
+      "vd": 2,
+      "sc": 12,
+      "sb": 2
+    },
+    {
+      "rang": 4,
+      "naam": "Ginella Zerbo",
+      "club": "SCHC",
+      "doelpunten": 15,
+      "vd": 6,
+      "sc": 3,
+      "sb": 6
+    },
+    {
+      "rang": 5,
+      "naam": "Maxime Kerstholt",
+      "club": "Laren",
+      "doelpunten": 14,
+      "vd": 14,
+      "sc": 0,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Teun de Nooijer"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "Groningen",
+      "naam": "Marc Materek"
+    },
+    {
+      "club": "hdm",
+      "naam": "Sonja Thomann"
+    },
+    {
+      "club": "Huizen",
+      "naam": "Boaz Janssen"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Santi Freixa"
+    },
+    {
+      "club": "Laren",
+      "naam": "Robert-Jan Cox"
+    },
+    {
+      "club": "Nijmegen",
+      "naam": "Matthijs Brouwer"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Tina Bachmann"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Amsterdam",
+        "score": "0-3",
+        "datum": "29 april 2018",
+        "scorers": [
+          {
+            "naam": "Veen",
+            "club": "Amsterdam",
+            "minuut": 4
+          },
+          {
+            "naam": "Van Male",
+            "club": "Amsterdam",
+            "minuut": 41
+          },
+          {
+            "naam": "Van Male",
+            "club": "Amsterdam",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "29 april 2018",
+        "scorers": [
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje-Rood",
+        "score": "2-1",
+        "datum": "5 mei 2018",
+        "scorers": [
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 28
+          },
+          {
+            "naam": "Nunnink",
+            "club": "Oranje-Rood",
+            "minuut": 31
+          },
+          {
+            "naam": "Albers",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "4-2",
+        "datum": "5 mei 2018",
+        "scorers": [
+          {
+            "naam": "Zerbo",
+            "club": "SCHC",
+            "minuut": 22
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 46
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": 56
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": 62
+          },
+          {
+            "naam": "Verhage",
+            "club": "SCHC",
+            "minuut": 64
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-2",
+        "datum": "10 mei 2018",
+        "scorers": [
+          {
+            "naam": "De Goede",
+            "club": "Amsterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": 18
+          },
+          {
+            "naam": "Jonker",
+            "club": "Amsterdam",
+            "minuut": 45
+          },
+          {
+            "naam": "Matla",
+            "club": "Den Bosch",
+            "minuut": 60
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "1-4",
+        "datum": "12 mei 2018",
+        "scorers": [
+          {
+            "naam": "Van der Plas",
+            "club": "Den Bosch",
+            "minuut": 6
+          },
+          {
+            "naam": "Van den Assem",
+            "club": "Den Bosch",
+            "minuut": 19
+          },
+          {
+            "naam": "Van Geffen",
+            "club": "Den Bosch",
+            "minuut": 45
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 56
+          },
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Groningen",
+        "score": "2-4",
+        "datum": "30 mei 2018",
+        "scorers": [
+          {
+            "naam": "Lisa van Baaren",
+            "club": "Rotterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Klaartje de Bruijn",
+            "club": "Groningen",
+            "minuut": 19
+          },
+          {
+            "naam": "Danielle van Rootselaar",
+            "club": "Rotterdam",
+            "minuut": 32
+          },
+          {
+            "naam": "Willemijn Bos",
+            "club": "Groningen",
+            "minuut": 45
+          },
+          {
+            "naam": "Noor Hakker",
+            "club": "Groningen",
+            "minuut": 48
+          },
+          {
+            "naam": "Klaartje de Bruijn",
+            "club": "Groningen",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Rotterdam",
+        "score": "2-1",
+        "datum": "2 juni 2018",
+        "scorers": [
+          {
+            "naam": "Maria Jimena Cedres Lobbosco",
+            "club": "Rotterdam",
+            "minuut": 24
+          },
+          {
+            "naam": "Willemijn Bos",
+            "club": "Groningen",
+            "minuut": 52
+          },
+          {
+            "naam": "Florentine Blom",
+            "club": "Groningen",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Huizen",
+        "score": "0-0 (SO 2-4)",
+        "datum": "30 mei 2018",
+        "scorers": [],
+        "notitie": "Huizen wint na shoot-outs: 2-4."
+      },
+      {
+        "thuis": "Huizen",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": "2 juni 2018",
+        "scorers": [
+          {
+            "naam": "Bernice van Aken",
+            "club": "HGC",
+            "minuut": 20
+          },
+          {
+            "naam": "Jasmijn Oliemans",
+            "club": "Huizen",
+            "minuut": 25
+          },
+          {
+            "naam": "Edmee Peijster",
+            "club": "Huizen",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
