@@ -1,0 +1,657 @@
+{
+  "seizoen": "2017-2018",
+  "slug": "2017_2018",
+  "geslacht": "heren",
+  "kampioen": "Kampong",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "hdm"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 5,
+      "verloren": 0,
+      "doelpunten_voor": 82,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 48,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 6,
+      "verloren": 0,
+      "doelpunten_voor": 74,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 54,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 38,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje Rood",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 31,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 13,
+      "punten": 40,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 5,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 2,
+      "verloren": 12,
+      "doelpunten_voor": 50,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -9,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HC Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 1,
+      "verloren": 15,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -26,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 77,
+      "doelsaldo": -45,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 1,
+      "verloren": 16,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -25,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Almere",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 1,
+      "verloren": 17,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -24,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 97,
+      "doelsaldo": -60,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 28,
+      "vd": 11,
+      "sc": 12,
+      "sb": 5
+    },
+    {
+      "rang": 2,
+      "naam": "Mirco Pruyser",
+      "club": "Amsterdam",
+      "doelpunten": 26,
+      "vd": 22,
+      "sc": 4,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Rood",
+      "doelpunten": 24,
+      "vd": 1,
+      "sc": 20,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Stijn Jolie",
+      "club": "Almere",
+      "doelpunten": 18,
+      "vd": 1,
+      "sc": 17,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Martijn Havenga",
+      "club": "Kampong",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 13,
+      "sb": 4
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Almeerse HC",
+      "naam": "Pasha Gademan"
+    },
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Graham Reid"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "hdm",
+      "naam": "Ronald Hugers"
+    },
+    {
+      "club": "HGC",
+      "naam": "Jan Jorn van 't Land"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Lucas Judge"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Jeroen Delmee"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Kampong",
+        "score": "1-1 (SO 2-4)",
+        "datum": "5 mei 2018",
+        "scorers": [
+          {
+            "naam": "Niek van der Schoot",
+            "club": "Oranje-Rood",
+            "minuut": 39
+          },
+          {
+            "naam": "Quirijn Caspers",
+            "club": "Kampong",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "5-5 (SO 3-5)",
+        "datum": "5 mei 2018",
+        "scorers": [
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 22
+          },
+          {
+            "naam": "Caspar van Dijk",
+            "club": "Amsterdam",
+            "minuut": 24
+          },
+          {
+            "naam": "Justin Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 31
+          },
+          {
+            "naam": "Yannick van der Drift",
+            "club": "Amsterdam",
+            "minuut": 46
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Amsterdam",
+            "minuut": 49
+          },
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 16
+          },
+          {
+            "naam": "Xavi Lleonart",
+            "club": "Bloemendaal",
+            "minuut": 23
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 43
+          },
+          {
+            "naam": "Billy Bakker",
+            "club": "Bloemendaal",
+            "minuut": 39
+          },
+          {
+            "naam": "Nicki Leijs",
+            "club": "Bloemendaal",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Oranje-Rood",
+        "score": "1-1 (SO 4-2)",
+        "datum": "6 mei 2018",
+        "scorers": [
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 70
+          },
+          {
+            "naam": "Benjamin Stanzl",
+            "club": "Oranje-Rood",
+            "minuut": 13
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "2-2 (SO 3-4)",
+        "datum": "6 mei 2018",
+        "scorers": [
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 16
+          },
+          {
+            "naam": "Sander 't Hart",
+            "club": "Bloemendaal",
+            "minuut": 35
+          },
+          {
+            "naam": "Nicki Leijs",
+            "club": "Amsterdam",
+            "minuut": 47
+          },
+          {
+            "naam": "Justin Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "0-3",
+        "datum": "10 mei 2018",
+        "scorers": [
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 21
+          },
+          {
+            "naam": "Jan-Willem Buissant",
+            "club": "Amsterdam",
+            "minuut": 35
+          },
+          {
+            "naam": "Valentin Verga",
+            "club": "Amsterdam",
+            "minuut": 46
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "1-1 (SO 2-3)",
+        "datum": "13 mei 2018",
+        "scorers": [
+          {
+            "naam": "Tijn Lissone",
+            "club": "Amsterdam",
+            "minuut": 11
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 23
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "19 mei 2018",
+        "scorers": [
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 9
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 30
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "3-1",
+        "datum": "20 mei 2018",
+        "scorers": [
+          {
+            "naam": "Jasper Luijkx",
+            "club": "Kampong",
+            "minuut": 10
+          },
+          {
+            "naam": "Robbert Kemperman",
+            "club": "Kampong",
+            "minuut": 51
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 69
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 34
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": [
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Bloemendaal",
+        "score": "2-2 (SO 3-1)",
+        "datum": "13 mei 2018",
+        "scorers": [
+          {
+            "naam": "Agustin Mazzilli",
+            "club": "Oranje-Rood",
+            "minuut": 6
+          },
+          {
+            "naam": "Jelle Galema",
+            "club": "Oranje-Rood",
+            "minuut": 20
+          },
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 25
+          },
+          {
+            "naam": "Florian Fuchs",
+            "club": "Bloemendaal",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje-Rood",
+        "score": "1-1 (SO 2-4)",
+        "datum": "19 mei 2018",
+        "scorers": [
+          {
+            "naam": "Tim Swaen",
+            "club": "Bloemendaal",
+            "minuut": 13
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje-Rood",
+            "minuut": 37
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "kampioen": "Kampong",
+    "playout": [
+      {
+        "thuis": "Hurley",
+        "uit": "Almere",
+        "score": "2-2 (SO 4-3)",
+        "datum": "30 mei 2018",
+        "scorers": [
+          {
+            "naam": "Christiaan Stroboer",
+            "club": "Hurley",
+            "minuut": 5
+          },
+          {
+            "naam": "Terrance Pieters",
+            "club": "Almere",
+            "minuut": 25
+          },
+          {
+            "naam": "Christiaan Stroboer",
+            "club": "Hurley",
+            "minuut": 49
+          },
+          {
+            "naam": "Stijn Jolie",
+            "club": "Almere",
+            "minuut": 66
+          }
+        ],
+        "notitie": "Hurley wint na shoot-outs: 4-3."
+      },
+      {
+        "thuis": "Almere",
+        "uit": "Hurley",
+        "score": "3-0",
+        "datum": "2 juni 2018",
+        "scorers": [
+          {
+            "naam": "Deegan Huisman",
+            "club": "Almere",
+            "minuut": 3
+          },
+          {
+            "naam": "Terrance Pieters",
+            "club": "Almere",
+            "minuut": 10
+          },
+          {
+            "naam": "Juan Fortuin",
+            "club": "Almere",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Almere",
+        "score": "0-1",
+        "datum": "3 juni 2018",
+        "scorers": [
+          {
+            "naam": "Jonas de Geus",
+            "club": "Almere",
+            "minuut": 14
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Pinoké",
+        "score": "1-2",
+        "datum": "30 mei 2018",
+        "scorers": [
+          {
+            "naam": "Camil Papa",
+            "club": "Pinoké",
+            "minuut": 1
+          },
+          {
+            "naam": "Daan 't Gilde",
+            "club": "Nijmegen",
+            "minuut": 33
+          },
+          {
+            "naam": "Pepijn Scheen",
+            "club": "Pinoké",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Nijmegen",
+        "score": "1-1 (SO 4-3)",
+        "datum": "2 juni 2018",
+        "scorers": [
+          {
+            "naam": "Brendan Bissett",
+            "club": "Pinoké",
+            "minuut": 43
+          },
+          {
+            "naam": "Thijn Knetemann",
+            "club": "Nijmegen",
+            "minuut": 70
+          }
+        ],
+        "notitie": "Pinoké wint na shoot-outs: 4-3."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
