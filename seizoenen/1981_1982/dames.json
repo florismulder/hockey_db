@@ -20,7 +20,7 @@
       "doelpunten_tegen": 18,
       "doelsaldo": 39,
       "punten": 38,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 2,
@@ -33,7 +33,7 @@
       "doelpunten_tegen": 18,
       "doelsaldo": 63,
       "punten": 37,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 3,
@@ -46,7 +46,7 @@
       "doelpunten_tegen": 29,
       "doelsaldo": 8,
       "punten": 27,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 4,
@@ -59,7 +59,7 @@
       "doelpunten_tegen": 26,
       "doelsaldo": 1,
       "punten": 24,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 5,
@@ -137,7 +137,7 @@
       "doelpunten_tegen": 33,
       "doelsaldo": -18,
       "punten": 14,
-      "zone": "playout"
+      "zone": ""
     },
     {
       "positie": 11,
@@ -150,7 +150,7 @@
       "doelpunten_tegen": 30,
       "doelsaldo": -15,
       "punten": 14,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 12,
@@ -178,6 +178,12 @@
     }
   ],
   "coaches": [],
-  "playoffs": null,
-  "bijgewerkt": "2026-04-04"
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "HGC",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
 }
