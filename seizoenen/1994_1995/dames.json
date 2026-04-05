@@ -1,0 +1,343 @@
+{
+  "seizoen": "1994-1995",
+  "slug": "1994_1995",
+  "geslacht": "dames",
+  "kampioen": "Kampong",
+  "vicekampioen": "HGC",
+  "gedegradeerd": [
+    "Oranje Zwart",
+    "Victoria"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 14,
+      "doelsaldo": 35,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 25,
+      "punten": 34,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 15,
+      "punten": 28,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 10,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 7,
+      "verloren": 6,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 4,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 1,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 10,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 1,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 27,
+      "doelsaldo": -4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -7,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 8,
+      "verloren": 12,
+      "doelpunten_voor": 12,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -26,
+      "punten": 12,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 5,
+      "verloren": 14,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -15,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 5,
+      "verloren": 16,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -39,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Wietske de Ruiter",
+      "club": "HGC",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Marcia de Goede",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Ellen Kuipers",
+      "club": "Kampong",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Jeannette Lewin",
+      "club": "Kampong",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Frederiek Grijpma",
+      "club": "Laren",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Suzan van der Wielen",
+      "club": "HGC",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Maaike Schroeder",
+      "club": "HDM",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Cécile Vinke",
+      "club": "MOP",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "HGC",
+        "score": "2-5",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Den Bosch",
+        "score": "1-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Kampong",
+        "score": "0-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Laren",
+        "score": "2-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "3-1",
+        "datum": "20-05-1995",
+        "scorers": [
+          {
+            "naam": "Jeannette Lewin",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Hoogendoorn",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Wietske de Ruiter",
+            "club": "HGC",
+            "minuut": null
+          },
+          {
+            "naam": "Jeannette Lewin",
+            "club": "Kampong",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "0-2",
+        "datum": "21-05-1995",
+        "scorers": [
+          {
+            "naam": "Hoogendoorn",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Ellen Kuipers",
+            "club": "Kampong",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Kampong",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
