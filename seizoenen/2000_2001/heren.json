@@ -1,0 +1,375 @@
+{
+  "seizoen": "2000-2001",
+  "slug": "2000_2001",
+  "geslacht": "heren",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Oranje Zwart",
+  "gedegradeerd": [
+    "Rotterdam",
+    "SCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 6,
+      "verloren": 2,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 32,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 28,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 18,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 16,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 14,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 13,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -11,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -25,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 8,
+      "verloren": 10,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 54,
+      "doelsaldo": -20,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -12,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -22,
+      "punten": 19,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 6,
+      "verloren": 13,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -31,
+      "punten": 15,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Teun de Nooijer",
+      "club": "Bloemendaal",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Sander Dreesmann",
+      "club": "Klein Zwitserland",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Richard de Snaijer",
+      "club": "HDM",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Troy Elder",
+      "club": "Oranje Zwart",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Paul Robert Lankhout",
+      "club": "Kampong",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Taeke Taekema",
+      "club": "Klein Zwitserland",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Remco van Wijk",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Ronald Brouwer",
+      "club": "HGC",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Frank Rutgers",
+      "club": "Pinoké",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Rochus Westbroek",
+      "club": "Amsterdam",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Oranje Zwart",
+        "score": "1-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Klein Zwitserland",
+        "score": "3-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Klein Zwitserland",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Den Bosch",
+        "score": "1-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Oranje Zwart",
+        "score": "4-2",
+        "datum": "10 juni 2001",
+        "scorers": [
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": 12
+          },
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 14
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": 17
+          },
+          {
+            "naam": "Marc van Wijk",
+            "club": "Den Bosch",
+            "minuut": 26
+          },
+          {
+            "naam": "Piet-Hein Geeris",
+            "club": "Oranje Zwart",
+            "minuut": 38
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": 56
+          }
+        ],
+        "notitie": "Eerste duel"
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Den Bosch",
+        "score": "1-2",
+        "datum": "16 juni 2001",
+        "scorers": [
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": 51
+          },
+          {
+            "naam": "Marc van Wijk",
+            "club": "Den Bosch",
+            "minuut": 60
+          },
+          {
+            "naam": "Michael Brennan",
+            "club": "Oranje Zwart",
+            "minuut": 63
+          }
+        ],
+        "notitie": "Tweede duel"
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
