@@ -1,0 +1,621 @@
+{
+  "seizoen": "2005/06",
+  "slug": "2005_2006",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Laren"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 98,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 67,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 28,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 4,
+      "verloren": 5,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 49,
+      "doelsaldo": 22,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 2,
+      "verloren": 7,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 19,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 2,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 20,
+      "punten": 41,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 60,
+      "doelsaldo": 1,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -1,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -5,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -26,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -27,
+      "punten": 21,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Eindhoven",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 85,
+      "doelsaldo": -44,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 90,
+      "doelsaldo": -54,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 34,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 2,
+      "naam": "Taeke Taekema",
+      "club": "Amsterdam",
+      "doelpunten": 25,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Richard de Snaijer",
+      "club": "Klein Zwitserland",
+      "doelpunten": 21,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Sohail Abbas",
+      "club": "Rotterdam",
+      "doelpunten": 20,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Roderik Huber",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Joost van den Berg",
+      "club": "HGC",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Troy Elder",
+      "club": "Oranje Zwart",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Karel Klaver",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Nick Meijer",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Teun de Nooijer",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "3-6",
+        "datum": "13-05-2006",
+        "scorers": [
+          {
+            "naam": "Paul Maas",
+            "club": "Oranje Zwart",
+            "minuut": 13
+          },
+          {
+            "naam": "Teun Rohof",
+            "club": "Oranje Zwart",
+            "minuut": 28
+          },
+          {
+            "naam": "Matthijs Brouwer",
+            "club": "Oranje Zwart",
+            "minuut": 40
+          },
+          {
+            "naam": "Luke Doerner",
+            "club": "Bloemendaal",
+            "minuut": 8
+          },
+          {
+            "naam": "Wouter Jolie",
+            "club": "Bloemendaal",
+            "minuut": 25
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 37
+          },
+          {
+            "naam": "Luke Doerner",
+            "club": "Bloemendaal",
+            "minuut": 48
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 56
+          },
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "5-3",
+        "datum": "13-05-2006",
+        "scorers": [
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 18
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 22
+          },
+          {
+            "naam": "Rob Derikx",
+            "club": "SCHC",
+            "minuut": 34
+          },
+          {
+            "naam": "Geert-Jan Derikx",
+            "club": "SCHC",
+            "minuut": 43
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 69
+          },
+          {
+            "naam": "Paul van Esseveldt",
+            "club": "Amsterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 20
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 48
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "4-3",
+        "datum": "14-05-2006",
+        "scorers": [
+          {
+            "naam": "Nick Meijer",
+            "club": "Bloemendaal",
+            "minuut": 55
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 61
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 66
+          },
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 85
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 5
+          },
+          {
+            "naam": "Matthijs Brouwer",
+            "club": "Oranje Zwart",
+            "minuut": 9
+          },
+          {
+            "naam": "Paul Maas",
+            "club": "Oranje Zwart",
+            "minuut": 13
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "3-1",
+        "datum": "14-05-2006",
+        "scorers": [
+          {
+            "naam": "Kristiaan Timman",
+            "club": "Amsterdam",
+            "minuut": 18
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 20
+          },
+          {
+            "naam": "Pol Amat",
+            "club": "Amsterdam",
+            "minuut": 69
+          },
+          {
+            "naam": "Geert-Jan Derikx",
+            "club": "SCHC",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "5-2",
+        "datum": "18-05-2006",
+        "scorers": [
+          {
+            "naam": "Paul van Esseveldt",
+            "club": "Amsterdam",
+            "minuut": 10
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 23
+          },
+          {
+            "naam": "Paul van Esseveldt",
+            "club": "Amsterdam",
+            "minuut": 35
+          },
+          {
+            "naam": "Timo Bruinsma",
+            "club": "Amsterdam",
+            "minuut": 50
+          },
+          {
+            "naam": "Pol Amat",
+            "club": "Amsterdam",
+            "minuut": 57
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 2
+          },
+          {
+            "naam": "Geert-Jan Derikx",
+            "club": "SCHC",
+            "minuut": 29
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "21-05-2006",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 8
+          },
+          {
+            "naam": "Roderik Huber",
+            "club": "Amsterdam",
+            "minuut": 28
+          },
+          {
+            "naam": "Wouter Jolie",
+            "club": "Bloemendaal",
+            "minuut": 35
+          },
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 38
+          },
+          {
+            "naam": "Nick Meijer",
+            "club": "Bloemendaal",
+            "minuut": 80
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "0-4",
+        "datum": "27-05-2006",
+        "scorers": [
+          {
+            "naam": "Roderik Huber",
+            "club": "Amsterdam",
+            "minuut": 6
+          },
+          {
+            "naam": "Roderik Huber",
+            "club": "Amsterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 21
+          },
+          {
+            "naam": "Mark Neumeier",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "3-2",
+        "datum": "28-05-2006",
+        "scorers": [
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 44
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 55
+          },
+          {
+            "naam": "Luke Doerner",
+            "club": "Bloemendaal",
+            "minuut": 74
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 38
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Voordaan",
+        "uit": "Eindhoven",
+        "score": "1-4",
+        "datum": "20-05-2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "HGC",
+        "score": "2-5",
+        "datum": "20-05-2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Voordaan",
+        "score": "3-1",
+        "datum": "21-05-2006",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Hurley",
+        "score": "3-1",
+        "datum": "21-05-2006",
+        "scorers": [],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
