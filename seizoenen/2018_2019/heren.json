@@ -1,0 +1,630 @@
+{
+  "seizoen": "2018-2019",
+  "slug": "2018_2019",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Kampong",
+  "gedegradeerd": [
+    "SCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 62,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 38,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 62,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 32,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 27,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 18,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Rood",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 7,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 7,
+      "verloren": 5,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 14,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 8,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 9,
+      "verloren": 9,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -10,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Almere",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -28,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HC Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 8,
+      "verloren": 12,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -37,
+      "punten": 14,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 4,
+      "verloren": 15,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -29,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 75,
+      "doelsaldo": -40,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 23,
+      "vd": 3,
+      "sc": 15,
+      "sb": 5
+    },
+    {
+      "rang": 2,
+      "naam": "Ashley Jackson",
+      "club": "HGC",
+      "doelpunten": 17,
+      "vd": 7,
+      "sc": 10,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Justin Reid-Ross",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 17,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Alexander Hendrickx",
+      "club": "Pinoké",
+      "doelpunten": 15,
+      "vd": 1,
+      "sc": 13,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Mirco Pruyser",
+      "club": "Amsterdam",
+      "doelpunten": 14,
+      "vd": 9,
+      "sc": 1,
+      "sb": 4
+    },
+    {
+      "rang": 5,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Rood",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 13,
+      "sb": 1
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Almeerse HC",
+      "naam": "Pasha Gademan"
+    },
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Jan Jorn van 't Land"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "HGC",
+      "naam": "Paul van Ass"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "HC Klein Zwitserland",
+      "naam": "Carlos Castano"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Roger van Gent"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Jeroen Delmee"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "0-2",
+        "datum": "15 mei 2019 20:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Jasper Brinkman",
+            "club": "Bloemendaal",
+            "minuut": 62
+          },
+          {
+            "naam": "Tim Swaen",
+            "club": "Bloemendaal",
+            "minuut": 69
+          }
+        ],
+        "notitie": "1e wedstrijd"
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "2-5",
+        "datum": "15 mei 2019 20:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Max Plennevaux",
+            "club": "HGC",
+            "minuut": 22
+          },
+          {
+            "naam": "Olivier van Tongeren",
+            "club": "HGC",
+            "minuut": 63
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 17
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 47
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 46
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 56
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 36
+          }
+        ],
+        "notitie": "1e wedstrijd"
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "1-1 (SO 4-2)",
+        "datum": "18 mei 2019 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Florian Fuchs",
+            "club": "Bloemendaal",
+            "minuut": 59
+          },
+          {
+            "naam": "Jan-Willem Buissant",
+            "club": "Amsterdam",
+            "minuut": 34
+          }
+        ],
+        "notitie": "2e wedstrijd"
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "3-2",
+        "datum": "18 mei 2019 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Derck de Vilder",
+            "club": "Kampong",
+            "minuut": 42
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 48
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 65
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 41
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 44
+          }
+        ],
+        "notitie": "2e wedstrijd"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Kampong",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": "22 mei 2019 20:30 UTC+2",
+        "scorers": [
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 67
+          },
+          {
+            "naam": "Jorrit Croon",
+            "club": "Bloemendaal",
+            "minuut": 5
+          },
+          {
+            "naam": "Thierry Brinkman",
+            "club": "Bloemendaal",
+            "minuut": 69
+          }
+        ],
+        "notitie": null
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "1-2",
+        "datum": "25 mei 2019 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Yannick van der Drift",
+            "club": "Bloemendaal",
+            "minuut": 2
+          },
+          {
+            "naam": "Boet Phijffer",
+            "club": "Kampong",
+            "minuut": 26
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 52
+          }
+        ],
+        "notitie": null
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "2-0",
+        "datum": "26 mei 2019 16:00 UTC+2",
+        "scorers": [
+          {
+            "naam": "Jorrit Croon",
+            "club": "Bloemendaal",
+            "minuut": 30
+          },
+          {
+            "naam": "Florian Fuchs",
+            "club": "Bloemendaal",
+            "minuut": 44
+          }
+        ],
+        "notitie": null
+      }
+    ],
+    "troostfinale": {
+      "thuis": "Amsterdam",
+      "uit": "HGC",
+      "score": "3-2",
+      "datum": "22 mei 2019 20:30 UTC+2",
+      "scorers": [
+        {
+          "naam": "Valentin Verga",
+          "club": "Amsterdam",
+          "minuut": 16
+        },
+        {
+          "naam": "Mirco Pruyser",
+          "club": "Amsterdam",
+          "minuut": 23
+        },
+        {
+          "naam": "Justin Reid-Ross",
+          "club": "Amsterdam",
+          "minuut": 28
+        },
+        {
+          "naam": "Ashley Jackson",
+          "club": "HGC",
+          "minuut": 17
+        },
+        {
+          "naam": "Tanguy Cosyns",
+          "club": "HGC",
+          "minuut": 62
+        }
+      ]
+    },
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Hdm",
+        "uit": "Klein Zwitserland",
+        "score": "1-2",
+        "datum": "30 mei 2019 15:00",
+        "scorers": [
+          {
+            "naam": "Koen Bijen",
+            "club": "Hdm",
+            "minuut": 17
+          },
+          {
+            "naam": "Kieran Dartée",
+            "club": "Klein Zwitserland",
+            "minuut": 30
+          },
+          {
+            "naam": "Koen Bijen",
+            "club": "Klein Zwitserland",
+            "minuut": 39
+          }
+        ],
+        "notitie": "11de/Vice-kampioen Overgangsklasse"
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Hdm",
+        "score": "2-0",
+        "datum": "1 juni 2019 15:00",
+        "scorers": [
+          {
+            "naam": "Martijn van Grimbergen",
+            "club": "Klein Zwitserland",
+            "minuut": 12
+          },
+          {
+            "naam": "Ruben Versteeg",
+            "club": "Klein Zwitserland",
+            "minuut": 39
+          }
+        ],
+        "notitie": "Klein Zwitserland handhaaft zich"
+      },
+      {
+        "thuis": "Cartouche",
+        "uit": "HC Tilburg",
+        "score": "1-2",
+        "datum": "30 mei 2019 15:00",
+        "scorers": [
+          {
+            "naam": "Joep de Natris",
+            "club": "Cartouche",
+            "minuut": 2
+          },
+          {
+            "naam": "Joep de Natris",
+            "club": "Cartouche",
+            "minuut": 23
+          },
+          {
+            "naam": "Timmo Kranstauber",
+            "club": "HC Tilburg",
+            "minuut": 60
+          }
+        ],
+        "notitie": "10de/Beste 2de Overgangsklasse"
+      },
+      {
+        "thuis": "HC Tilburg",
+        "uit": "Cartouche",
+        "score": "3-3 (SO 3-2)",
+        "datum": "1 juni 2019 15:00",
+        "scorers": [
+          {
+            "naam": "Jasper Siebert",
+            "club": "Cartouche",
+            "minuut": 15
+          },
+          {
+            "naam": "Thijs Bams",
+            "club": "HC Tilburg",
+            "minuut": 35
+          },
+          {
+            "naam": "Jip Krens",
+            "club": "HC Tilburg",
+            "minuut": 37
+          },
+          {
+            "naam": "Bas Scheer",
+            "club": "HC Tilburg",
+            "minuut": 40
+          },
+          {
+            "naam": "Victor van den Bree",
+            "club": "Cartouche",
+            "minuut": 65
+          },
+          {
+            "naam": "Timmo Kranstauber",
+            "club": "Cartouche",
+            "minuut": 70
+          }
+        ],
+        "notitie": "10de/Beste 2de Overgangsklasse"
+      },
+      {
+        "thuis": "Cartouche",
+        "uit": "HC Tilburg",
+        "score": "1-2",
+        "datum": "2 juni 2019 15:00",
+        "scorers": [
+          {
+            "naam": "Yorick van der Vis",
+            "club": "Cartouche",
+            "minuut": 1
+          },
+          {
+            "naam": "Jip Krens",
+            "club": "HC Tilburg",
+            "minuut": 37
+          },
+          {
+            "naam": "Rik Sprengers",
+            "club": "HC Tilburg",
+            "minuut": 1
+          }
+        ],
+        "notitie": "HC Tilburg handhaaft zich"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
