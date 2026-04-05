@@ -1,0 +1,469 @@
+{
+  "seizoen": "2002-2003",
+  "slug": "2002_2003",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Oranje Zwart",
+  "gedegradeerd": [
+    "Rotterdam",
+    "Hattem"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 82,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 44,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 21,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 1,
+      "verloren": 7,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 32,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 70,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 23,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 70,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 20,
+      "punten": 39,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 49,
+      "doelsaldo": 12,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -8,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -13,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -14,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -25,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -27,
+      "punten": 17,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 0,
+      "verloren": 21,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 94,
+      "doelsaldo": -65,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Taeke Taekema",
+      "club": "Klein Zwitserland",
+      "doelpunten": 33,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "David Mathews",
+      "club": "Amsterdam",
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Richard de Snaijer",
+      "club": "Rotterdam",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Matthijs Brouwer",
+      "club": "Den Bosch",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Roderick Weusthof",
+      "club": "Kampong",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Marten Eikelboom",
+      "club": "Amsterdam",
+      "doelpunten": 23,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Martijn van Hasselt",
+      "club": "Bloemendaal",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Jeroen Koops",
+      "club": "Pinoké",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Ronald Brouwer",
+      "club": "HGC",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Rob Derikx",
+      "club": "Den Bosch",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Amsterdam",
+        "score": "1-3",
+        "datum": "17-05-2003",
+        "scorers": [
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 50
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "HGC",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "1-0",
+        "datum": "17-05-2003",
+        "scorers": [
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 35
+          }
+        ],
+        "notitie": "Doelman Josef Kramer (OZ) stopt strafbal in 26ste minuut van Teun de Nooijer."
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "3-2",
+        "datum": "18-05-2003",
+        "scorers": [
+          {
+            "naam": "Marten Eikelboom",
+            "club": "Amsterdam",
+            "minuut": 12
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 23
+          },
+          {
+            "naam": "Oene van Brunschot",
+            "club": "Amsterdam",
+            "minuut": 47
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 54
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 74
+          }
+        ],
+        "notitie": "David Mathews beslist in de eerste helft van de verlenging de wedstrijd met een \"golden goal\"."
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "2-0",
+        "datum": "18-05-2003",
+        "scorers": [
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 35
+          },
+          {
+            "naam": "Eric Steegers",
+            "club": "Oranje Zwart",
+            "minuut": 36
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "2-1",
+        "datum": "21-05-2003",
+        "scorers": [
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 9
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 14
+          },
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 26
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "2-3",
+        "datum": "25-05-2003",
+        "scorers": [
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 2
+          },
+          {
+            "naam": "Jay Stacy",
+            "club": "Oranje Zwart",
+            "minuut": 6
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 18
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 37
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 77
+          }
+        ],
+        "notitie": "David Mathews beslist in de eerste helft van de verlenging de wedstrijd met een \"golden goal\"."
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "3-2",
+        "datum": "29-05-2003",
+        "scorers": [
+          {
+            "naam": "Marten Eikelboom",
+            "club": "Amsterdam",
+            "minuut": 27
+          },
+          {
+            "naam": "Paul Maas",
+            "club": "Oranje Zwart",
+            "minuut": 55
+          },
+          {
+            "naam": "Friso Jiskoot",
+            "club": "Amsterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 63
+          },
+          {
+            "naam": "Piet-Hein Geeris",
+            "club": "Oranje Zwart",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
