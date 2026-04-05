@@ -1,0 +1,349 @@
+{
+  "seizoen": "1994-1995",
+  "slug": "1994_1995",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "HDM",
+  "gedegradeerd": [
+    "EHV",
+    "Push"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 1,
+      "verloren": 3,
+      "doelpunten_voor": 93,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 61,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 19,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 32,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 4,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 9,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 22,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -12,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 8,
+      "verloren": 10,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -13,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 8,
+      "verloren": 10,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -16,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 4,
+      "verloren": 14,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 54,
+      "doelsaldo": -25,
+      "punten": 12,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "EHV",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 2,
+      "verloren": 15,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 71,
+      "doelsaldo": -36,
+      "punten": 12,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 78,
+      "doelsaldo": -45,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Taco van den Honert",
+      "club": "Amsterdam",
+      "doelpunten": 42,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Wouter van Pelt",
+      "club": "HDM",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Bram Lomans",
+      "club": "Push",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Stephan Veen",
+      "club": "HGC",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Jacques Brinkman",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Rochus Westbroek",
+      "club": "Klein Zwitserland",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Erik Jazet",
+      "club": "Bloemendaal",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Bob Jonker",
+      "club": "EHV",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "0-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "4-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HDM",
+        "score": "0-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HDM",
+        "uit": "Bloemendaal",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HDM",
+        "uit": "Amsterdam",
+        "score": "1-1",
+        "datum": "27-05-1995",
+        "scorers": [
+          {
+            "naam": "Wouter van Pelt",
+            "club": "HDM",
+            "minuut": null
+          },
+          {
+            "naam": "Taco van den Honert",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HDM",
+        "score": "4-3",
+        "datum": "28-05-1995",
+        "scorers": [
+          {
+            "naam": "Peters",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Wouter van Pelt",
+            "club": "HDM",
+            "minuut": null
+          },
+          {
+            "naam": "Taco van den Honert",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Eikelboom",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Wouter van Pelt",
+            "club": "HDM",
+            "minuut": null
+          },
+          {
+            "naam": "Wouter van Pelt",
+            "club": "HDM",
+            "minuut": null
+          },
+          {
+            "naam": "Peters",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
