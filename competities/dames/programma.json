@@ -263,6 +263,49 @@
       ]
     },
     {
+      "thuis": "Pinoké",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Elin van Erk",
+          "club": "Pinoké",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Daan Sabel",
+          "club": "Pinoké",
+          "minuut": 26,
+          "type": "geel"
+        },
+        {
+          "naam": "Pien van der Heide",
+          "club": "HDM",
+          "minuut": 42,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -2171,5 +2214,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:29.489Z"
+  "bijgewerkt": "2026-04-05T18:48:30.876Z"
 }
