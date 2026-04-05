@@ -1,0 +1,401 @@
+{
+  "seizoen": "2022-2023",
+  "slug": "2022_2023",
+  "geslacht": "heren",
+  "kampioen": "Pinoké",
+  "vicekampioen": "Bloemendaal",
+  "gedegradeerd": [
+    "Voordaan"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 38,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 7,
+      "verloren": 1,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 39,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 76,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 26,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 16,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Rood",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 8,
+      "verloren": 4,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 21,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 53,
+      "doelsaldo": 15,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 9,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 17,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 49,
+      "doelsaldo": -4,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -32,
+      "punten": 19,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -35,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Voordaan",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 1,
+      "verloren": 21,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 133,
+      "doelsaldo": -110,
+      "punten": 1,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 36,
+      "vd": 14,
+      "sc": 17,
+      "sb": 5
+    },
+    {
+      "rang": 2,
+      "naam": "Jip Janssen",
+      "club": "Kampong",
+      "doelpunten": 34,
+      "vd": 1,
+      "sc": 31,
+      "sb": 2
+    },
+    {
+      "rang": 3,
+      "naam": "Aki Käppeler",
+      "club": "Klein Zwitserland",
+      "doelpunten": 24,
+      "vd": 2,
+      "sc": 22,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Alexander Hendrickx",
+      "club": "Pinoké",
+      "doelpunten": 22,
+      "vd": 0,
+      "sc": 21,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Jeremy Hayward",
+      "club": "'s-Hertogenbosch",
+      "doelpunten": 19,
+      "vd": 1,
+      "sc": 15,
+      "sb": 3
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "HGC",
+      "naam": "Bram Lomans"
+    },
+    {
+      "club": "HDM",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "'s-Hertogenbosch",
+      "naam": "Marc Lammers"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Tim Oudenaller"
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Omar Schlingemann"
+    },
+    {
+      "club": "Oranje Rood",
+      "naam": "Jeroen Baart"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Robin Rösch"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "Voordaan",
+      "naam": "Peter Jonker"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Pinoké",
+        "uit": "Kampong",
+        "score": "3-1",
+        "datum": "18-05-2023",
+        "scorers": [
+          {
+            "naam": "Alexander Hendrickx",
+            "club": "Pinoké",
+            "minuut": 16
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 16
+          },
+          {
+            "naam": "Miles Bukkens",
+            "club": "Pinoké",
+            "minuut": 23
+          },
+          {
+            "naam": "Marlon Landbrug",
+            "club": "Pinoké",
+            "minuut": 28
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Pinoké",
+        "score": "1-2",
+        "datum": "21-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": "18-05-2023",
+        "scorers": [
+          {
+            "naam": "Arthur Van Doren",
+            "club": "Bloemendaal",
+            "minuut": 18
+          },
+          {
+            "naam": "Dennis Warmerdam",
+            "club": "Bloemendaal",
+            "minuut": 43
+          },
+          {
+            "naam": "Joaquin Menini",
+            "club": "Rotterdam",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "4-3",
+        "datum": "21-05-2023",
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Pinoké",
+        "uit": "Bloemendaal",
+        "score": "1-1",
+        "datum": "27-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Pinoké",
+        "score": "0-4",
+        "datum": "29-05-2023",
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Pinoké",
+    "playout": [
+      {
+        "thuis": "Hurley",
+        "uit": "HDM",
+        "score": "1-2",
+        "datum": "24-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HDM",
+        "uit": "Hurley",
+        "score": "4-2",
+        "datum": "27-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Schaerweijde",
+        "score": "3-3 (SO 2-1)",
+        "datum": "24-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Nijmegen",
+        "score": "4-2",
+        "datum": "27-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Schaerweijde",
+        "score": "2-3",
+        "datum": "29-05-2023",
+        "scorers": [],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
