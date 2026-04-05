@@ -1,0 +1,547 @@
+{
+  "seizoen": "2006-2007",
+  "slug": "2006_2007",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Victoria",
+    "Groningen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 0,
+      "verloren": 2,
+      "doelpunten_voor": 98,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 83,
+      "punten": 60,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 37,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 26,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 15,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 9,
+      "punten": 39,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -1,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 2,
+      "verloren": 11,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -9,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -3,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -13,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Forward",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -39,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 74,
+      "doelsaldo": -58,
+      "punten": 9,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 5,
+      "verloren": 16,
+      "doelpunten_voor": 12,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -47,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 34,
+      "vd": 19,
+      "sc": 14,
+      "sb": 1
+    },
+    {
+      "rang": 2,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 27,
+      "vd": 7,
+      "sc": 20,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Alessia Padalino",
+      "club": "Klein Zwitserland",
+      "doelpunten": 20,
+      "vd": 9,
+      "sc": 11,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Eefke Mulder",
+      "club": "Nijmegen",
+      "doelpunten": 16,
+      "vd": 4,
+      "sc": 11,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 14,
+      "vd": 2,
+      "sc": 11,
+      "sb": 1
+    },
+    {
+      "rang": 6,
+      "naam": "Kitty van Male",
+      "club": "Amsterdam",
+      "doelpunten": 13,
+      "vd": 13,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Helen Grant",
+      "club": "Rotterdam",
+      "doelpunten": 13,
+      "vd": 12,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": null,
+      "naam": "Eveline Wisse Smit",
+      "club": "Amsterdam",
+      "doelpunten": 13,
+      "vd": 12,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 9,
+      "naam": "Vera Vorstenbosch",
+      "club": "Den Bosch",
+      "doelpunten": 13,
+      "vd": 11,
+      "sc": 2,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Janneke Schopman",
+      "club": "Den Bosch",
+      "doelpunten": 11,
+      "vd": 7,
+      "sc": 4,
+      "sb": 0
+    }
+  ],
+  "coaches": null,
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "2-1",
+        "datum": "06-05-2007",
+        "scorers": [
+          {
+            "naam": "Soledad Garcia",
+            "club": "Laren",
+            "minuut": 25
+          },
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 36
+          },
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 46
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "06-05-2007",
+        "scorers": [
+          {
+            "naam": "Janneke Schopman",
+            "club": "Den Bosch",
+            "minuut": 18
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "1-0",
+        "datum": "09-05-2007",
+        "scorers": [
+          {
+            "naam": "Sabine Romkes",
+            "club": "Laren",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Klein Zwitserland",
+        "score": "4-0",
+        "datum": "09-05-2007",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 28
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 47
+          },
+          {
+            "naam": "Janneke Schopman",
+            "club": "Den Bosch",
+            "minuut": 55
+          },
+          {
+            "naam": "Emilie Mol",
+            "club": "Den Bosch",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "13-05-2007",
+        "scorers": [
+          {
+            "naam": "Kim Lammers",
+            "club": "Laren",
+            "minuut": 2
+          },
+          {
+            "naam": "Holman",
+            "club": "Amsterdam",
+            "minuut": 35
+          },
+          {
+            "naam": "Weimar Schultz",
+            "club": "Amsterdam",
+            "minuut": 72
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-2 (SO 5-4)",
+        "datum": "17-05-2007",
+        "scorers": [
+          {
+            "naam": "Janneke Schopman",
+            "club": "Den Bosch",
+            "minuut": 4
+          },
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Petit dit de la Roche",
+            "club": "Den Bosch",
+            "minuut": 48
+          },
+          {
+            "naam": "Clemens",
+            "club": "Amsterdam",
+            "minuut": 59
+          }
+        ],
+        "notitie": "Amsterdam wns na strafballen 5-4"
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "5-3",
+        "datum": "19-05-2007",
+        "scorers": [
+          {
+            "naam": "Holman",
+            "club": "Amsterdam",
+            "minuut": 12
+          },
+          {
+            "naam": "Karres",
+            "club": "Amsterdam",
+            "minuut": 14
+          },
+          {
+            "naam": "Dirkse van den Heuvel",
+            "club": "Den Bosch",
+            "minuut": 16
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 30
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 36
+          },
+          {
+            "naam": "Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 40
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 48
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 50
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "2-0",
+        "datum": "20-05-2007",
+        "scorers": [
+          {
+            "naam": "Dirkse van den Heuvel",
+            "club": "Den Bosch",
+            "minuut": 59
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "HDM",
+        "uit": "Oranje Zwart",
+        "score": "1-0",
+        "datum": "09-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "HDM",
+        "score": "2-1",
+        "datum": "12-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "HDM",
+        "score": "1-0",
+        "datum": "13-05-2007",
+        "scorers": [],
+        "notitie": "Oranje Zwart is gepromoveerd"
+      },
+      {
+        "thuis": "HIC",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": "09-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "HIC",
+        "score": "1-1 (SO 4-5)",
+        "datum": "12-05-2007",
+        "scorers": [],
+        "notitie": "HIC wint na strafballen: 4-5"
+      },
+      {
+        "thuis": "HDM",
+        "uit": "Groningen",
+        "score": "2-0",
+        "datum": "19-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HIC",
+        "uit": "Forward",
+        "score": "0-0 (SO 3-4)",
+        "datum": "19-05-2007",
+        "scorers": [],
+        "notitie": "Forward wint na strafballen: 3-4"
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "HDM",
+        "score": "2-2 (SO 4-5)",
+        "datum": "20-05-2007",
+        "scorers": [],
+        "notitie": "HDM wint na strafballen: 4-5"
+      },
+      {
+        "thuis": "Forward",
+        "uit": "HIC",
+        "score": "3-1 (SO 5-4)",
+        "datum": "20-05-2007",
+        "scorers": [],
+        "notitie": "Forward wint na strafballen: 5-4"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
