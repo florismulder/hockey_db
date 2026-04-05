@@ -1,0 +1,216 @@
+{
+  "seizoen": "1990-1991",
+  "slug": "1990_1991",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Pinoké",
+    "Forward"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 43,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 47,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 29,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 7,
+      "verloren": 3,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 9,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 2,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -10,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -10,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -10,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -9,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 10,
+      "verloren": 10,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -17,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -25,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Forward",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -49,
+      "punten": 4,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Floris Jan Bovelander",
+      "club": "Bloemendaal",
+      "doelpunten": 32,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Gijs Weterings",
+      "club": "HGC",
+      "doelpunten": 28,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Stephan Veen",
+      "club": "HGC",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Taco van den Honert",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
