@@ -1,6 +1,67 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Amsterdam",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 3,
+      "datum": "2025-09-13",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Fiona Morgenstern",
+          "club": "Hurley",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Michelle van der Drift",
+          "club": "Hurley",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 44,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "HDM",
       "score_thuis": 2,
@@ -2702,5 +2763,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:47.175Z"
+  "bijgewerkt": "2026-04-05T18:48:48.734Z"
 }
