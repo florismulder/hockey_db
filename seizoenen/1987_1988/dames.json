@@ -177,13 +177,7 @@
       "sb": null
     }
   ],
-  "coaches": [],
-  "playoffs": {
-    "halve_finales": [],
-    "finale": null,
-    "troostfinale": null,
-    "kampioen": null,
-    "playout": []
-  },
+  "coaches": null,
+  "playoffs": null,
   "bijgewerkt": "2026-04-05"
 }
