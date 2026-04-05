@@ -1,0 +1,335 @@
+{
+  "seizoen": "2020/21",
+  "slug": "2020_2021",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Laren"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 1,
+      "verloren": 2,
+      "doelpunten_voor": 75,
+      "doelpunten_tegen": 6,
+      "doelsaldo": 69,
+      "punten": 58,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 1,
+      "verloren": 2,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 13,
+      "doelsaldo": 53,
+      "punten": 58,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 36,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 17,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 1,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 0,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -16,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -18,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 9,
+      "verloren": 10,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 36,
+      "doelsaldo": -18,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 2,
+      "verloren": 15,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -50,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -35,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 1,
+      "verloren": 17,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -39,
+      "punten": 13,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Frédérique Matla",
+      "club": "Den Bosch",
+      "doelpunten": 24,
+      "vd": 14,
+      "sc": 8,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Pien Dicke",
+      "club": "SCHC",
+      "doelpunten": 19,
+      "vd": 18,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Ginella Zerbo",
+      "club": "SCHC",
+      "doelpunten": 15,
+      "vd": 12,
+      "sc": 2,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Pien van Nes",
+      "club": "HDM",
+      "doelpunten": 14,
+      "vd": 1,
+      "sc": 11,
+      "sb": 2
+    },
+    {
+      "rang": 5,
+      "naam": "Michelle Fillet",
+      "club": "Amsterdam",
+      "doelpunten": 12,
+      "vd": 7,
+      "sc": 5,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Robert Tigges"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Jeroen Visser"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "HDM",
+      "naam": "Ivar Knötschke"
+    },
+    {
+      "club": "HGC",
+      "naam": "Robbert-Jan de Vos"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Patrick Bakker"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Pieter Bos"
+    },
+    {
+      "club": "Laren",
+      "naam": "Serge Spoelstra"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Stefan Duyf"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Daan Sabel"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Lucas Judge"
+    },
+    {
+      "club": "Victoria",
+      "naam": "Lennard Poillot"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HDM",
+        "uit": "Den Bosch",
+        "score": "0-4",
+        "datum": "06-05-2021",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "HDM",
+        "score": "3-1",
+        "datum": "08-05-2021",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "0-1",
+        "datum": "06-05-2021",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "3-1",
+        "datum": "08-05-2021",
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "13-05-2021",
+        "scorers": [
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 20
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-0",
+        "datum": "15-05-2021",
+        "scorers": [
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
