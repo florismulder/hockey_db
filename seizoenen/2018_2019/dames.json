@@ -1,0 +1,590 @@
+{
+  "seizoen": "2018-2019",
+  "slug": "2018_2019",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Den Bosch",
+  "gedegradeerd": [
+    "Groningen",
+    "Huizen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 11,
+      "doelsaldo": 55,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 1,
+      "verloren": 3,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 49,
+      "punten": 55,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 21,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 47,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 5,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -1,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 11,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -8,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -12,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -17,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Huizen",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -43,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 6,
+      "verloren": 15,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -36,
+      "punten": 9,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 6,
+      "verloren": 15,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 79,
+      "doelsaldo": -60,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Ginella Zerbo",
+      "club": "SCHC",
+      "doelpunten": 24,
+      "vd": 21,
+      "sc": 1,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Frédérique Matla",
+      "club": "Den Bosch",
+      "doelpunten": 22,
+      "vd": 13,
+      "sc": 9,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Eva de Goede",
+      "club": "Amsterdam",
+      "doelpunten": 15,
+      "vd": 5,
+      "sc": 7,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Gitte Michels",
+      "club": "Hurley",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 14,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 12,
+      "sb": 2
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Teun de Nooijer"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "Groningen",
+      "naam": "Julian Steen"
+    },
+    {
+      "club": "hdm",
+      "naam": "Sonja Thomann"
+    },
+    {
+      "club": "Huizen",
+      "naam": "Boaz Janssen"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Santi Freixa"
+    },
+    {
+      "club": "Laren",
+      "naam": "Robert-Jan Cox"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Hans Oostindie"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Tina Bachmann"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Nettie van Maasakker"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "1-0",
+        "datum": "16-05-2019",
+        "scorers": [
+          {
+            "naam": "Kyra Fortuin",
+            "club": "SCHC",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Amsterdam",
+        "score": "2-5",
+        "datum": "16-05-2019",
+        "scorers": [
+          {
+            "naam": "Yibbi Jansen",
+            "club": "Oranje-Rood",
+            "minuut": 51
+          },
+          {
+            "naam": "Lisa Scheerlinck",
+            "club": "Oranje-Rood",
+            "minuut": 57
+          },
+          {
+            "naam": "Lauren Stam",
+            "club": "Amsterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "Maria Verschoor",
+            "club": "Amsterdam",
+            "minuut": 22
+          },
+          {
+            "naam": "Lauren Stam",
+            "club": "Amsterdam",
+            "minuut": 49
+          },
+          {
+            "naam": "Charlotte Vega",
+            "club": "Amsterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "Felice Albers",
+            "club": "Amsterdam",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "3-0",
+        "datum": "18-05-2019",
+        "scorers": [
+          {
+            "naam": "Imme van der Hoek",
+            "club": "Den Bosch",
+            "minuut": 26
+          },
+          {
+            "naam": "Lieke Hulsen",
+            "club": "Den Bosch",
+            "minuut": 27
+          },
+          {
+            "naam": "Ireen van den Assem",
+            "club": "Den Bosch",
+            "minuut": 45
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje-Rood",
+        "score": "1-1 (SO 3-1)",
+        "datum": "18-05-2019",
+        "scorers": [
+          {
+            "naam": "Charlotte Vega",
+            "club": "Amsterdam",
+            "minuut": 12
+          },
+          {
+            "naam": "Fiona Morgenstern",
+            "club": "Oranje-Rood",
+            "minuut": 31
+          },
+          {
+            "naam": "Maria Verschoor",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Felice Albers",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Lauren Stam",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Yibbi Jansen",
+            "club": "Oranje-Rood",
+            "minuut": null
+          },
+          {
+            "naam": "Valerie Magis",
+            "club": "Oranje-Rood",
+            "minuut": null
+          },
+          {
+            "naam": "Laura Nunnink",
+            "club": "Oranje-Rood",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "1-0",
+        "datum": "19-05-2019",
+        "scorers": [
+          {
+            "naam": "Frederique Matla",
+            "club": "Den Bosch",
+            "minuut": 52
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-1",
+        "datum": "23-05-2019",
+        "scorers": [
+          {
+            "naam": "Kitty van Male",
+            "club": "Amsterdam",
+            "minuut": 51
+          },
+          {
+            "naam": "Eva de Goede",
+            "club": "Amsterdam",
+            "minuut": 68
+          },
+          {
+            "naam": "Frédérique Matla",
+            "club": "Den Bosch",
+            "minuut": 49
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "0-2",
+        "datum": "25-05-2019",
+        "scorers": [
+          {
+            "naam": "Charlotte Vega",
+            "club": "Amsterdam",
+            "minuut": 4
+          },
+          {
+            "naam": "Kitty van Male",
+            "club": "Amsterdam",
+            "minuut": 14
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "MOP",
+        "uit": "Bloemendaal",
+        "score": "3-2",
+        "datum": "30-05-2019",
+        "scorers": [
+          {
+            "naam": "Sanne Caarls",
+            "club": "MOP",
+            "minuut": 5
+          },
+          {
+            "naam": "Nine Rijna",
+            "club": "MOP",
+            "minuut": 20
+          },
+          {
+            "naam": "Colette de Beaumont",
+            "club": "Bloemendaal",
+            "minuut": 35
+          },
+          {
+            "naam": "Colette de Beaumont",
+            "club": "Bloemendaal",
+            "minuut": 54
+          },
+          {
+            "naam": "Tess Olde Loohuis",
+            "club": "MOP",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "MOP",
+        "score": "5-1",
+        "datum": "01-06-2019",
+        "scorers": [
+          {
+            "naam": "Myrthe van Kesteren",
+            "club": "Bloemendaal",
+            "minuut": 8
+          },
+          {
+            "naam": "Kim van Leeuwen",
+            "club": "Bloemendaal",
+            "minuut": 17
+          },
+          {
+            "naam": "Bodine Boelaars",
+            "club": "Bloemendaal",
+            "minuut": 17
+          },
+          {
+            "naam": "Nine Rijna",
+            "club": "Bloemendaal",
+            "minuut": 44
+          },
+          {
+            "naam": "Colette de Beaumont",
+            "club": "MOP",
+            "minuut": 50
+          },
+          {
+            "naam": "Pilar Romang",
+            "club": "Bloemendaal",
+            "minuut": 52
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "MOP",
+        "uit": "Bloemendaal",
+        "score": "0-3",
+        "datum": "02-06-2019",
+        "scorers": [
+          {
+            "naam": "Melle Spruijt",
+            "club": "Bloemendaal",
+            "minuut": 14
+          },
+          {
+            "naam": "Melle Spruijt",
+            "club": "Bloemendaal",
+            "minuut": 24
+          },
+          {
+            "naam": "Nine Rijna",
+            "club": "Bloemendaal",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Huizen",
+        "score": "1-0",
+        "datum": "30-05-2019",
+        "scorers": [
+          {
+            "naam": "Isis van Loon",
+            "club": "HGC",
+            "minuut": 50
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Huizen",
+        "uit": "HGC",
+        "score": "0-1",
+        "datum": "01-06-2019",
+        "scorers": [
+          {
+            "naam": "Luna Fokke",
+            "club": "HGC",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
