@@ -1,0 +1,484 @@
+{
+  "seizoen": "2021-2022",
+  "slug": "2021_2022",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "SCHC",
+  "gedegradeerd": [
+    "Victoria",
+    "Oranje-Rood"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 2,
+      "verloren": 1,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 60,
+      "punten": 59,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 6,
+      "verloren": 0,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 37,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 16,
+      "punten": 39,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 6,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 9,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 3,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -10,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -8,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -17,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -22,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -22,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -15,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -31,
+      "punten": 12,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Frédérique Matla",
+      "club": "Den Bosch",
+      "doelpunten": 35,
+      "vd": 13,
+      "sc": 16,
+      "sb": 6
+    },
+    {
+      "rang": 2,
+      "naam": "Yibbi Jansen",
+      "club": "SCHC",
+      "doelpunten": 26,
+      "vd": 2,
+      "sc": 20,
+      "sb": 4
+    },
+    {
+      "rang": 3,
+      "naam": "Demi Hilterman",
+      "club": "Bloemendaal",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 16,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Ginella Zerbo",
+      "club": "SCHC",
+      "doelpunten": 13,
+      "vd": 12,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Gitte Michels",
+      "club": "Hurley",
+      "doelpunten": 11,
+      "vd": 1,
+      "sc": 8,
+      "sb": 2
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Robert Tigges"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Dave Smolenaars"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Marieke Dijkstra"
+    },
+    {
+      "club": "HDM",
+      "naam": "Ivar Knötschke"
+    },
+    {
+      "club": "HGC",
+      "naam": "Robbert-Jan de Vos"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Patrick Bakker"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Fleur van de Kieft"
+    },
+    {
+      "club": "HC Klein Zwitserland",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Stefan Duyf"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Daan Sabel"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Lucas Judge"
+    },
+    {
+      "club": "HV Victoria",
+      "naam": "Lennard Poillot"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HDM",
+        "uit": "Den Bosch",
+        "score": "0-2",
+        "datum": "12-05-2022",
+        "scorers": [
+          {
+            "naam": "Van der Hoek",
+            "club": "Den Bosch",
+            "minuut": 56
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 57
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "HDM",
+        "score": "1-0",
+        "datum": "14-05-2022",
+        "scorers": [
+          {
+            "naam": "Matla",
+            "club": "Den Bosch",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "1-1 (SO 3-0)",
+        "datum": "12-05-2022",
+        "scorers": [
+          {
+            "naam": "Plönissen",
+            "club": "Amsterdam",
+            "minuut": 67
+          },
+          {
+            "naam": "Leurink",
+            "club": "SCHC",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "0-2",
+        "datum": "14-05-2022",
+        "scorers": [
+          {
+            "naam": "Plönissen",
+            "club": "Amsterdam",
+            "minuut": 15
+          },
+          {
+            "naam": "Veen",
+            "club": "Amsterdam",
+            "minuut": 21
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "2-2 (SO 3-1)",
+        "datum": "15-05-2022",
+        "scorers": [
+          {
+            "naam": "Jansen",
+            "club": "SCHC",
+            "minuut": 20
+          },
+          {
+            "naam": "Zerbo",
+            "club": "SCHC",
+            "minuut": 63
+          },
+          {
+            "naam": "Albers",
+            "club": "Amsterdam",
+            "minuut": 2
+          },
+          {
+            "naam": "Veen",
+            "club": "Amsterdam",
+            "minuut": 36
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "1-3",
+        "datum": "19-05-2022",
+        "scorers": [
+          {
+            "naam": "Jansen",
+            "club": "SCHC",
+            "minuut": 68
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": 27
+          },
+          {
+            "naam": "Matla",
+            "club": "Den Bosch",
+            "minuut": 30
+          },
+          {
+            "naam": "Burg",
+            "club": "Den Bosch",
+            "minuut": 37
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "0-1",
+        "datum": "21-05-2022",
+        "scorers": [
+          {
+            "naam": "Jansen",
+            "club": "SCHC",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "2-1",
+        "datum": "22-05-2022",
+        "scorers": [
+          {
+            "naam": "Van der Plas",
+            "club": "Den Bosch",
+            "minuut": 37
+          },
+          {
+            "naam": "Matla",
+            "club": "Den Bosch",
+            "minuut": 70
+          },
+          {
+            "naam": "Zerbo",
+            "club": "SCHC",
+            "minuut": 6
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Leonidas",
+        "uit": "Klein Zwitserland",
+        "score": "0-3",
+        "datum": "19-05-2022",
+        "scorers": [],
+        "notitie": "Klein Zwitserland handhaaft zich"
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Leonidas",
+        "score": "3-2",
+        "datum": "21-05-2022",
+        "scorers": [],
+        "notitie": "Klein Zwitserland handhaaft zich"
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Oranje-Rood",
+        "score": "0-0 (SO 4-2)",
+        "datum": "19-05-2022",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Tilburg",
+        "score": "2-2 (SO 4-2)",
+        "datum": "21-05-2022",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Oranje-Rood",
+        "score": "1-1 (SO 3-2)",
+        "datum": "22-05-2022",
+        "scorers": [],
+        "notitie": "Tilburg promoveert, Oranje-Rood degradeert"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
