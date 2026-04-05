@@ -74,6 +74,30 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -723,5 +747,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T15:22:55.596Z"
+  "bijgewerkt": "2026-04-05T15:22:56.985Z"
 }
