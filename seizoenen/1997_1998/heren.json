@@ -1,0 +1,360 @@
+{
+  "seizoen": "1997-1998",
+  "slug": "1997_1998",
+  "geslacht": "heren",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Pinoké",
+    "Tilburg"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 30,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 7,
+      "verloren": 3,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 22,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 62,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 26,
+      "punten": 30,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 49,
+      "doelsaldo": 4,
+      "punten": 24,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 6,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -2,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -3,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -5,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 8,
+      "verloren": 9,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -15,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -13,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -14,
+      "punten": 16,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 77,
+      "doelsaldo": -36,
+      "punten": 13,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Piet-Hein Geeris",
+      "club": "Den Bosch",
+      "doelpunten": 29,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 1,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 29,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 1,
+      "naam": "Richard de Snaijer",
+      "club": "HDM",
+      "doelpunten": 29,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Remco van Wijk",
+      "club": "Bloemendaal",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Marten Eikelboom",
+      "club": "Amsterdam",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Tycho van Meer",
+      "club": "HGC",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Mark Jan Bender",
+      "club": "Kampong",
+      "doelpunten": 13,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Bart van der Meer",
+      "club": "Pinoké",
+      "doelpunten": 13,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Remko Koster",
+      "club": "Hurley",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": null,
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Den Bosch",
+        "score": "5-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Bloemendaal",
+        "score": "5-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Bloemendaal",
+        "score": "2-2 (SO 4-3)",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Amsterdam",
+        "score": "3-4",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "04-04-1998",
+        "scorers": [
+          {
+            "naam": "Tim Delmee",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-1 (SO 3-4)",
+        "datum": "05-04-1998",
+        "scorers": [
+          {
+            "naam": "Piet-Hein Geeris",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Wouter Damman",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "2-1",
+        "datum": "07-04-1998",
+        "scorers": [
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Erik Gerritsen",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Dennis Dijkshoorn",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": null
+  },
+  "bijgewerkt": "2026-04-05"
+}
