@@ -1,0 +1,378 @@
+{
+  "seizoen": "1999-2000",
+  "slug": "1999_2000",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Hilversum",
+    "Zwolle"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 6,
+      "verloren": 0,
+      "doelpunten_voor": 86,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 68,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 5,
+      "verloren": 2,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 40,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 30,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 6,
+      "verloren": 3,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 36,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 29,
+      "punten": 44,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 20,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -22,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -34,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -13,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -32,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -46,
+      "punten": 9,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Zwolle",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 2,
+      "verloren": 19,
+      "doelpunten_voor": 9,
+      "doelpunten_tegen": 85,
+      "doelsaldo": -76,
+      "punten": 5,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Ageeth Boomgaardt",
+      "club": "Den Bosch",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Mieketine Wouters",
+      "club": "Laren",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Suzan van der Wielen",
+      "club": "HGC",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Karlijn Petri",
+      "club": "Rotterdam",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Alexandra van der Tuin",
+      "club": "Amsterdam",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Marlies Vossen",
+      "club": "Kampong",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Mies Haverkate",
+      "club": "Nijmegen",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Fleur van de Kieft",
+      "club": "Laren",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Terry Noorlander",
+      "club": "HGC",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Maaike Schroeder",
+      "club": "Oranje Zwart",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "1-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "1-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-4",
+        "datum": "06-05-2000",
+        "scorers": [
+          {
+            "naam": "Marit de Jong",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Marit de Jong",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Minke Booij",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Eline Rottier",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "2-0",
+        "datum": "07-05-2000",
+        "scorers": [
+          {
+            "naam": "Minke Booij",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Dilianne van den Boogaard",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": null
+  },
+  "bijgewerkt": "2026-04-05"
+}
