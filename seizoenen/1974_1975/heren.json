@@ -1,0 +1,189 @@
+{
+  "seizoen": "1974/75",
+  "slug": "1974_1975",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Klein Zwitserland",
+  "gedegradeerd": [
+    "EMHC",
+    "Gron.Studs"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 7,
+      "verloren": 1,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 14,
+      "doelsaldo": 28,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 6,
+      "verloren": 2,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 22,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 30,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 8,
+      "verloren": 4,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 7,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 8,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 5,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 8,
+      "verloren": 8,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -1,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -13,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 1,
+      "verloren": 12,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -7,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 10,
+      "verloren": 9,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 25,
+      "doelsaldo": -10,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HTCC",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 36,
+      "doelsaldo": -21,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 9,
+      "verloren": 12,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -20,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Gron.Studs",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 6,
+      "verloren": 14,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -20,
+      "punten": 10,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": null,
+      "naam": "Paul Litjens",
+      "club": null,
+      "doelpunten": 28,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
