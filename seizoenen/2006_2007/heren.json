@@ -1,0 +1,554 @@
+{
+  "seizoen": "2006-2007",
+  "slug": "2006_2007",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "HGC",
+  "gedegradeerd": [
+    "Eindhoven",
+    "Klein Zwitserland"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 21,
+      "gelijk": 0,
+      "verloren": 1,
+      "doelpunten_voor": 115,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 73,
+      "punten": 63,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 13,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 26,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 53,
+      "doelsaldo": 12,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 63,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 12,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -2,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 9,
+      "verloren": 6,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 5,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 2,
+      "verloren": 11,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -5,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 53,
+      "doelsaldo": 7,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 2,
+      "verloren": 12,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -3,
+      "punten": 26,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 17,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 84,
+      "doelsaldo": -46,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Eindhoven",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 0,
+      "verloren": 21,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 119,
+      "doelsaldo": -92,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Christopher Zeller",
+      "club": "Bloemendaal",
+      "doelpunten": 47,
+      "vd": 21,
+      "sc": 25,
+      "sb": 1
+    },
+    {
+      "rang": 2,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 29,
+      "vd": 7,
+      "sc": 21,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Mark Neumeier",
+      "club": "Amsterdam",
+      "doelpunten": 22,
+      "vd": 8,
+      "sc": 12,
+      "sb": 2
+    },
+    {
+      "rang": 4,
+      "naam": "Sohail Abbas",
+      "club": "Rotterdam",
+      "doelpunten": 22,
+      "vd": 0,
+      "sc": 22,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Constantijn Jonker",
+      "club": "Kampong",
+      "doelpunten": 18,
+      "vd": 15,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Hayden Shaw",
+      "club": "Den Bosch",
+      "doelpunten": 18,
+      "vd": 0,
+      "sc": 18,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Ronald Brouwer",
+      "club": "Bloemendaal",
+      "doelpunten": 17,
+      "vd": 15,
+      "sc": 1,
+      "sb": 1
+    },
+    {
+      "rang": 8,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 17,
+      "sb": 0
+    },
+    {
+      "rang": 9,
+      "naam": "Matthijs Brouwer",
+      "club": "Oranje Zwart",
+      "doelpunten": 16,
+      "vd": 13,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Teun de Nooijer",
+      "club": "Bloemendaal",
+      "doelpunten": 16,
+      "vd": 11,
+      "sc": 1,
+      "sb": 4
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "SCHC",
+        "uit": "Bloemendaal",
+        "score": "0-2",
+        "datum": "05-05-2007",
+        "scorers": [
+          {
+            "naam": "Christopher Zeller",
+            "club": "Bloemendaal",
+            "minuut": 12
+          },
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 64
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "HGC",
+        "score": "4-2",
+        "datum": "05-05-2007",
+        "scorers": [
+          {
+            "naam": "Sohail Abbas",
+            "club": "Rotterdam",
+            "minuut": 23
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 34
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 39
+          },
+          {
+            "naam": "Mark Knowles",
+            "club": "Rotterdam",
+            "minuut": 50
+          },
+          {
+            "naam": "Phil Burrows",
+            "club": "Rotterdam",
+            "minuut": 54
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "SCHC",
+        "score": "2-1",
+        "datum": "06-05-2007",
+        "scorers": [
+          {
+            "naam": "Tjeerd Steller",
+            "club": "SCHC",
+            "minuut": 8
+          },
+          {
+            "naam": "Christopher Zeller",
+            "club": "Bloemendaal",
+            "minuut": 20
+          },
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 40
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Rotterdam",
+        "score": "1-0",
+        "datum": "06-05-2007",
+        "scorers": [
+          {
+            "naam": "Barry Middleton",
+            "club": "HGC",
+            "minuut": 76
+          }
+        ],
+        "notitie": "golden goal"
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Rotterdam",
+        "score": "1-1 (SO 5-2)",
+        "datum": "09-05-2007",
+        "scorers": [
+          {
+            "naam": "Sohail Abbas",
+            "club": "Rotterdam",
+            "minuut": 58
+          },
+          {
+            "naam": "Barry Middleton",
+            "club": "HGC",
+            "minuut": 65
+          }
+        ],
+        "notitie": "HGC wint na strafballen 5-2"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "13-05-2007",
+        "scorers": [
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 19
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 39
+          },
+          {
+            "naam": "Christopher Zeller",
+            "club": "Bloemendaal",
+            "minuut": 50
+          },
+          {
+            "naam": "Bram Lomans",
+            "club": "HGC",
+            "minuut": 60
+          },
+          {
+            "naam": "Christopher Zeller",
+            "club": "Bloemendaal",
+            "minuut": 72
+          }
+        ],
+        "notitie": "golden goal"
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": "19-05-2007",
+        "scorers": [
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 12
+          },
+          {
+            "naam": "Connor Grimes",
+            "club": "HGC",
+            "minuut": 24
+          },
+          {
+            "naam": "Christopher Zeller",
+            "club": "Bloemendaal",
+            "minuut": 62
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": {
+      "thuis": "SCHC",
+      "uit": "Rotterdam",
+      "score": "2-2 (SO 4-6)",
+      "datum": "13-05-2007",
+      "scorers": [
+        {
+          "naam": "Robert Tigges",
+          "club": "Rotterdam",
+          "minuut": 12
+        },
+        {
+          "naam": "Roderick Weusthof",
+          "club": "SCHC",
+          "minuut": 43
+        },
+        {
+          "naam": "Phil Burrows",
+          "club": "Rotterdam",
+          "minuut": 60
+        },
+        {
+          "naam": "Roderick Weusthof",
+          "club": "SCHC",
+          "minuut": 63
+        }
+      ],
+      "notitie": "Rotterdam wint na strafballen 4-6"
+    },
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Laren",
+        "uit": "Union",
+        "score": "1-0",
+        "datum": "09-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Union",
+        "uit": "Laren",
+        "score": "2-3",
+        "datum": "12-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Voordaan",
+        "score": "3-1",
+        "datum": "09-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Voordaan",
+        "uit": "Schaerweijde",
+        "score": "3-2",
+        "datum": "12-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Voordaan",
+        "uit": "Schaerweijde",
+        "score": "4-2",
+        "datum": "13-05-2007",
+        "scorers": [],
+        "notitie": "Schaerweijde terug naar overgangsklasse"
+      },
+      {
+        "thuis": "Union",
+        "uit": "Pinoké",
+        "score": "2-3",
+        "datum": "19-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Voordaan",
+        "uit": "Klein Zwitserland",
+        "score": "3-2",
+        "datum": "19-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Union",
+        "score": "4-0",
+        "datum": "20-05-2007",
+        "scorers": [],
+        "notitie": "golden goal"
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Voordaan",
+        "score": "4-3",
+        "datum": "20-05-2007",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Voordaan",
+        "score": "1-1 (SO)",
+        "datum": "23-05-2007",
+        "scorers": [],
+        "notitie": "Voordaan wint na strafballen. Klein Zwitserland degradeert naar de overgangsklasse."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
