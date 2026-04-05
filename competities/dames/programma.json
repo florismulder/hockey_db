@@ -160,6 +160,36 @@
       "kaarten": []
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 3,
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -2672,5 +2702,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:45.602Z"
+  "bijgewerkt": "2026-04-05T18:48:47.175Z"
 }
