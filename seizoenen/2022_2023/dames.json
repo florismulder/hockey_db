@@ -1,0 +1,393 @@
+{
+  "seizoen": "2022/2023",
+  "slug": "2022_2023",
+  "geslacht": "dames",
+  "kampioen": "Amsterdamsche H&BC",
+  "vicekampioen": "SCHC",
+  "gedegradeerd": [
+    "HC Klein Zwitserland"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 3,
+      "verloren": 0,
+      "doelpunten_voor": 75,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 59,
+      "punten": 60,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "'s-Hertogenbosch",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 40,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 56,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 2,
+      "verloren": 8,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 2,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -6,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HC Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 11,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 37,
+      "doelsaldo": -1,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 1,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -28,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -12,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -22,
+      "punten": 18,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -29,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "HC Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 1,
+      "verloren": 19,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -46,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Yibbi Jansen",
+      "club": "SCHC",
+      "doelpunten": 23,
+      "vd": 2,
+      "sc": 19,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Frédérique Matla",
+      "club": "'s-Hertogenbosch",
+      "doelpunten": 19,
+      "vd": 11,
+      "sc": 8,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Lola Riera Zuzuarregui",
+      "club": "HGC",
+      "doelpunten": 18,
+      "vd": 0,
+      "sc": 17,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Michelle Fillet",
+      "club": "Amsterdam",
+      "doelpunten": 18,
+      "vd": 12,
+      "sc": 5,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Gitte Michels",
+      "club": "Hurley",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 15,
+      "sb": 2
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Hurley",
+        "uit": "SCHC",
+        "score": "0-1",
+        "datum": "18-05-2023",
+        "scorers": [
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 1
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Hurley",
+        "score": "3-1",
+        "datum": "20-05-2023",
+        "scorers": [
+          {
+            "naam": "Winter",
+            "club": "SCHC",
+            "minuut": 22
+          },
+          {
+            "naam": "Loomans",
+            "club": "Hurley",
+            "minuut": 46
+          },
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 50
+          },
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "'s-Hertogenbosch",
+        "score": "1-1",
+        "datum": "18-05-2023",
+        "scorers": [
+          {
+            "naam": "Veen",
+            "club": "Amsterdam",
+            "minuut": 35
+          },
+          {
+            "naam": "Koolen",
+            "club": "'s-Hertogenbosch",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "'s-Hertogenbosch",
+        "uit": "Amsterdam",
+        "score": "0-1",
+        "datum": "20-05-2023",
+        "scorers": [
+          {
+            "naam": "Plönissen",
+            "club": "Amsterdam",
+            "minuut": 5
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "2-2",
+        "datum": "27-05-2023",
+        "scorers": [
+          {
+            "naam": "Van der Veld",
+            "club": "Amsterdam",
+            "minuut": 10
+          },
+          {
+            "naam": "Winter",
+            "club": "SCHC",
+            "minuut": 18
+          },
+          {
+            "naam": "Morgenstern",
+            "club": "Amsterdam",
+            "minuut": 41
+          },
+          {
+            "naam": "Yibbi Jansen",
+            "club": "SCHC",
+            "minuut": 57
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "2-2 (SO 1-4)",
+        "datum": "29-05-2023",
+        "scorers": [
+          {
+            "naam": "Leurink",
+            "club": "SCHC",
+            "minuut": 1
+          },
+          {
+            "naam": "Van der Elst",
+            "club": "Amsterdam",
+            "minuut": 11
+          },
+          {
+            "naam": "Van Gils",
+            "club": "Amsterdam",
+            "minuut": 42
+          },
+          {
+            "naam": "Dicke",
+            "club": "SCHC",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdamsche H&BC",
+    "playout": [
+      {
+        "thuis": "HIC",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "25-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HIC",
+        "score": "1-0 (SO 4-1)",
+        "datum": "27-05-2023",
+        "scorers": [],
+        "notitie": "Bloemendaal blijft in Hoofdklasse"
+      },
+      {
+        "thuis": "Huizen",
+        "uit": "Rotterdam",
+        "score": "2-3",
+        "datum": "25-05-2023",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Huizen",
+        "score": "3-2",
+        "datum": "27-05-2023",
+        "scorers": [],
+        "notitie": "Rotterdam blijft in Hoofdklasse"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
