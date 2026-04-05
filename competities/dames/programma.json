@@ -330,6 +330,61 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2025-10-26",
+      "tijdstip": "12:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Sophie Thoolen",
+          "club": "Bloemendaal",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Noa Muller",
+          "club": "Amsterdam",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 30,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -979,5 +1034,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T15:23:02.672Z"
+  "bijgewerkt": "2026-04-05T17:04:20.453Z"
 }
