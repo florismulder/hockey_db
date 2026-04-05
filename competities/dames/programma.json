@@ -80,6 +80,61 @@
       "kaarten": []
     },
     {
+      "thuis": "Pinoké",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2025-09-21",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Lisa Post",
+          "club": "SCHC",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 44,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 41,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Rotterdam",
       "score_thuis": 8,
@@ -2293,5 +2348,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:33.944Z"
+  "bijgewerkt": "2026-04-05T18:48:35.351Z"
 }
