@@ -263,6 +263,48 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2025-10-04",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Precious Oud",
+          "club": "Tilburg",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Ellemijn Harm",
+          "club": "Amsterdam",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Iris Dominicus",
+          "club": "Tilburg",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "SCHC",
       "uit": "Den Bosch",
       "score_thuis": 2,
@@ -1793,5 +1835,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:41.573Z"
+  "bijgewerkt": "2026-04-05T17:04:42.762Z"
 }
