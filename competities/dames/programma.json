@@ -403,6 +403,55 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Sophie Thoolen",
+          "club": "Bloemendaal",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Sanne Koolen",
+          "club": "Den Bosch",
+          "minuut": 34,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "minuut": 39,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -1975,5 +2024,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:22.194Z"
+  "bijgewerkt": "2026-04-05T18:48:23.690Z"
 }
