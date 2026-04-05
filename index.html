@@ -1143,16 +1143,52 @@ function HistoriePagina({nav}) {
   );
 
   const parseScore = (score) => {
-    if(!score) return {thuis:null, uit:null};
+    if(!score) return {thuis:null, uit:null, soThuis:null, soUit:null};
+    // Reguliere score
     const m = score.match(/^(\d+)\s*[-–]\s*(\d+)/);
-    if(!m) return {thuis:null, uit:null};
-    return {thuis:parseInt(m[1]), uit:parseInt(m[2])};
+    if(!m) return {thuis:null, uit:null, soThuis:null, soUit:null};
+    const thuis = parseInt(m[1]), uit = parseInt(m[2]);
+    // Shoot-out score (SO X-Y)
+    const so = score.match(/SO\s*(\d+)\s*[-–]\s*(\d+)/i);
+    const soThuis = so ? parseInt(so[1]) : null;
+    const soUit   = so ? parseInt(so[2]) : null;
+    return {thuis, uit, soThuis, soUit};
+  };
+
+  const bepaalWinnaar = (m) => {
+    const {thuis:st, uit:su, soThuis, soUit} = parseScore(m.score);
+    if(st==null) return null;
+    if(st > su) return "thuis";
+    if(su > st) return "uit";
+    // Gelijkspel — kijk naar shoot-out
+    if(soThuis!=null && soUit!=null) return soThuis > soUit ? "thuis" : soUit > soThuis ? "uit" : null;
+    // Kijk in notitie: "shoot-out X-Y" of "wins shoot-out"
+    const n = (m.notitie||"").toLowerCase();
+    const soN = n.match(/shoot.out[:\s]+(\d+)\s*[-–]\s*(\d+)/i) || n.match(/(\d+)\s*[-–]\s*(\d+)/);
+    if(soN) return parseInt(soN[1]) > parseInt(soN[2]) ? "thuis" : "uit";
+    return null;
+  };
+
+  const berekenAggregaat = (wedstrijden) => {
+    // Bepaal de twee teams (normaliseer: team A is alfabetisch eerste)
+    if(!wedstrijden.length) return null;
+    const teams = [wedstrijden[0].thuis, wedstrijden[0].uit];
+    let score = {[teams[0]]:0, [teams[1]]:0};
+    wedstrijden.forEach(w => {
+      const winnaar = bepaalWinnaar(w);
+      if(winnaar==="thuis") score[w.thuis]++;
+      else if(winnaar==="uit") score[w.uit]++;
+    });
+    const t0 = teams[0], t1 = teams[1];
+    if(score[t0]>score[t1]) return {winnaar:t0, score:`${score[t0]}-${score[t1]}`};
+    if(score[t1]>score[t0]) return {winnaar:t1, score:`${score[t1]}-${score[t0]}`};
+    return {winnaar:null, score:`${score[t0]}-${score[t1]}`};
   };
 
   const WedstrijdRij = ({m, isFinale}) => {
-    const {thuis:st, uit:su} = parseScore(m.score);
-    const thuisWint = st!=null && su!=null && st>su;
-    const uitWint   = st!=null && su!=null && su>st;
+    const winnaar = bepaalWinnaar(m);
+    const thuisWint = winnaar==="thuis";
+    const uitWint   = winnaar==="uit";
     return (
     <div style={{padding:"8px 0",borderBottom:"1px solid var(--border)"}}>
       <div style={{display:"flex",alignItems:"center",gap:8,fontSize:12}}>
@@ -1181,6 +1217,40 @@ function HistoriePagina({nav}) {
     );
   };
 
+  const MatchupBlok = ({groep, isFinale}) => {
+    const agg = groep.wedstrijden.length > 1 ? berekenAggregaat(groep.wedstrijden) : null;
+    return (
+      <div style={{background:isFinale?"var(--playoff-bg)":"var(--surface2)",borderRadius:7,padding:"10px 14px",border:`1px solid ${isFinale?"#86efac":"var(--border)"}`}}>
+        <div style={{fontSize:11,fontWeight:700,color:isFinale?"#166534":"var(--muted)",marginBottom:6,textTransform:"uppercase",letterSpacing:.3}}>{groep.label}</div>
+        {groep.wedstrijden.map((m,mi)=>(
+          <WedstrijdRij key={mi} m={m} isFinale={isFinale}/>
+        ))}
+        {agg&&(
+          <div style={{marginTop:8,paddingTop:6,borderTop:`1px solid ${isFinale?"#86efac":"var(--border)"}`,display:"flex",justifyContent:"flex-end",alignItems:"center",gap:8}}>
+            <span style={{fontSize:11,color:"var(--muted)"}}>Totaal:</span>
+            <span style={{fontSize:12,fontWeight:700,color:isFinale?"#166534":"var(--accent)"}}>{agg.score}</span>
+            {agg.winnaar&&<span style={{fontSize:12,fontWeight:700,color:isFinale?"#166534":"var(--text)"}}>→ {agg.winnaar}</span>}
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  const groeperPerMatchup = (wedstrijden) => {
+    const groepen = [];
+    const gezien = {};
+    wedstrijden.forEach(m => {
+      const key = [m.thuis,m.uit].sort().join("__");
+      if(!gezien[key]) {
+        const teams = [m.thuis,m.uit].sort();
+        gezien[key] = {label:`${teams[0]} – ${teams[1]}`, wedstrijden:[]};
+        groepen.push(gezien[key]);
+      }
+      gezien[key].wedstrijden.push(m);
+    });
+    return groepen;
+  };
+
   const PlayoffBlok = ({playoffs}) => {
     if(!playoffs) return null;
     const hf = playoffs.halve_finales||[];
@@ -1188,17 +1258,8 @@ function HistoriePagina({nav}) {
     const kamp = playoffs.kampioen||"";
     if(!kamp && !fin && !hf.length) return null;
 
-    // Groepeer halve finales per matchup
-    const matchupGroepen = [];
-    const gezien = {};
-    hf.forEach(m => {
-      const key = [m.thuis,m.uit].sort().join("__");
-      if(!gezien[key]) {
-        gezien[key] = {label:`${[m.thuis,m.uit].sort()[0]} – ${[m.thuis,m.uit].sort()[1]}`, wedstrijden:[]};
-        matchupGroepen.push(gezien[key]);
-      }
-      gezien[key].wedstrijden.push(m);
-    });
+    const hfGroepen = groeperPerMatchup(hf);
+    const finGroep = fin ? {label:`${fin.thuis} – ${fin.uit}`, wedstrijden:[fin]} : null;
 
     return (
       <div>
@@ -1210,27 +1271,20 @@ function HistoriePagina({nav}) {
             <div style={{fontSize:18,fontWeight:700,color:"#166534"}}>🏆 {kamp}</div>
           </div>
         )}
-        {matchupGroepen.length>0&&(
+        {hfGroepen.length>0&&(
           <div style={{marginBottom:14}}>
             <div style={{fontSize:10,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>Halve finales</div>
             <div style={{display:"flex",flexDirection:"column",gap:12}}>
-              {matchupGroepen.map((groep,gi)=>(
-                <div key={gi} style={{background:"var(--surface2)",borderRadius:7,padding:"10px 14px",border:"1px solid var(--border)"}}>
-                  <div style={{fontSize:11,fontWeight:700,color:"var(--muted)",marginBottom:6,textTransform:"uppercase",letterSpacing:.3}}>{groep.label}</div>
-                  {groep.wedstrijden.map((m,mi)=>(
-                    <WedstrijdRij key={mi} m={m} isFinale={false}/>
-                  ))}
-                </div>
+              {hfGroepen.map((groep,gi)=>(
+                <MatchupBlok key={gi} groep={groep} isFinale={false}/>
               ))}
             </div>
           </div>
         )}
-        {fin&&(
+        {finGroep&&(
           <div>
             <div style={{fontSize:10,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>Finale</div>
-            <div style={{background:"var(--playoff-bg)",borderRadius:7,padding:"10px 14px",border:"1px solid #86efac"}}>
-              <WedstrijdRij m={fin} isFinale={true}/>
-            </div>
+            <MatchupBlok groep={finGroep} isFinale={true}/>
           </div>
         )}
       </div>
@@ -1240,30 +1294,13 @@ function HistoriePagina({nav}) {
   const PlayoutBlok = ({playoffs}) => {
     const po = playoffs?.playout||playoffs?.play_outs||null;
     if(!po||!Array.isArray(po)||!po.length) return null;
-
-    // Groepeer play-outs per matchup
-    const matchupGroepen = [];
-    const gezien = {};
-    po.forEach(m => {
-      const key = [m.thuis,m.uit].sort().join("__");
-      if(!gezien[key]) {
-        gezien[key] = {label:`${[m.thuis,m.uit].sort()[0]} – ${[m.thuis,m.uit].sort()[1]}`, wedstrijden:[]};
-        matchupGroepen.push(gezien[key]);
-      }
-      gezien[key].wedstrijden.push(m);
-    });
-
+    const groepen = groeperPerMatchup(po);
     return (
       <div>
         <div className="ds" style={{marginTop:0}}>Play-outs</div>
         <div style={{display:"flex",flexDirection:"column",gap:12}}>
-          {matchupGroepen.map((groep,gi)=>(
-            <div key={gi} style={{background:"var(--surface2)",borderRadius:7,padding:"10px 14px",border:"1px solid var(--border)"}}>
-              <div style={{fontSize:11,fontWeight:700,color:"var(--muted)",marginBottom:6,textTransform:"uppercase",letterSpacing:.3}}>{groep.label}</div>
-              {groep.wedstrijden.map((m,mi)=>(
-                <WedstrijdRij key={mi} m={m} isFinale={false}/>
-              ))}
-            </div>
+          {groepen.map((groep,gi)=>(
+            <MatchupBlok key={gi} groep={groep} isFinale={false}/>
           ))}
         </div>
       </div>
