@@ -137,7 +137,7 @@
       "doelpunten_tegen": 35,
       "doelsaldo": -15,
       "punten": 14,
-      "zone": "playout"
+      "zone": ""
     },
     {
       "positie": 11,
@@ -150,7 +150,7 @@
       "doelpunten_tegen": 47,
       "doelsaldo": -33,
       "punten": 10,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 12,
@@ -255,7 +255,7 @@
       {
         "thuis": "HGC",
         "uit": "Laren",
-        "score": "3-0 (2-0)",
+        "score": "3-0",
         "datum": null,
         "scorers": [],
         "notitie": ""
@@ -271,7 +271,7 @@
       {
         "thuis": "MOP",
         "uit": "Kampong",
-        "score": "1-1 (1-1)",
+        "score": "1-1",
         "datum": null,
         "scorers": [],
         "notitie": ""
@@ -279,27 +279,44 @@
       {
         "thuis": "Kampong",
         "uit": "MOP",
-        "score": "3-0 (2-0)",
+        "score": "3-0",
         "datum": null,
         "scorers": [],
         "notitie": ""
       }
     ],
-    "finale": {
-      "thuis": "HGC",
-      "uit": "Kampong",
-      "score": "1-0",
-      "datum": "19-05-1996",
-      "scorers": [
-        {
-          "naam": "Wietske de Ruiter",
-          "club": "HGC",
-          "minuut": null
-        }
-      ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "0-0",
+        "datum": "13-05-1996",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "1-0",
+        "datum": "19-05-1996",
+        "scorers": [
+          {
+            "naam": "Wietske de Ruiter",
+            "club": "HGC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": {
+      "thuis": "Laren",
+      "uit": "MOP",
+      "score": "2-1",
+      "datum": null,
+      "scorers": [],
       "notitie": ""
     },
-    "troostfinale": null,
     "kampioen": "HGC",
     "playout": []
   },
