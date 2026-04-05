@@ -1,0 +1,280 @@
+{
+  "seizoen": "2019-2020",
+  "slug": "2019_2020",
+  "geslacht": "heren",
+  "kampioen": null,
+  "vicekampioen": null,
+  "gedegradeerd": [],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 15,
+      "gewonnen": 13,
+      "gelijk": 2,
+      "verloren": 0,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 37,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 15,
+      "gewonnen": 11,
+      "gelijk": 1,
+      "verloren": 3,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 17,
+      "punten": 34,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 15,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 3,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 15,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 15,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 11,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 15,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 6,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Rood",
+      "gespeeld": 15,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 6,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Amsterdam",
+      "gespeeld": 15,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 16,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 15,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 3,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HC Tilburg",
+      "gespeeld": 15,
+      "gewonnen": 4,
+      "gelijk": 1,
+      "verloren": 10,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -18,
+      "punten": 13,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Klein Zwitserland",
+      "gespeeld": 15,
+      "gewonnen": 3,
+      "gelijk": 1,
+      "verloren": 11,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -26,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Hurley",
+      "gespeeld": 15,
+      "gewonnen": 1,
+      "gelijk": 1,
+      "verloren": 13,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -27,
+      "punten": 4,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Almere",
+      "gespeeld": 15,
+      "gewonnen": 0,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -40,
+      "punten": 2,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Tim Swaen",
+      "club": "HC Bloemendaal",
+      "doelpunten": 18,
+      "vd": 0,
+      "sc": 16,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Jip Janssen",
+      "club": "SV Kampong",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 17,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Tanguy Cosyns",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 3,
+      "sc": 13,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Maico Casella",
+      "club": "HC Tilburg",
+      "doelpunten": 16,
+      "vd": 12,
+      "sc": 4,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Alexander Hendrickx",
+      "club": "Pinoké",
+      "doelpunten": 16,
+      "vd": 0,
+      "sc": 13,
+      "sb": 3
+    },
+    {
+      "rang": 6,
+      "naam": "Jeroen Hertzberger",
+      "club": "HC Rotterdam",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Almeerse HC",
+      "naam": "Pasha Gademan"
+    },
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Jan Jorn van 't Land"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "HGC",
+      "naam": "Paul van Ass"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Peter Jonker"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "HC Klein Zwitserland",
+      "naam": "Carlos Castano"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Roger van Gent"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Jeroen Delmee"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": null,
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
