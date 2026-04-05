@@ -1,0 +1,274 @@
+{
+  "seizoen": "1998-1999",
+  "slug": "1998_1999",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Hurley",
+    "MOP"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 1,
+      "verloren": 2,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 62,
+      "punten": 58,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 49,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 26,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 48,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 18,
+      "punten": 42,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -7,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -26,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -41,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -30,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -33,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 5,
+      "verloren": 15,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -34,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 9,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -32,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Frederiek Grijpma",
+      "club": "Amsterdam",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Ageeth Boomgaardt",
+      "club": "Den Bosch",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Suzan van der Wielen",
+      "club": "HGC",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": "Den Bosch wint na verlenging"
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Amsterdam",
+        "score": "0-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "1-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": "Amsterdam wint na strafballen"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": "Amsterdam wint na verlenging"
+      }
+    ],
+    "finale": {
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score": "1-1 (strafballenserie 4-3)",
+      "datum": "15-05-1999",
+      "scorers": [
+        {
+          "naam": "Sylvia Karres",
+          "club": "Amsterdam",
+          "minuut": null
+        },
+        {
+          "naam": "Margje Teeuwen",
+          "club": "Den Bosch",
+          "minuut": null
+        }
+      ],
+      "notitie": "Den Bosch wint de serie na strafballenserie in de tweede wedstrijd"
+    },
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
