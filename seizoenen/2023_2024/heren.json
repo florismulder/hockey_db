@@ -1,0 +1,588 @@
+{
+  "seizoen": "2023/24",
+  "slug": "2023_2024",
+  "geslacht": "heren",
+  "kampioen": "Kampong",
+  "vicekampioen": "Rotterdam",
+  "gedegradeerd": [
+    "Schaerweijde",
+    "HGC",
+    "Laren"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 44,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 32,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 63,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 31,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 1,
+      "verloren": 6,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 32,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 13,
+      "punten": 40,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 54,
+      "doelsaldo": 5,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -7,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -13,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -16,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 74,
+      "doelsaldo": -40,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -37,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -44,
+      "punten": 12,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jip Janssen",
+      "club": "Kampong",
+      "doelpunten": 24,
+      "vd": 1,
+      "sc": 20,
+      "sb": 3
+    },
+    {
+      "rang": 2,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 22,
+      "vd": 11,
+      "sc": 8,
+      "sb": 3
+    },
+    {
+      "rang": 3,
+      "naam": "Boris Burkhardt",
+      "club": "Amsterdam",
+      "doelpunten": 21,
+      "vd": 8,
+      "sc": 12,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Timo Boers",
+      "club": "Den Bosch",
+      "doelpunten": 18,
+      "vd": 1,
+      "sc": 15,
+      "sb": 2
+    },
+    {
+      "rang": 5,
+      "naam": "Sam Lane",
+      "club": "Oranje-Rood",
+      "doelpunten": 15,
+      "vd": 7,
+      "sc": 8,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Taco van den Honert"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "HGC",
+      "naam": "Bram Lomans"
+    },
+    {
+      "club": "HDM",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Nanco Jansonius"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Tim Oudenaller"
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Omar Schlingemann"
+    },
+    {
+      "club": "Laren",
+      "naam": "Lucas Rey"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Jeroen Baart"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Robin Rösch"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Albert Kees Manenschijn"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": "18-05-2024",
+        "scorers": [
+          {
+            "naam": "Hiebendaal",
+            "club": "Bloemendaal",
+            "minuut": 6
+          },
+          {
+            "naam": "Van der Heijden",
+            "club": "Rotterdam",
+            "minuut": 14
+          },
+          {
+            "naam": "Van der Veen",
+            "club": "Bloemendaal",
+            "minuut": 41
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "1-3",
+        "datum": "20-05-2024",
+        "scorers": [
+          {
+            "naam": "Hortensius",
+            "club": "Rotterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Schut",
+            "club": "Bloemendaal",
+            "minuut": 7
+          },
+          {
+            "naam": "Lucieer",
+            "club": "Rotterdam",
+            "minuut": 21
+          },
+          {
+            "naam": "Hoedemakers",
+            "club": "Rotterdam",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Oranje-Rood",
+        "score": "1-0",
+        "datum": "18-05-2024",
+        "scorers": [
+          {
+            "naam": "Marree",
+            "club": "Kampong",
+            "minuut": 8
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje-Rood",
+        "uit": "Kampong",
+        "score": "2-4",
+        "datum": "20-05-2024",
+        "scorers": [
+          {
+            "naam": "Van Bijnen",
+            "club": "Kampong",
+            "minuut": 4
+          },
+          {
+            "naam": "Stockbroekx",
+            "club": "Oranje-Rood",
+            "minuut": 11
+          },
+          {
+            "naam": "Janssen",
+            "club": "Kampong",
+            "minuut": 25
+          },
+          {
+            "naam": "Janssen",
+            "club": "Kampong",
+            "minuut": 44
+          },
+          {
+            "naam": "Bams",
+            "club": "Oranje-Rood",
+            "minuut": 55
+          },
+          {
+            "naam": "Telgenkamp",
+            "club": "Kampong",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Kampong",
+        "score": "1-2",
+        "datum": "25-05-2024",
+        "scorers": [
+          {
+            "naam": "Lageman",
+            "club": "Kampong",
+            "minuut": 7
+          },
+          {
+            "naam": "Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 34
+          },
+          {
+            "naam": "Janssen",
+            "club": "Kampong",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Rotterdam",
+        "score": "2-2",
+        "datum": "26-05-2024",
+        "scorers": [
+          {
+            "naam": "Janssen",
+            "club": "Kampong",
+            "minuut": 5
+          },
+          {
+            "naam": "Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 10
+          },
+          {
+            "naam": "Van Dam",
+            "club": "Rotterdam",
+            "minuut": 22
+          },
+          {
+            "naam": "Janssen",
+            "club": "Kampong",
+            "minuut": 59
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Kampong",
+    "playout": [
+      {
+        "thuis": "HGC",
+        "uit": "Hurley",
+        "score": "3-4",
+        "datum": "01-06-2024",
+        "scorers": [
+          {
+            "naam": "Huisman",
+            "club": "Hurley",
+            "minuut": 8
+          },
+          {
+            "naam": "Voskuil",
+            "club": "Hurley",
+            "minuut": 20
+          },
+          {
+            "naam": "Aerts",
+            "club": "Hurley",
+            "minuut": 22
+          },
+          {
+            "naam": "Aerts",
+            "club": "Hurley",
+            "minuut": 45
+          },
+          {
+            "naam": "Van Ass",
+            "club": "HGC",
+            "minuut": 46
+          },
+          {
+            "naam": "Figge",
+            "club": "HGC",
+            "minuut": 51
+          },
+          {
+            "naam": "Van Ass",
+            "club": "HGC",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "HGC",
+        "score": "1-2 (SO 4-2)",
+        "datum": "02-06-2024",
+        "scorers": [
+          {
+            "naam": "Figge",
+            "club": "HGC",
+            "minuut": 2
+          },
+          {
+            "naam": "Van Ass",
+            "club": "HGC",
+            "minuut": 10
+          },
+          {
+            "naam": "Huisman",
+            "club": "Hurley",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "SCHC",
+        "score": "4-4",
+        "datum": "01-06-2024",
+        "scorers": [
+          {
+            "naam": "Selles",
+            "club": "Laren",
+            "minuut": 1
+          },
+          {
+            "naam": "Jaspers",
+            "club": "SCHC",
+            "minuut": 6
+          },
+          {
+            "naam": "Bain",
+            "club": "Laren",
+            "minuut": 11
+          },
+          {
+            "naam": "Sweering",
+            "club": "SCHC",
+            "minuut": 34
+          },
+          {
+            "naam": "Sweering",
+            "club": "SCHC",
+            "minuut": 41
+          },
+          {
+            "naam": "Terwel",
+            "club": "SCHC",
+            "minuut": 49
+          },
+          {
+            "naam": "Selles",
+            "club": "Laren",
+            "minuut": 56
+          },
+          {
+            "naam": "Schramel",
+            "club": "Laren",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Laren",
+        "score": "5-4",
+        "datum": "02-06-2024",
+        "scorers": [
+          {
+            "naam": "Terwel",
+            "club": "SCHC",
+            "minuut": 7
+          },
+          {
+            "naam": "Bain",
+            "club": "Laren",
+            "minuut": 8
+          },
+          {
+            "naam": "Hafkamp",
+            "club": "SCHC",
+            "minuut": 24
+          },
+          {
+            "naam": "Terwel",
+            "club": "SCHC",
+            "minuut": 35
+          },
+          {
+            "naam": "Krüger",
+            "club": "Laren",
+            "minuut": 50
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
