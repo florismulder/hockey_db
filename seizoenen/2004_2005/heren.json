@@ -1,0 +1,819 @@
+{
+  "seizoen": "2004-2005",
+  "slug": "2004_2005",
+  "geslacht": "heren",
+  "kampioen": "Oranje Zwart",
+  "vicekampioen": "Bloemendaal",
+  "gedegradeerd": [
+    "Kampong",
+    "Breda"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 82,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 41,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 28,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 16,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 8,
+      "verloren": 4,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 15,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -1,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 3,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -13,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -12,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -12,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 79,
+      "doelsaldo": -30,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Breda",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -20,
+      "punten": 19,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -15,
+      "punten": 18,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 27,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 2,
+      "naam": "Troy Elder",
+      "club": "Oranje Zwart",
+      "doelpunten": 26,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Jamie Dwyer",
+      "club": "Bloemendaal",
+      "doelpunten": 23,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "David Mathews",
+      "club": "Amsterdam",
+      "doelpunten": 23,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Arend Jan Broekmans",
+      "club": "Tilburg",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Laurence Docherty",
+      "club": "Klein Zwitserland",
+      "doelpunten": 18,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Sander Dreesmann",
+      "club": "Klein Zwitserland",
+      "doelpunten": 15,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 8,
+      "naam": "Matthew Hetherington",
+      "club": "Den Bosch",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 8,
+      "naam": "Jeroen Koops",
+      "club": "Pinoké",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Joost van den Berg",
+      "club": "HGC",
+      "doelpunten": 13,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Luke Doerner",
+      "club": "Bloemendaal",
+      "doelpunten": 13,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Juan Gilardi",
+      "club": "Laren",
+      "doelpunten": 13,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Grant Schubert",
+      "club": "Kampong",
+      "doelpunten": 13,
+      "vd": 0,
+      "sc": 0,
+      "sb": 0
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "22-05-2005",
+        "scorers": [
+          {
+            "naam": "Robin de Vries",
+            "club": "Amsterdam",
+            "minuut": 64
+          },
+          {
+            "naam": "Kristiaan Timman",
+            "club": "Amsterdam",
+            "minuut": 65
+          },
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 38
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 57
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 77
+          }
+        ],
+        "notitie": "(golden goal)"
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Oranje Zwart",
+        "score": "3-4",
+        "datum": "22-05-2005",
+        "scorers": [
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 49
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 59
+          },
+          {
+            "naam": "Sebastiaan Westerhout",
+            "club": "SCHC",
+            "minuut": 60
+          },
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 4
+          },
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 25
+          },
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 39
+          },
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "3-2",
+        "datum": "24-05-2005",
+        "scorers": [
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 4
+          },
+          {
+            "naam": "Martijn van Hasselt",
+            "club": "Bloemendaal",
+            "minuut": 37
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 72
+          },
+          {
+            "naam": "Roderik Huber",
+            "club": "Amsterdam",
+            "minuut": 44
+          },
+          {
+            "naam": "Kristiaan Timman",
+            "club": "Amsterdam",
+            "minuut": 57
+          }
+        ],
+        "notitie": "(golden goal)"
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "SCHC",
+        "score": "4-1",
+        "datum": "25-05-2005",
+        "scorers": [
+          {
+            "naam": "Maikel Brekelmans",
+            "club": "Oranje Zwart",
+            "minuut": 20
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 22
+          },
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 43
+          },
+          {
+            "naam": "Christian Kurtz",
+            "club": "Oranje Zwart",
+            "minuut": 53
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "SCHC",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "3-2",
+        "datum": "01-06-2005",
+        "scorers": [
+          {
+            "naam": "Troy Elder",
+            "club": "Oranje Zwart",
+            "minuut": 3
+          },
+          {
+            "naam": "Maikel Brekelmans",
+            "club": "Oranje Zwart",
+            "minuut": 38
+          },
+          {
+            "naam": "Teun Rohof",
+            "club": "Oranje Zwart",
+            "minuut": 73
+          },
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 2
+          },
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 24
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "1-1 (SO 6-5)",
+        "datum": "04-06-2005",
+        "scorers": [
+          {
+            "naam": "Martijn van Hasselt",
+            "club": "Bloemendaal",
+            "minuut": 7
+          },
+          {
+            "naam": "Mark Caspanni",
+            "club": "Oranje Zwart",
+            "minuut": 40
+          }
+        ],
+        "notitie": "Bloemendaal wint na strafballen: 6-5"
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "1-3",
+        "datum": "05-06-2005",
+        "scorers": [
+          {
+            "naam": "Karel Klaver",
+            "club": "Bloemendaal",
+            "minuut": 67
+          },
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 41
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 43
+          },
+          {
+            "naam": "Rob Reckers",
+            "club": "Oranje Zwart",
+            "minuut": 46
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Oranje Zwart",
+    "playout": [
+      {
+        "thuis": "Eindhoven",
+        "uit": "Rotterdam",
+        "score": "1-2",
+        "datum": "18-05-2005",
+        "scorers": [
+          {
+            "naam": "Van Rijn",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Grimes",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Abbas",
+            "club": "Rotterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Eindhoven",
+        "score": "3-1",
+        "datum": "21-05-2005",
+        "scorers": [
+          {
+            "naam": "Grimes",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Tigges",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Tigges",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Van Rijswijk",
+            "club": "Eindhoven",
+            "minuut": null
+          }
+        ],
+        "notitie": "Rotterdam is gepromoveerd en Eindhoven neemt het op tegen Breda om promotie/handhaving."
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "EMHC",
+        "score": "4-2",
+        "datum": "18-05-2005",
+        "scorers": [
+          {
+            "naam": "De Koning",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Van Breugel",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Grobben",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Bentum",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Judge",
+            "club": "EMHC",
+            "minuut": null
+          },
+          {
+            "naam": "Judge",
+            "club": "EMHC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "EMHC",
+        "uit": "Hurley",
+        "score": "2-4",
+        "datum": "21-05-2005",
+        "scorers": [
+          {
+            "naam": "Dawson",
+            "club": "EMHC",
+            "minuut": null
+          },
+          {
+            "naam": "Welp",
+            "club": "EMHC",
+            "minuut": null
+          },
+          {
+            "naam": "van Nunen",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Janiek Braaksma",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Braaksma",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "De Koning",
+            "club": "Hurley",
+            "minuut": null
+          }
+        ],
+        "notitie": "EMHC terug naar overgangsklasse en Hurley speelt play off tegen Pinoké."
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Breda",
+        "score": "2-3",
+        "datum": "28-05-2005",
+        "scorers": [
+          {
+            "naam": "Verlijsdonkk",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "P. Wijzenbeek",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Groen",
+            "club": "Breda",
+            "minuut": null
+          },
+          {
+            "naam": "van Wijk",
+            "club": "Breda",
+            "minuut": null
+          },
+          {
+            "naam": "van Pelt",
+            "club": "Breda",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Pinoké",
+        "score": "1-3",
+        "datum": "28-05-2005",
+        "scorers": [
+          {
+            "naam": "van Nunen",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "van Weerd",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Jeroen Koops",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Jeroen Koops",
+            "club": "Pinoké",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Breda",
+        "uit": "Eindhoven",
+        "score": "2-3",
+        "datum": "29-05-2005",
+        "scorers": [
+          {
+            "naam": "van Wijk",
+            "club": "Breda",
+            "minuut": null
+          },
+          {
+            "naam": "van Wijk",
+            "club": "Breda",
+            "minuut": null
+          },
+          {
+            "naam": "W. Wijzenbeek",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Derks",
+            "club": "Eindhoven",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Hurley",
+        "score": "3-2",
+        "datum": "29-05-2005",
+        "scorers": [
+          {
+            "naam": "Jeroen Koops",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "van Weert",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Bree",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Bentum",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Braaksma",
+            "club": "Hurley",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Breda",
+        "score": "3-2",
+        "datum": "04-06-2005",
+        "scorers": [
+          {
+            "naam": "Van der laan",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Fideldij",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Verlijsdonk",
+            "club": "Eindhoven",
+            "minuut": null
+          },
+          {
+            "naam": "Froger",
+            "club": "Breda",
+            "minuut": null
+          },
+          {
+            "naam": "Van Wijk",
+            "club": "Breda",
+            "minuut": null
+          }
+        ],
+        "notitie": "Pinoké handhaaft zich en Eindhoven promoveert naar de hoofdklasse. Breda degradeert naar de overgangsklasse."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
