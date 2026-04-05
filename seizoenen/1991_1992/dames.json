@@ -1,0 +1,270 @@
+{
+  "seizoen": "1991-1992",
+  "slug": "1991_1992",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Bloemendaal",
+    "Oranje Zwart"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 92,
+      "doelpunten_tegen": 18,
+      "doelsaldo": 74,
+      "punten": 41,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 5,
+      "verloren": 2,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 56,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 8,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 10,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 7,
+      "verloren": 7,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -6,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -6,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -14,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -25,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -28,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Zwolle",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 36,
+      "doelsaldo": -16,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -19,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -34,
+      "punten": 13,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Wietske de Ruiter",
+      "club": "HGC",
+      "doelpunten": 46,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Ingrid Wolff",
+      "club": "Amsterdam",
+      "doelpunten": 32,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Frederiek Grijpma",
+      "club": "Laren",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Helen Lejeune",
+      "club": "Amsterdam",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Mieketine Wouters",
+      "club": "Amsterdam",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Cécile Vinke",
+      "club": "MOP",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Martine Ohr",
+      "club": "HDM",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Mariëtte Kuiper",
+      "club": "HDM",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Harriët Dijsselhof",
+      "club": "Zwolle",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Fleur Pessers",
+      "club": "MOP",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
