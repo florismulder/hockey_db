@@ -1155,6 +1155,12 @@ function HistoriePagina({nav}) {
     return {thuis, uit, soThuis, soUit};
   };
 
+  // Verwijder ruststanden zoals (2-0) maar behoud shoot-out notatie (SO 4-3)
+  const formatScore = (score) => {
+    if(!score) return "–";
+    return score.replace(/\s*\(\d+[-–]\d+\)/g, '').trim();
+  };
+
   const bepaalWinnaar = (m) => {
     const {thuis:st, uit:su, soThuis, soUit} = parseScore(m.score);
     if(st==null) return null;
@@ -1198,8 +1204,7 @@ function HistoriePagina({nav}) {
           background:isFinale?"var(--playoff-bg)":"var(--surface2)",
           padding:"2px 10px",borderRadius:4,minWidth:52,textAlign:"center",
           border:`1px solid ${isFinale?"#86efac":"var(--border)"}`}}>
-          {m.score||"–"}
-        </span>
+          {formatScore(m.score)}        </span>
         <span style={{flex:1,fontWeight:uitWint?700:400}}>{m.uit}</span>
         {m.datum&&<span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",flexShrink:0}}>{m.datum}</span>}
       </div>
