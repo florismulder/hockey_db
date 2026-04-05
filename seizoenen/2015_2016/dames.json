@@ -1,0 +1,490 @@
+{
+  "seizoen": "2015-2016",
+  "slug": "2015_2016",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Push"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 86,
+      "doelpunten_tegen": 14,
+      "doelsaldo": 72,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 4,
+      "verloren": 1,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 62,
+      "punten": 55,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 6,
+      "verloren": 2,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 39,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 75,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 53,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 2,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -8,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 49,
+      "doelsaldo": -19,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 37,
+      "doelsaldo": -2,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -18,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -24,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 4,
+      "verloren": 14,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 78,
+      "doelsaldo": -58,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 0,
+      "verloren": 21,
+      "doelpunten_voor": 13,
+      "doelpunten_tegen": 112,
+      "doelsaldo": -99,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 30,
+      "vd": 0,
+      "sc": 29,
+      "sb": 1
+    },
+    {
+      "rang": 2,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 22,
+      "vd": 0,
+      "sc": 21,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Lieke van Wijk",
+      "club": "Laren",
+      "doelpunten": 20,
+      "vd": 0,
+      "sc": 17,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Pien van Nes",
+      "club": "hdm",
+      "doelpunten": 16,
+      "vd": 1,
+      "sc": 10,
+      "sb": 5
+    },
+    {
+      "rang": 5,
+      "naam": "Ellen Hoog",
+      "club": "Amsterdam",
+      "doelpunten": 13,
+      "vd": 9,
+      "sc": 4,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "hdm",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Rein van Eijk"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Stijn van Roosendaal"
+    },
+    {
+      "club": "Laren",
+      "naam": "Ageeth Boomgaardt"
+    },
+    {
+      "club": "MOP",
+      "naam": "Karel Alferink"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Kai de Jager"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Robert Justus"
+    },
+    {
+      "club": "Push",
+      "naam": "Stan Huijsmans"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Etienne Spee"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "2-3",
+        "datum": "24 april 2016",
+        "scorers": [
+          {
+            "naam": "Zerbo",
+            "club": "SCHC",
+            "minuut": 13
+          },
+          {
+            "naam": "Caia van Maasakker",
+            "club": "SCHC",
+            "minuut": 65
+          },
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 17
+          },
+          {
+            "naam": "Verschoor",
+            "club": "Amsterdam",
+            "minuut": 38
+          },
+          {
+            "naam": "Van Male",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "0-2",
+        "datum": "24 april 2016",
+        "scorers": [
+          {
+            "naam": "Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 40
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 59
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "3-1",
+        "datum": "30 april 2016",
+        "scorers": [
+          {
+            "naam": "Keil",
+            "club": "Den Bosch",
+            "minuut": 9
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 34
+          },
+          {
+            "naam": "Hulsen",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Roosen",
+            "club": "Laren",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "SCHC",
+        "score": "2-0",
+        "datum": "30 april 2016",
+        "scorers": [
+          {
+            "naam": "Van Male",
+            "club": "Amsterdam",
+            "minuut": 20
+          },
+          {
+            "naam": "De Goede",
+            "club": "Amsterdam",
+            "minuut": 47
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-0",
+        "datum": "5 mei 2016",
+        "scorers": [
+          {
+            "naam": "Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 18
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "7 mei 2016",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Were Di",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": "18 mei 2016",
+        "scorers": [
+          {
+            "naam": "Ilse Brouwers",
+            "club": "Were Di",
+            "minuut": 20
+          },
+          {
+            "naam": "Tamara Gruter",
+            "club": "Bloemendaal",
+            "minuut": 24
+          },
+          {
+            "naam": "Tamara Gruter",
+            "club": "Bloemendaal",
+            "minuut": 26
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Were Di",
+        "score": "3-2",
+        "datum": "21 mei 2016",
+        "scorers": [
+          {
+            "naam": "Denise Zweers",
+            "club": "Were Di",
+            "minuut": 18
+          },
+          {
+            "naam": "Denise Zweers",
+            "club": "Were Di",
+            "minuut": 60
+          },
+          {
+            "naam": "Melle Spruyt",
+            "club": "Bloemendaal",
+            "minuut": 20
+          },
+          {
+            "naam": "Josien Galama",
+            "club": "Bloemendaal",
+            "minuut": 69
+          },
+          {
+            "naam": "Maxine Fluharty",
+            "club": "Bloemendaal",
+            "minuut": 73
+          }
+        ],
+        "notitie": "(golden goal)"
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Pinoké",
+        "score": "0-2",
+        "datum": "18 mei 2016",
+        "scorers": [
+          {
+            "naam": "Dana Luijkx",
+            "club": "Pinoké",
+            "minuut": 34
+          },
+          {
+            "naam": "Dana Luijkx",
+            "club": "Pinoké",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Nijmegen",
+        "score": "0-0 (SO 2-1)",
+        "datum": "21 mei 2016",
+        "scorers": [],
+        "notitie": "Pinoké wint na shoot-outs: 2-1."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
