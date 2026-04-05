@@ -1,0 +1,723 @@
+{
+  "seizoen": "2016-2017",
+  "slug": "2016_2017",
+  "geslacht": "heren",
+  "kampioen": "Kampong",
+  "vicekampioen": "Rotterdam",
+  "gedegradeerd": [
+    "Qui Vive",
+    "Hurley"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 2,
+      "verloren": 4,
+      "doelpunten_voor": 86,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 51,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 2,
+      "verloren": 4,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 34,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 82,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 43,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 44,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Rood",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 4,
+      "verloren": 5,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 14,
+      "punten": 43,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 1,
+      "verloren": 9,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 27,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 8,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -20,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HC Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 1,
+      "verloren": 16,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -32,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 6,
+      "verloren": 14,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 85,
+      "doelsaldo": -44,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Almere",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 87,
+      "doelsaldo": -55,
+      "punten": 10,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Qui Vive",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 102,
+      "doelsaldo": -70,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 28,
+      "vd": 13,
+      "sc": 11,
+      "sb": 4
+    },
+    {
+      "rang": 2,
+      "naam": "Justin Reid-Ross",
+      "club": "Amsterdam",
+      "doelpunten": 23,
+      "vd": 2,
+      "sc": 20,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Mirco Pruyser",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": 17,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Rood",
+      "doelpunten": 19,
+      "vd": 3,
+      "sc": 15,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Tristan Algera",
+      "club": "HGC",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 19,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Martijn Havenga",
+      "club": "Kampong",
+      "doelpunten": 19,
+      "vd": 1,
+      "sc": 14,
+      "sb": 4
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Almeerse HC",
+      "naam": "Alex Verga"
+    },
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Dirk Loots"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "HGC",
+      "naam": "Jan Jorn van 't Land"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Simon Organ"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Lucas Judge"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "Qui Vive",
+      "naam": "Wouter Otto"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Jeroen Delmee"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "10-05-2017",
+        "scorers": [
+          {
+            "naam": "Martijn Havenga",
+            "club": "Kampong",
+            "minuut": 30
+          },
+          {
+            "naam": "Martijn Havenga",
+            "club": "Kampong",
+            "minuut": 42
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Bloemendaal",
+            "minuut": 14
+          },
+          {
+            "naam": "Jasper Brinkman",
+            "club": "Bloemendaal",
+            "minuut": 47
+          },
+          {
+            "naam": "Thierry Brinkman",
+            "club": "Bloemendaal",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Amsterdam",
+        "score": "2-0",
+        "datum": "10-05-2017",
+        "scorers": [
+          {
+            "naam": "Seve van Ass",
+            "club": "Rotterdam",
+            "minuut": 56
+          },
+          {
+            "naam": "Simon Egerton",
+            "club": "Rotterdam",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "2-3",
+        "datum": "13-05-2017",
+        "scorers": [
+          {
+            "naam": "Rogier Hofman",
+            "club": "Bloemendaal",
+            "minuut": 23
+          },
+          {
+            "naam": "Blake Govers",
+            "club": "Bloemendaal",
+            "minuut": 45
+          },
+          {
+            "naam": "Constantijn Jonker",
+            "club": "Kampong",
+            "minuut": 21
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 30
+          },
+          {
+            "naam": "Martijn Havenga",
+            "club": "Kampong",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "2-1",
+        "datum": "13-05-2017",
+        "scorers": [
+          {
+            "naam": "Justin Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Jan-Willem Buissant",
+            "club": "Amsterdam",
+            "minuut": 66
+          },
+          {
+            "naam": "Thijs van Dam",
+            "club": "Rotterdam",
+            "minuut": 13
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "0-2",
+        "datum": "14-05-2017",
+        "scorers": [
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 38
+          },
+          {
+            "naam": "Robbert Kemperman",
+            "club": "Kampong",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "2-3",
+        "datum": "14-05-2017",
+        "scorers": [
+          {
+            "naam": "Robert Tigges",
+            "club": "Amsterdam",
+            "minuut": 55
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 68
+          },
+          {
+            "naam": "Simon Egerton",
+            "club": "Rotterdam",
+            "minuut": 15
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 63
+          },
+          {
+            "naam": "Paul Melkert",
+            "club": "Rotterdam",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Kampong",
+        "uit": "Rotterdam",
+        "score": "1-1 (SO 5-4)",
+        "datum": "17-05-2017",
+        "scorers": [
+          {
+            "naam": "Martijn Havenga",
+            "club": "Kampong",
+            "minuut": 64
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 61
+          },
+          {
+            "naam": "Caspers",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Kemperman",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Bouwens",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Kellerman",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Havenga",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Hertzberger",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Van Ass",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Van Dam",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Polkamp",
+            "club": "Rotterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Kampong",
+        "score": "2-2 (SO 3-4)",
+        "datum": "20-05-2017",
+        "scorers": [
+          {
+            "naam": "Seve van Ass",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 54
+          },
+          {
+            "naam": "Björn Kellerman",
+            "club": "Kampong",
+            "minuut": 1
+          },
+          {
+            "naam": "Constantijn Jonker",
+            "club": "Kampong",
+            "minuut": 38
+          },
+          {
+            "naam": "Hertzberger",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Bakker",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Van Dam",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Caspers",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Kemperman",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Bouwens",
+            "club": "Kampong",
+            "minuut": null
+          },
+          {
+            "naam": "Kellerman",
+            "club": "Kampong",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Kampong",
+    "playout": [
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Almere",
+        "score": "3-3 (SO 2-3)",
+        "datum": "03-06-2017",
+        "scorers": [
+          {
+            "naam": "Jelle Phijffer",
+            "club": "Schaerweijde",
+            "minuut": 46
+          },
+          {
+            "naam": "Scott Tupper",
+            "club": "Schaerweijde",
+            "minuut": 51
+          },
+          {
+            "naam": "Scott Tupper",
+            "club": "Schaerweijde",
+            "minuut": 59
+          },
+          {
+            "naam": "Erwin Kruisbrink",
+            "club": "Almere",
+            "minuut": 33
+          },
+          {
+            "naam": "Deegan Huisman",
+            "club": "Almere",
+            "minuut": 46
+          },
+          {
+            "naam": "Terrance Pieters",
+            "club": "Almere",
+            "minuut": 62
+          }
+        ],
+        "notitie": "Almere wint na shoot-outs"
+      },
+      {
+        "thuis": "Almere",
+        "uit": "Schaerweijde",
+        "score": "2-2 (SO 3-4)",
+        "datum": "10-06-2017",
+        "scorers": [
+          {
+            "naam": "Terrance Pieters",
+            "club": "Almere",
+            "minuut": 5
+          },
+          {
+            "naam": "Jonas de Geus",
+            "club": "Almere",
+            "minuut": 28
+          },
+          {
+            "naam": "Jur van der Have",
+            "club": "Almere",
+            "minuut": 59
+          },
+          {
+            "naam": "Scott Tupper",
+            "club": "Schaerweijde",
+            "minuut": 70
+          }
+        ],
+        "notitie": "Schaerweijde wint na shoot-outs"
+      },
+      {
+        "thuis": "hdm",
+        "uit": "Hurley",
+        "score": "2-1",
+        "datum": "03-06-2017",
+        "scorers": [
+          {
+            "naam": "Kieran Dartée",
+            "club": "hdm",
+            "minuut": 29
+          },
+          {
+            "naam": "Niels Blaak",
+            "club": "hdm",
+            "minuut": 60
+          },
+          {
+            "naam": "Shannon Boucher",
+            "club": "Hurley",
+            "minuut": 35
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "hdm",
+        "score": "4-1",
+        "datum": "10-06-2017",
+        "scorers": [
+          {
+            "naam": "Rogier Rombouts",
+            "club": "Hurley",
+            "minuut": 28
+          },
+          {
+            "naam": "Stijn Jolie",
+            "club": "Hurley",
+            "minuut": 38
+          },
+          {
+            "naam": "Christiaan Stroboer",
+            "club": "Hurley",
+            "minuut": 51
+          },
+          {
+            "naam": "Stijn Jolie",
+            "club": "Hurley",
+            "minuut": 69
+          },
+          {
+            "naam": "Niels Blaak",
+            "club": "hdm",
+            "minuut": 15
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "hdm",
+        "uit": "Hurley",
+        "score": "1-1 (SO 3-1)",
+        "datum": "11-06-2017",
+        "scorers": [
+          {
+            "naam": "Ruben Versteeg",
+            "club": "hdm",
+            "minuut": 4
+          },
+          {
+            "naam": "Stijn Jolie",
+            "club": "Hurley",
+            "minuut": 6
+          }
+        ],
+        "notitie": "hdm wint na shoot-outs"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
