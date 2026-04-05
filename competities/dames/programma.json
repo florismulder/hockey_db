@@ -124,6 +124,42 @@
       ]
     },
     {
+      "thuis": "Tilburg",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 4,
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Babs Reijnen",
+          "club": "Den Bosch",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -2636,5 +2672,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:44.155Z"
+  "bijgewerkt": "2026-04-05T18:48:45.602Z"
 }
