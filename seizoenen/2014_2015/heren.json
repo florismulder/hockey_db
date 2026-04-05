@@ -1,0 +1,664 @@
+{
+  "seizoen": "2014-2015",
+  "slug": "2014_2015",
+  "geslacht": "heren",
+  "kampioen": "Oranje Zwart",
+  "vicekampioen": "Kampong",
+  "gedegradeerd": [
+    "Push"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 74,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 48,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 44,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 40,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 39,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 37,
+      "punten": 45,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 7,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 2,
+      "verloren": 12,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 70,
+      "doelsaldo": -18,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -27,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 72,
+      "doelsaldo": -25,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 66,
+      "doelsaldo": -27,
+      "punten": 14,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 66,
+      "doelsaldo": -36,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 2,
+      "verloren": 20,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 103,
+      "doelsaldo": -82,
+      "punten": 2,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Justin Reid-Ross",
+      "club": "Amsterdam",
+      "doelpunten": 34,
+      "vd": 1,
+      "sc": 32,
+      "sb": 1
+    },
+    {
+      "rang": 2,
+      "naam": "Tom Boon",
+      "club": "Bloemendaal",
+      "doelpunten": 33,
+      "vd": 15,
+      "sc": 16,
+      "sb": 2
+    },
+    {
+      "rang": 3,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Zwart",
+      "doelpunten": 31,
+      "vd": 2,
+      "sc": 26,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Gonzalo Peillat",
+      "club": "HGC",
+      "doelpunten": 27,
+      "vd": 0,
+      "sc": 25,
+      "sb": 2
+    },
+    {
+      "rang": 5,
+      "naam": "Constantijn Jonker",
+      "club": "Kampong",
+      "doelpunten": 25,
+      "vd": 23,
+      "sc": 2,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Alyson Annan"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Russell Garcia"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "HGC",
+      "naam": "Dirk Loots"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Peter Jonker"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "Push",
+      "naam": "Herman Kruis"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Dave Smolenaars"
+    },
+    {
+      "club": "Tilburg",
+      "naam": "Pim Wijzenbeek"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "2-3",
+        "datum": "03-05-2015",
+        "scorers": [
+          {
+            "naam": "Pelle Vos",
+            "club": "Bloemendaal",
+            "minuut": 32
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Bloemendaal",
+            "minuut": 60
+          },
+          {
+            "naam": "Quirijn Caspers",
+            "club": "Kampong",
+            "minuut": 30
+          },
+          {
+            "naam": "Quirijn Caspers",
+            "club": "Kampong",
+            "minuut": 33
+          },
+          {
+            "naam": "Thierry Brinkman",
+            "club": "Kampong",
+            "minuut": 40
+          }
+        ],
+        "notitie": "Kampong naar de finale"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "1-2",
+        "datum": "03-05-2015",
+        "scorers": [
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 6
+          },
+          {
+            "naam": "Niek van der Schoot",
+            "club": "Oranje Zwart",
+            "minuut": 23
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 70
+          }
+        ],
+        "notitie": "Mink van der Weerden bezorgt Oranje Zwart overwinning in slotfase"
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "09-05-2015",
+        "scorers": [
+          {
+            "naam": "Loïck Luypaert",
+            "club": "Kampong",
+            "minuut": 5
+          },
+          {
+            "naam": "Robbert Kemperman",
+            "club": "Kampong",
+            "minuut": 6
+          },
+          {
+            "naam": "Joep van der Loo",
+            "club": "Bloemendaal",
+            "minuut": 33
+          },
+          {
+            "naam": "Tom Boon",
+            "club": "Bloemendaal",
+            "minuut": 41
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Bloemendaal",
+            "minuut": 84
+          }
+        ],
+        "notitie": "Bloemendaal dwingt derde wedstrijd af"
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "3-4",
+        "datum": "09-05-2015",
+        "scorers": [
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 26
+          },
+          {
+            "naam": "Jelle Galema",
+            "club": "Oranje Zwart",
+            "minuut": 40
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 70
+          },
+          {
+            "naam": "Justin Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 45
+          },
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 50
+          },
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 80
+          }
+        ],
+        "notitie": "Amsterdam dwingt derde duel af"
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Bloemendaal",
+        "score": "3-1",
+        "datum": "10-05-2015",
+        "scorers": [
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 30
+          },
+          {
+            "naam": "Philip Meulenbroek",
+            "club": "Kampong",
+            "minuut": 63
+          },
+          {
+            "naam": "Loïck Luypaert",
+            "club": "Kampong",
+            "minuut": 65
+          },
+          {
+            "naam": "Simon Gougnard",
+            "club": "Bloemendaal",
+            "minuut": 60
+          }
+        ],
+        "notitie": "Meulenbroek leidt Kampong met twee treffers naar finale"
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "4-1",
+        "datum": "10-05-2015",
+        "scorers": [
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 29
+          },
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 38
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 47
+          },
+          {
+            "naam": "Rashid Mehmood",
+            "club": "Oranje Zwart",
+            "minuut": 56
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 6
+          }
+        ],
+        "notitie": "Oranje Zwart ten koste van Amsterdam naar eindstrijd"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Kampong",
+        "score": "2-1",
+        "datum": "14-05-2015",
+        "scorers": [
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 7
+          },
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 36
+          },
+          {
+            "naam": "Loïck Luypaert",
+            "club": "Kampong",
+            "minuut": 44
+          }
+        ],
+        "notitie": "De Voogd leidt Oranje Zwart langs Kampong"
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Oranje Zwart",
+        "score": "1-2",
+        "datum": "16-05-2015",
+        "scorers": [
+          {
+            "naam": "Constantijn Jonker",
+            "club": "Kampong",
+            "minuut": 69
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 22
+          },
+          {
+            "naam": "Gabriel Dabanch",
+            "club": "Oranje Zwart",
+            "minuut": 80
+          }
+        ],
+        "notitie": "Dabanch schiet Oranje Zwart naar landstitel"
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Oranje Zwart",
+    "playout": [
+      {
+        "thuis": "SCHC",
+        "uit": "Tilburg",
+        "score": "3-3 (SO 6-5)",
+        "datum": "17-05-2015",
+        "scorers": [
+          {
+            "naam": "Jip Krens",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Jip Krens",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Arjen Lodewijks",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Floris Bakker",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Thomas Vis",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Thomas Vis",
+            "club": "Tilburg",
+            "minuut": null
+          }
+        ],
+        "notitie": "SCHC wint na shoot-outs: 6-5"
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "SCHC",
+        "score": "3-4",
+        "datum": "30-05-2015",
+        "scorers": [
+          {
+            "naam": "Tim Swaen",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Tim Swean",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Tim Krens",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Luuk van Duren",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Roderic Schwirtz",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Floris Bakker",
+            "club": "SCHC",
+            "minuut": null
+          },
+          {
+            "naam": "Roderic Schwirtz",
+            "club": "SCHC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Almere",
+        "uit": "Schaerweijde",
+        "score": "1-1 (SO 2-3)",
+        "datum": "17-05-2015",
+        "scorers": [
+          {
+            "naam": "Manu Verga",
+            "club": "Almere",
+            "minuut": null
+          },
+          {
+            "naam": "Ties Ceulemans",
+            "club": "Schaerweijde",
+            "minuut": null
+          }
+        ],
+        "notitie": "Schaerweijde wint na shoot-outs: 2-3"
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Almere",
+        "score": "4-2",
+        "datum": "30-05-2015",
+        "scorers": [
+          {
+            "naam": "Eli Matheson",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Leon Hemminga",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Thijn Knetemann",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Tijn Lissone",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Benjamin Stibbe",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Dider Meijer",
+            "club": "Almere",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
