@@ -495,6 +495,55 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Maria Steensma",
+          "club": "Pinoké",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Maria Steensma",
+          "club": "Pinoké",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Melle Vaessen",
+          "club": "Rotterdam",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Noor Omrani",
+          "club": "Rotterdam",
+          "minuut": 38,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -2067,5 +2116,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:25.252Z"
+  "bijgewerkt": "2026-04-05T18:48:26.633Z"
 }
