@@ -4,47 +4,321 @@
   "geslacht": "dames",
   "kampioen": "HGC",
   "vicekampioen": "Kampong",
-  "gedegradeerd": ["Groningen", "Zwolle"],
-  "bijgewerkt": "2026-04-05",
+  "gedegradeerd": [
+    "Groningen",
+    "Zwolle"
+  ],
   "stand": [
-    {"positie":1,"club":"HGC","gespeeld":22,"gewonnen":18,"gelijk":4,"verloren":0,"doelpunten_voor":59,"doelpunten_tegen":11,"doelsaldo":48,"punten":40,"zone":"playoff"},
-    {"positie":2,"club":"Kampong","gespeeld":22,"gewonnen":14,"gelijk":4,"verloren":4,"doelpunten_voor":48,"doelpunten_tegen":17,"doelsaldo":31,"punten":32,"zone":"playoff"},
-    {"positie":3,"club":"MOP","gespeeld":22,"gewonnen":9,"gelijk":12,"verloren":1,"doelpunten_voor":42,"doelpunten_tegen":12,"doelsaldo":30,"punten":30,"zone":"playoff"},
-    {"positie":4,"club":"Laren","gespeeld":22,"gewonnen":11,"gelijk":6,"verloren":5,"doelpunten_voor":33,"doelpunten_tegen":23,"doelsaldo":10,"punten":28,"zone":"playoff"},
-    {"positie":5,"club":"Den Bosch","gespeeld":22,"gewonnen":11,"gelijk":4,"verloren":7,"doelpunten_voor":27,"doelpunten_tegen":24,"doelsaldo":3,"punten":26,"zone":""},
-    {"positie":6,"club":"Amsterdam","gespeeld":22,"gewonnen":8,"gelijk":8,"verloren":6,"doelpunten_voor":31,"doelpunten_tegen":29,"doelsaldo":2,"punten":24,"zone":""},
-    {"positie":7,"club":"HDM","gespeeld":22,"gewonnen":7,"gelijk":8,"verloren":7,"doelpunten_voor":28,"doelpunten_tegen":26,"doelsaldo":2,"punten":22,"zone":""},
-    {"positie":8,"club":"Rotterdam","gespeeld":22,"gewonnen":5,"gelijk":9,"verloren":8,"doelpunten_voor":24,"doelpunten_tegen":29,"doelsaldo":-5,"punten":19,"zone":""},
-    {"positie":9,"club":"Alecto","gespeeld":22,"gewonnen":5,"gelijk":6,"verloren":11,"doelpunten_voor":23,"doelpunten_tegen":35,"doelsaldo":-12,"punten":16,"zone":""},
-    {"positie":10,"club":"Bloemendaal","gespeeld":22,"gewonnen":4,"gelijk":6,"verloren":12,"doelpunten_voor":20,"doelpunten_tegen":35,"doelsaldo":-15,"punten":14,"zone":"playout"},
-    {"positie":11,"club":"Groningen","gespeeld":22,"gewonnen":3,"gelijk":4,"verloren":15,"doelpunten_voor":14,"doelpunten_tegen":47,"doelsaldo":-33,"punten":10,"zone":"playout"},
-    {"positie":12,"club":"Zwolle","gespeeld":22,"gewonnen":0,"gelijk":3,"verloren":19,"doelpunten_voor":5,"doelpunten_tegen":66,"doelsaldo":-61,"punten":3,"zone":"degradatie"}
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 4,
+      "verloren": 0,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 11,
+      "doelsaldo": 48,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 31,
+      "punten": 32,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 12,
+      "verloren": 1,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 12,
+      "doelsaldo": 30,
+      "punten": 30,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 10,
+      "punten": 28,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 3,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 8,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 2,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 2,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 9,
+      "verloren": 8,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 29,
+      "doelsaldo": -5,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Alecto",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -12,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -15,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 4,
+      "verloren": 15,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -33,
+      "punten": 10,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Zwolle",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 3,
+      "verloren": 19,
+      "doelpunten_voor": 5,
+      "doelpunten_tegen": 66,
+      "doelsaldo": -61,
+      "punten": 3,
+      "zone": "degradatie"
+    }
   ],
   "topscorers": [
-    {"rang":1,"naam":"Wietske de Ruiter","club":"HGC","doelpunten":21,"vd":null,"sc":null,"sb":null},
-    {"rang":2,"naam":"Suzan van der Wielen","club":"HGC","doelpunten":19,"vd":null,"sc":null,"sb":null},
-    {"rang":3,"naam":"Ageeth Boomgaardt","club":"MOP","doelpunten":15,"vd":null,"sc":null,"sb":null},
-    {"rang":4,"naam":"Mieketine Wouters","club":"Amsterdam","doelpunten":13,"vd":null,"sc":null,"sb":null},
-    {"rang":5,"naam":"Ellen Kuipers","club":"Kampong","doelpunten":12,"vd":null,"sc":null,"sb":null},
-    {"rang":6,"naam":"Jeannette Lewin","club":"Kampong","doelpunten":11,"vd":null,"sc":null,"sb":null},
-    {"rang":7,"naam":"Cécile Vinke","club":"MOP","doelpunten":10,"vd":null,"sc":null,"sb":null},
-    {"rang":7,"naam":"Mijntje Donners","club":"Den Bosch","doelpunten":10,"vd":null,"sc":null,"sb":null},
-    {"rang":9,"naam":"Anouk Verhaegh","club":"Kampong","doelpunten":9,"vd":null,"sc":null,"sb":null}
+    {
+      "rang": 1,
+      "naam": "Wietske de Ruiter",
+      "club": "HGC",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Suzan van der Wielen",
+      "club": "HGC",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Ageeth Boomgaardt",
+      "club": "MOP",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Mieketine Wouters",
+      "club": "Amsterdam",
+      "doelpunten": 13,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Ellen Kuipers",
+      "club": "Kampong",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Jeannette Lewin",
+      "club": "Kampong",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Cécile Vinke",
+      "club": "MOP",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Anouk Verhaegh",
+      "club": "Kampong",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
   ],
   "coaches": [],
   "playoffs": {
     "halve_finales": [
-      {"thuis":"HGC","uit":"Laren","score":"3-0 (2-0)","datum":null,"scorers":[],"notitie":""},
-      {"thuis":"Laren","uit":"HGC","score":"0-0","datum":null,"scorers":[],"notitie":""},
-      {"thuis":"MOP","uit":"Kampong","score":"1-1 (1-1)","datum":null,"scorers":[],"notitie":""},
-      {"thuis":"Kampong","uit":"MOP","score":"3-0 (2-0)","datum":null,"scorers":[],"notitie":""}
+      {
+        "thuis": "HGC",
+        "uit": "Laren",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "HGC",
+        "score": "0-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "MOP",
+        "uit": "Kampong",
+        "score": "1-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "MOP",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
     ],
     "finale_wedstrijden": [
-      {"thuis":"Kampong","uit":"HGC","score":"0-0","datum":"13-05-1996","scorers":[],"notitie":""},
-      {"thuis":"HGC","uit":"Kampong","score":"1-0","datum":"19-05-1996","scorers":[{"naam":"Wietske de Ruiter","club":"HGC","minuut":27,"type":"sc"}],"notitie":""}
+      {
+        "thuis": "Kampong",
+        "uit": "HGC",
+        "score": "0-0",
+        "datum": "13-05-1996",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Kampong",
+        "score": "1-0",
+        "datum": "19-05-1996",
+        "scorers": [
+          {
+            "naam": "Wietske de Ruiter",
+            "club": "HGC",
+            "minuut": 27
+          }
+        ],
+        "notitie": ""
+      }
     ],
-    "troostfinale": null,
+    "troostfinale": {
+      "thuis": "Laren",
+      "uit": "MOP",
+      "score": "2-1",
+      "datum": null,
+      "scorers": [],
+      "notitie": ""
+    },
     "kampioen": "HGC",
     "playout": []
-  }
+  },
+  "bijgewerkt": "2026-04-05"
 }
