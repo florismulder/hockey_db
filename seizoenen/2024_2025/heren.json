@@ -1,0 +1,647 @@
+{
+  "seizoen": "2024-2025",
+  "slug": "2024_2025",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Kampong",
+  "gedegradeerd": [
+    "Nijmegen",
+    "SCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 2,
+      "verloren": 3,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 47,
+      "punten": 53,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 34,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 38,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 30,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 7,
+      "verloren": 4,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 29,
+      "punten": 40,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje-Rood",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 57,
+      "doelsaldo": 10,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 19,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -16,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 4,
+      "verloren": 14,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 69,
+      "doelsaldo": -28,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 4,
+      "verloren": 14,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -24,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 101,
+      "doelsaldo": -78,
+      "punten": 9,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 3,
+      "verloren": 18,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 93,
+      "doelsaldo": -61,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Timo Boers",
+      "club": "Den Bosch",
+      "doelpunten": 28,
+      "vd": 0,
+      "sc": 23,
+      "sb": 5
+    },
+    {
+      "rang": 2,
+      "naam": "Miles Bukkens",
+      "club": "Pinoké",
+      "doelpunten": 27,
+      "vd": 11,
+      "sc": 11,
+      "sb": 5
+    },
+    {
+      "rang": 2,
+      "naam": "Boris Burkhardt",
+      "club": "Amsterdam",
+      "doelpunten": 27,
+      "vd": 13,
+      "sc": 11,
+      "sb": 3
+    },
+    {
+      "rang": 4,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 25,
+      "vd": 11,
+      "sc": 10,
+      "sb": 4
+    },
+    {
+      "rang": 5,
+      "naam": "Jip Janssen",
+      "club": "Kampong",
+      "doelpunten": 24,
+      "vd": 0,
+      "sc": 21,
+      "sb": 3
+    },
+    {
+      "rang": 6,
+      "naam": "Marc Miralles",
+      "club": "Bloemendaal",
+      "doelpunten": 19,
+      "vd": 1,
+      "sc": 13,
+      "sb": 5
+    },
+    {
+      "rang": 7,
+      "naam": "Nathan Ephraums",
+      "club": "Bloemendaal",
+      "doelpunten": 17,
+      "vd": 17,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Chris Taberima",
+      "club": "HDM",
+      "doelpunten": 17,
+      "vd": 0,
+      "sc": 12,
+      "sb": 5
+    },
+    {
+      "rang": 9,
+      "naam": "Thibeau Stockbroekx",
+      "club": "Oranje-Rood",
+      "doelpunten": 16,
+      "vd": 16,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 9,
+      "naam": "Joep Troost",
+      "club": "Pinoké",
+      "doelpunten": 16,
+      "vd": 6,
+      "sc": 8,
+      "sb": 2
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Nanco Jansonius"
+    },
+    {
+      "club": "HDM",
+      "naam": "Richard Smith"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Enzo Torossi"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Tim Oudenaller"
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Robert Justus"
+    },
+    {
+      "club": "Nijmegen",
+      "naam": "Rob Haantjes"
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Omar Schlingemann"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Jeroen Groenheijde"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Bloemendaal",
+        "score": "5-2",
+        "datum": "17-05-2025",
+        "scorers": [
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 11
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 14
+          },
+          {
+            "naam": "Gruter",
+            "club": "Kampong",
+            "minuut": 15
+          },
+          {
+            "naam": "Warmerdam",
+            "club": "Bloemendaal",
+            "minuut": 21
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 24
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 33
+          },
+          {
+            "naam": "Beins",
+            "club": "Bloemendaal",
+            "minuut": 38
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Kampong",
+        "score": "1-3",
+        "datum": "18-05-2025",
+        "scorers": [
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 18
+          },
+          {
+            "naam": "Marc Miralles",
+            "club": "Bloemendaal",
+            "minuut": 21
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 49
+          },
+          {
+            "naam": "Phijffer",
+            "club": "Kampong",
+            "minuut": 51
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "3-2",
+        "datum": "17-05-2025",
+        "scorers": [
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 14
+          },
+          {
+            "naam": "Van Bijnen",
+            "club": "Amsterdam",
+            "minuut": 16
+          },
+          {
+            "naam": "Timo Boers",
+            "club": "Den Bosch",
+            "minuut": 38
+          },
+          {
+            "naam": "Tukkers",
+            "club": "Den Bosch",
+            "minuut": 42
+          },
+          {
+            "naam": "Van Bijnen",
+            "club": "Amsterdam",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-3",
+        "datum": "18-05-2025",
+        "scorers": [
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 4
+          },
+          {
+            "naam": "Timo Boers",
+            "club": "Den Bosch",
+            "minuut": 15
+          },
+          {
+            "naam": "Timo Boers",
+            "club": "Den Bosch",
+            "minuut": 19
+          },
+          {
+            "naam": "Sorsby",
+            "club": "Den Bosch",
+            "minuut": 27
+          },
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 29
+          },
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 32
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "4-3",
+        "datum": "25-05-2025",
+        "scorers": [
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 1
+          },
+          {
+            "naam": "Marree",
+            "club": "Kampong",
+            "minuut": 4
+          },
+          {
+            "naam": "Middendorp",
+            "club": "Amsterdam",
+            "minuut": 33
+          },
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 35
+          },
+          {
+            "naam": "Gruter",
+            "club": "Kampong",
+            "minuut": 40
+          },
+          {
+            "naam": "Telgenkamp",
+            "club": "Kampong",
+            "minuut": 57
+          },
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "2-1 (SO 6-5)",
+        "datum": "29-05-2025",
+        "scorers": [
+          {
+            "naam": "Jip Janssen",
+            "club": "Kampong",
+            "minuut": 4
+          },
+          {
+            "naam": "Boris Burkhardt",
+            "club": "Amsterdam",
+            "minuut": 32
+          },
+          {
+            "naam": "D. Cassiem",
+            "club": "Amsterdam",
+            "minuut": 33
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "SCHC",
+        "uit": "Schaerweijde",
+        "score": "2-2",
+        "datum": "31-05-2025",
+        "scorers": [
+          {
+            "naam": "Hafkamp",
+            "club": "SCHC",
+            "minuut": 3
+          },
+          {
+            "naam": "Stadelmaier",
+            "club": "Schaerweijde",
+            "minuut": 21
+          },
+          {
+            "naam": "Empey",
+            "club": "SCHC",
+            "minuut": 36
+          },
+          {
+            "naam": "Ros",
+            "club": "Schaerweijde",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "SCHC",
+        "score": "1-0",
+        "datum": "01-06-2025",
+        "scorers": [
+          {
+            "naam": "Stadelmaier",
+            "club": "Schaerweijde",
+            "minuut": 12
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "HC Tilburg",
+        "score": "2-3",
+        "datum": "31-05-2025",
+        "scorers": [
+          {
+            "naam": "Van der Ruijt",
+            "club": "HC Tilburg",
+            "minuut": 17
+          },
+          {
+            "naam": "Haring",
+            "club": "HC Tilburg",
+            "minuut": 19
+          },
+          {
+            "naam": "Bornebroek",
+            "club": "HC Tilburg",
+            "minuut": 27
+          },
+          {
+            "naam": "Aerts",
+            "club": "Hurley",
+            "minuut": 53
+          },
+          {
+            "naam": "Voskuil",
+            "club": "Hurley",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HC Tilburg",
+        "uit": "Hurley",
+        "score": "2-3 (SO 2-3)",
+        "datum": "01-06-2025",
+        "scorers": [
+          {
+            "naam": "Aerts",
+            "club": "Hurley",
+            "minuut": 41
+          },
+          {
+            "naam": "Haring",
+            "club": "HC Tilburg",
+            "minuut": 47
+          },
+          {
+            "naam": "Aerts",
+            "club": "Hurley",
+            "minuut": 47
+          },
+          {
+            "naam": "Haring",
+            "club": "HC Tilburg",
+            "minuut": 48
+          },
+          {
+            "naam": "Voskuil",
+            "club": "Hurley",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
