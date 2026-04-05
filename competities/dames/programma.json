@@ -263,6 +263,79 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 6,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Charlotte Schrijvers",
+          "club": "Oranje-Rood",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Alessia Norbiato",
+          "club": "Amsterdam",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Pheline Vos",
+          "club": "Oranje-Rood",
+          "minuut": 30,
+          "type": "groen"
+        },
+        {
+          "naam": "Amber Brouwer",
+          "club": "Oranje-Rood",
+          "minuut": 37,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -1835,5 +1908,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:42.762Z"
+  "bijgewerkt": "2026-04-05T17:04:44.015Z"
 }
