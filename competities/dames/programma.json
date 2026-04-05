@@ -263,6 +263,73 @@
       ]
     },
     {
+      "thuis": "Tilburg",
+      "uit": "HGC",
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Daphne Nikkels",
+          "club": "Tilburg",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Emmely Bekker",
+          "club": "Tilburg",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Daphne Nikkels",
+          "club": "Tilburg",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Tessel Huibregtsen",
+          "club": "HGC",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Isis van Loon",
+          "club": "HGC",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Isis van Loon",
+          "club": "HGC",
+          "minuut": 13,
+          "type": "groen"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Bas Bogaard",
+          "club": "HGC",
+          "minuut": 51,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -912,5 +979,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T15:23:01.246Z"
+  "bijgewerkt": "2026-04-05T15:23:02.672Z"
 }
