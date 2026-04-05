@@ -20,7 +20,7 @@
       "doelpunten_tegen": 22,
       "doelsaldo": 38,
       "punten": 34,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
@@ -33,7 +33,7 @@
       "doelpunten_tegen": 17,
       "doelsaldo": 29,
       "punten": 32,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 3,
@@ -46,7 +46,7 @@
       "doelpunten_tegen": 26,
       "doelsaldo": 3,
       "punten": 27,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 4,
@@ -59,7 +59,7 @@
       "doelpunten_tegen": 22,
       "doelsaldo": 10,
       "punten": 25,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 5,
@@ -180,10 +180,10 @@
   "coaches": [],
   "playoffs": {
     "halve_finales": [],
-    "finale": null,
+    "finale_wedstrijden": [],
     "troostfinale": null,
-    "kampioen": null,
+    "kampioen": "Amsterdam",
     "playout": []
   },
-  "bijgewerkt": "2026-04-04"
+  "bijgewerkt": "2026-04-05"
 }
