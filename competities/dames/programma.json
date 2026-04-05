@@ -31,7 +31,7 @@
           "naam": "Frédérique Matla",
           "club": "Den Bosch D1",
           "minuut": 51,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -110,7 +110,7 @@
           "naam": "Katerina Langedijk",
           "club": "Amsterdam D1",
           "minuut": 24,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Freeke Moes",
@@ -128,13 +128,13 @@
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam D1",
           "minuut": 52,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Daantje de Kruijff",
           "club": "Amsterdam D1",
           "minuut": 60,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -177,13 +177,13 @@
           "naam": "Mikki Roberts",
           "club": "Tilburg D1",
           "minuut": 43,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Hannah Salden",
           "club": "Tilburg D1",
           "minuut": 50,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Emmely Bekker",
@@ -650,5 +650,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-03T08:41:48.464Z"
+  "bijgewerkt": "2026-04-05T14:41:00.109Z"
 }
