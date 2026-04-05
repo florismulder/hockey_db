@@ -1,0 +1,349 @@
+{
+  "seizoen": "2021-2022",
+  "slug": "2021_2022",
+  "geslacht": "heren",
+  "kampioen": "HC Bloemendaal",
+  "vicekampioen": "Pinoké",
+  "gedegradeerd": [
+    "Hurley"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 3,
+      "verloren": 1,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 40,
+      "punten": 57,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 4,
+      "verloren": 5,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 29,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 13,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 14,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 39,
+      "punten": 40,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Rood",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 14,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 4,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -4,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 54,
+      "doelsaldo": -1,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HC Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 17,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -49,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 5,
+      "verloren": 15,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 83,
+      "doelsaldo": -46,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 4,
+      "verloren": 18,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 84,
+      "doelsaldo": -53,
+      "punten": 4,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Alexander Hendrickx",
+      "club": "Pinoké",
+      "doelpunten": 21,
+      "vd": 1,
+      "sc": 18,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Mirco Pruyser",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": 14,
+      "sc": 2,
+      "sb": 4
+    },
+    {
+      "rang": 3,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 19,
+      "vd": 6,
+      "sc": 8,
+      "sb": 5
+    },
+    {
+      "rang": 4,
+      "naam": "Tim Swaen",
+      "club": "Bloemendaal",
+      "doelpunten": 19,
+      "vd": 1,
+      "sc": 18,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Jip Janssen",
+      "club": "Kampong",
+      "doelpunten": 15,
+      "vd": 1,
+      "sc": 14,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Bjorn Kellerman",
+      "club": "Kampong",
+      "doelpunten": 15,
+      "vd": 15,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Thijs van Dam",
+      "club": "Rotterdam",
+      "doelpunten": 15,
+      "vd": 13,
+      "sc": 2,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "HGC",
+      "naam": "Paul van Ass"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Roelant Oltmans"
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Omar Schlingemann"
+    },
+    {
+      "club": "Oranje Rood",
+      "naam": "Robert van der Horst"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Jesse Mahieu"
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "HC Tilburg",
+      "naam": "Sjoerd Marijne"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HC Bloemendaal",
+        "uit": "HGC",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "HC Bloemendaal",
+        "score": "1-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HC Bloemendaal",
+        "uit": "HGC",
+        "score": "2-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Amsterdam",
+        "score": "2-2 (SO win Pinoké)",
+        "datum": null,
+        "scorers": [],
+        "notitie": "Pinoké won na shootouts. Exacte shootout score niet vermeld. De derde beslissende wedstrijd is niet vermeld in de bron, maar Pinoké ging door naar de finale."
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Pinoké",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": "De derde beslissende wedstrijd is niet vermeld in de bron, maar Pinoké ging door naar de finale."
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HC Bloemendaal",
+        "uit": "Pinoké",
+        "score": "3-3 (SO win Bloemendaal)",
+        "datum": null,
+        "scorers": [],
+        "notitie": "HC Bloemendaal won na shootouts. Exacte shootout score niet vermeld. De derde beslissende wedstrijd is niet vermeld in de bron, maar HC Bloemendaal werd kampioen."
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "HC Bloemendaal",
+        "score": "3-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": "De derde beslissende wedstrijd is niet vermeld in de bron, maar HC Bloemendaal werd kampioen."
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "HC Bloemendaal",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
