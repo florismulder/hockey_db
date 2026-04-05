@@ -1,6 +1,27 @@
 {
   "SCHC": [
     {
+      "datum": "2026-04-05",
+      "titel": "Krekelaar staat er weer_ ‘Ik heb hier hard voor gewerkt’",
+      "link": "https://drive.google.com/file/d/1nB3XYe1BLU5-SLo-1VKSXI9FLqoDcPFN",
+      "bullets": [
+        "Speelt de EHL finale tegen Den Bosch."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-05",
+      "titel": "Van ziekenhuis naar gelukschoenen_ de wonderlijke EHL van Pien Dicke",
+      "link": "https://drive.google.com/file/d/1BY7YhAs4fMUuEOQY4s964U0v2hI3pm-C",
+      "bullets": [
+        "Won de EHL halve finale met 3-0 van Mannheimer HC.",
+        "Bereikte de EHL finale.",
+        "Speelde de EHL kwartfinale tegen Braxgata.",
+        "Speelt de EHL finale tegen Den Bosch."
+      ],
+      "competitie": "EHL"
+    },
+    {
       "datum": "2026-04-04",
       "titel": "Afzwaaiende Richardson lacht eindelijk weer_ ‘Toch nog van waarde’",
       "link": "https://drive.google.com/file/d/1Ys7_EtQukCSaYjKKtO6AS4LwSs9laZIg",
@@ -8,6 +29,19 @@
         "Won de Euro Hockey League-kwartfinale met 4-0.",
         "Veroverde in 2015 de Europese clubtitel.",
         "Zal deelnemen aan de play-offs over een paar weken."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-04",
+      "titel": "Gehavende Dicke-zusjes schieten SCHC naar Europese droomfinale",
+      "link": "https://drive.google.com/file/d/1p7oSinGmqkChSQbyXODrxMSdCm60-6CG",
+      "bullets": [
+        "Won de EHL halve finale met 3-0 van Mannheimer HC.",
+        "Kwalificeerde zich voor de EHL finale voor de eerste keer.",
+        "Bereikte de EHCCC finale in 2015 (winst) en 2016 (nederlaag).",
+        "Zal hun tiende finale tegen Den Bosch spelen in twaalf jaar.",
+        "Won de EHCC finale in 2015 en de Gold Cup in 2023."
       ],
       "competitie": "EHL"
     }
@@ -38,6 +72,196 @@
         "Speelde 4-4 gelijk tegen Kampong in reguliere speeltijd.",
         "Leidde vroeg in de wedstrijd met 0-2.",
         "Scoorde de 4-4 gelijkmaker."
+      ],
+      "competitie": "EHL"
+    }
+  ],
+  "Oranje Heren": [
+    {
+      "datum": "2025-08-13",
+      "titel": "Hortensius wil tegen goede vriend Hertzberger graag van de nul af",
+      "link": "https://drive.google.com/file/d/1tLbt94L4MSR5leW1-9c4ZlzgUuuqQVZA",
+      "bullets": [
+        "Speelt in de halve finale van het EK tegen Frankrijk.",
+        "Speelde in de poulefase tegen Oostenrijk.",
+        "Olivier Hortensius is een toernooidebutant voor het team.",
+        "Wil de eerste EK-titel winnen met Olivier Hortensius."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Frankrijk": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Verloor de poulewedstrijd van Nederland met 6-0 op het EK."
+      ],
+      "competitie": "EK"
+    },
+    {
+      "datum": "2025-08-13",
+      "titel": "Hortensius wil tegen goede vriend Hertzberger graag van de nul af",
+      "link": "https://drive.google.com/file/d/1tLbt94L4MSR5leW1-9c4ZlzgUuuqQVZA",
+      "bullets": [
+        "Speelt in de halve finale van het EK tegen Nederland.",
+        "Was een verrassing in dit EK-toernooi.",
+        "Speelde twee vriendschappelijke wedstrijden tegen Nederland voor het EK.",
+        "Jeroen Hertzberger is assistent-coach van het team."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Rotterdam": [
+    {
+      "datum": "2025-08-13",
+      "titel": "Hortensius wil tegen goede vriend Hertzberger graag van de nul af",
+      "link": "https://drive.google.com/file/d/1tLbt94L4MSR5leW1-9c4ZlzgUuuqQVZA",
+      "bullets": [
+        "Olivier Hortensius is een aanvaller van de club.",
+        "Jeroen Hertzberger was een oude teamgenoot van Hortensius bij de club.",
+        "Jeroen Hertzberger heeft Olivier Hortensius veel geleerd bij de club."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Oostenrijk": [
+    {
+      "datum": "2025-08-13",
+      "titel": "Hortensius wil tegen goede vriend Hertzberger graag van de nul af",
+      "link": "https://drive.google.com/file/d/1tLbt94L4MSR5leW1-9c4ZlzgUuuqQVZA",
+      "bullets": [
+        "Speelde in de poulefase tegen Nederland.",
+        "Verloor van Nederland met 5-0."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Nederland": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Won de poulewedstrijd tegen Frankrijk met 6-0 op het EK.",
+        "Maakte de eerste EK-treffer via Joosje Burg.",
+        "Speelde een groepsduel tegen Duitsland op het EK.",
+        "Speelde een oefenpotje tegen China."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Ierland": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Was de tegenstander toen Lisa Post een schotkans kreeg op het EK."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Duitsland": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Speelde een groepsduel tegen Nederland op het EK."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "China": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Was de tegenstander in een vriendschappelijk oefenpotje."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Oranje-Rood": [
+    {
+      "datum": "2025-08-14",
+      "titel": "Post is opeens middenvelder_ 'Ze heeft een loopvermogen voor vijf man'",
+      "link": "https://drive.google.com/file/d/12TZ1rizfkAqtg_u-csMr45BH5OLVDCAl",
+      "bullets": [
+        "Lisa Post speelde haar laatste jaar daar als middenvelder."
+      ],
+      "competitie": "EK"
+    }
+  ],
+  "Den Bosch": [
+    {
+      "datum": "2026-04-05",
+      "titel": "Krekelaar staat er weer_ ‘Ik heb hier hard voor gewerkt’",
+      "link": "https://drive.google.com/file/d/1nB3XYe1BLU5-SLo-1VKSXI9FLqoDcPFN",
+      "bullets": [
+        "Won de EHL halve finale tegen Club de Campo.",
+        "Bereikte de EHL finale.",
+        "Won de halve finale met een 5-1 score.",
+        "Speelt de EHL finale tegen SCHC.",
+        "Incasseerde een 1-1 gelijkmaker tegen Club de Campo."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-05",
+      "titel": "Van ziekenhuis naar gelukschoenen_ de wonderlijke EHL van Pien Dicke",
+      "link": "https://drive.google.com/file/d/1BY7YhAs4fMUuEOQY4s964U0v2hI3pm-C",
+      "bullets": [
+        "Plaatste zich eerder op de dag voor de EHL eindstrijd.",
+        "Speelt de EHL finale tegen SCHC."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-04",
+      "titel": "Gehavende Dicke-zusjes schieten SCHC naar Europese droomfinale",
+      "link": "https://drive.google.com/file/d/1p7oSinGmqkChSQbyXODrxMSdCm60-6CG",
+      "bullets": [
+        "Kwalificeerde zich voor de EHL finale.",
+        "Zal hun tiende finale tegen SCHC spelen in twaalf jaar."
+      ],
+      "competitie": "EHL"
+    }
+  ],
+  "Mannheimer HC": [
+    {
+      "datum": "2026-04-05",
+      "titel": "Van ziekenhuis naar gelukschoenen_ de wonderlijke EHL van Pien Dicke",
+      "link": "https://drive.google.com/file/d/1BY7YhAs4fMUuEOQY4s964U0v2hI3pm-C",
+      "bullets": [
+        "Verloor de EHL halve finale met 3-0 van SCHC."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-04",
+      "titel": "Gehavende Dicke-zusjes schieten SCHC naar Europese droomfinale",
+      "link": "https://drive.google.com/file/d/1p7oSinGmqkChSQbyXODrxMSdCm60-6CG",
+      "bullets": [
+        "Verloor de EHL halve finale met 3-0 van SCHC.",
+        "Incassseerde drie doelpunten in het eerste kwart.",
+        "Is de Bundesliga koploper, met twaalf tegengoals in vijftien wedstrijden.",
+        "Produceerde slechts twee onsuccesvolle strafcorners in de wedstrijd.",
+        "Haalde hun keeper zes minuten voor tijd uit het doel."
+      ],
+      "competitie": "EHL"
+    }
+  ],
+  "Braxgata": [
+    {
+      "datum": "2026-04-05",
+      "titel": "Van ziekenhuis naar gelukschoenen_ de wonderlijke EHL van Pien Dicke",
+      "link": "https://drive.google.com/file/d/1BY7YhAs4fMUuEOQY4s964U0v2hI3pm-C",
+      "bullets": [
+        "Speelde de EHL kwartfinale tegen SCHC."
       ],
       "competitie": "EHL"
     }
