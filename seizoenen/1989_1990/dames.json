@@ -20,7 +20,8 @@
       "doelpunten_tegen": 7,
       "doelsaldo": 47,
       "punten": 39,
-      "zone": "playoff"
+      "zone": "playoff",
+      "notitie": "Plaatst zich voor de Europacup I 1991"
     },
     {
       "positie": 2,
@@ -33,7 +34,8 @@
       "doelpunten_tegen": 15,
       "doelsaldo": 57,
       "punten": 37,
-      "zone": "playoff"
+      "zone": "playoff",
+      "notitie": "Plaatst zich voor de Europacup I 1991"
     },
     {
       "positie": 3,
@@ -72,7 +74,8 @@
       "doelpunten_tegen": 29,
       "doelsaldo": 6,
       "punten": 25,
-      "zone": ""
+      "zone": "",
+      "notitie": "Plaatst zich voor de Europacup II 1991"
     },
     {
       "positie": 6,
@@ -150,7 +153,8 @@
       "doelpunten_tegen": 42,
       "doelsaldo": -33,
       "punten": 12,
-      "zone": "playout"
+      "zone": "playout",
+      "notitie": "Rechtstreeks gedegradeerd"
     },
     {
       "positie": 12,
@@ -163,7 +167,8 @@
       "doelpunten_tegen": 48,
       "doelsaldo": -37,
       "punten": 8,
-      "zone": "degradatie"
+      "zone": "degradatie",
+      "notitie": "Rechtstreeks gedegradeerd"
     }
   ],
   "topscorers": [
@@ -214,12 +219,6 @@
     }
   ],
   "coaches": [],
-  "playoffs": {
-    "halve_finales": [],
-    "finale": null,
-    "troostfinale": null,
-    "kampioen": "HGC",
-    "playout": []
-  },
+  "playoffs": null,
   "bijgewerkt": "2026-04-05"
 }
