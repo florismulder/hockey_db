@@ -1,0 +1,189 @@
+{
+  "seizoen": "1978-1979",
+  "slug": "1978_1979",
+  "geslacht": "heren",
+  "kampioen": "Klein Zwitserland",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Leiden",
+    "Schaerweijde"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Klein Zwitserland",
+      "gespeeld": 21,
+      "gewonnen": 18,
+      "gelijk": 3,
+      "verloren": 0,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 42,
+      "punten": 39,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 7,
+      "verloren": 2,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 16,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 18,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "Amsterdam",
+      "gespeeld": 21,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 17,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -8,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -7,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 11,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -9,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 8,
+      "verloren": 9,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -9,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 9,
+      "verloren": 9,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -5,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Leiden",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -22,
+      "punten": 16,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 8,
+      "verloren": 14,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -32,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Paul Litjens",
+      "club": null,
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Klein Zwitserland",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
