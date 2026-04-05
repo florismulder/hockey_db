@@ -1,0 +1,580 @@
+{
+  "seizoen": "2003-2004",
+  "slug": "2003_2004",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Oranje Zwart",
+  "gedegradeerd": [
+    "Hurley",
+    "EMHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 29,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 2,
+      "verloren": 4,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 38,
+      "punten": 50,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 90,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 40,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 18,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 20,
+      "punten": 39,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -1,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -6,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 7,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -3,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -14,
+      "punten": 23,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 1,
+      "verloren": 20,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 114,
+      "doelsaldo": -78,
+      "punten": 4,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 3,
+      "verloren": 19,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 81,
+      "doelsaldo": -50,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "David Mathews",
+      "club": "Amsterdam",
+      "doelpunten": 34,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Sander Dreesmann",
+      "club": "Klein Zwitserland",
+      "doelpunten": 30,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Matthew Hetherington",
+      "club": "EMHC",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Matthijs Brouwer",
+      "club": "Den Bosch",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Xavier Reckinger",
+      "club": "Oranje Zwart",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Taeke Taekema",
+      "club": "Klein Zwitserland",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Martijn van Hasselt",
+      "club": "Bloemendaal",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Roderick Weusthof",
+      "club": "Kampong",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Tjeerd Steller",
+      "club": "SCHC",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Jasper Stoter",
+      "club": "Laren",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Oranje Zwart",
+        "score": "2-1",
+        "datum": "12-05-2004",
+        "scorers": [
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 36
+          },
+          {
+            "naam": "Okke Mönking",
+            "club": "Bloemendaal",
+            "minuut": 46
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "4-0",
+        "datum": "15-05-2004",
+        "scorers": [
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 2
+          },
+          {
+            "naam": "Christian Kurtz",
+            "club": "Oranje Zwart",
+            "minuut": 5
+          },
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 13
+          },
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 62
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Bloemendaal",
+        "score": "2-3",
+        "datum": "16-05-2004",
+        "scorers": [
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 14
+          },
+          {
+            "naam": "Lars Stalling",
+            "club": "Bloemendaal",
+            "minuut": 33
+          },
+          {
+            "naam": "Okke Mönking",
+            "club": "Bloemendaal",
+            "minuut": 35
+          },
+          {
+            "naam": "Xavier Reckinger",
+            "club": "Oranje Zwart",
+            "minuut": 58
+          },
+          {
+            "naam": "Martijn van Hasselt",
+            "club": "Bloemendaal",
+            "minuut": 78
+          }
+        ],
+        "notitie": "Bloemendaal wint de serie"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Klein Zwitserland",
+        "score": "3-2",
+        "datum": "12-05-2004",
+        "scorers": [
+          {
+            "naam": "Kristiaan Timman",
+            "club": "Amsterdam",
+            "minuut": 8
+          },
+          {
+            "naam": "Marten Eikelboom",
+            "club": "Amsterdam",
+            "minuut": 9
+          },
+          {
+            "naam": "Laurence Docherty",
+            "club": "Klein Zwitserland",
+            "minuut": 33
+          },
+          {
+            "naam": "Sander Dreesmann",
+            "club": "Klein Zwitserland",
+            "minuut": 34
+          },
+          {
+            "naam": "Robin de Vries",
+            "club": "Amsterdam",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Amsterdam",
+        "score": "3-4",
+        "datum": "15-05-2004",
+        "scorers": [
+          {
+            "naam": "Timo Bruinsma",
+            "club": "Amsterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Marten Eikelboom",
+            "club": "Amsterdam",
+            "minuut": 12
+          },
+          {
+            "naam": "Max Caldas",
+            "club": "Klein Zwitserland",
+            "minuut": 16
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Klein Zwitserland",
+            "minuut": 25
+          },
+          {
+            "naam": "Robin de Vries",
+            "club": "Amsterdam",
+            "minuut": 43
+          },
+          {
+            "naam": "Onno van Brunschot",
+            "club": "Amsterdam",
+            "minuut": 68
+          },
+          {
+            "naam": "Martijn van Mierlo",
+            "club": "Klein Zwitserland",
+            "minuut": 69
+          }
+        ],
+        "notitie": "Amsterdam wint de serie"
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "1-3",
+        "datum": "20-05-2004",
+        "scorers": [
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Martijn van Hasselt",
+            "club": "Bloemendaal",
+            "minuut": 7
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 11
+          },
+          {
+            "naam": "Marten Eikelboom",
+            "club": "Amsterdam",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "3-0",
+        "datum": "22-05-2004",
+        "scorers": [
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 14
+          },
+          {
+            "naam": "David Mathews",
+            "club": "Amsterdam",
+            "minuut": 45
+          },
+          {
+            "naam": "Paul Frederik van Esseveldt",
+            "club": "Amsterdam",
+            "minuut": 58
+          }
+        ],
+        "notitie": "Amsterdam kampioen hoofdklasse heren 2003/04."
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "Tilburg",
+        "uit": "Breda",
+        "score": "3-4",
+        "datum": "05-05-2004",
+        "scorers": [],
+        "notitie": "Breda is gepromoveerd en Tilburg neemt het op tegen EMHC om promotie/handhaving."
+      },
+      {
+        "thuis": "Breda",
+        "uit": "Tilburg",
+        "score": "4-3",
+        "datum": "08-05-2004",
+        "scorers": [],
+        "notitie": "Breda is gepromoveerd en Tilburg neemt het op tegen EMHC om promotie/handhaving."
+      },
+      {
+        "thuis": "Victoria",
+        "uit": "Eindhoven",
+        "score": "3-2",
+        "datum": "05-05-2004",
+        "scorers": [],
+        "notitie": "Victoria terug naar overgangsklasse en Eindhoven speelt play off tegen Laren."
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Victoria",
+        "score": "3-1",
+        "datum": "08-05-2004",
+        "scorers": [],
+        "notitie": "Victoria terug naar overgangsklasse en Eindhoven speelt play off tegen Laren."
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Victoria",
+        "score": "2-0",
+        "datum": "09-05-2004",
+        "scorers": [],
+        "notitie": "Victoria terug naar overgangsklasse en Eindhoven speelt play off tegen Laren."
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "EMHC",
+        "score": "4-3",
+        "datum": "15-05-2004",
+        "scorers": [],
+        "notitie": "Laren handhaaft zich en Tilburg promoveert naar de hoofdklasse. EMHC degradeert naar de overgangsklasse."
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Laren",
+        "score": "1-2",
+        "datum": "15-05-2004",
+        "scorers": [],
+        "notitie": "Laren handhaaft zich en Tilburg promoveert naar de hoofdklasse. EMHC degradeert naar de overgangsklasse."
+      },
+      {
+        "thuis": "EMHC",
+        "uit": "Tilburg",
+        "score": "1-2",
+        "datum": "16-05-2004",
+        "scorers": [],
+        "notitie": "Golden goal. Laren handhaaft zich en Tilburg promoveert naar de hoofdklasse. EMHC degradeert naar de overgangsklasse."
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Eindhoven",
+        "score": "1-1 (SO wns na strafballen)",
+        "datum": "16-05-2004",
+        "scorers": [],
+        "notitie": "Laren handhaaft zich en Tilburg promoveert naar de hoofdklasse. EMHC degradeert naar de overgangsklasse."
+      },
+      {
+        "thuis": "Eindhoven",
+        "uit": "Laren",
+        "score": "1-2",
+        "datum": "20-05-2004",
+        "scorers": [],
+        "notitie": "Golden goal. Laren handhaaft zich en Tilburg promoveert naar de hoofdklasse. EMHC degradeert naar de overgangsklasse."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
