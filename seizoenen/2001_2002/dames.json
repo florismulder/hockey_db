@@ -1,0 +1,404 @@
+{
+  "seizoen": "2001-2002",
+  "slug": "2001_2002",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Rotterdam",
+  "gedegradeerd": [
+    "Hurley",
+    "Pinoké"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 3,
+      "verloren": 1,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 60,
+      "punten": 57,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 4,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 37,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 20,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 23,
+      "doelsaldo": 21,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 9,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 17,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 5,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 1,
+      "verloren": 14,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -22,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -24,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -31,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 6,
+      "verloren": 13,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -34,
+      "punten": 15,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 1,
+      "verloren": 20,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 73,
+      "doelsaldo": -58,
+      "punten": 4,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 36,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Karlijn Petri",
+      "club": "Rotterdam",
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Alyson Annan",
+      "club": "Klein Zwitserland",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Maartje Goudswaard",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Ageeth Boomgaardt",
+      "club": "Den Bosch",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Terry Noorlander",
+      "club": "HGC",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Carolien van Batenburg",
+      "club": "HGC",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Florien Cornelis",
+      "club": "Rotterdam",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 10,
+      "naam": "Sophie Gierts",
+      "club": "Push",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "4-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "4-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "1-0",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Rotterdam",
+        "score": "1-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": "Rotterdam won na shoot-outs"
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "HGC",
+        "score": "3-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "2-1",
+        "datum": "09-06-2002",
+        "scorers": [
+          {
+            "naam": "Schreuder",
+            "club": "Rotterdam",
+            "minuut": 52
+          },
+          {
+            "naam": "Spruijt",
+            "club": "Den Bosch",
+            "minuut": 57
+          },
+          {
+            "naam": "Schreuder",
+            "club": "Rotterdam",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "15-06-2002",
+        "scorers": [
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 10
+          },
+          {
+            "naam": "Karlijn Petri",
+            "club": "Rotterdam",
+            "minuut": 33
+          },
+          {
+            "naam": "Florien Cornelis",
+            "club": "Rotterdam",
+            "minuut": 66
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 70
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 74
+          }
+        ],
+        "notitie": "golden goal"
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "4-1",
+        "datum": "16-06-2002",
+        "scorers": [
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 12
+          },
+          {
+            "naam": "Karlijn Petri",
+            "club": "Rotterdam",
+            "minuut": 40
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 56
+          },
+          {
+            "naam": "van Kessel",
+            "club": "Den Bosch",
+            "minuut": 62
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
