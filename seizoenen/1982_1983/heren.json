@@ -1,0 +1,198 @@
+{
+  "seizoen": "1982-1983",
+  "slug": "1982_1983",
+  "geslacht": "heren",
+  "kampioen": "Klein Zwitserland",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "MOP",
+    "MEP"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 104,
+      "doelpunten_tegen": 42,
+      "doelsaldo": 62,
+      "punten": 41,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 22,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 14,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 38,
+      "doelsaldo": 16,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 14,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -2,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 8,
+      "verloren": 9,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -12,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -14,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -14,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -31,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -51,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Hidde Kruize",
+      "club": null,
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 1,
+      "naam": "Ties Kruize",
+      "club": null,
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Klein Zwitserland",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
