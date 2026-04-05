@@ -31,7 +31,7 @@
           "naam": "Hjalmar Voskuil",
           "club": "Hurley H1",
           "minuut": 51,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Thije Harm",
@@ -43,7 +43,7 @@
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 59,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -135,7 +135,7 @@
           "naam": "Indra Aerts",
           "club": "Pinoké H1",
           "minuut": 55,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Boris Aardenburg",
@@ -257,7 +257,7 @@
           "naam": "Jip Janssen",
           "club": "Kampong H1",
           "minuut": 26,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Finn van Bijnen",
@@ -318,7 +318,7 @@
           "naam": "Tijmen Reyenga",
           "club": "Den Bosch H1",
           "minuut": 43,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -404,25 +404,25 @@
           "naam": "Jip Janssen",
           "club": "Kampong H1",
           "minuut": 4,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Floris Middendorp",
           "club": "Kampong H1",
           "minuut": 24,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 33,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Jip Janssen",
           "club": "Kampong H1",
           "minuut": 34,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -580,13 +580,13 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 1,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 10,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Tjep Hoedemakers",
@@ -610,7 +610,7 @@
           "naam": "Thijs van Dam",
           "club": "Rotterdam H1",
           "minuut": 57,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -641,13 +641,13 @@
           "naam": "Tijmen Reyenga",
           "club": "Oranje-Rood H1",
           "minuut": 2,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 10,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Jelle Galema",
@@ -665,7 +665,7 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 42,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Rick van den IJssel",
@@ -908,19 +908,19 @@
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 47,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 48,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 58,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Mustapha Cassiem",
@@ -981,7 +981,7 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 60,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -1018,7 +1018,7 @@
           "naam": "Thijs van Dam",
           "club": "HDM H1",
           "minuut": 30,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Olivier Hortensius",
@@ -1048,13 +1048,13 @@
           "naam": "Marc Recasens",
           "club": "HDM H1",
           "minuut": 49,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Justen Blok",
           "club": "Rotterdam H1",
           "minuut": 50,
-          "type": "SC"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -1085,7 +1085,7 @@
           "naam": "Henrik Mertgens",
           "club": "Oranje-Rood H1",
           "minuut": 15,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Struan Walker",
@@ -1097,7 +1097,7 @@
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 26,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
@@ -1188,7 +1188,7 @@
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland H1",
           "minuut": 42,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Pepijn Reijenga",
@@ -1225,19 +1225,19 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 21,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 45,
-          "type": "strafbal"
+          "type": "sb"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 53,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -1341,7 +1341,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Schaerweijde H1",
           "minuut": 22,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Tjep Hoedemakers",
@@ -1353,7 +1353,7 @@
           "naam": "Joost van Eijck",
           "club": "Schaerweijde H1",
           "minuut": 35,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Jens Hagen",
@@ -1408,7 +1408,7 @@
           "naam": "Teun van Uunen",
           "club": "Laren H1",
           "minuut": 26,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Mats Dicke",
@@ -1426,7 +1426,7 @@
           "naam": "Chris Taberima",
           "club": "Laren H1",
           "minuut": 55,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -1524,13 +1524,13 @@
           "naam": "Jonas de Geus",
           "club": "Bloemendaal H1",
           "minuut": 42,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 44,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Finn van Bijnen",
@@ -1542,7 +1542,7 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 53,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Elian Mazkour",
@@ -1645,7 +1645,7 @@
           "naam": "Tijmen Reyenga",
           "club": "Klein Zwitserland H1",
           "minuut": 26,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Adrian Lehmann-Richter",
@@ -1761,13 +1761,13 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 3,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 10,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Tjep Hoedemakers",
@@ -1785,7 +1785,7 @@
           "naam": "Tjep Hoedemakers",
           "club": "Rotterdam H1",
           "minuut": 41,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Menno Boeren",
@@ -1803,7 +1803,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 57,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Matthijs van der Wielen",
@@ -1876,7 +1876,7 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 19,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Struan Walker",
@@ -1888,7 +1888,7 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 45,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Joep Troost",
@@ -1931,19 +1931,19 @@
           "naam": "Jelle Westendorp",
           "club": "Schaerweijde H1",
           "minuut": 28,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Hjalmar Voskuil",
           "club": "Schaerweijde H1",
           "minuut": 47,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Stijn Draaijer",
           "club": "Schaerweijde H1",
           "minuut": 53,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Daan Troost",
@@ -1998,7 +1998,7 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 59,
-          "type": "strafbal"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -2089,7 +2089,7 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 12,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Iwan Roukema",
@@ -2107,13 +2107,13 @@
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 29,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 34,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Pieter Sutorius",
@@ -2125,7 +2125,7 @@
           "naam": "Stan Thoolen",
           "club": "Laren H1",
           "minuut": 45,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Quinten Moojen",
@@ -2137,13 +2137,13 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 49,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Valentijn Charbon",
           "club": "Laren H1",
           "minuut": 53,
-          "type": "sb"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -2283,7 +2283,7 @@
           "naam": "Yorben Fontaine",
           "club": "HDM H1",
           "minuut": 54,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -2313,7 +2313,7 @@
           "naam": "Stijn Draaijer",
           "club": "Schaerweijde H1",
           "minuut": 39,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Daan Troost",
@@ -2386,7 +2386,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 14,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Thijs van Dam",
@@ -2398,25 +2398,25 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 26,
-          "type": "strafbal"
+          "type": "sb"
         },
         {
           "naam": "Thomas Sorsby",
           "club": "Den Bosch H1",
           "minuut": 29,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 32,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Max Kreft",
           "club": "Den Bosch H1",
           "minuut": 45,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Thierry Brinkman",
@@ -2471,13 +2471,13 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 53,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Jochem Bakker",
           "club": "Klein Zwitserland H1",
           "minuut": 60,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -2549,13 +2549,13 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 22,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 30,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Max Kreft",
@@ -2567,7 +2567,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 40,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Jaïr van der Horst",
@@ -2585,7 +2585,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 51,
-          "type": "SC"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -2634,7 +2634,7 @@
           "naam": "Terrance Pieters",
           "club": "Kampong H1",
           "minuut": 45,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -2708,7 +2708,7 @@
           "naam": "Teun van Uunen",
           "club": "Laren H1",
           "minuut": 49,
-          "type": "straffcorner"
+          "type": "veld"
         },
         {
           "naam": "Diederick van Berckel",
@@ -2720,7 +2720,7 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 59,
-          "type": "straffcorner"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -2751,25 +2751,25 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 13,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 14,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 14,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Jasper Brinkman",
           "club": "Bloemendaal H1",
           "minuut": 19,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Zachary Wallace",
@@ -2781,7 +2781,7 @@
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 48,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Marco Miltkau",
@@ -2836,13 +2836,13 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 13,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Jochem Bakker",
           "club": "Klein Zwitserland H1",
           "minuut": 35,
-          "type": "strafbal"
+          "type": "sb"
         },
         {
           "naam": "Boris Aardenburg",
@@ -2897,7 +2897,7 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 25,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Duco Telgenkamp",
@@ -2915,7 +2915,7 @@
           "naam": "Rik Sprengers",
           "club": "HDM H1",
           "minuut": 43,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Duco Telgenkamp",
@@ -3000,7 +3000,7 @@
           "naam": "Arthur de Sloover",
           "club": "Oranje-Rood H1",
           "minuut": 17,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
@@ -3115,7 +3115,7 @@
           "naam": "Luke Friederich",
           "club": "Laren H1",
           "minuut": 57,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -3152,7 +3152,7 @@
           "naam": "Florent van Aubel",
           "club": "Pinoké H1",
           "minuut": 17,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Daan Bonhof",
@@ -3164,13 +3164,13 @@
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 25,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
           "club": "Pinoké H1",
           "minuut": 35,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3231,7 +3231,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 22,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Nick van Trigt",
@@ -3340,7 +3340,7 @@
           "naam": "Tijmen Reyenga",
           "club": "Hurley H1",
           "minuut": 30,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Borja LaCalle",
@@ -3352,7 +3352,7 @@
           "naam": "Hjalmar Voskuil",
           "club": "Hurley H1",
           "minuut": 36,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
@@ -3382,7 +3382,7 @@
           "naam": "Joppe Wolbert",
           "club": "Kampong H1",
           "minuut": 41,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Thierry Brinkman",
@@ -3443,7 +3443,7 @@
           "naam": "Hjalmar Voskuil",
           "club": "Hurley H1",
           "minuut": 21,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Joep Hagendoorn",
@@ -3467,7 +3467,7 @@
           "naam": "Hjalmar Voskuil",
           "club": "Hurley H1",
           "minuut": 60,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3558,13 +3558,13 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 30,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 30,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Sander van de Putte",
@@ -3644,7 +3644,7 @@
           "naam": "Steijn van Heijningen",
           "club": "Rotterdam H1",
           "minuut": 7,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
@@ -3668,19 +3668,19 @@
           "naam": "Jochem Bakker",
           "club": "Klein Zwitserland H1",
           "minuut": 32,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 37,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 39,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Nick van Trigt",
@@ -3692,7 +3692,7 @@
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland H1",
           "minuut": 48,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3735,19 +3735,19 @@
           "naam": "Joppe Wolbert",
           "club": "Den Bosch H1",
           "minuut": 12,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 26,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 27,
-          "type": "sb"
+          "type": "veld"
         },
         {
           "naam": "Koen Bijen",
@@ -3814,13 +3814,13 @@
           "naam": "Rik Sprengers",
           "club": "Kampong H1",
           "minuut": 14,
-          "type": "strafbal"
+          "type": "sb"
         },
         {
           "naam": "Rik Sprengers",
           "club": "Kampong H1",
           "minuut": 15,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Terrance Pieters",
@@ -3838,7 +3838,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 33,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3936,7 +3936,7 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 49,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3985,19 +3985,19 @@
           "naam": "Rik Sprengers",
           "club": "Kampong H1",
           "minuut": 32,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
           "club": "Kampong H1",
           "minuut": 38,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
           "club": "Kampong H1",
           "minuut": 40,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
@@ -4040,7 +4040,7 @@
           "naam": "Boris Burkhardt",
           "club": "Amsterdam H1",
           "minuut": 56,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -4082,13 +4082,13 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 43,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 44,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
@@ -4100,13 +4100,13 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 56,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 60,
-          "type": "SC"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -4253,7 +4253,7 @@
           "naam": "Elian Mazkour",
           "club": "Bloemendaal H1",
           "minuut": 60,
-          "type": "SB"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -4369,7 +4369,7 @@
           "naam": "Ties Klinkhamer",
           "club": "Klein Zwitserland H1",
           "minuut": 47,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -4394,13 +4394,13 @@
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam H1",
           "minuut": 45,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam H1",
           "minuut": 54,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -4449,13 +4449,13 @@
           "naam": "Henrik Mertgens",
           "club": "Oranje-Rood H1",
           "minuut": 56,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Jelle Galema",
           "club": "Oranje-Rood H1",
           "minuut": 57,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
@@ -4510,13 +4510,13 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 16,
-          "type": "SB"
+          "type": "veld"
         },
         {
           "naam": "Chris Taberima",
           "club": "Rotterdam H1",
           "minuut": 47,
-          "type": "SB"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -4559,19 +4559,19 @@
           "naam": "Tijmen Reyenga",
           "club": "Laren H1",
           "minuut": 12,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Thomas Vis",
           "club": "Laren H1",
           "minuut": 17,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Tijmen Reyenga",
           "club": "Laren H1",
           "minuut": 26,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Quinten Moojen",
@@ -4620,7 +4620,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 49,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Mustapha Cassiem",
@@ -4632,7 +4632,7 @@
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam H1",
           "minuut": 60,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4706,7 +4706,7 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 4,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Thies Prinz",
@@ -4724,13 +4724,13 @@
           "naam": "Indra Aerts",
           "club": "Pinoké H1",
           "minuut": 26,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 32,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Pepijn van der Valk",
@@ -4742,7 +4742,7 @@
           "naam": "Joep Troost",
           "club": "Pinoké H1",
           "minuut": 57,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Noam Sheridan",
@@ -4785,13 +4785,13 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 30,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Mick Bosse",
           "club": "Schaerweijde H1",
           "minuut": 41,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4876,7 +4876,7 @@
           "naam": "Elian Mazkour",
           "club": "Bloemendaal H1",
           "minuut": 29,
-          "type": "strafbal"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -5004,7 +5004,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 36,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Max Kreft",
@@ -5065,13 +5065,13 @@
           "naam": "Struan Walker",
           "club": "Niet gespecificeerd",
           "minuut": 31,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Borja LaCalle",
           "club": "Niet gespecificeerd",
           "minuut": 40,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
@@ -5083,7 +5083,7 @@
           "naam": "Mustapha Cassiem",
           "club": "Niet gespecificeerd",
           "minuut": 51,
-          "type": "SC"
+          "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
@@ -5144,13 +5144,13 @@
           "naam": "Balder Reyenga",
           "club": "HDM H1",
           "minuut": 34,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Yorben Fontaine",
           "club": "HDM H1",
           "minuut": 50,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Fabian Verzuu",
@@ -5162,7 +5162,7 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 57,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -5223,13 +5223,13 @@
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 19,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 29,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
@@ -5241,19 +5241,19 @@
           "naam": "Florent van Aubel",
           "club": "Pinoké H1",
           "minuut": 36,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 38,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 48,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Koen Bijen",
@@ -5357,7 +5357,7 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 30,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -5382,7 +5382,7 @@
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal H1",
           "minuut": 9,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Sander van de Putte",
@@ -5394,7 +5394,7 @@
           "naam": "Teun Beins",
           "club": "Bloemendaal H1",
           "minuut": 23,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Zachary Wallace",
@@ -5412,7 +5412,7 @@
           "naam": "Derck de Vilder",
           "club": "Bloemendaal H1",
           "minuut": 51,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Elian Mazkour",
@@ -5565,25 +5565,25 @@
           "naam": "Jelle Galema",
           "club": "Oranje-Rood H1",
           "minuut": 6,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Tijmen Reyenga",
           "club": "Oranje-Rood H1",
           "minuut": 15,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 16,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 41,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
@@ -5632,7 +5632,7 @@
           "naam": "Jip Janssen",
           "club": "Kampong H1",
           "minuut": 36,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Nick van Trigt",
@@ -5711,7 +5711,7 @@
           "naam": "Nikas Berendts",
           "club": "Hurley H1",
           "minuut": 59,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -5748,7 +5748,7 @@
           "naam": "David Huussen",
           "club": "Amsterdam H1",
           "minuut": 46,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
@@ -5760,7 +5760,7 @@
           "naam": "Luke Dommershuijzen",
           "club": "HDM H1",
           "minuut": 53,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
@@ -5870,19 +5870,19 @@
           "naam": "Teun Beins",
           "club": "Den Bosch H1",
           "minuut": 52,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch H1",
           "minuut": 57,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Zachary Wallace",
           "club": "Den Bosch H1",
           "minuut": 60,
-          "type": "strafbal"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -6168,5 +6168,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-04T19:09:44.214Z"
+  "bijgewerkt": "2026-04-05T14:40:59.189Z"
 }
