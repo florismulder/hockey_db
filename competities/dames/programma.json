@@ -336,6 +336,73 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 58,
+          "type": "groen"
+        },
+        {
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "groen"
+        },
+        {
+          "naam": "Marta Segú Rueda",
+          "club": "HGC",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -1908,5 +1975,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:44.015Z"
+  "bijgewerkt": "2026-04-05T18:48:22.194Z"
 }
