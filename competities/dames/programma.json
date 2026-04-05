@@ -367,6 +367,49 @@
       ]
     },
     {
+      "thuis": "HGC",
+      "uit": "Oranje-Rood",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Isis van Loon",
+          "club": "HGC",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 49,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "Kampong",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -1670,5 +1713,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:37.753Z"
+  "bijgewerkt": "2026-04-05T17:04:39.044Z"
 }
