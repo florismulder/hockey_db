@@ -269,7 +269,7 @@
         "thuis": "Oranje-Rood",
         "uit": "Den Bosch",
         "score": "0-2",
-        "datum": "14-05-2017",
+        "datum": "14 mei 2017",
         "scorers": [
           {
             "naam": "Keetels",
@@ -288,7 +288,7 @@
         "thuis": "Amsterdam",
         "uit": "SCHC",
         "score": "0-1",
-        "datum": "14-05-2017",
+        "datum": "14 mei 2017",
         "scorers": [
           {
             "naam": "Wijsman",
@@ -302,15 +302,15 @@
         "thuis": "Den Bosch",
         "uit": "Oranje-Rood",
         "score": "5-0",
-        "datum": "20-05-2017",
+        "datum": "20 mei 2017",
         "scorers": [
           {
-            "naam": "Paumen",
+            "naam": "Maartje Paumen",
             "club": "Den Bosch",
             "minuut": 12
           },
           {
-            "naam": "Paumen",
+            "naam": "Maartje Paumen",
             "club": "Den Bosch",
             "minuut": 32
           },
@@ -335,27 +335,22 @@
       {
         "thuis": "SCHC",
         "uit": "Amsterdam",
-        "score": "1-1",
-        "datum": "20-05-2017",
+        "score": "1-1 (SO 3-4)",
+        "datum": "20 mei 2017",
         "scorers": [
           {
-            "naam": "Van Maasakker",
+            "naam": "Caia van Maasakker",
             "club": "SCHC",
             "minuut": 50
-          },
-          {
-            "naam": "Vega",
-            "club": "Amsterdam",
-            "minuut": 69
           }
         ],
-        "notitie": "Shoot-out 3-4"
+        "notitie": ""
       },
       {
         "thuis": "SCHC",
         "uit": "Amsterdam",
         "score": "0-1",
-        "datum": "21-05-2017",
+        "datum": "21 mei 2017",
         "scorers": [
           {
             "naam": "Deetman",
@@ -366,20 +361,46 @@
         "notitie": ""
       }
     ],
-    "finale": {
-      "thuis": "Amsterdam",
-      "uit": "Den Bosch",
-      "score": "0-1",
-      "datum": "25-05-2017",
-      "scorers": [
-        {
-          "naam": "Krekelaar",
-          "club": "Den Bosch",
-          "minuut": 41
-        }
-      ],
-      "notitie": ""
-    },
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "25 mei 2017",
+        "scorers": [
+          {
+            "naam": "Krekelaar",
+            "club": "Den Bosch",
+            "minuut": 41
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "2-1",
+        "datum": "27 mei 2017",
+        "scorers": [
+          {
+            "naam": "Van der Hoek",
+            "club": "Den Bosch",
+            "minuut": 19
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 50
+          },
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      }
+    ],
     "troostfinale": null,
     "kampioen": "Den Bosch",
     "playout": [
@@ -387,7 +408,7 @@
         "thuis": "Nijmegen",
         "uit": "MOP",
         "score": "2-1",
-        "datum": "03-06-2017",
+        "datum": "3 juni 2017",
         "scorers": [
           {
             "naam": "Mathilde Hotting",
@@ -410,8 +431,8 @@
       {
         "thuis": "MOP",
         "uit": "Nijmegen",
-        "score": "1-1",
-        "datum": "10-06-2017",
+        "score": "1-1 (SO 1-3)",
+        "datum": "10 juni 2017",
         "scorers": [
           {
             "naam": "Lotte van Dongen",
@@ -424,13 +445,13 @@
             "minuut": 68
           }
         ],
-        "notitie": "Nijmegen wins shoot-out 1-3"
+        "notitie": ""
       },
       {
         "thuis": "HGC",
         "uit": "Bloemendaal",
         "score": "3-2",
-        "datum": "03-06-2017",
+        "datum": "3 juni 2017",
         "scorers": [
           {
             "naam": "Melle Spruijt",
@@ -464,7 +485,7 @@
         "thuis": "Bloemendaal",
         "uit": "HGC",
         "score": "2-0",
-        "datum": "10-06-2017",
+        "datum": "10 juni 2017",
         "scorers": [
           {
             "naam": "Josien Galama",
@@ -483,7 +504,7 @@
         "thuis": "HGC",
         "uit": "Bloemendaal",
         "score": "2-3",
-        "datum": "11-06-2017",
+        "datum": "11 juni 2017",
         "scorers": [
           {
             "naam": "Joëlle Ketting",
@@ -515,5 +536,5 @@
       }
     ]
   },
-  "bijgewerkt": "2026-04-04"
+  "bijgewerkt": "2026-04-05"
 }
