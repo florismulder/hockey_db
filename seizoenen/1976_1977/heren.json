@@ -1,0 +1,189 @@
+{
+  "seizoen": "1976-1977",
+  "slug": "1976_1977",
+  "geslacht": "heren",
+  "kampioen": "Klein Zwitserland",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "MEP",
+    "Nijmegen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 9,
+      "verloren": 3,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 26,
+      "punten": 33,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 15,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 6,
+      "punten": 26,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 7,
+      "verloren": 6,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 2,
+      "punten": 25,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "HGC",
+      "gespeeld": 21,
+      "gewonnen": 8,
+      "gelijk": 8,
+      "verloren": 5,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 6,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 7,
+      "verloren": 7,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 2,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hattem",
+      "gespeeld": 21,
+      "gewonnen": 6,
+      "gelijk": 8,
+      "verloren": 7,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 6,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 12,
+      "verloren": 6,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 29,
+      "doelsaldo": -8,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -6,
+      "punten": 18,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 30,
+      "doelsaldo": -10,
+      "punten": 18,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 5,
+      "verloren": 17,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -25,
+      "punten": 5,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Paul Litjens",
+      "club": null,
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Klein Zwitserland",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
