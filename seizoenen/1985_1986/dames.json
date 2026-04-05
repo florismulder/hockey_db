@@ -3,7 +3,7 @@
   "slug": "1985_1986",
   "geslacht": "dames",
   "kampioen": "HGC",
-  "vicekampioen": null,
+  "vicekampioen": "Hilversum",
   "gedegradeerd": [
     "Klein Zwitserland",
     "Push"
@@ -33,7 +33,7 @@
       "doelpunten_tegen": 22,
       "doelsaldo": 51,
       "punten": 37,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 3,
@@ -46,7 +46,7 @@
       "doelpunten_tegen": 18,
       "doelsaldo": 75,
       "punten": 34,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 4,
@@ -59,7 +59,7 @@
       "doelpunten_tegen": 34,
       "doelsaldo": 3,
       "punten": 27,
-      "zone": "playoff"
+      "zone": ""
     },
     {
       "positie": 5,
@@ -137,7 +137,7 @@
       "doelpunten_tegen": 50,
       "doelsaldo": -19,
       "punten": 7,
-      "zone": "playout"
+      "zone": ""
     },
     {
       "positie": 11,
@@ -150,7 +150,7 @@
       "doelpunten_tegen": 70,
       "doelsaldo": -54,
       "punten": 7,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 12,
@@ -180,7 +180,7 @@
   "coaches": [],
   "playoffs": {
     "halve_finales": [],
-    "finale": null,
+    "finale_wedstrijden": [],
     "troostfinale": null,
     "kampioen": "HGC",
     "playout": []
