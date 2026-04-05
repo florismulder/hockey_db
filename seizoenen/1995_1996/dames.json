@@ -258,7 +258,7 @@
         "score": "3-0",
         "datum": null,
         "scorers": [],
-        "notitie": ""
+        "notitie": "(2-0)"
       },
       {
         "thuis": "Laren",
@@ -274,7 +274,7 @@
         "score": "1-1",
         "datum": null,
         "scorers": [],
-        "notitie": ""
+        "notitie": "(1-1)"
       },
       {
         "thuis": "Kampong",
@@ -282,7 +282,7 @@
         "score": "3-0",
         "datum": null,
         "scorers": [],
-        "notitie": ""
+        "notitie": "(2-0)"
       }
     ],
     "finale_wedstrijden": [
@@ -303,10 +303,10 @@
           {
             "naam": "Wietske de Ruiter",
             "club": "HGC",
-            "minuut": null
+            "minuut": 27
           }
         ],
-        "notitie": ""
+        "notitie": "(sc) 1-0"
       }
     ],
     "troostfinale": {
@@ -314,8 +314,7 @@
       "uit": "MOP",
       "score": "2-1",
       "datum": null,
-      "scorers": [],
-      "notitie": ""
+      "scorers": []
     },
     "kampioen": "HGC",
     "playout": []
