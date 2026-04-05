@@ -1,0 +1,225 @@
+{
+  "seizoen": "1989-1990",
+  "slug": "1989_1990",
+  "geslacht": "dames",
+  "kampioen": "HGC",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "DKS",
+    "Pinoké"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 5,
+      "verloren": 0,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 7,
+      "doelsaldo": 47,
+      "punten": 39,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 57,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 17,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 7,
+      "verloren": 5,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 13,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 6,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -5,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 7,
+      "verloren": 10,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 40,
+      "doelsaldo": -11,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -31,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 11,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -30,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 8,
+      "verloren": 12,
+      "doelpunten_voor": 9,
+      "doelpunten_tegen": 42,
+      "doelsaldo": -33,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "DKS",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 6,
+      "verloren": 15,
+      "doelpunten_voor": 11,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -37,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Helen van der Ben",
+      "club": "Amsterdam",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Lisanne Lejeune",
+      "club": "HGC",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Janneke Kooreneef",
+      "club": "Kampong",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Wietske de Ruiter",
+      "club": "HGC",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Siene Dresselhuijs",
+      "club": "Groningen",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": "HGC",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
