@@ -1,0 +1,637 @@
+{
+  "seizoen": "2004-2005",
+  "slug": "2004_2005",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "HGC",
+    "Oranje Zwart"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 21,
+      "gelijk": 1,
+      "verloren": 0,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 62,
+      "punten": 64,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 1,
+      "verloren": 3,
+      "doelpunten_voor": 94,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 66,
+      "punten": 55,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 2,
+      "verloren": 7,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 24,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 8,
+      "verloren": 4,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 11,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Victoria",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -16,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 2,
+      "verloren": 11,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -4,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -11,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -20,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -18,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -18,
+      "punten": 21,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -29,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 3,
+      "verloren": 17,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -47,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 33,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 31,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 28,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Claire Visser",
+      "club": "Rotterdam",
+      "doelpunten": 14,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Eva Bots",
+      "club": "Klein Zwitserland",
+      "doelpunten": 13,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 13,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Naomi van As",
+      "club": "Klein Zwitserland",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Eefke Mulder",
+      "club": "Nijmegen",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Soledad García",
+      "club": "Push",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Dorien Koolen",
+      "club": "Oranje Zwart",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Karlijn Petri",
+      "club": "Victoria",
+      "doelpunten": 11,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "2-4",
+        "datum": "22-05-2005",
+        "scorers": [
+          {
+            "naam": "Fuchs",
+            "club": "Kampong",
+            "minuut": 39
+          },
+          {
+            "naam": "Brouwer",
+            "club": "Kampong",
+            "minuut": 45
+          },
+          {
+            "naam": "Hofkamp",
+            "club": "Amsterdam",
+            "minuut": 27
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 56
+          },
+          {
+            "naam": "Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 62
+          },
+          {
+            "naam": "Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "1-2",
+        "datum": "22-05-2005",
+        "scorers": [
+          {
+            "naam": "De Groot",
+            "club": "Laren",
+            "minuut": 25
+          },
+          {
+            "naam": "Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 82
+          }
+        ],
+        "notitie": "Golden goal"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "3-0",
+        "datum": "26-05-2005",
+        "scorers": [
+          {
+            "naam": "Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": 48
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 67
+          },
+          {
+            "naam": "Ter Beek",
+            "club": "Amsterdam",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "2-0",
+        "datum": "26-05-2005",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 14
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "4-1",
+        "datum": "05-06-2005",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 28
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 51
+          },
+          {
+            "naam": "De Haas",
+            "club": "Den Bosch",
+            "minuut": 66
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 1
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-3",
+        "datum": "08-06-2005",
+        "scorers": [
+          {
+            "naam": "Clemens",
+            "club": "Amsterdam",
+            "minuut": 18
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 35
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 48
+          },
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 62
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Pinoké",
+        "uit": "Hurley",
+        "score": "1-0",
+        "datum": "18-05-2005",
+        "scorers": [
+          {
+            "naam": "Teeuwen",
+            "club": "Pinoké",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Pinoké",
+        "score": "1-3",
+        "datum": "21-05-2005",
+        "scorers": [
+          {
+            "naam": "Beumers",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Poerink",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "De Haas",
+            "club": "Pinoké",
+            "minuut": null
+          },
+          {
+            "naam": "Eefke Mulder",
+            "club": "Pinoké",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Forward",
+        "score": "1-1 (SO 5-4)",
+        "datum": "18-05-2005",
+        "scorers": [],
+        "notitie": "Groningen won na strafballen (5-4). Shootout scorers Groningen: Drenth, Buijs, Bos, Sijtsma, Kaufmann. Shootout scorers Forward: Engel, Engel, Van der Kallen, Ohler."
+      },
+      {
+        "thuis": "Forward",
+        "uit": "Groningen",
+        "score": "0-1",
+        "datum": "21-05-2005",
+        "scorers": [
+          {
+            "naam": "Geven",
+            "club": "Groningen",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Oranje Zwart",
+        "score": "3-2",
+        "datum": "28-05-2005",
+        "scorers": [
+          {
+            "naam": "van Bemmel",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Grobben",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Verhaar",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Agliotti",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Dorien Koolen",
+            "club": "Oranje Zwart",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Groningen",
+        "uit": "Push",
+        "score": "1-4",
+        "datum": "28-05-2005",
+        "scorers": [
+          {
+            "naam": "Kaufmann",
+            "club": "Groningen",
+            "minuut": null
+          },
+          {
+            "naam": "Soledad García",
+            "club": "Push",
+            "minuut": null
+          },
+          {
+            "naam": "Soledad García",
+            "club": "Push",
+            "minuut": null
+          },
+          {
+            "naam": "Soledad García",
+            "club": "Push",
+            "minuut": null
+          },
+          {
+            "naam": "De Beer",
+            "club": "Push",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Hurley",
+        "score": "1-3",
+        "datum": "29-05-2005",
+        "scorers": [
+          {
+            "naam": "Agliotti",
+            "club": "Oranje Zwart",
+            "minuut": null
+          },
+          {
+            "naam": "Van Hall",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Cornet",
+            "club": "Hurley",
+            "minuut": null
+          },
+          {
+            "naam": "Van Beek",
+            "club": "Hurley",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Push",
+        "uit": "Groningen",
+        "score": "2-0",
+        "datum": "29-05-2005",
+        "scorers": [
+          {
+            "naam": "Soledad García",
+            "club": "Push",
+            "minuut": null
+          },
+          {
+            "naam": "De Beer",
+            "club": "Push",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
