@@ -1,0 +1,576 @@
+{
+  "seizoen": "2010-2011",
+  "slug": "2010_2011",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Bloemendaal",
+  "gedegradeerd": [
+    "Tilburg",
+    "HDM"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 86,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 46,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 86,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 46,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 29,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 68,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 25,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 16,
+      "punten": 37,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 2,
+      "verloren": 9,
+      "doelpunten_voor": 75,
+      "doelpunten_tegen": 70,
+      "doelsaldo": 5,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 1,
+      "verloren": 12,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -29,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 6,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 50,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -1,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 82,
+      "doelsaldo": -34,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 0,
+      "verloren": 18,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 83,
+      "doelsaldo": -48,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -61,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Taeke Taekema",
+      "club": "Amsterdam",
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Roderick Weusthof",
+      "club": "Rotterdam",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Melchior Looijen",
+      "club": "Kampong",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Luke Doerner",
+      "club": "Laren",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Olmer Meijer",
+      "club": "Bloemendaal",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Taco van den Honert"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Dave Smolenaars"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "HGC",
+      "naam": "Dirk Loots"
+    },
+    {
+      "club": "HDM",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Roelant Oltmans"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Adel Fuentes"
+    },
+    {
+      "club": "TMHC Tilburg",
+      "naam": "Kai de Jager"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "3-4",
+        "datum": "14-05-2011",
+        "scorers": [
+          {
+            "naam": "Marcel Balkestein",
+            "club": "Oranje Zwart",
+            "minuut": 33
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 49
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 58
+          },
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Valentin Verga",
+            "club": "Amsterdam",
+            "minuut": 5
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 8
+          },
+          {
+            "naam": "Billy Bakker",
+            "club": "Amsterdam",
+            "minuut": 77
+          }
+        ],
+        "notitie": "Golden goal"
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "2-6",
+        "datum": "14-05-2011",
+        "scorers": [
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 32
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 42
+          },
+          {
+            "naam": "Wouter Jolie",
+            "club": "Bloemendaal",
+            "minuut": 12
+          },
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 46
+          },
+          {
+            "naam": "Olmer Meijer",
+            "club": "Bloemendaal",
+            "minuut": 46
+          },
+          {
+            "naam": "Glenn Schuurman",
+            "club": "Bloemendaal",
+            "minuut": 54
+          },
+          {
+            "naam": "Martijn van Mierlo",
+            "club": "Bloemendaal",
+            "minuut": 57
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 64
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "2-2 (SO 3-1)",
+        "datum": "15-05-2011",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 40
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 64
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 65
+          },
+          {
+            "naam": "David Alegre Biosca",
+            "club": "Oranje Zwart",
+            "minuut": 67
+          }
+        ],
+        "notitie": "Wint na strafballen"
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "15-05-2011",
+        "scorers": [
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 19
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 33
+          },
+          {
+            "naam": "Rogier Hofman",
+            "club": "Bloemendaal",
+            "minuut": 39
+          },
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 49
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "Rotterdam",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "3-2",
+        "datum": "22-05-2011",
+        "scorers": [
+          {
+            "naam": "Teun Rohof",
+            "club": "Amsterdam",
+            "minuut": 29
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 31
+          },
+          {
+            "naam": "Steven Ebbers",
+            "club": "Amsterdam",
+            "minuut": 37
+          },
+          {
+            "naam": "Rik van Kan",
+            "club": "Bloemendaal",
+            "minuut": 24
+          },
+          {
+            "naam": "Wouter Jolie",
+            "club": "Bloemendaal",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "1-1 (SO win Amsterdam)",
+        "datum": "28-05-2011",
+        "scorers": [
+          {
+            "naam": "Rogier Hofman",
+            "club": "Bloemendaal",
+            "minuut": 4
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 23
+          }
+        ],
+        "notitie": "Amsterdam wint na strafballen en wordt landskampioen"
+      }
+    ],
+    "troostfinale": {
+      "thuis": "Oranje Zwart",
+      "uit": "Rotterdam",
+      "score": "2-3",
+      "datum": "29-05-2011",
+      "scorers": [
+        {
+          "naam": "Mink van der Weerden",
+          "club": "Oranje Zwart",
+          "minuut": 11
+        },
+        {
+          "naam": "Robert van der Horst",
+          "club": "Rotterdam",
+          "minuut": 12
+        }
+      ],
+      "notitie": "Rotterdam wint de serie om de 3e plaats"
+    },
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "Hurley",
+        "uit": "Schaerweijde",
+        "score": "2-6",
+        "datum": "14-05-2011",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Hurley",
+        "score": "3-1",
+        "datum": "15-05-2011",
+        "scorers": [],
+        "notitie": "Schaerweijde promoveert rechtstreeks naar de Hoofdklasse"
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Push",
+        "score": "4-4 (SO win Klein Zwitserland)",
+        "datum": "14-05-2011",
+        "scorers": [],
+        "notitie": "Klein Zwitserland wint na strafballen en gaat door naar de volgende ronde"
+      },
+      {
+        "thuis": "Push",
+        "uit": "Klein Zwitserland",
+        "score": "2-3",
+        "datum": "15-05-2011",
+        "scorers": [],
+        "notitie": "Klein Zwitserland wint de serie en gaat door naar de volgende ronde, Push blijft in de Overgangsklasse"
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "HDM",
+        "score": "0-1",
+        "datum": "21-05-2011",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Den Bosch",
+        "score": "4-7",
+        "datum": "21-05-2011",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HDM",
+        "uit": "Hurley",
+        "score": "1-6",
+        "datum": "22-05-2011",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Klein Zwitserland",
+        "score": "4-3",
+        "datum": "22-05-2011",
+        "scorers": [],
+        "notitie": "Den Bosch wint de serie en handhaaft zich in de Hoofdklasse"
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "HDM",
+        "score": "1-0",
+        "datum": "25-05-2011",
+        "scorers": [],
+        "notitie": "Golden goal. Hurley wint de serie en promoveert naar de Hoofdklasse, HDM degradeert."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
