@@ -1,0 +1,674 @@
+{
+  "seizoen": "2008-2009",
+  "slug": "2008_2009",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Klein Zwitserland"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 88,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 47,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 79,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 33,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 24,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 9,
+      "verloren": 2,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 63,
+      "doelsaldo": 17,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 71,
+      "doelpunten_tegen": 75,
+      "doelsaldo": -4,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 7,
+      "verloren": 8,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 66,
+      "doelsaldo": -5,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 76,
+      "doelpunten_tegen": 70,
+      "doelsaldo": 6,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -4,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 60,
+      "doelpunten_tegen": 82,
+      "doelsaldo": -22,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -27,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 50,
+      "doelpunten_tegen": 83,
+      "doelsaldo": -33,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 5,
+      "verloren": 14,
+      "doelpunten_voor": 48,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -32,
+      "punten": 14,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 34,
+      "vd": 8,
+      "sc": 26,
+      "sb": 0
+    },
+    {
+      "rang": 2,
+      "naam": "Ashley Jackson",
+      "club": "HGC",
+      "doelpunten": 28,
+      "vd": 4,
+      "sc": 22,
+      "sb": 2
+    },
+    {
+      "rang": 3,
+      "naam": "Taeke Taekema",
+      "club": "Amsterdam",
+      "doelpunten": 27,
+      "vd": 0,
+      "sc": 27,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Jan-Marco Montag",
+      "club": "Den Bosch",
+      "doelpunten": 21,
+      "vd": 0,
+      "sc": 20,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Sohail Abbas",
+      "club": "Rotterdam",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 19,
+      "sb": 0
+    },
+    {
+      "rang": null,
+      "naam": "Olmer Meijer",
+      "club": "Bloemendaal",
+      "doelpunten": 19,
+      "vd": 0,
+      "sc": 19,
+      "sb": 0
+    },
+    {
+      "rang": 7,
+      "naam": "Jamie Dwyer",
+      "club": "Bloemendaal",
+      "doelpunten": 18,
+      "vd": 17,
+      "sc": 0,
+      "sb": 1
+    },
+    {
+      "rang": 8,
+      "naam": "Luke Doerner",
+      "club": "Laren",
+      "doelpunten": 17,
+      "vd": 1,
+      "sc": 14,
+      "sb": 2
+    },
+    {
+      "rang": 9,
+      "naam": "Lucas Judge",
+      "club": "Oranje Zwart",
+      "doelpunten": 16,
+      "vd": 16,
+      "sc": 0,
+      "sb": 0
+    },
+    {
+      "rang": null,
+      "naam": "Melchior Looijen",
+      "club": "Kampong",
+      "doelpunten": 16,
+      "vd": 0,
+      "sc": 16,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Max Caldas"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Orion Alcaraz"
+    },
+    {
+      "club": "HGC",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Bart Looije"
+    },
+    {
+      "club": "Laren",
+      "naam": "Roelant Oltmans"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Roger van Gent"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Rob Haantjes"
+    },
+    {
+      "club": "Tilburg",
+      "naam": "Siegfried Aikman"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "1-0",
+        "datum": "09-05-2009",
+        "scorers": [
+          {
+            "naam": "Phil Burrows",
+            "club": "Rotterdam",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "4-1",
+        "datum": "09-05-2009",
+        "scorers": [
+          {
+            "naam": "Robert van der Horst",
+            "club": "Oranje Zwart",
+            "minuut": 20
+          },
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 25
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 34
+          },
+          {
+            "naam": "Lucas Judge",
+            "club": "Oranje Zwart",
+            "minuut": 35
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 70
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "10-05-2009",
+        "scorers": [
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 2
+          },
+          {
+            "naam": "Phil Burrows",
+            "club": "Rotterdam",
+            "minuut": 3
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 28
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Bloemendaal",
+            "minuut": 48
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 76
+          }
+        ],
+        "notitie": "golden goal"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "2-1",
+        "datum": "10-05-2009",
+        "scorers": [
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 18
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 25
+          },
+          {
+            "naam": "Mirco Pruiyser",
+            "club": "Amsterdam",
+            "minuut": 52
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "4-1",
+        "datum": "13-05-2009",
+        "scorers": [
+          {
+            "naam": "Ryan Archibald",
+            "club": "Rotterdam",
+            "minuut": 7
+          },
+          {
+            "naam": "Nick Meijer",
+            "club": "Bloemendaal",
+            "minuut": 24
+          },
+          {
+            "naam": "Olmer Meijer",
+            "club": "Bloemendaal",
+            "minuut": 52
+          },
+          {
+            "naam": "Nick Meijer",
+            "club": "Bloemendaal",
+            "minuut": 59
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 67
+          }
+        ],
+        "notitie": "Rood: Mark Knowles (Rotterdam)"
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "4-3",
+        "datum": "13-05-2009",
+        "scorers": [
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 21
+          },
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 40
+          },
+          {
+            "naam": "Valentin Verga",
+            "club": "Amsterdam",
+            "minuut": 48
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 53
+          },
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 58
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 60
+          },
+          {
+            "naam": "Santi Freixa",
+            "club": "Amsterdam",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Bloemendaal",
+        "score": "3-5",
+        "datum": "17-05-2009",
+        "scorers": [
+          {
+            "naam": "Roderigo Garza",
+            "club": "Bloemendaal",
+            "minuut": 6
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 13
+          },
+          {
+            "naam": "Don Prins",
+            "club": "Amsterdam",
+            "minuut": 26
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 35
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 40
+          },
+          {
+            "naam": "Martijn van Mierlo",
+            "club": "Bloemendaal",
+            "minuut": 49
+          },
+          {
+            "naam": "Olmer Meijer",
+            "club": "Bloemendaal",
+            "minuut": 56
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "2-3",
+        "datum": "23-05-2009",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 25
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 44
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 45
+          },
+          {
+            "naam": "Laurence Docherty",
+            "club": "Bloemendaal",
+            "minuut": 62
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Amsterdam",
+        "score": "1-0",
+        "datum": "24-05-2009",
+        "scorers": [
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 73
+          }
+        ],
+        "notitie": "golden goal"
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Victoria",
+        "uit": "Hurley",
+        "score": "4-4",
+        "datum": "16-05-2009",
+        "scorers": [],
+        "notitie": "Hurley gepromoveerd en Victoria neemt het op tegen Pinoké om promotie/handhaving."
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Victoria",
+        "score": "4-2",
+        "datum": "17-05-2009",
+        "scorers": [],
+        "notitie": "Hurley gepromoveerd en Victoria neemt het op tegen Pinoké om promotie/handhaving."
+      },
+      {
+        "thuis": "Voordaan",
+        "uit": "Schaerweijde",
+        "score": "0-2",
+        "datum": "16-05-2009",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Voordaan",
+        "score": "2-1",
+        "datum": "17-05-2009",
+        "scorers": [],
+        "notitie": "Voordaan terug naar Overgangsklasse en Schaerweijde neemt het op tegen Tilburg om promotie/handhaving."
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Tilburg",
+        "score": "3-4",
+        "datum": "24-05-2009",
+        "scorers": [],
+        "notitie": "golden goal, sc"
+      },
+      {
+        "thuis": "Victoria",
+        "uit": "Pinoké",
+        "score": "2-7",
+        "datum": "24-05-2009",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Schaerweijde",
+        "score": "2-0",
+        "datum": "27-05-2009",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Victoria",
+        "score": "2-2",
+        "datum": "28-05-2009",
+        "scorers": [],
+        "notitie": "Pinoké won na strafballen"
+      },
+      {
+        "thuis": "Victoria",
+        "uit": "Pinoké",
+        "score": "0-2",
+        "datum": "31-05-2009",
+        "scorers": [],
+        "notitie": "Tilburg en Pinoké handhaven zich."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
