@@ -1,0 +1,189 @@
+{
+  "seizoen": "1986-1987",
+  "slug": "1986_1987",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Hattem",
+    "MEP"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 2,
+      "verloren": 3,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 42,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 74,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 40,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 17,
+      "punten": 33,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 13,
+      "punten": 29,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 13,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 6,
+      "verloren": 8,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -10,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 36,
+      "doelsaldo": -5,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -8,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -9,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Breda",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -23,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -27,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -26,
+      "punten": 10,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Floris Jan Bovelander",
+      "club": null,
+      "doelpunten": 27,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
