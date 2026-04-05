@@ -1,0 +1,362 @@
+{
+  "seizoen": "2002/03",
+  "slug": "2002_2003",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Laren",
+  "gedegradeerd": [
+    "SCHC",
+    "HDM"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 2,
+      "verloren": 0,
+      "doelpunten_voor": 81,
+      "doelpunten_tegen": 13,
+      "doelsaldo": 68,
+      "punten": 62,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 32,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 18,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 25,
+      "punten": 39,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 1,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 35,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 7,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -14,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -27,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 25,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -22,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Push",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 8,
+      "verloren": 10,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 30,
+      "doelsaldo": -13,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 2,
+      "verloren": 15,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -31,
+      "punten": 17,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 13,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -44,
+      "punten": 14,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Alyson Annan",
+      "club": "Klein Zwitserland",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Ageeth Boomgaardt",
+      "club": "Den Bosch",
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Mijntje Donners",
+      "club": "Den Bosch",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Karlijn Petri",
+      "club": "Rotterdam",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Markje Hoekstra",
+      "club": "Laren",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 12,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Hui Ping Yang",
+      "club": "HDM",
+      "doelpunten": 10,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Aukje de Groot",
+      "club": "Laren",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Fleur van de Kieft",
+      "club": "Rotterdam",
+      "doelpunten": 9,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Rotterdam",
+        "uit": "Den Bosch",
+        "score": "0-1",
+        "datum": "29-05-2003",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Rotterdam",
+        "score": "2-1",
+        "datum": "29-05-2003",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Laren",
+        "score": "2-3",
+        "datum": "31-05-2003",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Amsterdam",
+        "score": "2-1",
+        "datum": "31-05-2003",
+        "scorers": [],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "0-3",
+        "datum": "15-06-2003",
+        "scorers": [
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 44
+          },
+          {
+            "naam": "Mijntje Donners",
+            "club": "Den Bosch",
+            "minuut": 45
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "3-2",
+        "datum": "21-06-2003",
+        "scorers": [
+          {
+            "naam": "L. van Kessel",
+            "club": "Den Bosch",
+            "minuut": 1
+          },
+          {
+            "naam": "Booij",
+            "club": "Den Bosch",
+            "minuut": 6
+          },
+          {
+            "naam": "Doreski",
+            "club": "Laren",
+            "minuut": 7
+          },
+          {
+            "naam": "van Geenhuizen",
+            "club": "Laren",
+            "minuut": 67
+          },
+          {
+            "naam": "Ageeth Boomgaardt",
+            "club": "Den Bosch",
+            "minuut": 77
+          }
+        ],
+        "notitie": "(golden goal)"
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
