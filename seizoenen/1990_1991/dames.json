@@ -1,0 +1,210 @@
+{
+  "seizoen": "1990-1991",
+  "slug": "1990_1991",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "EMHC",
+    "Rotterdam"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 3,
+      "verloren": 1,
+      "doelpunten_voor": 89,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 68,
+      "punten": 39,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 54,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 39,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 8,
+      "verloren": 3,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 15,
+      "doelsaldo": 18,
+      "punten": 30,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 17,
+      "punten": 30,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 1,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 6,
+      "verloren": 9,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -10,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -11,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -10,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 49,
+      "doelsaldo": -25,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -20,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 3,
+      "verloren": 15,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 54,
+      "doelsaldo": -35,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 4,
+      "verloren": 16,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -32,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Helen van der Ben",
+      "club": "Amsterdam",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Lisanne Lejeune",
+      "club": "HGC",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Ingrid Wolff",
+      "club": "Amsterdam",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Martine Ohr",
+      "club": "HDM",
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": null,
+  "bijgewerkt": "2026-04-05"
+}
