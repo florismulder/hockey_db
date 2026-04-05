@@ -147,6 +147,79 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Sophie van Grimbergen",
+          "club": "Kampong",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 35,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 35,
+          "type": "groen"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 48,
+          "type": "geel"
+        },
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 56,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -796,5 +869,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T15:22:58.374Z"
+  "bijgewerkt": "2026-04-05T15:22:59.798Z"
 }
