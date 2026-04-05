@@ -1,0 +1,713 @@
+{
+  "seizoen": "2011-2012",
+  "slug": "2011_2012",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Laren",
+  "gedegradeerd": [
+    "Klein Zwitserland",
+    "Rotterdam"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 3,
+      "verloren": 1,
+      "doelpunten_voor": 94,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 75,
+      "punten": 57,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 4,
+      "verloren": 1,
+      "doelpunten_voor": 69,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 48,
+      "punten": 55,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 42,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 28,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -5,
+      "punten": 33,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -18,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -22,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -24,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -17,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 56,
+      "doelsaldo": -23,
+      "punten": 18,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 4,
+      "verloren": 15,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -25,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 0,
+      "verloren": 19,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 83,
+      "doelsaldo": -59,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Kim Lammers",
+      "club": "Laren",
+      "doelpunten": 40,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 18,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Eva de Goede",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Lieke van Wijk",
+      "club": "MOP",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Patrick Bakker"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "HDM",
+      "naam": "Herman Kruis"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Stijn van Roosendaal"
+    },
+    {
+      "club": "HC Klein Zwitserland",
+      "naam": "Eric van der Pol"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Richard de Snaijer"
+    },
+    {
+      "club": "MOP",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Ageeth Boomgaardt"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Etienne Spee"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Remco Hartgers"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Janneke Schopman"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "SCHC",
+        "uit": "Laren",
+        "score": "1-2",
+        "datum": "5 mei 2012",
+        "scorers": [
+          {
+            "naam": "Wieke Dijkstra",
+            "club": "Laren",
+            "minuut": 7,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          },
+          {
+            "naam": "Julia Müller",
+            "club": "Laren",
+            "minuut": 12,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Floor Joosten",
+            "club": "SCHC",
+            "minuut": 39,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-0",
+        "datum": "5 mei 2012",
+        "scorers": [
+          {
+            "naam": "Kitty van Male",
+            "club": "Amsterdam",
+            "minuut": 34,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Eva de Goede",
+            "club": "Amsterdam",
+            "minuut": 53,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "SCHC",
+        "score": "2-0",
+        "datum": "6 mei 2012",
+        "scorers": [
+          {
+            "naam": "Naomi van As",
+            "club": "Laren",
+            "minuut": 9,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Vicky van den Broek",
+            "club": "Laren",
+            "minuut": 58,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-1",
+        "datum": "6 mei 2012",
+        "scorers": [
+          {
+            "naam": "Lieke Hulsen",
+            "club": "Den Bosch",
+            "minuut": 16,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Sabine Mol",
+            "club": "Den Bosch",
+            "minuut": 40,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 49,
+            "vd": null,
+            "sc": null,
+            "sb": true
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-1",
+        "datum": "9 mei 2012",
+        "scorers": [
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 2,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Eva de Goede",
+            "club": "Amsterdam",
+            "minuut": 37,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 57,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 68,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "2-1",
+        "datum": "13 mei 2012",
+        "scorers": [
+          {
+            "naam": "Merel de Blaey",
+            "club": "Laren",
+            "minuut": 23,
+            "vd": null,
+            "sc": null,
+            "sb": true
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 34,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 70,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "1-1 (SO 4-5)",
+        "datum": "19 mei 2012",
+        "scorers": [
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 6,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Kim Lammers",
+            "club": "Laren",
+            "minuut": 35,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "Push",
+        "uit": "Kampong",
+        "score": "0-4",
+        "datum": "13 mei 2012",
+        "scorers": [
+          {
+            "naam": "Floortje Plokker",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Malou Pheninckx",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Marlies Verbruggen",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Dirkie Chamberlain",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Push",
+        "score": "4-1",
+        "datum": "17 mei 2012",
+        "scorers": [
+          {
+            "naam": "Dirkie Chamberlain",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Dirkie Chamberlain",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Maartje van der Vis",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Floortje Plokker",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Belle van Meer",
+            "club": "Kampong",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": "Kampong handhaaft zich"
+      },
+      {
+        "thuis": "De Terriërs",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "13 mei 2012",
+        "scorers": [
+          {
+            "naam": "Lisa van Baaren",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Marijn Hinskens",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Lieke Bas",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Daphne Admiraal",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Emma Driehuis",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": "De Terriërs wint na verlenging"
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "De Terriërs",
+        "score": "4-0",
+        "datum": "17 mei 2012",
+        "scorers": [
+          {
+            "naam": "Eva Bots",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          },
+          {
+            "naam": "Kathleen Taylor",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Kathleen Taylor",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Kathleen Taylor",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "De Terriërs",
+        "uit": "Rotterdam",
+        "score": "3-1",
+        "datum": "20 mei 2012",
+        "scorers": [
+          {
+            "naam": "Eva Bots",
+            "club": "Rotterdam",
+            "minuut": null,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          },
+          {
+            "naam": "Lieke Bas",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": true,
+            "sb": null
+          },
+          {
+            "naam": "Pauline Slinger",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": null
+          },
+          {
+            "naam": "Lieke Bas",
+            "club": "De Terriërs",
+            "minuut": null,
+            "vd": null,
+            "sc": null,
+            "sb": true
+          }
+        ],
+        "notitie": "De Terriërs promoveert, Rotterdam degradeert"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
