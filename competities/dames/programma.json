@@ -330,6 +330,67 @@
       ]
     },
     {
+      "thuis": "SCHC",
+      "uit": "Oranje-Rood",
+      "score_thuis": 5,
+      "score_uit": 0,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 47,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thirsa Kho",
+          "club": "Oranje-Rood",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 50,
+          "type": "groen"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "SCHC",
       "score_thuis": 0,
@@ -1095,5 +1156,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:21.728Z"
+  "bijgewerkt": "2026-04-05T17:04:22.934Z"
 }
