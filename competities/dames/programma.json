@@ -32,6 +32,49 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Rosalie Rosman",
+          "club": "Bloemendaal",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Mijntje van Campen",
+          "club": "Bloemendaal",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 25,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 30,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -2544,5 +2587,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:41.294Z"
+  "bijgewerkt": "2026-04-05T18:48:42.755Z"
 }
