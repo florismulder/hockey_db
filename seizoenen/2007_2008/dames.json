@@ -1,0 +1,545 @@
+{
+  "seizoen": "2007-2008",
+  "slug": "2007_2008",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Oranje Zwart",
+    "Forward"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 3,
+      "verloren": 2,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 61,
+      "punten": 54,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 38,
+      "punten": 52,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 5,
+      "verloren": 4,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 40,
+      "doelsaldo": 5,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 10,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 6,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 5,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 5,
+      "punten": 31,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 36,
+      "doelsaldo": 0,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -11,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 12,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -14,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Forward",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 8,
+      "verloren": 10,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -22,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -28,
+      "punten": 12,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 1,
+      "verloren": 19,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 71,
+      "doelsaldo": -49,
+      "punten": 7,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 23,
+      "vd": 4,
+      "sc": 13,
+      "sb": 6
+    },
+    {
+      "rang": 2,
+      "naam": "Claire Visser",
+      "club": "Rotterdam",
+      "doelpunten": 21,
+      "vd": 3,
+      "sc": 17,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Eefke Mulder",
+      "club": "Nijmegen",
+      "doelpunten": 18,
+      "vd": 11,
+      "sc": 6,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Sylvia Karres",
+      "club": "Amsterdam",
+      "doelpunten": 17,
+      "vd": 16,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Soledad García",
+      "club": "SCHC",
+      "doelpunten": 15,
+      "vd": 12,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 6,
+      "naam": "Veerle Goudswaard",
+      "club": "Kampong",
+      "doelpunten": 15,
+      "vd": 3,
+      "sc": 11,
+      "sb": 1
+    },
+    {
+      "rang": 7,
+      "naam": "Eveline Wisse Smit",
+      "club": "Amsterdam",
+      "doelpunten": 15,
+      "vd": 6,
+      "sc": 9,
+      "sb": 0
+    },
+    {
+      "rang": 8,
+      "naam": "Floor Joosten",
+      "club": "Kampong",
+      "doelpunten": 14,
+      "vd": 12,
+      "sc": 2,
+      "sb": 0
+    },
+    {
+      "rang": 9,
+      "naam": "Vera Vorstenbosch",
+      "club": "Den Bosch",
+      "doelpunten": 14,
+      "vd": 11,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 10,
+      "naam": "Fieke Holman",
+      "club": "Amsterdam",
+      "doelpunten": 12,
+      "vd": 0,
+      "sc": 8,
+      "sb": 4
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "1-2",
+        "datum": "27-04-2008",
+        "scorers": [
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Smets",
+            "club": "SCHC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Amsterdam",
+        "score": "1-4",
+        "datum": "27-04-2008",
+        "scorers": [
+          {
+            "naam": "Jonker",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Jonker",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Van Dooren",
+            "club": "Rotterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Fieke Holman",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "6-0",
+        "datum": "03-05-2008",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Welten",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "3-0",
+        "datum": "03-05-2008",
+        "scorers": [
+          {
+            "naam": "Jonker",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Eveline Wisse Smit",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-2",
+        "datum": "17-05-2008",
+        "scorers": [
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 8
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 22
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 24
+          },
+          {
+            "naam": "Fieke Holman",
+            "club": "Amsterdam",
+            "minuut": 40
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "3-2",
+        "datum": "18-05-2008",
+        "scorers": [
+          {
+            "naam": "Goderie",
+            "club": "Den Bosch",
+            "minuut": 13
+          },
+          {
+            "naam": "Jonker",
+            "club": "Amsterdam",
+            "minuut": 13
+          },
+          {
+            "naam": "Sylvia Karres",
+            "club": "Amsterdam",
+            "minuut": 30
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 47
+          },
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "MOP",
+        "uit": "HGC",
+        "score": "2-3",
+        "datum": "03-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "MOP",
+        "score": "1-2",
+        "datum": "04-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "MOP",
+        "score": "1-1 (SO 4-3)",
+        "datum": "07-05-2008",
+        "scorers": [],
+        "notitie": "HGC promoveert"
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Hurley",
+        "score": "1-2",
+        "datum": "03-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Bloemendaal",
+        "score": "0-1",
+        "datum": "04-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Bloemendaal",
+        "score": "2-1",
+        "datum": "07-05-2008",
+        "scorers": [],
+        "notitie": "Hurley speelt play-off tegen Forward"
+      },
+      {
+        "thuis": "MOP",
+        "uit": "HDM",
+        "score": "2-3",
+        "datum": "17-05-2008",
+        "scorers": [],
+        "notitie": "Golden goal"
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Forward",
+        "score": "2-1",
+        "datum": "17-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HDM",
+        "uit": "MOP",
+        "score": "1-0",
+        "datum": "18-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Forward",
+        "uit": "Hurley",
+        "score": "0-0 (SO 4-2)",
+        "datum": "18-05-2008",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Hurley",
+        "uit": "Forward",
+        "score": "1-0",
+        "datum": "24-05-2008",
+        "scorers": [],
+        "notitie": "Hurley promoveert, Forward degradeert"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
