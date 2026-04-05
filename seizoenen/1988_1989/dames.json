@@ -1,0 +1,189 @@
+{
+  "seizoen": "1988-1989",
+  "slug": "1988_1989",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Upward",
+    "Were Di"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 84,
+      "doelpunten_tegen": 8,
+      "doelsaldo": 76,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 12,
+      "doelsaldo": 37,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 7,
+      "verloren": 5,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 11,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 4,
+      "punten": 24,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 3,
+      "verloren": 9,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 6,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 3,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 30,
+      "doelsaldo": -4,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -11,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "DKS",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 51,
+      "doelsaldo": -28,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 45,
+      "doelsaldo": -23,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -26,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 4,
+      "verloren": 17,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -43,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Helen van der Ben",
+      "club": null,
+      "doelpunten": 24,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
