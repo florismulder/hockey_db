@@ -330,6 +330,61 @@
       ]
     },
     {
+      "thuis": "Bloemendaal",
+      "uit": "Tilburg",
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2025-10-18",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Ankelein Baardemans",
+          "club": "Bloemendaal",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Julie Hoogendoorn",
+          "club": "Bloemendaal",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Daphne Nikkels",
+          "club": "Tilburg",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Ankelein Baardemans",
+          "club": "Bloemendaal",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Daphne Nikkels",
+          "club": "Tilburg",
+          "minuut": 24,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Hannah Salden",
+          "club": "Tilburg",
+          "minuut": 43,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Oranje-Rood",
       "score_thuis": 5,
@@ -1344,5 +1399,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:27.885Z"
+  "bijgewerkt": "2026-04-05T17:04:29.098Z"
 }
