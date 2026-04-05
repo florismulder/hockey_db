@@ -1,0 +1,585 @@
+{
+  "seizoen": "2012-2013",
+  "slug": "2012_2013",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Den Bosch",
+  "gedegradeerd": [
+    "De Terriërs"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 78,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 59,
+      "punten": 61,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 61,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 40,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 32,
+      "punten": 51,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 5,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 12,
+      "punten": 34,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 35,
+      "doelsaldo": 4,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 37,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -4,
+      "punten": 30,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 1,
+      "verloren": 14,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -24,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -10,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -14,
+      "punten": 22,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 2,
+      "verloren": 17,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -44,
+      "punten": 11,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "De Terriërs",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 80,
+      "doelsaldo": -56,
+      "punten": 8,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 37,
+      "vd": 1,
+      "sc": 30,
+      "sb": 6
+    },
+    {
+      "rang": 2,
+      "naam": "Eva de Goede",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 3,
+      "sc": 11,
+      "sb": 2
+    },
+    {
+      "rang": 3,
+      "naam": "Caia van Maasakker",
+      "club": "SCHC",
+      "doelpunten": 14,
+      "vd": 0,
+      "sc": 14,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Maike Stöckel",
+      "club": "SCHC",
+      "doelpunten": 12,
+      "vd": 10,
+      "sc": 2,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Alyson Annan"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "HDM",
+      "naam": "Herman Kruis"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Stijn van Roosendaal"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Maarten Gehner"
+    },
+    {
+      "club": "MOP",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "NMHC Nijmegen",
+      "naam": "Rob Haantjes"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Ageeth Boomgaardt"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Etienne Spee"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Janneke Schopman"
+    },
+    {
+      "club": "De Terriërs",
+      "naam": "Jisse Waasdorp"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "Den Bosch",
+        "score": "2-2 (SO 3-4)",
+        "datum": "11-05-2013",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Maartje Goderie",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Lidewij Welten",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Kim Lammers",
+            "club": "Laren",
+            "minuut": null
+          },
+          {
+            "naam": "Miek van Geenhuizen",
+            "club": "Laren",
+            "minuut": null
+          },
+          {
+            "naam": "Willemijn Bos",
+            "club": "Laren",
+            "minuut": null
+          },
+          {
+            "naam": "Maxime Kerstholt",
+            "club": "Laren",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "4-1",
+        "datum": "11-05-2013",
+        "scorers": [
+          {
+            "naam": "Caia van Maasakker",
+            "club": "SCHC",
+            "minuut": 45
+          },
+          {
+            "naam": "Maike Stöckel",
+            "club": "SCHC",
+            "minuut": 48
+          },
+          {
+            "naam": "Roos Drost",
+            "club": "SCHC",
+            "minuut": 55
+          },
+          {
+            "naam": "Caia van Maasakker",
+            "club": "SCHC",
+            "minuut": 59
+          },
+          {
+            "naam": "Eva de Goede",
+            "club": "Amsterdam",
+            "minuut": 64
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Laren",
+        "score": "4-0",
+        "datum": "12-05-2013",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 2
+          },
+          {
+            "naam": "Frédèrique Matla",
+            "club": "Den Bosch",
+            "minuut": 18
+          },
+          {
+            "naam": "Lieke Hulsen",
+            "club": "Den Bosch",
+            "minuut": 48
+          },
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Den Bosch",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "12-05-2013",
+        "scorers": [
+          {
+            "naam": "Claire Verhage",
+            "club": "SCHC",
+            "minuut": 30
+          },
+          {
+            "naam": "Emily Hurtz",
+            "club": "Amsterdam",
+            "minuut": 53
+          },
+          {
+            "naam": "Elsemiek Groen",
+            "club": "Amsterdam",
+            "minuut": 68
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "0-0 (SO 1-3)",
+        "datum": "25-05-2013",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Maartje Paumen",
+            "club": "Den Bosch",
+            "minuut": 7
+          },
+          {
+            "naam": "Kelly Jonker",
+            "club": "Amsterdam",
+            "minuut": 28
+          },
+          {
+            "naam": "Kelly Jonker",
+            "club": "Amsterdam",
+            "minuut": 55
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "1-3",
+        "datum": "01-06-2013",
+        "scorers": [
+          {
+            "naam": "Vera Vorstenbosch",
+            "club": "Amsterdam",
+            "minuut": 9
+          },
+          {
+            "naam": "Eva de Goede",
+            "club": "Amsterdam",
+            "minuut": 21
+          },
+          {
+            "naam": "Kitty van Male",
+            "club": "Amsterdam",
+            "minuut": 59
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "MOP",
+        "score": "0-3",
+        "datum": "25-05-2013",
+        "scorers": [
+          {
+            "naam": "Jolijn Donkers",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Lieke van Wijk",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "eigen doelpunt",
+            "club": "MOP",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "MOP",
+        "uit": "Klein Zwitserland",
+        "score": "6-3",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Lieke van Wijk",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Alessia Padalino",
+            "club": "Klein Zwitserland",
+            "minuut": null
+          },
+          {
+            "naam": "Lieke van Wijk",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Donja Zwinkels",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Amy-Jo Rolvink",
+            "club": "Klein Zwitserland",
+            "minuut": null
+          },
+          {
+            "naam": "Lieke van Wijk",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Amy-Jo Rolvink",
+            "club": "Klein Zwitserland",
+            "minuut": null
+          },
+          {
+            "naam": "Lieke van Wijk",
+            "club": "MOP",
+            "minuut": null
+          },
+          {
+            "naam": "Natalia Wisniewska",
+            "club": "MOP",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Nijmegen",
+        "score": "0-2",
+        "datum": "25-05-2013",
+        "scorers": [
+          {
+            "naam": "Yvonne van den Hoorn",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Janneke Woudenberg",
+            "club": "Nijmegen",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Bloemendaal",
+        "score": "4-1",
+        "datum": "26-05-2013",
+        "scorers": [
+          {
+            "naam": "Dorien Koolen",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Klaartje Mientjes",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Ellemiek Koenders",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Dorien Koolen",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Annemieke Schildmeijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
