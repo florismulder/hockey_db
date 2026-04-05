@@ -1,0 +1,189 @@
+{
+  "seizoen": "1987-1988",
+  "slug": "1987_1988",
+  "geslacht": "dames",
+  "kampioen": "HGC",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Rotterdam",
+    "Laren"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 21,
+      "gelijk": 1,
+      "verloren": 0,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 6,
+      "doelsaldo": 58,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 84,
+      "doelpunten_tegen": 14,
+      "doelsaldo": 70,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 3,
+      "verloren": 5,
+      "doelpunten_voor": 50,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 22,
+      "punten": 31,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 7,
+      "punten": 28,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 4,
+      "verloren": 8,
+      "doelpunten_voor": 27,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 0,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 3,
+      "verloren": 10,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -10,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 27,
+      "doelsaldo": -7,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "DKS",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 1,
+      "verloren": 13,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 43,
+      "doelsaldo": -20,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 4,
+      "verloren": 13,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -20,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -26,
+      "punten": 14,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 17,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -35,
+      "punten": 9,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 0,
+      "verloren": 20,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -39,
+      "punten": 4,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Lisanne Lejeune",
+      "club": null,
+      "doelpunten": 34,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": null,
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
