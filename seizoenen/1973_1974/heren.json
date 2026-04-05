@@ -1,0 +1,189 @@
+{
+  "seizoen": "1973-1974",
+  "slug": "1973_1974",
+  "geslacht": "heren",
+  "kampioen": "Kampong",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Venlo",
+    "GCHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 4,
+      "verloren": 2,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 9,
+      "doelsaldo": 34,
+      "punten": 36,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 9,
+      "verloren": 0,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 16,
+      "doelsaldo": 36,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 3,
+      "verloren": 7,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 28,
+      "doelsaldo": 11,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 7,
+      "verloren": 5,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 21,
+      "doelsaldo": 10,
+      "punten": 27,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 32,
+      "doelsaldo": -2,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 9,
+      "verloren": 7,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 24,
+      "doelsaldo": -2,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Gron. Studs",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -9,
+      "punten": 21,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 8,
+      "verloren": 8,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 22,
+      "doelsaldo": -1,
+      "punten": 20,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HTCC",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 26,
+      "doelsaldo": -7,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Nijmegen",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 7,
+      "verloren": 9,
+      "doelpunten_voor": 18,
+      "doelpunten_tegen": 21,
+      "doelsaldo": -3,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Venlo",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 5,
+      "verloren": 13,
+      "doelpunten_voor": 15,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -18,
+      "punten": 13,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "GCHC",
+      "gespeeld": 22,
+      "gewonnen": 0,
+      "gelijk": 3,
+      "verloren": 19,
+      "doelpunten_voor": 5,
+      "doelpunten_tegen": 62,
+      "doelsaldo": -57,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Paul Litjens",
+      "club": null,
+      "doelpunten": 20,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Kampong",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
