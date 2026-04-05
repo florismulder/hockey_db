@@ -1,0 +1,183 @@
+{
+  "seizoen": "1983-1984",
+  "slug": "1983_1984",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Union",
+    "Forward"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 19,
+      "gelijk": 1,
+      "verloren": 2,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 25,
+      "doelsaldo": 41,
+      "punten": 39,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 17,
+      "gelijk": 2,
+      "verloren": 3,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 36,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 3,
+      "verloren": 3,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 17,
+      "doelsaldo": 48,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 5,
+      "verloren": 6,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 24,
+      "doelsaldo": 23,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 2,
+      "verloren": 9,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 3,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 23,
+      "doelpunten_tegen": 30,
+      "doelsaldo": -7,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 28,
+      "doelpunten_tegen": 39,
+      "doelsaldo": -11,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 8,
+      "verloren": 9,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 41,
+      "doelsaldo": -12,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "GHBS",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 8,
+      "verloren": 9,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 31,
+      "doelsaldo": -15,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 33,
+      "doelsaldo": -11,
+      "punten": 17,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Union",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 14,
+      "doelpunten_tegen": 35,
+      "doelsaldo": -21,
+      "punten": 6,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Forward",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 2,
+      "verloren": 18,
+      "doelpunten_voor": 16,
+      "doelpunten_tegen": 70,
+      "doelsaldo": -54,
+      "punten": 6,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Helen van der Ben",
+      "club": null,
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": null,
+  "bijgewerkt": "2026-04-05"
+}
