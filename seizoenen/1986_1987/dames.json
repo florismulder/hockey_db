@@ -1,0 +1,189 @@
+{
+  "seizoen": "1986-1987",
+  "slug": "1986_1987",
+  "geslacht": "dames",
+  "kampioen": "Amsterdam",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Oranje Zwart",
+    "EMHC"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 20,
+      "gelijk": 1,
+      "verloren": 1,
+      "doelpunten_voor": 74,
+      "doelpunten_tegen": 12,
+      "doelsaldo": 62,
+      "punten": 41,
+      "zone": ""
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 20,
+      "doelsaldo": 60,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 3,
+      "club": "Hilversum",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 6,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 19,
+      "doelsaldo": 11,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 4,
+      "club": "Upward",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 6,
+      "verloren": 6,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 8,
+      "punten": 26,
+      "zone": ""
+    },
+    {
+      "positie": 5,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 7,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 2,
+      "verloren": 10,
+      "doelpunten_voor": 26,
+      "doelpunten_tegen": 34,
+      "doelsaldo": -8,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 21,
+      "doelpunten_tegen": 29,
+      "doelsaldo": -8,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Were Di",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -17,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 6,
+      "verloren": 11,
+      "doelpunten_voor": 24,
+      "doelpunten_tegen": 54,
+      "doelsaldo": -30,
+      "punten": 16,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Groningen",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 38,
+      "doelsaldo": -6,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 7,
+      "verloren": 13,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 50,
+      "doelsaldo": -31,
+      "punten": 11,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "EMHC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 3,
+      "verloren": 16,
+      "doelpunten_voor": 12,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -48,
+      "punten": 9,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Lisanne Lejeune",
+      "club": null,
+      "doelpunten": 46,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale": null,
+    "troostfinale": null,
+    "kampioen": "Amsterdam",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
