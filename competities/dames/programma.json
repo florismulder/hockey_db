@@ -525,6 +525,36 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": [
+        {
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Rosa Fernig",
+          "club": "Den Bosch",
+          "minuut": 49,
+          "type": "groen"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "SCHC",
       "score_thuis": 0,
@@ -1290,5 +1320,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:25.436Z"
+  "bijgewerkt": "2026-04-05T17:04:26.641Z"
 }
