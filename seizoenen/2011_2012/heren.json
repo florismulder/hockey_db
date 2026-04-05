@@ -1,0 +1,626 @@
+{
+  "seizoen": "2011-2012",
+  "slug": "2011_2012",
+  "geslacht": "heren",
+  "kampioen": "Amsterdam",
+  "vicekampioen": "Rotterdam",
+  "gedegradeerd": [
+    "Hurley"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 2,
+      "verloren": 5,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 54,
+      "doelsaldo": 23,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 6,
+      "verloren": 3,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 49,
+      "doelsaldo": 28,
+      "punten": 45,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 2,
+      "verloren": 6,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 48,
+      "doelsaldo": 8,
+      "punten": 44,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 3,
+      "verloren": 6,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 36,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 19,
+      "punten": 42,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 5,
+      "verloren": 9,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 52,
+      "doelsaldo": -3,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 47,
+      "doelsaldo": -7,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 57,
+      "doelsaldo": -11,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 49,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -14,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -19,
+      "punten": 21,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 2,
+      "verloren": 14,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 73,
+      "doelsaldo": -34,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 39,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -26,
+      "punten": 14,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Roderick Weusthof",
+      "club": "Rotterdam",
+      "doelpunten": 34,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Justin Reid-Ross",
+      "club": "Pinoké",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Melchior Looijen",
+      "club": "Laren",
+      "doelpunten": 21,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Olmer Meijer",
+      "club": "Bloemendaal",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 5,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Zwart",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Taco van den Honert"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Dave Smolenaars"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Siegfried Aikman"
+    },
+    {
+      "club": "HGC",
+      "naam": "Alejandro Verga"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Paul Robert Lankhout"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Roelant Oltmans"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Bart Looije"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Adel Fuentes"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Rotterdam",
+        "score": "1-0",
+        "datum": "09-05-2012",
+        "scorers": [
+          {
+            "naam": "Eby Kessing",
+            "club": "Bloemendaal",
+            "minuut": 60
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "09-05-2012",
+        "scorers": [
+          {
+            "naam": "Bruno van den Bosch",
+            "club": "Kampong",
+            "minuut": 8
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 18
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 61
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "1-0",
+        "datum": "12-05-2012",
+        "scorers": [
+          {
+            "naam": "Paul Melkert",
+            "club": "Rotterdam",
+            "minuut": 30
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "4-3",
+        "datum": "12-05-2012",
+        "scorers": [
+          {
+            "naam": "Don Prins",
+            "club": "Amsterdam",
+            "minuut": 30
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 53
+          },
+          {
+            "naam": "Billy Bakker",
+            "club": "Amsterdam",
+            "minuut": 61
+          },
+          {
+            "naam": "Mirco Pruyser",
+            "club": "Amsterdam",
+            "minuut": 65
+          },
+          {
+            "naam": "Sander de Wijn",
+            "club": "Kampong",
+            "minuut": 24
+          },
+          {
+            "naam": "Constantijn Jonker",
+            "club": "Kampong",
+            "minuut": 25
+          },
+          {
+            "naam": "Thijs de Wert",
+            "club": "Kampong",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Bloemendaal",
+        "score": "2-1",
+        "datum": "13-05-2012",
+        "scorers": [
+          {
+            "naam": "Roderick Weusthof",
+            "club": "Rotterdam",
+            "minuut": 10
+          },
+          {
+            "naam": "Sjoerd Gerretsen",
+            "club": "Rotterdam",
+            "minuut": 68
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 17
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Amsterdam",
+        "uit": "Rotterdam",
+        "score": "3-2",
+        "datum": "17-05-2012",
+        "scorers": [
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 28
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 58
+          },
+          {
+            "naam": "Taeke Taekema",
+            "club": "Amsterdam",
+            "minuut": 77
+          },
+          {
+            "naam": "Roderick Weusthof",
+            "club": "Rotterdam",
+            "minuut": 39
+          },
+          {
+            "naam": "Robert van der Horst",
+            "club": "Rotterdam",
+            "minuut": 56
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Rotterdam",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "19-05-2012",
+        "scorers": [
+          {
+            "naam": "Jeroen Hertzberger",
+            "club": "Rotterdam",
+            "minuut": 38
+          },
+          {
+            "naam": "Billy Bakker",
+            "club": "Amsterdam",
+            "minuut": 11
+          },
+          {
+            "naam": "Valentin Verga",
+            "club": "Amsterdam",
+            "minuut": 44
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": {
+      "thuis": "Bloemendaal",
+      "uit": "Kampong",
+      "score": "2-1",
+      "datum": "17-05-2012",
+      "scorers": [
+        {
+          "naam": "Tim Jenniskens",
+          "club": "Bloemendaal",
+          "minuut": 36
+        },
+        {
+          "naam": "Diede van Puffelen",
+          "club": "Bloemendaal",
+          "minuut": 73
+        },
+        {
+          "naam": "Quirijn Caspers",
+          "club": "Kampong",
+          "minuut": 22
+        }
+      ]
+    },
+    "kampioen": "Amsterdam",
+    "playout": [
+      {
+        "thuis": "Tilburg",
+        "uit": "Den Bosch",
+        "score": "2-2 (SO 0-1)",
+        "datum": "17-05-2012",
+        "scorers": [
+          {
+            "naam": "Juliën van den Nieuwenhuijzen",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Philip Thiadens",
+            "club": "Tilburg",
+            "minuut": null
+          },
+          {
+            "naam": "Marcel Verbunt",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Jip Krens",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": "Den Bosch wint na shoot-outs"
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Tilburg",
+        "score": "7-0",
+        "datum": "19-05-2012",
+        "scorers": [
+          {
+            "naam": "Matthijs Brouwer",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Matthijs Brouwer",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Austin Smith",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Philip Thiadens",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Philip Thiadens",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Philip Thiadens",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "M. Brouwer",
+            "club": "Den Bosch",
+            "minuut": null
+          }
+        ],
+        "notitie": "Den Bosch blijft"
+      },
+      {
+        "thuis": "Almere",
+        "uit": "Schaerweijde",
+        "score": "1-2",
+        "datum": "17-05-2012",
+        "scorers": [
+          {
+            "naam": "Nicki Leijs",
+            "club": "Almere",
+            "minuut": null
+          },
+          {
+            "naam": "Ali Aktar",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Muhammad Ateeq",
+            "club": "Schaerweijde",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Almere",
+        "score": "1-1 (SO 0-1)",
+        "datum": "19-05-2012",
+        "scorers": [
+          {
+            "naam": "Barend van den Berg",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Nicki Leijs",
+            "club": "Almere",
+            "minuut": null
+          }
+        ],
+        "notitie": "Almere wint na shoot-outs"
+      },
+      {
+        "thuis": "Almere",
+        "uit": "Schaerweijde",
+        "score": "2-3",
+        "datum": "20-05-2012",
+        "scorers": [
+          {
+            "naam": "Barend van den Berg",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Chris Seddon",
+            "club": "Schaerweijde",
+            "minuut": null
+          },
+          {
+            "naam": "Nicki Leijs",
+            "club": "Almere",
+            "minuut": null
+          },
+          {
+            "naam": "Tommy Hofkamp",
+            "club": "Almere",
+            "minuut": null
+          },
+          {
+            "naam": "Muhammad Ateeq",
+            "club": "Schaerweijde",
+            "minuut": null
+          }
+        ],
+        "notitie": "Schaerweijde blijft"
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
