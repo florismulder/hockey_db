@@ -1,0 +1,638 @@
+{
+  "seizoen": "2009-2010",
+  "slug": "2009_2010",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "HGC",
+  "gedegradeerd": [
+    "THC Hurley"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 3,
+      "verloren": 4,
+      "doelpunten_voor": 72,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 28,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 7,
+      "verloren": 2,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 53,
+      "doelsaldo": 20,
+      "punten": 46,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 46,
+      "doelsaldo": 19,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 2,
+      "verloren": 8,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 56,
+      "doelsaldo": 9,
+      "punten": 35,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 47,
+      "doelsaldo": 6,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 5,
+      "verloren": 8,
+      "doelpunten_voor": 67,
+      "doelpunten_tegen": 62,
+      "doelsaldo": 5,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 8,
+      "verloren": 6,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 13,
+      "punten": 32,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 57,
+      "doelpunten_tegen": 69,
+      "doelsaldo": -12,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 5,
+      "verloren": 11,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 65,
+      "doelsaldo": -9,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 5,
+      "verloren": 12,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 68,
+      "doelsaldo": -25,
+      "punten": 20,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 7,
+      "verloren": 12,
+      "doelpunten_voor": 34,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -33,
+      "punten": 16,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 2,
+      "gelijk": 5,
+      "verloren": 15,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -28,
+      "punten": 11,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Ashley Jackson",
+      "club": "HGC",
+      "doelpunten": 29,
+      "vd": 4,
+      "sc": 21,
+      "sb": 4
+    },
+    {
+      "rang": 2,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Zwart",
+      "doelpunten": 27,
+      "vd": 0,
+      "sc": 26,
+      "sb": 1
+    },
+    {
+      "rang": 3,
+      "naam": "Melchior Looijen",
+      "club": "Kampong",
+      "doelpunten": 23,
+      "vd": 1,
+      "sc": 20,
+      "sb": 2
+    },
+    {
+      "rang": 4,
+      "naam": "Roderick Weusthof",
+      "club": "SCHC",
+      "doelpunten": 21,
+      "vd": 8,
+      "sc": 12,
+      "sb": 1
+    },
+    {
+      "rang": 5,
+      "naam": "Jeroen Hertzberger",
+      "club": "Rotterdam",
+      "doelpunten": 19,
+      "vd": 13,
+      "sc": 4,
+      "sb": 2
+    },
+    {
+      "rang": 6,
+      "naam": "Luke Doerner",
+      "club": "Laren",
+      "doelpunten": 18,
+      "vd": 1,
+      "sc": 12,
+      "sb": 5
+    },
+    {
+      "rang": 7,
+      "naam": "Mark Gleghorne",
+      "club": "Den Bosch",
+      "doelpunten": 18,
+      "vd": 2,
+      "sc": 10,
+      "sb": 6
+    },
+    {
+      "rang": 8,
+      "naam": "Wouter Hermkens",
+      "club": "Tilburg",
+      "doelpunten": 18,
+      "vd": 0,
+      "sc": 17,
+      "sb": 1
+    },
+    {
+      "rang": 9,
+      "naam": "Teun de Nooijer",
+      "club": "Bloemendaal",
+      "doelpunten": 17,
+      "vd": 12,
+      "sc": 2,
+      "sb": 3
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Sjoerd Marijne"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Max Caldas"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Oriol Alcaraz"
+    },
+    {
+      "club": "HGC",
+      "naam": "Paul van Ass"
+    },
+    {
+      "club": "THC Hurley",
+      "naam": "Bas Bruin"
+    },
+    {
+      "club": "HC Kampong",
+      "naam": "Michiel van der Struijk"
+    },
+    {
+      "club": "Larense MHC",
+      "naam": "Roelant Oltmans"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Roger van Gent"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Jacques Brinkman"
+    },
+    {
+      "club": "TMHC Tilburg",
+      "naam": "Adam Commens"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "HGC",
+        "score": "4-3",
+        "datum": "29-05-2010",
+        "scorers": [
+          {
+            "naam": "Bob de Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 19
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 28
+          },
+          {
+            "naam": "Thomas Briels",
+            "club": "Oranje Zwart",
+            "minuut": 44
+          },
+          {
+            "naam": "Marc Salles",
+            "club": "Oranje Zwart",
+            "minuut": 53
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 15
+          },
+          {
+            "naam": "Timmo Kranstauber",
+            "club": "HGC",
+            "minuut": 60
+          },
+          {
+            "naam": "Seve van Ass",
+            "club": "HGC",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Laren",
+        "uit": "Bloemendaal",
+        "score": "0-3",
+        "datum": "29-05-2010",
+        "scorers": [
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 7
+          },
+          {
+            "naam": "Nick Meijer",
+            "club": "Bloemendaal",
+            "minuut": 27
+          },
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 62
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Oranje Zwart",
+        "score": "3-1",
+        "datum": "30-05-2010",
+        "scorers": [
+          {
+            "naam": "Ken Pereira",
+            "club": "HGC",
+            "minuut": 15
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 52
+          },
+          {
+            "naam": "Rob Short",
+            "club": "HGC",
+            "minuut": 69
+          },
+          {
+            "naam": "Thomas Briels",
+            "club": "Oranje Zwart",
+            "minuut": 30
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Laren",
+        "score": "2-3",
+        "datum": "30-05-2010",
+        "scorers": [
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 4
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 40
+          },
+          {
+            "naam": "Jong-Ho Seo",
+            "club": "Laren",
+            "minuut": 25
+          },
+          {
+            "naam": "Luke Doerner",
+            "club": "Laren",
+            "minuut": 55
+          },
+          {
+            "naam": "Luke Doerner",
+            "club": "Laren",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Laren",
+        "score": "6-0",
+        "datum": "02-06-2010",
+        "scorers": [
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": 5
+          },
+          {
+            "naam": "Olmer Meijer",
+            "club": "Bloemendaal",
+            "minuut": 24
+          },
+          {
+            "naam": "Roel Bovendeert",
+            "club": "Bloemendaal",
+            "minuut": 46
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 60
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 67
+          },
+          {
+            "naam": "Tim Jenniskens",
+            "club": "Bloemendaal",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Oranje Zwart",
+        "score": "3-1",
+        "datum": "02-06-2010",
+        "scorers": [
+          {
+            "naam": "Seve van Ass",
+            "club": "HGC",
+            "minuut": 39
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 42
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 65
+          },
+          {
+            "naam": "Mink van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 29
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "1-2",
+        "datum": "06-06-2010",
+        "scorers": [
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 50
+          },
+          {
+            "naam": "Ronald Brouwer",
+            "club": "Bloemendaal",
+            "minuut": 5
+          },
+          {
+            "naam": "Olmer Meijer",
+            "club": "Bloemendaal",
+            "minuut": 54
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "3-3 (SO)",
+        "datum": "12-06-2010",
+        "scorers": [
+          {
+            "naam": "Martijn van Mierlo",
+            "club": "Bloemendaal",
+            "minuut": 23
+          },
+          {
+            "naam": "Wouter Jolie",
+            "club": "Bloemendaal",
+            "minuut": 45
+          },
+          {
+            "naam": "Jamie Dwyer",
+            "club": "Bloemendaal",
+            "minuut": 68
+          },
+          {
+            "naam": "Barry Middleton",
+            "club": "HGC",
+            "minuut": 26
+          },
+          {
+            "naam": "Eric-Jan Iding",
+            "club": "HGC",
+            "minuut": 50
+          },
+          {
+            "naam": "Ashley Jackson",
+            "club": "HGC",
+            "minuut": 70
+          }
+        ],
+        "notitie": "Bloemendaal wint na strafballen."
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": [
+      {
+        "thuis": "Rood-Wit",
+        "uit": "HDM",
+        "score": "0-3",
+        "datum": "29-05-2010",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "HDM",
+        "uit": "Rood-Wit",
+        "score": "1-1 (SO)",
+        "datum": "30-05-2010",
+        "scorers": [],
+        "notitie": "HDM wint na shoot-outs en promoveert. Rood-Wit neemt het op tegen SCHC om promotie/handhaving."
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Klein Zwitserland",
+        "score": "2-3",
+        "datum": "29-05-2010",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Schaerweijde",
+        "score": "5-4",
+        "datum": "30-05-2010",
+        "scorers": [],
+        "notitie": "Schaerweijde degradeert terug naar Overgangsklasse. Klein Zwitserland neemt het op tegen Tilburg om promotie/handhaving."
+      },
+      {
+        "thuis": "Rood-Wit",
+        "uit": "SCHC",
+        "score": "0-1",
+        "datum": "05-06-2010",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Klein Zwitserland",
+        "uit": "Tilburg",
+        "score": "0-4",
+        "datum": "05-06-2010",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Rood-Wit",
+        "score": "3-2",
+        "datum": "06-06-2010",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Klein Zwitserland",
+        "score": "6-2",
+        "datum": "06-06-2010",
+        "scorers": [],
+        "notitie": "Tilburg en SCHC handhaven zich."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
