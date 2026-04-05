@@ -86,7 +86,7 @@ button{cursor:pointer;font-family:inherit} a{color:inherit;text-decoration:none}
 .legend{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);flex-wrap:wrap} .li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)} .ld{width:10px;height:10px;border-radius:3px}
 .twee-col{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)} .tc-links{border-right:1px solid var(--border)}
 .wl{display:flex;flex-direction:column;gap:4px} .wr{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;} .wr:hover{border-color:var(--accent);background:var(--accent-light)}
-.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:52px} .wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:68px;white-space:nowrap} .wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 8px;text-align:center;flex-shrink:0;} .ws.k{color:var(--muted);font-size:12px} .wa{color:var(--muted);font-size:12px;text-align:center}
 .ph{padding:14px 18px 12px;border-bottom:1px solid var(--border)} .pt2{font-size:13px;font-weight:700} .nl{display:flex;flex-direction:column}
 .nr{padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s} .nr:hover{background:var(--surface2)}
@@ -167,8 +167,14 @@ function Breadcrumb({page,pageId,nav}) {
 }
 
 function TopscorersOverzicht({topscorers, spelers, nav}) {
-  const vindSpeler = (naam) => {
-    if(!naam||!spelers?.length) return null;
+  const vindSpeler = (naam, naamSlug) => {
+    if(!spelers?.length) return null;
+    // Eerst op slug matchen (meest betrouwbaar bij speciale tekens)
+    if(naamSlug) {
+      const opSlug = spelers.find(s => s.id === naamSlug);
+      if(opSlug) return opSlug;
+    }
+    if(!naam) return null;
     const nl = naam.toLowerCase();
     return spelers.find(s=>s.naam&&s.naam.toLowerCase()===nl)
       || spelers.find(s=>s.naam&&(s.naam.toLowerCase().includes(nl)||nl.includes(s.naam.toLowerCase())));
@@ -197,7 +203,7 @@ function TopscorersOverzicht({topscorers, spelers, nav}) {
             </thead>
             <tbody>
               {topscorers.map((t, i) => {
-                const speler = vindSpeler(t.naam);
+                const speler = vindSpeler(t.naam, t.naam_slug);
                 return (
                 <tr key={i}>
                   <td style={{textAlign:'left'}}>{i + 1}</td>
