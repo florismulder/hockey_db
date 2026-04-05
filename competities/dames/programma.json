@@ -135,6 +135,55 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 0,
+      "datum": "2025-09-21",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sabine van den Eijnden",
+          "club": "HDM",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Sabine van den Eijnden",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Amber Brouwer",
+          "club": "Oranje-Rood",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Brechje Scheepers",
+          "club": "Oranje-Rood",
+          "minuut": 45,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Rotterdam",
       "score_thuis": 8,
@@ -2348,5 +2397,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:35.351Z"
+  "bijgewerkt": "2026-04-05T18:48:36.782Z"
 }
