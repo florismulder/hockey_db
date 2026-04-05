@@ -1,0 +1,505 @@
+{
+  "seizoen": "2014-2015",
+  "slug": "2014_2015",
+  "geslacht": "dames",
+  "kampioen": "Den Bosch",
+  "vicekampioen": "SCHC",
+  "gedegradeerd": [
+    "Wageningen"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 80,
+      "doelpunten_tegen": 27,
+      "doelsaldo": 53,
+      "punten": 56,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 74,
+      "doelpunten_tegen": 29,
+      "doelsaldo": 45,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 6,
+      "verloren": 2,
+      "doelpunten_voor": 55,
+      "doelpunten_tegen": 26,
+      "doelsaldo": 29,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 5,
+      "verloren": 5,
+      "doelpunten_voor": 64,
+      "doelpunten_tegen": 33,
+      "doelsaldo": 31,
+      "punten": 41,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 7,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 5,
+      "verloren": 7,
+      "doelpunten_voor": 40,
+      "doelpunten_tegen": 37,
+      "doelsaldo": 3,
+      "punten": 35,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 4,
+      "verloren": 10,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 31,
+      "doelsaldo": 5,
+      "punten": 28,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "MOP",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 4,
+      "verloren": 11,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -4,
+      "punten": 25,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "hdm",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 2,
+      "verloren": 13,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 55,
+      "doelsaldo": -23,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 2,
+      "verloren": 15,
+      "doelpunten_voor": 22,
+      "doelpunten_tegen": 66,
+      "doelsaldo": -44,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 1,
+      "verloren": 17,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 69,
+      "doelsaldo": -38,
+      "punten": 13,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Wageningen",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 2,
+      "verloren": 19,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 84,
+      "doelsaldo": -64,
+      "punten": 5,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Maartje Paumen",
+      "club": "Den Bosch",
+      "doelpunten": 32,
+      "vd": 0,
+      "sc": 24,
+      "sb": 8
+    },
+    {
+      "rang": 2,
+      "naam": "Valerie Magis",
+      "club": "Oranje Zwart",
+      "doelpunten": 18,
+      "vd": 4,
+      "sc": 14,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Maike Stöckel",
+      "club": "SCHC",
+      "doelpunten": 17,
+      "vd": 16,
+      "sc": 1,
+      "sb": 0
+    },
+    {
+      "rang": 4,
+      "naam": "Kelly Jonker",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 11,
+      "sc": 5,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Ellen Hoog",
+      "club": "Amsterdam",
+      "doelpunten": 16,
+      "vd": 4,
+      "sc": 9,
+      "sb": 3
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Jisse Waasdorp"
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Jorge Nolte"
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Raoul Ehren"
+    },
+    {
+      "club": "hdm",
+      "naam": "Erik van Driel"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Rick Mathijssen"
+    },
+    {
+      "club": "Kampong",
+      "naam": "Stijn van Roosendaal"
+    },
+    {
+      "club": "Laren",
+      "naam": "Etienne Spee"
+    },
+    {
+      "club": "MOP",
+      "naam": "Toon Siepman"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Kai de Jager"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Maarten Stenvers"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Giles Bonnet"
+    },
+    {
+      "club": "Wageningen",
+      "naam": "Arnoud Boersma"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Laren",
+        "uit": "SCHC",
+        "score": "1-2",
+        "datum": "03-05-2015",
+        "scorers": [
+          {
+            "naam": "Roosen",
+            "club": "Laren",
+            "minuut": 30
+          },
+          {
+            "naam": "Stöckel",
+            "club": "SCHC",
+            "minuut": 11
+          },
+          {
+            "naam": "Drost",
+            "club": "SCHC",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "2-1",
+        "datum": "09-05-2015",
+        "scorers": [
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 29
+          },
+          {
+            "naam": "Verbruggen",
+            "club": "Den Bosch",
+            "minuut": 81
+          },
+          {
+            "naam": "Vega",
+            "club": "Amsterdam",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Laren",
+        "score": "1-1 (SO win SCHC)",
+        "datum": "09-05-2015",
+        "scorers": [
+          {
+            "naam": "Dirkse van den Heuvel",
+            "club": "SCHC",
+            "minuut": 15
+          },
+          {
+            "naam": "Holman",
+            "club": "Laren",
+            "minuut": 50
+          }
+        ],
+        "notitie": "SCHC won de shoot-out serie."
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "SCHC",
+        "uit": "Den Bosch",
+        "score": "1-2 (nv)",
+        "datum": "14-05-2015",
+        "scorers": [
+          {
+            "naam": "van Maasakker",
+            "club": "SCHC",
+            "minuut": 55
+          },
+          {
+            "naam": "Keil",
+            "club": "Den Bosch",
+            "minuut": 45
+          },
+          {
+            "naam": "Hulsen",
+            "club": "Den Bosch",
+            "minuut": 77
+          }
+        ],
+        "notitie": "Na verlenging."
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "SCHC",
+        "score": "2-0",
+        "datum": "16-05-2015",
+        "scorers": [
+          {
+            "naam": "Paumen",
+            "club": "Den Bosch",
+            "minuut": 10
+          },
+          {
+            "naam": "Hulsen",
+            "club": "Den Bosch",
+            "minuut": 63
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Den Bosch",
+    "playout": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "2-6",
+        "datum": "17-05-2015",
+        "scorers": [
+          {
+            "naam": "Roos Broek",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Jayde Taylor",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Ekki Lemmink",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Josien Galema",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Emily Campbell",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Melle Spruijt",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Annemiek Schildmeijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Marjolein Ceulen",
+            "club": "HGC",
+            "minuut": null
+          }
+        ],
+        "notitie": "Eén HGC-doelpunt is onbenoemd in de bron, en er is een discrepantie in het aantal genoemde Bloemendaal-scorers (7 voor 6 goals)."
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "1-1 (SO 4-5)",
+        "datum": "24-05-2015",
+        "scorers": [
+          {
+            "naam": "Goeman Borgesius",
+            "club": "HGC",
+            "minuut": null
+          },
+          {
+            "naam": "Van der Elst",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": "Bloemendaal wint de shoot-outs met 4-5, zoals vermeld in de bron. Bloemendaal handhaaft zich."
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Pinoké",
+        "score": "4-0",
+        "datum": "17-05-2015",
+        "scorers": [
+          {
+            "naam": "Klaartje Mientjes",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Yvonne van Hoorn",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Yvonne van Hoorn",
+            "club": "Nijmegen",
+            "minuut": null
+          },
+          {
+            "naam": "Michelle Siemons",
+            "club": "Nijmegen",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Pinoké",
+        "uit": "Nijmegen",
+        "score": "4-1",
+        "datum": "30-05-2015",
+        "scorers": [
+          {
+            "naam": "Eva van Agt",
+            "club": "Pinoké",
+            "minuut": null
+          }
+        ],
+        "notitie": "Drie Pinoké-doelpunten en één Nijmegen-doelpunt zijn onbenoemd in de bron."
+      },
+      {
+        "thuis": "Nijmegen",
+        "uit": "Pinoké",
+        "score": "0-3",
+        "datum": "31-05-2015",
+        "scorers": [],
+        "notitie": "Pinoké handhaaft zich."
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
