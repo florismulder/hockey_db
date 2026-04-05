@@ -1,0 +1,409 @@
+{
+  "seizoen": "1999-2000",
+  "slug": "1999_2000",
+  "geslacht": "heren",
+  "kampioen": "Bloemendaal",
+  "vicekampioen": "Den Bosch",
+  "gedegradeerd": [
+    "MEP",
+    "Tilburg"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 1,
+      "verloren": 5,
+      "doelpunten_voor": 75,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 31,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 14,
+      "gelijk": 5,
+      "verloren": 3,
+      "doelpunten_voor": 83,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 39,
+      "punten": 47,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 4,
+      "verloren": 6,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 18,
+      "punten": 40,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 4,
+      "verloren": 7,
+      "doelpunten_voor": 58,
+      "doelpunten_tegen": 51,
+      "doelsaldo": 7,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 65,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 13,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 52,
+      "doelpunten_tegen": 52,
+      "doelsaldo": 0,
+      "punten": 36,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 2,
+      "verloren": 11,
+      "doelpunten_voor": 56,
+      "doelpunten_tegen": 56,
+      "doelsaldo": 0,
+      "punten": 29,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -5,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 60,
+      "doelsaldo": -15,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 7,
+      "verloren": 11,
+      "doelpunten_voor": 30,
+      "doelpunten_tegen": 46,
+      "doelsaldo": -16,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "MEP",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 73,
+      "doelsaldo": -37,
+      "punten": 18,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 2,
+      "verloren": 16,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 64,
+      "doelsaldo": -35,
+      "punten": 14,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Paul Robert Lankhout",
+      "club": "Kampong",
+      "doelpunten": 31,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 2,
+      "naam": "Remco van Wijk",
+      "club": "Bloemendaal",
+      "doelpunten": 26,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 3,
+      "naam": "Teun de Nooijer",
+      "club": "Bloemendaal",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Marten Eikelboom",
+      "club": "Amsterdam",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 4,
+      "naam": "Richard de Snaijer",
+      "club": "HDM",
+      "doelpunten": 22,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 6,
+      "naam": "Robin de Vries",
+      "club": "SCHC",
+      "doelpunten": 19,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 7,
+      "naam": "Taeke Taekema",
+      "club": "Klein Zwitserland",
+      "doelpunten": 17,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 8,
+      "naam": "Bram Lomans",
+      "club": "HGC",
+      "doelpunten": 16,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Piet-Hein Geeris",
+      "club": "Oranje Zwart",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    },
+    {
+      "rang": 9,
+      "naam": "Jan Oonk",
+      "club": "MEP",
+      "doelpunten": 15,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": null,
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "HGC",
+        "uit": "Bloemendaal",
+        "score": "0-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": null
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "HGC",
+        "score": "3-1",
+        "datum": null,
+        "scorers": [],
+        "notitie": null
+      },
+      {
+        "thuis": "Den Bosch",
+        "uit": "Amsterdam",
+        "score": "6-4",
+        "datum": null,
+        "scorers": [],
+        "notitie": null
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "3-2",
+        "datum": null,
+        "scorers": [],
+        "notitie": null
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Den Bosch",
+        "score": "2-3",
+        "datum": null,
+        "scorers": [],
+        "notitie": null
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Den Bosch",
+        "uit": "Bloemendaal",
+        "score": "3-1",
+        "datum": "29 april 2000",
+        "scorers": [
+          {
+            "naam": "Mathijs Brouwer",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Jeroen Delmee",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Raoul Ehren",
+            "club": "Den Bosch",
+            "minuut": null
+          },
+          {
+            "naam": "Remco Van Wijk",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": null
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Den Bosch",
+        "score": "5-0",
+        "datum": "30 april 2000",
+        "scorers": [
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Bart van der Meer",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Menno Booij",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Remco van Wijk",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": null
+      },
+      {
+        "thuis": "Bloemendaal",
+        "uit": "Den Bosch",
+        "score": "5-0",
+        "datum": "6 mei 2000",
+        "scorers": [
+          {
+            "naam": "Remco van Wijk",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Jaap-Derk Buma",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Jaap-Derk Buma",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          },
+          {
+            "naam": "Teun de Nooijer",
+            "club": "Bloemendaal",
+            "minuut": null
+          }
+        ],
+        "notitie": null
+      }
+    ],
+    "troostfinale": null,
+    "kampioen": "Bloemendaal",
+    "playout": null
+  },
+  "bijgewerkt": "2026-04-05"
+}
