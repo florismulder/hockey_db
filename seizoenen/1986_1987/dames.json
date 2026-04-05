@@ -20,7 +20,7 @@
       "doelpunten_tegen": 12,
       "doelsaldo": 62,
       "punten": 41,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
@@ -33,7 +33,7 @@
       "doelpunten_tegen": 20,
       "doelsaldo": 60,
       "punten": 38,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 3,
@@ -46,7 +46,7 @@
       "doelpunten_tegen": 19,
       "doelsaldo": 11,
       "punten": 26,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 4,
@@ -59,7 +59,7 @@
       "doelpunten_tegen": 29,
       "doelsaldo": 8,
       "punten": 26,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 5,
@@ -137,7 +137,7 @@
       "doelpunten_tegen": 38,
       "doelsaldo": -6,
       "punten": 15,
-      "zone": ""
+      "zone": "playout"
     },
     {
       "positie": 11,
@@ -150,7 +150,7 @@
       "doelpunten_tegen": 50,
       "doelsaldo": -31,
       "punten": 11,
-      "zone": "degradatie"
+      "zone": "playout"
     },
     {
       "positie": 12,
@@ -180,7 +180,7 @@
   "coaches": [],
   "playoffs": {
     "halve_finales": [],
-    "finale": null,
+    "finale_wedstrijden": [],
     "troostfinale": null,
     "kampioen": "Amsterdam",
     "playout": []
