@@ -263,6 +263,43 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-10-11",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 42,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "HGC",
       "score_thuis": 4,
@@ -1529,5 +1566,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T17:04:34.039Z"
+  "bijgewerkt": "2026-04-05T17:04:35.271Z"
 }
