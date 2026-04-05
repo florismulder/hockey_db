@@ -1591,7 +1591,11 @@ function App() {
       ...nieuwsBronnen.map(url=>fetch(url).then(r=>r.json()).catch(()=>null)),
     ]).then(([sd,pd,td,od,jod,u18d,u16d,...nieuwsFeeds])=>{
       const sl=sd?.stand||[];
-      if(sl.length>0&&sd?.bijgewerkt) sl[0]._bw=sd.bijgewerkt.slice(0,10);
+      if(sl.length>0&&sd?.bijgewerkt) {
+        const bw = sd.bijgewerkt.slice(0,10);
+        const [y,m,d] = bw.split("-");
+        sl[0]._bw = d && m && y ? `${d}-${m}-${y}` : bw;
+      }
       setStand(sl);
       setProgramma(pd?.wedstrijden||[]);
       setTopscorers(td?.topscorers||[]);
@@ -1636,7 +1640,7 @@ function App() {
       <header className="hdr">
         <button className="logo" onClick={()=>nav("dashboard")}>🏑 Hockey DB</button>
         <nav className="nav">
-          {[["dashboard","Stand"],["spelers","Spelers"],["oranje","Oranje"],["historie","Historie"],["invoer","+ Invoer"]].map(([id,lbl])=>(
+          {[["dashboard","Stand"],["spelers","Spelers"],["oranje","Oranje"],["historie","Historie"]].map(([id,lbl])=>(
             <button key={id} className={`nb ${isActive(id)?"on":""}`} onClick={()=>nav(id)}>{lbl}</button>
           ))}
         </nav>
