@@ -452,6 +452,49 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Renée van Laarhoven",
+          "club": "SCHC",
+          "minuut": 49,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Sanne Caarls",
+          "club": "Hurley",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Taheera Augousti",
+          "club": "Hurley",
+          "minuut": 45,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -2024,5 +2067,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:23.690Z"
+  "bijgewerkt": "2026-04-05T18:48:25.252Z"
 }
