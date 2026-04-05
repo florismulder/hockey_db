@@ -75,6 +75,55 @@
       ]
     },
     {
+      "thuis": "HGC",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Julie Pieper",
+          "club": "HGC",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Mariona Serrahima",
+          "club": "HGC",
+          "minuut": 39,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 13,
+          "type": "groen"
+        },
+        {
+          "naam": "Tessel Huibregtsen",
+          "club": "HGC",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 45,
+          "type": "geel"
+        },
+        {
+          "naam": "Iris Langejans",
+          "club": "Rotterdam",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Amsterdam",
       "score_thuis": 1,
@@ -2587,5 +2636,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:42.755Z"
+  "bijgewerkt": "2026-04-05T18:48:44.155Z"
 }
