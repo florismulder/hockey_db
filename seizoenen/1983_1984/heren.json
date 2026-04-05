@@ -1,0 +1,189 @@
+{
+  "seizoen": "1983-1984",
+  "slug": "1983_1984",
+  "geslacht": "heren",
+  "kampioen": "Klein Zwitserland",
+  "vicekampioen": null,
+  "gedegradeerd": [
+    "Hattem",
+    "Geel Zwart"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Klein Zwitserland",
+      "gespeeld": 22,
+      "gewonnen": 18,
+      "gelijk": 2,
+      "verloren": 2,
+      "doelpunten_voor": 93,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 54,
+      "punten": 38,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 5,
+      "verloren": 1,
+      "doelpunten_voor": 77,
+      "doelpunten_tegen": 34,
+      "doelsaldo": 43,
+      "punten": 37,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 7,
+      "verloren": 2,
+      "doelpunten_voor": 62,
+      "doelpunten_tegen": 32,
+      "doelsaldo": 30,
+      "punten": 33,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 6,
+      "verloren": 7,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 12,
+      "punten": 24,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 7,
+      "verloren": 7,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 44,
+      "doelsaldo": 0,
+      "punten": 23,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 9,
+      "gelijk": 4,
+      "verloren": 9,
+      "doelpunten_voor": 51,
+      "doelpunten_tegen": 50,
+      "doelsaldo": 1,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "HDM",
+      "gespeeld": 22,
+      "gewonnen": 7,
+      "gelijk": 5,
+      "verloren": 10,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 44,
+      "doelsaldo": -6,
+      "punten": 19,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Tilburg",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 38,
+      "doelpunten_tegen": 48,
+      "doelsaldo": -10,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Leiden",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 6,
+      "verloren": 10,
+      "doelpunten_voor": 42,
+      "doelpunten_tegen": 53,
+      "doelsaldo": -11,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Laren",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 3,
+      "verloren": 13,
+      "doelpunten_voor": 45,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -18,
+      "punten": 15,
+      "zone": ""
+    },
+    {
+      "positie": 11,
+      "club": "Hattem",
+      "gespeeld": 22,
+      "gewonnen": 4,
+      "gelijk": 6,
+      "verloren": 12,
+      "doelpunten_voor": 32,
+      "doelpunten_tegen": 67,
+      "doelsaldo": -35,
+      "punten": 14,
+      "zone": "degradatie"
+    },
+    {
+      "positie": 12,
+      "club": "Geel Zwart",
+      "gespeeld": 22,
+      "gewonnen": 1,
+      "gelijk": 1,
+      "verloren": 20,
+      "doelpunten_voor": 19,
+      "doelpunten_tegen": 79,
+      "doelsaldo": -60,
+      "punten": 3,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": null,
+      "naam": "Maarten van Grimbergen",
+      "club": "HCKZ",
+      "doelpunten": 25,
+      "vd": null,
+      "sc": null,
+      "sb": null
+    }
+  ],
+  "coaches": [],
+  "playoffs": {
+    "halve_finales": [],
+    "finale_wedstrijden": [],
+    "troostfinale": null,
+    "kampioen": "Klein Zwitserland",
+    "playout": []
+  },
+  "bijgewerkt": "2026-04-05"
+}
