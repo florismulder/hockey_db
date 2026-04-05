@@ -1,0 +1,665 @@
+{
+  "seizoen": "2015-2016",
+  "slug": "2015_2016",
+  "geslacht": "heren",
+  "kampioen": "Oranje Zwart",
+  "vicekampioen": "Amsterdam",
+  "gedegradeerd": [
+    "Voordaan",
+    "SCHC",
+    "Schaerweijde"
+  ],
+  "stand": [
+    {
+      "positie": 1,
+      "club": "Amsterdam",
+      "gespeeld": 22,
+      "gewonnen": 15,
+      "gelijk": 4,
+      "verloren": 3,
+      "doelpunten_voor": 87,
+      "doelpunten_tegen": 45,
+      "doelsaldo": 42,
+      "punten": 49,
+      "zone": "playoff"
+    },
+    {
+      "positie": 2,
+      "club": "Oranje Zwart",
+      "gespeeld": 22,
+      "gewonnen": 16,
+      "gelijk": 0,
+      "verloren": 6,
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 34,
+      "punten": 48,
+      "zone": "playoff"
+    },
+    {
+      "positie": 3,
+      "club": "HGC",
+      "gespeeld": 22,
+      "gewonnen": 13,
+      "gelijk": 4,
+      "verloren": 5,
+      "doelpunten_voor": 66,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 25,
+      "punten": 43,
+      "zone": "playoff"
+    },
+    {
+      "positie": 4,
+      "club": "Kampong",
+      "gespeeld": 22,
+      "gewonnen": 12,
+      "gelijk": 6,
+      "verloren": 4,
+      "doelpunten_voor": 59,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 20,
+      "punten": 42,
+      "zone": "playoff"
+    },
+    {
+      "positie": 5,
+      "club": "Bloemendaal",
+      "gespeeld": 22,
+      "gewonnen": 11,
+      "gelijk": 6,
+      "verloren": 5,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 30,
+      "doelsaldo": 23,
+      "punten": 39,
+      "zone": ""
+    },
+    {
+      "positie": 6,
+      "club": "Rotterdam",
+      "gespeeld": 22,
+      "gewonnen": 10,
+      "gelijk": 8,
+      "verloren": 4,
+      "doelpunten_voor": 53,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 14,
+      "punten": 38,
+      "zone": ""
+    },
+    {
+      "positie": 7,
+      "club": "Hurley",
+      "gespeeld": 22,
+      "gewonnen": 8,
+      "gelijk": 3,
+      "verloren": 11,
+      "doelpunten_voor": 46,
+      "doelpunten_tegen": 58,
+      "doelsaldo": -12,
+      "punten": 27,
+      "zone": ""
+    },
+    {
+      "positie": 8,
+      "club": "Den Bosch",
+      "gespeeld": 22,
+      "gewonnen": 6,
+      "gelijk": 4,
+      "verloren": 12,
+      "doelpunten_voor": 43,
+      "doelpunten_tegen": 59,
+      "doelsaldo": -16,
+      "punten": 22,
+      "zone": ""
+    },
+    {
+      "positie": 9,
+      "club": "Pinoké",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 3,
+      "verloren": 14,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 63,
+      "doelsaldo": -16,
+      "punten": 18,
+      "zone": ""
+    },
+    {
+      "positie": 10,
+      "club": "Schaerweijde",
+      "gespeeld": 22,
+      "gewonnen": 5,
+      "gelijk": 2,
+      "verloren": 15,
+      "doelpunten_voor": 31,
+      "doelpunten_tegen": 73,
+      "doelsaldo": -42,
+      "punten": 17,
+      "zone": "playout"
+    },
+    {
+      "positie": 11,
+      "club": "SCHC",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 6,
+      "verloren": 13,
+      "doelpunten_voor": 36,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -25,
+      "punten": 15,
+      "zone": "playout"
+    },
+    {
+      "positie": 12,
+      "club": "Voordaan",
+      "gespeeld": 22,
+      "gewonnen": 3,
+      "gelijk": 4,
+      "verloren": 15,
+      "doelpunten_voor": 29,
+      "doelpunten_tegen": 76,
+      "doelsaldo": -47,
+      "punten": 13,
+      "zone": "degradatie"
+    }
+  ],
+  "topscorers": [
+    {
+      "rang": 1,
+      "naam": "Gonzalo Peillat",
+      "club": "HGC",
+      "doelpunten": 33,
+      "vd": 0,
+      "sc": 31,
+      "sb": 2
+    },
+    {
+      "rang": 2,
+      "naam": "Mirco Pruyser",
+      "club": "Amsterdam",
+      "doelpunten": 28,
+      "vd": 25,
+      "sc": 3,
+      "sb": 0
+    },
+    {
+      "rang": 3,
+      "naam": "Mink van der Weerden",
+      "club": "Oranje Zwart",
+      "doelpunten": 19,
+      "vd": 2,
+      "sc": 16,
+      "sb": 1
+    },
+    {
+      "rang": 4,
+      "naam": "Robert Tigges",
+      "club": "Amsterdam",
+      "doelpunten": 18,
+      "vd": 13,
+      "sc": 5,
+      "sb": 0
+    },
+    {
+      "rang": 5,
+      "naam": "Timmo Kranstauber",
+      "club": "Rotterdam",
+      "doelpunten": 15,
+      "vd": 3,
+      "sc": 12,
+      "sb": 0
+    }
+  ],
+  "coaches": [
+    {
+      "club": "Amsterdamsche H&BC",
+      "naam": "Dirk Loots"
+    },
+    {
+      "club": "HC Bloemendaal",
+      "naam": "Laurence Docherty"
+    },
+    {
+      "club": "HC Den Bosch",
+      "naam": "Eric Verboom"
+    },
+    {
+      "club": "HGC",
+      "naam": "Jan Jorn van 't Land"
+    },
+    {
+      "club": "Hurley",
+      "naam": "Simon Organ"
+    },
+    {
+      "club": "SV Kampong",
+      "naam": "Alexander Cox"
+    },
+    {
+      "club": "Oranje Zwart",
+      "naam": "Michel van den Heuvel"
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Hans Streeder"
+    },
+    {
+      "club": "HC Rotterdam",
+      "naam": "Reinoud Wolff"
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Bas Bogaard"
+    },
+    {
+      "club": "SCHC",
+      "naam": "Albert Kees Manenschijn"
+    },
+    {
+      "club": "Voordaan",
+      "naam": "Marieke Dijkstra"
+    }
+  ],
+  "playoffs": {
+    "halve_finales": [
+      {
+        "thuis": "Kampong",
+        "uit": "Amsterdam",
+        "score": "4-2",
+        "datum": "27 april 2016",
+        "scorers": [
+          {
+            "naam": "Bouwens",
+            "club": "Kampong",
+            "minuut": 45
+          },
+          {
+            "naam": "Kellerman",
+            "club": "Kampong",
+            "minuut": 51
+          },
+          {
+            "naam": "Kellerman",
+            "club": "Kampong",
+            "minuut": 63
+          },
+          {
+            "naam": "Meulenbroek",
+            "club": "Kampong",
+            "minuut": 59
+          },
+          {
+            "naam": "Bakker",
+            "club": "Amsterdam",
+            "minuut": 46
+          },
+          {
+            "naam": "Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 46
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "HGC",
+        "uit": "Oranje Zwart",
+        "score": "0-0 (SO 3-4)",
+        "datum": "27 april 2016",
+        "scorers": [],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "3-2",
+        "datum": "30 april 2016",
+        "scorers": [
+          {
+            "naam": "Pruyser",
+            "club": "Amsterdam",
+            "minuut": 20
+          },
+          {
+            "naam": "Pruyser",
+            "club": "Amsterdam",
+            "minuut": 68
+          },
+          {
+            "naam": "Bakker",
+            "club": "Amsterdam",
+            "minuut": 72
+          },
+          {
+            "naam": "Caspers",
+            "club": "Kampong",
+            "minuut": 8
+          },
+          {
+            "naam": "Havenga",
+            "club": "Kampong",
+            "minuut": 58
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "HGC",
+        "score": "1-1 (SO 2-4)",
+        "datum": "30 april 2016",
+        "scorers": [
+          {
+            "naam": "Van Dijk",
+            "club": "Oranje Zwart",
+            "minuut": 12
+          },
+          {
+            "naam": "Peillat",
+            "club": "HGC",
+            "minuut": 48
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Kampong",
+        "score": "3-1",
+        "datum": "1 mei 2016",
+        "scorers": [
+          {
+            "naam": "Pruyser",
+            "club": "Amsterdam",
+            "minuut": 6
+          },
+          {
+            "naam": "Leijs",
+            "club": "Amsterdam",
+            "minuut": 65
+          },
+          {
+            "naam": "Bakker",
+            "club": "Amsterdam",
+            "minuut": 70
+          },
+          {
+            "naam": "Jonker",
+            "club": "Kampong",
+            "minuut": 10
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "HGC",
+        "score": "3-0",
+        "datum": "1 mei 2016",
+        "scorers": [
+          {
+            "naam": "Van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 7
+          },
+          {
+            "naam": "Van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 26
+          },
+          {
+            "naam": "De Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 40
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "finale_wedstrijden": [
+      {
+        "thuis": "Oranje Zwart",
+        "uit": "Amsterdam",
+        "score": "1-2",
+        "datum": "5 mei 2016",
+        "scorers": [
+          {
+            "naam": "Galema",
+            "club": "Oranje Zwart",
+            "minuut": 5
+          },
+          {
+            "naam": "Bain",
+            "club": "Amsterdam",
+            "minuut": 13
+          },
+          {
+            "naam": "Verga",
+            "club": "Amsterdam",
+            "minuut": 65
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "2-3",
+        "datum": "7 mei 2016",
+        "scorers": [
+          {
+            "naam": "Pruyser",
+            "club": "Amsterdam",
+            "minuut": 28
+          },
+          {
+            "naam": "Bain",
+            "club": "Amsterdam",
+            "minuut": 31
+          },
+          {
+            "naam": "Van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 44
+          },
+          {
+            "naam": "Galema",
+            "club": "Oranje Zwart",
+            "minuut": 57
+          },
+          {
+            "naam": "Galema",
+            "club": "Oranje Zwart",
+            "minuut": 69
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "Oranje Zwart",
+        "score": "2-3",
+        "datum": "8 mei 2016",
+        "scorers": [
+          {
+            "naam": "Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 25
+          },
+          {
+            "naam": "Reid-Ross",
+            "club": "Amsterdam",
+            "minuut": 58
+          },
+          {
+            "naam": "Van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 3
+          },
+          {
+            "naam": "Van der Weerden",
+            "club": "Oranje Zwart",
+            "minuut": 19
+          },
+          {
+            "naam": "De Voogd",
+            "club": "Oranje Zwart",
+            "minuut": 53
+          }
+        ],
+        "notitie": ""
+      }
+    ],
+    "troostfinale": {
+      "thuis": "HGC",
+      "uit": "Kampong",
+      "score": "2-4",
+      "datum": "7 mei 2016",
+      "scorers": [
+        {
+          "naam": "Peillat",
+          "club": "HGC",
+          "minuut": 37
+        },
+        {
+          "naam": "Van Kan",
+          "club": "HGC",
+          "minuut": 41
+        },
+        {
+          "naam": "B. Phijffer",
+          "club": "Kampong",
+          "minuut": 21
+        },
+        {
+          "naam": "Meulenbroek",
+          "club": "Kampong",
+          "minuut": 48
+        },
+        {
+          "naam": "Kemperman",
+          "club": "Kampong",
+          "minuut": 58
+        },
+        {
+          "naam": "Jonker",
+          "club": "Kampong",
+          "minuut": 65
+        }
+      ],
+      "notitie": ""
+    },
+    "kampioen": "Oranje Zwart",
+    "playout": [
+      {
+        "thuis": "Almere",
+        "uit": "SCHC",
+        "score": "2-1",
+        "datum": "18 mei 2016",
+        "scorers": [
+          {
+            "naam": "Erwin Kruisbrink",
+            "club": "Almere",
+            "minuut": 45
+          },
+          {
+            "naam": "Dider Meijer",
+            "club": "Almere",
+            "minuut": 79
+          },
+          {
+            "naam": "Roderic Schwirtz",
+            "club": "SCHC",
+            "minuut": 61
+          }
+        ],
+        "notitie": "na verlenging"
+      },
+      {
+        "thuis": "SCHC",
+        "uit": "Almere",
+        "score": "0-2",
+        "datum": "21 mei 2016",
+        "scorers": [
+          {
+            "naam": "Koen van Hamersveld",
+            "club": "Almere",
+            "minuut": 31
+          },
+          {
+            "naam": "Manuel Verga",
+            "club": "Almere",
+            "minuut": 67
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Schaerweijde",
+        "score": "2-1",
+        "datum": "18 mei 2016",
+        "scorers": [
+          {
+            "naam": "Jaap Groels",
+            "club": "Tilburg",
+            "minuut": 10
+          },
+          {
+            "naam": "Joep de Natris",
+            "club": "Tilburg",
+            "minuut": 24
+          },
+          {
+            "naam": "Eli Matheson",
+            "club": "Schaerweijde",
+            "minuut": 66
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Schaerweijde",
+        "uit": "Tilburg",
+        "score": "2-2 (SO 5-4)",
+        "datum": "21 mei 2016",
+        "scorers": [
+          {
+            "naam": "Daan Dullemeijer",
+            "club": "Schaerweijde",
+            "minuut": 47
+          },
+          {
+            "naam": "Tim Swaen",
+            "club": "Schaerweijde",
+            "minuut": 57
+          },
+          {
+            "naam": "Tim Swaen",
+            "club": "Schaerweijde",
+            "minuut": 70
+          },
+          {
+            "naam": "Casper Horn",
+            "club": "Tilburg",
+            "minuut": 65
+          }
+        ],
+        "notitie": "Schaerweijde wint na shoot-outs: 5-4."
+      },
+      {
+        "thuis": "Tilburg",
+        "uit": "Schaerweijde",
+        "score": "2-1",
+        "datum": "22 mei 2016",
+        "scorers": [],
+        "notitie": ""
+      }
+    ]
+  },
+  "bijgewerkt": "2026-04-05"
+}
