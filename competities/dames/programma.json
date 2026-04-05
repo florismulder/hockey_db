@@ -544,6 +544,61 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Tilburg",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Yara Akkerman",
+          "club": "HDM",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "HDM",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Iris Dominicus",
+          "club": "Tilburg",
+          "minuut": 60,
+          "type": "veld"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -2116,5 +2171,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T18:48:28.040Z"
+  "bijgewerkt": "2026-04-05T18:48:29.489Z"
 }
