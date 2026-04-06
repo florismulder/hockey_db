@@ -2224,6 +2224,36 @@
     },
     {
       "thuis": "Pinoké",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-11-16",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 42,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Pinoké",
       "uit": "Bloemendaal",
       "score_thuis": 2,
       "score_uit": 2,
@@ -4380,5 +4410,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:54:00.440Z"
+  "bijgewerkt": "2026-04-06T04:54:02.040Z"
 }
