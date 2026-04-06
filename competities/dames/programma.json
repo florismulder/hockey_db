@@ -2163,6 +2163,79 @@
       ]
     },
     {
+      "thuis": "SCHC",
+      "uit": "Hurley",
+      "score_thuis": 7,
+      "score_uit": 1,
+      "datum": "2026-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Michelle van der Drift",
+          "club": "Hurley",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Chrisje van der Salm",
+          "club": "Hurley",
+          "minuut": 19,
+          "type": "groen"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 45,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Hurley",
       "uit": "Pinoké",
       "score_thuis": 0,
@@ -3129,5 +3202,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:18.348Z"
+  "bijgewerkt": "2026-04-06T04:53:19.976Z"
 }
