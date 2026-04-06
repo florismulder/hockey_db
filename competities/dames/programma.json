@@ -2114,6 +2114,73 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Pinoké",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2025-10-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thirsa Kho",
+          "club": "Oranje-Rood",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Merel Voermans",
+          "club": "Oranje-Rood",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Babs van Hest",
+          "club": "Oranje-Rood",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 35,
+          "type": "groen"
+        },
+        {
+          "naam": "Brechje Scheepers",
+          "club": "Oranje-Rood",
+          "minuut": 43,
+          "type": "groen"
+        },
+        {
+          "naam": "Vivienne Peters",
+          "club": "Oranje-Rood",
+          "minuut": 57,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "HGC",
       "score_thuis": 1,
@@ -5058,5 +5125,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:54:24.413Z"
+  "bijgewerkt": "2026-04-06T04:54:25.925Z"
 }
