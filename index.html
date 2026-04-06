@@ -656,6 +656,7 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
 function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   const [clubTeamNieuws, setClubTeamNieuws] = useState([]);
   const [nieuwsPagina, setNieuwsPagina] = useState(0);
+  const [coach, setCoach] = useState(null);
   const ITEMS_PER_PAGE = 5;
 
   const oranjeCheck = (naam) => {
@@ -676,6 +677,20 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
       .catch(()=>{ setClubTeamNieuws([]); });
   }, [club]);
 
+  useEffect(()=>{
+    fetch(`competities/${geslacht}/coaches.json`)
+      .then(r=>r.json())
+      .then(d=>{
+        const coaches = d.coaches || [];
+        // Huidige coach = tot===null of geen tot veld, voor deze club
+        const huidig = coaches.filter(c =>
+          c.club === club && (c.tot === null || c.tot === undefined || c.tot === "")
+        );
+        setCoach(huidig.length > 0 ? huidig[huidig.length - 1] : null);
+      })
+      .catch(()=>setCoach(null));
+  }, [club, geslacht]);
+
   const clubWedstrijden = programma.filter(w => (w.thuis||"").includes(club) || (w.uit||"").includes(club));
   const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).sort((a,b) => new Date(b.datum||0) - new Date(a.datum||0));
   const komend = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
@@ -692,7 +707,10 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
           <div style={{fontSize:28,fontWeight:700,letterSpacing:"-.5px"}}>{club}</div>
           <button onClick={()=>nav("club_historie",{club,geslacht})} style={{background:"none",border:"none",padding:0,color:"var(--accent)",fontWeight:600,fontSize:13,cursor:"pointer",fontFamily:"inherit"}}>Historie ›</button>
         </div>
-        <div style={{fontSize:12,color:"var(--muted)",marginTop:4}}>{clubSpelers.length} spelers · seizoen 2025-2026</div>
+        <div style={{fontSize:12,color:"var(--muted)",marginTop:4,display:"flex",gap:12,flexWrap:"wrap"}}>
+          <span>{clubSpelers.length} spelers · seizoen 2025-2026</span>
+          {coach&&<span>🎽 Coach: <span style={{color:"var(--text)",fontWeight:600}}>{coach.naam}</span>{coach.sinds?` (vanaf ${coach.sinds})`:""}</span>}
+        </div>
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
@@ -1483,6 +1501,17 @@ function HistoriePagina({nav}) {
                           ))}
                         </tbody>
                       </table>
+                    </div>
+                  )}
+                  {detail.coaches?.length>0&&(
+                    <div style={{marginTop:16,borderTop:"1px solid var(--border)",paddingTop:12}}>
+                      <div className="ds" style={{marginTop:0}}>Coaches</div>
+                      {detail.coaches.map((c,i)=>(
+                        <div key={i} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"4px 0",borderBottom:"1px solid var(--border)",fontSize:12}}>
+                          <span style={{fontWeight:600}}>{c.naam}</span>
+                          <span style={{color:"var(--muted)",fontSize:11}}>{c.club}</span>
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
