@@ -2291,6 +2291,55 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "HGC",
+      "score_thuis": 5,
+      "score_uit": 0,
+      "datum": "2026-03-08",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "minuut": 52,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "HGC",
       "uit": "Kampong",
       "score_thuis": 1,
@@ -3568,5 +3617,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:30.927Z"
+  "bijgewerkt": "2026-04-06T04:53:32.517Z"
 }
