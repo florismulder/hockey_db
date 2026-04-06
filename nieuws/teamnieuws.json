@@ -1663,6 +1663,19 @@
   ],
   "HDM": [
     {
+      "datum": "2026-01-20",
+      "titel": "Van den Broek_ rushes en ruzie met de vloer op verrassende zondag",
+      "link": "https://drive.google.com/file/d/1V6Enyd8ATiMEXFqxlGOAc0_BsgTekVWl",
+      "bullets": [
+        "Verloor met 3-2 van Hurley.",
+        "Won met 7-3 van Huizen.",
+        "Behield de tweede plek in de poule.",
+        "Heeft play-offs nog volledig in eigen hand.",
+        "Verloor van HGC een week eerder."
+      ],
+      "competitie": "HK"
+    },
+    {
       "datum": "2025-11-14",
       "titel": "Croon gaat de wereld rond_ van Argentinië tot China in de winter",
       "link": "https://drive.google.com/file/d/18_8yKg59C_M71mFeLx7G37m65FHduKn5",
@@ -3521,6 +3534,16 @@
   ],
   "Huizen": [
     {
+      "datum": "2026-01-20",
+      "titel": "Van den Broek_ rushes en ruzie met de vloer op verrassende zondag",
+      "link": "https://drive.google.com/file/d/1V6Enyd8ATiMEXFqxlGOAc0_BsgTekVWl",
+      "bullets": [
+        "Verloor met 7-3 van HDM.",
+        "Degradeerde uit de Hoofdklasse."
+      ],
+      "competitie": "HK"
+    },
+    {
       "datum": "2025-08-24",
       "titel": "Elf nieuwe gezichten voor Schaerweijde_ ‘We krijgen het zwaar’",
       "link": "https://drive.google.com/file/d/1zDKcH7HxMe_Fss5JPyICl9htcsdlOwmI",
@@ -3533,6 +3556,15 @@
     }
   ],
   "Hurley": [
+    {
+      "datum": "2026-01-20",
+      "titel": "Van den Broek_ rushes en ruzie met de vloer op verrassende zondag",
+      "link": "https://drive.google.com/file/d/1V6Enyd8ATiMEXFqxlGOAc0_BsgTekVWl",
+      "bullets": [
+        "Won met 3-2 van HDM."
+      ],
+      "competitie": "HK"
+    },
     {
       "datum": "2025-11-16",
       "titel": "Roberts weer fit na heupblessure_ 'Droom nog steeds van het WK'",
@@ -4308,6 +4340,15 @@
     }
   ],
   "HGC": [
+    {
+      "datum": "2026-01-20",
+      "titel": "Van den Broek_ rushes en ruzie met de vloer op verrassende zondag",
+      "link": "https://drive.google.com/file/d/1V6Enyd8ATiMEXFqxlGOAc0_BsgTekVWl",
+      "bullets": [
+        "Won van HDM een week eerder."
+      ],
+      "competitie": "HK"
+    },
     {
       "datum": "2025-11-26",
       "titel": "Carrousel HK_ Raposo vertrekt na anderhalf seizoen bij HGC",
