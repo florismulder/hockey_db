@@ -2114,6 +2114,48 @@
       ]
     },
     {
+      "thuis": "SCHC",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-11-15",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Isa Huybers",
+          "club": "Bloemendaal",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Rosalie Rosman",
+          "club": "Bloemendaal",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Den Bosch",
       "uit": "Oranje-Rood",
       "score_thuis": 2,
@@ -4453,5 +4495,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:54:03.691Z"
+  "bijgewerkt": "2026-04-06T04:54:05.287Z"
 }
