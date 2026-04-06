@@ -54,6 +54,16 @@ function formatNieuwsDatum(str) {
 
 function stripTeam(naam) { return naam ? naam.replace(/\s+[HhDd]\d+$/,"").trim() : ""; }
 
+function ClubKnop({naam, nav, style, children}) {
+  const club = stripTeam(naam);
+  return (
+    <span onClick={e=>{e.stopPropagation();nav("club",{club});}}
+      style={{cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--border2)",textUnderlineOffset:2,...style}}>
+      {children||club}
+    </span>
+  );
+}
+
 const VANDAAG = new Date(); VANDAAG.setHours(0,0,0,0);
 const isKomend = w => { if(w.gespeeld===true) return false; if(w.gespeeld===false) return true; const d=parseDatum(w.datum||""); return !d||d>=VANDAAG; };
 const isGespeeld = w => !isKomend(w);
@@ -559,9 +569,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                     {gefilterdWedstrijden.map((w,i)=>(
                       <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
                         <span className="wd">{formatDatum(w.datum)}</span>
-                        <div className="wh" style={{fontWeight:(w.thuis||"").includes(clubFilter.club)?700:400}}>{stripTeam(w.thuis)}</div>
+                        <div className="wh" style={{fontWeight:(w.thuis||"").includes(clubFilter.club)?700:400}}><ClubKnop naam={w.thuis} nav={nav}/></div>
                         <div className="ws">{w.score_thuis??w.doelpunten_thuis??""} – {w.score_uit??w.doelpunten_uit??""}</div>
-                        <div className="wu" style={{fontWeight:(w.uit||"").includes(clubFilter.club)?700:400}}>{stripTeam(w.uit)}</div>
+                        <div className="wu" style={{fontWeight:(w.uit||"").includes(clubFilter.club)?700:400}}><ClubKnop naam={w.uit} nav={nav}/></div>
                         <span className="wa">›</span>
                       </div>
                     ))}
@@ -582,9 +592,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         <div className="wl">
                           {groep.wedstrijden.map((w,i)=>(
                             <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                              <div className="wh">{stripTeam(w.thuis)}</div>
+                              <div className="wh"><ClubKnop naam={w.thuis} nav={nav}/></div>
                               <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                              <div className="wu">{stripTeam(w.uit)}</div>
+                              <div className="wu"><ClubKnop naam={w.uit} nav={nav}/></div>
                               <span className="wa">›</span>
                             </div>
                           ))}
@@ -610,9 +620,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                           <div className="wl">
                             {wedstrijden.map((w,i)=>(
                               <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                                <div className="wh">{stripTeam(w.thuis)}</div>
+                                <div className="wh"><ClubKnop naam={w.thuis} nav={nav}/></div>
                                 <div className="ws k">{w.tijdstip||"–"}</div>
-                                <div className="wu">{stripTeam(w.uit)}</div>
+                                <div className="wu"><ClubKnop naam={w.uit} nav={nav}/></div>
                                 <span className="wa">›</span>
                               </div>
                             ))}
@@ -750,9 +760,9 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
               {gespeeld.map((w,i) => (
                 <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
                   <span className="wd">{formatDatum(w.datum)}</span>
-                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}><ClubKnop naam={w.thuis} nav={nav}/></div>
                   <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}><ClubKnop naam={w.uit} nav={nav}/></div>
                   <span className="wa">›</span>
                 </div>
               ))}
@@ -766,9 +776,9 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
               {komend.map((w,i) => (
                 <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
                   <span className="wd">{formatDatum(w.datum)}</span>
-                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}>{w.thuis}</div>
+                  <div className="wh" style={{fontWeight:(w.thuis||"").includes(club)?700:400}}><ClubKnop naam={w.thuis} nav={nav}/></div>
                   <div className="ws k">{w.tijdstip||"–"}</div>
-                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}>{w.uit}</div>
+                  <div className="wu" style={{fontWeight:(w.uit||"").includes(club)?700:400}}><ClubKnop naam={w.uit} nav={nav}/></div>
                   <span className="wa">›</span>
                 </div>
               ))}
@@ -1035,15 +1045,23 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
               <table style={{borderCollapse:"collapse",width:"100%"}}>
                 <thead><tr>{["'","Stand","Naam","Club","Type"].map((h,i)=><th key={i} style={{fontSize:10,fontWeight:600,textTransform:"uppercase",color:"var(--muted)",padding:"0 10px 8px",textAlign:i<=1?"center":"left",borderBottom:"1px solid var(--border2)"}}>{h}</th>)}</tr></thead>
                 <tbody>
-                  {w.scorers.map((s,i)=>(
-                    <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
-                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,color:"var(--accent)",fontWeight:700}}>{s.minuut!=null?s.minuut+"'":"–"}</td>
-                      <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,fontWeight:700}}>{s.stand||""}</td>
-                      <td style={{padding:"7px 10px",fontSize:13,fontWeight:500}}><SpelerLink naam={s.naam}/></td>
-                      <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)"}}>{s.club}</td>
-                      <td style={{padding:"7px 10px"}}>{s.type&&s.type!=="veld"&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:600}}>{s.type.toUpperCase()}</span>}</td>
-                    </tr>
-                  ))}
+                  {(()=>{
+                    let st=0, su=0;
+                    return w.scorers.map((s,i)=>{
+                      const isThuis = s.club && w.thuis && (w.thuis.toLowerCase().includes(s.club.toLowerCase()) || s.club.toLowerCase().includes(w.thuis.replace(/\s+[HhDd]\d+$/,"").trim().toLowerCase()));
+                      if(isThuis) st++; else su++;
+                      const standTekst = `${st}-${su}`;
+                      return (
+                        <tr key={i} style={{borderBottom:"1px solid var(--border)"}}>
+                          <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,color:"var(--accent)",fontWeight:700}}>{s.minuut!=null?s.minuut+"'":"–"}</td>
+                          <td style={{padding:"7px 10px",textAlign:"center",fontFamily:"monospace",fontSize:12,fontWeight:700,color:"var(--text)"}}>{standTekst}</td>
+                          <td style={{padding:"7px 10px",fontSize:13,fontWeight:500}}><SpelerLink naam={s.naam}/></td>
+                          <td style={{padding:"7px 10px",fontSize:12,color:"var(--muted)"}}>{s.club}</td>
+                          <td style={{padding:"7px 10px"}}>{s.type&&s.type!=="veld"&&<span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:600}}>{s.type.toUpperCase()}</span>}</td>
+                        </tr>
+                      );
+                    });
+                  })()}
                 </tbody>
               </table>
             </div>
