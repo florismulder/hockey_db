@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-05",
+  "bijgewerkt": "2026-04-06",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -364,9 +364,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 3,
+      "doelpunten_seizoen": 2,
       "vd": 1,
-      "sc": 2,
+      "sc": 1,
       "sb": 0
     },
     {
@@ -444,9 +444,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 2,
+      "doelpunten_seizoen": 1,
       "vd": 1,
-      "sc": 1,
+      "sc": 0,
       "sb": 0
     },
     {
@@ -476,8 +476,8 @@
       "nationaliteit": "",
       "land_code": "ZA",
       "oranje": "",
-      "doelpunten_seizoen": 10,
-      "vd": 9,
+      "doelpunten_seizoen": 9,
+      "vd": 8,
       "sc": 1,
       "sb": 0
     },
@@ -604,8 +604,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 4,
+      "doelpunten_seizoen": 3,
+      "vd": 3,
       "sc": 0,
       "sb": 0
     },
@@ -1116,9 +1116,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 13,
-      "vd": 13,
-      "sc": 0,
+      "doelpunten_seizoen": 12,
+      "vd": 0,
+      "sc": 12,
       "sb": 0
     },
     {
@@ -1788,8 +1788,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 9,
-      "vd": 8,
+      "doelpunten_seizoen": 8,
+      "vd": 7,
       "sc": 1,
       "sb": 0
     },
@@ -1804,9 +1804,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 19,
+      "doelpunten_seizoen": 18,
       "vd": 0,
-      "sc": 16,
+      "sc": 15,
       "sb": 3
     },
     {
@@ -1932,8 +1932,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 8,
-      "vd": 6,
+      "doelpunten_seizoen": 7,
+      "vd": 5,
       "sc": 2,
       "sb": 0
     },
@@ -2700,8 +2700,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "jong",
-      "doelpunten_seizoen": 4,
-      "vd": 4,
+      "doelpunten_seizoen": 3,
+      "vd": 3,
       "sc": 0,
       "sb": 0
     },
@@ -3484,10 +3484,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 0,
-      "sc": 0,
-      "sb": 1
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "daan_dekker",
@@ -4204,9 +4204,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 4,
+      "doelpunten_seizoen": 3,
       "vd": 0,
-      "sc": 4,
+      "sc": 3,
       "sb": 0
     },
     {
@@ -4524,9 +4524,9 @@
       "nationaliteit": "",
       "land_code": "US",
       "oranje": "",
-      "doelpunten_seizoen": 9,
+      "doelpunten_seizoen": 7,
       "vd": 0,
-      "sc": 8,
+      "sc": 6,
       "sb": 1
     },
     {
@@ -4556,9 +4556,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 2,
+      "doelpunten_seizoen": 1,
       "vd": 0,
-      "sc": 2,
+      "sc": 1,
       "sb": 0
     },
     {
@@ -4668,8 +4668,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 5,
-      "vd": 5,
+      "doelpunten_seizoen": 4,
+      "vd": 4,
       "sc": 0,
       "sb": 0
     },
@@ -4956,8 +4956,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 2,
+      "doelpunten_seizoen": 3,
+      "vd": 1,
       "sc": 2,
       "sb": 0
     },
@@ -5580,9 +5580,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 7,
+      "doelpunten_seizoen": 6,
       "vd": 0,
-      "sc": 7,
+      "sc": 6,
       "sb": 0
     },
     {
@@ -5660,9 +5660,9 @@
       "nationaliteit": "",
       "land_code": "GB-SCT",
       "oranje": "",
-      "doelpunten_seizoen": 22,
-      "vd": 13,
-      "sc": 9,
+      "doelpunten_seizoen": 19,
+      "vd": 11,
+      "sc": 8,
       "sb": 0
     },
     {
@@ -5676,8 +5676,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 11,
-      "vd": 9,
+      "doelpunten_seizoen": 10,
+      "vd": 8,
       "sc": 0,
       "sb": 2
     },
@@ -5708,9 +5708,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 5,
+      "doelpunten_seizoen": 4,
       "vd": 3,
-      "sc": 2,
+      "sc": 1,
       "sb": 0
     },
     {
@@ -6332,9 +6332,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 14,
+      "doelpunten_seizoen": 13,
       "vd": 6,
-      "sc": 8,
+      "sc": 7,
       "sb": 0
     },
     {
@@ -7068,8 +7068,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 9,
-      "vd": 8,
+      "doelpunten_seizoen": 8,
+      "vd": 7,
       "sc": 1,
       "sb": 0
     },
@@ -7196,8 +7196,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "jong",
-      "doelpunten_seizoen": 8,
-      "vd": 8,
+      "doelpunten_seizoen": 7,
+      "vd": 7,
       "sc": 0,
       "sb": 0
     },
@@ -7212,8 +7212,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 5,
-      "vd": 5,
+      "doelpunten_seizoen": 4,
+      "vd": 4,
       "sc": 0,
       "sb": 0
     },
@@ -7324,8 +7324,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 5,
-      "vd": 2,
+      "doelpunten_seizoen": 4,
+      "vd": 1,
       "sc": 1,
       "sb": 2
     },
@@ -7516,8 +7516,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 3,
+      "doelpunten_seizoen": 3,
+      "vd": 2,
       "sc": 1,
       "sb": 0
     },
@@ -8380,10 +8380,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 9,
-      "vd": 6,
-      "sc": 3,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "zach_wallace",
@@ -8396,10 +8396,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 3,
-      "sc": 0,
-      "sb": 1
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "eduardo_de_ignacio_simo",
@@ -8412,10 +8412,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 4,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "thies_pinz",
@@ -8428,10 +8428,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 4,
-      "vd": 4,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "pepijn_reyenga",
@@ -8444,10 +8444,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "rick_van_de_ijssel",
@@ -8460,10 +8460,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "laurens_van_nievelstein",
@@ -8476,10 +8476,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "nico_keenan",
@@ -8492,10 +8492,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     },
     {
       "id": "kenny_bain",
@@ -8508,10 +8508,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
-      "sc": 0,
-      "sb": 0
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     }
   ]
 }
