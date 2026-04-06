@@ -2114,6 +2114,49 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-07",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Yara Akkerman",
+          "club": "HDM",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 39,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Flo Klinkhamer",
+          "club": "Pinoké",
+          "minuut": 44,
+          "type": "groen"
+        },
+        {
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 59,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Rotterdam",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -3660,5 +3703,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:35.512Z"
+  "bijgewerkt": "2026-04-06T04:53:37.133Z"
 }
