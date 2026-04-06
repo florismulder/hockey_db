@@ -2114,6 +2114,49 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Oranje-Rood",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2025-11-16",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Juul van der Velden",
+          "club": "Oranje-Rood",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Pheline Vos",
+          "club": "Oranje-Rood",
+          "minuut": 58,
+          "type": "geel"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Bloemendaal",
       "score_thuis": 2,
@@ -4271,5 +4314,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:55.940Z"
+  "bijgewerkt": "2026-04-06T04:53:57.459Z"
 }
