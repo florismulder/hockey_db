@@ -1,0 +1,85 @@
+{
+  "geslacht": "heren",
+  "seizoen": "2025-2026",
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Rick Mathijssen",
+      "sinds": "2025-09-13",
+      "tot": null
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "Michel van den Heuvel",
+      "sinds": "2025-09-13",
+      "tot": null
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Nanco Jansonius",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "HDM",
+      "naam": "Ivar Knötschke",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Hurley",
+      "naam": "Enzo Torossi",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Kampong",
+      "naam": "Tim Oudenaller",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Klein Zwitserland",
+      "naam": "Robbert-Jan de Vos",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Laren",
+      "naam": "Allard van Heemstra",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Laren",
+      "naam": "Sjoerd Marijne",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Ageeth Boomgaardt",
+      "sinds": "2025-09-13",
+      "tot": null
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Kasper Vrolijk",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Erik van Driel",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Schaerweijde",
+      "naam": "Razwan Ahmed",
+      "sinds": null,
+      "tot": null
+    }
+  ],
+  "bijgewerkt": "2026-04-06"
+}
