@@ -2182,6 +2182,61 @@
       ]
     },
     {
+      "thuis": "Amsterdam",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-11-09",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Renske Balemans",
+          "club": "Amsterdam",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Kiki Rozemeijer",
+          "club": "Pinoké",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Renske Balemans",
+          "club": "Amsterdam",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Nina van der Marel",
+          "club": "Pinoké",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 47,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Elin van Erk",
+          "club": "Pinoké",
+          "minuut": 54,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 60,
+          "type": "gele kaart"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Bloemendaal",
       "score_thuis": 3,
@@ -4563,5 +4618,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:54:08.411Z"
+  "bijgewerkt": "2026-04-06T04:54:10.017Z"
 }
