@@ -2163,6 +2163,55 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Pinoké",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-03-21",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Bente Jager",
+          "club": "Pinoké",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Nina van der Marel",
+          "club": "Pinoké",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Olivia Huisman",
+          "club": "Hurley",
+          "minuut": 9,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 26,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Anouk Stam",
+          "club": "Pinoké",
+          "minuut": 26,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Sanne Caarls",
+          "club": "Hurley",
+          "minuut": 40,
+          "type": "gele kaart"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "Amsterdam",
       "score_thuis": 0,
@@ -3080,5 +3129,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:16.774Z"
+  "bijgewerkt": "2026-04-06T04:53:18.348Z"
 }
