@@ -2163,6 +2163,49 @@
       ]
     },
     {
+      "thuis": "HGC",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-14",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carlijn van Geest",
+          "club": "HGC",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tessel Huibregtsen",
+          "club": "HGC",
+          "minuut": 19,
+          "type": "groen"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 48,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Hurley",
       "score_thuis": 7,
@@ -3397,5 +3440,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:26.199Z"
+  "bijgewerkt": "2026-04-06T04:53:27.862Z"
 }
