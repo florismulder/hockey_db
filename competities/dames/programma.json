@@ -2157,6 +2157,54 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Tilburg",
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2025-11-16",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Chrisje van der Salm",
+          "club": "Hurley",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Bloemendaal",
       "score_thuis": 2,
@@ -4314,5 +4362,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:57.459Z"
+  "bijgewerkt": "2026-04-06T04:53:58.971Z"
 }
