@@ -2211,6 +2211,48 @@
       "kaarten": []
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-10-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Maartje Krekelaar",
+          "club": "Den Bosch",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Suus Meininger",
+          "club": "Den Bosch",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Hurley",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Annelotte Nijhuis",
+          "club": "Hurley",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "HGC",
       "score_thuis": 1,
@@ -5155,5 +5197,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:54:27.468Z"
+  "bijgewerkt": "2026-04-06T04:54:28.983Z"
 }
