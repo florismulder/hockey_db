@@ -4389,6 +4389,16 @@
   ],
   "Jong Oranje": [
     {
+      "datum": "2025-12-12",
+      "titel": "Van wereldreis naar WK-finale_ de wonderlijke route van Ivy Tellier",
+      "link": "https://drive.google.com/file/d/1zQaKAZQwK88jQL5oBIZRWI5ZLpnXkuU3",
+      "bullets": [
+        "Staat in een WK-finale.",
+        "Selecteerde Ivy Tellier voor een toernooi in Chili."
+      ],
+      "competitie": "WK"
+    },
+    {
       "datum": "2025-11-06",
       "titel": "WK-afvaller Dylan Lucieer_ ‘Wil niet in de slachtofferrol kruipen’ _ hockey.nl",
       "link": "https://drive.google.com/file/d/1w6HPKMCzQF4vfjyegSm3ZQND4Hk9D58A",
@@ -4420,6 +4430,20 @@
         "Knikkerde Bloemendaal via shoot-outs uit de EHL."
       ],
       "competitie": "HK"
+    }
+  ],
+  "Jong Oranje Dames": [
+    {
+      "datum": "2025-12-11",
+      "titel": "Hazen_ ‘Had alleen op de ABN-Cup een keer shoot-outs gekeept’",
+      "link": "https://drive.google.com/file/d/1NYJImOzL99mVu0cBP5Rrh9Ah0JArpXqI",
+      "bullets": [
+        "Bereikte de finale van het WK.",
+        "Versloeg België in de halve eindstrijd van het WK.",
+        "Kreeg geen doelpunten tegen in de halve finale.",
+        "Speelde tegen Chili, Maleisië en Engeland in eerdere rondes."
+      ],
+      "competitie": "WK"
     }
   ]
 }
