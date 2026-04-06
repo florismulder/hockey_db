@@ -2340,6 +2340,49 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-08",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 49,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Isa Huybers",
+          "club": "Bloemendaal",
+          "minuut": 38,
+          "type": "groen"
+        },
+        {
+          "naam": "Taheera Augousti",
+          "club": "Hurley",
+          "minuut": 41,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "HGC",
       "uit": "Kampong",
       "score_thuis": 1,
@@ -3617,5 +3660,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:32.517Z"
+  "bijgewerkt": "2026-04-06T04:53:34.022Z"
 }
