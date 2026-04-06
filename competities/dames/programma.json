@@ -2364,6 +2364,73 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-03-22",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Amber van den Dijssel",
+          "club": "Rotterdam",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Amber van den Dijssel",
+          "club": "Rotterdam",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien van der Heide",
+          "club": "HDM",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 35,
+          "type": "groen"
+        },
+        {
+          "naam": "Emma van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 58,
+          "type": "geel"
+        }
+      ]
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -3013,5 +3080,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:15.344Z"
+  "bijgewerkt": "2026-04-06T04:53:16.774Z"
 }
