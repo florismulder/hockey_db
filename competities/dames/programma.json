@@ -2273,6 +2273,42 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2026-03-22",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Pinoké",
       "uit": "Den Bosch",
       "score_thuis": 1,
@@ -2922,5 +2958,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:12.253Z"
+  "bijgewerkt": "2026-04-06T04:53:13.781Z"
 }
