@@ -2157,6 +2157,109 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Tilburg",
+      "score_thuis": 9,
+      "score_uit": 2,
+      "datum": "2025-11-23",
+      "tijdstip": "14:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sanne Koolen",
+          "club": "Den Bosch",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Sanne Koks",
+          "club": "Tilburg",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Imme van der Hoek",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Imme van der Hoek",
+          "club": "Den Bosch",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Lieve Wijckmans",
+          "club": "Den Bosch",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Maartje Krekelaar",
+          "club": "Den Bosch",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Daphne Nikkels",
+          "club": "Tilburg",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lotte de Heer",
+          "club": "Tilburg",
+          "minuut": 24,
+          "type": "groen"
+        },
+        {
+          "naam": "Rosa Fernig",
+          "club": "Den Bosch",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Hannah Salden",
+          "club": "Tilburg",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Elke Brinkman-Boers",
+          "club": "Den Bosch",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "HDM",
       "score_thuis": 2,
@@ -4028,5 +4131,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:49.315Z"
+  "bijgewerkt": "2026-04-06T04:53:50.830Z"
 }
