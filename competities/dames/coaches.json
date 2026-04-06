@@ -1,0 +1,79 @@
+{
+  "geslacht": "dames",
+  "seizoen": "2025-2026",
+  "coaches": [
+    {
+      "club": "Amsterdam",
+      "naam": "Jesse Mahieu",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Bloemendaal",
+      "naam": "André Morees",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Den Bosch",
+      "naam": "Marieke Dijkstra",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "HDM",
+      "naam": "Diederik van Weel",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "HGC",
+      "naam": "Bas Bogaard",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Hurley",
+      "naam": "Albert Kees Manenschijn",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Kampong",
+      "naam": "Kai de Jager",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Oranje-Rood",
+      "naam": "Mark Dekker",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Pinoké",
+      "naam": "Daan Sabel",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Rotterdam",
+      "naam": "Jorge Nolte",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "SCHC",
+      "naam": "Robbert van de Peppel",
+      "sinds": null,
+      "tot": null
+    },
+    {
+      "club": "Tilburg",
+      "naam": "Matias Vila",
+      "sinds": null,
+      "tot": null
+    }
+  ],
+  "bijgewerkt": "2026-04-06"
+}
