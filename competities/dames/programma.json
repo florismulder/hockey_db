@@ -2114,6 +2114,42 @@
       ]
     },
     {
+      "thuis": "Kampong",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 1,
+      "datum": "2026-03-05",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Lynn Vasterink",
+          "club": "Oranje-Rood",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "HDM",
       "uit": "Pinoké",
       "score_thuis": 1,
@@ -3703,5 +3739,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:37.133Z"
+  "bijgewerkt": "2026-04-06T04:53:38.617Z"
 }
