@@ -2274,6 +2274,43 @@
       ]
     },
     {
+      "thuis": "Tilburg",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Imme van Es",
+          "club": "Kampong",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 19,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Pleun Wester",
+          "club": "Tilburg",
+          "minuut": 45,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
       "thuis": "Kampong",
       "uit": "Oranje-Rood",
       "score_thuis": 3,
@@ -3899,5 +3936,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-06T04:53:44.705Z"
+  "bijgewerkt": "2026-04-06T04:53:46.247Z"
 }
