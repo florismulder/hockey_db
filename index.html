@@ -57,7 +57,7 @@ function stripTeam(naam) { return naam ? naam.replace(/\s+[HhDd]\d+$/,"").trim()
 function ClubKnop({naam, nav, style, children}) {
   const club = stripTeam(naam);
   return (
-    <span onClick={e=>{e.stopPropagation();nav("club",{club});}}
+    <span onClick={e=>{e.stopPropagation();nav("club",club);}}
       style={{cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--border2)",textUnderlineOffset:2,...style}}>
       {children||club}
     </span>
@@ -1039,9 +1039,9 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
     <div className="fade">
       <div className="wdh">
         <div className="wdt">
-          <div className="wdtm t" style={{cursor:"pointer"}} onClick={()=>nav("club",{club:stripTeam(w.thuis)})}>{w.thuis}</div>
+          <div className="wdtm t" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.thuis))}>{w.thuis}</div>
           {score?<div className="wdsc">{score}</div>:<div className="wdsc k">vs</div>}
-          <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",{club:stripTeam(w.uit)})}>{w.uit}</div>
+          <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.uit))}>{w.uit}</div>
         </div>
         <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
       </div>
