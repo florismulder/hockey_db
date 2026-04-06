@@ -1,6 +1,7 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
+  "bijgewerkt": "2026-04-06",
   "coaches": [
     {
       "club": "Amsterdam",
@@ -74,6 +75,5 @@
       "sinds": null,
       "tot": null
     }
-  ],
-  "bijgewerkt": "2026-04-06"
+  ]
 }
