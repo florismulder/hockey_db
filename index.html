@@ -94,7 +94,7 @@ button{cursor:pointer;font-family:inherit} a{color:inherit;text-decoration:none}
 .pnt{font-weight:700;color:var(--accent)} .dp{color:var(--green);font-weight:500} .dn{color:var(--red);font-weight:500}
 .pb{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;font-size:12px;font-weight:700}
 .legend{display:flex;gap:14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);flex-wrap:wrap} .li{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)} .ld{width:10px;height:10px;border-radius:3px}
-.twee-col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--border);align-items:start} .tc-links{border-right:1px solid var(--border)}
+.twee-col{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border);align-items:start} .tc-links{border-right:1px solid var(--border)}
 .wl{display:flex;flex-direction:column;gap:4px} .wr{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;} .wr:hover{border-color:var(--accent);background:var(--accent-light)}
 .wd{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);flex-shrink:0;width:68px;white-space:nowrap} .wh{text-align:right;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .wu{text-align:left;font-weight:500;font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .ws{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:var(--text);background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:3px 8px;text-align:center;flex-shrink:0;} .ws.k{color:var(--muted);font-size:12px} .wa{color:var(--muted);font-size:12px;text-align:center}
@@ -1040,7 +1040,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   );
 }
 
-function WedstrijdDetail({wedstrijd, nav, spelers}) {
+function WedstrijdDetail({wedstrijd, nav, spelers, programma}) {
   if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
   const w=wedstrijd;
   const score=(w.gespeeld===true||w.score_thuis!=null)?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
@@ -1053,6 +1053,22 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
       : <span>{naam}</span>;
   };
 
+  const [toonDuels, setToonDuels] = useState(false);
+  const clubA = stripTeam(w.thuis||"").toLowerCase();
+  const clubB = stripTeam(w.uit||"").toLowerCase();
+  const onderlingeDuels = useMemo(()=>{
+    if(!programma||!clubA||!clubB) return [];
+    return (programma).filter(m=>{
+      const mt = stripTeam(m.thuis||"").toLowerCase();
+      const mu = stripTeam(m.uit||"").toLowerCase();
+      const isDuel = (mt===clubA&&mu===clubB)||(mt===clubB&&mu===clubA);
+      if(!isDuel) return false;
+      // huidige wedstrijd zelf uitsluiten
+      if(m.datum===w.datum&&mt===clubA&&mu===clubB) return false;
+      return isGespeeld(m);
+    }).sort((a,b)=>(parseDatum(b.datum)||new Date(0))-(parseDatum(a.datum)||new Date(0)));
+  },[programma,clubA,clubB,w.datum]);
+
   return (
     <div className="fade">
       <div className="wdh">
@@ -1060,9 +1076,52 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
           <div className="wdtm t" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.thuis))}>{w.thuis}</div>
           {score?<div className="wdsc">{score}</div>:<div className="wdsc k">vs</div>}
           <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.uit))}>{w.uit}</div>
+          {onderlingeDuels.length>0&&(
+            <button onClick={()=>setToonDuels(t=>!t)} title="Onderlinge duels" style={{
+              flexShrink:0,background:toonDuels?"var(--accent)":"var(--surface2)",
+              border:"1px solid "+(toonDuels?"var(--accent)":"var(--border2)"),
+              borderRadius:7,padding:"5px 12px",fontSize:12,fontWeight:600,
+              color:toonDuels?"white":"var(--muted)",cursor:"pointer",
+              fontFamily:"inherit",whiteSpace:"nowrap",marginLeft:8
+            }}>H2H {onderlingeDuels.length>0?`(${onderlingeDuels.length})`:""}</button>
+          )}
         </div>
         <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
       </div>
+      {toonDuels&&onderlingeDuels.length>0&&(
+        <div style={{padding:"16px 24px",borderBottom:"1px solid var(--border)",background:"var(--surface2)"}}>
+          <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>
+            Onderlinge duels — {stripTeam(w.thuis)} vs {stripTeam(w.uit)}
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {onderlingeDuels.map((m,i)=>{
+              const st=m.score_thuis??m.doelpunten_thuis??"–";
+              const su=m.score_uit??m.doelpunten_uit??"–";
+              const mt=stripTeam(m.thuis||"").toLowerCase();
+              // win/loss/draw vanuit perspectief van clubA (thuis in huidige wedstrijd)
+              const stN=parseInt(st), suN=parseInt(su);
+              const isThA=mt===clubA;
+              const aGoals=isThA?stN:suN, bGoals=isThA?suN:stN;
+              const res=isNaN(aGoals)?"":(aGoals>bGoals?"W":aGoals<bGoals?"V":"G");
+              const resCleur=res==="W"?"var(--green)":res==="V"?"var(--red)":"var(--muted)";
+              return (
+                <div key={i} onClick={()=>nav("wedstrijd",m)}
+                  style={{display:"flex",alignItems:"center",gap:10,padding:"7px 10px",
+                  background:"var(--surface)",border:"1px solid var(--border)",borderRadius:7,
+                  cursor:"pointer",fontSize:13}}
+                  onMouseEnter={e=>e.currentTarget.style.borderColor="var(--accent)"}
+                  onMouseLeave={e=>e.currentTarget.style.borderColor="var(--border)"}>
+                  <span style={{fontFamily:"monospace",fontSize:11,color:"var(--muted)",width:82,flexShrink:0}}>{formatDatum(m.datum)}</span>
+                  <span style={{flex:1,fontWeight:500,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{m.thuis}</span>
+                  <span style={{fontFamily:"monospace",fontWeight:700,fontSize:14,color:"var(--accent)",background:"var(--surface)",border:"1px solid var(--border2)",borderRadius:5,padding:"2px 8px",flexShrink:0}}>{st} – {su}</span>
+                  <span style={{flex:1,fontWeight:500,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{m.uit}</span>
+                  {res&&<span style={{flexShrink:0,fontWeight:700,fontSize:12,color:resCleur,width:16,textAlign:"center"}}>{res}</span>}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
       <div className="db">
         {(!w.scorers||w.scorers.length===0)&&(!w.kaarten||w.kaarten.length===0)?(
           <div className="empty">{score?"Geen scorersinformatie beschikbaar.":"Deze wedstrijd is nog niet gespeeld."}</div>
@@ -1766,7 +1825,7 @@ function App() {
       {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav} geslacht={geslacht} spelers={spelers}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
-      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
+      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} programma={programma}/>}
       {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
