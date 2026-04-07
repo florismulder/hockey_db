@@ -1,6 +1,15 @@
 {
   "wedstrijden": [
     {
+      "datum": "2025-04-12",
+      "tijdstip": "15:00",
+      "thuis": "Oranje-Rood",
+      "uit": "Bloemendaal",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -6168,5 +6177,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-05T14:40:59.189Z"
+  "bijgewerkt": "2026-04-07T04:37:41.404Z"
 }
