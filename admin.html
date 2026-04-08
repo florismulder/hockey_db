@@ -47,7 +47,7 @@
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
 // ── Configuratie ──────────────────────────────────────────────
-const GOOGLE_CLIENT_ID  = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID  = "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com";
 const APPS_SCRIPT_URL   = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
 const HOOFD_SITE_URL    = "https://florismulder.github.io/hockey_db";
 const STORAGE_KEY       = "hdb_admin_token";
@@ -799,7 +799,7 @@ function SpelersOverzicht({data, setPagina}) {
 // ── SpelerNieuwsTab ───────────────────────────────────────────
 function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, ladtNieuws, toast}) {
   const [nieuwsModal, setNieuwsModal] = useState(false);
-  const [koppelModal, setKoppelModal] = useState(null); // {bulletIndex}
+  const [koppelModal, setKoppelModal] = useState(null); // {bulletSleutel}
   const [busy, setBusy] = useState({});
 
   // Groepeer bullets per artikel (zelfde als publieke site)
@@ -828,11 +828,11 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
 
   const setBusyKey = (k, val) => setBusy(b => ({...b, [k]: val}));
 
-  const toggleBullet = async (bulletIndex, verborgen) => {
-    const key = "b" + bulletIndex;
+  const toggleBullet = async (bulletSleutel, verborgen) => {
+    const key = "b" + bulletSleutel;
     setBusyKey(key, true);
     try {
-      const res = await apiCall("verbergBullet", {spelerId, bulletIndex, verborgen});
+      const res = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen});
       if (!res.success) throw new Error(res.error);
       await herlaad();
       toast(verborgen ? "Bullet verborgen" : "Bullet zichtbaar");
@@ -900,7 +900,8 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
 
             {/* Bullets */}
             {groep.bullets.map((bullet, bi) => {
-              const busyBullet = busy["b" + bullet._idx];
+              const bulletSleutel = (groep.link||"") + "||" + (bullet.bullet||"");
+                  const busyBullet = busy["b" + bulletSleutel];
               return (
                 <div key={bi} style={{
                   display:"flex",alignItems:"flex-start",gap:8,
@@ -925,13 +926,13 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
                   <div style={{display:"flex",gap:4,flexShrink:0}}>
                     <button
                       className={`btn btn-sm ${bullet.verborgen?"btn-success":"btn-danger"}`}
-                      onClick={()=>toggleBullet(bullet._idx, !bullet.verborgen)}
+                      onClick={()=>toggleBullet(bulletSleutel, !bullet.verborgen)}
                       disabled={!!busyBullet}
                       title={bullet.verborgen?"Zichtbaar maken":"Verbergen"}>
                       {busyBullet ? <span className="spinner"/> : bullet.verborgen ? "👁" : "🙈"}
                     </button>
                     <button className="btn btn-secondary btn-sm"
-                      onClick={()=>setKoppelModal({bulletIndex:bullet._idx, bullet:bullet.bullet, titel:groep.titel, link:groep.link, datum:groep.datum})}
+                      onClick={()=>setKoppelModal({bulletSleutel, bullet:bullet.bullet, titel:groep.titel, link:groep.link, datum:groep.datum})}
                       title="Ook tonen bij andere speler of club">
                       ↗
                     </button>
@@ -956,7 +957,7 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
       {koppelModal && (
         <KoppelNieuwsModal
           bronSpelerId={spelerId}
-          bulletIndex={koppelModal.bulletIndex}
+          bulletSleutel={koppelModal.bulletSleutel}
           bullet={koppelModal.bullet}
           spelers={spelers}
           toast={toast}
@@ -1039,7 +1040,7 @@ function NieuwsToevoegenModal({spelerId, targetType, toast, onClose, onOpgeslage
 }
 
 // ── KoppelNieuwsModal ─────────────────────────────────────────
-function KoppelNieuwsModal({bronSpelerId, bulletIndex, bullet, spelers, toast, onClose, onOpgeslagen}) {
+function KoppelNieuwsModal({bronSpelerId, bulletSleutel, bullet, spelers, toast, onClose, onOpgeslagen}) {
   const [targetType, setTargetType] = useState("speler");
   const [targetId, setTargetId] = useState("");
   const [busy, setBusy] = useState(false);
@@ -1052,7 +1053,7 @@ function KoppelNieuwsModal({bronSpelerId, bulletIndex, bullet, spelers, toast, o
     if (!targetId) { toast("Kies een speler of club","warn"); return; }
     setBusy(true);
     try {
-      const res = await apiCall("koppelNieuwsAan", {bronSpelerId, bulletIndex, targetId, targetType});
+      const res = await apiCall("koppelNieuwsAan", {bronSpelerId, bulletSleutel, targetId, targetType});
       if (!res.success) throw new Error(res.error);
       toast("✅ Nieuws gekoppeld aan " + targetId);
       onOpgeslagen();
