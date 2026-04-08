@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-06",
+  "bijgewerkt": "2026-04-08",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -4319,7 +4319,8 @@
       "doelpunten_seizoen": 1,
       "vd": 1,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1990-05-02"
     },
     {
       "id": "jens_de_vuijst",
