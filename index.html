@@ -668,13 +668,21 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
     if (oranje.u16 && oranje.u16.includes(naam)) return "U16";
     return null;
   };
-  const clubSpelers = spelers.filter(s => s.club === club).sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
+  const clubSpelers = spelers.filter(s => s.club === club && s.geslacht === geslacht).sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
 
   useEffect(()=>{
     setNieuwsPagina(0);
     fetch("nieuws/teamnieuws.json")
       .then(r=>r.json())
-      .then(d=>{ setClubTeamNieuws(d[club] || []); })
+      .then(d=>{
+        const items = d[club] || [];
+        // Filter op geslacht via competitie-veld — heren/dames nieuws gescheiden houden
+        const gefilterd = items.filter(item => {
+          if (!item.geslacht) return true; // geen geslacht = toon altijd
+          return item.geslacht === geslacht;
+        });
+        setClubTeamNieuws(gefilterd);
+      })
       .catch(()=>{ setClubTeamNieuws([]); });
   }, [club]);
 
