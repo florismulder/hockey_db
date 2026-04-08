@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hockey DB — Admin</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!--
+  ════════════════════════════════════════════════════════════════
+  SETUP INSTRUCTIES (eenmalig)
+  ════════════════════════════════════════════════════════════════
+
+  1. GOOGLE CLOUD CONSOLE
+     - Ga naar console.cloud.google.com
+     - Kies je bestaande project (of maak nieuw aan)
+     - APIs & Services → Credentials → Create Credentials → OAuth 2.0 Client ID
+     - Application type: Web application
+     - Authorized JavaScript origins: https://florismulder.github.io
+     - Kopieer de Client ID en vul in bij GOOGLE_CLIENT_ID hieronder
+
+  2. APPS SCRIPT PROPERTIES
+     - Open je Apps Script project
+     - Project Settings → Script Properties
+     - Voeg toe: ADMIN_EMAIL = jouw@gmail.com
+     - (GITHUB_TOKEN en GEMINI_KEY zijn al ingesteld)
+
+  3. APPS SCRIPT DEPLOYMENT
+     - Deploy → New deployment → Web app
+     - Execute as: Me
+     - Who has access: Anyone
+     - Kopieer de nieuwe Web App URL en vul in bij APPS_SCRIPT_URL hieronder
+
+  ════════════════════════════════════════════════════════════════
+-->
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useMemo, useCallback, useRef } = React;
+
+// ── Configuratie ──────────────────────────────────────────────
+const GOOGLE_CLIENT_ID  = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const APPS_SCRIPT_URL   = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
+const HOOFD_SITE_URL    = "https://florismulder.github.io/hockey_db";
+const STORAGE_KEY       = "hdb_admin_token";
+const TOKEN_KEY         = "hdb_admin_credential";
+
+// ── CSS ───────────────────────────────────────────────────────
+const css = `
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f9f8f5;--surface:#ffffff;--surface2:#f1f0ed;--surface3:#e8e6e1;
+  --border:#e5e3de;--border2:#d0cdc6;
+  --text:#1a1916;--muted:#7a7672;--muted2:#a09d99;
+  --accent:#c4621a;--accent-light:#fdf0e8;--accent-dark:#a84f14;
+  --green:#1a6b3a;--green-light:#e8f5ed;
+  --red:#c0392b;--red-light:#fdf0ee;
+  --yellow:#d97706;--yellow-light:#fef9c3;
+  --blue:#1d4ed8;--blue-light:#dbeafe;
+  --sidebar-w:220px;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;line-height:1.5}
+button{cursor:pointer;font-family:inherit}
+a{color:inherit;text-decoration:none}
+input,textarea,select{font-family:inherit;font-size:14px}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* Layout */
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);background:var(--text);color:#f9f8f5;display:flex;flex-direction:column;position:fixed;top:0;bottom:0;left:0;z-index:100;overflow-y:auto}
+.main{margin-left:var(--sidebar-w);flex:1;display:flex;flex-direction:column;min-height:100vh}
+
+/* Sidebar */
+.sb-logo{padding:20px 16px 16px;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:10px}
+.sb-logo-txt{font-weight:700;font-size:15px;color:#fff}
+.sb-badge{font-size:10px;background:var(--accent);color:#fff;padding:2px 6px;border-radius:10px;font-weight:700}
+.sb-user{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.1);font-size:12px;color:rgba(255,255,255,.6)}
+.sb-user strong{color:#fff;display:block;font-size:13px}
+.sb-nav{padding:8px 0;flex:1}
+.sb-section{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.35);padding:12px 16px 4px}
+.sb-item{display:flex;align-items:center;gap:10px;padding:8px 16px;color:rgba(255,255,255,.7);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;border:none;background:none;width:100%;text-align:left}
+.sb-item:hover{background:rgba(255,255,255,.08);color:#fff}
+.sb-item.active{background:var(--accent);color:#fff}
+.sb-item .icon{width:18px;text-align:center;font-size:15px}
+.sb-badge2{margin-left:auto;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;min-width:20px;text-align:center}
+.sb-item.active .sb-badge2{background:rgba(255,255,255,.3)}
+.sb-footer{padding:12px 16px;border-top:1px solid rgba(255,255,255,.1)}
+.sb-logout{font-size:12px;color:rgba(255,255,255,.5);background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;gap:6px}
+.sb-logout:hover{color:#fff}
+
+/* Topbar */
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:50}
+.topbar-title{font-size:16px;font-weight:700}
+.topbar-sub{font-size:12px;color:var(--muted);margin-top:1px}
+.topbar-actions{display:flex;gap:8px;align-items:center}
+
+/* Content */
+.content{padding:24px;flex:1}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.card-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.card-title{font-size:14px;font-weight:700}
+.card-body{padding:16px 18px}
+
+/* Stat cards */
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px}
+.stat-val{font-size:28px;font-weight:700;color:var(--accent);font-family:'JetBrains Mono',monospace;line-height:1}
+.stat-lbl{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:7px;font-size:13px;font-weight:600;border:none;transition:all .15s;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark)}
+.btn-secondary{background:var(--surface2);color:var(--text);border:1px solid var(--border2)}
+.btn-secondary:hover{background:var(--surface3)}
+.btn-danger{background:var(--red-light);color:var(--red);border:1px solid #fecaca}
+.btn-danger:hover{background:#fee2e2}
+.btn-success{background:var(--green-light);color:var(--green);border:1px solid #bbf7d0}
+.btn-success:hover{background:#dcfce7}
+.btn-sm{padding:4px 10px;font-size:12px;border-radius:5px}
+.btn-icon{padding:6px;border-radius:6px;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
+.btn-icon:hover{background:var(--surface3);color:var(--text)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* Forms */
+.form-group{margin-bottom:14px}
+.form-label{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px;display:block}
+.form-input{width:100%;padding:8px 12px;border:1px solid var(--border2);border-radius:7px;background:var(--surface);color:var(--text);outline:none;transition:border-color .15s}
+.form-input:focus{border-color:var(--accent)}
+.form-input:disabled{background:var(--surface2);color:var(--muted)}
+.form-select{width:100%;padding:8px 12px;border:1px solid var(--border2);border-radius:7px;background:var(--surface);color:var(--text);outline:none;cursor:pointer}
+.form-select:focus{border-color:var(--accent)}
+.form-textarea{width:100%;padding:8px 12px;border:1px solid var(--border2);border-radius:7px;background:var(--surface);color:var(--text);outline:none;resize:vertical;min-height:80px}
+.form-textarea:focus{border-color:var(--accent)}
+.form-check{display:flex;align-items:center;gap:8px;cursor:pointer}
+.form-check input{width:16px;height:16px;cursor:pointer;accent-color:var(--accent)}
+.form-hint{font-size:11px;color:var(--muted);margin-top:4px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+
+/* Tables */
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{font-size:11px;font-weight:600;text-transform:uppercase;color:var(--muted);padding:0 10px 10px;text-align:left;white-space:nowrap;letter-spacing:.3px}
+.tbl td{padding:9px 10px;border-top:1px solid var(--border);font-size:13px;vertical-align:middle}
+.tbl tr:hover td{background:var(--surface2);cursor:pointer}
+.tbl tr.no-hover:hover td{background:transparent;cursor:default}
+
+/* Search / filter bar */
+.filter-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filter-input{flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--border2);border-radius:7px;background:var(--surface);color:var(--text);outline:none}
+.filter-input:focus{border-color:var(--accent)}
+.filter-select{padding:8px 12px;border:1px solid var(--border2);border-radius:7px;background:var(--surface);color:var(--text);outline:none;cursor:pointer}
+
+/* Tags / badges */
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;text-transform:uppercase;letter-spacing:.3px}
+.tag-oranje{background:var(--accent-light);color:var(--accent);border:1px solid #fcd9b6}
+.tag-keeper{background:var(--blue-light);color:var(--blue);border:1px solid #bfdbfe}
+.tag-blessure{background:var(--red-light);color:var(--red);border:1px solid #fecaca}
+.tag-gestopt{background:var(--surface3);color:var(--muted);border:1px solid var(--border2)}
+.tag-voorstel{background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a}
+.tag-green{background:var(--green-light);color:var(--green);border:1px solid #bbf7d0}
+
+/* Inbox item */
+.inbox-item{padding:14px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}
+.inbox-item:last-child{border-bottom:none}
+.inbox-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.inbox-body{flex:1}
+.inbox-title{font-size:13px;font-weight:600;margin-bottom:3px}
+.inbox-sub{font-size:12px;color:var(--muted)}
+.inbox-actions{display:flex;gap:6px;margin-top:8px}
+
+/* Detail page */
+.detail-header{padding:20px 24px;border-bottom:1px solid var(--border);background:linear-gradient(135deg,var(--surface2),var(--surface))}
+.detail-name{font-size:24px;font-weight:700;letter-spacing:-.3px}
+.detail-sub{font-size:13px;color:var(--muted);margin-top:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.detail-tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.detail-body{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.detail-section{margin-bottom:20px}
+.detail-section-title{font-size:13px;font-weight:700;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.detail-full{grid-column:1/-1}
+
+/* Nieuws item in detail */
+.nieuws-item{padding:10px 12px;border:1px solid var(--border);border-radius:7px;margin-bottom:8px}
+.nieuws-item.verborgen{opacity:.45}
+.nieuws-header{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.nieuws-datum{font-size:10px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.nieuws-titel{font-size:12px;font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nieuws-bullet{font-size:12px;color:var(--text);padding:3px 0 3px 14px;border-left:2px solid var(--border2);margin-left:4px}
+.nieuws-bullet.verborgen{text-decoration:line-through;color:var(--muted)}
+
+/* Logboek */
+.log-item{padding:10px 14px;border-bottom:1px solid var(--border);font-size:12px}
+.log-datum{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:3px}
+.log-tekst{color:var(--text)}
+.log-oud{color:var(--muted);text-decoration:line-through}
+.log-nieuw{color:var(--green);font-weight:600}
+
+/* Toggle */
+.toggle{width:36px;height:20px;border-radius:10px;border:none;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0}
+.toggle.on{background:var(--green)}
+.toggle.off{background:var(--border2)}
+.toggle::after{content:'';position:absolute;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.toggle.on::after{left:18px}
+.toggle.off::after{left:2px}
+
+/* Blessure card */
+.blessure-card{background:var(--red-light);border:1px solid #fecaca;border-radius:8px;padding:14px 16px;margin-bottom:12px}
+.blessure-card.gesloten{background:var(--surface2);border-color:var(--border);opacity:.7}
+
+/* Login page */
+.login-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg)}
+.login-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:40px;width:100%;max-width:380px;box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.login-logo{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.login-logo-txt{font-size:18px;font-weight:700;color:var(--accent)}
+
+/* Alerts */
+.alert{padding:10px 14px;border-radius:7px;font-size:13px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.alert-success{background:var(--green-light);color:var(--green);border:1px solid #bbf7d0}
+.alert-error{background:var(--red-light);color:var(--red);border:1px solid #fecaca}
+.alert-info{background:var(--blue-light);color:var(--blue);border:1px solid #bfdbfe}
+.alert-warn{background:var(--yellow-light);color:var(--yellow);border:1px solid #fde68a}
+
+/* Loading */
+.loading{padding:40px;text-align:center;color:var(--muted);font-size:13px}
+.spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--border2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Empty */
+.empty{color:var(--muted);font-size:13px;font-style:italic;padding:16px 0;text-align:center}
+
+/* Paginering */
+.pager{display:flex;align-items:center;gap:8px;padding:12px 0;font-size:12px;color:var(--muted)}
+.pager-btn{padding:4px 10px;border:1px solid var(--border2);border-radius:5px;background:var(--surface);font-size:12px;color:var(--text);cursor:pointer}
+.pager-btn:hover:not(:disabled){background:var(--surface2)}
+.pager-btn:disabled{opacity:.4;cursor:default}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:var(--surface);border-radius:12px;width:100%;max-width:520px;max-height:85vh;overflow-y:auto;box-shadow:0 16px 48px rgba(0,0,0,.2)}
+.modal-header{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--surface);z-index:1}
+.modal-title{font-size:15px;font-weight:700}
+.modal-close{background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer;line-height:1;padding:0}
+.modal-close:hover{color:var(--text)}
+.modal-body{padding:20px 22px}
+.modal-footer{padding:14px 22px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px}
+
+.fade{animation:fi .15s ease}
+@keyframes fi{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}
+
+.divider{height:1px;background:var(--border);margin:16px 0}
+
+.breadcrumb{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:16px}
+.breadcrumb a{color:var(--accent);cursor:pointer}
+.breadcrumb span{color:var(--border2)}
+`;
+
+// ── API helper ────────────────────────────────────────────────
+async function apiCall(actie, data = {}) {
+  const token = localStorage.getItem(TOKEN_KEY);
+  const email = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}").email || "";
+  const resp = await fetch(APPS_SCRIPT_URL, {
+    method: "POST",
+    body: JSON.stringify({ actie, data, token, email })
+  });
+  if (!resp.ok) throw new Error("Netwerk fout: " + resp.status);
+  return resp.json();
+}
+
+// ── Helpers ───────────────────────────────────────────────────
+function slugify(naam) {
+  return (naam || "").toLowerCase()
+    .replace(/[àáâä]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
+    .replace(/[òóôö]/g,"o").replace(/[ùúûü]/g,"u").replace(/ñ/g,"n").replace(/ç/g,"c")
+    .replace(/['']/g,"").replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
+}
+
+function formatDatum(s) {
+  if (!s) return "—";
+  const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+}
+
+function vandaag() {
+  return new Date().toISOString().slice(0,10);
+}
+
+function tijdGeleden(iso) {
+  if (!iso) return "";
+  const diff = Date.now() - new Date(iso).getTime();
+  const min = Math.floor(diff/60000);
+  if (min < 60) return `${min}m geleden`;
+  const uur = Math.floor(min/60);
+  if (uur < 24) return `${uur}u geleden`;
+  return `${Math.floor(uur/24)}d geleden`;
+}
+
+// ── Toast notificaties ────────────────────────────────────────
+function useToast() {
+  const [toasts, setToasts] = useState([]);
+  const show = useCallback((msg, type="success") => {
+    const id = Date.now();
+    setToasts(t => [...t, {id, msg, type}]);
+    setTimeout(() => setToasts(t => t.filter(x => x.id !== id)), 3500);
+  }, []);
+  return {toasts, show};
+}
+
+function ToastContainer({toasts}) {
+  if (!toasts.length) return null;
+  return (
+    <div style={{position:"fixed",bottom:24,right:24,display:"flex",flexDirection:"column",gap:8,zIndex:999}}>
+      {toasts.map(t => (
+        <div key={t.id} className={`alert alert-${t.type}`} style={{
+          boxShadow:"0 4px 16px rgba(0,0,0,.12)",minWidth:260,animation:"fi .2s ease"
+        }}>
+          {t.type==="success"?"✅":t.type==="error"?"❌":t.type==="warn"?"⚠️":"ℹ️"} {t.msg}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ── Login pagina ──────────────────────────────────────────────
+function LoginPagina({onLogin}) {
+  const [loading, setLoading] = useState(false);
+  const [fout, setFout] = useState("");
+  const btnRef = useRef(null);
+
+  useEffect(() => {
+    if (!window.google) return;
+    if (GOOGLE_CLIENT_ID === "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com") {
+      setFout("Stel GOOGLE_CLIENT_ID in bovenaan admin.html");
+      return;
+    }
+    window.google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: async (response) => {
+        setLoading(true);
+        setFout("");
+        try {
+          // Decode JWT payload (niet veilig voor productie maar OK voor intern gebruik)
+          const payload = JSON.parse(atob(response.credential.split(".")[1]));
+          localStorage.setItem(TOKEN_KEY, response.credential);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            email: payload.email,
+            name:  payload.name,
+            picture: payload.picture
+          }));
+          onLogin({email: payload.email, name: payload.name, picture: payload.picture});
+        } catch(e) {
+          setFout("Login mislukt: " + e.message);
+        } finally {
+          setLoading(false);
+        }
+      }
+    });
+    window.google.accounts.id.renderButton(btnRef.current, {
+      theme: "outline", size: "large", width: "300", text: "signin_with"
+    });
+  }, []);
+
+  return (
+    <div className="login-page">
+      <div className="login-card fade">
+        <div className="login-logo">
+          <span style={{fontSize:28}}>🏑</span>
+          <div>
+            <div className="login-logo-txt">Hockey DB</div>
+            <div style={{fontSize:11,color:"var(--muted)"}}>Admin Beheerinterface</div>
+          </div>
+        </div>
+        <div style={{fontSize:13,color:"var(--muted)",marginBottom:24}}>
+          Log in met je Google account om toegang te krijgen tot het beheer.
+        </div>
+        {fout && <div className="alert alert-error" style={{marginBottom:16}}>{fout}</div>}
+        {loading
+          ? <div style={{textAlign:"center"}}><div className="spinner"/></div>
+          : <div ref={btnRef}/>
+        }
+        <div style={{marginTop:20,fontSize:11,color:"var(--muted)"}}>
+          Alleen geautoriseerde accounts hebben toegang.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Sidebar ───────────────────────────────────────────────────
+function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen}) {
+  const nav = (id) => setPagina(id);
+  const items = [
+    {id:"dashboard",  icon:"🏠", label:"Dashboard"},
+    {id:"spelers",    icon:"👥", label:"Spelers"},
+    {id:"clubs",      icon:"🏒", label:"Clubs"},
+    {id:"blessures",  icon:"🏥", label:"Blessures"},
+    {id:"logboek",    icon:"📋", label:"Logboek"},
+  ];
+  return (
+    <div className="sidebar">
+      <div className="sb-logo">
+        <span style={{fontSize:22}}>🏑</span>
+        <div>
+          <div className="sb-logo-txt">Hockey DB</div>
+          <div className="sb-badge">ADMIN</div>
+        </div>
+      </div>
+      {user && (
+        <div className="sb-user">
+          <strong>{user.name}</strong>
+          {user.email}
+        </div>
+      )}
+      <div className="sb-nav">
+        <div className="sb-section">Navigatie</div>
+        {items.map(item => (
+          <button key={item.id} className={`sb-item ${pagina===item.id||pagina?.startsWith(item.id)?"active":""}`}
+            onClick={()=>nav(item.id)}>
+            <span className="icon">{item.icon}</span>
+            {item.label}
+            {item.id==="dashboard" && aantalVoorstellen>0 &&
+              <span className="sb-badge2">{aantalVoorstellen}</span>}
+          </button>
+        ))}
+        <div className="sb-section">Links</div>
+        <a className="sb-item" href={HOOFD_SITE_URL} target="_blank">
+          <span className="icon">🌐</span> Publieke site
+        </a>
+      </div>
+      <div className="sb-footer">
+        <button className="sb-logout" onClick={onLogout}>
+          ↩ Uitloggen
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Dashboard ─────────────────────────────────────────────────
+function Dashboard({data, setPagina, toast, onRefresh, loading}) {
+  const actieveBlessures = useMemo(() => {
+    if (!data.blessures) return [];
+    return Object.entries(data.blessures).flatMap(([sid, lijst]) =>
+      (lijst||[]).filter(b=>b.actief).map(b=>({...b, spelerId:sid}))
+    );
+  }, [data.blessures]);
+
+  const voorstellen = data.voorstellen || [];
+  const spelersCount = (data.spelers||[]).length;
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">Dashboard</div>
+          <div className="topbar-sub">Hockey DB beheer — {vandaag()}</div>
+        </div>
+        <div className="topbar-actions">
+          <button className="btn btn-secondary btn-sm" onClick={onRefresh} disabled={loading}>
+            {loading ? <span className="spinner"/> : "↻"} Vernieuwen
+          </button>
+        </div>
+      </div>
+      <div className="content">
+        {/* Stats */}
+        <div className="stat-grid">
+          <div className="stat-card">
+            <div className="stat-val">{spelersCount}</div>
+            <div className="stat-lbl">Spelers</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-val" style={{color:"var(--red)"}}>{actieveBlessures.length}</div>
+            <div className="stat-lbl">Blessures actief</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-val" style={{color:"var(--yellow)"}}>{voorstellen.length}</div>
+            <div className="stat-lbl">Gemini voorstellen</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-val" style={{color:"var(--green)"}}>{(data.logboek||[]).length}</div>
+            <div className="stat-lbl">Wijzigingen (log)</div>
+          </div>
+        </div>
+
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,alignItems:"start"}}>
+
+          {/* Gemini Inbox */}
+          <div className="card">
+            <div className="card-header">
+              <div className="card-title">📥 Gemini voorstellen</div>
+              {voorstellen.length > 0 &&
+                <span className="tag tag-voorstel">{voorstellen.length} nieuw</span>}
+            </div>
+            {voorstellen.length === 0
+              ? <div className="empty" style={{padding:"20px"}}>Geen openstaande voorstellen.</div>
+              : voorstellen.slice(0,5).map((v,i) => (
+                <VoorstelItem key={v.id||i} voorstel={v} data={data} toast={toast} onRefresh={onRefresh}/>
+              ))
+            }
+            {voorstellen.length > 5 &&
+              <div style={{padding:"10px 16px",borderTop:"1px solid var(--border)"}}>
+                <button className="btn btn-secondary btn-sm" onClick={()=>setPagina("dashboard_inbox")}>
+                  Bekijk alle {voorstellen.length} voorstellen
+                </button>
+              </div>}
+          </div>
+
+          {/* Actieve blessures */}
+          <div className="card">
+            <div className="card-header">
+              <div className="card-title">🏥 Actieve blessures</div>
+              {actieveBlessures.length > 0 &&
+                <span className="tag tag-blessure">{actieveBlessures.length}</span>}
+            </div>
+            {actieveBlessures.length === 0
+              ? <div className="empty" style={{padding:"20px"}}>Geen actieve blessures.</div>
+              : actieveBlessures.slice(0,6).map((b,i) => {
+                  const speler = (data.spelers||[]).find(s=>(s.id||slugify(s.naam))===b.spelerId);
+                  return (
+                    <div key={i} className="inbox-item" style={{cursor:"pointer"}}
+                      onClick={()=>setPagina("speler_" + b.spelerId)}>
+                      <span className="inbox-icon">🏥</span>
+                      <div className="inbox-body">
+                        <div className="inbox-title">{speler?.naam || b.spelerId}</div>
+                        <div className="inbox-sub">
+                          {b.plek||"Blessure"} · Sinds {formatDatum(b.start)}
+                          {b.uitleg && ` · ${b.uitleg.slice(0,40)}${b.uitleg.length>40?"…":""}`}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })
+            }
+            {actieveBlessures.length > 6 &&
+              <div style={{padding:"10px 16px",borderTop:"1px solid var(--border)"}}>
+                <button className="btn btn-secondary btn-sm" onClick={()=>setPagina("blessures")}>
+                  Bekijk alle {actieveBlessures.length}
+                </button>
+              </div>}
+          </div>
+
+          {/* Recente logboek */}
+          <div className="card" style={{gridColumn:"1/-1"}}>
+            <div className="card-header">
+              <div className="card-title">📋 Recente wijzigingen</div>
+              <button className="btn btn-secondary btn-sm" onClick={()=>setPagina("logboek")}>
+                Volledig logboek
+              </button>
+            </div>
+            {(data.logboek||[]).length === 0
+              ? <div className="empty" style={{padding:"20px"}}>Nog geen wijzigingen gelogd.</div>
+              : (data.logboek||[]).slice(0,8).map((e,i) => <LogItem key={i} entry={e}/>)
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function VoorstelItem({voorstel, data, toast, onRefresh}) {
+  const [busy, setBusy] = useState(false);
+  const speler = (data.spelers||[]).find(s=>(s.id||slugify(s.naam))===voorstel.spelerId);
+
+  const handle = async (bevestigd) => {
+    setBusy(true);
+    try {
+      await apiCall("bevestigVoorstel", {voorstelId:voorstel.id, bevestigd});
+      toast(bevestigd ? "Voorstel toegepast" : "Voorstel afgewezen");
+      onRefresh();
+    } catch(e) { toast(e.message, "error"); }
+    finally { setBusy(false); }
+  };
+
+  const TypeIcon = voorstel.type==="blessure"?"🏥":voorstel.type==="club_wijziging"?"🔄":"📌";
+  return (
+    <div className="inbox-item">
+      <span className="inbox-icon">{TypeIcon}</span>
+      <div className="inbox-body">
+        <div className="inbox-title">
+          {speler?.naam || voorstel.spelerId}
+          <span className="tag tag-voorstel" style={{marginLeft:8,verticalAlign:"middle"}}>
+            {voorstel.type==="blessure"?"Blessure":voorstel.type==="club_wijziging"?"Club":"Voorstel"}
+          </span>
+        </div>
+        <div className="inbox-sub">
+          {voorstel.type==="blessure" && voorstel.data &&
+            `${voorstel.data.plek||""} · ${voorstel.data.uitleg||""}`.trim()}
+          {voorstel.type==="club_wijziging" && voorstel.data &&
+            `${speler?.club||"?"} → ${voorstel.data.nieuweClub}`}
+          {voorstel.bron && ` · Bron: ${voorstel.bron.slice(0,40)}${voorstel.bron.length>40?"…":""}`}
+        </div>
+        <div className="inbox-actions">
+          <button className="btn btn-success btn-sm" onClick={()=>handle(true)} disabled={busy}>
+            ✓ Bevestigen
+          </button>
+          <button className="btn btn-danger btn-sm" onClick={()=>handle(false)} disabled={busy}>
+            ✗ Afwijzen
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function LogItem({entry}) {
+  const velden = entry.velden || {};
+  const oud    = entry.oud    || {};
+  const veranderingen = Object.keys(velden).map(k => ({k, oud:oud[k], nieuw:velden[k]}));
+  return (
+    <div className="log-item">
+      <div className="log-datum">{tijdGeleden(entry.datum)} · {entry.email}</div>
+      <div className="log-tekst">
+        <strong>{entry.naam || entry.id}</strong>
+        {veranderingen.slice(0,2).map((v,i) => (
+          <span key={i}> · {v.k}: {v.oud!==undefined&&<span className="log-oud">{String(v.oud||"—")}</span>} → <span className="log-nieuw">{String(v.nieuw||"—")}</span></span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── Spelers overzicht ─────────────────────────────────────────
+function SpelersOverzicht({data, setPagina}) {
+  const [zoek, setZoek] = useState("");
+  const [filterClub, setFilterClub] = useState("alle");
+  const [filterGeslacht, setFilterGeslacht] = useState("alle");
+  const [filterOranje, setFilterOranje] = useState("alle");
+  const [filterBlessure, setFilterBlessure] = useState("alle");
+  const [sorteer, setSorteer] = useState("naam");
+  const [sortDir, setSortDir] = useState(1);
+  const [pagina, setPag] = useState(0);
+  const PER_PAG = 50;
+
+  const actieveBlessures = useMemo(() => {
+    const set = new Set();
+    Object.entries(data.blessures||{}).forEach(([sid,lijst]) => {
+      if ((lijst||[]).some(b=>b.actief)) set.add(sid);
+    });
+    return set;
+  }, [data.blessures]);
+
+  const clubs = useMemo(() => {
+    const s = new Set((data.spelers||[]).map(x=>x.club).filter(Boolean));
+    return ["alle",...Array.from(s).sort()];
+  }, [data.spelers]);
+
+  const gefilterd = useMemo(() => {
+    let lijst = data.spelers || [];
+    if (zoek) {
+      const z = zoek.toLowerCase();
+      lijst = lijst.filter(s =>
+        (s.naam||"").toLowerCase().includes(z) ||
+        (s.club||"").toLowerCase().includes(z) ||
+        String(s.rugnummer||"").includes(z)
+      );
+    }
+    if (filterClub !== "alle") lijst = lijst.filter(s => s.club === filterClub);
+    if (filterGeslacht !== "alle") lijst = lijst.filter(s => s.geslacht === filterGeslacht);
+    if (filterOranje !== "alle") {
+      if (filterOranje === "ja") lijst = lijst.filter(s => s.oranje);
+      else lijst = lijst.filter(s => !s.oranje);
+    }
+    if (filterBlessure === "ja") lijst = lijst.filter(s => actieveBlessures.has(s.id||slugify(s.naam)));
+    if (filterBlessure === "nee") lijst = lijst.filter(s => !actieveBlessures.has(s.id||slugify(s.naam)));
+
+    lijst = [...lijst].sort((a,b) => {
+      let va = a[sorteer]??a.naam??"", vb = b[sorteer]??b.naam??"";
+      if (sorteer==="rugnummer"||sorteer==="doelpunten_seizoen") {
+        va = parseInt(va)||0; vb = parseInt(vb)||0;
+        return (va-vb)*sortDir;
+      }
+      return String(va).localeCompare(String(vb))*sortDir;
+    });
+    return lijst;
+  }, [data.spelers, zoek, filterClub, filterGeslacht, filterOranje, filterBlessure, sorteer, sortDir, actieveBlessures]);
+
+  const totaalPag = Math.ceil(gefilterd.length / PER_PAG);
+  const paginaSpelers = gefilterd.slice(pagina*PER_PAG, (pagina+1)*PER_PAG);
+
+  const toggleSort = (veld) => {
+    if (sorteer===veld) setSortDir(d=>-d);
+    else { setSorteer(veld); setSortDir(1); }
+    setPag(0);
+  };
+
+  const SortHdr = ({veld, children}) => (
+    <th onClick={()=>toggleSort(veld)} style={{cursor:"pointer",userSelect:"none"}}>
+      {children}{sorteer===veld?(sortDir>0?" ↑":" ↓"):""}
+    </th>
+  );
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">Spelers</div>
+          <div className="topbar-sub">{gefilterd.length} van {(data.spelers||[]).length} spelers</div>
+        </div>
+      </div>
+      <div className="content">
+        <div className="filter-bar">
+          <input className="filter-input" placeholder="Zoek op naam, club, rugnummer…"
+            value={zoek} onChange={e=>{setZoek(e.target.value);setPag(0)}}/>
+          <select className="filter-select" value={filterClub} onChange={e=>{setFilterClub(e.target.value);setPag(0)}}>
+            {clubs.map(c=><option key={c} value={c}>{c==="alle"?"Alle clubs":c}</option>)}
+          </select>
+          <select className="filter-select" value={filterGeslacht} onChange={e=>{setFilterGeslacht(e.target.value);setPag(0)}}>
+            <option value="alle">H + D</option>
+            <option value="heren">Heren</option>
+            <option value="dames">Dames</option>
+          </select>
+          <select className="filter-select" value={filterOranje} onChange={e=>{setFilterOranje(e.target.value);setPag(0)}}>
+            <option value="alle">Alle (Oranje)</option>
+            <option value="ja">In Oranje</option>
+            <option value="nee">Niet in Oranje</option>
+          </select>
+          <select className="filter-select" value={filterBlessure} onChange={e=>{setFilterBlessure(e.target.value);setPag(0)}}>
+            <option value="alle">Alle (Blessure)</option>
+            <option value="ja">Geblesseerd</option>
+            <option value="nee">Fit</option>
+          </select>
+        </div>
+
+        <div className="card">
+          <table className="tbl">
+            <thead>
+              <tr>
+                <SortHdr veld="rugnummer">#</SortHdr>
+                <SortHdr veld="naam">Naam</SortHdr>
+                <SortHdr veld="club">Club</SortHdr>
+                <SortHdr veld="geslacht">G</SortHdr>
+                <th>Status</th>
+                <SortHdr veld="doelpunten_seizoen">Goals</SortHdr>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {paginaSpelers.map(s => {
+                const sid = s.id || slugify(s.naam);
+                const heeftBlessure = actieveBlessures.has(sid);
+                return (
+                  <tr key={sid} onClick={()=>setPagina("speler_"+sid)}>
+                    <td className="mono" style={{color:"var(--accent)",fontWeight:700,width:40}}>{s.rugnummer||"—"}</td>
+                    <td style={{fontWeight:600}}>
+                      {s.naam}
+                      {s.keeper && <span className="tag tag-keeper" style={{marginLeft:6}}>K</span>}
+                    </td>
+                    <td style={{color:"var(--muted)"}}>{s.club}</td>
+                    <td style={{color:"var(--muted)",fontSize:11}}>{s.geslacht==="heren"?"H":"D"}</td>
+                    <td>
+                      <div style={{display:"flex",gap:4,flexWrap:"wrap"}}>
+                        {heeftBlessure && <span className="tag tag-blessure">🏥</span>}
+                        {s.oranje && <span className="tag tag-oranje">🦁 {s.oranje}</span>}
+                        {s.gestopt && <span className="tag tag-gestopt">Gestopt</span>}
+                      </div>
+                    </td>
+                    <td style={{textAlign:"right",color:"var(--accent)",fontWeight:700}}>
+                      {s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}
+                    </td>
+                    <td style={{textAlign:"right"}} onClick={e=>e.stopPropagation()}>
+                      <button className="btn btn-icon btn-sm" onClick={()=>setPagina("speler_"+sid)}>✏️</button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          {paginaSpelers.length===0 && <div className="empty">Geen spelers gevonden.</div>}
+        </div>
+
+        {totaalPag > 1 && (
+          <div className="pager">
+            <button className="pager-btn" disabled={pagina===0} onClick={()=>setPag(p=>p-1)}>← Vorige</button>
+            <span>Pagina {pagina+1} van {totaalPag}</span>
+            <button className="pager-btn" disabled={pagina>=totaalPag-1} onClick={()=>setPag(p=>p+1)}>Volgende →</button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Speler detail / bewerk ────────────────────────────────────
+function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
+  const speler = useMemo(() =>
+    (data.spelers||[]).find(s=>(s.id||slugify(s.naam))===spelerId),
+    [data.spelers, spelerId]
+  );
+  const [velden, setVelden] = useState({});
+  const [busy, setBusy] = useState(false);
+  const [tab, setTab] = useState("profiel");
+  const [blessureModal, setBlessureModal] = useState(false);
+  const [spelersNieuws, setSpelersNieuws] = useState(null);
+  const [ladtNieuws, setLadtNieuws] = useState(false);
+
+  const blessureLijst = useMemo(() =>
+    (data.blessures||{})[spelerId] || [],
+    [data.blessures, spelerId]
+  );
+
+  useEffect(() => {
+    if (speler) setVelden({...speler});
+  }, [speler]);
+
+  useEffect(() => {
+    if (tab === "nieuws" && spelersNieuws === null) {
+      setLadtNieuws(true);
+      apiCall("haalSpelerNieuws", {spelerId})
+        .then(r => setSpelersNieuws(r.nieuws || []))
+        .catch(() => setSpelersNieuws([]))
+        .finally(() => setLadtNieuws(false));
+    }
+  }, [tab, spelerId]);
+
+  if (!speler) return <div className="loading">Speler niet gevonden: {spelerId}</div>;
+
+  const set = (k, v) => setVelden(f=>({...f,[k]:v}));
+
+  const opslaan = async (extraVelden={}) => {
+    setBusy(true);
+    try {
+      const teWijzigen = {...velden, ...extraVelden};
+      // Verwijder read-only velden
+      const {id:_id, naam:_naam, ...rest} = teWijzigen;
+      const res = await apiCall("updateSpeler", {spelerId, velden:rest});
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Speler opgeslagen");
+      onRefresh();
+    } catch(e) { toast(e.message, "error"); }
+    finally { setBusy(false); }
+  };
+
+  const verbergNieuws = async (artikelLink, verborgen) => {
+    try {
+      const res = await apiCall("verbergNieuws", {spelerId, artikelLink, verborgen});
+      if (!res.success) throw new Error(res.error);
+      setSpelersNieuws(res.nieuws || spelersNieuws);
+      toast(verborgen ? "Nieuws verborgen" : "Nieuws zichtbaar");
+    } catch(e) { toast(e.message, "error"); }
+  };
+
+  const heeftBlessure = velden.blessure?.actief;
+  const tabs = ["profiel","blessures","nieuws"];
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="breadcrumb">
+            <a onClick={()=>setPagina("spelers")}>Spelers</a>
+            <span>/</span>
+            <span>{speler.naam}</span>
+          </div>
+        </div>
+        <div className="topbar-actions">
+          <a className="btn btn-secondary btn-sm"
+            href={`${HOOFD_SITE_URL}#speler/${spelerId}`} target="_blank">
+            🌐 Bekijk op site
+          </a>
+          <button className="btn btn-primary btn-sm" onClick={()=>opslaan()} disabled={busy}>
+            {busy ? <span className="spinner"/> : null} Opslaan
+          </button>
+        </div>
+      </div>
+
+      <div className="detail-header">
+        <div className="detail-name">{speler.naam}</div>
+        <div className="detail-sub">
+          <span>#{speler.rugnummer || "—"}</span>
+          <span>·</span>
+          <span>{speler.club}</span>
+          <span>·</span>
+          <span>{speler.geslacht}</span>
+        </div>
+        <div className="detail-tags">
+          {speler.keeper && <span className="tag tag-keeper">Keeper</span>}
+          {speler.aanvoerder && <span className="tag tag-green">Aanvoerder</span>}
+          {speler.oranje && <span className="tag tag-oranje">🦁 {speler.oranje}</span>}
+          {heeftBlessure && <span className="tag tag-blessure">🏥 Geblesseerd</span>}
+          {speler.gestopt && <span className="tag tag-gestopt">Gestopt</span>}
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div style={{display:"flex",gap:4,padding:"12px 24px",borderBottom:"1px solid var(--border)",background:"var(--surface)"}}>
+        {tabs.map(t=>(
+          <button key={t} onClick={()=>setTab(t)} style={{
+            padding:"6px 14px",borderRadius:6,border:"1px solid",fontSize:12,fontWeight:600,cursor:"pointer",
+            background:tab===t?"var(--accent)":"var(--surface2)",
+            color:tab===t?"white":"var(--muted)",
+            borderColor:tab===t?"var(--accent)":"var(--border)"
+          }}>
+            {t==="profiel"?"👤 Profiel":t==="blessures"?"🏥 Blessures":"📰 Nieuws"}
+            {t==="blessures"&&blessureLijst.filter(b=>b.actief).length>0&&
+              <span style={{marginLeft:6,background:"var(--red)",color:"#fff",borderRadius:10,padding:"1px 5px",fontSize:10}}>
+                {blessureLijst.filter(b=>b.actief).length}
+              </span>}
+          </button>
+        ))}
+      </div>
+
+      <div className="content">
+        {tab === "profiel" && (
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20,alignItems:"start"}}>
+            {/* Basisinfo */}
+            <div className="card">
+              <div className="card-header"><div className="card-title">Basisinfo</div></div>
+              <div className="card-body">
+                <div className="form-group">
+                  <label className="form-label">ID (read-only)</label>
+                  <input className="form-input mono" value={spelerId} disabled/>
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Naam (read-only)</label>
+                  <input className="form-input" value={velden.naam||""} disabled/>
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Geboortedatum</label>
+                  <input className="form-input" type="date" value={velden.geboortedatum||""}
+                    onChange={e=>set("geboortedatum",e.target.value)}/>
+                </div>
+                <div className="form-grid">
+                  <div className="form-group">
+                    <label className="form-label">Nationaliteit</label>
+                    <input className="form-input" value={velden.nationaliteit||""}
+                      onChange={e=>set("nationaliteit",e.target.value)}/>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Land code</label>
+                    <input className="form-input" placeholder="NL, BE, DE…" value={velden.land_code||""}
+                      onChange={e=>set("land_code",e.target.value.toUpperCase())} maxLength={6}/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Club & status */}
+            <div className="card">
+              <div className="card-header"><div className="card-title">Club & status</div></div>
+              <div className="card-body">
+                <div className="form-group">
+                  <label className="form-label">Club</label>
+                  <input className="form-input" value={velden.club||""}
+                    onChange={e=>set("club",e.target.value)}/>
+                  <div className="form-hint">Exacte naam, bijv. "Oranje-Rood"</div>
+                </div>
+                <div className="form-grid">
+                  <div className="form-group">
+                    <label className="form-label">Geslacht</label>
+                    <select className="form-select" value={velden.geslacht||""}
+                      onChange={e=>set("geslacht",e.target.value)}>
+                      <option value="heren">Heren</option>
+                      <option value="dames">Dames</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label className="form-label">Rugnummer</label>
+                    <input className="form-input" type="number" value={velden.rugnummer||""}
+                      onChange={e=>set("rugnummer",e.target.value?parseInt(e.target.value):"")}/>
+                  </div>
+                </div>
+                <div style={{display:"flex",gap:16,flexWrap:"wrap",marginTop:4}}>
+                  <label className="form-check">
+                    <input type="checkbox" checked={!!velden.keeper}
+                      onChange={e=>set("keeper",e.target.checked)}/>
+                    Keeper
+                  </label>
+                  <label className="form-check">
+                    <input type="checkbox" checked={!!velden.aanvoerder}
+                      onChange={e=>set("aanvoerder",e.target.checked)}/>
+                    Aanvoerder
+                  </label>
+                  <label className="form-check">
+                    <input type="checkbox" checked={!!velden.gestopt}
+                      onChange={e=>set("gestopt",e.target.checked)}/>
+                    Gestopt
+                  </label>
+                </div>
+                {velden.gestopt && (
+                  <div className="form-group" style={{marginTop:10}}>
+                    <label className="form-label">Stopdatum</label>
+                    <input className="form-input" type="date" value={velden.gestopt_datum||""}
+                      onChange={e=>set("gestopt_datum",e.target.value)}/>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Oranje */}
+            <div className="card">
+              <div className="card-header"><div className="card-title">🦁 Oranje selectie</div></div>
+              <div className="card-body">
+                <div className="form-group">
+                  <label className="form-label">Categorie</label>
+                  <select className="form-select" value={velden.oranje||""}
+                    onChange={e=>set("oranje",e.target.value)}>
+                    <option value="">Niet geselecteerd</option>
+                    <option value="senior">Senior Oranje</option>
+                    <option value="jong">Jong Oranje</option>
+                    <option value="u18">U18</option>
+                    <option value="u16">U16</option>
+                  </select>
+                </div>
+                {velden.oranje && (
+                  <div className="alert alert-info" style={{fontSize:12}}>
+                    Publiceer daarna ook via 🦁 Oranje selecties → Koppel badges in het hoofdmenu.
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Stats */}
+            <div className="card">
+              <div className="card-header"><div className="card-title">Statistieken</div></div>
+              <div className="card-body">
+                <div className="form-hint" style={{marginBottom:12}}>
+                  Stats worden automatisch bijgewerkt via de topscorers-pipeline.
+                </div>
+                <div className="form-grid">
+                  {[["doelpunten_seizoen","Goals"],["vd","Velddoelpunten"],["sc","Strafcorners"],["sb","Strafballen"]].map(([k,l])=>(
+                    <div key={k} className="form-group">
+                      <label className="form-label">{l}</label>
+                      <input className="form-input" type="number" value={velden[k]??0}
+                        onChange={e=>set(k,parseInt(e.target.value)||0)}/>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {tab === "blessures" && (
+          <div>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:14}}>
+              <div style={{fontSize:14,fontWeight:700}}>Blessuregeschiedenis</div>
+              <button className="btn btn-primary btn-sm" onClick={()=>setBlessureModal(true)}>
+                + Blessure toevoegen
+              </button>
+            </div>
+
+            {blessureLijst.length === 0 && <div className="empty">Geen blessures geregistreerd.</div>}
+
+            {blessureLijst.map((b,i) => (
+              <BlessureCard key={b.id||i} blessure={b} spelerId={spelerId} toast={toast} onRefresh={onRefresh}/>
+            ))}
+
+            {blessureModal && (
+              <BlessureModal spelerId={spelerId} toast={toast} onRefresh={onRefresh}
+                onClose={()=>setBlessureModal(false)}/>
+            )}
+          </div>
+        )}
+
+        {tab === "nieuws" && (
+          <div>
+            <div style={{fontSize:14,fontWeight:700,marginBottom:14}}>
+              Nieuws — verbergen/tonen
+            </div>
+            {ladtNieuws && <div className="loading"><div className="spinner"/> Nieuws laden…</div>}
+            {!ladtNieuws && spelersNieuws !== null && spelersNieuws.length === 0 &&
+              <div className="empty">Geen nieuws beschikbaar voor deze speler.</div>}
+            {!ladtNieuws && (spelersNieuws||[]).map((item,i) => {
+              const link = item.link || item.artikel_link || "";
+              return (
+                <div key={i} className={`nieuws-item ${item.verborgen?"verborgen":""}`}>
+                  <div className="nieuws-header">
+                    <span className="nieuws-datum">{formatDatum(item.datum)}</span>
+                    <span className="nieuws-titel" title={item.titel||item.artikel_titel}>
+                      {item.titel||item.artikel_titel||"Onbekend artikel"}
+                    </span>
+                    <button className={`btn btn-sm ${item.verborgen?"btn-success":"btn-danger"}`}
+                      onClick={()=>verbergNieuws(link, !item.verborgen)}
+                      title={item.verborgen?"Zichtbaar maken":"Verbergen"}>
+                      {item.verborgen ? "👁 Toon" : "🙈 Verberg"}
+                    </button>
+                  </div>
+                  <div className={`nieuws-bullet ${item.verborgen?"verborgen":""}`}>
+                    {item.bullet || "—"}
+                  </div>
+                  {item.verborgen &&
+                    <div className="form-hint" style={{marginTop:4}}>Verborgen op de publieke site</div>}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function BlessureCard({blessure, spelerId, toast, onRefresh}) {
+  const [sluitModal, setSluitModal] = useState(false);
+
+  const sluit = async (einddatum) => {
+    try {
+      const res = await apiCall("sluitBlessure", {spelerId, blessureId:blessure.id, einddatum});
+      if (!res.success) throw new Error(res.error);
+      toast("Blessure afgesloten");
+      onRefresh();
+    } catch(e) { toast(e.message, "error"); }
+    setSluitModal(false);
+  };
+
+  return (
+    <div className={`blessure-card ${!blessure.actief?"gesloten":""}`}>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:8}}>
+        <div>
+          <span style={{fontWeight:700,fontSize:14}}>{blessure.plek||"Blessure"}</span>
+          {blessure.actief
+            ? <span className="tag tag-blessure" style={{marginLeft:8}}>Actief</span>
+            : <span className="tag tag-gestopt" style={{marginLeft:8}}>Gesloten</span>}
+        </div>
+        {blessure.actief && (
+          <button className="btn btn-success btn-sm" onClick={()=>setSluitModal(true)}>
+            ✓ Markeer hersteld
+          </button>
+        )}
+      </div>
+      <div style={{fontSize:12,color:"var(--muted)",display:"flex",gap:12,flexWrap:"wrap"}}>
+        {blessure.start && <span>Sinds: {formatDatum(blessure.start)}</span>}
+        {blessure.eind  && <span>Hersteld: {formatDatum(blessure.eind)}</span>}
+        {blessure.ingevoerd_door && <span>Ingevoerd door: {blessure.ingevoerd_door}</span>}
+      </div>
+      {blessure.uitleg && (
+        <div style={{fontSize:13,marginTop:8,padding:"8px 12px",background:"rgba(255,255,255,.6)",borderRadius:6}}>
+          {blessure.uitleg}
+        </div>
+      )}
+      {sluitModal && (
+        <SluitBlessureModal onBevestig={sluit} onAnnuleer={()=>setSluitModal(false)}/>
+      )}
+    </div>
+  );
+}
+
+function SluitBlessureModal({onBevestig, onAnnuleer}) {
+  const [datum, setDatum] = useState(vandaag());
+  return (
+    <div className="modal-overlay">
+      <div className="modal fade">
+        <div className="modal-header">
+          <div className="modal-title">Blessure afsluiten</div>
+          <button className="modal-close" onClick={onAnnuleer}>×</button>
+        </div>
+        <div className="modal-body">
+          <div className="form-group">
+            <label className="form-label">Hersteldatum</label>
+            <input className="form-input" type="date" value={datum} onChange={e=>setDatum(e.target.value)}/>
+          </div>
+        </div>
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onAnnuleer}>Annuleren</button>
+          <button className="btn btn-success" onClick={()=>onBevestig(datum)}>✓ Bevestigen</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BlessureModal({spelerId, toast, onRefresh, onClose}) {
+  const [form, setForm] = useState({plek:"",start:vandaag(),uitleg:"",verwacht_herstel:""});
+  const [busy, setBusy] = useState(false);
+  const set = (k,v) => setForm(f=>({...f,[k]:v}));
+
+  const opslaan = async () => {
+    if (!form.plek) { toast("Vul een blessureplaats in","warn"); return; }
+    setBusy(true);
+    try {
+      const res = await apiCall("voegBlessureToe", {spelerId, blessure:{...form}});
+      if (!res.success) throw new Error(res.error);
+      toast("🏥 Blessure toegevoegd");
+      onRefresh();
+      onClose();
+    } catch(e) { toast(e.message,"error"); }
+    finally { setBusy(false); }
+  };
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal fade">
+        <div className="modal-header">
+          <div className="modal-title">🏥 Blessure toevoegen</div>
+          <button className="modal-close" onClick={onClose}>×</button>
+        </div>
+        <div className="modal-body">
+          <div className="form-group">
+            <label className="form-label">Blessureplaats *</label>
+            <input className="form-input" placeholder="bijv. Knie links, Hamstring…"
+              value={form.plek} onChange={e=>set("plek",e.target.value)}/>
+          </div>
+          <div className="form-grid">
+            <div className="form-group">
+              <label className="form-label">Startdatum</label>
+              <input className="form-input" type="date" value={form.start} onChange={e=>set("start",e.target.value)}/>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Verwacht herstel</label>
+              <input className="form-input" type="date" value={form.verwacht_herstel}
+                onChange={e=>set("verwacht_herstel",e.target.value)}/>
+            </div>
+          </div>
+          <div className="form-group">
+            <label className="form-label">Uitleg / context</label>
+            <textarea className="form-textarea" rows={3}
+              placeholder="bijv. Knieblessure opgelopen tijdens training, mist meerdere weken"
+              value={form.uitleg} onChange={e=>set("uitleg",e.target.value)}/>
+          </div>
+        </div>
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onClose}>Annuleren</button>
+          <button className="btn btn-primary" onClick={opslaan} disabled={busy}>
+            {busy?<span className="spinner"/>:null} Opslaan
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Clubs overzicht ───────────────────────────────────────────
+function ClubsOverzicht({data, setPagina}) {
+  const herenClubs = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+  const damesClubs = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+  const clubsInfo = data.clubsInfo || {};
+
+  const ClubKaart = ({club}) => {
+    const key = slugify(club);
+    const info = clubsInfo[key] || {};
+    return (
+      <div className="card" style={{cursor:"pointer",transition:"transform .12s"}}
+        onClick={()=>setPagina("club_"+key)}
+        onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"}
+        onMouseLeave={e=>e.currentTarget.style.transform=""}>
+        <div className="card-body">
+          <div style={{fontWeight:700,fontSize:14,marginBottom:4}}>{club}</div>
+          {info.opgericht && <div style={{fontSize:11,color:"var(--muted)"}}>Opgericht: {info.opgericht}</div>}
+          {info.stadion   && <div style={{fontSize:11,color:"var(--muted)"}}>{info.stadion}</div>}
+          {!info.opgericht && !info.stadion &&
+            <div style={{fontSize:11,color:"var(--border2)",fontStyle:"italic"}}>Nog geen info ingevoerd</div>}
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div><div className="topbar-title">Clubs</div></div>
+      </div>
+      <div className="content">
+        <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>Heren — Tulp Hoofdklasse</div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:10,marginBottom:24}}>
+          {herenClubs.map(c=><ClubKaart key={c} club={c}/>)}
+        </div>
+        <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>Dames — Tulp Hoofdklasse</div>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(180px,1fr))",gap:10}}>
+          {damesClubs.map(c=><ClubKaart key={c} club={c}/>)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Club detail ───────────────────────────────────────────────
+function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
+  const clubsInfo   = data.clubsInfo || {};
+  const [velden, setVelden] = useState({});
+  const [busy, setBusy] = useState(false);
+
+  const clubNaam = useMemo(() => {
+    const info = clubsInfo[clubKey];
+    if (info?.club) return info.club;
+    // Reconstrueer naam uit key
+    return clubKey.replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+  }, [clubKey, clubsInfo]);
+
+  useEffect(() => {
+    setVelden({...(clubsInfo[clubKey]||{club:clubNaam})});
+  }, [clubKey, clubsInfo]);
+
+  const set = (k,v) => setVelden(f=>({...f,[k]:v}));
+
+  const opslaan = async () => {
+    setBusy(true);
+    try {
+      const res = await apiCall("updateClubInfo", {club:velden.club||clubNaam, velden});
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Clubinfo opgeslagen");
+      onRefresh();
+    } catch(e) { toast(e.message,"error"); }
+    finally { setBusy(false); }
+  };
+
+  // Successen als gestructureerd object
+  const successen = velden.successen || {};
+  const setSucces = (trofee, jaren) =>
+    setVelden(f=>({...f, successen:{...(f.successen||{}), [trofee]:jaren}}));
+  const verwijderSucces = (trofee) => {
+    const {[trofee]:_, ...rest} = velden.successen||{};
+    setVelden(f=>({...f, successen:rest}));
+  };
+  const [nieuweTrofee, setNieuweTrofee] = useState("");
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="breadcrumb">
+            <a onClick={()=>setPagina("clubs")}>Clubs</a>
+            <span>/</span>
+            <span>{clubNaam}</span>
+          </div>
+        </div>
+        <div className="topbar-actions">
+          <button className="btn btn-primary btn-sm" onClick={opslaan} disabled={busy}>
+            {busy?<span className="spinner"/>:null} Opslaan
+          </button>
+        </div>
+      </div>
+      <div className="content">
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20,alignItems:"start"}}>
+          <div className="card">
+            <div className="card-header"><div className="card-title">Basisinfo</div></div>
+            <div className="card-body">
+              <div className="form-group">
+                <label className="form-label">Clubnaam</label>
+                <input className="form-input" value={velden.club||clubNaam}
+                  onChange={e=>set("club",e.target.value)}/>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Opgericht</label>
+                <input className="form-input" placeholder="bijv. 1908"
+                  value={velden.opgericht||""} onChange={e=>set("opgericht",e.target.value)}/>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Stadion / accommodatie</label>
+                <input className="form-input" placeholder="bijv. Wagener Stadion"
+                  value={velden.stadion||""} onChange={e=>set("stadion",e.target.value)}/>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Website</label>
+                <input className="form-input" placeholder="https://…"
+                  value={velden.website||""} onChange={e=>set("website",e.target.value)}/>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-header"><div className="card-title">🏆 Historische successen</div></div>
+            <div className="card-body">
+              <div className="form-hint" style={{marginBottom:12}}>
+                Per trofee een kommalijst van jaren, bijv. "1987, 1992, 2003"
+              </div>
+              {Object.entries(successen).map(([trofee,jaren])=>(
+                <div key={trofee} className="form-group" style={{display:"flex",gap:8,alignItems:"flex-end"}}>
+                  <div style={{flex:"0 0 140px"}}>
+                    <label className="form-label">{trofee}</label>
+                    <input className="form-input" value={jaren||""}
+                      onChange={e=>setSucces(trofee,e.target.value)}
+                      placeholder="1987, 1992, 2003"/>
+                  </div>
+                  <button className="btn btn-danger btn-sm" style={{marginBottom:1}}
+                    onClick={()=>verwijderSucces(trofee)}>✕</button>
+                </div>
+              ))}
+              <div style={{display:"flex",gap:8,marginTop:8}}>
+                <input className="filter-input" placeholder="Nieuwe trofee (bijv. Kampioen, EHL, Beker)"
+                  value={nieuweTrofee} onChange={e=>setNieuweTrofee(e.target.value)}
+                  style={{flex:1}} onKeyDown={e=>{
+                    if(e.key==="Enter"&&nieuweTrofee.trim()){
+                      setSucces(nieuweTrofee.trim(),"");
+                      setNieuweTrofee("");
+                    }
+                  }}/>
+                <button className="btn btn-secondary btn-sm" onClick={()=>{
+                  if(nieuweTrofee.trim()){setSucces(nieuweTrofee.trim(),"");setNieuweTrofee("");}
+                }}>+ Toevoegen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Blessures overzicht ───────────────────────────────────────
+function BlessuresOverzicht({data, setPagina}) {
+  const [toonHistorie, setToonHistorie] = useState(false);
+
+  const blessures = useMemo(() => {
+    const lijst = [];
+    Object.entries(data.blessures||{}).forEach(([sid,bl]) => {
+      const speler = (data.spelers||[]).find(s=>(s.id||slugify(s.naam))===sid);
+      (bl||[]).forEach(b => lijst.push({...b, spelerId:sid, spelerNaam:speler?.naam||sid, club:speler?.club||""}));
+    });
+    return lijst.sort((a,b)=>String(b.datum_invoer||"").localeCompare(String(a.datum_invoer||"")));
+  }, [data.blessures, data.spelers]);
+
+  const actief   = blessures.filter(b=>b.actief);
+  const historie = blessures.filter(b=>!b.actief);
+  const toonLijst = toonHistorie ? historie : actief;
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">🏥 Blessures</div>
+          <div className="topbar-sub">{actief.length} actief · {historie.length} in de geschiedenis</div>
+        </div>
+        <div className="topbar-actions">
+          <button className={`btn btn-sm ${toonHistorie?"btn-primary":"btn-secondary"}`}
+            onClick={()=>setToonHistorie(t=>!t)}>
+            {toonHistorie?"← Actief":"📚 Geschiedenis"}
+          </button>
+        </div>
+      </div>
+      <div className="content">
+        {toonLijst.length === 0
+          ? <div className="empty">{toonHistorie?"Geen blessuregeschiedenis.":"Geen actieve blessures."}</div>
+          : (
+          <div className="card">
+            <table className="tbl">
+              <thead>
+                <tr>
+                  <th>Speler</th>
+                  <th>Club</th>
+                  <th>Blessure</th>
+                  <th>Sinds</th>
+                  {toonHistorie && <th>Hersteld</th>}
+                  <th>Uitleg</th>
+                </tr>
+              </thead>
+              <tbody>
+                {toonLijst.map((b,i)=>(
+                  <tr key={i} onClick={()=>setPagina("speler_"+b.spelerId)}>
+                    <td style={{fontWeight:600}}>{b.spelerNaam}</td>
+                    <td style={{color:"var(--muted)"}}>{b.club}</td>
+                    <td><span className="tag tag-blessure">{b.plek||"Blessure"}</span></td>
+                    <td className="mono" style={{fontSize:12}}>{formatDatum(b.start)}</td>
+                    {toonHistorie && <td className="mono" style={{fontSize:12}}>{formatDatum(b.eind)||"—"}</td>}
+                    <td style={{fontSize:12,color:"var(--muted)",maxWidth:200,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                      {b.uitleg||"—"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Logboek ───────────────────────────────────────────────────
+function Logboek({data, setPagina}) {
+  const [zoek, setZoek] = useState("");
+  const [pagina, setPag] = useState(0);
+  const PER_PAG = 50;
+
+  const gefilterd = useMemo(() => {
+    const log = data.logboek || [];
+    if (!zoek) return log;
+    const z = zoek.toLowerCase();
+    return log.filter(e =>
+      (e.naam||"").toLowerCase().includes(z) ||
+      (e.id||"").toLowerCase().includes(z) ||
+      (e.email||"").toLowerCase().includes(z) ||
+      (e.type||"").toLowerCase().includes(z)
+    );
+  }, [data.logboek, zoek]);
+
+  const totaalPag = Math.ceil(gefilterd.length / PER_PAG);
+  const pagLijst  = gefilterd.slice(pagina*PER_PAG, (pagina+1)*PER_PAG);
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">📋 Logboek</div>
+          <div className="topbar-sub">{gefilterd.length} wijzigingen</div>
+        </div>
+      </div>
+      <div className="content">
+        <div className="filter-bar">
+          <input className="filter-input" placeholder="Zoek op naam, type, email…"
+            value={zoek} onChange={e=>{setZoek(e.target.value);setPag(0)}}/>
+        </div>
+        <div className="card">
+          {pagLijst.length === 0
+            ? <div className="empty">Geen logboek-entries gevonden.</div>
+            : pagLijst.map((e,i)=>{
+              const veranderingen = Object.entries(e.velden||{});
+              return (
+                <div key={i} className="log-item">
+                  <div className="log-datum">
+                    {formatDatum(e.datum?.slice(0,10))} {e.datum?.slice(11,16)} · {e.email} · {e.type}
+                  </div>
+                  <div className="log-tekst">
+                    <strong style={{cursor:"pointer",color:"var(--accent)"}}
+                      onClick={()=>e.type==="speler"&&setPagina("speler_"+e.id)}>
+                      {e.naam||e.id}
+                    </strong>
+                    {veranderingen.slice(0,3).map(([k,v],j)=>(
+                      <span key={j}> · {k}: {e.oud&&e.oud[k]!==undefined&&
+                        <span className="log-oud">{String(e.oud[k]??"—")}</span>} → <span className="log-nieuw">{String(v??"—")}</span>
+                      </span>
+                    ))}
+                    {veranderingen.length>3 && <span style={{color:"var(--muted)"}}> +{veranderingen.length-3} meer</span>}
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+        {totaalPag > 1 && (
+          <div className="pager">
+            <button className="pager-btn" disabled={pagina===0} onClick={()=>setPag(p=>p-1)}>← Vorige</button>
+            <span>Pagina {pagina+1} van {totaalPag}</span>
+            <button className="pager-btn" disabled={pagina>=totaalPag-1} onClick={()=>setPag(p=>p+1)}>Volgende →</button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ── Hoofd App ─────────────────────────────────────────────────
+function App() {
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null"); } catch { return null; }
+  });
+  const [pagina, setPaginaRaw] = useState("dashboard");
+  const [data, setData] = useState({spelers:[],logboek:[],blessures:{},voorstellen:[],clubsInfo:{},spelersNieuws:{}});
+  const [loading, setLoading] = useState(false);
+  const {toasts, show:toast} = useToast();
+
+  // Navigatie-helper die ook naar detail-pagina's kan
+  const setPagina = useCallback((p) => {
+    setPaginaRaw(p);
+    window.scrollTo(0,0);
+  }, []);
+
+  const laadData = useCallback(async () => {
+    if (!user) return;
+    setLoading(true);
+    try {
+      const res = await apiCall("haalAdminData");
+      if (!res.success) throw new Error(res.error || "Data laden mislukt");
+      setData(res);
+    } catch(e) {
+      toast("Data laden mislukt: " + e.message, "error");
+    } finally {
+      setLoading(false);
+    }
+  }, [user]);
+
+  useEffect(() => { if (user) laadData(); }, [user]);
+
+  const uitloggen = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(TOKEN_KEY);
+    if (window.google) window.google.accounts.id.disableAutoSelect();
+    setUser(null);
+  };
+
+  // Parseer de huidige pagina
+  const paginaType = pagina.startsWith("speler_") ? "speler_detail"
+    : pagina.startsWith("club_")   ? "club_detail"
+    : pagina;
+
+  const spelerId = pagina.startsWith("speler_") ? pagina.slice(7)  : null;
+  const clubKey  = pagina.startsWith("club_")   ? pagina.slice(5)  : null;
+
+  const aantalVoorstellen = (data.voorstellen||[]).length;
+
+  if (!user) return <LoginPagina onLogin={(u)=>setUser(u)}/>;
+
+  return (
+    <>
+      <style>{css}</style>
+      <div className="app">
+        <Sidebar
+          pagina={paginaType==="speler_detail"?"spelers":paginaType==="club_detail"?"clubs":pagina}
+          setPagina={setPagina}
+          user={user}
+          onLogout={uitloggen}
+          aantalVoorstellen={aantalVoorstellen}
+        />
+        <div className="main">
+          {loading && (
+            <div style={{position:"fixed",top:0,left:"var(--sidebar-w)",right:0,height:3,
+              background:"var(--accent)",zIndex:999,animation:"laadbar 1.5s ease infinite"}}/>
+          )}
+          {paginaType==="dashboard" &&
+            <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={laadData} loading={loading}/>}
+          {paginaType==="spelers" &&
+            <SpelersOverzicht data={data} setPagina={setPagina}/>}
+          {paginaType==="speler_detail" &&
+            <SpelerDetail spelerId={spelerId} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
+          {paginaType==="clubs" &&
+            <ClubsOverzicht data={data} setPagina={setPagina}/>}
+          {paginaType==="club_detail" &&
+            <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
+          {paginaType==="blessures" &&
+            <BlessuresOverzicht data={data} setPagina={setPagina}/>}
+          {paginaType==="logboek" &&
+            <Logboek data={data} setPagina={setPagina}/>}
+        </div>
+        <ToastContainer toasts={toasts}/>
+      </div>
+      <style>{`
+        @keyframes laadbar {
+          0%{opacity:1} 50%{opacity:.4} 100%{opacity:1}
+        }
+      `}</style>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
