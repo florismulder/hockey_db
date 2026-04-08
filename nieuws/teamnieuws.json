@@ -1,6 +1,19 @@
 {
   "SCHC": [
     {
+      "datum": "2026-04-08",
+      "titel": "De EHL stats Matla imponeert mijlpaal Yibbi en unicum Hendrickx",
+      "link": "https://drive.google.com/file/d/1gJULf3a63OLIAGbpNwArnbpSjUEbhNE0",
+      "bullets": [
+        "Won de eerste EHL-titel in de clubhistorie door Den Bosch met 1-0 te verslaan op 8 april 2026.",
+        "Kreeg in vier EHL-wedstrijden slechts één tegendoelpunt.",
+        "Hield drie keer op rij de nul in de EHL tegen Braxgata (4-0), Mannheimer HC (3-0) en Den Bosch (1-0).",
+        "Won negen van haar twaalf EHL-wedstrijden, een winstpercentage van 75%.",
+        "Heeft het hoogste winstpercentage (75%) van alle clubs die minstens vier keer aan de EHL deelnamen."
+      ],
+      "competitie": "EHL"
+    },
+    {
       "datum": "2026-04-07",
       "titel": "Joosje Burg ‘Ik háát verliezen, en al helemaal in een finale’",
       "link": "https://drive.google.com/file/d/1ZIP0TDpma1pbwwb9GyIHqzndRLzBzeJw",
@@ -526,6 +539,15 @@
         "Won de Euro Hockey League.",
         "Versterkt zich met Juup Veen.",
         "Versterkt zich met Peppe Veen."
+      ],
+      "competitie": "EHL"
+    },
+    {
+      "datum": "2026-04-08",
+      "titel": "De EHL stats Matla imponeert mijlpaal Yibbi en unicum Hendrickx",
+      "link": "https://drive.google.com/file/d/1gJULf3a63OLIAGbpNwArnbpSjUEbhNE0",
+      "bullets": [
+        "Won de EHL-finale van Gantoise met 3-2 op 8 april 2026."
       ],
       "competitie": "EHL"
     },
@@ -1694,6 +1716,16 @@
     }
   ],
   "Den Bosch": [
+    {
+      "datum": "2026-04-08",
+      "titel": "De EHL stats Matla imponeert mijlpaal Yibbi en unicum Hendrickx",
+      "link": "https://drive.google.com/file/d/1gJULf3a63OLIAGbpNwArnbpSjUEbhNE0",
+      "bullets": [
+        "Verloor de EHL-finale van SCHC met 0-1 op 8 april 2026.",
+        "Heeft een winstpercentage van 61,5% in de EHL."
+      ],
+      "competitie": "EHL"
+    },
     {
       "datum": "2026-04-07",
       "titel": "Joosje Burg ‘Ik háát verliezen, en al helemaal in een finale’",
