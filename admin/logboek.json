@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "type": "club",
+      "id": "amsterdam",
+      "naam": "Amsterdam",
+      "velden": {
+        "club": "Amsterdam",
+        "stadion": "Wagener Stadion"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-08T04:35:21.324Z"
+    }
+  ]
+}
