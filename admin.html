@@ -791,6 +791,324 @@ function SpelersOverzicht({data, setPagina}) {
 }
 
 // ── Speler detail / bewerk ────────────────────────────────────
+
+// ── SpelerNieuwsTab ───────────────────────────────────────────
+function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, ladtNieuws, toast}) {
+  const [nieuwsModal, setNieuwsModal] = useState(false);
+  const [koppelModal, setKoppelModal] = useState(null); // {bulletIndex}
+  const [busy, setBusy] = useState({});
+
+  // Groepeer bullets per artikel (zelfde als publieke site)
+  const groepen = useMemo(() => {
+    if (!spelersNieuws) return [];
+    const map = {};
+    const volgorde = [];
+    spelersNieuws.forEach((item, idx) => {
+      const link  = item.link || item.artikel_link || "";
+      const titel = item.titel || item.artikel_titel || "";
+      const key   = link || titel || item.datum || String(idx);
+      if (!map[key]) {
+        map[key] = { key, link, titel, datum: item.datum, competitie: item.competitie, bullets: [], alleVerborgen: true };
+        volgorde.push(key);
+      }
+      map[key].bullets.push({ ...item, _idx: idx });
+      if (!item.verborgen) map[key].alleVerborgen = false;
+    });
+    return volgorde.map(k => map[k]).sort((a,b) => String(b.datum||"").localeCompare(String(a.datum||"")));
+  }, [spelersNieuws]);
+
+  const herlaad = async () => {
+    const d = await fetch("nieuws/spelersnieuws.json").then(r=>r.json()).catch(()=>({}));
+    setSpelersNieuws(d[spelerId] || []);
+  };
+
+  const setBusyKey = (k, val) => setBusy(b => ({...b, [k]: val}));
+
+  const toggleBullet = async (bulletIndex, verborgen) => {
+    const key = "b" + bulletIndex;
+    setBusyKey(key, true);
+    try {
+      const res = await apiCall("verbergBullet", {spelerId, bulletIndex, verborgen});
+      if (!res.success) throw new Error(res.error);
+      await herlaad();
+      toast(verborgen ? "Bullet verborgen" : "Bullet zichtbaar");
+    } catch(e) { toast(e.message, "error"); }
+    finally { setBusyKey(key, false); }
+  };
+
+  const toggleArtikel = async (link, verborgen) => {
+    const key = "a" + link;
+    setBusyKey(key, true);
+    try {
+      const res = await apiCall("verbergArtikel", {spelerId, artikelLink: link, verborgen});
+      if (!res.success) throw new Error(res.error);
+      await herlaad();
+      toast(verborgen ? "Artikel verborgen" : "Artikel zichtbaar");
+    } catch(e) { toast(e.message, "error"); }
+    finally { setBusyKey(key, false); }
+  };
+
+  return (
+    <div>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
+        <div style={{fontSize:14,fontWeight:700}}>Nieuws ({(spelersNieuws||[]).length} bullets)</div>
+        <button className="btn btn-primary btn-sm" onClick={()=>setNieuwsModal(true)}>
+          + Nieuws toevoegen
+        </button>
+      </div>
+
+      {ladtNieuws && <div className="loading"><div className="spinner"/> Nieuws laden…</div>}
+      {!ladtNieuws && (!spelersNieuws || spelersNieuws.length === 0) &&
+        <div className="empty">Geen nieuws beschikbaar voor deze speler.</div>}
+
+      {!ladtNieuws && groepen.map((groep, gi) => {
+        const alleVerborgen = groep.alleVerborgen;
+        const busyArtikel = busy["a" + groep.link];
+        return (
+          <div key={gi} style={{
+            background: alleVerborgen ? "var(--surface2)" : "var(--surface)",
+            border: "1px solid " + (alleVerborgen ? "var(--border)" : "var(--border2)"),
+            borderRadius: 8, marginBottom: 10, overflow: "hidden",
+            opacity: alleVerborgen ? 0.6 : 1, transition: "opacity .2s"
+          }}>
+            {/* Artikel header */}
+            <div style={{padding:"10px 12px",borderBottom:"1px solid var(--border)",display:"flex",alignItems:"center",gap:8,background:alleVerborgen?"var(--surface3)":"var(--surface2)"}}>
+              <span className="mono" style={{fontSize:10,color:"var(--muted)",flexShrink:0}}>{formatDatum(groep.datum)}</span>
+              {groep.link
+                ? <a href={groep.link} target="_blank" rel="noopener noreferrer"
+                    style={{fontSize:12,fontWeight:600,flex:1,color:"var(--accent)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                    {groep.titel||groep.link} ›
+                  </a>
+                : <span style={{fontSize:12,fontWeight:600,flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                    {groep.titel||"Handmatig toegevoegd"}
+                  </span>}
+              {groep.competitie && groep.competitie !== "onbekend" &&
+                <span className="tag" style={{background:"var(--surface)",border:"1px solid var(--border2)",color:"var(--muted)",flexShrink:0}}>{groep.competitie}</span>}
+              <button
+                className={`btn btn-sm ${alleVerborgen ? "btn-success" : "btn-secondary"}`}
+                onClick={()=>toggleArtikel(groep.link, !alleVerborgen)}
+                disabled={!!busyArtikel}
+                style={{flexShrink:0}}
+                title={alleVerborgen ? "Heel artikel zichtbaar maken" : "Heel artikel verbergen"}>
+                {busyArtikel ? <span className="spinner"/> : alleVerborgen ? "👁 Toon alles" : "🙈 Verberg alles"}
+              </button>
+            </div>
+
+            {/* Bullets */}
+            {groep.bullets.map((bullet, bi) => {
+              const busyBullet = busy["b" + bullet._idx];
+              return (
+                <div key={bi} style={{
+                  display:"flex",alignItems:"flex-start",gap:8,
+                  padding:"8px 12px",
+                  borderBottom: bi < groep.bullets.length-1 ? "1px solid var(--border)" : "none",
+                  background: bullet.verborgen ? "var(--surface3)" : "transparent"
+                }}>
+                  <span style={{
+                    fontSize:11,marginTop:2,flexShrink:0,
+                    color:bullet.verborgen?"var(--border2)":"var(--accent)",
+                    fontWeight:700
+                  }}>•</span>
+                  <span style={{
+                    flex:1,fontSize:13,
+                    color:bullet.verborgen?"var(--muted)":"var(--text)",
+                    textDecoration:bullet.verborgen?"line-through":"none"
+                  }}>
+                    {bullet.bullet}
+                    {bullet.verborgen && <span style={{fontSize:10,color:"var(--muted)",marginLeft:8}}>(verborgen)</span>}
+                    {bullet.handmatig && <span style={{fontSize:10,color:"var(--green)",marginLeft:8}}>handmatig</span>}
+                  </span>
+                  <div style={{display:"flex",gap:4,flexShrink:0}}>
+                    <button
+                      className={`btn btn-sm ${bullet.verborgen?"btn-success":"btn-danger"}`}
+                      onClick={()=>toggleBullet(bullet._idx, !bullet.verborgen)}
+                      disabled={!!busyBullet}
+                      title={bullet.verborgen?"Zichtbaar maken":"Verbergen"}>
+                      {busyBullet ? <span className="spinner"/> : bullet.verborgen ? "👁" : "🙈"}
+                    </button>
+                    <button className="btn btn-secondary btn-sm"
+                      onClick={()=>setKoppelModal({bulletIndex:bullet._idx, bullet:bullet.bullet, titel:groep.titel, link:groep.link, datum:groep.datum})}
+                      title="Ook tonen bij andere speler of club">
+                      ↗
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+
+      {/* Modals */}
+      {nieuwsModal && (
+        <NieuwsToevoegenModal
+          spelerId={spelerId}
+          targetType="speler"
+          toast={toast}
+          onClose={()=>setNieuwsModal(false)}
+          onOpgeslagen={herlaad}
+        />
+      )}
+      {koppelModal && (
+        <KoppelNieuwsModal
+          bronSpelerId={spelerId}
+          bulletIndex={koppelModal.bulletIndex}
+          bullet={koppelModal.bullet}
+          spelers={spelers}
+          toast={toast}
+          onClose={()=>setKoppelModal(null)}
+          onOpgeslagen={herlaad}
+        />
+      )}
+    </div>
+  );
+}
+
+// ── NieuwsToevoegenModal ──────────────────────────────────────
+function NieuwsToevoegenModal({spelerId, targetType, toast, onClose, onOpgeslagen}) {
+  const [form, setForm] = useState({datum:vandaag(), titel:"", link:"", bullet:"", competitie:"HK"});
+  const [busy, setBusy] = useState(false);
+  const set = (k,v) => setForm(f=>({...f,[k]:v}));
+
+  const opslaan = async () => {
+    if (!form.bullet.trim()) { toast("Vul een bullet in","warn"); return; }
+    setBusy(true);
+    try {
+      const res = await apiCall("voegNieuwsToe", {targetId:spelerId, targetType, nieuwsItem:form});
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Nieuws toegevoegd");
+      onOpgeslagen();
+      onClose();
+    } catch(e) { toast(e.message,"error"); }
+    finally { setBusy(false); }
+  };
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal fade">
+        <div className="modal-header">
+          <div className="modal-title">+ Nieuws toevoegen</div>
+          <button className="modal-close" onClick={onClose}>×</button>
+        </div>
+        <div className="modal-body">
+          <div className="alert alert-info" style={{fontSize:12}}>
+            Handmatig toegevoegd nieuws is alleen zichtbaar in de admin en op de publieke site — het gaat niet via Gemini.
+          </div>
+          <div className="form-grid">
+            <div className="form-group">
+              <label className="form-label">Datum</label>
+              <input className="form-input" type="date" value={form.datum} onChange={e=>set("datum",e.target.value)}/>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Competitie</label>
+              <select className="form-select" value={form.competitie} onChange={e=>set("competitie",e.target.value)}>
+                {["HK","EHL","EK","WK","OS","vriendschappelijk","onbekend"].map(c=><option key={c}>{c}</option>)}
+              </select>
+            </div>
+          </div>
+          <div className="form-group">
+            <label className="form-label">Artikeltitel (optioneel)</label>
+            <input className="form-input" placeholder="bijv. Kampong wint EHL finale"
+              value={form.titel} onChange={e=>set("titel",e.target.value)}/>
+          </div>
+          <div className="form-group">
+            <label className="form-label">Artikel URL (optioneel)</label>
+            <input className="form-input" placeholder="https://…"
+              value={form.link} onChange={e=>set("link",e.target.value)}/>
+          </div>
+          <div className="form-group">
+            <label className="form-label">Bullet *</label>
+            <textarea className="form-textarea" rows={3}
+              placeholder="bijv. Scoorde winnend doelpunt in EHL finale op 6 april 2026"
+              value={form.bullet} onChange={e=>set("bullet",e.target.value)}/>
+          </div>
+        </div>
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onClose}>Annuleren</button>
+          <button className="btn btn-primary" onClick={opslaan} disabled={busy}>
+            {busy?<span className="spinner"/>:null} Opslaan
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── KoppelNieuwsModal ─────────────────────────────────────────
+function KoppelNieuwsModal({bronSpelerId, bulletIndex, bullet, spelers, toast, onClose, onOpgeslagen}) {
+  const [targetType, setTargetType] = useState("speler");
+  const [targetId, setTargetId] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  const herenClubs = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong","Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+  const damesClubs = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong","Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+  const alleClubs  = [...new Set([...herenClubs,...damesClubs])].sort();
+
+  const koppel = async () => {
+    if (!targetId) { toast("Kies een speler of club","warn"); return; }
+    setBusy(true);
+    try {
+      const res = await apiCall("koppelNieuwsAan", {bronSpelerId, bulletIndex, targetId, targetType});
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Nieuws gekoppeld aan " + targetId);
+      onOpgeslagen();
+      onClose();
+    } catch(e) { toast(e.message,"error"); }
+    finally { setBusy(false); }
+  };
+
+  return (
+    <div className="modal-overlay">
+      <div className="modal fade">
+        <div className="modal-header">
+          <div className="modal-title">↗ Ook tonen bij…</div>
+          <button className="modal-close" onClick={onClose}>×</button>
+        </div>
+        <div className="modal-body">
+          <div style={{padding:"10px 12px",background:"var(--surface2)",borderRadius:7,fontSize:13,marginBottom:16,borderLeft:"3px solid var(--accent)"}}>
+            "{bullet}"
+          </div>
+          <div className="form-group">
+            <label className="form-label">Type</label>
+            <div style={{display:"flex",gap:8}}>
+              {["speler","club"].map(t=>(
+                <button key={t} onClick={()=>{setTargetType(t);setTargetId("");}}
+                  className={`btn btn-sm ${targetType===t?"btn-primary":"btn-secondary"}`}>
+                  {t==="speler"?"👤 Speler":"🏒 Club"}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="form-group">
+            <label className="form-label">{targetType==="speler"?"Speler":"Club"}</label>
+            {targetType==="speler" ? (
+              <select className="form-select" value={targetId} onChange={e=>setTargetId(e.target.value)}>
+                <option value="">Kies speler…</option>
+                {(spelers||[]).filter(s=>(s.id||slugify(s.naam))!==bronSpelerId).map(s=>(
+                  <option key={s.id||slugify(s.naam)} value={s.id||slugify(s.naam)}>
+                    {s.naam} ({s.club})
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <select className="form-select" value={targetId} onChange={e=>setTargetId(e.target.value)}>
+                <option value="">Kies club…</option>
+                {alleClubs.map(c=><option key={c} value={c}>{c}</option>)}
+              </select>
+            )}
+          </div>
+        </div>
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onClose}>Annuleren</button>
+          <button className="btn btn-primary" onClick={koppel} disabled={busy||!targetId}>
+            {busy?<span className="spinner"/>:null} Koppelen
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   const speler = useMemo(() =>
     (data.spelers||[]).find(s=>(s.id||slugify(s.naam))===spelerId),
@@ -1067,37 +1385,14 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
         )}
 
         {tab === "nieuws" && (
-          <div>
-            <div style={{fontSize:14,fontWeight:700,marginBottom:14}}>
-              Nieuws — verbergen/tonen
-            </div>
-            {ladtNieuws && <div className="loading"><div className="spinner"/> Nieuws laden…</div>}
-            {!ladtNieuws && spelersNieuws !== null && spelersNieuws.length === 0 &&
-              <div className="empty">Geen nieuws beschikbaar voor deze speler.</div>}
-            {!ladtNieuws && (spelersNieuws||[]).map((item,i) => {
-              const link = item.link || item.artikel_link || "";
-              return (
-                <div key={i} className={`nieuws-item ${item.verborgen?"verborgen":""}`}>
-                  <div className="nieuws-header">
-                    <span className="nieuws-datum">{formatDatum(item.datum)}</span>
-                    <span className="nieuws-titel" title={item.titel||item.artikel_titel}>
-                      {item.titel||item.artikel_titel||"Onbekend artikel"}
-                    </span>
-                    <button className={`btn btn-sm ${item.verborgen?"btn-success":"btn-danger"}`}
-                      onClick={()=>verbergNieuws(link, !item.verborgen)}
-                      title={item.verborgen?"Zichtbaar maken":"Verbergen"}>
-                      {item.verborgen ? "👁 Toon" : "🙈 Verberg"}
-                    </button>
-                  </div>
-                  <div className={`nieuws-bullet ${item.verborgen?"verborgen":""}`}>
-                    {item.bullet || "—"}
-                  </div>
-                  {item.verborgen &&
-                    <div className="form-hint" style={{marginTop:4}}>Verborgen op de publieke site</div>}
-                </div>
-              );
-            })}
-          </div>
+          <SpelerNieuwsTab
+            spelerId={spelerId}
+            spelers={data.spelers}
+            spelersNieuws={spelersNieuws}
+            setSpelersNieuws={setSpelersNieuws}
+            ladtNieuws={ladtNieuws}
+            toast={toast}
+          />
         )}
       </div>
     </div>
