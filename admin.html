@@ -47,7 +47,7 @@
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
 // ── Configuratie ──────────────────────────────────────────────
-const GOOGLE_CLIENT_ID  = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID  = "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com";
 const APPS_SCRIPT_URL   = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
 const HOOFD_SITE_URL    = "https://florismulder.github.io/hockey_db";
 const STORAGE_KEY       = "hdb_admin_token";
@@ -270,10 +270,13 @@ async function apiCall(actie, data = {}) {
   const email = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}").email || "";
   const resp = await fetch(APPS_SCRIPT_URL, {
     method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ actie, data, token, email })
   });
   if (!resp.ok) throw new Error("Netwerk fout: " + resp.status);
-  return resp.json();
+  const text = await resp.text();
+  try { return JSON.parse(text); }
+  catch(e) { throw new Error("Ongeldig antwoord van server: " + text.slice(0,200)); }
 }
 
 // ── Helpers ───────────────────────────────────────────────────
