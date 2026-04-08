@@ -47,7 +47,7 @@
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
 // ── Configuratie ──────────────────────────────────────────────
-const GOOGLE_CLIENT_ID  = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID  = "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com";
 const APPS_SCRIPT_URL   = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
 const HOOFD_SITE_URL    = "https://florismulder.github.io/hockey_db";
 const STORAGE_KEY       = "hdb_admin_token";
@@ -822,7 +822,8 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
   }, [spelersNieuws]);
 
   const herlaad = async () => {
-    const d = await fetch("nieuws/spelersnieuws.json").then(r=>r.json()).catch(()=>({}));
+    // Cache busting: voeg timestamp toe zodat GitHub Pages niet de oude versie geeft
+    const d = await fetch("nieuws/spelersnieuws.json?t=" + Date.now()).then(r=>r.json()).catch(()=>({}));
     setSpelersNieuws(d[spelerId] || []);
   };
 
@@ -1139,7 +1140,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
     if (tab === "nieuws" && spelersNieuws === null) {
       setLadtNieuws(true);
       // Haal direct van GitHub op — publiek bestand, geen API-call nodig
-      fetch("nieuws/spelersnieuws.json")
+      fetch("nieuws/spelersnieuws.json?t=" + Date.now())
         .then(r => r.json())
         .then(d => setSpelersNieuws(d[spelerId] || []))
         .catch(() => setSpelersNieuws([]))
