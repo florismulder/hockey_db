@@ -1694,6 +1694,12 @@ function ClubHistoriePagina({club, geslacht, nav}) {
 
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
+  // Hash-routing: admin kan linken via #speler/spelerId
+  const parseHash = () => {
+    const h = window.location.hash.slice(1);
+    if (h.startsWith("speler/")) return {page:"speler", id:h.slice(7)};
+    return null;
+  };
   const [page,setPage]=useState("dashboard");
   const [pageId,setPageId]=useState(null);
   const [stand,setStand]=useState([]);
@@ -1758,7 +1764,17 @@ function App() {
   },[geslacht]);
 
   useEffect(()=>{
-    fetch("spelers/index.json").then(r=>r.json()).then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht))).catch(()=>setSpelers([]));
+    fetch("spelers/index.json").then(r=>r.json()).then(d=>{
+      const gefilterd=(d?.spelers||[]).filter(s=>s.geslacht===geslacht);
+      setSpelers(gefilterd);
+      // Hash-routing: navigeer naar speler als URL #speler/id bevat
+      const h=window.location.hash.slice(1);
+      if(h.startsWith("speler/")) {
+        const hId=h.slice(7);
+        const gevonden=gefilterd.find(s=>(s.id||slugify(s.naam))===hId);
+        if(gevonden){setPage("speler");setPageId(gevonden);window.location.hash="";}
+      }
+    }).catch(()=>setSpelers([]));
   },[geslacht]);
 
   const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
