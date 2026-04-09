@@ -1,6 +1,42 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "anne_veenendaal",
+      "naam": "Anne Veenendaal",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1995-09-07"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:50:41.056Z"
+    },
+    {
       "type": "bullet",
       "id": "sander_de_wijn",
       "naam": "sander_de_wijn",
