@@ -836,8 +836,9 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
     try {
       const res = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen});
       if (!res.success) throw new Error(res.error);
+      toast(verborgen ? "🙈 Verborgen — site bijgewerkt binnen ~1 minuut" : "👁 Zichtbaar gemaakt");
+      await new Promise(r => setTimeout(r, 4000));
       await herlaad();
-      toast(verborgen ? "Bullet verborgen" : "Bullet zichtbaar");
     } catch(e) { toast(e.message, "error"); }
     finally { setBusyKey(key, false); }
   };
@@ -848,8 +849,10 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
     try {
       const res = await apiCall("verbergArtikel", {spelerId, artikelLink: link, verborgen});
       if (!res.success) throw new Error(res.error);
+      toast(verborgen ? "🙈 Verborgen — site bijgewerkt binnen ~1 minuut" : "👁 Zichtbaar gemaakt");
+      // Wacht even zodat GitHub Pages de nieuwe versie kan verspreiden
+      await new Promise(r => setTimeout(r, 4000));
       await herlaad();
-      toast(verborgen ? "Artikel verborgen" : "Artikel zichtbaar");
     } catch(e) { toast(e.message, "error"); }
     finally { setBusyKey(key, false); }
   };
