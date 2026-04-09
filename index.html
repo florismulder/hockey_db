@@ -1559,7 +1559,7 @@ function HistoriePagina({nav}) {
                       <div className="ds" style={{marginTop:0}}>Uitslagen ({detail.uitslagen.length})</div>
                       {detail.uitslagen.map((u,i)=>(
                         <div key={i} style={{display:"flex",alignItems:"center",gap:6,padding:"3px 0",borderBottom:"1px solid var(--border)",fontSize:11}}>
-                          {u.datum&&<span style={{fontFamily:"monospace",fontSize:9,color:"var(--muted)",flexShrink:0,width:46}}>{u.datum.slice(5).replace("-",".")}</span>}
+                          {u.datum&&<span style={{fontFamily:"monospace",fontSize:9,color:"var(--muted)",flexShrink:0,width:72}}>{u.datum.slice(8)+"-"+u.datum.slice(5,7)+"-"+u.datum.slice(0,4)}</span>}
                           <span style={{flex:1,fontWeight:500,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.thuis}</span>
                           <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0,padding:"0 4px"}}>{u.score_thuis??0}–{u.score_uit??0}</span>
                           <span style={{flex:1,color:"var(--muted)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.uit}</span>
