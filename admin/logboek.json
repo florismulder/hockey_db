@@ -2,6 +2,22 @@
   "entries": [
     {
       "type": "speler",
+      "id": "jorrit_croon",
+      "naam": "Jorrit Croon",
+      "velden": {
+        "blessure": {
+          "actief": true,
+          "plek": "Knie",
+          "start": "2026-02-08",
+          "uitleg": "De middenvelder van Bloemendaal liep\nbegin februari in de FIH Pro League met de Oranje Heren een flinke\nknieblessure op, waardoor hij onlangs onder het mes moest."
+        }
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T05:19:40.908Z"
+    },
+    {
+      "type": "speler",
       "id": "sander_de_wijn",
       "naam": "Sander de Wijn",
       "velden": {
