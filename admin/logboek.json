@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "teun_beins",
+      "naam": "Teun Beins",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 17,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 12,
+        "vd": 0,
+        "sc": 12,
+        "sb": 0,
+        "geboortedatum": "1998-10-28"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 17,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 12,
+        "vd": 0,
+        "sc": 12,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T16:14:20.135Z"
+    },
+    {
+      "type": "speler",
       "id": "luke_dommershuijzen",
       "naam": "Luke Dommershuijzen",
       "velden": {
