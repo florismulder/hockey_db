@@ -1554,6 +1554,19 @@ function HistoriePagina({nav}) {
                       ))}
                     </div>
                   )}
+                  {detail.uitslagen?.length>0&&(
+                    <div style={{marginTop:16,borderTop:"1px solid var(--border)",paddingTop:12}}>
+                      <div className="ds" style={{marginTop:0}}>Uitslagen ({detail.uitslagen.length})</div>
+                      {detail.uitslagen.map((u,i)=>(
+                        <div key={i} style={{display:"flex",alignItems:"center",gap:6,padding:"3px 0",borderBottom:"1px solid var(--border)",fontSize:11}}>
+                          {u.datum&&<span style={{fontFamily:"monospace",fontSize:9,color:"var(--muted)",flexShrink:0,width:46}}>{u.datum.slice(5).replace("-",".")}</span>}
+                          <span style={{flex:1,fontWeight:500,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.thuis}</span>
+                          <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0,padding:"0 4px"}}>{u.score_thuis??0}–{u.score_uit??0}</span>
+                          <span style={{flex:1,color:"var(--muted)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.uit}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div style={{borderBottom:"1px solid var(--border)",padding:"20px 24px"}}>
                   <PlayoffBlok playoffs={detail.playoffs}/>
@@ -1573,26 +1586,6 @@ function HistoriePagina({nav}) {
                 </div>
               </div>
 
-              {/* Uitslagen — alleen tonen als aanwezig */}
-              {detail.uitslagen?.length>0&&(
-                <div style={{borderTop:"1px solid var(--border)",padding:"16px 24px"}}>
-                  <div className="ds" style={{marginTop:0,marginBottom:8}}>Uitslagen reguliere competitie ({detail.uitslagen.length})</div>
-                  <div style={{columns:2,columnGap:24}}>
-                    {detail.uitslagen.map((u,i)=>(
-                      <div key={i} style={{display:"flex",alignItems:"center",gap:6,padding:"3px 0",borderBottom:"1px solid var(--border)",fontSize:11,breakInside:"avoid"}}>
-                        {u.datum&&<span style={{fontFamily:"monospace",fontSize:9,color:"var(--muted)",flexShrink:0,width:52}}>{u.datum.slice(5).replace("-",".")}</span>}
-                        <span style={{flex:1,fontWeight:500,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.thuis}</span>
-                        <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0,padding:"0 4px"}}>{u.score_thuis??0}–{u.score_uit??0}</span>
-                        <span style={{flex:1,color:"var(--muted)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{u.uit}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {(()=>{
-                const po=<PlayoutBlok playoffs={detail.playoffs}/>;
-                return po?<div style={{borderTop:"1px solid var(--border)",padding:"16px 24px"}}>{po}</div>:null;
-              })()}
               {/* Terugknop */}
               <div style={{padding:"16px 24px",borderTop:"1px solid var(--border)",textAlign:"center"}}>
                 <button onClick={()=>document.querySelector(".fade").scrollIntoView({behavior:"smooth",block:"start"})}
