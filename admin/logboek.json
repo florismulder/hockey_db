@@ -6,6 +6,20 @@
       "naam": "sander_de_wijn",
       "velden": {
         "verborgen": true,
+        "bullet": "Won de Euro Hockey League op 6 april 2026 met Kampong"
+      },
+      "oud": {
+        "verborgen": true
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:43:51.023Z"
+    },
+    {
+      "type": "bullet",
+      "id": "sander_de_wijn",
+      "naam": "sander_de_wijn",
+      "velden": {
+        "verborgen": true,
         "bullet": "Kreeg een groene kaart in het vierde kwart van de EHL-finale op 6 april 2026"
       },
       "oud": {},
