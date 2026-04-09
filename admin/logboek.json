@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "marijn_veen",
+      "naam": "Marijn Veen",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 19,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 4,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "1996-11-18"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 19,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 4,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:52:03.461Z"
+    },
+    {
+      "type": "speler",
       "id": "fay_van_der_elst",
       "naam": "Fay van der Elst",
       "velden": {
