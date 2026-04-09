@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-08",
+  "bijgewerkt": "2026-04-09",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -1039,7 +1039,13 @@
       "doelpunten_seizoen": 2,
       "vd": 2,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "blessure": {
+        "actief": true,
+        "plek": "Knie",
+        "start": "2026-02-08",
+        "uitleg": "De middenvelder van Bloemendaal liep\nbegin februari in de FIH Pro League met de Oranje Heren een flinke\nknieblessure op, waardoor hij onlangs onder het mes moest."
+      }
     },
     {
       "id": "floris_wortelboer",
