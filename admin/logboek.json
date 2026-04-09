@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "casper_van_der_veen",
+      "naam": "Casper van der Veen",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 11,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 4,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "2004-04-29"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 11,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 4,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T16:14:54.848Z"
+    },
+    {
+      "type": "speler",
       "id": "teun_beins",
       "naam": "Teun Beins",
       "velden": {
