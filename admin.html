@@ -47,7 +47,7 @@
 const { useState, useEffect, useMemo, useCallback, useRef } = React;
 
 // ── Configuratie ──────────────────────────────────────────────
-const GOOGLE_CLIENT_ID  = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID  = "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com";
 const APPS_SCRIPT_URL   = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
 const HOOFD_SITE_URL    = "https://florismulder.github.io/hockey_db";
 const STORAGE_KEY       = "hdb_admin_token";
@@ -218,10 +218,10 @@ input,textarea,select{font-family:inherit;font-size:14px}
 .blessure-card.gesloten{background:var(--surface2);border-color:var(--border);opacity:.7}
 
 /* Login page */
-.login-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg)}
-.login-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:40px;width:100%;max-width:380px;box-shadow:0 8px 32px rgba(0,0,0,.08)}
-.login-logo{display:flex;align-items:center;gap:10px;margin-bottom:28px}
-.login-logo-txt{font-size:18px;font-weight:700;color:var(--accent)}
+.login-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0ece4 0%,#e8e3da 50%,#ede8e0 100%);padding:20px}
+.login-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:44px 40px;width:100%;max-width:400px;box-shadow:0 12px 40px rgba(0,0,0,.10),0 2px 8px rgba(0,0,0,.06)}
+.login-logo{display:flex;align-items:center;gap:12px;margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+.login-logo-txt{font-size:19px;font-weight:700;color:var(--accent)}
 
 /* Alerts */
 .alert{padding:10px 14px;border-radius:7px;font-size:13px;margin-bottom:12px;display:flex;align-items:center;gap:8px}

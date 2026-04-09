@@ -657,7 +657,6 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   const [clubTeamNieuws, setClubTeamNieuws] = useState([]);
   const [nieuwsPagina, setNieuwsPagina] = useState(0);
   const [coach, setCoach] = useState(null);
-  const [clubInfo, setClubInfo] = useState(null);
   const ITEMS_PER_PAGE = 5;
 
   const oranjeCheck = (naam) => {
@@ -676,21 +675,10 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
       .then(r=>r.json())
       .then(d=>{
         const items = d[club] || [];
-        // Filter op geslacht via competitie-veld — heren/dames nieuws gescheiden houden
-        const gefilterd = items.filter(item => {
-          if (!item.geslacht) return true; // geen geslacht = toon altijd
-          return item.geslacht === geslacht;
-        });
+        const gefilterd = items.filter(function(item){ return !item.geslacht || item.geslacht === geslacht; });
         setClubTeamNieuws(gefilterd);
       })
       .catch(()=>{ setClubTeamNieuws([]); });
-  }, [club]);
-
-  useEffect(()=>{
-    fetch("clubs/info.json")
-      .then(r=>r.json())
-      .then(d=>{ const key=club.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,""); setClubInfo(d[key]||null); })
-      .catch(()=>setClubInfo(null));
   }, [club]);
 
   useEffect(()=>{
@@ -726,20 +714,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
         <div style={{fontSize:12,color:"var(--muted)",marginTop:4,display:"flex",gap:12,flexWrap:"wrap"}}>
           <span>{clubSpelers.length} spelers · seizoen 2025-2026</span>
           {coach&&<span>🎽 Coach: <span style={{color:"var(--text)",fontWeight:600}}>{coach.naam}</span>{coach.sinds?` (vanaf ${coach.sinds})`:""}</span>}
-          {clubInfo&&clubInfo.opgericht&&<span>📅 Opgericht: {clubInfo.opgericht}</span>}
-          {clubInfo&&clubInfo.stadion&&<span>🏟 {clubInfo.stadion}</span>}
         </div>
       </div>
-      {clubInfo&&clubInfo.successen&&Object.keys(clubInfo.successen).length>0&&(
-        <div style={{padding:"10px 24px",borderBottom:"1px solid var(--border)",background:"var(--surface2)",display:"flex",gap:16,flexWrap:"wrap",alignItems:"center"}}>
-          <span style={{fontSize:11,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.5}}>🏆 Successen</span>
-          {Object.entries(clubInfo.successen).map(([trofee,jaren],i)=>(
-            <span key={i} style={{fontSize:12,color:"var(--text)"}}>
-              <span style={{fontWeight:600}}>{trofee}:</span> {jaren}
-            </span>
-          ))}
-        </div>
-      )}
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
           <div style={{fontSize:14,fontWeight:700,marginBottom:12}}>Selectie</div>
@@ -752,6 +728,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
                   <td style={{padding:"6px 8px",fontWeight:500}}>{s.naam} {s.keeper&&<span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",color:"#1e40af",borderRadius:3,fontWeight:700,marginLeft:5}}>K</span>}{oranjeCheck(s.naam)&&<span style={{fontSize:9,padding:"1px 5px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:3,fontWeight:700,marginLeft:5}}>{oranjeCheck(s.naam)}</span>}</td>
                   <td><Vlag s={s}/></td>
                   <td style={{textAlign:"right",color:"var(--accent)",fontWeight:700,padding:"6px 8px"}}>{s.doelpunten_seizoen>0?s.doelpunten_seizoen:""}</td>
+                  <td style={{padding:"6px 4px",width:20}}>{s.blessure?.actief&&<span title="Geblesseerd" style={{fontSize:13}}>🏥</span>}</td>
                 </tr>
               ))}
             </tbody>
@@ -888,6 +865,18 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   const vn=delen[0]; const an=delen[delen.length-1];
   const [toontDoelpunten,setToontDoelpunten]=useState(false);
   const [spelersNieuws,setSpelersNieuws]=useState([]);
+  const [blessures,setBlessures]=useState([]);
+
+  // Leeftijd berekenen
+  const leeftijd = useMemo(()=>{
+    if(!speler.geboortedatum) return null;
+    const geb = new Date(speler.geboortedatum);
+    if(isNaN(geb)) return null;
+    const nu = new Date();
+    let lft = nu.getFullYear() - geb.getFullYear();
+    if(nu.getMonth()<geb.getMonth()||(nu.getMonth()===geb.getMonth()&&nu.getDate()<geb.getDate())) lft--;
+    return lft;
+  },[speler.geboortedatum]);
 
   // Laad bullets uit nieuws/spelersnieuws.json
   useEffect(()=>{
@@ -899,6 +888,11 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
         const items = (d[spelerId] || []).filter(function(i){ return !i.verborgen; });
         setSpelersNieuws(items);
       })
+      .catch(()=>{});
+    // Laad actieve blessures
+    fetch("admin/blessures.json")
+      .then(r=>r.json())
+      .then(d=>{ setBlessures((d[spelerId]||[]).filter(b=>b.actief)); })
       .catch(()=>{});
   },[speler.id, speler.naam]);
 
@@ -934,6 +928,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
         <div className="dm">
           <span className="dc ac">{speler.club}</span>
           <span className="dc">{speler.geslacht==="heren"?"Heren":"Dames"}</span>
+          {leeftijd&&<span className="dc">{leeftijd} jaar</span>}
           {speler.keeper&&<span className="dc ke">Keeper</span>}
           {speler.aanvoerder&&<span className="dc av">Aanvoerder</span>}
           {oranje&&oranje.senior&&oranje.senior.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>🦁 Oranje</span>}
@@ -943,6 +938,21 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
         </div>
       </div>
       <div className="db">
+        {/* Blessure blokje */}
+        {blessures.length>0&&(
+          <div style={{background:"#fdf0ee",border:"1px solid #fecaca",borderRadius:8,padding:"12px 16px",marginBottom:16,display:"flex",alignItems:"flex-start",gap:10}}>
+            <span style={{fontSize:18,flexShrink:0}}>🏥</span>
+            <div>
+              <div style={{fontSize:13,fontWeight:700,color:"var(--red)",marginBottom:2}}>Geblesseerd</div>
+              {blessures.map((b,i)=>(
+                <div key={i} style={{fontSize:12,color:"#7f1d1d"}}>
+                  {b.plek||"Blessure"}{b.start?` · Sinds ${formatNieuwsDatum(b.start)}`:""}
+                  {b.uitleg&&<span style={{color:"#991b1b"}}> · {b.uitleg}</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
         {/* Statistieken */}
         {aantalStats>0&&(
           <div style={{marginBottom:20}}>
@@ -1702,12 +1712,6 @@ function ClubHistoriePagina({club, geslacht, nav}) {
 
 function App() {
   const [geslacht,setGeslacht]=useState("heren");
-  // Hash-routing: admin kan linken via #speler/spelerId
-  const parseHash = () => {
-    const h = window.location.hash.slice(1);
-    if (h.startsWith("speler/")) return {page:"speler", id:h.slice(7)};
-    return null;
-  };
   const [page,setPage]=useState("dashboard");
   const [pageId,setPageId]=useState(null);
   const [stand,setStand]=useState([]);
@@ -1772,17 +1776,7 @@ function App() {
   },[geslacht]);
 
   useEffect(()=>{
-    fetch("spelers/index.json").then(r=>r.json()).then(d=>{
-      const gefilterd=(d?.spelers||[]).filter(s=>s.geslacht===geslacht);
-      setSpelers(gefilterd);
-      // Hash-routing: navigeer naar speler als URL #speler/id bevat
-      const h=window.location.hash.slice(1);
-      if(h.startsWith("speler/")) {
-        const hId=h.slice(7);
-        const gevonden=gefilterd.find(s=>(s.id||slugify(s.naam))===hId);
-        if(gevonden){setPage("speler");setPageId(gevonden);window.location.hash="";}
-      }
-    }).catch(()=>setSpelers([]));
+    fetch("spelers/index.json").then(r=>r.json()).then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht))).catch(()=>setSpelers([]));
   },[geslacht]);
 
   const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
