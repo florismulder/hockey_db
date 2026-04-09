@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "mirco_pruyser",
+      "naam": "Mirco Pruyser",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 31,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 5,
+        "vd": 5,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "1989-08-11"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 31,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 5,
+        "vd": 5,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:55:14.756Z"
+    },
+    {
+      "type": "speler",
       "id": "robbert_kemperman",
       "naam": "Robbert Kemperman",
       "velden": {
