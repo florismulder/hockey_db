@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "luke_dommershuijzen",
+      "naam": "Luke Dommershuijzen",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 5,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 2,
+        "vd": 1,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "2002-04-11"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 5,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 2,
+        "vd": 1,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T16:13:55.369Z"
+    },
+    {
+      "type": "speler",
       "id": "stella_van_gils",
       "naam": "Stella van Gils",
       "velden": {
