@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "fay_van_der_elst",
+      "naam": "Fay van der Elst",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 12,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 7,
+        "vd": 6,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1998-02-20"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 12,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 7,
+        "vd": 6,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:51:47.426Z"
+    },
+    {
+      "type": "speler",
       "id": "felice_albers",
       "naam": "Felice Albers",
       "velden": {
