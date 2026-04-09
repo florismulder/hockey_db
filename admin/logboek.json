@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "thierry_brinkman",
+      "naam": "Thierry Brinkman",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "heren",
+        "rugnummer": 8,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 10,
+        "vd": 9,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1995-03-19"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "heren",
+        "rugnummer": 8,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 10,
+        "vd": 9,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:56:38.568Z"
+    },
+    {
+      "type": "speler",
       "id": "jasper_brinkman",
       "naam": "Jasper Brinkman",
       "velden": {
