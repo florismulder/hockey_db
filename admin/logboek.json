@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "boris_burkhardt",
+      "naam": "Boris Burkhardt",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 18,
+        "vd": 8,
+        "sc": 8,
+        "sb": 2,
+        "geboortedatum": "1996-09-01"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 18,
+        "vd": 8,
+        "sc": 8,
+        "sb": 2
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:52:48.822Z"
+    },
+    {
+      "type": "speler",
       "id": "sabine_plonissen",
       "naam": "Sabine Plönissen",
       "velden": {
