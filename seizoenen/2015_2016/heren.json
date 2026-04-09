@@ -661,5 +661,924 @@
       }
     ]
   },
-  "bijgewerkt": "2026-04-05"
+  "bijgewerkt": "2026-04-05",
+  "uitslagen": [
+    {
+      "datum": "2016-04-24",
+      "thuis": "Amsterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-24",
+      "thuis": "Kampong",
+      "uit": "Den Bosch",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-24",
+      "thuis": "Oranje Zwart",
+      "uit": "Rotterdam",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-24",
+      "thuis": "Pinoke",
+      "uit": "SCHC",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-24",
+      "thuis": "Schaerweijde",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-24",
+      "thuis": "Voordaan",
+      "uit": "HGC",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "Bloemendaal",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "Den Bosch",
+      "uit": "Voordaan",
+      "score_thuis": 5,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "HGC",
+      "uit": "Pinoke",
+      "score_thuis": 6,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "Hurley",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "Rotterdam",
+      "uit": "Schaerweijde",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-17",
+      "thuis": "SCHC",
+      "uit": "Oranje Zwart",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "HGC",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "Kampong",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "Oranje Zwart",
+      "uit": "Pinoke",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "Schaerweijde",
+      "uit": "SCHC",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "Voordaan",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-04-10",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "Bloemendaal",
+      "uit": "Den Bosch",
+      "score_thuis": 3,
+      "score_uit": 0
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "Hurley",
+      "uit": "Voordaan",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "Pinoke",
+      "uit": "Schaerweijde",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "Rotterdam",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "SCHC",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 5
+    },
+    {
+      "datum": "2016-04-03",
+      "thuis": "Oranje Zwart",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "Hurley",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "Oranje Zwart",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "Pinoke",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "Rotterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "Schaerweijde",
+      "uit": "HGC",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-03-20",
+      "thuis": "SCHC",
+      "uit": "Voordaan",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "Amsterdam",
+      "uit": "Pinoke",
+      "score_thuis": 6,
+      "score_uit": 0
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "Den Bosch",
+      "uit": "Hurley",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "HGC",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "Kampong",
+      "uit": "SCHC",
+      "score_thuis": 3,
+      "score_uit": 0
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "Schaerweijde",
+      "uit": "Oranje Zwart",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-18",
+      "thuis": "Voordaan",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "Amsterdam",
+      "uit": "Schaerweijde",
+      "score_thuis": 6,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "Bloemendaal",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "Den Bosch",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "HGC",
+      "uit": "Hurley",
+      "score_thuis": 5,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "Kampong",
+      "uit": "Oranje Zwart",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-13",
+      "thuis": "Voordaan",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "Amsterdam",
+      "uit": "HGC",
+      "score_thuis": 1,
+      "score_uit": 6
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "Oranje Zwart",
+      "uit": "Voordaan",
+      "score_thuis": 5,
+      "score_uit": 0
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "Pinoke",
+      "uit": "Den Bosch",
+      "score_thuis": 6,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "Rotterdam",
+      "uit": "Hurley",
+      "score_thuis": 5,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "Schaerweijde",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2016-03-06",
+      "thuis": "SCHC",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 5
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "Bloemendaal",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "Den Bosch",
+      "uit": "Oranje Zwart",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "HGC",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "Hurley",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "Kampong",
+      "uit": "Amsterdam",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2016-02-28",
+      "thuis": "Voordaan",
+      "uit": "Schaerweijde",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "Amsterdam",
+      "uit": "Voordaan",
+      "score_thuis": 12,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "Kampong",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "Oranje Zwart",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "Pinoke",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "Schaerweijde",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-15",
+      "thuis": "SCHC",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "Bloemendaal",
+      "uit": "Schaerweijde",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "HGC",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "Hurley",
+      "uit": "Oranje Zwart",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "Rotterdam",
+      "uit": "Pinoke",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-13",
+      "thuis": "Voordaan",
+      "uit": "Kampong",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "HGC",
+      "uit": "Voordaan",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "Hurley",
+      "uit": "Schaerweijde",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "Rotterdam",
+      "uit": "Oranje Zwart",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-11-08",
+      "thuis": "SCHC",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-11-01",
+      "thuis": "Amsterdam",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-11-01",
+      "thuis": "Oranje Zwart",
+      "uit": "SCHC",
+      "score_thuis": 5,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-11-01",
+      "thuis": "Pinoke",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-11-01",
+      "thuis": "Schaerweijde",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-11-01",
+      "thuis": "Voordaan",
+      "uit": "Den Bosch",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "Bloemendaal",
+      "uit": "Voordaan",
+      "score_thuis": 7,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "Den Bosch",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "Hurley",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "Pinoke",
+      "uit": "Oranje Zwart",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-10-30",
+      "thuis": "SCHC",
+      "uit": "Schaerweijde",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "Amsterdam",
+      "uit": "SCHC",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "HGC",
+      "uit": "Oranje Zwart",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "Kampong",
+      "uit": "Rotterdam",
+      "score_thuis": 4,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "Schaerweijde",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-25",
+      "thuis": "Voordaan",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "Bloemendaal",
+      "uit": "HGC",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "Hurley",
+      "uit": "Den Bosch",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "Oranje Zwart",
+      "uit": "Schaerweijde",
+      "score_thuis": 9,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "Pinoke",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "Rotterdam",
+      "uit": "Voordaan",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-18",
+      "thuis": "SCHC",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "Amsterdam",
+      "uit": "Oranje Zwart",
+      "score_thuis": 1,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "HGC",
+      "uit": "Schaerweijde",
+      "score_thuis": 4,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "Kampong",
+      "uit": "Pinoke",
+      "score_thuis": 5,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-10-11",
+      "thuis": "Voordaan",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "Hurley",
+      "uit": "HGC",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "Oranje Zwart",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "Pinoke",
+      "uit": "Voordaan",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "Rotterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 6,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "Schaerweijde",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-10-04",
+      "thuis": "SCHC",
+      "uit": "Den Bosch",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "Bloemendaal",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "Den Bosch",
+      "uit": "Pinoke",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "HGC",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "Hurley",
+      "uit": "Rotterdam",
+      "score_thuis": 5,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "Kampong",
+      "uit": "Schaerweijde",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-09-27",
+      "thuis": "Voordaan",
+      "uit": "Oranje Zwart",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "Amsterdam",
+      "uit": "Kampong",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "Oranje Zwart",
+      "uit": "Den Bosch",
+      "score_thuis": 7,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "Pinoke",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "Rotterdam",
+      "uit": "HGC",
+      "score_thuis": 1,
+      "score_uit": 0
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "Schaerweijde",
+      "uit": "Voordaan",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-09-25",
+      "thuis": "SCHC",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "Bloemendaal",
+      "uit": "Oranje Zwart",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "Den Bosch",
+      "uit": "Schaerweijde",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "HGC",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "Hurley",
+      "uit": "Pinoke",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "Rotterdam",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-20",
+      "thuis": "Voordaan",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 6
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 6,
+      "score_uit": 3
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "Kampong",
+      "uit": "Voordaan",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "Oranje Zwart",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "Pinoke",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 4
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "Schaerweijde",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 6
+    },
+    {
+      "datum": "2015-09-13",
+      "thuis": "SCHC",
+      "uit": "HGC",
+      "score_thuis": 4,
+      "score_uit": 5
+    }
+  ]
 }
