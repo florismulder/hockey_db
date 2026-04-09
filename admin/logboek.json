@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "floris_wortelboer",
+      "naam": "Floris Wortelboer",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 28,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 2,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1996-08-04"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 28,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 2,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:56:02.043Z"
+    },
+    {
+      "type": "speler",
       "id": "jorrit_croon",
       "naam": "Jorrit Croon",
       "velden": {
