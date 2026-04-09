@@ -1479,9 +1479,16 @@
     {
       "datum": "2013-09-15",
       "thuis": "Rotterdam",
-      "uit": "Kampong",
+      "uit": "Hurley",
       "score_thuis": 2,
       "score_uit": 1
+    },
+    {
+      "datum": "2013-09-15",
+      "thuis": "Kampong",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 2
     },
     {
       "datum": "2013-09-15",
