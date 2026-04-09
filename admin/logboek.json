@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "artikel",
+      "id": "xan_de_waard",
+      "naam": "xan_de_waard",
+      "velden": {
+        "verborgen": true,
+        "link": "https://drive.google.com/file/d/1XaiLopuRzodN3FI5Yx8RVjDfUQwoUSk4",
+        "bullets": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:37:10.187Z"
+    },
+    {
       "type": "blessure",
       "id": "jorrit_croon",
       "naam": "jorrit_croon",
