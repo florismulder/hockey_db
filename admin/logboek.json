@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "wouter_jolie",
+      "naam": "Wouter Jolie",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1985-07-07"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T16:15:20.573Z"
+    },
+    {
+      "type": "speler",
       "id": "casper_van_der_veen",
       "naam": "Casper van der Veen",
       "velden": {
