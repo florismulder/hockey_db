@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "freeke_moes",
+      "naam": "Freeke Moes",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 18,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 6,
+        "vd": 6,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "1998-11-29"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 18,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 6,
+        "vd": 6,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:51:09.001Z"
+    },
+    {
+      "type": "speler",
       "id": "anne_veenendaal",
       "naam": "Anne Veenendaal",
       "velden": {
