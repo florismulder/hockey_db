@@ -17,6 +17,43 @@
         "vd": 8,
         "sc": 8,
         "sb": 2,
+        "geboortedatum": "1996-09-02"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 18,
+        "vd": 8,
+        "sc": 8,
+        "sb": 2,
+        "geboortedatum": "1996-09-01"
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:53:19.512Z"
+    },
+    {
+      "type": "speler",
+      "id": "boris_burkhardt",
+      "naam": "Boris Burkhardt",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 18,
+        "vd": 8,
+        "sc": 8,
+        "sb": 2,
         "geboortedatum": "1996-09-01"
       },
       "oud": {
