@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "felice_albers",
+      "naam": "Felice Albers",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 10,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 3,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1999-12-27"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 10,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 3,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:51:29.653Z"
+    },
+    {
+      "type": "speler",
       "id": "freeke_moes",
       "naam": "Freeke Moes",
       "velden": {
