@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "jasper_brinkman",
+      "naam": "Jasper Brinkman",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 1,
+        "vd": 0,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1997-01-10"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 1,
+        "vd": 0,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:56:21.852Z"
+    },
+    {
+      "type": "speler",
       "id": "floris_wortelboer",
       "naam": "Floris Wortelboer",
       "velden": {
