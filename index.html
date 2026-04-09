@@ -1113,8 +1113,33 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
         })
       );
 
+      // Haal ook huidig seizoen op uit programma.json
+      const geslachtProgramma = geslacht === "heren" ? "heren" : "dames";
+      const huidigProgramma = await fetch(`competities/${geslachtProgramma}/programma.json`)
+        .then(r=>r.json()).then(d=>d.wedstrijden||d||[]).catch(()=>[]);
+
       // Filter op H2H wedstrijden
       const h2h = [];
+
+      // Huidig seizoen
+      huidigProgramma.forEach(u => {
+        if(u.score_thuis==null && u.gespeeld!==true) return; // alleen gespeeld
+        const th = (u.thuis||"").toLowerCase();
+        const ut = (u.uit||"").toLowerCase();
+        const tc = thuisClub.toLowerCase();
+        const uc = uitClub.toLowerCase();
+        if ((th.includes(tc)&&ut.includes(uc)) || (th.includes(uc)&&ut.includes(tc))) {
+          h2h.push({
+            datum: u.datum||null,
+            thuis: u.thuis, uit: u.uit,
+            score_thuis: u.score_thuis??u.doelpunten_thuis,
+            score_uit:   u.score_uit??u.doelpunten_uit,
+            seizoen: "2025-2026"
+          });
+        }
+      });
+
+      // Historische seizoenen
       resultaten.filter(Boolean).forEach(r => {
         r.uitslagen.forEach(u => {
           const th = (u.thuis||"").toLowerCase();
@@ -1149,13 +1174,13 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
           <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.uit))}>{w.uit}</div>
         </div>
         <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
-        {score&&<div style={{textAlign:"center",marginTop:6}}>
+        <div style={{textAlign:"center",marginTop:6}}>
           <button onClick={laadH2H} style={{background:"none",border:"none",padding:0,
             fontSize:11,color:"var(--accent)",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",
             letterSpacing:".3px"}}>
             {toontH2H?"▲ verberg onderlinge":"⚔ onderlinge resultaten"}
           </button>
-        </div>}
+        </div>
       </div>
       <div className="db">
         {(!w.scorers||w.scorers.length===0)&&(!w.kaarten||w.kaarten.length===0)?(
@@ -1215,7 +1240,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
         )}
 
         {/* H2H sectie */}
-        {score&&(
+        {(
           <div style={{marginTop:20,borderTop:"1px solid var(--border)",paddingTop:16,display:"flex",flexDirection:"column",alignItems:"center"}}>
             <div style={{display:"none"}}/>
             {toontH2H&&(
@@ -1224,35 +1249,57 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
                   <div className="empty">Geen historische onderlinge resultaten gevonden.</div>
                 ):h2hData&&(
                   <div>
-                    <div className="ds" style={{marginTop:0,marginBottom:8,textAlign:"center"}}>
+                    <div className="ds" style={{marginTop:0,marginBottom:12,textAlign:"center"}}>
                       {thuisClub} vs {uitClub} — {h2hData.length} wedstrijd{h2hData.length!==1?"en":""}
                     </div>
-                    {h2hData.map((u,i)=>{
-                      const thuisWint = u.score_thuis > u.score_uit;
-                      const uitWint   = u.score_uit  > u.score_thuis;
-                      const isThuisThuis = (u.thuis||"").toLowerCase().includes(thuisClub.toLowerCase());
-                      return (
-                        <div key={i} style={{display:"flex",alignItems:"center",gap:8,
-                          padding:"5px 0",borderBottom:"1px solid var(--border)",fontSize:12}}>
-                          <span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)",
-                            width:60,flexShrink:0}}>{u.seizoen||""}</span>
-                          {u.datum&&<span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)",
-                            width:72,flexShrink:0}}>{u.datum.slice(8)+"-"+u.datum.slice(5,7)+"-"+u.datum.slice(0,4)}</span>}
-                          <span style={{flex:1,textAlign:"right",fontWeight:isThuisThuis&&thuisWint||!isThuisThuis&&uitWint?700:400,
-                            color:isThuisThuis&&thuisWint||!isThuisThuis&&uitWint?"var(--text)":"var(--muted)"}}>
-                            {u.thuis}
-                          </span>
-                          <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",
-                            flexShrink:0,padding:"0 8px"}}>
-                            {u.score_thuis}–{u.score_uit}
-                          </span>
-                          <span style={{flex:1,fontWeight:!isThuisThuis&&thuisWint||isThuisThuis&&uitWint?700:400,
-                            color:!isThuisThuis&&thuisWint||isThuisThuis&&uitWint?"var(--text)":"var(--muted)"}}>
-                            {u.uit}
-                          </span>
+                    {(()=>{
+                      // Groepeer per seizoen
+                      const groepen = [];
+                      h2hData.forEach(u => {
+                        const s = u.seizoen||"Onbekend";
+                        if(!groepen.length || groepen[groepen.length-1].seizoen!==s) {
+                          groepen.push({seizoen:s, wedstrijden:[]});
+                        }
+                        groepen[groepen.length-1].wedstrijden.push(u);
+                      });
+                      return groepen.map((groep,gi)=>(
+                        <div key={gi} style={{marginBottom:16}}>
+                          <div style={{fontSize:11,fontWeight:700,color:"var(--muted)",
+                            textTransform:"uppercase",letterSpacing:".5px",
+                            fontFamily:"'JetBrains Mono',monospace",
+                            padding:"4px 0",borderBottom:"2px solid var(--border2)",
+                            marginBottom:6}}>
+                            {groep.seizoen}
+                          </div>
+                          {groep.wedstrijden.map((u,i)=>{
+                            const thuisWint = u.score_thuis > u.score_uit;
+                            const uitWint   = u.score_uit  > u.score_thuis;
+                            const isThuisThuis = (u.thuis||"").toLowerCase().includes(thuisClub.toLowerCase());
+                            return (
+                              <div key={i} style={{display:"flex",alignItems:"center",gap:8,
+                                padding:"6px 0",borderBottom:"1px solid var(--border)",fontSize:13}}>
+                                {u.datum&&<span style={{fontFamily:"monospace",fontSize:11,color:"var(--muted)",
+                                  width:76,flexShrink:0}}>{u.datum.slice(8)+"-"+u.datum.slice(5,7)+"-"+u.datum.slice(0,4)}</span>}
+                                <span style={{flex:1,textAlign:"right",
+                                  fontWeight:isThuisThuis&&thuisWint||!isThuisThuis&&uitWint?700:400,
+                                  color:isThuisThuis&&thuisWint||!isThuisThuis&&uitWint?"var(--text)":"var(--muted)"}}>
+                                  {u.thuis}
+                                </span>
+                                <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",
+                                  flexShrink:0,padding:"0 10px",fontSize:15,textAlign:"center"}}>
+                                  {u.score_thuis}–{u.score_uit}
+                                </span>
+                                <span style={{flex:1,
+                                  fontWeight:!isThuisThuis&&thuisWint||isThuisThuis&&uitWint?700:400,
+                                  color:!isThuisThuis&&thuisWint||isThuisThuis&&uitWint?"var(--text)":"var(--muted)"}}>
+                                  {u.uit}
+                                </span>
+                              </div>
+                            );
+                          })}
                         </div>
-                      );
-                    })}
+                      ));
+                    })()}
                   </div>
                 )}
               </div>
