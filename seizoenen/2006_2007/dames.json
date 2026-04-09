@@ -570,57 +570,57 @@
       "datum": null,
       "thuis": "Amsterdam",
       "uit": "Kampong",
-      "score_thuis": 3,
+      "score_thuis": 4,
       "score_uit": 1
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
       "uit": "Laren",
-      "score_thuis": 4,
-      "score_uit": 1
-    },
-    {
-      "datum": null,
-      "thuis": "Amsterdam",
-      "uit": "Nijmegen",
       "score_thuis": 3,
       "score_uit": 0
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
-      "uit": "Groningen",
+      "uit": "Nijmegen",
       "score_thuis": 7,
       "score_uit": 1
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
-      "uit": "Forward",
+      "uit": "Groningen",
       "score_thuis": 1,
       "score_uit": 1
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
-      "uit": "Rotterdam",
+      "uit": "Forward",
       "score_thuis": 2,
       "score_uit": 0
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
-      "uit": "SCHC",
+      "uit": "Rotterdam",
       "score_thuis": 4,
       "score_uit": 1
     },
     {
       "datum": null,
       "thuis": "Amsterdam",
-      "uit": "Victoria",
-      "score_thuis": 4,
+      "uit": "SCHC",
+      "score_thuis": 1,
       "score_uit": 1
+    },
+    {
+      "datum": null,
+      "thuis": "Amsterdam",
+      "uit": "Victoria",
+      "score_thuis": 2,
+      "score_uit": 0
     },
     {
       "datum": null,
