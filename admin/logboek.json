@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "sander_de_wijn",
+      "naam": "sander_de_wijn",
+      "velden": {
+        "verborgen": true,
+        "bullet": "Gaf zijn verloofde Renée van Laarhoven een knuffel met tranen in zijn ogen op 6 april 2026"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:41:38.469Z"
+    },
+    {
       "type": "artikel",
       "id": "xan_de_waard",
       "naam": "xan_de_waard",
