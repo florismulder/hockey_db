@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "sabine_plonissen",
+      "naam": "Sabine Plönissen",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1995-01-16"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "dames",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:52:29.788Z"
+    },
+    {
+      "type": "speler",
       "id": "marijn_veen",
       "naam": "Marijn Veen",
       "velden": {
