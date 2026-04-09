@@ -521,5 +521,931 @@
       }
     ]
   },
-  "bijgewerkt": "2026-04-05"
+  "bijgewerkt": "2026-04-05",
+  "uitslagen": [
+    {
+      "datum": "2024-05-12",
+      "thuis": "Bloemendaal",
+      "uit": "Pinoke",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "Den Bosch",
+      "uit": "Tilburg",
+      "score_thuis": 8,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "HDM",
+      "uit": "Oranje Rood",
+      "score_thuis": 6,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "HGC",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "Hurley",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "Kampong",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-05-12",
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "Oranje Rood",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "Pinoke",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "Rotterdam",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "SCHC",
+      "uit": "HDM",
+      "score_thuis": 6,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "Tilburg",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-05-04",
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "Den Bosch",
+      "uit": "HGC",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "HDM",
+      "uit": "Pinoke",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "Hurley",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "Kampong",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "Rotterdam",
+      "uit": "Oranje Rood",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-04-28",
+      "thuis": "Amsterdam",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-04-21",
+      "thuis": "HGC",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-21",
+      "thuis": "Pinoke",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-21",
+      "thuis": "Tilburg",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-04-21",
+      "thuis": "SCHC",
+      "uit": "Oranje Rood",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-04-20",
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-04-20",
+      "thuis": "Bloemendaal",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-04-14",
+      "thuis": "Hurley",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-14",
+      "thuis": "Oranje Rood",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 5
+    },
+    {
+      "datum": "2024-04-14",
+      "thuis": "Rotterdam",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-04-14",
+      "thuis": "HDM",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 7
+    },
+    {
+      "datum": "2024-04-13",
+      "thuis": "Kampong",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-07",
+      "thuis": "Amsterdam",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-04-07",
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-04-07",
+      "thuis": "Pinoke",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-04-07",
+      "thuis": "Tilburg",
+      "uit": "Oranje Rood",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-04-06",
+      "thuis": "Bloemendaal",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-04-06",
+      "thuis": "HGC",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-24",
+      "thuis": "Hurley",
+      "uit": "HGC",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-03-24",
+      "thuis": "Kampong",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-03-24",
+      "thuis": "Oranje Rood",
+      "uit": "Amsterdam",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-03-24",
+      "thuis": "Rotterdam",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-03-24",
+      "thuis": "SCHC",
+      "uit": "Tilburg",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-23",
+      "thuis": "HDM",
+      "uit": "Den Bosch",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "Amsterdam",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "HGC",
+      "uit": "Oranje Rood",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "Kampong",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "Bloemendaal",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "Den Bosch",
+      "uit": "Hurley",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-16",
+      "thuis": "Tilburg",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "HDM",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "Hurley",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "Oranje Rood",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 5
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "Pinoke",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-14",
+      "thuis": "SCHC",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-10",
+      "thuis": "Den Bosch",
+      "uit": "SCHC",
+      "score_thuis": 4,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-03-10",
+      "thuis": "HDM",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-10",
+      "thuis": "HGC",
+      "uit": "Pinoke",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2024-03-10",
+      "thuis": "Kampong",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2024-03-09",
+      "thuis": "Amsterdam",
+      "uit": "Tilburg",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2024-03-09",
+      "thuis": "Bloemendaal",
+      "uit": "Oranje Rood",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2024-03-09",
+      "thuis": "Hurley",
+      "uit": "HDM",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-19",
+      "thuis": "Pinoke",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2023-11-19",
+      "thuis": "SCHC",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-19",
+      "thuis": "Tilburg",
+      "uit": "HGC",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-18",
+      "thuis": "Oranje Rood",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-11-18",
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 8
+    },
+    {
+      "datum": "2023-11-12",
+      "thuis": "Amsterdam",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-12",
+      "thuis": "SCHC",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-11",
+      "thuis": "Pinoke",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-11",
+      "thuis": "Rotterdam",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-11",
+      "thuis": "Oranje Rood",
+      "uit": "HDM",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-11",
+      "thuis": "Tilburg",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-11",
+      "thuis": "Bloemendaal",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-11-05",
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-05",
+      "thuis": "HDM",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-11-05",
+      "thuis": "HGC",
+      "uit": "Rotterdam",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-05",
+      "thuis": "Hurley",
+      "uit": "Oranje Rood",
+      "score_thuis": 3,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-05",
+      "thuis": "Kampong",
+      "uit": "Pinoke",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "Amsterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "HGC",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 4
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "Oranje Rood",
+      "uit": "Rotterdam",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "Pinoke",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "SCHC",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "Tilburg",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-11-03",
+      "thuis": "Bloemendaal",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-29",
+      "thuis": "HDM",
+      "uit": "Tilburg",
+      "score_thuis": 0,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-29",
+      "thuis": "Oranje Rood",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 6
+    },
+    {
+      "datum": "2023-10-29",
+      "thuis": "Rotterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 6
+    },
+    {
+      "datum": "2023-10-28",
+      "thuis": "Hurley",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-28",
+      "thuis": "Kampong",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-28",
+      "thuis": "Amsterdam",
+      "uit": "HDM",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "HGC",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "Pinoke",
+      "uit": "Oranje Rood",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "SCHC",
+      "uit": "Rotterdam",
+      "score_thuis": 5,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "Tilburg",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-22",
+      "thuis": "HDM",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "Hurley",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 4
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "Kampong",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 6
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "Oranje Rood",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "Rotterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 3,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "SCHC",
+      "uit": "Pinoke",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-20",
+      "thuis": "Amsterdam",
+      "uit": "Oranje Rood",
+      "score_thuis": 6,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-15",
+      "thuis": "Bloemendaal",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-15",
+      "thuis": "Den Bosch",
+      "uit": "HDM",
+      "score_thuis": 4,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-15",
+      "thuis": "Pinoke",
+      "uit": "Rotterdam",
+      "score_thuis": 5,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-14",
+      "thuis": "Tilburg",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-10-14",
+      "thuis": "HGC",
+      "uit": "Hurley",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "HDM",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "Hurley",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "Oranje Rood",
+      "uit": "HGC",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "Pinoke",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "Rotterdam",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-08",
+      "thuis": "SCHC",
+      "uit": "Amsterdam",
+      "score_thuis": 3,
+      "score_uit": 4
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "Amsterdam",
+      "uit": "Pinoke",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 0,
+      "score_uit": 3
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "Den Bosch",
+      "uit": "Oranje Rood",
+      "score_thuis": 3,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "HGC",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 5
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "Kampong",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-06",
+      "thuis": "Tilburg",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-01",
+      "thuis": "SCHC",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-01",
+      "thuis": "Oranje Rood",
+      "uit": "Bloemendaal",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-10-01",
+      "thuis": "Rotterdam",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 5
+    },
+    {
+      "datum": "2023-10-01",
+      "thuis": "Tilburg",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-10-01",
+      "thuis": "Pinoke",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 2
+    },
+    {
+      "datum": "2023-09-30",
+      "thuis": "Hurley",
+      "uit": "Kampong",
+      "score_thuis": 3,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-09-30",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "score_thuis": 9,
+      "score_uit": 0
+    },
+    {
+      "datum": "2023-09-24",
+      "thuis": "Den Bosch",
+      "uit": "Pinoke",
+      "score_thuis": 5,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-09-24",
+      "thuis": "HGC",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-09-24",
+      "thuis": "Kampong",
+      "uit": "Oranje Rood",
+      "score_thuis": 4,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-09-24",
+      "thuis": "HDM",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1
+    },
+    {
+      "datum": "2023-09-23",
+      "thuis": "Bloemendaal",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 6
+    }
+  ]
 }
