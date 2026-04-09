@@ -593,7 +593,7 @@
     {
       "datum": "2013-05-05",
       "thuis": "HDM",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 0,
       "score_uit": 0
     },
@@ -662,7 +662,7 @@
     },
     {
       "datum": "2013-04-28",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Laren",
       "score_thuis": 0,
       "score_uit": 5
@@ -684,7 +684,7 @@
     {
       "datum": "2013-04-21",
       "thuis": "Hurley",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 2,
       "score_uit": 0
     },
@@ -732,7 +732,7 @@
     },
     {
       "datum": "2013-04-14",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Kampong",
       "score_thuis": 1,
       "score_uit": 0
@@ -789,7 +789,7 @@
     {
       "datum": "2013-04-07",
       "thuis": "MOP",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 0,
       "score_uit": 3
     },
@@ -817,7 +817,7 @@
     {
       "datum": "2013-03-24",
       "thuis": "Oranje Zwart",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 3,
       "score_uit": 0
     },
@@ -879,7 +879,7 @@
     },
     {
       "datum": "2013-03-17",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Nijmegen",
       "score_thuis": 3,
       "score_uit": 1
@@ -894,7 +894,7 @@
     {
       "datum": "2013-03-10",
       "thuis": "Den Bosch",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 5,
       "score_uit": 1
     },
@@ -949,10 +949,24 @@
     },
     {
       "datum": "2013-03-03",
+      "thuis": "Oranje Zwart",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 0
+    },
+    {
+      "datum": "2013-03-03",
       "thuis": "Den Bosch",
       "uit": "Terriers",
       "score_thuis": 1,
       "score_uit": 1
+    },
+    {
+      "datum": "2013-03-03",
+      "thuis": "Terriers",
+      "uit": "Pinoke",
+      "score_thuis": 1,
+      "score_uit": 3
     },
     {
       "datum": "2012-12-02",
@@ -985,7 +999,7 @@
     {
       "datum": "2012-12-02",
       "thuis": "SCHC",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 4,
       "score_uit": 0
     },
@@ -1033,7 +1047,7 @@
     },
     {
       "datum": "2012-11-25",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Amsterdam",
       "score_thuis": 0,
       "score_uit": 1
@@ -1075,7 +1089,7 @@
     },
     {
       "datum": "2012-11-18",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "HDM",
       "score_thuis": 2,
       "score_uit": 3
@@ -1104,7 +1118,7 @@
     {
       "datum": "2012-11-11",
       "thuis": "Laren",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 3,
       "score_uit": 1
     },
@@ -1152,7 +1166,7 @@
     },
     {
       "datum": "2012-11-04",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Hurley",
       "score_thuis": 0,
       "score_uit": 2
@@ -1188,7 +1202,7 @@
     {
       "datum": "2012-10-28",
       "thuis": "Kampong",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 3,
       "score_uit": 2
     },
@@ -1229,7 +1243,7 @@
     },
     {
       "datum": "2012-10-21",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "MOP",
       "score_thuis": 2,
       "score_uit": 1
@@ -1285,7 +1299,7 @@
     },
     {
       "datum": "2012-10-14",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Oranje Zwart",
       "score_thuis": 2,
       "score_uit": 5
@@ -1307,7 +1321,7 @@
     {
       "datum": "2012-10-07",
       "thuis": "Nijmegen",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 1,
       "score_uit": 2
     },
@@ -1369,7 +1383,7 @@
     },
     {
       "datum": "2012-09-30",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "Den Bosch",
       "score_thuis": 3,
       "score_uit": 6
@@ -1412,7 +1426,7 @@
     {
       "datum": "2012-09-26",
       "thuis": "Terriers",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 1,
       "score_uit": 4
     },
@@ -1433,8 +1447,15 @@
     {
       "datum": "2012-09-23",
       "thuis": "MOP",
-      "uit": "Laren",
+      "uit": "Nijmegen",
       "score_thuis": 5,
+      "score_uit": 1
+    },
+    {
+      "datum": "2012-09-23",
+      "thuis": "Laren",
+      "uit": "Terriers",
+      "score_thuis": 1,
       "score_uit": 1
     },
     {
@@ -1453,7 +1474,7 @@
     },
     {
       "datum": "2012-09-23",
-      "thuis": "Pinoké",
+      "thuis": "Pinoke",
       "uit": "SCHC",
       "score_thuis": 3,
       "score_uit": 5
@@ -1461,7 +1482,7 @@
     {
       "datum": "2012-09-16",
       "thuis": "Amsterdam",
-      "uit": "Pinoké",
+      "uit": "Pinoke",
       "score_thuis": 5,
       "score_uit": 1
     },
