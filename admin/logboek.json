@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "floris_middendorp",
+      "naam": "Floris Middendorp",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 7,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 1,
+        "sc": 2,
+        "sb": 0,
+        "geboortedatum": "2001-06-04"
+      },
+      "oud": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 7,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 1,
+        "sc": 2,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-09T15:54:29.683Z"
+    },
+    {
+      "type": "speler",
       "id": "boris_burkhardt",
       "naam": "Boris Burkhardt",
       "velden": {
