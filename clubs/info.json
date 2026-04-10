@@ -61,5 +61,19 @@
     "beschrijving": "De Zeister Sportvereniging Schaerweijde werd opgericht op 12 februari 1932 in Zeist. Het terrein ligt op het Sportpark Krakelingweg. De club kende vroeger afdelingen voor hockey en cricket, maar bestaat tegenwoordig uit een hockey- en een golfafdeling.",
     "successen": {},
     "bijgewerkt": "2026-04-10"
+  },
+  "laren": {
+    "club": "Laren",
+    "volledige_naam": "Larensche Mixed Hockey Club",
+    "opgericht": "1923",
+    "plaats": "Laren",
+    "stadion": "Sportpark Eemnesserweg",
+    "leden": "1454",
+    "website": "http://www.lmhc.nl/",
+    "beschrijving": "De Larensche Mixed Hockey Club is een Nederlandse hockeyclub uit Laren. De club kwam tot 2014 bij zowel de dames als bij de heren uit op het hoogste niveau. Na kampioen te worden in 2023 keerden de heren van Laren weer terug in de Hoofdklasse.",
+    "successen": {
+      "Landstitel heren": "1956, 1961, 1969"
+    },
+    "bijgewerkt": "2026-04-10"
   }
 }
