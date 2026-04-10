@@ -681,9 +681,20 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
     fetch("nieuws/teamnieuws.json")
       .then(r=>r.json())
       .then(d=>{
-        const items = d[club] || [];
-        setClubTeamNieuwsH(items.filter(item => !item.geslacht || item.geslacht === "heren"));
-        setClubTeamNieuwsD(items.filter(item => !item.geslacht || item.geslacht === "dames"));
+        // Verzamel items: eigen club + items van andere clubs die deze club in hun lijst hebben
+        const eigen = d[club] || [];
+        const viaAndere = [];
+        Object.entries(d).forEach(([key, items]) => {
+          if (key === club) return;
+          (items||[]).forEach(item => {
+            if ((item.clubs||[]).includes(club)) viaAndere.push(item);
+          });
+        });
+        const alles = [...eigen, ...viaAndere];
+        // Sorteer op datum aflopend
+        alles.sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
+        setClubTeamNieuwsH(alles.filter(item => !item.geslacht || item.geslacht === "heren"));
+        setClubTeamNieuwsD(alles.filter(item => !item.geslacht || item.geslacht === "dames"));
       })
       .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);

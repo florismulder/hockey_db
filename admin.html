@@ -407,6 +407,7 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen}) {
     {id:"dashboard",  icon:"🏠", label:"Dashboard"},
     {id:"spelers",    icon:"👥", label:"Spelers"},
     {id:"clubs",      icon:"🏒", label:"Clubs"},
+    {id:"teamnieuws",  icon:"📰", label:"Teamnieuws"},
     {id:"blessures",  icon:"🏥", label:"Blessures"},
     {id:"logboek",    icon:"📋", label:"Logboek"},
   ];
@@ -1825,6 +1826,152 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
   );
 }
 
+// ── Teamnieuws beheer ─────────────────────────────────────────
+function TeamNieuwsBeheer({data, toast, onRefresh}) {
+  const clubs = [...new Set([
+    "Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC",
+    "Schaerweijde","Tilburg"
+  ])].sort();
+
+  const [geselecteerdeClub, setGeselecteerdeClub] = useState(clubs[0]);
+  const [nieuwsData, setNieuwsData] = useState({});
+  const [laden, setLaden] = useState(false);
+  const [opslaan, setOpslaan] = useState(false);
+
+  useEffect(() => {
+    setLaden(true);
+    fetch("https://florismulder.github.io/hockey_db/nieuws/teamnieuws.json?t="+Date.now())
+      .then(r=>r.json()).then(d=>{ setNieuwsData(d); setLaden(false); })
+      .catch(()=>setLaden(false));
+  }, []);
+
+  const items = nieuwsData[geselecteerdeClub] || [];
+
+  const setGeslacht = (idx, geslacht) => {
+    const bijgewerkt = {...nieuwsData};
+    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
+      i===idx ? {...item, geslacht} : item
+    );
+    setNieuwsData(bijgewerkt);
+  };
+
+  const setClubs = (idx, clubsList) => {
+    const bijgewerkt = {...nieuwsData};
+    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
+      i===idx ? {...item, clubs:clubsList} : item
+    );
+    setNieuwsData(bijgewerkt);
+  };
+
+  const slaOp = async () => {
+    setOpslaan(true);
+    try {
+      const res = await fetch(WEB_APP_URL, {
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({actie:"updateTeamnieuws", club:geselecteerdeClub, items:nieuwsData[geselecteerdeClub]||[]})
+      });
+      const d = await res.json();
+      if (d.ok) { toast("✅ Teamnieuws opgeslagen voor "+geselecteerdeClub); onRefresh(); }
+      else throw new Error(d.fout||"Fout");
+    } catch(e) { toast("❌ "+e.message,"error"); }
+    finally { setOpslaan(false); }
+  };
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">Teamnieuws toewijzen</div>
+          <div className="topbar-sub">Stel per nieuwsblok in voor welk team het bedoeld is</div>
+        </div>
+        <div className="topbar-actions">
+          <button className="btn btn-primary btn-sm" onClick={slaOp} disabled={opslaan||laden}>
+            {opslaan?<span className="spinner"/>:null} Opslaan
+          </button>
+        </div>
+      </div>
+      <div className="content">
+        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:16}}>
+          {clubs.map(club=>(
+            <button key={club}
+              className={"btn btn-sm "+(geselecteerdeClub===club?"btn-primary":"btn-secondary")}
+              onClick={()=>setGeselecteerdeClub(club)}>
+              {club}
+              {(nieuwsData[club]||[]).length>0&&
+                <span style={{marginLeft:4,fontSize:10,opacity:.7}}>{(nieuwsData[club]||[]).length}</span>}
+            </button>
+          ))}
+        </div>
+
+        {laden&&<div className="loading"><div className="spinner"/> Laden…</div>}
+
+        {!laden&&items.length===0&&(
+          <div className="empty">Geen teamnieuws voor {geselecteerdeClub}.</div>
+        )}
+
+        {!laden&&items.map((item,idx)=>(
+          <div key={idx} className="card" style={{marginBottom:10}}>
+            <div className="card-body" style={{display:"flex",gap:12,alignItems:"flex-start"}}>
+              <div style={{flex:1,minWidth:0}}>
+                <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
+                  {item.datum||"geen datum"}
+                </div>
+                {item.titel&&(
+                  <div style={{fontSize:12,fontWeight:600,marginBottom:4,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                    {item.titel.replace(/_/g," ")}
+                  </div>
+                )}
+                {item.bullets&&item.bullets.length>0&&(
+                  <ul style={{margin:0,paddingLeft:14}}>
+                    {item.bullets.slice(0,3).map((b,bi)=>(
+                      <li key={bi} style={{fontSize:11,color:"var(--muted)",marginBottom:2}}>{b}</li>
+                    ))}
+                    {item.bullets.length>3&&(
+                      <li style={{fontSize:11,color:"var(--muted)",fontStyle:"italic"}}>…en {item.bullets.length-3} meer</li>
+                    )}
+                  </ul>
+                )}
+              </div>
+              <div style={{flexShrink:0,minWidth:160}}>
+                <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Team</div>
+                <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
+                  {["heren","dames","beide"].map(g=>(
+                    <label key={g} style={{display:"flex",alignItems:"center",gap:6,fontSize:12,cursor:"pointer"}}>
+                      <input type="radio" name={"geslacht_"+idx}
+                        checked={(item.geslacht||"beide")===g}
+                        onChange={()=>setGeslacht(idx, g==="beide"?null:g)}/>
+                      {g.charAt(0).toUpperCase()+g.slice(1)}
+                    </label>
+                  ))}
+                </div>
+                <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Clubs</div>
+                <div style={{display:"flex",flexDirection:"column",gap:3,maxHeight:180,overflowY:"auto"}}>
+                  {clubs.map(club=>(
+                    <label key={club} style={{display:"flex",alignItems:"center",gap:6,fontSize:11,cursor:"pointer"}}>
+                      <input type="checkbox"
+                        checked={(item.clubs||[geselecteerdeClub]).includes(club)}
+                        onChange={e=>{
+                          const huidig = item.clubs||[geselecteerdeClub];
+                          const nieuw = e.target.checked
+                            ? [...new Set([...huidig,club])]
+                            : huidig.filter(c=>c!==club);
+                          setClubs(idx, nieuw.length===0?[geselecteerdeClub]:nieuw);
+                        }}/>
+                      {club}
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
 // ── Blessures overzicht ───────────────────────────────────────
 function BlessuresOverzicht({data, setPagina}) {
   const [toonHistorie, setToonHistorie] = useState(false);
@@ -2053,6 +2200,8 @@ function App() {
             <ClubsOverzicht data={data} setPagina={setPagina}/>}
           {paginaType==="club_detail" &&
             <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
+          {paginaType==="teamnieuws" &&
+            <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
           {paginaType==="blessures" &&
             <BlessuresOverzicht data={data} setPagina={setPagina}/>}
           {paginaType==="logboek" &&
