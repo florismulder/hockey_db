@@ -1946,6 +1946,46 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     });
   };
 
+  // Auto-detecteer clubs op basis van clubnamen in de bullets
+  const ALLE_CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC",
+    "Schaerweijde","Tilburg"];
+
+  const autoDetecteerClubs = (sleutel, bronClub) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const bronItems = nieuw[bronClub]||[];
+      const idx = bronItems.findIndex(item => (item.titel||"")+("|")+(item.datum||"") === sleutel);
+      if (idx < 0) return huidig;
+      const item = bronItems[idx];
+      // Scan titel + bullets op clubnamen
+      const tekst = [item.titel||"", ...(item.bullets||[])].join(" ").toLowerCase();
+      const gevonden = ALLE_CLUBS.filter(club => tekst.includes(club.toLowerCase()));
+      // Voeg bronclub toe als die niet al gevonden is
+      if (!gevonden.includes(bronClub)) gevonden.push(bronClub);
+      propageerNaarAlleKopieen(nieuw, sleutel, {clubs: [...new Set(gevonden)]});
+      return nieuw;
+    });
+  };
+
+  const autoDetecteerAlleClubs = (bronClub) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const items = bronClub === "alle"
+        ? Object.entries(nieuw).flatMap(([club, arr]) => (arr||[]).map(i=>({...i,_bc:club})))
+        : (nieuw[bronClub]||[]).map(i=>({...i,_bc:bronClub}));
+      items.forEach(item => {
+        const sleutel = (item.titel||"")+("|")+(item.datum||"");
+        const bc = item._bc;
+        const tekst = [item.titel||"", ...(item.bullets||[])].join(" ").toLowerCase();
+        const gevonden = ALLE_CLUBS.filter(club => tekst.includes(club.toLowerCase()));
+        if (!gevonden.includes(bc)) gevonden.push(bc);
+        propageerNaarAlleKopieen(nieuw, sleutel, {clubs: [...new Set(gevonden)]});
+      });
+      return nieuw;
+    });
+  };
+
   const slaAllesOp = async () => {
     setBezig(true);
     try {
@@ -1984,8 +2024,8 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
             )}
           </select>
           {filterBron!=="alle"&&(
-            <span style={{display:"flex",gap:6,alignItems:"center"}}>
-              <span style={{fontSize:11,color:"var(--muted)"}}>Bulk instellen:</span>
+            <span style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap"}}>
+              <span style={{fontSize:11,color:"var(--muted)"}}>Geslacht:</span>
               {[["heren","H 💙"],["dames","D 🩷"],[null,"H+D ⚪"]].map(([g,label])=>(
                 <button key={String(g)} onClick={()=>setBulkGeslacht(filterBron,g)}
                   style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
@@ -1993,7 +2033,22 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                   {label}
                 </button>
               ))}
+              <span style={{width:1,background:"var(--border)",alignSelf:"stretch",margin:"0 4px"}}/>
+              <button onClick={()=>autoDetecteerAlleClubs(filterBron)}
+                title={"Scant alle bulletpoints op clubnamen en vult clubs-array automatisch in"}
+                style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
+                  border:"1px solid var(--accent)",background:"rgba(99,102,241,.1)",color:"var(--accent)",fontWeight:600}}>
+                🔍 Auto-detecteer clubs
+              </button>
             </span>
+          )}
+          {filterBron==="alle"&&(
+            <button onClick={()=>autoDetecteerAlleClubs("alle")}
+              title={"Scant ALLE artikelen op clubnamen"}
+              style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
+                border:"1px solid var(--accent)",background:"rgba(99,102,241,.1)",color:"var(--accent)",fontWeight:600}}>
+              🔍 Auto-detecteer clubs (alles)
+            </button>
           )}
         </div>
         {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
@@ -2058,7 +2113,15 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                       </label>
                     ))}
                   </div>
-                  <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Tonen bij</div>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)"}}>Tonen bij</div>
+                    <button onClick={()=>autoDetecteerClubs(sleutel,bronClub)}
+                      title="Detecteer clubs automatisch uit bulletpoints"
+                      style={{fontSize:10,padding:"1px 6px",borderRadius:3,cursor:"pointer",
+                        border:"1px solid var(--accent)",background:"none",color:"var(--accent)"}}>
+                      🔍 auto
+                    </button>
+                  </div>
                   <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
                     {CLUBS.map(club=>{
                       const aan = huidigeClubs.includes(club);
