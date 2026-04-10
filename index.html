@@ -679,8 +679,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
       .then(r=>r.json())
       .then(d=>{
         const items = d[club] || [];
-        setClubTeamNieuwsH(items.filter(item => item.geslacht === "heren"));
-        setClubTeamNieuwsD(items.filter(item => item.geslacht === "dames"));
+        setClubTeamNieuwsH(items.filter(item => !item.geslacht || item.geslacht === "heren"));
+        setClubTeamNieuwsD(items.filter(item => !item.geslacht || item.geslacht === "dames"));
       })
       .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);
