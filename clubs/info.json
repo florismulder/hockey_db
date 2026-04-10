@@ -32,5 +32,22 @@
       "Europacup I": "1987, 2001"
     },
     "bijgewerkt": "2026-04-10"
+  },
+  "kampong": {
+    "club": "Kampong",
+    "volledige_naam": "SV Kampong Hockey",
+    "opgericht": "1935",
+    "plaats": "Utrecht",
+    "stadion": "",
+    "leden": "3198",
+    "website": "https://kamponghockey.nl/site/Default.asp",
+    "beschrijving": "Kampong is een Nederlandse hockeyclub uit Utrecht, opgericht in 1935 en onderdeel van de omnisportvereniging SV Kampong. Met ongeveer 3.150 leden is het een van de grootste hockeyclubs ter wereld, waarvan zowel de mannen als de vrouwen in de hoofdklasse spelen.",
+    "successen": {
+      "Landstitel heren": "1968, 1972, 1973, 1974, 1976, 1985, 2017, 2018, 2024",
+      "Landstitel dames": "1994, 1995",
+      "EHL": "2016, 2026",
+      "Europacup I": "1986, 1995, 1996"
+    },
+    "bijgewerkt": "2026-04-10"
   }
 }
