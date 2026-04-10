@@ -5922,7 +5922,260 @@
       "uit": "Schaerweijde",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Kampong staat op een teleurstellende 8ste plaats in de Tulp Hoofdklasse.",
+          "Kampong verloor vier van zijn laatste vijf competitieduels en pakte alleen bij Pinoké een punt.",
+          "Kampong verloor haar laatste twee thuisduels, meest recentelijk met 3-5 tegen Bloemendaal op 22 maart.",
+          "In 2011 verloor Kampong voor het laatst drie thuiswedstrijden op rij.",
+          "Kampong incasseerde dit seizoen na zeventien duels al 41 goals (gemiddeld 2,41 per wedstrijd).",
+          "Verdediger Jip Janssen passeerde de grens van tweehonderd officiële doelpunten voor Kampong."
+        ],
+        "stats_uit": [
+          "Schaerweijde is de nummer 10 van de competitie.",
+          "Schaerweijde verloor dit seizoen tien van zeventien duels (W3 G4).",
+          "Schaerweijde bleef in zijn laatste twee wedstrijden ongeslagen (W1 G1).",
+          "Op vreemde bodem speelde Schaerweijde zijn meest recente uitduel gelijk (1-1 bij HDM op 22 maart).",
+          "Schaerweijde won slechts één keer in 31 onderlinge Hoofdklasseduels.",
+          "Dit seizoen hield Schaerweijde nog geen enkele keer de nul."
+        ],
+        "stats_onderling": [
+          "Kampong won zijn laatste drie duels met Schaerweijde.",
+          "Kampong bleef in dertig van zijn 31 wedstrijden tegen Schaerweijde ongeslagen (W28 G2).",
+          "Kampong verloor thuis nog nooit van Schaerweijde in de Hoofdklasse (14 zeges, 1 gelijkspel).",
+          "De totale balans in 31 duels is 28x winst Kampong, 2x gelijkspel, 1x winst Schaerweijde."
+        ],
+        "scheidsrechters": [
+          "Jacir Soares de Brito",
+          "Lisette Baljon"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 2,
+            "naam": "Bram van Battum",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Jens de Vuijst",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Jip Janssen",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Lars Balk",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Rik Sprengers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Jonas de Geus",
+            "doelpunten": 8
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Finn van Bijnen",
+            "doelpunten": 6
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Silas Lageman",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Terrance Pieters",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Sander de Wijn",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 13,
+            "naam": "Mats Gruter",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Duco Telgenkamp",
+            "doelpunten": 12
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Luis Calzado",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Hugo van Beusekom",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 18,
+            "naam": "Hidde Plantenga",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Kjell Plantenga",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Sander van de Putte",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Caspar Dobbelaar",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Thies Bakker",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Derck de Vilder",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Koen Meijerink",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 32,
+            "naam": "Diederik van den Hoek",
+            "doelpunten": 0
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 1,
+            "naam": "Mahinder Terlouw",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 2,
+            "naam": "Tijs van Horn",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Mick Bosse",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Joost van Eijck",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Jaap Solleveld",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Pepijn Leenhouts",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Peppe Veen",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Juup Veen",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Teun van Aalderen",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Daan Troost",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Niels de Joode",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Jens Hagen",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Stijn Draaijer",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Guus van Holten",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Derk Moret",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Graeme Scott",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 18,
+            "naam": "Thibaut Mordac",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Tom Vermeulen",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Jelle Westendorp",
+            "doelpunten": 5
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Michiel Moret",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Maarten Bruisten",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 27,
+            "naam": "Lode Draaijer",
+            "doelpunten": 0
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-12",
