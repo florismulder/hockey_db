@@ -162,7 +162,12 @@ function Breadcrumb({page,pageId,nav}) {
     items.push({label:pageId?.naam||"",target:null});
   }
   if(page==="speler_via_club") { items.push({label:pageId?._vanClub||"Club",target:"club",targetId:pageId?._vanClub}); items.push({label:pageId?.naam||"",target:null}); }
-  if(page==="club") items.push({label:pageId||"",target:null});
+  if(page==="club") {
+    if(pageId?._vanWedstrijd) {
+      items.push({label:`${pageId._vanWedstrijd.thuis} vs ${pageId._vanWedstrijd.uit}`,target:"wedstrijd",targetId:pageId._vanWedstrijd});
+    }
+    items.push({label:pageId?._club||pageId||"",target:null});
+  }
   if(page==="club_historie") { items.push({label:pageId?.club||pageId,target:"club",targetId:pageId?.club||pageId}); items.push({label:"Historie",target:null}); }
   if(page==="wedstrijd") items.push({label:`${pageId?.thuis} vs ${pageId?.uit}`,target:null});
   if(items.length<=1) return null;
@@ -1233,9 +1238,9 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
     <div className="fade">
       <div className="wdh">
         <div className="wdt">
-          <div className="wdtm t" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.thuis))}>{w.thuis}</div>
+          <div className="wdtm t" style={{cursor:"pointer"}} onClick={()=>nav("club",{_club:stripTeam(w.thuis),_vanWedstrijd:w})}>{w.thuis}</div>
           {score?<div className="wdsc">{score}</div>:<div className="wdsc k">vs</div>}
-          <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.uit))}>{w.uit}</div>
+          <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",{_club:stripTeam(w.uit),_vanWedstrijd:w})}>{w.uit}</div>
         </div>
         <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
         <div style={{textAlign:"center",marginTop:6,display:"flex",justifyContent:"center",gap:16}}>
@@ -2080,7 +2085,7 @@ function App() {
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} geslacht={geslacht}/>}
       {page==="invoer"&&<InvoerPagina />}
-      {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
+      {page==="club"&&<ClubPagina club={pageId?._club||pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
       {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
     </>
