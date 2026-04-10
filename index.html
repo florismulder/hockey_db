@@ -655,8 +655,10 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
 }
 
 function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
-  const [clubTeamNieuws, setClubTeamNieuws] = useState([]);
-  const [nieuwsPagina, setNieuwsPagina] = useState(0);
+  const [clubTeamNieuwsH, setClubTeamNieuwsH] = useState([]);
+  const [clubTeamNieuwsD, setClubTeamNieuwsD] = useState([]);
+  const [nieuwsPaginaH, setNieuwsPaginaH] = useState(0);
+  const [nieuwsPaginaD, setNieuwsPaginaD] = useState(0);
   const [coach, setCoach] = useState(null);
   const ITEMS_PER_PAGE = 5;
 
@@ -676,10 +678,10 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
       .then(r=>r.json())
       .then(d=>{
         const items = d[club] || [];
-        const gefilterd = items.filter(function(item){ return !item.geslacht || item.geslacht === geslacht; });
-        setClubTeamNieuws(gefilterd);
+        setClubTeamNieuwsH(items.filter(item => !item.geslacht || item.geslacht === "heren"));
+        setClubTeamNieuwsD(items.filter(item => !item.geslacht || item.geslacht === "dames"));
       })
-      .catch(()=>{ setClubTeamNieuws([]); });
+      .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);
 
   useEffect(()=>{
@@ -700,8 +702,10 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   const gespeeld = clubWedstrijden.filter(w => w.gespeeld===true || w.score_thuis!=null).sort((a,b) => new Date(b.datum||0) - new Date(a.datum||0));
   const komend = clubWedstrijden.filter(w => w.gespeeld!==true && w.score_thuis==null).sort((a,b) => new Date(a.datum||0) - new Date(b.datum||0));
 
-  const totaalPaginas = Math.ceil(clubTeamNieuws.length / ITEMS_PER_PAGE);
-  const paginaItems = clubTeamNieuws.slice(nieuwsPagina * ITEMS_PER_PAGE, (nieuwsPagina + 1) * ITEMS_PER_PAGE);
+  const totaalPaginasH = Math.ceil(clubTeamNieuwsH.length / ITEMS_PER_PAGE);
+  const paginaItemsH = clubTeamNieuwsH.slice(nieuwsPaginaH * ITEMS_PER_PAGE, (nieuwsPaginaH + 1) * ITEMS_PER_PAGE);
+  const totaalPaginasD = Math.ceil(clubTeamNieuwsD.length / ITEMS_PER_PAGE);
+  const paginaItemsD = clubTeamNieuwsD.slice(nieuwsPaginaD * ITEMS_PER_PAGE, (nieuwsPaginaD + 1) * ITEMS_PER_PAGE);
   const btnStyle = (disabled) => ({background:"none",border:"1px solid var(--border)",borderRadius:5,padding:"3px 10px",fontSize:11,fontWeight:600,color:disabled?"var(--border)":"var(--accent)",cursor:disabled?"default":"pointer",fontFamily:"inherit"});
 
   return (
@@ -737,45 +741,75 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
           </table>
         </div>
         <div style={{display:"flex",flexDirection:"column"}}>
-          <div style={{padding:"10px 18px",borderBottom:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-            <div style={{fontSize:13,fontWeight:700}}>Nieuws</div>
-            {totaalPaginas > 1 && (
-              <div style={{display:"flex",alignItems:"center",gap:8}}>
-                <button style={btnStyle(nieuwsPagina===0)} disabled={nieuwsPagina===0} onClick={()=>setNieuwsPagina(p=>p-1)}>← Nieuwer</button>
-                <span style={{fontSize:11,color:"var(--muted)"}}>{nieuwsPagina+1}/{totaalPaginas}</span>
-                <button style={btnStyle(nieuwsPagina>=totaalPaginas-1)} disabled={nieuwsPagina>=totaalPaginas-1} onClick={()=>setNieuwsPagina(p=>p+1)}>Ouder →</button>
-              </div>
-            )}
-          </div>
-          {paginaItems.length > 0 ? paginaItems.map((item,i) => (
-            <div key={i} style={{padding:"12px 18px",borderBottom:"1px solid var(--border)"}}>
-              <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum(item.datum)}</div>
-              {item.titel && item.link ? (
-                <a href={item.link} target="_blank" rel="noopener noreferrer"
-                  style={{fontSize:12,fontWeight:600,marginBottom:6,display:"block",color:"var(--accent)",textDecoration:"none"}}
-                  onMouseEnter={e=>e.currentTarget.style.textDecoration="underline"}
-                  onMouseLeave={e=>e.currentTarget.style.textDecoration="none"}>
-                  {item.titel.replace(/_/g," ")} ›
-                </a>
-              ) : item.titel ? (
-                <div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel.replace(/_/g," ")}</div>
-              ) : null}
-              {item.bullets && item.bullets.length > 0 && (
-                <ul style={{paddingLeft:14,margin:0}}>
-                  {item.bullets.map((b,j) => (
-                    <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:2}}>{b}</li>
-                  ))}
-                </ul>
+          <div style={{padding:"10px 18px",borderBottom:"1px solid var(--border)",fontSize:13,fontWeight:700}}>Nieuws</div>
+          <div style={{borderBottom:"1px solid var(--border)"}}>
+            <div style={{padding:"8px 18px",background:"var(--surface2)",borderBottom:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <div style={{fontSize:12,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".3px"}}>Heren</div>
+              {totaalPaginasH > 1 && (
+                <div style={{display:"flex",alignItems:"center",gap:6}}>
+                  <button style={{...btnStyle(nieuwsPaginaH===0),fontSize:11}} disabled={nieuwsPaginaH===0} onClick={{()=>setNieuwsPaginaH(p=>p-1)}}>←</button>
+                  <span style={{fontSize:10,color:"var(--muted)"}}>{nieuwsPaginaH+1}/{totaalPaginasH}</span>
+                  <button style={{...btnStyle(nieuwsPaginaH>=totaalPaginasH-1),fontSize:11}} disabled={nieuwsPaginaH>=totaalPaginasH-1} onClick={{()=>setNieuwsPaginaH(p=>p+1)}}>→</button>
+                </div>
               )}
             </div>
-          )) : <div style={{padding:"20px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws beschikbaar.</div>}
-          {totaalPaginas > 1 && (
-            <div style={{padding:"10px 18px",borderTop:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:"auto"}}>
-              <button style={btnStyle(nieuwsPagina===0)} disabled={nieuwsPagina===0} onClick={()=>setNieuwsPagina(p=>p-1)}>← Nieuwer</button>
-              <span style={{fontSize:11,color:"var(--muted)"}}>{nieuwsPagina+1} / {totaalPaginas}</span>
-              <button style={btnStyle(nieuwsPagina>=totaalPaginas-1)} disabled={nieuwsPagina>=totaalPaginas-1} onClick={()=>setNieuwsPagina(p=>p+1)}>Ouder →</button>
+            {paginaItemsH.length > 0 ? paginaItemsH.map((item,i) => (
+              <div key={{i}} style={{padding:"10px 18px",borderBottom:"1px solid var(--border)"}}>
+                <div style={{fontSize:10,color:"var(--muted)",marginBottom:3,fontFamily:"'JetBrains Mono',monospace"}}>{{"formatNieuwsDatum(item.datum)"}}</div>
+                {{item.titel && item.link ? (
+                  <a href={{item.link}} target="_blank" rel="noopener noreferrer"
+                    style={{fontSize:12,fontWeight:600,marginBottom:4,display:"block",color:"var(--accent)",textDecoration:"none"}}
+                    onMouseEnter={{e=>e.currentTarget.style.textDecoration="underline"}}
+                    onMouseLeave={{e=>e.currentTarget.style.textDecoration="none"}}>
+                    {{item.titel.replace(/_/g," ")}} ›
+                  </a>
+                ) : item.titel ? (
+                  <div style={{fontSize:12,fontWeight:600,marginBottom:4}}>{{item.titel.replace(/_/g," ")}}</div>
+                ) : null}}
+                {{item.bullets && item.bullets.length > 0 && (
+                  <ul style={{paddingLeft:14,margin:0}}>
+                    {{item.bullets.map((b,j) => (
+                      <li key={{j}} style={{fontSize:12,color:"var(--text)",marginBottom:2}}>{{b}}</li>
+                    ))}}
+                  </ul>
+                )}}
+              </div>
+            )) : <div style={{padding:"14px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws.</div>}
+          </div>
+          <div style={{borderBottom:"1px solid var(--border)"}}>
+            <div style={{padding:"8px 18px",background:"var(--surface2)",borderBottom:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <div style={{fontSize:12,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".3px"}}>Dames</div>
+              {totaalPaginasD > 1 && (
+                <div style={{display:"flex",alignItems:"center",gap:6}}>
+                  <button style={{...btnStyle(nieuwsPaginaD===0),fontSize:11}} disabled={nieuwsPaginaD===0} onClick={{()=>setNieuwsPaginaD(p=>p-1)}}>←</button>
+                  <span style={{fontSize:10,color:"var(--muted)"}}>{nieuwsPaginaD+1}/{totaalPaginasD}</span>
+                  <button style={{...btnStyle(nieuwsPaginaD>=totaalPaginasD-1),fontSize:11}} disabled={nieuwsPaginaD>=totaalPaginasD-1} onClick={{()=>setNieuwsPaginaD(p=>p+1)}}>→</button>
+                </div>
+              )}
             </div>
-          )}
+            {paginaItemsD.length > 0 ? paginaItemsD.map((item,i) => (
+              <div key={{i}} style={{padding:"10px 18px",borderBottom:"1px solid var(--border)"}}>
+                <div style={{fontSize:10,color:"var(--muted)",marginBottom:3,fontFamily:"'JetBrains Mono',monospace"}}>{{"formatNieuwsDatum(item.datum)"}}</div>
+                {{item.titel && item.link ? (
+                  <a href={{item.link}} target="_blank" rel="noopener noreferrer"
+                    style={{fontSize:12,fontWeight:600,marginBottom:4,display:"block",color:"var(--accent)",textDecoration:"none"}}
+                    onMouseEnter={{e=>e.currentTarget.style.textDecoration="underline"}}
+                    onMouseLeave={{e=>e.currentTarget.style.textDecoration="none"}}>
+                    {{item.titel.replace(/_/g," ")}} ›
+                  </a>
+                ) : item.titel ? (
+                  <div style={{fontSize:12,fontWeight:600,marginBottom:4}}>{{item.titel.replace(/_/g," ")}}</div>
+                ) : null}}
+                {{item.bullets && item.bullets.length > 0 && (
+                  <ul style={{paddingLeft:14,margin:0}}>
+                    {{item.bullets.map((b,j) => (
+                      <li key={{j}} style={{fontSize:12,color:"var(--text)",marginBottom:2}}>{{b}}</li>
+                    ))}}
+                  </ul>
+                )}}
+              </div>
+            )) : <div style={{padding:"14px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws.</div>}
+          </div>
         </div>
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
@@ -1115,15 +1149,15 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
       const seizoenen = idx.seizoenen || [];
       const geslacht = w.geslacht || (w.thuis && w.thuis.match(/[Dd]1$/) ? "dames" : "heren");
 
-      // Laad alle seizoenen parallel
+      // Laad alleen seizoenen met data voor het juiste geslacht
       const resultaten = await Promise.all(
-        seizoenen.map(s => {
-          const g = s[`clubs_${geslacht}`] ? geslacht : (s[`clubs_heren`] ? "heren" : "dames");
-          return fetch(`seizoenen/${s.slug}/${g}.json`)
+        seizoenen
+          .filter(s => s[`clubs_${geslacht}`] > 0) // alleen seizoenen met data voor dit geslacht
+          .map(s => fetch(`seizoenen/${s.slug}/${geslacht}.json`)
             .then(r=>r.json())
-            .then(d=>({seizoen:s.seizoen, slug:s.slug, geslacht:g, uitslagen:d.uitslagen||[]}))
-            .catch(()=>null);
-        })
+            .then(d=>({seizoen:s.seizoen, slug:s.slug, geslacht, uitslagen:d.uitslagen||[]}))
+            .catch(()=>null)
+          )
       );
 
       // Haal ook huidig seizoen op uit programma.json
