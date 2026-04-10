@@ -255,10 +255,10 @@
       {
         "thuis": "Laren",
         "uit": "Amsterdam",
-        "score": "2-2 (SO 1-2)",
+        "score": "2-2 (SO Amsterdam wint)",
         "datum": null,
         "scorers": [],
-        "notitie": "Amsterdam won na strafballen"
+        "notitie": ""
       },
       {
         "thuis": "Amsterdam",
@@ -301,28 +301,68 @@
         "notitie": ""
       }
     ],
-    "finale": {
-      "thuis": "Amsterdam",
-      "uit": "HGC",
-      "score": "1-1 (SO 1-3)",
-      "datum": "11-05-1997",
-      "scorers": [
-        {
-          "naam": "Ingeborg Evenblij",
-          "club": "HGC",
-          "minuut": null
-        },
-        {
-          "naam": "Frederiek Grijpma",
-          "club": "Amsterdam",
-          "minuut": null
-        }
-      ],
-      "notitie": "HGC won de finale serie met 2-1"
-    },
+    "finale_wedstrijden": [
+      {
+        "thuis": "HGC",
+        "uit": "Amsterdam",
+        "score": "0-2",
+        "datum": "08-05-1997",
+        "scorers": [
+          {
+            "naam": "Frederiek Grijpma",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Carole Thate",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "1-1 (SO 2-4)",
+        "datum": "10-05-1997",
+        "scorers": [
+          {
+            "naam": "Frederiek Grijpma",
+            "club": "Amsterdam",
+            "minuut": null
+          },
+          {
+            "naam": "Ingrid Deenen",
+            "club": "HGC",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      },
+      {
+        "thuis": "Amsterdam",
+        "uit": "HGC",
+        "score": "1-1 (SO 1-3)",
+        "datum": "11-05-1997",
+        "scorers": [
+          {
+            "naam": "Ingeborg Evenblij",
+            "club": "HGC",
+            "minuut": null
+          },
+          {
+            "naam": "Frederiek Grijpma",
+            "club": "Amsterdam",
+            "minuut": null
+          }
+        ],
+        "notitie": ""
+      }
+    ],
     "troostfinale": null,
     "kampioen": "HGC",
     "playout": []
   },
-  "bijgewerkt": "2026-04-05"
+  "bijgewerkt": "2026-04-10"
 }
