@@ -1332,8 +1332,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                                     padding:"7px 14px",borderBottom: isOpen?"none":"1px solid var(--border)",
                                     fontSize:12,cursor:u._wedstrijd?"pointer":"default",
                                     background:isOpen?"var(--accent-light)":"transparent"}}>
-                                  {isHuidig&&u.datum&&<span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)",
-                                    width:76,flexShrink:0}}>{u.datum.slice(8)+"-"+u.datum.slice(5,7)+"-"+u.datum.slice(0,4)}</span>}
+                                  <span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)",width:76,flexShrink:0,display:"inline-block"}}>{isHuidig&&u.datum?u.datum.slice(8)+"-"+u.datum.slice(5,7)+"-"+u.datum.slice(0,4):""}</span>
                                   <span style={{flex:1,textAlign:"right",fontSize:12,
                                     fontWeight:thuisWint?700:400}}>{u._origThuis||u.thuis}</span>
                                   <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--text)",
