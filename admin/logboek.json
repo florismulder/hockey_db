@@ -6,6 +6,19 @@
       "naam": "jip_janssen",
       "velden": {
         "verborgen": true,
+        "link": "https://drive.google.com/file/d/1Gd3NV40bjNdNqPyoOv3zKnLOKV3_NMpy",
+        "bullets": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-10T04:07:04.832Z"
+    },
+    {
+      "type": "artikel",
+      "id": "jip_janssen",
+      "naam": "jip_janssen",
+      "velden": {
+        "verborgen": true,
         "link": "https://drive.google.com/file/d/11REkn8uYLC3euNlQn3noN9rrEFmHeCIJ",
         "bullets": 5
       },
