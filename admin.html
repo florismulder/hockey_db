@@ -1873,16 +1873,17 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
       const bronItems = nieuw[bronClub]||[];
-      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
+      const itemIdx = bronItems.findIndex(item =>
+        (item.titel||"")+("|")+(item.datum||"") === sleutel
+      );
       if (itemIdx < 0) return huidig;
       const item = bronItems[itemIdx];
-      // Als nog geen expliciete clubs lijst: initialiseer met bronClub
-      const huidigeClubs = item.clubs || [bronClub];
+      // Als geen clubs array: begin met bronClub als basis
+      const huidigeClubs = (item.clubs && item.clubs.length > 0) ? item.clubs : [bronClub];
       const nieuweClubs = huidigeClubs.includes(club)
         ? huidigeClubs.filter(c=>c!==club)
         : [...new Set([...huidigeClubs, club])];
-      // Lege lijst = nergens tonen (verborgen)
-      bronItems[itemIdx] = {...item, clubs: nieuweClubs};
+      bronItems[itemIdx] = {...item, clubs: nieuweClubs.length > 0 ? nieuweClubs : [bronClub]};
       return nieuw;
     });
   };
@@ -1952,13 +1953,17 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
         {laden&&<div className="loading"><div className="spinner"/> Laden…</div>}
         {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
         {!laden&&gefilterd.map((item)=>{
-          const sleutel = item._sleutel;
+          // Bereken sleutel live consistent met alleItems
+          const sleutel = (item.titel||"")+"|"+(item.datum||"");
           const bronClub = item._bronClub;
-          // Lees altijd live uit nieuwsData zodat wijzigingen direct zichtbaar zijn
+          // Lees altijd live uit nieuwsData
           const liveItem = (nieuwsData[bronClub]||[]).find(x=>
             (x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||"")
           ) || item;
-          const huidigeClubs = liveItem.clubs !== undefined ? liveItem.clubs : [bronClub];
+          // Als geen clubs array: bronclub is default aangevinkt
+          const huidigeClubs = (liveItem.clubs && liveItem.clubs.length > 0)
+            ? liveItem.clubs
+            : [bronClub];
           const verborgen = liveItem.verborgen_bullets||[];
           const geslacht = liveItem.geslacht||null;
           const isVerborgen = liveItem.verborgen||false;
@@ -2255,7 +2260,7 @@ function App() {
           {paginaType==="dashboard" &&
             <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={laadData} loading={loading}/>}
           {paginaType==="spelers" &&
-            <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={onRefresh}/>}
+            <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={laadData}/>}
           {paginaType==="speler_detail" &&
             <SpelerDetail spelerId={spelerId} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
           {paginaType==="clubs" &&
