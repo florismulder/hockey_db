@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "artikel",
+      "id": "jip_janssen",
+      "naam": "jip_janssen",
+      "velden": {
+        "verborgen": true,
+        "link": "https://drive.google.com/file/d/1pmEWSr6Sxe9H2VW_bzM-sQLfUE8HYgv8",
+        "bullets": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-10T04:05:47.573Z"
+    },
+    {
       "type": "bullet",
       "id": "jip_janssen",
       "naam": "jip_janssen",
