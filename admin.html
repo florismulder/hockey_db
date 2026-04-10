@@ -1761,7 +1761,13 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
               setBusy(true);
               try {
                 const buf = await file.arrayBuffer();
-                const b64 = btoa(String.fromCharCode(...new Uint8Array(buf)));
+                const bytes = new Uint8Array(buf);
+                let binary = "";
+                const chunkSize = 8192;
+                for (let i = 0; i < bytes.length; i += chunkSize) {
+                  binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
+                }
+                const b64 = btoa(binary);
                 const res = await fetch(APPS_SCRIPT_URL, {
                   method:"POST", headers:{"Content-Type":"application/json"},
                   body: JSON.stringify({actie:"verwerkClubInfoPdf", base64:b64, mimeType:file.type||"application/pdf", club:clubNaam})
