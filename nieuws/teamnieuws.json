@@ -815,7 +815,14 @@
         "Versterkt zich met Juup Veen.",
         "Versterkt zich met Peppe Veen."
       ],
-      "competitie": "EHL"
+      "competitie": "EHL",
+      "clubs": [
+        "Kampong"
+      ],
+      "verborgen_bullets": [
+        0
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-09",
