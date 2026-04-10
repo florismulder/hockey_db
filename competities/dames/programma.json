@@ -4879,7 +4879,255 @@
       "uit": "SCHC",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Staat 11e in de Tulp Hoofdklasse.",
+          "De ploeg staat al twee thuisduels op rij zonder zege.",
+          "Verloor dit seizoen tien van haar zeventien competitieduels.",
+          "Scoorde slechts zeventien keer dit seizoen, de minst productieve ploeg van de Hoofdklasse.",
+          "Dreigt een nieuw negatief clubrecord te vestigen voor het laagste aantal doelpunten van de clubtopscorer.",
+          "De clubtopscorer heeft op dit moment drie doelpunten, het laagste clubrecord is vijf."
+        ],
+        "stats_uit": [
+          "Is de koploper in de Tulp Hoofdklasse.",
+          "Is de kersverse Europese clubkampioen.",
+          "Is al 31 duels op rij ongeslagen in de reguliere competitie (W26 G5).",
+          "Op vreemde bodem al 24 uitduels op rij ongeslagen (W19 G5), waarvan de laatste tien gewonnen.",
+          "Noteerde de negende clean sheet van het seizoen, het meeste van alle clubs.",
+          "Kreeg dit seizoen in 17 wedstrijden pas twaalf goals tegen, met afstand het minste van alle clubs."
+        ],
+        "stats_onderling": [
+          "Oranje-Rood won in zeventien Hoofdklasseduels nog nooit van SCHC (G4 V13).",
+          "Op eigen veld leed Oranje-Rood zes nederlagen tegen SCHC en speelde ze twee keer gelijk.",
+          "SCHC maakte twaalf goals in haar laatste twee uitduels met Oranje-Rood (0-6 en 1-6).",
+          "De laatste twee onderlinge duels eindigden identiek: 5-0 voor SCHC, waarbij Oranje-Rood niet scoorde."
+        ],
+        "scheidsrechters": [
+          "Nino Arzinin",
+          "Maurits Verzeilberg"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 1,
+            "naam": "Lucie Ehrmann",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Amber Brouwer",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Juul van der Velden",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Loeki Treffers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Bibi Donraadt",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Vivienne Peters",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Pheline Vos",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Lynn Vasterink",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Babs van Hest",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Charlotte Schrijvers",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 13,
+            "naam": "Merel Voermans",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Margje van der Loo",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Julianna Tornetta",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Lara Raaijmakers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Renske van Limpt",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 18,
+            "naam": "Pieke van de Pas",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Brechje Scheepers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Jolien Bogers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Sara Puglisi",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Madelief de Beer",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Lisa Scheerlinck",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Thirsa Kho",
+            "doelpunten": 3
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 3,
+            "naam": "Rifka Bakker",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Naomi Brunsveld",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Lisa Post",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Elzemiek Zandee",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Xan de Waard",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Yibbi Jansen",
+            "doelpunten": 18
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Renee van Laarhoven",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Mette Winter",
+            "doelpunten": 7
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Maud van den Heuvel",
+            "doelpunten": 7
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Noa Boterman",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Famke Richardson",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Isa van Heerde",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Marleen Jochems",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Nanieck Mengelberg",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Jip Dicke",
+            "doelpunten": 17
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Pien Dicke",
+            "doelpunten": 9
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Mariette Boot",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Marsha Zwezereijn",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Anna de Geus",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 29,
+            "naam": "Elodie Picard",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 31,
+            "naam": "Floortje Middelbos",
+            "doelpunten": 0
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-12",
