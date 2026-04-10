@@ -5540,7 +5540,145 @@
       "uit": "Hurley",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Staat 8ste in de Tulp Hoofdklasse.",
+          "Twee nederlagen op rij.",
+          "Won al zes thuisduels niet meer (G1 V5).",
+          "Laatste thuiszege dateert van 28 september 2025.",
+          "Won dit seizoen vijf van zeventien competitieduels.",
+          "Slechts één clean sheet dit seizoen."
+        ],
+        "stats_uit": [
+          "Staat 9e in de Tulp Hoofdklasse.",
+          "Vier duels op rij zonder overwinning (G1 V3).",
+          "Twee uitduels op rij zonder winst (G1 V1).",
+          "Laatste uitzege dateert van 1 maart bij HGC.",
+          "Verloor dit seizoen tien van zeventien wedstrijden.",
+          "Scoorde dit seizoen al dertig keer."
+        ],
+        "stats_onderling": [
+          "HDM verloor de laatste vier onderlinge Hoofdklasseduels met Hurley en scoorde daarin slechts twee keer.",
+          "Op eigen veld is de balans bijna perfect gelijk: zeven zeges HDM, zes zeges Hurley en zes gelijke spelen.",
+          "Totale balans: 39 duels, 11x winst HDM, 10x gelijkspel, 18x winst Hurley.",
+          "De meest recente vorm wijst sterk in de richting van de Amstelveense ploeg."
+        ],
+        "scheidsrechters": [
+          "Maarten Boxma",
+          "Manouk Bakker"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 2,
+            "naam": "Kaat Walhof",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Julia Duffhuis",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Belén van den Broek",
+            "doelpunten": 6
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Sabine van den Eijnden",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Phileine van den Bosch",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Delany van den Broek",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Roos Alkemande",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Pien van der Heide",
+            "doelpunten": 2
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 2,
+            "naam": "Fiona Morgenstern",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Romée Corver",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Cis van der Salm",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Michelle van der Drift",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Olivia Huisman",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Teuntje Horn",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Fleur Loomans",
+            "doelpunten": 5
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Annelotte Nijhuis",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Floor van den Dungen",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Margot v Hecking C.",
+            "doelpunten": 6
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Taheera Augousti",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 30,
+            "naam": "Sanne Caarls",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": null,
+            "naam": "Suus Meininger",
+            "doelpunten": 3
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-18",
