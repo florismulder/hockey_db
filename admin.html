@@ -1875,11 +1875,25 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
       if (itemIdx < 0) return huidig;
       const item = bronItems[itemIdx];
+      // Als nog geen expliciete clubs lijst: initialiseer met bronClub
       const huidigeClubs = item.clubs || [bronClub];
       const nieuweClubs = huidigeClubs.includes(club)
         ? huidigeClubs.filter(c=>c!==club)
         : [...new Set([...huidigeClubs, club])];
-      bronItems[itemIdx] = {...item, clubs: nieuweClubs.length===0?[bronClub]:nieuweClubs};
+      // Lege lijst = nergens tonen (verborgen)
+      bronItems[itemIdx] = {...item, clubs: nieuweClubs};
+      return nieuw;
+    });
+  };
+
+  const toggleVerborg = (sleutel, bronClub) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const bronItems = nieuw[bronClub]||[];
+      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
+      if (itemIdx < 0) return huidig;
+      const item = bronItems[itemIdx];
+      bronItems[itemIdx] = {...item, verborgen: !item.verborgen};
       return nieuw;
     });
   };
@@ -1911,11 +1925,9 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   const slaAllesOp = async () => {
     setBezig(true);
     try {
-      for (const club of Object.keys(nieuwsData)) {
-        await apiCall("updateTeamnieuws", {club, items: nieuwsData[club]||[]});
-      }
-      toast("✅ Teamnieuws opgeslagen");
-      onRefresh();
+      const res = await apiCall("updateAlleTeamnieuws", {alleNieuws: nieuwsData});
+      if (res.ok) { toast("✅ Teamnieuws opgeslagen"); onRefresh(); }
+      else throw new Error(res.fout||res.error||"Fout");
     } catch(e) { toast("❌ "+e.message,"error"); }
     finally { setBezig(false); }
   };
@@ -1941,17 +1953,29 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
         {!laden&&gefilterd.map((item)=>{
           const sleutel = item._sleutel;
           const bronClub = item._bronClub;
-          const huidigeClubs = item.clubs||[bronClub];
+          // Clubs: expliciete lijst of bronClub als default
+        const huidigeClubs = item.clubs !== undefined ? item.clubs : [bronClub];
           const verborgen = item.verborgen_bullets||[];
           const geslacht = item.geslacht||null;
           return (
             <div key={sleutel} className="card" style={{marginBottom:10}}>
               <div className="card-body" style={{display:"flex",gap:16,alignItems:"flex-start"}}>
                 <div style={{flex:1,minWidth:0}}>
-                  <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
-                    {item.datum||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
+                  <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:4}}>
+                    <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",flex:1}}>
+                      {item.datum||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
+                    </div>
+                    <button onClick={()=>toggleVerborg(sleutel,bronClub)}
+                      title={item.verborgen?"Overal tonen":"Overal verbergen"}
+                      style={{background:item.verborgen?"#fee2e2":"var(--surface2)",
+                        border:"1px solid "+(item.verborgen?"#fca5a5":"var(--border)"),
+                        borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
+                        color:item.verborgen?"#dc2626":"var(--muted)",fontWeight:600,flexShrink:0}}>
+                      {item.verborgen?"🚫 Verborgen":"👁 Zichtbaar"}
+                    </button>
                   </div>
-                  {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel.replace(/_/g," ")}</div>}
+                  {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6,
+                    opacity:item.verborgen?.4:1}}>{item.titel.replace(/_/g," ")}</div>}
                   {item.bullets&&item.bullets.length>0&&(
                     <ul style={{margin:0,paddingLeft:14}}>
                       {item.bullets.map((b,bi)=>(
