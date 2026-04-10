@@ -1832,16 +1832,14 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
 
 // ── Teamnieuws beheer ─────────────────────────────────────────
 function TeamNieuwsBeheer({data, toast, onRefresh}) {
-  const clubs = [...new Set([
-    "Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+  const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
     "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC",
-    "Schaerweijde","Tilburg"
-  ])].sort();
+    "Schaerweijde","Tilburg"].sort();
 
-  const [geselecteerdeClub, setGeselecteerdeClub] = useState(clubs[0]);
   const [nieuwsData, setNieuwsData] = useState({});
   const [laden, setLaden] = useState(false);
-  const [opslaan, setOpslaan] = useState(false);
+  const [bezig, setBezig] = useState(false);
+  const [zoek, setZoek] = useState("");
 
   useEffect(() => {
     setLaden(true);
@@ -1850,51 +1848,76 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       .catch(()=>setLaden(false));
   }, []);
 
-  const items = nieuwsData[geselecteerdeClub] || [];
+  // Verzamel alle unieke berichten over alle clubs heen
+  const alleItems = useMemo(() => {
+    const map = new Map();
+    Object.entries(nieuwsData).forEach(([club, items]) => {
+      (items||[]).forEach(item => {
+        const sleutel = (item.titel||"")+"|"+(item.datum||"");
+        if (!map.has(sleutel)) {
+          map.set(sleutel, {...item, _bronClub: club, _sleutel: sleutel,
+            clubs: item.clubs || [club]});
+        }
+      });
+    });
+    return Array.from(map.values())
+      .sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
+  }, [nieuwsData]);
 
-  const setGeslacht = (idx, geslacht) => {
-    const bijgewerkt = {...nieuwsData};
-    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
-      i===idx ? {...item, geslacht} : item
-    );
-    setNieuwsData(bijgewerkt);
+  const gefilterd = zoek
+    ? alleItems.filter(item=>(item.titel||"").toLowerCase().includes(zoek.toLowerCase()))
+    : alleItems;
+
+  const toggleClub = (sleutel, club, bronClub) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const bronItems = nieuw[bronClub]||[];
+      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
+      if (itemIdx < 0) return huidig;
+      const item = bronItems[itemIdx];
+      const huidigeClubs = item.clubs || [bronClub];
+      const nieuweClubs = huidigeClubs.includes(club)
+        ? huidigeClubs.filter(c=>c!==club)
+        : [...new Set([...huidigeClubs, club])];
+      bronItems[itemIdx] = {...item, clubs: nieuweClubs.length===0?[bronClub]:nieuweClubs};
+      return nieuw;
+    });
   };
 
-  const setClubs = (idx, clubsList) => {
-    const bijgewerkt = {...nieuwsData};
-    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
-      i===idx ? {...item, clubs:clubsList} : item
-    );
-    setNieuwsData(bijgewerkt);
+  const toggleBullet = (sleutel, bronClub, bi) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const bronItems = nieuw[bronClub]||[];
+      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
+      if (itemIdx < 0) return huidig;
+      const item = bronItems[itemIdx];
+      const huidigV = item.verborgen_bullets||[];
+      bronItems[itemIdx] = {...item, verborgen_bullets:
+        huidigV.includes(bi) ? huidigV.filter(x=>x!==bi) : [...huidigV, bi]};
+      return nieuw;
+    });
   };
 
-  const setVerborgen = (idx, verborgen) => {
-    const bijgewerkt = {...nieuwsData};
-    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
-      i===idx ? {...item, verborgen} : item
-    );
-    setNieuwsData(bijgewerkt);
+  const setGeslacht = (sleutel, bronClub, geslacht) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const bronItems = nieuw[bronClub]||[];
+      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
+      if (itemIdx >= 0) bronItems[itemIdx] = {...bronItems[itemIdx], geslacht};
+      return nieuw;
+    });
   };
 
-  const toggleBullet = (idx, bi) => {
-    const bijgewerkt = {...nieuwsData};
-    const item = items[idx];
-    const huidig = item.verborgen_bullets||[];
-    const nieuw = huidig.includes(bi) ? huidig.filter(x=>x!==bi) : [...huidig,bi];
-    bijgewerkt[geselecteerdeClub] = items.map((item2,i)=>
-      i===idx ? {...item2, verborgen_bullets:nieuw} : item2
-    );
-    setNieuwsData(bijgewerkt);
-  };
-
-  const slaOp = async () => {
-    setOpslaan(true);
+  const slaAllesOp = async () => {
+    setBezig(true);
     try {
-      const res = await apiCall("updateTeamnieuws", {club:geselecteerdeClub, items:nieuwsData[geselecteerdeClub]||[]});
-      if (res.ok) { toast("✅ Teamnieuws opgeslagen voor "+geselecteerdeClub); onRefresh(); }
-      else throw new Error(res.fout||res.error||"Fout");
+      for (const club of Object.keys(nieuwsData)) {
+        await apiCall("updateTeamnieuws", {club, items: nieuwsData[club]||[]});
+      }
+      toast("✅ Teamnieuws opgeslagen");
+      onRefresh();
     } catch(e) { toast("❌ "+e.message,"error"); }
-    finally { setOpslaan(false); }
+    finally { setBezig(false); }
   };
 
   return (
@@ -1902,100 +1925,80 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       <div className="topbar">
         <div>
           <div className="topbar-title">Teamnieuws toewijzen</div>
-          <div className="topbar-sub">Stel per nieuwsblok in voor welk team het bedoeld is</div>
+          <div className="topbar-sub">{alleItems.length} berichten</div>
         </div>
         <div className="topbar-actions">
-          <button className="btn btn-primary btn-sm" onClick={slaOp} disabled={opslaan||laden}>
-            {opslaan?<span className="spinner"/>:null} Opslaan
+          <button className="btn btn-primary btn-sm" onClick={slaAllesOp} disabled={bezig||laden}>
+            {bezig?<span className="spinner"/>:null} Alles opslaan
           </button>
         </div>
       </div>
       <div className="content">
-        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:16}}>
-          {clubs.map(club=>(
-            <button key={club}
-              className={"btn btn-sm "+(geselecteerdeClub===club?"btn-primary":"btn-secondary")}
-              onClick={()=>setGeselecteerdeClub(club)}>
-              {club}
-              {(nieuwsData[club]||[]).length>0&&
-                <span style={{marginLeft:4,fontSize:10,opacity:.7}}>{(nieuwsData[club]||[]).length}</span>}
-            </button>
-          ))}
-        </div>
-
+        <input className="filter-input" placeholder="Zoek op titel…"
+          value={zoek} onChange={e=>setZoek(e.target.value)} style={{marginBottom:16,width:"100%"}}/>
         {laden&&<div className="loading"><div className="spinner"/> Laden…</div>}
-
-        {!laden&&items.length===0&&(
-          <div className="empty">Geen teamnieuws voor {geselecteerdeClub}.</div>
-        )}
-
-        {!laden&&items.map((item,idx)=>(
-          <div key={idx} className="card" style={{marginBottom:10}}>
-            <div className="card-body" style={{display:"flex",gap:12,alignItems:"flex-start"}}>
-              <div style={{flex:1,minWidth:0}}>
-                <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
-                  {item.datum||"geen datum"}
-                </div>
-                {item.titel&&(
-                  <div style={{fontSize:12,fontWeight:600,marginBottom:4,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-                    {item.titel.replace(/_/g," ")}
+        {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
+        {!laden&&gefilterd.map((item)=>{
+          const sleutel = item._sleutel;
+          const bronClub = item._bronClub;
+          const huidigeClubs = item.clubs||[bronClub];
+          const verborgen = item.verborgen_bullets||[];
+          const geslacht = item.geslacht||null;
+          return (
+            <div key={sleutel} className="card" style={{marginBottom:10}}>
+              <div className="card-body" style={{display:"flex",gap:16,alignItems:"flex-start"}}>
+                <div style={{flex:1,minWidth:0}}>
+                  <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",marginBottom:4}}>
+                    {item.datum||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
                   </div>
-                )}
-                {item.bullets&&item.bullets.length>0&&(
-                  <ul style={{margin:0,paddingLeft:14}}>
-                    {item.bullets.map((b,bi)=>(
-                      <li key={bi} style={{display:"flex",alignItems:"flex-start",gap:6,marginBottom:3}}>
-                        <span style={{fontSize:11,color:(item.verborgen_bullets||[]).includes(bi)?"var(--muted)":"var(--text)",
-                          textDecoration:(item.verborgen_bullets||[]).includes(bi)?"line-through":"none",flex:1}}>
-                          {b}
-                        </span>
-                        <button onClick={()=>toggleBullet(idx,bi)}
-                          style={{background:"none",border:"none",cursor:"pointer",fontSize:12,padding:0,flexShrink:0,
-                            color:(item.verborgen_bullets||[]).includes(bi)?"var(--muted)":"var(--accent)",opacity:.7}}>
-                          {(item.verborgen_bullets||[]).includes(bi)?"👁‍🗨":"🙈"}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-              <div style={{flexShrink:0,minWidth:160}}>
-                <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Team</div>
-                <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
-                  {["heren","dames","beide","verborgen"].map(g=>(
-                    <label key={g} style={{display:"flex",alignItems:"center",gap:6,fontSize:12,cursor:"pointer",
-                      color:g==="verborgen"?"var(--danger, #dc2626)":"inherit"}}>
-                      <input type="radio" name={"geslacht_"+idx}
-                        checked={g==="verborgen"?item.verborgen===true:(item.verborgen!==true&&(item.geslacht||"beide")===g)}
-                        onChange={()=>{
-                          if(g==="verborgen") setVerborgen(idx,true);
-                          else { setVerborgen(idx,false); setGeslacht(idx,g==="beide"?null:g); }
-                        }}/>
-                      {g==="verborgen"?"🚫 Verberg volledig":g.charAt(0).toUpperCase()+g.slice(1)}
-                    </label>
-                  ))}
+                  {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel.replace(/_/g," ")}</div>}
+                  {item.bullets&&item.bullets.length>0&&(
+                    <ul style={{margin:0,paddingLeft:14}}>
+                      {item.bullets.map((b,bi)=>(
+                        <li key={bi} style={{display:"flex",alignItems:"flex-start",gap:6,marginBottom:4}}>
+                          <span style={{fontSize:11,flex:1,
+                            color:verborgen.includes(bi)?"var(--muted)":"var(--text)",
+                            textDecoration:verborgen.includes(bi)?"line-through":"none"}}>{b}</span>
+                          <button onClick={()=>toggleBullet(sleutel,bronClub,bi)}
+                            style={{background:"none",border:"none",cursor:"pointer",fontSize:12,padding:0,flexShrink:0,opacity:.6}}>
+                            {verborgen.includes(bi)?"👁":"🙈"}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Clubs</div>
-                <div style={{display:"flex",flexDirection:"column",gap:3,maxHeight:180,overflowY:"auto"}}>
-                  {clubs.map(club=>(
-                    <label key={club} style={{display:"flex",alignItems:"center",gap:6,fontSize:11,cursor:"pointer"}}>
-                      <input type="checkbox"
-                        checked={(item.clubs||[geselecteerdeClub]).includes(club)}
-                        onChange={e=>{
-                          const huidig = item.clubs||[geselecteerdeClub];
-                          const nieuw = e.target.checked
-                            ? [...new Set([...huidig,club])]
-                            : huidig.filter(c=>c!==club);
-                          setClubs(idx, nieuw.length===0?[geselecteerdeClub]:nieuw);
-                        }}/>
-                      {club}
-                    </label>
-                  ))}
+                <div style={{flexShrink:0,width:200}}>
+                  <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:4}}>Team</div>
+                  <div style={{display:"flex",gap:8,marginBottom:10}}>
+                    {[["heren","H"],["dames","D"],[null,"H+D"]].map(([g,label])=>(
+                      <label key={String(g)} style={{display:"flex",alignItems:"center",gap:4,fontSize:11,cursor:"pointer"}}>
+                        <input type="radio" name={"g_"+sleutel} checked={geslacht===g}
+                          onChange={()=>setGeslacht(sleutel,bronClub,g)}/>
+                        {label}
+                      </label>
+                    ))}
+                  </div>
+                  <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Tonen bij</div>
+                  <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
+                    {CLUBS.map(club=>{
+                      const aan = huidigeClubs.includes(club);
+                      return (
+                        <button key={club} onClick={()=>toggleClub(sleutel,club,bronClub)}
+                          style={{fontSize:10,padding:"2px 7px",borderRadius:4,border:"1px solid",cursor:"pointer",
+                            background:aan?"var(--accent)":"var(--surface2)",
+                            color:aan?"white":"var(--muted)",
+                            borderColor:aan?"var(--accent)":"var(--border)"}}>
+                          {club}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
