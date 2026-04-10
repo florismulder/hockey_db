@@ -6811,7 +6811,17 @@
         "Ziet Teun de Nooijer stoppen na dit seizoen bij de dames op 28 januari",
         "Slaagde erin om vorig seizoen de EHL-titel te pakken op het eigen complex onder Teun de Nooijer op 28 januari"
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "verborgen_bullets": [
+        0,
+        1,
+        2
+      ],
+      "clubs": [
+        "Amsterdam",
+        "Pinoké"
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
