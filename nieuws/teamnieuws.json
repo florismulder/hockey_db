@@ -34,7 +34,12 @@
       "clubs": [
         "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "verborgen_bullets": [
+        4,
+        3
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-04-07",
@@ -48,8 +53,11 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "Club de Campo"
+        "Club de Campo",
+        "SCHC"
+      ],
+      "verborgen_bullets": [
+        2
       ]
     },
     {
@@ -62,9 +70,12 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
         "Kampong"
-      ]
+      ],
+      "verborgen_bullets": [
+        0
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -79,9 +90,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -96,9 +107,10 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "verborgen": true,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -113,7 +125,8 @@
       "competitie": "EHL",
       "clubs": [
         "Kampong"
-      ]
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -1150,7 +1163,8 @@
       "clubs": [
         "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-04-07",
@@ -1165,9 +1179,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
         "Kampong"
-      ]
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-07",
@@ -1184,7 +1198,11 @@
       "clubs": [
         "Kampong",
         "Gantoise"
-      ]
+      ],
+      "verborgen_bullets": [
+        2
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -1228,7 +1246,8 @@
       "competitie": "EHL",
       "clubs": [
         "Kampong"
-      ]
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -3712,7 +3731,8 @@
       "clubs": [
         "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-04-07",
@@ -3727,8 +3747,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "Club de Campo"
+        "Club de Campo",
+        "SCHC"
       ]
     },
     {
@@ -3743,9 +3763,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -3760,9 +3780,10 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
         "SCHC"
-      ]
+      ],
+      "verborgen": true,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -7090,9 +7111,12 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Oranje-Rood",
         "Tilburg"
-      ]
+      ],
+      "verborgen_bullets": [
+        0
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-03-01",
@@ -8093,6 +8117,10 @@
       "competitie": "onbekend",
       "clubs": [
         "Bloemendaal"
+      ],
+      "geslacht": "heren",
+      "verborgen_bullets": [
+        3
       ]
     },
     {
@@ -13040,9 +13068,9 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Oranje-Rood",
         "Tilburg"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-02-25",
@@ -14255,8 +14283,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "Club de Campo"
+        "Club de Campo",
+        "SCHC"
       ]
     },
     {
@@ -14372,7 +14400,8 @@
       "clubs": [
         "Kampong",
         "Gantoise"
-      ]
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
