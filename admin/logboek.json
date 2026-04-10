@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "jip_janssen",
+      "naam": "jip_janssen",
+      "velden": {
+        "verborgen": true,
+        "bullet": "Scoorde een rake strafcorner tegen Rotterdam op 29 maart 2026 in HK"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-10T04:06:04.768Z"
+    },
+    {
       "type": "artikel",
       "id": "jip_janssen",
       "naam": "jip_janssen",
