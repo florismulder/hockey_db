@@ -1890,13 +1890,9 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   const slaOp = async () => {
     setOpslaan(true);
     try {
-      const res = await fetch(APPS_SCRIPT_URL, {
-        method:"POST", headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({actie:"updateTeamnieuws", club:geselecteerdeClub, items:nieuwsData[geselecteerdeClub]||[]})
-      });
-      const d = await res.json();
-      if (d.ok) { toast("✅ Teamnieuws opgeslagen voor "+geselecteerdeClub); onRefresh(); }
-      else throw new Error(d.fout||"Fout");
+      const res = await apiCall("updateTeamnieuws", {club:geselecteerdeClub, items:nieuwsData[geselecteerdeClub]||[]});
+      if (res.ok) { toast("✅ Teamnieuws opgeslagen voor "+geselecteerdeClub); onRefresh(); }
+      else throw new Error(res.fout||res.error||"Fout");
     } catch(e) { toast("❌ "+e.message,"error"); }
     finally { setOpslaan(false); }
   };
