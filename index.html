@@ -673,7 +673,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   const clubSpelers = spelers.filter(s => s.club === club && s.geslacht === geslacht).sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
 
   useEffect(()=>{
-    setNieuwsPagina(0);
+    setNieuwsPaginaH(0);
+    setNieuwsPaginaD(0);
     fetch("nieuws/teamnieuws.json")
       .then(r=>r.json())
       .then(d=>{
