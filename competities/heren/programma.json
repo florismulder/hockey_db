@@ -5940,7 +5940,260 @@
       "uit": "Pinoké",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "De laatste negen wedstrijden van Laren leverden geen enkele zege op (G1 V8), met zes opeenvolgende nederlagen als dieptepunt.",
+          "De reeks van negen duels zonder winst is voor Laren de langste reeks zonder overwinning sinds 2011-12.",
+          "Het clubrecord staat op zeventien duels op rij zonder overwinning, in de periode november 2005 tot oktober 2007.",
+          "Thuis verloor Laren haar laatste vier duels, de laatste thuiszege dateert van 26 oktober 2025 (3-2 op Bloemendaal).",
+          "Laren won dit seizoen slechts één van zijn zeventien hoofdklasseduels (G2 V14): 3-2 tegen Bloemendaal op 26 oktober vorig jaar.",
+          "Laren verloor dit seizoen veertien wedstrijden en heeft nog vijf speelronden de kans om een negatief clubrecord te ontlopen. In seizoen 2013-2014 leed de ploeg achttien nederlagen in 22 wedstrijden."
+        ],
+        "stats_uit": [
+          "Pinoké verloor zijn laatste twee wedstrijden en staat daarmee drie duels op rij zonder zege (G1 V2).",
+          "De laatste uitzege van Pinoké dateert van 8 maart bij Hurley (1-8).",
+          "Pinoké incasseerde in zijn laatste drie wedstrijden vijftien goals - een gemiddelde van vijf per duel.",
+          "Het is niet de eerste keer dat de Amsterdammers in drie opeenvolgende Hoofdklasseduels zo lek stonden: het gebeurde al 28 keer eerder in de clubhistorie.",
+          "Het absolute dieptepunt dateert van oktober 2008, toen Pinoké in drie opeenvolgende duels liefst 22 goals om de oren kreeg.",
+          "Joep Troost (zeventien goals) en Miles Bukkens (veertien) zijn dit seizoen samen verantwoordelijk voor de helft van de complete doelpuntenproductie van Pinoké (62)."
+        ],
+        "stats_onderling": [
+          "Pinoké won de laatste drie onderlinge duels met Laren, twee keer met een opvallend grote marge: 4-0, 0-1 en 8-3.",
+          "De 8-3 zege van Pinoké uit de heenronde was in meerdere opzichten historisch: met elf treffers was het de meest doelpuntrijke onderlinge wedstrijd ooit, en het doelpuntenverschil van vijf was de grootste marge waarmee Pinoké ooit won van Laren.",
+          "Een onderling duel tussen beide ploegen in Laren eindigde nog nooit in een gelijkspel: Laren won zes keer en Pinoké boekte vijf zeges.",
+          "Laren verloor vier van de laatste vijf thuiswedstrijden tegen Pinoké en won het andere duel (V V W V V)."
+        ],
+        "scheidsrechters": [
+          "Paul van den Assum",
+          "Maikel Rabbers"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 1,
+            "naam": "Bart de Nie",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Teun van Uunen",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Floris van der Wal",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Giovanni Brand",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Joep Hagendoorn",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Thomas Selles",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Diederick van Berckel",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Berend van Langeveld",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Thomas Vis",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Sybren Loman",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Pelle Vos",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 13,
+            "naam": "Kenny Bain",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Luke Friederich",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Quinten Moojen",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Ruben van Meer",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Xavier van de Kasteele",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Stan Thoolen",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Valentijn Charbon",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Wout Kooijman",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 24,
+            "naam": "Balder Reyenga",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 29,
+            "naam": "Estiaan Kriek",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 32,
+            "naam": "Pieter Paul Houting",
+            "doelpunten": 1
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 1,
+            "naam": "Hidde Brink",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 2,
+            "naam": "Pieter Sutorius",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Jack Waller",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Tim Knapper",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Jannis van Hattum",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Jacob Draper",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Florent van Aubel",
+            "doelpunten": 12
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Pepijn van der Valk",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Boris Aardenburg",
+            "doelpunten": 5
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Miles Bukkens",
+            "doelpunten": 14
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Daan Bonhof",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 13,
+            "naam": "Joep Troost",
+            "doelpunten": 17
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Texas Bukkens",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Jimi Kummer",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Indra Aerts",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Joppe Stappenbelt",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 18,
+            "naam": "Gijs Somers",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Luca Wolff",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Iwan Roukema",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Ralph Grevenstuk",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Teo Hinrichs",
+            "doelpunten": 0
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Thies Prinz",
+            "doelpunten": 4
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-12",
