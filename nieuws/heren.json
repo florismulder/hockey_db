@@ -1,10 +1,45 @@
 {
   "bron": "hockey.nl RSS via HockeyDB",
-  "bijgewerkt": "2026-04-09T05:48:01.722Z",
+  "bijgewerkt": "2026-04-10T04:03:12.098Z",
   "items": [
     {
       "titel": "WK Curiosa: het gouden afscheid van WK-killer Kitty van Male",
       "link": "CBMikgFBVV95cUxPUGVMdnJhcURPcW5tZTFOcjFBUHo2c2dteWl4ZTh4bEc2Z2xuMnhBMWF6WnhFREIta1REX1lkQ2pOQnVXYThZTHpaTkZwY0h5SWkwd1FMYWVVSGdfMTJHc2lOd1J0UzFkR1lYdGozMUhUMi1nRTBlMUlsQ3NWU3VXWGxIWkFlZkM2RzRuV01BNkxyZw",
+      "datum": "09-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Trainerscarrousel HK: Sjoerd Wolters vanaf komend seizoen hoofdcoach Pinoké",
+      "link": "CBMipgFBVV95cUxNWEFMOE1XMFF5V1RRTGtPc21WUEhzQi1LazNUQzlMdlFjSlRGUk5YYXRtZXhNRVd6LUFuV0p1QlM5OEFNNUhqQWwxS3gtTGd0QWhnaUdzbGpuRXo2ZXR5eGwybG9xalU1LWtHM010dEkxaENPSURIcU1wZHZ4MFBkUVpyWFpibHFQUkhXNFdDTTR6OTBSbElhX1hOa0xRR3ZqUko5ZjNR",
+      "datum": "09-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Clubnieuws: Losser zoekt vlaggenmasten voor accommodatie",
+      "link": "CBMijAFBVV95cUxOR05sYk9vVENySk1mSTVkaVppUVgwQ1JrQjZ6eUkxRFdVNUhNWEVDLXRhM1pIbnlXLVVGQVFtZmVFZzBpRDF6MF9CQ2FpaXZtU1QtVkpzbENOdWdKNmJZZmRaTlhNMU9nUGd4eFF5NFZnS1B5ajBrM0ZWWGdWSkw0MkRxckNNYUktbUU0Qw",
+      "datum": "09-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Tophockey kort: EHL-titel voor Fletiomare MO14",
+      "link": "CBMilAFBVV95cUxPYWwzdU1jbGUtb2RYbTFMUE9ZdDcxdzlSSUJPMHBIOEFoVDJ4RXg0VlZDd2VxVExOcTVKUlBncldrTmpXTDNDNVRaUlIwRE94NjlFcURZVE5wd1JlMDl0MXFlWDZZeFRVcmFQeERBOVhvaHVIVFFFbzcyd0F1RjRXOFNXTXROdHZYZTZMRlpLU29BZnNa",
+      "datum": "09-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Transfer Nieuws: lees hier de laatste updates!",
+      "link": "https://hockey-magazine.nl/?p=13474",
+      "datum": "09-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Engeland wil weer meedoen om de medailles",
+      "link": "https://hockey-magazine.nl/?p=14427",
       "datum": "09-04-2026",
       "samenvatting": "",
       "categorieen": []
@@ -33,6 +68,20 @@
     {
       "titel": "De EHL-stats: Matla imponeert, mijlpaal Yibbi en unicum Hendrickx",
       "link": "CBMikgFBVV95cUxPSkhpYjVNbWs5SmpBdER5SVp0ZGFqUEJaUWp0d3NYR25ObmE4NUNUNlpDM0FOYzFESmVKQ2dRYlZmU1VnZElQVTJyaHowMEtwTXVUclJ2aG9rQkpKbjBmWjZnWVR4Z016bERiNzJuS0VYZUwwTGxtYXp6N2FUc3lKem5zTV80OXlyelo1czlzc2d5Zw",
+      "datum": "08-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "De EHL-stats: Matla imponeert, mijlpaal Yibbi en unicum Hendrickx",
+      "link": "CBMilwFBVV95cUxQZElvbHdmOE95aXR2QUpUSEhKQjF4aFpKeWhVYWJxYkdTdEtSQ2w5bnNEQkVzOU80OU42dmRUZ1lNSVNhN2FUZ2U1WFU5dEhwSU1wYWg5N0pTdGxBLTJaeUxybUFpeGxxaHZWTFI3TzdENU1aUFBRb3pqTUw0RkVlWjdZMzAzOTdrS0lwX1gzYUxaSzZ1NTNN",
+      "datum": "08-04-2026",
+      "samenvatting": "",
+      "categorieen": []
+    },
+    {
+      "titel": "Carrousel HK: Kampong-icoon De Wijn bergt zijn stick op",
+      "link": "CBMijwFBVV95cUxNeXFpV2RSQTFaQXI4c1MxY2t1NFFlS0wxQXRXc0JtcHNnZVZaNWxKbXBlTXk5LXBrTFdhQ2RJLWpuOUVIaG14TlFOaHljb2xsOEY0c0RsZENfWlNMTHJCWVF3cW1VQXRzMlY2YTFhLVp5RHF4cV9NVGZHMUlJZ3VaY05UNXVfYmp0eHYzcG8zWQ",
       "datum": "08-04-2026",
       "samenvatting": "",
       "categorieen": []
@@ -159,55 +208,6 @@
     {
       "titel": "Euro Hockey League 2026 | SCHC wint eerste EHL ooit na minimale (0-1) zege op Den Bosch",
       "link": "https://hockey-magazine.nl/?p=14382",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "Van Laarhoven: ‘Hebben weleens gedacht of het ons ooit zou lukken’",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc0o2TWd2bE5qWE9mYVE2ckJ3U2ZEck1SdXZSU2E5N19UdXlrRDRLN2pDTEw2R3FEMDRzbmhEM1dOS1M2QXczY3ZVVTA1TXQzS1R0eEowU3lsaHZnbUxSc0VSM3RIUE91NkRiUWkyRlpzbVVrZU1LYXRRTnkwNTh0VWlLUWlwTDFxLWk0NlBhWnJBcTI1YzVN?oc=5",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "SCHC verbreekt vloek en verslaat Den Bosch in EHL-finale",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa2N6emd0YVdGQzhFaFhiRmRIYTRWak8wbHIwM0xBamNFQWdYdHRGMXVDemU5aVQteXM5dnFsZndJWUVLMzhDRVhxX05hWFFHQXdhRUozblE5dmJVRXlZVWcwNW9XYlRQY2RWb3FTY3FLQUFld20teVRnR0VpTnh2dk11eUMyQVJ4ZmpJZlVn?oc=5",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "Kampong speelt om EHL-goud: ‘We kunnen dit seizoen nog redden’",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY2FKekNyVzBjaEJTWkJhdnk5YlN4M2h5YTMyN3dHeWU3OUJoOGdNcGN1SktCQUN1YWtSZFZXeWQ4QXByTFpDWmQwVkNDZnpTZlp3blFWQU9SMjA5VXU3cUtJSDFVcEk4ZFNQWXg0VDNBaE5DWWJsTEkzYnVXRG4yTVNoMGpKUElydHVwZXZqQTdOUQ?oc=5",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "Amsterdam herpakt zich en grijpt brons na shoot-outs",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWdXUm8xXzFJaEJ1YW56UFBiY25YeVFhWjVLNk51WFVnN1ExTUFQNHNJM0hYclpKNFFTNnFJZ3Y0QzFPd2dtYmdBMm1hNFpoVFF2YUwtbHJld3k5UmVxMDFzM21VM1JDTHNZZFdyd3lrbDZHaGtnT2pkSEdrVnc0VWU1eEEzRjhq?oc=5",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "Kampong bekroont stroef seizoen met EHL-goud",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9kclloNllJdTY5Nm5xSE51OHVxQkl1Yy1aYmk2U1pQUzF1eHlYcWl6Qi1wMFdEaXNGa0FwY3h6U3NEWEQ2UGJjT2hnc0NZTFNrNnZzSHZ0cTVKVmprNGgxMGdLSm1maHNNcXFZMjExMHpFUDdVN0o5Y01MVk83dw?oc=5",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "EHL recap 6 april (finaledag): SCHC en Kampong pakken titels, Amsterdam en Mannheimer het brons",
-      "link": "https://hockey-magazine.nl/ehl-recap-6-april-finaledag-schc-en-kampong-pakken-titels-amsterdam-en-mannheimer-het-brons/",
-      "datum": "06-04-2026",
-      "samenvatting": "",
-      "categorieen": []
-    },
-    {
-      "titel": "Euro Hockey League 2026 | Kampong geeft seizoen gouden glans met EHL-winst",
-      "link": "https://hockey-magazine.nl/euro-hockey-league-2026-kampong-geeft-seizoen-gouden-glans-met-ehl-winst/",
       "datum": "06-04-2026",
       "samenvatting": "",
       "categorieen": []
