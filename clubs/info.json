@@ -119,5 +119,19 @@
       "Landstitel heren": "1959"
     },
     "bijgewerkt": "2026-04-10"
+  },
+  "hc_rotterdam": {
+    "club": "HC Rotterdam",
+    "volledige_naam": "Hockey Club Rotterdam",
+    "opgericht": "1925",
+    "plaats": "Rotterdam",
+    "stadion": "Schouten Zekerheid Stadion",
+    "leden": "2400",
+    "website": "https://www.hcrotterdam.com/",
+    "beschrijving": "HC Rotterdam is met ongeveer 2500 leden de derde grootste hockeyclub van Nederland. De heren en dames spelen op het hoogste niveau en het is de succesvolste hockeyclub van Rotterdam.",
+    "successen": {
+      "Landstitel heren": "2013"
+    },
+    "bijgewerkt": "2026-04-10"
   }
 }
