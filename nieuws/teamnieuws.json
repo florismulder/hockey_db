@@ -8,7 +8,14 @@
         "Stelt Robbert van de Peppel aan als coach van de vrouwen volgend seizoen op 25 maart",
         "Ziet Gilles van Hesteren stoppen na een jaar bij de topploeg uit Bilthoven op 25 maart"
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "verborgen_bullets": [
+        0,
+        1
+      ],
+      "clubs": [
+        "Pinoké"
+      ]
     },
     {
       "datum": "2026-04-08",
