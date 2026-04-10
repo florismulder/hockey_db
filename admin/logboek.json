@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "artikel",
+      "id": "jip_janssen",
+      "naam": "jip_janssen",
+      "velden": {
+        "verborgen": true,
+        "link": "https://drive.google.com/file/d/1BtU06PkCexPUUraPVBAG2FEUS7NYQHkM",
+        "bullets": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-10T04:04:25.658Z"
+    },
+    {
       "type": "speler",
       "id": "wouter_jolie",
       "naam": "Wouter Jolie",
