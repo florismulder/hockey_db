@@ -4852,7 +4852,158 @@
       "uit": "Pinoké",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Kampong is nog steeds de nummer 2 van de competitie.",
+          "Kampong is inmiddels drie duels op rij ongeslagen (W2 G1).",
+          "Twee weken geleden hield de ploeg thuis haar doel schoon en versloeg het Bloemendaal met 4-0, de zesde clean sheet van dit seizoen.",
+          "Kampong won dit seizoen twaalf van haar zeventien wedstrijden.",
+          "Het clubrecord staat op zeventien zeges en dateert van seizoen 1993-1994."
+        ],
+        "stats_uit": [
+          "Pinoké is 5e in de Tulp Hoofdklasse.",
+          "De Steekneuzen wonnen wel hun laatste twee uitduels.",
+          "Pinoké speelde dit seizoen maar liefst zes keer gelijk - mede daardoor staat de ploeg met 24 punten op de vijfde plek, ondanks slechts vijf nederlagen.",
+          "Met zes gelijke spelen is Pinoké samen met Rotterdam en Bloemendaal dit seizoen koploper qua remises.",
+          "Lana Kalse (elf goals) is dit seizoen in haar eentje verantwoordelijk voor éénderde van de complete productie van Pinoké (31 goals)."
+        ],
+        "stats_onderling": [
+          "Kampong is al acht onderlinge Hoofdklasseduels op rij ongeslagen tegen Pinoké (W3 G5).",
+          "De laatste drie onderlinge ontmoetingen eindigden stuk voor stuk in een 1-1 gelijkspel.",
+          "Vijf van de laatste zes onderlinge duels eindigden in een gelijkspel.",
+          "Totale balans 50 DUELS: 29x WINST KAM, 14x GELIJKSPEL, 8x WINST PIN."
+        ],
+        "scheidsrechters": [
+          "Stefan Her",
+          "Rene van der Zanden"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 3,
+            "naam": "Guusje Moes",
+            "doelpunten": 7
+          },
+          {
+            "rugnummer": 4,
+            "naam": "Bente van der Veldt",
+            "doelpunten": 7
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Noor van den Nieuwenhof",
+            "doelpunten": 5
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Eline Jansen",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Luna Fokke",
+            "doelpunten": 7
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Carlijn Tukkers",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Iris de Kemp",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Sosha Benninga",
+            "doelpunten": 6
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Mea de Vries",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Imme van Es",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 23,
+            "naam": "Sophie van Grimbergen",
+            "doelpunten": 2
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 4,
+            "naam": "Floor de Haan",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 5,
+            "naam": "Sam Luttmer",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 6,
+            "naam": "Pam van der Laan",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 7,
+            "naam": "Maria Steensma",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Bente Jager",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Kiki Rozemeijer",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 11,
+            "naam": "Florine Rodenburg",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Elin van Erk",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Lana Kalse",
+            "doelpunten": 11
+          },
+          {
+            "rugnummer": 15,
+            "naam": "Josephine Murray",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Nina van der Marel",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 20,
+            "naam": "Flo Klinkhamer",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Tessa Beetsma",
+            "doelpunten": 2
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-12",
