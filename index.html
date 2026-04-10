@@ -1114,7 +1114,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   );
 }
 
-function WedstrijdDetail({wedstrijd, nav, spelers}) {
+function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
   if(!wedstrijd) return <div className="loading">Wedstrijd niet gevonden.</div>;
   const w=wedstrijd;
   const score=(w.gespeeld===true||w.score_thuis!=null)?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
@@ -1146,7 +1146,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers}) {
     try {
       const idx = await fetch("seizoenen/index.json").then(r=>r.json());
       const seizoenen = idx.seizoenen || [];
-      const geslacht = w.geslacht || (w.thuis && w.thuis.match(/[Dd]1$/) ? "dames" : "heren");
+      const geslacht = geslachtProp || w.geslacht || (w.thuis && w.thuis.match(/[Dd]1$/) ? "dames" : "heren");
 
       // Laad alleen seizoenen met data voor het juiste geslacht
       const resultaten = await Promise.all(
@@ -2016,7 +2016,7 @@ function App() {
       {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav} geslacht={geslacht} spelers={spelers}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
-      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers}/>}
+      {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} geslacht={geslacht}/>}
       {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
