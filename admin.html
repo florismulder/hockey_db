@@ -1754,31 +1754,10 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
           </div>
         </div>
         <div className="topbar-actions">
-          <label className="btn btn-secondary btn-sm" style={{cursor:"pointer",marginRight:4}}>
-            📄 Importeer Wikipedia PDF
-            <input type="file" accept=".pdf" style={{display:"none"}} onChange={async e=>{
-              const file = e.target.files?.[0]; if(!file) return;
-              setBusy(true);
-              try {
-                const buf = await file.arrayBuffer();
-                const bytes = new Uint8Array(buf);
-                let binary = "";
-                const chunkSize = 8192;
-                for (let i = 0; i < bytes.length; i += chunkSize) {
-                  binary += String.fromCharCode(...bytes.subarray(i, i + chunkSize));
-                }
-                const b64 = btoa(binary);
-                const res = await fetch(APPS_SCRIPT_URL, {
-                  method:"POST", headers:{"Content-Type":"application/json"},
-                  body: JSON.stringify({actie:"verwerkClubInfoPdf", base64:b64, mimeType:file.type||"application/pdf", club:clubNaam})
-                });
-                const d = await res.json();
-                if(d.ok){ toast("✅ Clubinfo geïmporteerd voor "+d.club); onRefresh(); }
-                else throw new Error(d.fout||"Fout");
-              } catch(ex){ toast("❌ "+ex.message,"error"); }
-              finally { setBusy(false); e.target.value=""; }
-            }}/>
-          </label>
+          <button className="btn btn-secondary btn-sm" style={{marginRight:4}}
+            onClick={()=>toast("📄 Upload de Wikipedia PDF naar de map 'ClubInfo' in Google Drive, dan verwerkt het systeem hem automatisch.","info")}>
+            📄 Via Drive (ClubInfo map)
+          </button>
           <button className="btn btn-primary btn-sm" onClick={opslaan} disabled={busy}>
             {busy?<span className="spinner"/>:null} Opslaan
           </button>
@@ -1889,6 +1868,14 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     setNieuwsData(bijgewerkt);
   };
 
+  const setVerborgen = (idx, verborgen) => {
+    const bijgewerkt = {...nieuwsData};
+    bijgewerkt[geselecteerdeClub] = items.map((item,i)=>
+      i===idx ? {...item, verborgen} : item
+    );
+    setNieuwsData(bijgewerkt);
+  };
+
   const toggleBullet = (idx, bi) => {
     const bijgewerkt = {...nieuwsData};
     const item = items[idx];
@@ -1979,12 +1966,16 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
               <div style={{flexShrink:0,minWidth:160}}>
                 <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:6}}>Team</div>
                 <div style={{display:"flex",flexDirection:"column",gap:4,marginBottom:10}}>
-                  {["heren","dames","beide"].map(g=>(
-                    <label key={g} style={{display:"flex",alignItems:"center",gap:6,fontSize:12,cursor:"pointer"}}>
+                  {["heren","dames","beide","verborgen"].map(g=>(
+                    <label key={g} style={{display:"flex",alignItems:"center",gap:6,fontSize:12,cursor:"pointer",
+                      color:g==="verborgen"?"var(--danger, #dc2626)":"inherit"}}>
                       <input type="radio" name={"geslacht_"+idx}
-                        checked={(item.geslacht||"beide")===g}
-                        onChange={()=>setGeslacht(idx, g==="beide"?null:g)}/>
-                      {g.charAt(0).toUpperCase()+g.slice(1)}
+                        checked={g==="verborgen"?item.verborgen===true:(item.verborgen!==true&&(item.geslacht||"beide")===g)}
+                        onChange={()=>{
+                          if(g==="verborgen") setVerborgen(idx,true);
+                          else { setVerborgen(idx,false); setGeslacht(idx,g==="beide"?null:g); }
+                        }}/>
+                      {g==="verborgen"?"🚫 Verberg volledig":g.charAt(0).toUpperCase()+g.slice(1)}
                     </label>
                   ))}
                 </div>

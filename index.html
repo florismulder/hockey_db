@@ -698,8 +698,9 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
         const alles = [...eigen, ...viaAndere];
         // Sorteer op datum aflopend
         alles.sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
-        setClubTeamNieuwsH(alles.filter(item => !item.geslacht || item.geslacht === "heren"));
-        setClubTeamNieuwsD(alles.filter(item => !item.geslacht || item.geslacht === "dames"));
+        const zichtbaar = alles.filter(item => !item.verborgen);
+        setClubTeamNieuwsH(zichtbaar.filter(item => !item.geslacht || item.geslacht === "heren"));
+        setClubTeamNieuwsD(zichtbaar.filter(item => !item.geslacht || item.geslacht === "dames"));
       })
       .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);
