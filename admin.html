@@ -1836,6 +1836,19 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   const [laden, setLaden] = useState(false);
   const [bezig, setBezig] = useState(false);
   const [zoek, setZoek] = useState("");
+  const [filterBron, setFilterBron] = useState("alle");
+
+  const setBulkGeslacht = (bronClub, geslacht) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const items = nieuw[bronClub]||[];
+      items.forEach((item, idx) => {
+        const sleutel = (item.titel||"")+("|")+(item.datum||"");
+        propageerNaarAlleKopieen(nieuw, sleutel, {geslacht});
+      });
+      return nieuw;
+    });
+  };
 
   useEffect(() => {
     setLaden(true);
@@ -1865,9 +1878,18 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       .sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
   }, [nieuwsData]);
 
-  const gefilterd = zoek
-    ? alleItems.filter(item=>(item.titel||"").toLowerCase().includes(zoek.toLowerCase()))
-    : alleItems;
+  const gefilterd = alleItems
+    .filter(item => filterBron === "alle" || item._bronClub === filterBron)
+    .filter(item => !zoek || (item.titel||"").toLowerCase().includes(zoek.toLowerCase()));
+
+  // Helper: propageer veld naar ALLE kopieën van hetzelfde artikel (zelfde titel+datum)
+  const propageerNaarAlleKopieen = (nieuw, sleutel, velden) => {
+    Object.keys(nieuw).forEach(key => {
+      const items = nieuw[key] || [];
+      const idx = items.findIndex(item => (item.titel||"")+("|")+(item.datum||"") === sleutel);
+      if (idx >= 0) items[idx] = {...items[idx], ...velden};
+    });
+  };
 
   const toggleClub = (sleutel, club, bronClub) => {
     setNieuwsData(huidig => {
@@ -1878,12 +1900,12 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       );
       if (itemIdx < 0) return huidig;
       const item = bronItems[itemIdx];
-      // Als geen clubs array: begin met bronClub als basis
       const huidigeClubs = (item.clubs && item.clubs.length > 0) ? item.clubs : [bronClub];
       const nieuweClubs = huidigeClubs.includes(club)
         ? huidigeClubs.filter(c=>c!==club)
         : [...new Set([...huidigeClubs, club])];
-      bronItems[itemIdx] = {...item, clubs: nieuweClubs.length > 0 ? nieuweClubs : [bronClub]};
+      const definitiefClubs = nieuweClubs.length > 0 ? nieuweClubs : [bronClub];
+      propageerNaarAlleKopieen(nieuw, sleutel, {clubs: definitiefClubs});
       return nieuw;
     });
   };
@@ -1894,13 +1916,14 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       const bronItems = nieuw[bronClub]||[];
       const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
       if (itemIdx < 0) return huidig;
-      const item = bronItems[itemIdx];
-      bronItems[itemIdx] = {...item, verborgen: !item.verborgen};
+      const nieuweWaarde = !bronItems[itemIdx].verborgen;
+      propageerNaarAlleKopieen(nieuw, sleutel, {verborgen: nieuweWaarde});
       return nieuw;
     });
   };
 
   const toggleBullet = (sleutel, bronClub, bi) => {
+    // Bullets zijn per bronclub uniek (verschillende Gemini extracties), NIET propageren
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
       const bronItems = nieuw[bronClub]||[];
@@ -1917,9 +1940,8 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   const setGeslacht = (sleutel, bronClub, geslacht) => {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
-      const bronItems = nieuw[bronClub]||[];
-      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
-      if (itemIdx >= 0) bronItems[itemIdx] = {...bronItems[itemIdx], geslacht};
+      // Propageer geslacht naar ALLE kopieën (zelfde artikel, meerdere clubs)
+      propageerNaarAlleKopieen(nieuw, sleutel, {geslacht});
       return nieuw;
     });
   };
@@ -1951,6 +1973,29 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
         <input className="filter-input" placeholder="Zoek op titel…"
           value={zoek} onChange={e=>setZoek(e.target.value)} style={{marginBottom:16,width:"100%"}}/>
         {laden&&<div className="loading"><div className="spinner"/> Laden…</div>}
+        {/* Bronclub filter + bulk geslacht */}
+        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:12,alignItems:"center"}}>
+          <select className="form-select" value={filterBron}
+            onChange={e=>setFilterBron(e.target.value)}
+            style={{width:"auto",fontSize:12,padding:"4px 8px"}}>
+            <option value="alle">Alle bronclubs ({alleItems.length})</option>
+            {Object.keys(nieuwsData).sort().map(k=>
+              <option key={k} value={k}>{k} ({(nieuwsData[k]||[]).length})</option>
+            )}
+          </select>
+          {filterBron!=="alle"&&(
+            <span style={{display:"flex",gap:6,alignItems:"center"}}>
+              <span style={{fontSize:11,color:"var(--muted)"}}>Bulk instellen:</span>
+              {[["heren","H 💙"],["dames","D 🩷"],[null,"H+D ⚪"]].map(([g,label])=>(
+                <button key={String(g)} onClick={()=>setBulkGeslacht(filterBron,g)}
+                  style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
+                    border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text)"}}>
+                  {label}
+                </button>
+              ))}
+            </span>
+          )}
+        </div>
         {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
         {!laden&&gefilterd.map((item)=>{
           // Bereken sleutel live consistent met alleItems
