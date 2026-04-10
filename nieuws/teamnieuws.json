@@ -14,10 +14,10 @@
         1
       ],
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-08",
@@ -32,8 +32,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "SCHC",
-        "Den Bosch"
+        "Den Bosch",
+        "SCHC"
       ]
     },
     {
@@ -1134,10 +1134,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-08",
@@ -1148,8 +1148,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "SCHC",
-        "Den Bosch"
+        "Den Bosch",
+        "SCHC"
       ]
     },
     {
@@ -2489,10 +2489,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-29",
@@ -3710,8 +3710,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "SCHC",
-        "Den Bosch"
+        "Den Bosch",
+        "SCHC"
       ]
     },
     {
@@ -5295,10 +5295,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-30",
@@ -6098,10 +6098,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-06",
@@ -6987,10 +6987,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-01",
@@ -9154,10 +9154,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-30",
@@ -9578,11 +9578,10 @@
         2
       ],
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
       "geslacht": "dames",
-      "verborgen": true
+      "verborgen": false
     },
     {
       "datum": "2026-04-06",
@@ -11129,10 +11128,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-01",
@@ -11231,10 +11230,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-30",
@@ -11941,10 +11940,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-29",
@@ -12512,10 +12511,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-03-30",
@@ -12958,10 +12957,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-01",
@@ -14186,10 +14185,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké",
-        "Nijmegen"
+        "Pinoké"
       ],
-      "verborgen": true
+      "verborgen": false,
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-01",
