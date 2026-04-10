@@ -190,5 +190,22 @@
       "Landstitel heren": "1924, 1930, 1931, 1935, 1936, 1941, 1942, 1992"
     },
     "bijgewerkt": "2026-04-10"
+  },
+  "hc_s_hertogenbosch": {
+    "club": "HC 's-Hertogenbosch",
+    "volledige_naam": "Hockeyclub 's-Hertogenbosch",
+    "opgericht": "1937",
+    "plaats": "'s-Hertogenbosch",
+    "stadion": "Oosterplas",
+    "leden": "2385",
+    "website": "http://www.hcdenbosch.nl/",
+    "beschrijving": "Hockeyclub 's-Hertogenbosch is een Nederlandse hockeyclub uit 's-Hertogenbosch, waarvan zowel de heren als de dames op het hoogste niveau uitkomen. Met circa 2.500 leden is het een van de grootste hockeyverenigingen van Nederland.",
+    "successen": {
+      "Landstitel heren": "1998, 2001",
+      "Landstitel dames": "1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2024, 2025",
+      "EHL": "2021, 2023, 2025",
+      "Europacup I": "1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009"
+    },
+    "bijgewerkt": "2026-04-10"
   }
 }
