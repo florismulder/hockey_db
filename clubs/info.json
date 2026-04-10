@@ -160,5 +160,21 @@
     "beschrijving": "THC Hurley is een Nederlandse hockeyclub uit Amstelveen, opgericht op 12 juli 1932. De club speelt met zowel de dames als de heren op het hoogste niveau (Hoofdklasse) en is met ruim 2000 leden een van de grootste hockeyclubs van Nederland.",
     "successen": {},
     "bijgewerkt": "2026-04-10"
+  },
+  "hgc": {
+    "club": "HGC",
+    "volledige_naam": "HOC Gazellen Combinatie",
+    "opgericht": "1906",
+    "plaats": "Wassenaar",
+    "stadion": "Sportcomplex De Roggewoning",
+    "leden": "1101",
+    "website": "https://www.hgc.nl/site/Default.asp",
+    "beschrijving": "HGC (opgericht 22 september 1906) is een hockeyclub uit Wassenaar. De club is ontstaan uit een fusie van Gazellen en HOC en behoort tot de grotere hockeyclubs in de regio Den Haag. Het behaalde de meeste successen in de jaren 90 met meerdere landstitels en Europacups.",
+    "successen": {
+      "Landstitel heren": "1990, 1996",
+      "Landstitel dames": "1982, 1985, 1986, 1988, 1990, 1993, 1996, 1997",
+      "EHL": "2011"
+    },
+    "bijgewerkt": "2026-04-10"
   }
 }
