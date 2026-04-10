@@ -54,8 +54,9 @@ function formatNieuwsDatum(str) {
 
 function stripTeam(naam) { return naam ? naam.replace(/\s+[HhDd]\d+$/,"").trim() : ""; }
 
-function ClubKnop({naam, nav, style, children}) {
+function ClubKnop({naam, nav, style, children, klikbaar=true}) {
   const club = stripTeam(naam);
+  if (!klikbaar) return <span style={style}>{children||club}</span>;
   return (
     <span onClick={e=>{e.stopPropagation();nav("club",club);}}
       style={{cursor:"pointer",textDecoration:"underline",textDecorationColor:"var(--border2)",textUnderlineOffset:2,...style}}>
@@ -593,9 +594,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                         <div className="wl">
                           {groep.wedstrijden.map((w,i)=>(
                             <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                              <div className="wh"><ClubKnop naam={w.thuis} nav={nav}/></div>
+                              <div className="wh"><ClubKnop naam={w.thuis} nav={nav} klikbaar={false}/></div>
                               <div className="ws">{w.score_thuis??w.doelpunten_thuis??"–"} – {w.score_uit??w.doelpunten_uit??"–"}</div>
-                              <div className="wu"><ClubKnop naam={w.uit} nav={nav}/></div>
+                              <div className="wu"><ClubKnop naam={w.uit} nav={nav} klikbaar={false}/></div>
                               <span className="wa">›</span>
                             </div>
                           ))}
@@ -621,9 +622,9 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                           <div className="wl">
                             {wedstrijden.map((w,i)=>(
                               <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
-                                <div className="wh"><ClubKnop naam={w.thuis} nav={nav}/></div>
+                                <div className="wh"><ClubKnop naam={w.thuis} nav={nav} klikbaar={false}/></div>
                                 <div className="ws k">{w.tijdstip||"–"}</div>
-                                <div className="wu"><ClubKnop naam={w.uit} nav={nav}/></div>
+                                <div className="wu"><ClubKnop naam={w.uit} nav={nav} klikbaar={false}/></div>
                                 <span className="wa">›</span>
                               </div>
                             ))}
