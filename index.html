@@ -697,9 +697,23 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
           });
         });
         const alles = [...eigen, ...viaAndere];
-        // Sorteer op datum aflopend
         alles.sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
-        const zichtbaar = alles.filter(item => !item.verborgen);
+        // Filter: niet verborgen
+        // - eigen items: altijd tonen tenzij clubs array expliciet de eigen club uitsluit
+        // - viaAndere items: clubs array moet deze club bevatten
+        const eigenTitels = new Set(eigen.map(i=>(i.titel||"")+(i.datum||"")));
+        const zichtbaar = alles.filter(item => {
+          if (item.verborgen) return false;
+          const sleutel = (item.titel||"")+(item.datum||"");
+          if (eigenTitels.has(sleutel)) {
+            // Eigen item: toon tenzij clubs expliciet leeg of andere clubs
+            if (item.clubs !== undefined && item.clubs.length > 0 && !item.clubs.includes(club)) return false;
+          } else {
+            // Via andere club: clubs array moet deze club bevatten
+            if (!item.clubs || !item.clubs.includes(club)) return false;
+          }
+          return true;
+        });
         setClubTeamNieuwsH(zichtbaar.filter(item => !item.geslacht || item.geslacht === "heren"));
         setClubTeamNieuwsD(zichtbaar.filter(item => !item.geslacht || item.geslacht === "dames"));
       })

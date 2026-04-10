@@ -659,20 +659,16 @@ function NieuweSpelerModal({data, toast, onClose, onRefresh}) {
     if (!form.club) { toast("❌ Club is verplicht","error"); return; }
     setBezig(true);
     try {
-      const res = await fetch(APPS_SCRIPT_URL, {
-        method:"POST", headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({actie:"nieuweSpeler", speler: {
-          naam: form.naam.trim(),
-          geslacht: form.geslacht,
-          club: form.club + (form.geslacht==="heren"?" H1":" D1"),
-          rugnummer: form.rugnummer ? parseInt(form.rugnummer) : null,
-          positie: form.positie || null,
-          geboortedatum: form.geboortedatum || null,
-          nationaliteit: form.nationaliteit || "Nederland",
-          gestopt: form.gestopt
-        }})
-      });
-      const d = await res.json();
+      const d = await apiCall("nieuweSpeler", {speler: {
+        naam: form.naam.trim(),
+        geslacht: form.geslacht,
+        club: form.club + (form.geslacht==="heren"?" H1":" D1"),
+        rugnummer: form.rugnummer ? parseInt(form.rugnummer) : null,
+        positie: form.positie || null,
+        geboortedatum: form.geboortedatum || null,
+        nationaliteit: form.nationaliteit || "Nederland",
+        gestopt: form.gestopt
+      }});
       if (d.ok) {
         toast("✅ " + form.naam + " toegevoegd","success");
         onRefresh();
@@ -1855,8 +1851,13 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       (items||[]).forEach(item => {
         const sleutel = (item.titel||"")+"|"+(item.datum||"");
         if (!map.has(sleutel)) {
+          // Zorg dat bronclub altijd in clubs array staat
+          const bestaandeClubs = item.clubs || [];
+          const clubs_met_bron = bestaandeClubs.length > 0
+            ? [...new Set([...bestaandeClubs])]
+            : [club];
           map.set(sleutel, {...item, _bronClub: club, _sleutel: sleutel,
-            clubs: item.clubs || [club]});
+            clubs: clubs_met_bron});
         }
       });
     });
@@ -1970,7 +1971,7 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                       {item.datum||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
                     </div>
                     <button onClick={()=>toggleVerborg(sleutel,bronClub)}
-                      title={item.verborgen?"Overal tonen":"Overal verbergen"}
+                      title={isVerborgen?"Overal tonen":"Overal verbergen"}
                       style={{background:isVerborgen?"#fee2e2":"var(--surface2)",
                         border:"1px solid "+(isVerborgen?"#fca5a5":"var(--border)"),
                         borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
