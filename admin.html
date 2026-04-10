@@ -635,8 +635,121 @@ function LogItem({entry}) {
 }
 
 // ── Spelers overzicht ─────────────────────────────────────────
-function SpelersOverzicht({data, setPagina}) {
+
+function NieuweSpelerModal({data, toast, onClose, onRefresh}) {
+  const HEREN_CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong","Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+  const DAMES_CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong","Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+  const POSITIES = ["keeper","verdediger","middenvelder","aanvaller"];
+
+  const [form, setForm] = useState({
+    naam:"", geslacht:"heren", club:"Amsterdam", rugnummer:"",
+    positie:"", geboortedatum:"", nationaliteit:"Nederland", gestopt:false
+  });
+  const [bezig, setBezig] = useState(false);
+
+  const clubs = form.geslacht==="heren" ? HEREN_CLUBS : DAMES_CLUBS;
+
+  const set = (k,v) => setForm(f=>({...f,[k]:v,
+    ...(k==="geslacht"?{club:v==="heren"?HEREN_CLUBS[0]:DAMES_CLUBS[0]}:{})
+  }));
+
+  const sla = async () => {
+    if (!form.naam.trim()) { toast("❌ Naam is verplicht","error"); return; }
+    if (!form.club) { toast("❌ Club is verplicht","error"); return; }
+    setBezig(true);
+    try {
+      const res = await fetch(WEB_APP_URL, {
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({actie:"nieuweSpeler", speler: {
+          naam: form.naam.trim(),
+          geslacht: form.geslacht,
+          club: form.club + (form.geslacht==="heren"?" H1":" D1"),
+          rugnummer: form.rugnummer ? parseInt(form.rugnummer) : null,
+          positie: form.positie || null,
+          geboortedatum: form.geboortedatum || null,
+          nationaliteit: form.nationaliteit || "Nederland",
+          gestopt: form.gestopt
+        }})
+      });
+      const d = await res.json();
+      if (d.ok) {
+        toast("✅ " + form.naam + " toegevoegd","success");
+        onRefresh();
+        onClose();
+      } else { toast("❌ " + (d.fout||"Onbekende fout"),"error"); }
+    } catch(e) { toast("❌ " + e.message,"error"); }
+    finally { setBezig(false); }
+  };
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal" style={{maxWidth:460}} onClick={e=>e.stopPropagation()}>
+        <div className="modal-header">
+          <div className="modal-title">Nieuwe speler toevoegen</div>
+          <button className="modal-close" onClick={onClose}>×</button>
+        </div>
+        <div className="modal-body" style={{display:"flex",flexDirection:"column",gap:12}}>
+          <div>
+            <label className="form-label">Naam *</label>
+            <input className="form-input" value={form.naam} onChange={e=>set("naam",e.target.value)} placeholder="Voornaam Achternaam"/>
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
+            <div>
+              <label className="form-label">Geslacht *</label>
+              <select className="form-select" value={form.geslacht} onChange={e=>set("geslacht",e.target.value)}>
+                <option value="heren">Heren</option>
+                <option value="dames">Dames</option>
+              </select>
+            </div>
+            <div>
+              <label className="form-label">Club *</label>
+              <select className="form-select" value={form.club} onChange={e=>set("club",e.target.value)}>
+                {clubs.map(c=><option key={c} value={c}>{c}</option>)}
+              </select>
+            </div>
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
+            <div>
+              <label className="form-label">Rugnummer</label>
+              <input className="form-input" type="number" value={form.rugnummer} onChange={e=>set("rugnummer",e.target.value)} placeholder="bijv. 9"/>
+            </div>
+            <div>
+              <label className="form-label">Positie</label>
+              <select className="form-select" value={form.positie} onChange={e=>set("positie",e.target.value)}>
+                <option value="">— onbekend —</option>
+                {POSITIES.map(p=><option key={p} value={p}>{p.charAt(0).toUpperCase()+p.slice(1)}</option>)}
+              </select>
+            </div>
+          </div>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
+            <div>
+              <label className="form-label">Geboortedatum</label>
+              <input className="form-input" type="date" value={form.geboortedatum} onChange={e=>set("geboortedatum",e.target.value)}/>
+            </div>
+            <div>
+              <label className="form-label">Nationaliteit</label>
+              <input className="form-input" value={form.nationaliteit} onChange={e=>set("nationaliteit",e.target.value)}/>
+            </div>
+          </div>
+          <div style={{display:"flex",alignItems:"center",gap:8}}>
+            <input type="checkbox" id="gestopt" checked={form.gestopt} onChange={e=>set("gestopt",e.target.checked)}/>
+            <label htmlFor="gestopt" style={{fontSize:13}}>Speler is gestopt / niet meer actief</label>
+          </div>
+        </div>
+        <div className="modal-footer">
+          <button className="btn btn-secondary" onClick={onClose}>Annuleer</button>
+          <button className="btn btn-primary" onClick={sla} disabled={bezig}>
+            {bezig?"Bezig...":"Speler toevoegen"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SpelersOverzicht({data, setPagina, toast, onRefresh}) {
   const [zoek, setZoek] = useState("");
+  const [toontNieuweSpeler, setToontNieuweSpeler] = useState(false);
   const [filterClub, setFilterClub] = useState("alle");
   const [filterGeslacht, setFilterGeslacht] = useState("alle");
   const [filterOranje, setFilterOranje] = useState("alle");
@@ -711,7 +824,12 @@ function SpelersOverzicht({data, setPagina}) {
           <div className="topbar-title">Spelers</div>
           <div className="topbar-sub">{gefilterd.length} van {(data.spelers||[]).length} spelers</div>
         </div>
+        <div className="topbar-actions">
+          <button className="btn btn-primary" onClick={()=>setToontNieuweSpeler(true)}>+ Nieuwe speler</button>
+        </div>
       </div>
+      {toontNieuweSpeler&&<NieuweSpelerModal
+        data={data} toast={toast} onClose={()=>setToontNieuweSpeler(false)} onRefresh={onRefresh}/>}
       <div className="content">
         <div className="filter-bar">
           <input className="filter-input" placeholder="Zoek op naam, club, rugnummer…"
@@ -1928,7 +2046,7 @@ function App() {
           {paginaType==="dashboard" &&
             <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={laadData} loading={loading}/>}
           {paginaType==="spelers" &&
-            <SpelersOverzicht data={data} setPagina={setPagina}/>}
+            <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={onRefresh}/>}
           {paginaType==="speler_detail" &&
             <SpelerDetail spelerId={spelerId} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
           {paginaType==="clubs" &&

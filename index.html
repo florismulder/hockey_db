@@ -623,7 +623,10 @@ function Dashboard({geslacht,nav,stand,programma,nieuws,loading}) {
                             {wedstrijden.map((w,i)=>(
                               <div className="wr" key={i} onClick={()=>nav("wedstrijd",w)}>
                                 <div className="wh"><ClubKnop naam={w.thuis} nav={nav} klikbaar={false}/></div>
-                                <div className="ws k">{w.tijdstip||"–"}</div>
+                                <div className="ws k" style={{display:"flex",flexDirection:"column",alignItems:"center",gap:2}}>
+                                  {w.tijdstip||"–"}
+                                  {w.viaplay&&<span style={{fontSize:9,fontWeight:700,color:"#00b0f0",letterSpacing:.3}}>▶ VP</span>}
+                                </div>
                                 <div className="wu"><ClubKnop naam={w.uit} nav={nav} klikbaar={false}/></div>
                                 <span className="wa">›</span>
                               </div>
@@ -1121,6 +1124,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
   const score=(w.gespeeld===true||w.score_thuis!=null)?`${w.score_thuis??w.doelpunten_thuis??"–"} – ${w.score_uit??w.doelpunten_uit??"–"}`:null;
   const vindSpeler = (naam) => { const nl=(naam||"").toLowerCase(); return (spelers||[]).find(s=>s.naam&&s.naam.toLowerCase().includes(nl)); };
   const [toontH2H, setToontH2H] = useState(false);
+  const [toontViaplay, setToontViaplay] = useState(false);
   const [h2hData, setH2hData] = useState(null);
   const [laadtH2H, setLaadtH2H] = useState(false);
   const [openWedstrijd, setOpenWedstrijd] = useState(null);
@@ -1223,12 +1227,17 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           <div className="wdtm" style={{cursor:"pointer"}} onClick={()=>nav("club",stripTeam(w.uit))}>{w.uit}</div>
         </div>
         <div className="wdi">{formatDatum(w.datum)}{(w.tijdstip||w.tijd)?` · ${w.tijdstip||w.tijd}`:""} {w.locatie?` · ${w.locatie}`:""}</div>
-        <div style={{textAlign:"center",marginTop:6}}>
+        <div style={{textAlign:"center",marginTop:6,display:"flex",justifyContent:"center",gap:16}}>
           <button onClick={laadH2H} style={{background:"none",border:"none",padding:0,
             fontSize:11,color:"var(--accent)",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",
             letterSpacing:".3px"}}>
             {toontH2H?"▲ verberg onderlinge":"⚔ onderlinge resultaten"}
           </button>
+          {w.viaplay&&<button onClick={()=>setToontViaplay(t=>!t)} style={{background:"none",border:"none",padding:0,
+            fontSize:11,color:"#00b0f0",cursor:"pointer",fontFamily:"'JetBrains Mono',monospace",
+            letterSpacing:".3px",fontWeight:700}}>
+            {toontViaplay?"▲ verberg info":"▶ Viaplay wedstrijdinfo"}
+          </button>}
         </div>
       </div>
       <div className="db">
@@ -1288,6 +1297,48 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           </>
         )}
 
+        {/* Viaplay sectie */}
+        {w.viaplay&&toontViaplay&&(
+          <div style={{margin:"0 0 0 0",borderTop:"1px solid var(--border)",padding:"16px 24px",background:"var(--surface2)"}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:16}}>
+              <span style={{fontSize:13,fontWeight:700,color:"#00b0f0"}}>▶ Viaplay wedstrijdinfo</span>
+              {w.viaplay.scheidsrechters?.length>0&&(
+                <span style={{fontSize:11,color:"var(--muted)"}}>· Scheidsrechters: {w.viaplay.scheidsrechters.join(" & ")}</span>
+              )}
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
+              {/* Stats thuis */}
+              <div>
+                <div style={{fontSize:12,fontWeight:700,marginBottom:8,paddingBottom:4,borderBottom:"2px solid var(--accent)"}}>{stripTeam(w.thuis)}</div>
+                {(w.viaplay.stats_thuis||[]).map((s,i)=>(
+                  <div key={i} style={{fontSize:12,color:"var(--text)",padding:"4px 0",borderBottom:"1px solid var(--border)",display:"flex",gap:6}}>
+                    <span style={{color:"var(--accent)",flexShrink:0}}>•</span>{s}
+                  </div>
+                ))}
+              </div>
+              {/* Stats uit */}
+              <div>
+                <div style={{fontSize:12,fontWeight:700,marginBottom:8,paddingBottom:4,borderBottom:"2px solid var(--muted)"}}>{stripTeam(w.uit)}</div>
+                {(w.viaplay.stats_uit||[]).map((s,i)=>(
+                  <div key={i} style={{fontSize:12,color:"var(--text)",padding:"4px 0",borderBottom:"1px solid var(--border)",display:"flex",gap:6}}>
+                    <span style={{color:"var(--muted)",flexShrink:0}}>•</span>{s}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Onderlinge stats */}
+            {w.viaplay.stats_onderling?.length>0&&(
+              <div style={{marginTop:12,padding:"10px 12px",background:"var(--surface3)",borderRadius:7,border:"1px solid var(--border)"}}>
+                <div style={{fontSize:11,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.5,marginBottom:6}}>Onderlinge statistieken</div>
+                {w.viaplay.stats_onderling.map((s,i)=>(
+                  <div key={i} style={{fontSize:12,color:"var(--text)",padding:"3px 0",display:"flex",gap:6}}>
+                    <span style={{color:"var(--muted)",flexShrink:0}}>•</span>{s}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
         {/* H2H sectie */}
         {(
           <div style={{marginTop:20,borderTop:"1px solid var(--border)",paddingTop:16,display:"flex",flexDirection:"column",alignItems:"center"}}>
