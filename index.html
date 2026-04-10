@@ -668,6 +668,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   const [nieuwsPaginaH, setNieuwsPaginaH] = useState(0);
   const [nieuwsPaginaD, setNieuwsPaginaD] = useState(0);
   const [coach, setCoach] = useState(null);
+  const [clubInfo, setClubInfo] = useState(null);
   const ITEMS_PER_PAGE = 5;
 
   const oranjeCheck = (naam) => {
@@ -706,6 +707,17 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
   }, [club]);
 
   useEffect(()=>{
+    fetch("clubs/info.json")
+      .then(r=>r.json())
+      .then(d=>{
+        const key = club.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
+        const keys = Object.keys(d);
+        const match = keys.find(k=>k===key||d[k].club===club);
+        setClubInfo(match?d[match]:null);
+      }).catch(()=>{});
+  }, [club]);
+
+  useEffect(()=>{
     fetch(`competities/${geslacht}/coaches.json`)
       .then(r=>r.json())
       .then(d=>{
@@ -740,7 +752,33 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
         <div style={{fontSize:12,color:"var(--muted)",marginTop:4,display:"flex",gap:12,flexWrap:"wrap"}}>
           <span>{clubSpelers.length} spelers · seizoen 2025-2026</span>
           {coach&&<span>🎽 Coach: <span style={{color:"var(--text)",fontWeight:600}}>{coach.naam}</span>{coach.sinds?` (vanaf ${coach.sinds})`:""}</span>}
+          {clubInfo?.stadion&&<span>🏟 {clubInfo.stadion}</span>}
         </div>
+        {clubInfo?.successen&&(()=>{
+          // Filter titels relevant voor dit geslacht
+          const entries = Object.entries(clubInfo.successen);
+          const relevant = entries.filter(([trofee])=>{
+            const t = trofee.toLowerCase();
+            if (geslacht==="heren") return !t.includes("dames")&&!t.includes("vrouw");
+            if (geslacht==="dames") return !t.includes("heren")&&!t.includes("man");
+            return true;
+          });
+          if (!relevant.length) return null;
+          return (
+            <div style={{marginTop:8,display:"flex",gap:12,flexWrap:"wrap"}}>
+              {relevant.map(([trofee,jaren])=>{
+                const jarenArr = String(jaren).split(",").map(j=>j.trim()).filter(Boolean);
+                return (
+                  <span key={trofee} style={{fontSize:11,color:"var(--muted)"}}>
+                    🏆 <span style={{fontWeight:700,color:"var(--text)"}}>{trofee}</span>
+                    {" "}<span style={{fontWeight:700,color:"var(--accent)",fontSize:13}}>{jarenArr.length}×</span>
+                    {" "}<span style={{fontSize:10}}>({jarenArr.join(", ")})</span>
+                  </span>
+                );
+              })}
+            </div>
+          );
+        })()}
       </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",minHeight:"60vh"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
