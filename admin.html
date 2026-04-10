@@ -1953,10 +1953,14 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
         {!laden&&gefilterd.map((item)=>{
           const sleutel = item._sleutel;
           const bronClub = item._bronClub;
-          // Clubs: expliciete lijst of bronClub als default
-        const huidigeClubs = item.clubs !== undefined ? item.clubs : [bronClub];
-          const verborgen = item.verborgen_bullets||[];
-          const geslacht = item.geslacht||null;
+          // Lees altijd live uit nieuwsData zodat wijzigingen direct zichtbaar zijn
+          const liveItem = (nieuwsData[bronClub]||[]).find(x=>
+            (x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||"")
+          ) || item;
+          const huidigeClubs = liveItem.clubs !== undefined ? liveItem.clubs : [bronClub];
+          const verborgen = liveItem.verborgen_bullets||[];
+          const geslacht = liveItem.geslacht||null;
+          const isVerborgen = liveItem.verborgen||false;
           return (
             <div key={sleutel} className="card" style={{marginBottom:10}}>
               <div className="card-body" style={{display:"flex",gap:16,alignItems:"flex-start"}}>
@@ -1967,15 +1971,15 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                     </div>
                     <button onClick={()=>toggleVerborg(sleutel,bronClub)}
                       title={item.verborgen?"Overal tonen":"Overal verbergen"}
-                      style={{background:item.verborgen?"#fee2e2":"var(--surface2)",
-                        border:"1px solid "+(item.verborgen?"#fca5a5":"var(--border)"),
+                      style={{background:isVerborgen?"#fee2e2":"var(--surface2)",
+                        border:"1px solid "+(isVerborgen?"#fca5a5":"var(--border)"),
                         borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
-                        color:item.verborgen?"#dc2626":"var(--muted)",fontWeight:600,flexShrink:0}}>
-                      {item.verborgen?"🚫 Verborgen":"👁 Zichtbaar"}
+                        color:isVerborgen?"#dc2626":"var(--muted)",fontWeight:600,flexShrink:0}}>
+                      {isVerborgen?"🚫 Verborgen":"👁 Zichtbaar"}
                     </button>
                   </div>
                   {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6,
-                    opacity:item.verborgen?.4:1}}>{item.titel.replace(/_/g," ")}</div>}
+                    opacity:isVerborgen?.4:1}}>{item.titel.replace(/_/g," ")}</div>}
                   {item.bullets&&item.bullets.length>0&&(
                     <ul style={{margin:0,paddingLeft:14}}>
                       {item.bullets.map((b,bi)=>(
