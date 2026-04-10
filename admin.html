@@ -659,7 +659,7 @@ function NieuweSpelerModal({data, toast, onClose, onRefresh}) {
     if (!form.club) { toast("❌ Club is verplicht","error"); return; }
     setBezig(true);
     try {
-      const res = await fetch(WEB_APP_URL, {
+      const res = await fetch(APPS_SCRIPT_URL, {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({actie:"nieuweSpeler", speler: {
           naam: form.naam.trim(),
@@ -1754,6 +1754,25 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
           </div>
         </div>
         <div className="topbar-actions">
+          <label className="btn btn-secondary btn-sm" style={{cursor:"pointer",marginRight:4}}>
+            📄 Importeer Wikipedia PDF
+            <input type="file" accept=".pdf" style={{display:"none"}} onChange={async e=>{
+              const file = e.target.files?.[0]; if(!file) return;
+              setBusy(true);
+              try {
+                const buf = await file.arrayBuffer();
+                const b64 = btoa(String.fromCharCode(...new Uint8Array(buf)));
+                const res = await fetch(APPS_SCRIPT_URL, {
+                  method:"POST", headers:{"Content-Type":"application/json"},
+                  body: JSON.stringify({actie:"verwerkClubInfoPdf", base64:b64, mimeType:file.type||"application/pdf", club:clubNaam})
+                });
+                const d = await res.json();
+                if(d.ok){ toast("✅ Clubinfo geïmporteerd voor "+d.club); onRefresh(); }
+                else throw new Error(d.fout||"Fout");
+              } catch(ex){ toast("❌ "+ex.message,"error"); }
+              finally { setBusy(false); e.target.value=""; }
+            }}/>
+          </label>
           <button className="btn btn-primary btn-sm" onClick={opslaan} disabled={busy}>
             {busy?<span className="spinner"/>:null} Opslaan
           </button>
@@ -1864,10 +1883,21 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     setNieuwsData(bijgewerkt);
   };
 
+  const toggleBullet = (idx, bi) => {
+    const bijgewerkt = {...nieuwsData};
+    const item = items[idx];
+    const huidig = item.verborgen_bullets||[];
+    const nieuw = huidig.includes(bi) ? huidig.filter(x=>x!==bi) : [...huidig,bi];
+    bijgewerkt[geselecteerdeClub] = items.map((item2,i)=>
+      i===idx ? {...item2, verborgen_bullets:nieuw} : item2
+    );
+    setNieuwsData(bijgewerkt);
+  };
+
   const slaOp = async () => {
     setOpslaan(true);
     try {
-      const res = await fetch(WEB_APP_URL, {
+      const res = await fetch(APPS_SCRIPT_URL, {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({actie:"updateTeamnieuws", club:geselecteerdeClub, items:nieuwsData[geselecteerdeClub]||[]})
       });
@@ -1924,12 +1954,19 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                 )}
                 {item.bullets&&item.bullets.length>0&&(
                   <ul style={{margin:0,paddingLeft:14}}>
-                    {item.bullets.slice(0,3).map((b,bi)=>(
-                      <li key={bi} style={{fontSize:11,color:"var(--muted)",marginBottom:2}}>{b}</li>
+                    {item.bullets.map((b,bi)=>(
+                      <li key={bi} style={{display:"flex",alignItems:"flex-start",gap:6,marginBottom:3}}>
+                        <span style={{fontSize:11,color:(item.verborgen_bullets||[]).includes(bi)?"var(--muted)":"var(--text)",
+                          textDecoration:(item.verborgen_bullets||[]).includes(bi)?"line-through":"none",flex:1}}>
+                          {b}
+                        </span>
+                        <button onClick={()=>toggleBullet(idx,bi)}
+                          style={{background:"none",border:"none",cursor:"pointer",fontSize:12,padding:0,flexShrink:0,
+                            color:(item.verborgen_bullets||[]).includes(bi)?"var(--muted)":"var(--accent)",opacity:.7}}>
+                          {(item.verborgen_bullets||[]).includes(bi)?"👁‍🗨":"🙈"}
+                        </button>
+                      </li>
                     ))}
-                    {item.bullets.length>3&&(
-                      <li style={{fontSize:11,color:"var(--muted)",fontStyle:"italic"}}>…en {item.bullets.length-3} meer</li>
-                    )}
                   </ul>
                 )}
               </div>

@@ -783,7 +783,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
                 ) : null}
                 {item.bullets && item.bullets.length > 0 && (
                   <ul style={{paddingLeft:14,margin:0}}>
-                    {item.bullets.map((b,j) => (
+                    {item.bullets.filter((_,j)=>!(item.verborgen_bullets||[]).includes(j)).map((b,j) => (
                       <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:2}}>{b}</li>
                     ))}
                   </ul>
@@ -817,7 +817,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
                 ) : null}
                 {item.bullets && item.bullets.length > 0 && (
                   <ul style={{paddingLeft:14,margin:0}}>
-                    {item.bullets.map((b,j) => (
+                    {item.bullets.filter((_,j)=>!(item.verborgen_bullets||[]).includes(j)).map((b,j) => (
                       <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:2}}>{b}</li>
                     ))}
                   </ul>
