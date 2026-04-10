@@ -679,8 +679,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
       .then(r=>r.json())
       .then(d=>{
         const items = d[club] || [];
-        setClubTeamNieuwsH(items.filter(item => !item.geslacht || item.geslacht === "heren"));
-        setClubTeamNieuwsD(items.filter(item => !item.geslacht || item.geslacht === "dames"));
+        setClubTeamNieuwsH(items.filter(item => item.geslacht === "heren"));
+        setClubTeamNieuwsD(items.filter(item => item.geslacht === "dames"));
       })
       .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);
@@ -743,7 +743,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
         </div>
         <div style={{display:"flex",flexDirection:"column"}}>
           <div style={{padding:"10px 18px",borderBottom:"1px solid var(--border)",fontSize:13,fontWeight:700}}>Nieuws</div>
-          <div style={{borderBottom:"1px solid var(--border)"}}>
+          {geslacht==="heren"&&<div style={{borderBottom:"1px solid var(--border)"}}>
             <div style={{padding:"8px 18px",background:"var(--surface2)",borderBottom:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
               <div style={{fontSize:12,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".3px"}}>Heren</div>
               {totaalPaginasH > 1 && (
@@ -776,8 +776,8 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
                 )}
               </div>
             )) : <div style={{padding:"14px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws.</div>}
-          </div>
-          <div style={{borderBottom:"1px solid var(--border)"}}>
+          </div>}
+          {geslacht==="dames"&&<div style={{borderBottom:"1px solid var(--border)"}}>
             <div style={{padding:"8px 18px",background:"var(--surface2)",borderBottom:"1px solid var(--border)",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
               <div style={{fontSize:12,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".3px"}}>Dames</div>
               {totaalPaginasD > 1 && (
@@ -810,7 +810,7 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
                 )}
               </div>
             )) : <div style={{padding:"14px 18px",color:"var(--muted)",fontSize:12,fontStyle:"italic"}}>Geen nieuws.</div>}
-          </div>
+          </div>}
         </div>      </div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",borderTop:"1px solid var(--border)"}}>
         <div style={{borderRight:"1px solid var(--border)",padding:"20px 24px"}}>
