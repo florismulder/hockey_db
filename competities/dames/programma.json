@@ -4870,7 +4870,125 @@
       "uit": "Bloemendaal",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Tilburg is nog steeds de hekkensluiter in de Tulp Hoofdklasse.",
+          "Vorige speelronde won Tilburg overtuigend bij HGC (2-4) - de eerste zege in elf wedstrijden (W1 G1 V9).",
+          "De laatste vijf thuiswedstrijden leverden geen enkel punt op (V5).",
+          "De laatste thuiszege dateert van 12 oktober 2025 op HGC (4-2).",
+          "Tilburg hield dit seizoen nog geen enkele keer de nul.",
+          "Op eigen bodem verloor Tilburg nog nooit van Bloemendaal: één zege (1-0 in mei 2023) en één gelijkspel (3-3 in mei 2024)."
+        ],
+        "stats_uit": [
+          "Bloemendaal is de nummer 7 van de competitie.",
+          "Bloemendaal verloor de laatste drie wedstrijden op rij (V3).",
+          "Op vreemd terrein verloor Bloemendaal de laatste uitwedstrijd bij Kampong (4-0).",
+          "De meest recente uitzege dateert van 8 maart bij Hurley (1-2).",
+          "Demi Hilterman (acht goals) ligt op koers om voor de vierde keer in haar loopbaan clubtopscorer van Bloemendaal te worden.",
+          "Dat lukte haar eerder in de seizoenen 2020-2021, 2021-2022 en 2022-2023."
+        ],
+        "stats_onderling": [
+          "De onderlinge Hoofdklasse-geschiedenis tussen Tilburg en Bloemendaal is nog erg pril: pas vijf ontmoetingen.",
+          "Totale balans in 5 duels: 2x winst Tilburg, 1x gelijkspel, 2x winst Bloemendaal.",
+          "Op eigen bodem verloor Tilburg nog nooit van Bloemendaal: één zege (1-0 in mei 2023) en één gelijkspel (3-3 in mei 2024).",
+          "De meest recente ontmoeting op 18 oktober 2025 werd gewonnen door Bloemendaal met 4-1."
+        ],
+        "scheidsrechters": [
+          "Arlette Bloks",
+          "Paul van Beuzekom"
+        ],
+        "selectie_thuis": [
+          {
+            "rugnummer": 2,
+            "naam": "Carolin Hoffmann",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 3,
+            "naam": "Hannah Salden",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Emmely Bekker",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 9,
+            "naam": "Iris Dominicus",
+            "doelpunten": 3
+          },
+          {
+            "rugnummer": 10,
+            "naam": "Carmen Victoria",
+            "doelpunten": 5
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Precious Oud",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Daphne Nikkels",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 21,
+            "naam": "Sanne Koks",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Mikki Roberts",
+            "doelpunten": 4
+          }
+        ],
+        "selectie_uit": [
+          {
+            "rugnummer": 4,
+            "naam": "Isa Huijbers",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 8,
+            "naam": "Julie Hoogendoorn",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 12,
+            "naam": "Rosalie Rosman",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 14,
+            "naam": "Ryanne van Dooijeweerd",
+            "doelpunten": 1
+          },
+          {
+            "rugnummer": 16,
+            "naam": "Demi Hilterman",
+            "doelpunten": 8
+          },
+          {
+            "rugnummer": 17,
+            "naam": "Ankelein Baardemans",
+            "doelpunten": 4
+          },
+          {
+            "rugnummer": 19,
+            "naam": "Sophie Thoolen",
+            "doelpunten": 2
+          },
+          {
+            "rugnummer": 22,
+            "naam": "Mijntje van Campen",
+            "doelpunten": 1
+          }
+        ],
+        "bijgewerkt": "2026-04-10"
+      }
     },
     {
       "datum": "2026-04-12",
