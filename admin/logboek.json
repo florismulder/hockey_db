@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "noor_de_baat",
+      "naam": "Noor de Baat",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "dames",
+        "rugnummer": 12,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "2000-10-01"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "dames",
+        "rugnummer": 12,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:54:46.519Z"
+    },
+    {
+      "type": "speler",
       "id": "luna_fokke",
       "naam": "Luna Fokke",
       "velden": {
