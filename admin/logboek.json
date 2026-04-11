@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "duco_telgenkamp",
+      "naam": "Duco Telgenkamp",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 14,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 12,
+        "vd": 12,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "2002-07-17"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 14,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 12,
+        "vd": 12,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:56:42.396Z"
+    },
+    {
+      "type": "speler",
       "id": "jonas_de_geus",
       "naam": "Jonas de Geus",
       "velden": {
