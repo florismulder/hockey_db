@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "jip_janssen",
+      "naam": "Jip Janssen",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 4,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 0,
+        "sc": 4,
+        "sb": 0,
+        "geboortedatum": "1997-10-14"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 4,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 0,
+        "sc": 4,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:55:12.258Z"
+    },
+    {
+      "type": "speler",
       "id": "noor_de_baat",
       "naam": "Noor de Baat",
       "velden": {
