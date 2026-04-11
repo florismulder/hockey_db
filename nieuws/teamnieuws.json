@@ -14,7 +14,8 @@
         1
       ],
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -32,8 +33,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "SCHC"
+        "SCHC",
+        "Den Bosch"
       ],
       "verborgen_bullets": [
         4,
@@ -53,8 +54,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Club de Campo",
-        "SCHC"
+        "Den Bosch",
+        "Club de Campo"
       ],
       "verborgen_bullets": [
         2
@@ -70,6 +71,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Amsterdam",
         "Kampong"
       ],
       "verborgen_bullets": [
@@ -90,6 +92,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Den Bosch",
         "SCHC"
       ],
       "geslacht": "dames"
@@ -107,6 +110,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Den Bosch",
         "SCHC"
       ],
       "verborgen": true,
@@ -1147,7 +1151,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -1161,8 +1166,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "SCHC"
+        "SCHC",
+        "Den Bosch"
       ],
       "verborgen": true
     },
@@ -1179,6 +1184,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Amsterdam",
         "Kampong"
       ],
       "geslacht": "heren"
@@ -2508,7 +2514,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -3729,8 +3736,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Den Bosch",
-        "SCHC"
+        "SCHC",
+        "Den Bosch"
       ],
       "verborgen": true
     },
@@ -3747,8 +3754,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Club de Campo",
-        "SCHC"
+        "Den Bosch",
+        "Club de Campo"
       ]
     },
     {
@@ -3763,6 +3770,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Den Bosch",
         "SCHC"
       ],
       "geslacht": "dames"
@@ -3780,6 +3788,7 @@
       ],
       "competitie": "EHL",
       "clubs": [
+        "Den Bosch",
         "SCHC"
       ],
       "verborgen": true,
@@ -5316,7 +5325,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -6119,7 +6129,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -7008,7 +7019,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -7111,6 +7123,7 @@
       ],
       "competitie": "HK",
       "clubs": [
+        "Oranje-Rood",
         "Tilburg"
       ],
       "verborgen_bullets": [
@@ -9182,7 +9195,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -9606,7 +9620,8 @@
         2
       ],
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "geslacht": "dames",
       "verborgen": false
@@ -9714,7 +9729,8 @@
       "competitie": "EHL",
       "clubs": [
         "Amsterdam"
-      ]
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-03",
@@ -9961,9 +9977,9 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Kampong",
         "Amsterdam"
-      ]
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2025-12-25",
@@ -10010,7 +10026,8 @@
       "competitie": "WK",
       "clubs": [
         "Jong Oranje"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-11-21",
@@ -10338,7 +10355,8 @@
         "Hurley",
         "Klein Zwitserland",
         "Amsterdam"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-10-22",
@@ -10353,10 +10371,14 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Den Bosch",
-        "HDM",
-        "Hurley",
         "Amsterdam"
+      ],
+      "verborgen": false,
+      "verborgen_bullets": [
+        1,
+        2,
+        3,
+        4
       ]
     },
     {
@@ -10437,8 +10459,11 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "Tilburg"
+        "Amsterdam"
+      ],
+      "verborgen_bullets": [
+        0,
+        1
       ]
     },
     {
@@ -10453,7 +10478,8 @@
       "clubs": [
         "Amsterdam",
         "Tilburg"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-10-08",
@@ -10480,11 +10506,14 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "HGC",
-        "Rotterdam",
         "Tilburg"
-      ]
+      ],
+      "verborgen_bullets": [
+        1,
+        2,
+        3
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-10-05",
@@ -10499,12 +10528,10 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "Den Bosch",
-        "HDM",
-        "Kampong",
-        "Oranje-Rood",
-        "Tilburg"
+        "Amsterdam"
+      ],
+      "verborgen_bullets": [
+        4
       ]
     },
     {
@@ -11156,7 +11183,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -11258,7 +11286,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -11968,7 +11997,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -12539,7 +12569,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -12985,7 +13016,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -13068,6 +13100,7 @@
       ],
       "competitie": "HK",
       "clubs": [
+        "Oranje-Rood",
         "Tilburg"
       ],
       "verborgen": true
@@ -13228,8 +13261,7 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "Tilburg"
+        "Amsterdam"
       ]
     },
     {
@@ -13243,7 +13275,8 @@
       "clubs": [
         "Amsterdam",
         "Tilburg"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-10-05",
@@ -13258,11 +13291,9 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "HGC",
-        "Rotterdam",
         "Tilburg"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-10-05",
@@ -13277,12 +13308,7 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Amsterdam",
-        "Den Bosch",
-        "HDM",
-        "Kampong",
-        "Oranje-Rood",
-        "Tilburg"
+        "Amsterdam"
       ]
     },
     {
@@ -14091,7 +14117,8 @@
       "competitie": "WK",
       "clubs": [
         "Jong Oranje"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2025-11-06",
@@ -14213,7 +14240,8 @@
       ],
       "competitie": "HK",
       "clubs": [
-        "Pinoké"
+        "Pinoké",
+        "Nijmegen"
       ],
       "verborgen": false,
       "geslacht": "dames"
@@ -14283,8 +14311,8 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Club de Campo",
-        "SCHC"
+        "Den Bosch",
+        "Club de Campo"
       ]
     },
     {
