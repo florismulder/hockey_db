@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "lars_balk",
+      "naam": "Lars Balk",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 6,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1996-02-26"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 6,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:55:36.783Z"
+    },
+    {
+      "type": "speler",
       "id": "jip_janssen",
       "naam": "Jip Janssen",
       "velden": {
