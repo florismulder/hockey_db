@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "luna_fokke",
+      "naam": "Luna Fokke",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "dames",
+        "rugnummer": 10,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 7,
+        "vd": 2,
+        "sc": 5,
+        "sb": 0,
+        "geboortedatum": "2001-03-09"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "dames",
+        "rugnummer": 10,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 7,
+        "vd": 2,
+        "sc": 5,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:54:29.236Z"
+    },
+    {
+      "type": "speler",
       "id": "koen_bijen",
       "naam": "Koen Bijen",
       "velden": {
