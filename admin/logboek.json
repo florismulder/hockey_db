@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "josine_koning",
+      "naam": "Josine Koning",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1995-09-02"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:51:38.820Z"
+    },
+    {
+      "type": "speler",
       "id": "zach_wallace",
       "naam": "Zach Wallace",
       "velden": {
