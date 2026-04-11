@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "joosje_burg",
+      "naam": "Joosje Burg",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 16,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 10,
+        "vd": 10,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "1997-07-29"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 16,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 10,
+        "vd": 10,
+        "sc": 0,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:53:08.703Z"
+    },
+    {
+      "type": "speler",
       "id": "frederique_matla",
       "naam": "Frédérique Matla",
       "velden": {
