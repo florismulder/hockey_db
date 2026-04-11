@@ -1223,9 +1223,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Kampong",
-        "Amsterdam"
-      ]
+        "Kampong"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -1237,9 +1237,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
-        "Kampong"
-      ]
+        "Amsterdam"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -1269,7 +1269,8 @@
       "competitie": "EHL",
       "clubs": [
         "Kampong"
-      ]
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -1349,9 +1350,13 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
         "Kampong"
-      ]
+      ],
+      "verborgen_bullets": [
+        3,
+        4
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-04-05",
@@ -9635,9 +9640,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Kampong",
-        "Amsterdam"
-      ]
+        "Kampong"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -9652,9 +9657,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
-        "Kampong"
-      ]
+        "Amsterdam"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-06",
@@ -9699,9 +9704,9 @@
       ],
       "competitie": "EHL",
       "clubs": [
-        "Amsterdam",
         "Kampong"
-      ]
+      ],
+      "verborgen": true
     },
     {
       "datum": "2026-04-05",
