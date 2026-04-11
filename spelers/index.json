@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-09",
+  "bijgewerkt": "2026-04-11",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -8425,7 +8425,8 @@
       "doelpunten_seizoen": 4,
       "vd": 3,
       "sc": 0,
-      "sb": 1
+      "sb": 1,
+      "geboortedatum": "1999-09-29"
     },
     {
       "id": "eduardo_de_ignacio_simo",
