@@ -1838,6 +1838,23 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   const [bezig, setBezig] = useState(false);
   const [zoek, setZoek] = useState("");
   const [filterBron, setFilterBron] = useState("alle");
+  const [herschrijven, setHerschrijven] = useState(false);
+
+  const herschrijfBullets = async () => {
+    if (!confirm("Dit herschrijft alle bullets zonder expliciet subject via Gemini. Dit kan enkele minuten duren. Doorgaan?")) return;
+    setHerschrijven(true);
+    try {
+      const club = filterBron !== "alle" ? filterBron : null;
+      const actie = club ? "herschrijfBulletsClub" : "herschrijfAlleBullets";
+      const params = club ? {club} : {};
+      const res = await apiCall(actie, params);
+      if (res.ok) {
+        toast("✅ " + (res.aangepast||0) + " bullets herschreven — pagina herladen...");
+        setTimeout(() => { setLaden(true); fetch("https://florismulder.github.io/hockey_db/nieuws/teamnieuws.json?t="+Date.now()).then(r=>r.json()).then(d=>{ setNieuwsData(d); setLaden(false); }); }, 2000);
+      } else throw new Error(res.fout||"Fout");
+    } catch(e) { toast("❌ "+e.message, "error"); }
+    finally { setHerschrijven(false); }
+  };
 
   const setBulkGeslacht = (bronClub, geslacht) => {
     setNieuwsData(huidig => {
@@ -2004,7 +2021,12 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
           <div className="topbar-title">Teamnieuws toewijzen</div>
           <div className="topbar-sub">{alleItems.length} berichten</div>
         </div>
-        <div className="topbar-actions">
+        <div className="topbar-actions" style={{gap:8}}>
+          <button className="btn btn-sm" onClick={herschrijfBullets}
+            disabled={bezig||laden||herschrijven}
+            title="Herschrijft bullets zonder expliciet subject via Gemini">
+            {herschrijven?<span className="spinner"/>:null} 🔄 Herschrijf subjects
+          </button>
           <button className="btn btn-primary btn-sm" onClick={slaAllesOp} disabled={bezig||laden}>
             {bezig?<span className="spinner"/>:null} Alles opslaan
           </button>
@@ -2260,10 +2282,44 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
     finally { setBezig(false); }
   };
 
+  // Detecteer mismatches: scorer/kaart club hoort bij thuis of uit
+  const heeftFout = (w) => {
+    if (!w.gespeeld) return false;
+    const thuis = (w.thuis||"").toLowerCase();
+    const uit = (w.uit||"").toLowerCase();
+    const check = (items) => (items||[]).some(item => {
+      const club = (item.club||"").toLowerCase()
+        .replace(/ h1$| d1$| heren$| dames$/, "").trim();
+      return club && !thuis.includes(club) && !club.includes(thuis) &&
+                     !uit.includes(club)   && !club.includes(uit);
+    });
+    return check(w.scorers) || check(w.kaarten);
+  };
+
+  const foutDetails = (w) => {
+    if (!w.gespeeld) return [];
+    const thuis = (w.thuis||"").toLowerCase();
+    const uit = (w.uit||"").toLowerCase();
+    const fouten = [];
+    [...(w.scorers||[]).map(s=>({...s,_type:"scorer"})),
+     ...(w.kaarten||[]).map(k=>({...k,_type:"kaart"}))].forEach(item => {
+      const club = (item.club||"").toLowerCase()
+        .replace(/ h1$| d1$| heren$| dames$/, "").trim();
+      if (club && !thuis.includes(club) && !club.includes(thuis) &&
+                  !uit.includes(club)   && !club.includes(uit)) {
+        fouten.push(item);
+      }
+    });
+    return fouten;
+  };
+
+  const aantalFouten = wedstrijden.filter(heeftFout).length;
+
   const gefilterd = wedstrijden
     .map((w, origIdx) => ({w, origIdx}))
     .filter(({w}) => {
       if (!filterTekst) return true;
+      if (filterTekst === "⚠") return heeftFout(w);
       const t = filterTekst.toLowerCase();
       return (w.thuis||"").toLowerCase().includes(t) || (w.uit||"").toLowerCase().includes(t) || (w.datum||"").includes(t);
     });
@@ -2301,23 +2357,38 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
         {/* Linkerkolom: wedstrijdenlijst */}
         <div style={{width:320,flexShrink:0,borderRight:"1px solid var(--border)",
           display:"flex",flexDirection:"column",overflow:"hidden"}}>
-          <div style={{padding:"8px 12px",borderBottom:"1px solid var(--border)"}}>
+          <div style={{padding:"8px 12px",borderBottom:"1px solid var(--border)",display:"flex",flexDirection:"column",gap:6}}>
             <input className="filter-input" placeholder="Zoek club of datum…"
               value={filterTekst} onChange={e=>setFilterTekst(e.target.value)}
               style={{width:"100%",fontSize:12}}/>
+            {aantalFouten > 0 && (
+              <button onClick={()=>setFilterTekst("⚠")}
+                style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",
+                  border:"1px solid #ef4444",background:"rgba(239,68,68,.1)",
+                  color:"#ef4444",fontWeight:600,textAlign:"left"}}>
+                ⚠ {aantalFouten} wedstrijd{aantalFouten>1?"en":""} met verdachte data — klik om te filteren
+              </button>
+            )}
           </div>
           <div style={{overflowY:"auto",flex:1}}>
             {laden && <div className="loading"><div className="spinner"/> Laden…</div>}
             {!laden && gefilterd.map(({w, origIdx}) => (
               <div key={origIdx} style={stijlRij(origIdx)} onClick={()=>selecteer(origIdx)}>
-                <div style={{width:22,height:22,borderRadius:4,flexShrink:0,fontSize:10,
-                  fontWeight:700,display:"flex",alignItems:"center",justifyContent:"center",
-                  background: geselecteerd===origIdx ? "rgba(255,255,255,.2)"
-                    : w.gespeeld ? "var(--surface2)" : "rgba(99,102,241,.15)",
-                  color: geselecteerd===origIdx ? "white"
-                    : w.gespeeld ? "var(--muted)" : "var(--accent)"}}>
-                  {w.gespeeld ? "✓" : "–"}
-                </div>
+                {(() => {
+                  const fout = heeftFout(w);
+                  return (
+                    <div style={{width:22,height:22,borderRadius:4,flexShrink:0,fontSize:10,
+                      fontWeight:700,display:"flex",alignItems:"center",justifyContent:"center",
+                      background: geselecteerd===origIdx ? "rgba(255,255,255,.2)"
+                        : fout ? "rgba(239,68,68,.15)"
+                        : w.gespeeld ? "var(--surface2)" : "rgba(99,102,241,.15)",
+                      color: geselecteerd===origIdx ? "white"
+                        : fout ? "#ef4444"
+                        : w.gespeeld ? "var(--muted)" : "var(--accent)"}}>
+                      {fout ? "⚠" : w.gespeeld ? "✓" : "–"}
+                    </div>
+                  );
+                })()}
                 <div style={{flex:1,minWidth:0}}>
                   <div style={{fontSize:11,opacity:.7,marginBottom:1}}>{w.datum}</div>
                   <div style={{fontWeight:600,fontSize:12,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>
@@ -2347,6 +2418,24 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                   {bezig ? <span className="spinner"/> : null} Opslaan
                 </button>
               </div>
+
+              {/* Foutmelding bij verdachte data */}
+              {heeftFout(edit) && (
+                <div style={{background:"rgba(239,68,68,.08)",border:"1px solid #fca5a5",
+                  borderRadius:8,padding:"12px 16px",marginBottom:16}}>
+                  <div style={{fontWeight:600,color:"#dc2626",fontSize:13,marginBottom:8}}>
+                    ⚠ Verdachte clubkoppelingen gedetecteerd
+                  </div>
+                  <div style={{fontSize:12,color:"#dc2626",marginBottom:6}}>
+                    Verwachte clubs: <strong>{edit.thuis}</strong> en <strong>{edit.uit}</strong>
+                  </div>
+                  {foutDetails(edit).map((item, i) => (
+                    <div key={i} style={{fontSize:12,color:"#7f1d1d",padding:"2px 0"}}>
+                      {item._type==="scorer"?"⚽":"🟨"} <strong>{item.naam}</strong> staat bij <strong>{item.club}</strong>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Basisgegevens */}
               <div className="card" style={{marginBottom:16}}>
