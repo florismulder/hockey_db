@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "terrance_pieters",
+      "naam": "Terrance Pieters",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 11,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 2,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1998-12-14"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 11,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 2,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:57:03.030Z"
+    },
+    {
+      "type": "speler",
       "id": "duco_telgenkamp",
       "naam": "Duco Telgenkamp",
       "velden": {
