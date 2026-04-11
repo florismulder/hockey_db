@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "frederique_matla",
+      "naam": "Frédérique Matla",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 15,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 15,
+        "vd": 5,
+        "sc": 8,
+        "sb": 2,
+        "geboortedatum": "1996-12-28"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 15,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 15,
+        "vd": 5,
+        "sc": 8,
+        "sb": 2
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:52:46.448Z"
+    },
+    {
+      "type": "speler",
       "id": "sanne_koolen",
       "naam": "Sanne Koolen",
       "velden": {
