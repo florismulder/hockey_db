@@ -1,6 +1,42 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "zach_wallace",
+      "naam": "Zach Wallace",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": "",
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 4,
+        "vd": 3,
+        "sc": 0,
+        "sb": 1,
+        "geboortedatum": "1999-09-29"
+      },
+      "oud": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": "",
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 4,
+        "vd": 3,
+        "sc": 0,
+        "sb": 1
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:51:04.129Z"
+    },
+    {
       "type": "artikel",
       "id": "jip_janssen",
       "naam": "jip_janssen",
