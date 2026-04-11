@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "laura_nunnink",
+      "naam": "Laura Nunnink",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1995-01-26"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "dames",
+        "rugnummer": 20,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:53:30.330Z"
+    },
+    {
+      "type": "speler",
       "id": "joosje_burg",
       "naam": "Joosje Burg",
       "velden": {
