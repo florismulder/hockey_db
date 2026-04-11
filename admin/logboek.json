@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "jonas_de_geus",
+      "naam": "Jonas de Geus",
+      "velden": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 8,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 1,
+        "vd": 0,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1998-04-29"
+      },
+      "oud": {
+        "club": "Kampong",
+        "geslacht": "heren",
+        "rugnummer": 8,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 1,
+        "vd": 0,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:56:20.616Z"
+    },
+    {
+      "type": "speler",
       "id": "derck_de_vilder",
       "naam": "Derck de Vilder",
       "velden": {
