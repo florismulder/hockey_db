@@ -2,6 +2,42 @@
   "entries": [
     {
       "type": "speler",
+      "id": "koen_bijen",
+      "naam": "Koen Bijen",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "heren",
+        "rugnummer": 22,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 9,
+        "vd": 8,
+        "sc": 1,
+        "sb": 0,
+        "geboortedatum": "1998-07-27"
+      },
+      "oud": {
+        "club": "Den Bosch",
+        "geslacht": "heren",
+        "rugnummer": 22,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 9,
+        "vd": 8,
+        "sc": 1,
+        "sb": 0
+      },
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-11T05:54:07.564Z"
+    },
+    {
+      "type": "speler",
       "id": "laura_nunnink",
       "naam": "Laura Nunnink",
       "velden": {
