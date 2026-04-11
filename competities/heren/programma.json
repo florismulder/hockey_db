@@ -3551,20 +3551,20 @@
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
-          "minuut": 30,
+          "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
-          "minuut": 30,
-          "type": "veld"
+          "minuut": 23,
+          "type": "strafcorner"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
-          "minuut": 30,
-          "type": "veld"
+          "minuut": 34,
+          "type": "strafcorner"
         },
         {
           "naam": "Sander van de Putte",
@@ -3575,13 +3575,13 @@
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
-          "minuut": 38,
+          "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
           "club": "Kampong H1",
-          "minuut": 40,
+          "minuut": 43,
           "type": "veld"
         }
       ],
