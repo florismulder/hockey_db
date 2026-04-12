@@ -2111,31 +2111,21 @@ function App() {
     fetch("spelers/index.json").then(r=>r.json()).then(d=>setSpelers((d?.spelers||[]).filter(s=>s.geslacht===geslacht))).catch(()=>setSpelers([]));
   },[geslacht]);
 
-  // Merge topscorer stats in spelers zodra beide geladen zijn
+  // Merge topscorer stats in spelers — altijd overschrijven met meest recente topscorers.json
   useEffect(()=>{
     if (!topscorers.length || !spelers.length) return;
-    setSpelers(prev => {
-      // Check of merge nodig is (voorkom infinite loop)
-      const eersteTopscorer = topscorers.find(t => t.naam_slug);
-      if (!eersteTopscorer) return prev;
-      const al = prev.find(s => {
-        const slug = s.id || slugify(s.naam);
-        return slug === eersteTopscorer.naam_slug && s.doelpunten_seizoen != null;
-      });
-      if (al) return prev; // al gemerged
-      return prev.map(s => {
-        const slug = s.id || slugify(s.naam);
-        const ts = topscorers.find(t => t.naam_slug === slug);
-        if (!ts) return s;
-        return {...s,
-          doelpunten_seizoen: ts.doelpunten,
-          vd: ts.vd,
-          sc: ts.sc,
-          sb: ts.sb,
-        };
-      });
-    });
-  },[topscorers, spelers.length]);
+    setSpelers(prev => prev.map(s => {
+      const slug = s.id || slugify(s.naam);
+      const ts = topscorers.find(t => t.naam_slug === slug);
+      if (!ts) return s;
+      return {...s,
+        doelpunten_seizoen: ts.doelpunten,
+        vd: ts.vd,
+        sc: ts.sc,
+        sb: ts.sb,
+      };
+    }));
+  },[topscorers]);
 
   const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
   const isActive=id=>page===id||(page==="speler"&&id==="spelers");
