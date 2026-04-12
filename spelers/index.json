@@ -29,8 +29,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 6,
-      "vd": 6,
+      "doelpunten_seizoen": 9,
+      "vd": 9,
       "sc": 0,
       "sb": 0,
       "geboortedatum": "1998-11-29"
@@ -146,9 +146,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 10,
+      "doelpunten_seizoen": 11,
       "vd": 9,
-      "sc": 1,
+      "sc": 2,
       "sb": 0
     },
     {
@@ -162,10 +162,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": "",
-      "vd": "",
-      "sc": "",
-      "sb": ""
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "id": "sabine_plonissen",
@@ -259,9 +259,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "jong",
-      "doelpunten_seizoen": 4,
-      "vd": 3,
-      "sc": 1,
+      "doelpunten_seizoen": 6,
+      "vd": 4,
+      "sc": 2,
       "sb": 0
     },
     {
@@ -776,9 +776,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 7,
+      "doelpunten_seizoen": 8,
       "vd": 0,
-      "sc": 7,
+      "sc": 8,
       "sb": 0
     },
     {
@@ -1461,8 +1461,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 1,
-      "vd": 0,
+      "doelpunten_seizoen": 2,
+      "vd": 1,
       "sc": 1,
       "sb": 0,
       "geboortedatum": "1998-06-11"
@@ -1495,10 +1495,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 14,
+      "doelpunten_seizoen": 15,
       "vd": 5,
       "sc": 8,
-      "sb": 1,
+      "sb": 2,
       "geboortedatum": "1996-12-28"
     },
     {
@@ -1512,8 +1512,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 9,
-      "vd": 9,
+      "doelpunten_seizoen": 10,
+      "vd": 10,
       "sc": 0,
       "sb": 0,
       "geboortedatum": "1997-07-29"
@@ -1738,10 +1738,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": "",
-      "vd": "",
-      "sc": "",
-      "sb": ""
+      "doelpunten_seizoen": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0
     },
     {
       "id": "laurette_abelen",
@@ -2253,8 +2253,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 2,
-      "vd": 2,
+      "doelpunten_seizoen": 3,
+      "vd": 3,
       "sc": 0,
       "sb": 0
     },
@@ -2976,8 +2976,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 2,
-      "vd": 1,
+      "doelpunten_seizoen": 3,
+      "vd": 2,
       "sc": 1,
       "sb": 0
     },
@@ -3072,8 +3072,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 6,
-      "vd": 4,
+      "doelpunten_seizoen": 7,
+      "vd": 5,
       "sc": 2,
       "sb": 0
     },
@@ -3216,8 +3216,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
+      "doelpunten_seizoen": 2,
+      "vd": 2,
       "sc": 0,
       "sb": 0
     },
@@ -3905,8 +3905,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 6,
-      "vd": 6,
+      "doelpunten_seizoen": 7,
+      "vd": 7,
       "sc": 0,
       "sb": 0
     },
@@ -3969,8 +3969,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 3,
-      "vd": 1,
+      "doelpunten_seizoen": 4,
+      "vd": 2,
       "sc": 2,
       "sb": 0
     },
@@ -5369,8 +5369,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 0,
+      "doelpunten_seizoen": 2,
+      "vd": 1,
       "sc": 1,
       "sb": 0
     },
@@ -5545,8 +5545,8 @@
       "nationaliteit": "",
       "land_code": "US",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 0,
+      "doelpunten_seizoen": 3,
+      "vd": 2,
       "sc": 1,
       "sb": 0
     },
@@ -6041,8 +6041,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 10,
-      "vd": 8,
+      "doelpunten_seizoen": 11,
+      "vd": 9,
       "sc": 2,
       "sb": 0
     },
@@ -6665,8 +6665,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 0,
+      "doelpunten_seizoen": 2,
+      "vd": 1,
       "sc": 1,
       "sb": 0
     },
@@ -7769,8 +7769,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 8,
-      "vd": 7,
+      "doelpunten_seizoen": 9,
+      "vd": 8,
       "sc": 1,
       "sb": 0
     },
@@ -7833,9 +7833,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "senior",
-      "doelpunten_seizoen": 16,
+      "doelpunten_seizoen": 17,
       "vd": 14,
-      "sc": 2,
+      "sc": 3,
       "sb": 0
     },
     {
@@ -8041,9 +8041,9 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 3,
+      "doelpunten_seizoen": 4,
       "vd": 0,
-      "sc": 2,
+      "sc": 3,
       "sb": 1
     },
     {
@@ -8057,10 +8057,10 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": "",
-      "vd": "",
-      "sc": "",
-      "sb": ""
+      "doelpunten_seizoen": 1,
+      "vd": 0,
+      "sc": 1,
+      "sb": 0
     },
     {
       "id": "daphne_nikkels",
@@ -8249,8 +8249,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 1,
-      "vd": 1,
+      "doelpunten_seizoen": 2,
+      "vd": 2,
       "sc": 0,
       "sb": 0
     },
@@ -8313,8 +8313,8 @@
       "nationaliteit": "",
       "land_code": "",
       "oranje": "",
-      "doelpunten_seizoen": 2,
-      "vd": 2,
+      "doelpunten_seizoen": 3,
+      "vd": 3,
       "sc": 0,
       "sb": 0
     },
