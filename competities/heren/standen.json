@@ -1,7 +1,7 @@
 {
   "geslacht": "heren",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-03T07:09:21.436Z",
+  "bijgewerkt": "2026-04-12T08:42:07.140Z",
   "stand": [
     {
       "positie": 1,
@@ -83,6 +83,19 @@
     },
     {
       "positie": 7,
+      "club": "Kampong",
+      "gespeeld": 18,
+      "gewonnen": 7,
+      "gelijk": 3,
+      "verloren": 8,
+      "doelpunten_voor": 44,
+      "doelpunten_tegen": 41,
+      "doelsaldo": 3,
+      "punten": 24,
+      "zone": ""
+    },
+    {
+      "positie": 8,
       "club": "Klein Zwitserland",
       "gespeeld": 17,
       "gewonnen": 6,
@@ -92,19 +105,6 @@
       "doelpunten_tegen": 32,
       "doelsaldo": 5,
       "punten": 24,
-      "zone": ""
-    },
-    {
-      "positie": 8,
-      "club": "Kampong",
-      "gespeeld": 17,
-      "gewonnen": 6,
-      "gelijk": 3,
-      "verloren": 8,
-      "doelpunten_voor": 41,
-      "doelpunten_tegen": 41,
-      "doelsaldo": 0,
-      "punten": 21,
       "zone": ""
     },
     {
@@ -118,20 +118,20 @@
       "doelpunten_tegen": 57,
       "doelsaldo": -31,
       "punten": 14,
-      "zone": ""
+      "zone": "playout"
     },
     {
       "positie": 10,
       "club": "Schaerweijde",
-      "gespeeld": 17,
+      "gespeeld": 18,
       "gewonnen": 3,
       "gelijk": 4,
-      "verloren": 10,
+      "verloren": 11,
       "doelpunten_voor": 23,
-      "doelpunten_tegen": 58,
-      "doelsaldo": -35,
+      "doelpunten_tegen": 61,
+      "doelsaldo": -38,
       "punten": 13,
-      "zone": ""
+      "zone": "playout"
     },
     {
       "positie": 11,
@@ -144,7 +144,7 @@
       "doelpunten_tegen": 73,
       "doelsaldo": -49,
       "punten": 5,
-      "zone": "playout"
+      "zone": "degradatie"
     },
     {
       "positie": 12,
