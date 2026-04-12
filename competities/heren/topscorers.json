@@ -1,7 +1,7 @@
 {
   "geslacht": "heren",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-09",
+  "bijgewerkt": "2026-04-12",
   "topscorers": [
     {
       "naam": "Struan Walker",
@@ -68,8 +68,8 @@
       "naam_slug": "teun_beins",
       "club": "Bloemendaal",
       "doelpunten": 13,
-      "vd": 0,
-      "sc": 13,
+      "vd": 13,
+      "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
     },
