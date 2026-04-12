@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "artikel",
+      "id": "struan_walker",
+      "naam": "struan_walker",
+      "velden": {
+        "verborgen": true,
+        "link": "https://drive.google.com/file/d/1pmEWSr6Sxe9H2VW_bzM-sQLfUE8HYgv8",
+        "bullets": 0
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-12T11:42:36.521Z"
+    },
+    {
       "type": "speler",
       "id": "luis_beckmann",
       "naam": "Luis Beckmann",
