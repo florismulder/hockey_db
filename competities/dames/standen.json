@@ -1,7 +1,7 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-03T07:09:43.641Z",
+  "bijgewerkt": "2026-04-12T08:35:06.836Z",
   "stand": [
     {
       "positie": 1,
@@ -19,14 +19,14 @@
     {
       "positie": 2,
       "club": "Kampong",
-      "gespeeld": 17,
-      "gewonnen": 12,
+      "gespeeld": 18,
+      "gewonnen": 13,
       "gelijk": 3,
       "verloren": 2,
-      "doelpunten_voor": 43,
-      "doelpunten_tegen": 21,
-      "doelsaldo": 22,
-      "punten": 39,
+      "doelpunten_voor": 47,
+      "doelpunten_tegen": 22,
+      "doelsaldo": 25,
+      "punten": 42,
       "zone": "playoff"
     },
     {
@@ -58,13 +58,13 @@
     {
       "positie": 5,
       "club": "Pinoké",
-      "gespeeld": 17,
+      "gespeeld": 18,
       "gewonnen": 6,
       "gelijk": 6,
-      "verloren": 5,
-      "doelpunten_voor": 32,
-      "doelpunten_tegen": 33,
-      "doelsaldo": -1,
+      "verloren": 6,
+      "doelpunten_voor": 33,
+      "doelpunten_tegen": 37,
+      "doelsaldo": -4,
       "punten": 24,
       "zone": ""
     },
