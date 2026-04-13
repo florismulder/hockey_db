@@ -2250,56 +2250,146 @@ function NieuwsPagina({nav, spelers}) {
         </div>
       </div>
 
-      {/* Twee kolommen */}
-      <div style={{display:"grid",gridTemplateColumns:"3fr 2fr",minHeight:"calc(100vh - 120px)",alignItems:"start"}}>
-
-        {/* Linker kolom: RSS */}
-        <div style={{borderRight:"1px solid var(--border)"}}>
+      {/* Drie kolommen */}
+      {(()=>{
+        const damesOnly=["HGC","SCHC","Tilburg"];
+        const herensOnly=["Klein Zwitserland","Schaerweijde","Laren"];
+        const bepaalClubG=(club)=>{
+          if(filter==="heren") return "heren";
+          if(filter==="dames") return "dames";
+          if(damesOnly.includes(club)) return "dames";
+          if(herensOnly.includes(club)) return "heren";
+          return "heren";
+        };
+        const kolHdr=(titel,count)=>(
           <div style={{padding:"10px 18px",borderBottom:"1px solid var(--border)",background:"var(--surface2)",
             display:"flex",alignItems:"center",gap:10,position:"sticky",top:56,zIndex:10}}>
-            <div style={{fontSize:12,fontWeight:700}}>Artikelen hockey.nl</div>
-            <div style={{fontSize:11,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>
-              {gefilterdRss.length} artikelen
-            </div>
+            <div style={{fontSize:12,fontWeight:700}}>{titel}</div>
+            <div style={{fontSize:11,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>{count}</div>
           </div>
-          <div>
-            {gefilterdRss.length > 0 ? gefilterdRss.map((n,i)=>(
-              <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer"
-                style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",
-                  textDecoration:"none",color:"inherit",transition:"background .12s"}}
-                onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
-                onMouseLeave={e=>e.currentTarget.style.background=""}>
-                <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:4}}>
-                  <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,color:"var(--muted)"}}>
-                    {formatNieuwsDatum(n.datum||n.date||"")}
-                  </span>
-                  <span style={{fontSize:9,fontWeight:700,letterSpacing:.5,textTransform:"uppercase",
-                    padding:"2px 6px",borderRadius:3,
-                    background:n._g==="heren"?"#dbeafe":"#fce7f3",
-                    color:n._g==="heren"?"#1e40af":"#9d174d"}}>
-                    {n._g}
-                  </span>
-                </div>
-                <div style={{fontSize:13,fontWeight:500,lineHeight:1.4,color:"var(--text)"}}>
-                  {n.titel||n.title||""}
-                </div>
-              </a>
-            )) : <div style={{padding:"30px 18px",color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>
-              Geen artikelen beschikbaar voor dit filter.
-            </div>}
-          </div>
-        </div>
+        );
+        return (
+          <div style={{display:"grid",gridTemplateColumns:"5fr 3fr 3fr",minHeight:"calc(100vh - 120px)",alignItems:"start"}}>
 
-        {/* Rechter kolom: Spelers + Teams tabs */}
-        <div>
-          <RechterNieuws
-            teams={teamsLijst}
-            spelersLijst={spelersLijst}
-            nav={nav}
-            spelersIndex={spelersIndex}
-          />
-        </div>
-      </div>
+            {/* Kolom 1: RSS artikelen */}
+            <div style={{borderRight:"1px solid var(--border)"}}>
+              {kolHdr("Artikelen hockey.nl", gefilterdRss.length+" artikelen")}
+              <div>
+                {gefilterdRss.length > 0 ? gefilterdRss.map((n,i)=>(
+                  <a key={i} href={n.link||n.url||"#"} target="_blank" rel="noopener noreferrer"
+                    style={{display:"block",padding:"11px 18px",borderBottom:"1px solid var(--border)",
+                      textDecoration:"none",color:"inherit",transition:"background .12s"}}
+                    onMouseEnter={e=>e.currentTarget.style.background="var(--surface2)"}
+                    onMouseLeave={e=>e.currentTarget.style.background=""}>
+                    <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:4}}>
+                      <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,color:"var(--muted)"}}>
+                        {formatNieuwsDatum(n.datum||n.date||"")}
+                      </span>
+                      <span style={{fontSize:9,fontWeight:700,letterSpacing:.5,textTransform:"uppercase",
+                        padding:"2px 6px",borderRadius:3,
+                        background:n._g==="heren"?"#dbeafe":"#fce7f3",
+                        color:n._g==="heren"?"#1e40af":"#9d174d"}}>
+                        {n._g}
+                      </span>
+                    </div>
+                    <div style={{fontSize:13,fontWeight:500,lineHeight:1.4,color:"var(--text)"}}>
+                      {n.titel||n.title||""}
+                    </div>
+                  </a>
+                )) : <div style={{padding:"30px 18px",color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>
+                  Geen artikelen beschikbaar voor dit filter.
+                </div>}
+              </div>
+            </div>
+
+            {/* Kolom 2: Clubnieuws */}
+            <div style={{borderRight:"1px solid var(--border)"}}>
+              {kolHdr("Clubs", teamsLijst.length+" items")}
+              <div>
+                {teamsLijst.length > 0 ? teamsLijst.map((item,i)=>(
+                  <div key={i} style={{padding:"12px 14px",borderBottom:"1px solid var(--border)"}}>
+                    <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:5,flexWrap:"wrap"}}>
+                      <button
+                        onClick={()=>nav("club",{_club:item.club,_geslacht:bepaalClubG(item.club)})}
+                        style={{background:"none",border:"none",padding:0,fontWeight:700,fontSize:13,
+                          color:"var(--accent)",cursor:"pointer",fontFamily:"inherit",
+                          textDecoration:"underline",textDecorationColor:"var(--accent-light)",
+                          textUnderlineOffset:2}}>
+                        {item.club}
+                      </button>
+                      <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,color:"var(--muted)"}}>
+                        {formatNieuwsDatum(item.datum||"")}
+                      </span>
+                      {item.competitie&&item.competitie!=="onbekend"&&
+                        <span style={{fontSize:9,fontWeight:700,padding:"2px 5px",borderRadius:3,
+                          background:"var(--surface2)",color:"var(--muted)",border:"1px solid var(--border)"}}>
+                          {item.competitie}
+                        </span>}
+                    </div>
+                    {item.titel&&(item.link
+                      ? <a href={item.link} target="_blank" rel="noopener noreferrer"
+                          style={{fontSize:12,fontWeight:500,marginBottom:5,display:"block",
+                            color:"var(--muted)",textDecoration:"none",lineHeight:1.4}}
+                          onMouseEnter={e=>e.currentTarget.style.color="var(--accent)"}
+                          onMouseLeave={e=>e.currentTarget.style.color="var(--muted)"}>
+                          {item.titel.replace(/_/g," ")}
+                        </a>
+                      : <div style={{fontSize:12,color:"var(--muted)",marginBottom:5,lineHeight:1.4}}>
+                          {item.titel.replace(/_/g," ")}
+                        </div>
+                    )}
+                    {item.bullets&&item.bullets.length>0&&(
+                      <ul style={{paddingLeft:14,margin:0,display:"flex",flexDirection:"column",gap:2}}>
+                        {item.bullets.map((b,bi)=>(
+                          <li key={bi} style={{fontSize:12,lineHeight:1.45,color:"var(--text)"}}>{b}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )) : <div style={{padding:"30px 14px",color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>
+                  Geen clubnieuws beschikbaar.
+                </div>}
+              </div>
+            </div>
+
+            {/* Kolom 3: Spelersnieuws */}
+            <div>
+              {kolHdr("Spelers", spelersLijst.length+" spelers")}
+              <div>
+                {spelersLijst.length > 0 ? spelersLijst.map((sp,i)=>{
+                  const spelerObj=spelersIndex.find(s=>(s.id||slugify(s.naam))===sp.id);
+                  return (
+                    <div key={i} style={{padding:"12px 14px",borderBottom:"1px solid var(--border)"}}>
+                      <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:6,flexWrap:"wrap"}}>
+                        <span
+                          onClick={spelerObj?()=>nav("speler",spelerObj):undefined}
+                          style={{fontWeight:700,fontSize:13,color:"var(--accent)",
+                            cursor:spelerObj?"pointer":"default",
+                            textDecoration:spelerObj?"underline":"none",
+                            textDecorationColor:"var(--accent-light)",textUnderlineOffset:2}}>
+                          {sp.naam}
+                        </span>
+                        {sp.club&&<span style={{fontSize:11,color:"var(--muted)"}}>{sp.club}</span>}
+                        <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,color:"var(--muted)"}}>
+                          {formatNieuwsDatum(sp.meestRecent||"")}
+                        </span>
+                      </div>
+                      <ul style={{paddingLeft:14,margin:0,display:"flex",flexDirection:"column",gap:2}}>
+                        {sp.items.slice(0,5).map((item,ii)=>(
+                          <li key={ii} style={{fontSize:12,lineHeight:1.45,color:"var(--text)"}}>{item.bullet}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                }) : <div style={{padding:"30px 14px",color:"var(--muted)",fontSize:13,fontStyle:"italic"}}>
+                  Geen spelersnieuws beschikbaar voor dit filter.
+                </div>}
+              </div>
+            </div>
+
+          </div>
+        );
+      })()}
     </div>
   );
 }
@@ -2417,7 +2507,7 @@ function App() {
       {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} geslacht={geslacht}/>}
       {page==="invoer"&&<InvoerPagina />}
-      {page==="club"&&<ClubPagina club={pageId?._club||pageId} geslacht={geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
+      {page==="club"&&<ClubPagina club={pageId?._club||pageId} geslacht={pageId?._geslacht||geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
       {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
     </>
