@@ -5072,129 +5072,22 @@
       ]
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
       "thuis": "Den Bosch",
       "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "Den Bosch is 4e in de competitie.",
-          "In de EHL verloor Den Bosch de finale met 0-1 van SCHC.",
-          "Den Bosch incasseerde in haar vorige thuiswedstrijd in de Hoofdklasse een zware dreun thuis tegen SCHC (0-4) – de grootste thuisnederlaag ooit voor de Bosschenaren op eigen veld.",
-          "Frédérique Matla is met 25 doelpunten al een tijdje de ongenaakbare topscorer aller tijden van de Europese clubcompetitie.",
-          "Frédérique Matla staat op de rand van een geweldige mijlpaal in haar loopbaan met 399 officiële doelpunten.",
-          "Van Matla's 283 goals namens Den Bosch zijn 206 in de Hoofdklasse, 32 in Europees verband en 25 in de strijd om de Gold Cup."
-        ],
-        "stats_uit": [
-          "Rotterdam is de nummer 6 van de competitie.",
-          "Rotterdam won in bijna dertig jaar nog maar één keer in Den Bosch.",
-          "Rotterdam kon in twaalf van haar laatste achttien duels met Den Bosch geen enkel doelpunt maken.",
-          "De ploeg kwam in die reeks (laatste achttien duels tegen Den Bosch) maar tot tien treffers."
-        ],
-        "stats_onderling": [
-          "Den Bosch is in de Hoofdklasse al dertig onderlinge duels op rij ongeslagen tegen Rotterdam (W25 G5).",
-          "De laatste keer dat Rotterdam won dateert van 12 november 2000.",
-          "Op eigen veld is Den Bosch achttien thuisduels op rij ongeslagen tegen de Rotterdammers (W14 G4).",
-          "De enige thuisnederlaag van Den Bosch tegen Rotterdam ooit dateert van 2 maart 1997."
-        ],
-        "scheidsrechters": [
-          "Pieter Hembrecht",
-          "Suzanne Wessel"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 11,
-            "naam": "Pien Sanders",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Babs Reijnen",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Sanne Koolen",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Frédérique Matla",
-            "doelpunten": 15
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Joosje Burg",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Imme van der Hoek",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Maartje Krekelaar",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Elke Brinkman-Boers",
-            "doelpunten": 1
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 3,
-            "naam": "Jaidy Greebe",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Kirsten Zennemers",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Bobbi Dijk",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Julie van Dam",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Amber van den Dijssel",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Brechtje van Santbrink",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Emma van Santbrink",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Melle Vaessen",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 54,
-            "naam": "Myrthe van Kesteren",
-            "doelpunten": 3
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 37,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-04-12",
@@ -5722,5 +5615,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-13T05:13:39.844Z"
+  "bijgewerkt": "2026-04-13T05:13:42.282Z"
 }
