@@ -5956,233 +5956,59 @@
       ]
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "15:00",
       "thuis": "Oranje-Rood",
       "uit": "Bloemendaal",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "OR is de koploper van de Tulp Hoofdklasse.",
-          "Oranje-Rood is de enige ploeg die dit seizoen nog ongeslagen is (W12 G5).",
-          "De ploeg van coach Ageeth Boomgaardt is zelfs al twintig wedstrijden op rij zonder nederlaag (W14 G6).",
-          "De reeks van twintig duels zonder verlies is voor Oranje-Rood een aanscherping van een clubrecord.",
-          "Thuis is Oranje-Rood al vijftien duels op rij ongeslagen (W11 G4).",
-          "Oranje-Rood-aanvaller Struan Walker is de topscorer in de Hoofdklasse met 22 goals."
-        ],
-        "stats_uit": [
-          "Bloemendaal is de nummer 6 van de competitie.",
-          "Bloemendaal verloor tijdens de vorige speelronde thuis met 2-3 van Den Bosch, wat een einde maakte aan een serie van drie duels zonder verlies.",
-          "Op vreemde bodem is Bloemendaal nu vijf opeenvolgende duels ongeslagen.",
-          "Bloemendaal staat zesde met dertig punten en heeft nog volop kans zich te plaatsen voor de play-offs."
-        ],
-        "stats_onderling": [
-          "Bloemendaal bleef in zestien van de achttien onderlinge duels ongeslagen (W11 G5).",
-          "Oranje-Rood won de meest recente onderlinge ontmoeting (3-4), wat de eerste uitzege ooit was op het veld van Bloemendaal.",
-          "Op eigen veld won Oranje-Rood slechts één keer in negen thuisduels met Bloemendaal.",
-          "De laatste veertien doelpunten in duels tussen Oranje-Rood en Bloemendaal waren stuk voor stuk velddoelpunten."
-        ],
-        "scheidsrechters": [
-          "Jonas van t Hek",
-          "Xander Damen"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 1,
-            "naam": "Tomas Santiago"
-          },
-          {
-            "rugnummer": 2,
-            "naam": "Niek van der Schoot"
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Arthur de Sloover"
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Boaz Houben"
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Max de Bie"
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Noud van Deijck"
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Jelle Galema"
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Pol Cabre-Verdiell Badia"
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Gerard Clapes"
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Gijs van Merriënboer"
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Struan Walker",
-            "doelpunten": 22
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Borja LaCalle"
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Isha Houben"
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Florian Gosselink"
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Thijs Bams"
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Sem de Roij"
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Bob de Voogd"
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Hendrik Mertgens"
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Jacky van Hout"
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Joep de Mol"
-          },
-          {
-            "rugnummer": 26,
-            "naam": "Nieki Verbeek"
-          },
-          {
-            "rugnummer": 29,
-            "naam": "Tijmen Reyenga"
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 1,
-            "naam": "Maurits Visser"
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Sheldon Schouten"
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Arno van Dessel",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Gijs ter Braak"
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Zachary Wallace",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Lucas Veen",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Max Langer"
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Jorrit Croon",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Casper van der Veen",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Jasper Brinkman",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Jan van 't Land",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Tobias Bovelander"
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Teun Beins",
-            "doelpunten": 13
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Teun Hogenhout",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Ramses Zwijnenburg"
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Wouter Jolie"
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Marco Miltkau",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Wiegert Schut"
-          },
-          {
-            "rugnummer": 26,
-            "naam": "Elian Mazkour",
-            "doelpunten": 6
-          },
-          {
-            "rugnummer": 28,
-            "naam": "Floris Wortelboer",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 32,
-            "naam": "Allard André de la Porte"
-          },
-          {
-            "rugnummer": 33,
-            "naam": "Matthijs Odekerken"
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 4,
+      "score_uit": 1,
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Lucas Veen",
+          "club": "Bloemendaal",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal",
+          "minuut": 29,
+          "type": "Groene kaart"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 52,
+          "type": "Groene kaart"
+        }
+      ]
     },
     {
       "thuis": "Amsterdam",
@@ -7229,5 +7055,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-13T05:13:47.228Z"
+  "bijgewerkt": "2026-04-13T05:13:49.721Z"
 }
