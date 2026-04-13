@@ -6578,265 +6578,71 @@
       }
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "15:00",
       "thuis": "HDM",
       "uit": "Hurley",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "HDM staat 9e in de Tulp Hoofdklasse.",
-          "Won maar één van zijn laatste tien wedstrijden in de Hoofdklasse.",
-          "Zes thuiswedstrijden zonder zege na laatste thuisoverwinning op 28 september vorig jaar.",
-          "Bleef in zijn laatste vier duels met Hurley ongeslagen.",
-          "Laatste nederlaag tegen Hurley dateert van 16 september 2001."
-        ],
-        "stats_uit": [
-          "Hurley is de hekkensluiter van de competitie.",
-          "Heeft dit seizoen als enige ploeg nog geen wedstrijd gewonnen.",
-          "Wacht al 27 wedstrijden op een overwinning in de Hoofdklasse.",
-          "Deze reeks van 27 duels zonder winst is een nieuw negatief clubrecord.",
-          "Kreeg dit seizoen de meeste doelpunten om de oren: 73.",
-          "Topscorer Hjalmar Voskuil wacht al sinds 8 november vorig jaar op een treffer."
-        ],
-        "stats_onderling": [
-          "HDM en Hurley ontmoetten elkaar dertien keer in de Hoofdklasse.",
-          "Totale balans: 5x WINST HDM, 4x GELIJKSPEL, 4x WINST HUR.",
-          "HDM bleef in zijn laatste vier duels met Hurley ongeslagen.",
-          "De laatste nederlaag van HDM tegen Hurley dateert van 16 september 2001."
-        ],
-        "scheidsrechters": [
-          "Steven Bakker",
-          "Daniël Veerman"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 1,
-            "naam": "Luis Beckmann",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 2,
-            "naam": "Sam van der Ven",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Sam Spencer",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Jelte Kaptein",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Alexander Weterings",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Ruben Versteeg",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Jasper van der Looy",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Yorben Fontaine",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Merijn Maas",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Fabian Verzuu",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Duco Nieuwenhuizen Seg.",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Siebe Pijpers",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Tom Provily",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Marc Boltó Gimó",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Cédric de Gier",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Rick van den IJssel",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Guus van den Boezem",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Chris Taberima",
-            "doelpunten": 8
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Floris van der Kroon",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Sander Groenheijde",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Fenn Tellier",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 25,
-            "naam": "Mats Dicke",
-            "doelpunten": 2
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 1,
-            "naam": "Joren Romijn",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Daan Dekker",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Joshua Keaveney",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Theun de Leeuw",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Harry Martin",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Mees Loman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Tieme Wiggers",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Lex Tump",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Benjamin Walker",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Rutger Plat",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Camiel Erselina",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Hjalmar Voskuil",
-            "doelpunten": 6
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Pim Wasser",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 16,
-            "naam": "I-An van de Scheur",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Noam Sheridan",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Jake Raben",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Fred Newbold",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Nikas Berendts",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Deegan Huisman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Grau Albert",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Laurens Nievelstein",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 25,
-            "naam": "Imko de Vries",
-            "doelpunten": 2
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Noam Sheridan",
+          "club": "Hurley",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus van den Boezem",
+          "club": "HDM",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sander Groenheijde",
+          "club": "HDM",
+          "minuut": 17,
+          "type": "groen"
+        },
+        {
+          "naam": "Noam Sheridan",
+          "club": "Hurley",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Tieme Wiggers",
+          "club": "Hurley",
+          "minuut": 43,
+          "type": "groen"
+        },
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM",
+          "minuut": 47,
+          "type": "geel"
+        },
+        {
+          "naam": "Mees Loman",
+          "club": "Hurley",
+          "minuut": 56,
+          "type": "geel"
+        },
+        {
+          "naam": "Alexander Weterings",
+          "club": "HDM",
+          "minuut": 57,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-04-18",
@@ -7055,5 +6861,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-13T05:13:49.721Z"
+  "bijgewerkt": "2026-04-13T05:13:52.206Z"
 }
