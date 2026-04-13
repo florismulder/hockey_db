@@ -257,6 +257,35 @@ input,textarea,select{font-family:inherit;font-size:14px}
 
 .fade{animation:fi .15s ease}
 @keyframes fi{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}
+/* Wachtrij */
+.wq-artikel{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden}
+.wq-artikel-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px;cursor:default}
+.wq-meta{flex:1}
+.wq-titel{font-size:14px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.wq-sub{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.wq-acties{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.wq-bullets{padding:0}
+.wq-bullet{padding:10px 16px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:10px}
+.wq-bullet:last-child{border-bottom:none}
+.wq-bullet.goedgekeurd{background:#f0fdf4}
+.wq-bullet.afgekeurd{background:#fef2f2;opacity:.6}
+.wq-bullet-body{flex:1}
+.wq-bullet-tekst{font-size:13px;line-height:1.5;margin-bottom:4px}
+.wq-bron{font-size:11px;color:var(--muted);font-style:italic;margin-top:3px;padding:4px 8px;background:var(--surface2);border-radius:4px;border-left:2px solid var(--border2);display:none}
+.wq-bron.zichtbaar{display:block}
+.wq-koppeling{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.wq-bullet-btns{display:flex;gap:4px;flex-shrink:0;margin-top:1px}
+.wq-btn-ok{width:28px;height:28px;border-radius:6px;border:1px solid #bbf7d0;background:var(--green-light);color:var(--green);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.wq-btn-ok:hover,.wq-btn-ok.actief{background:var(--green);color:#fff;border-color:var(--green)}
+.wq-btn-nee{width:28px;height:28px;border-radius:6px;border:1px solid #fecaca;background:var(--red-light);color:var(--red);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.wq-btn-nee:hover,.wq-btn-nee.actief{background:var(--red);color:#fff;border-color:var(--red)}
+.wq-btn-edit{width:28px;height:28px;border-radius:6px;border:1px solid var(--border2);background:var(--surface2);color:var(--muted);font-size:13px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .15s}
+.wq-btn-edit:hover,.wq-btn-edit.actief{background:var(--accent-light);color:var(--accent);border-color:var(--accent)}
+.wq-edit-input{width:100%;padding:6px 10px;border:1px solid var(--accent);border-radius:6px;font-size:13px;line-height:1.5;background:var(--accent-light);outline:none;resize:vertical;margin-top:4px}
+.wq-onbekend{background:var(--yellow-light);border-left:3px solid var(--yellow)}
+.url-invoer{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:20px}
+.wq-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;border-radius:10px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:0 5px}
+
 
 .divider{height:1px;background:var(--border);margin:16px 0}
 
@@ -401,9 +430,10 @@ function LoginPagina({onLogin}) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────
-function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen}) {
+function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWachtrij}) {
   const nav = (id) => setPagina(id);
   const items = [
+    {id:"wachtrij",   icon:"📥", label:"Wachtrij",  badge:true},
     {id:"dashboard",  icon:"🏠", label:"Dashboard"},
     {id:"spelers",    icon:"👥", label:"Spelers"},
     {id:"clubs",      icon:"🏒", label:"Clubs"},
@@ -434,6 +464,8 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen}) {
             onClick={()=>nav(item.id)}>
             <span className="icon">{item.icon}</span>
             {item.label}
+            {item.badge && aantalWachtrij>0 &&
+              <span className="sb-badge2">{aantalWachtrij}</span>}
             {item.id==="dashboard" && aantalVoorstellen>0 &&
               <span className="sb-badge2">{aantalVoorstellen}</span>}
           </button>
@@ -447,6 +479,392 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen}) {
         <button className="sb-logout" onClick={onLogout}>
           ↩ Uitloggen
         </button>
+      </div>
+    </div>
+  );
+}
+
+
+// ── Wachtrij Pagina ───────────────────────────────────────────
+function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
+  const [items, setItems]       = useState(wachtrij.items || []);
+  const [urlInvoer, setUrlInvoer] = useState("");
+  const [urlBusy, setUrlBusy]   = useState(false);
+  const [openArtikel, setOpenArtikel] = useState(null);
+
+  // Sync als parent ververst
+  React.useEffect(() => { setItems(wachtrij.items || []); }, [wachtrij.items]);
+
+  // Spelers dropdown opties
+  const spelerOpties = React.useMemo(() => {
+    return (data.spelers||[]).map(s => ({id: s.id||slugify(s.naam), label: `${s.naam} (${s.club})`}))
+      .sort((a,b) => a.label.localeCompare(b.label,"nl"));
+  }, [data.spelers]);
+
+  const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde","SCHC","Tilburg"];
+
+  // ── URL invoer ──────────────────────────────────────────────
+  const verwerkUrl = async () => {
+    if (!urlInvoer.startsWith("http")) { toast("Voer een geldige URL in", "error"); return; }
+    setUrlBusy(true);
+    try {
+      const res = await apiCall("verwerkUrl", {url: urlInvoer});
+      if (!res.success && !res.aantalSpelers) throw new Error(res.error || "Verwerking mislukt");
+      toast(`✅ URL verwerkt — ${res.aantalSpelers||0} spelers, ${res.aantalTeams||0} clubs in wachtrij`);
+      setUrlInvoer("");
+      onRefresh();
+    } catch(e) { toast(e.message, "error"); }
+    finally { setUrlBusy(false); }
+  };
+
+  // ── Bullet lokaal bijwerken ─────────────────────────────────
+  const updateBullet = (artikelId, bulletId, velden) => {
+    setItems(prev => prev.map(art => {
+      if (art.id !== artikelId) return art;
+      return {...art, bullets: art.bullets.map(b => b.id !== bulletId ? b : {...b, ...velden})};
+    }));
+  };
+
+  // ── Artikel metadata bijwerken ──────────────────────────────
+  const updateArtikelMeta = (artikelId, velden) => {
+    setItems(prev => prev.map(art => art.id !== artikelId ? art : {...art, ...velden}));
+  };
+
+  // ── Alles goedkeuren in artikel ────────────────────────────
+  const alleGoedkeuren = (artikelId) => {
+    setItems(prev => prev.map(art => {
+      if (art.id !== artikelId) return art;
+      return {...art, bullets: art.bullets.map(b => ({...b, goedgekeurd: true}))};
+    }));
+  };
+
+  // ── Opslaan + publiceren ────────────────────────────────────
+  const opslaan = async (art) => {
+    try {
+      // Stap 1: bullets opslaan
+      await apiCall("updateNieuwsWachtrij", {
+        artikelId: art.id, bullets: art.bullets,
+        geslacht: art.geslacht, competitie: art.competitie
+      });
+      // Stap 2: goedgekeurde publiceren
+      const res = await apiCall("publiceerNieuws", {artikelId: art.id});
+      if (!res.success) throw new Error(res.error || "Publiceren mislukt");
+      toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
+      onRefresh();
+    } catch(e) { toast(e.message, "error"); }
+  };
+
+  // ── Nieuwe speler aanmaken ──────────────────────────────────
+  const [nieuwSpelerModal, setNieuwSpelerModal] = useState(null); // {artikelId, bulletId}
+  const [nieuwSpelerData, setNieuwSpelerData]   = useState({naam:"",club:"",geslacht:"heren"});
+
+  const maakSpelerAan = async () => {
+    try {
+      const res = await apiCall("nieuweSpelerWachtrij", {
+        speler: nieuwSpelerData,
+        artikelId: nieuwSpelerModal.artikelId,
+        bulletId: nieuwSpelerModal.bulletId
+      });
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Speler aangemaakt: " + nieuwSpelerData.naam);
+      updateBullet(nieuwSpelerModal.artikelId, nieuwSpelerModal.bulletId, {
+        speler_id: res.spelerId, speler_naam: nieuwSpelerData.naam,
+        club: nieuwSpelerData.club, gekoppeld: true
+      });
+      setNieuwSpelerModal(null);
+      setNieuwSpelerData({naam:"",club:"",geslacht:"heren"});
+    } catch(e) { toast(e.message, "error"); }
+  };
+
+  const openItems   = items.filter(a => a.status !== "verwerkt");
+  const aantalOpen  = openItems.length;
+
+  return (
+    <div className="fade">
+      {/* Topbar */}
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">
+            📥 Nieuws wachtrij
+            {aantalOpen > 0 && <span className="wq-badge" style={{marginLeft:8}}>{aantalOpen}</span>}
+          </div>
+          <div className="topbar-sub">Goedkeuren vóór publicatie</div>
+        </div>
+        <div className="topbar-actions">
+          <button className="btn btn-secondary btn-sm" onClick={onRefresh}>↻ Vernieuwen</button>
+        </div>
+      </div>
+
+      <div className="content">
+        {/* URL invoer */}
+        <div className="url-invoer">
+          <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>
+            🔗 URL invoer
+          </div>
+          <div style={{display:"flex",gap:8}}>
+            <input
+              className="form-input"
+              placeholder="https://hockey.nl/nieuws/… of hockey-magazine.nl/…"
+              value={urlInvoer}
+              onChange={e=>setUrlInvoer(e.target.value)}
+              onKeyDown={e=>e.key==="Enter"&&!urlBusy&&verwerkUrl()}
+              style={{flex:1}}
+            />
+            <button className="btn btn-primary" onClick={verwerkUrl} disabled={urlBusy||!urlInvoer}>
+              {urlBusy ? <span className="spinner"/> : "Verwerk"}
+            </button>
+          </div>
+          <div style={{fontSize:11,color:"var(--muted)",marginTop:6}}>
+            hockey.nl · hockey-magazine.nl · tulphoofdklasse.com — allemaal uitleesbaar
+          </div>
+        </div>
+
+        {/* Wachtrij leeg */}
+        {aantalOpen === 0 && (
+          <div className="empty" style={{padding:"40px 0"}}>
+            ✅ Wachtrij is leeg — alles is goedgekeurd of er zijn nog geen artikelen.
+          </div>
+        )}
+
+        {/* Artikelen */}
+        {openItems.map(art => {
+          const isOpen = openArtikel === art.id;
+          const aantalOk    = art.bullets.filter(b=>b.goedgekeurd===true).length;
+          const aantalNee   = art.bullets.filter(b=>b.goedgekeurd===false).length;
+          const aantalOpen2 = art.bullets.filter(b=>b.goedgekeurd===null).length;
+          const totaal      = art.bullets.length;
+
+          return (
+            <div key={art.id} className="wq-artikel">
+              {/* Artikel header */}
+              <div className="wq-artikel-header">
+                <div className="wq-meta">
+                  <div className="wq-titel">{art.titel}</div>
+                  <div className="wq-sub">
+                    <span>{formatDatum(art.datum)}</span>
+                    {/* Geslacht */}
+                    <select
+                      value={art.geslacht||"heren"}
+                      onChange={e=>updateArtikelMeta(art.id,{geslacht:e.target.value})}
+                      style={{fontSize:11,padding:"1px 4px",border:"1px solid var(--border2)",borderRadius:4,background:"var(--surface)"}}>
+                      <option value="heren">Heren</option>
+                      <option value="dames">Dames</option>
+                    </select>
+                    {/* Competitie */}
+                    <select
+                      value={art.competitie||"onbekend"}
+                      onChange={e=>updateArtikelMeta(art.id,{competitie:e.target.value})}
+                      style={{fontSize:11,padding:"1px 4px",border:"1px solid var(--border2)",borderRadius:4,background:"var(--surface)"}}>
+                      {["HK","EHL","EK","WK","OS","vriendschappelijk","onbekend"].map(c=>(
+                        <option key={c} value={c}>{c}</option>
+                      ))}
+                    </select>
+                    <span style={{color:"var(--green)"}}>{aantalOk}✓</span>
+                    {aantalNee>0&&<span style={{color:"var(--red)"}}>{aantalNee}✗</span>}
+                    {aantalOpen2>0&&<span style={{color:"var(--muted)"}}>{aantalOpen2} open</span>}
+                    <a href={art.bron_ref} target="_blank" rel="noopener noreferrer"
+                      style={{color:"var(--accent)",fontSize:11}}
+                      onClick={e=>e.stopPropagation()}>
+                      {art.bron==="url"?"🔗 Artikel":"📄 PDF"}
+                    </a>
+                  </div>
+                </div>
+                <div className="wq-acties">
+                  <button className="btn btn-secondary btn-sm"
+                    onClick={()=>alleGoedkeuren(art.id)}>
+                    ✓ Alles
+                  </button>
+                  <button className="btn btn-success btn-sm"
+                    onClick={()=>opslaan(art)}
+                    disabled={aantalOk===0}>
+                    Publiceer {aantalOk>0?`(${aantalOk})`:""}
+                  </button>
+                  <button className="btn btn-secondary btn-sm"
+                    onClick={()=>setOpenArtikel(isOpen?null:art.id)}>
+                    {isOpen?"▲":"▾"}
+                  </button>
+                </div>
+              </div>
+
+              {/* Bullets */}
+              {isOpen && (
+                <div className="wq-bullets">
+                  {art.bullets.map(b => (
+                    <BulletRij
+                      key={b.id}
+                      bullet={b}
+                      spelerOpties={spelerOpties}
+                      clubs={CLUBS}
+                      onChange={velden=>updateBullet(art.id,b.id,velden)}
+                      onNieuweSpeler={()=>setNieuwSpelerModal({artikelId:art.id,bulletId:b.id})}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Nieuwe speler modal */}
+      {nieuwSpelerModal && (
+        <div className="modal-overlay" onClick={()=>setNieuwSpelerModal(null)}>
+          <div className="modal fade" onClick={e=>e.stopPropagation()}>
+            <div className="modal-header">
+              <div className="modal-title">Nieuwe speler aanmaken</div>
+              <button className="modal-close" onClick={()=>setNieuwSpelerModal(null)}>×</button>
+            </div>
+            <div className="modal-body">
+              <div className="form-group">
+                <label className="form-label">Naam</label>
+                <input className="form-input" value={nieuwSpelerData.naam}
+                  onChange={e=>setNieuwSpelerData(d=>({...d,naam:e.target.value}))}/>
+              </div>
+              <div className="form-grid">
+                <div className="form-group">
+                  <label className="form-label">Club</label>
+                  <select className="form-select" value={nieuwSpelerData.club}
+                    onChange={e=>setNieuwSpelerData(d=>({...d,club:e.target.value}))}>
+                    <option value="">— kies club —</option>
+                    {CLUBS.map(c=><option key={c} value={c}>{c}</option>)}
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Geslacht</label>
+                  <select className="form-select" value={nieuwSpelerData.geslacht}
+                    onChange={e=>setNieuwSpelerData(d=>({...d,geslacht:e.target.value}))}>
+                    <option value="heren">Heren</option>
+                    <option value="dames">Dames</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-secondary" onClick={()=>setNieuwSpelerModal(null)}>Annuleren</button>
+              <button className="btn btn-primary"
+                disabled={!nieuwSpelerData.naam||!nieuwSpelerData.club}
+                onClick={maakSpelerAan}>
+                Aanmaken
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Bullet rij component ──────────────────────────────────────
+function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
+  const [editModus, setEditModus] = useState(false);
+  const [editTekst, setEditTekst] = useState(b.bullet||"");
+  const [toonBron,  setToonBron]  = useState(false);
+
+  const goedkeuren = () => onChange({goedgekeurd:true});
+  const afkeuren   = () => onChange({goedgekeurd:false});
+
+  const bewerkenOpslaan = () => {
+    onChange({
+      bullet: editTekst,
+      bewerkt: true,
+      originele_bullet: b.originele_bullet || b.bullet,
+      goedgekeurd: true
+    });
+    setEditModus(false);
+  };
+
+  const onbekend = !b.gekoppeld;
+  const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}`;
+
+  return (
+    <div className={rowClass}>
+      {/* Type badge */}
+      <div style={{flexShrink:0,marginTop:2}}>
+        {b.type==="speler"
+          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--blue-light)",color:"var(--blue)",borderRadius:4,fontWeight:700}}>S</span>
+          : b.type==="club"
+          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:700}}>C</span>
+          : <span style={{fontSize:10,padding:"2px 6px",background:"var(--yellow-light)",color:"var(--yellow)",borderRadius:4,fontWeight:700}}>?</span>
+        }
+      </div>
+
+      <div className="wq-bullet-body">
+        {/* Bullet tekst of edit */}
+        {editModus ? (
+          <div>
+            <textarea className="wq-edit-input" rows={2}
+              value={editTekst}
+              onChange={e=>setEditTekst(e.target.value)}
+              autoFocus/>
+            <div style={{display:"flex",gap:6,marginTop:4}}>
+              <button className="btn btn-success btn-sm" onClick={bewerkenOpslaan}>Opslaan ✓</button>
+              <button className="btn btn-secondary btn-sm" onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}>Annuleren</button>
+            </div>
+          </div>
+        ) : (
+          <div className="wq-bullet-tekst">{b.bullet}</div>
+        )}
+
+        {/* Bron zin */}
+        {b.bron_zin && (
+          <div>
+            <button onClick={()=>setToonBron(t=>!t)}
+              style={{fontSize:10,color:"var(--muted)",background:"none",border:"none",cursor:"pointer",padding:"2px 0"}}>
+              {toonBron?"▲ verberg bron":"▾ toon bron"}
+            </button>
+            <div className={`wq-bron${toonBron?" zichtbaar":""}`}>"{b.bron_zin}"</div>
+          </div>
+        )}
+
+        {/* Koppeling */}
+        <div className="wq-koppeling">
+          {b.type==="speler" && (
+            <>
+              <select
+                value={b.speler_id||""}
+                onChange={e=>{
+                  const opt = spelerOpties.find(o=>o.id===e.target.value);
+                  onChange({speler_id:e.target.value, speler_naam:opt?.label?.split(" (")[0]||"", gekoppeld:!!e.target.value});
+                }}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:220,background:"var(--surface)"}}>
+                <option value="">— kies speler —</option>
+                {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
+              </select>
+              <button className="btn btn-secondary btn-sm"
+                style={{fontSize:10,padding:"2px 7px"}}
+                onClick={onNieuweSpeler}>
+                + Nieuw
+              </button>
+            </>
+          )}
+          {b.type==="club" && (
+            <select
+              value={b.club||""}
+              onChange={e=>onChange({club:e.target.value,gekoppeld:!!e.target.value})}
+              style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
+              <option value="">— kies club —</option>
+              {clubs.map(c=><option key={c} value={c}>{c}</option>)}
+            </select>
+          )}
+          {b.bewerkt && (
+            <span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>
+          )}
+          {!b.gekoppeld && b.type!=="onbekend" && (
+            <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>
+          )}
+        </div>
+      </div>
+
+      {/* Actie knoppen */}
+      <div className="wq-bullet-btns">
+        <button className={`wq-btn-ok${b.goedgekeurd===true?" actief":""}`}
+          onClick={goedkeuren} title="Goedkeuren">✓</button>
+        <button className={`wq-btn-nee${b.goedgekeurd===false?" actief":""}`}
+          onClick={afkeuren} title="Afkeuren">✗</button>
+        <button className={`wq-btn-edit${editModus?" actief":""}`}
+          onClick={()=>{setEditModus(m=>!m);setEditTekst(b.bullet||"");}}
+          title="Bewerken">✏</button>
       </div>
     </div>
   );
@@ -478,19 +896,36 @@ function Dashboard({data, setPagina, toast, onRefresh, loading}) {
         </div>
       </div>
       <div className="content">
+        {/* Wachtrij widget */}
+        {(data.wachtrij_badge||0)>0&&(
+          <div className="card" style={{marginBottom:16,borderLeft:"4px solid var(--accent)"}}>
+            <div className="card-header" style={{background:"var(--accent-light)"}}>
+              <div className="card-title">
+                📥 Nieuws wachtrij
+                <span className="wq-badge" style={{marginLeft:8}}>{data.wachtrij_badge}</span>
+              </div>
+              <button className="btn btn-primary btn-sm" onClick={()=>setPagina("wachtrij")}>
+                Bekijk wachtrij →
+              </button>
+            </div>
+            <div style={{padding:"12px 18px",fontSize:13,color:"var(--muted)"}}>
+              {data.wachtrij_badge} artikel{data.wachtrij_badge!==1?"en":""} wacht{data.wachtrij_badge===1?"":"en"} op goedkeuring.
+            </div>
+          </div>
+        )}
         {/* Stats */}
         <div className="stat-grid">
           <div className="stat-card">
             <div className="stat-val">{spelersCount}</div>
             <div className="stat-lbl">Spelers</div>
           </div>
+          <div className="stat-card" style={{cursor:"pointer"}} onClick={()=>setPagina("wachtrij")}>
+            <div className="stat-val" style={{color:"var(--accent)"}}>{data.wachtrij_badge||0}</div>
+            <div className="stat-lbl">In wachtrij</div>
+          </div>
           <div className="stat-card">
             <div className="stat-val" style={{color:"var(--red)"}}>{actieveBlessures.length}</div>
             <div className="stat-lbl">Blessures actief</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-val" style={{color:"var(--yellow)"}}>{voorstellen.length}</div>
-            <div className="stat-lbl">Gemini voorstellen</div>
           </div>
           <div className="stat-card">
             <div className="stat-val" style={{color:"var(--green)"}}>{(data.logboek||[]).length}</div>
@@ -2714,7 +3149,8 @@ function App() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null"); } catch { return null; }
   });
   const [pagina, setPaginaRaw] = useState("dashboard");
-  const [data, setData] = useState({spelers:[],logboek:[],blessures:{},voorstellen:[],clubsInfo:{},spelersNieuws:{}});
+  const [data, setData] = useState({spelers:[],logboek:[],blessures:{},voorstellen:[],clubsInfo:{},spelersNieuws:{},wachtrij_badge:0});
+  const [wachtrij, setWachtrij] = useState({items:[],badge:0});
   const [loading, setLoading] = useState(false);
   const {toasts, show:toast} = useToast();
 
@@ -2738,7 +3174,18 @@ function App() {
     }
   }, [user]);
 
-  useEffect(() => { if (user) laadData(); }, [user]);
+  const laadWachtrij = useCallback(async () => {
+    if (!user) return;
+    try {
+      const res = await apiCall("haalNieuwsWachtrij");
+      if (res.success) {
+        setWachtrij(res);
+        setData(d => ({...d, wachtrij_badge: res.badge||0}));
+      }
+    } catch(e) { /* stil falen */ }
+  }, [user]);
+
+  useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
 
   const uitloggen = () => {
     localStorage.removeItem(STORAGE_KEY);
@@ -2756,6 +3203,7 @@ function App() {
   const clubKey  = pagina.startsWith("club_")   ? pagina.slice(5)  : null;
 
   const aantalVoorstellen = (data.voorstellen||[]).length;
+  const aantalWachtrij = data.wachtrij_badge||0;
 
   if (!user) return (
     <>
@@ -2778,12 +3226,15 @@ function App() {
           user={user}
           onLogout={uitloggen}
           aantalVoorstellen={aantalVoorstellen}
+          aantalWachtrij={aantalWachtrij}
         />
         <div className="main">
           {loading && (
             <div style={{position:"fixed",top:0,left:"var(--sidebar-w)",right:0,height:3,
               background:"var(--accent)",zIndex:999,animation:"laadbar 1.5s ease infinite"}}/>
           )}
+          {paginaType==="wachtrij" &&
+            <WachterijPagina wachtrij={wachtrij} data={data} toast={toast} onRefresh={()=>{laadWachtrij();laadData();}} setPagina={setPagina}/>}
           {paginaType==="dashboard" &&
             <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={laadData} loading={loading}/>}
           {paginaType==="spelers" &&
