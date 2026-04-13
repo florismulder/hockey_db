@@ -6322,260 +6322,47 @@
       }
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "15:00",
       "thuis": "Den Bosch",
       "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "Den Bosch staat nog net aan 4e in de competitie.",
-          "Den Bosch won zijn laatste drie duels sinds een 1-2 thuisnederlaag tegen Amsterdam.",
-          "Den Bosch won negen van zijn laatste twaalf duels (G1 V2).",
-          "In de laatste drie wedstrijden van Den Bosch vielen in totaal twintig doelpunten.",
-          "Den Bosch won zijn vorige thuiswedstrijd (6-3 tegen Pinoké), terwijl de twee thuisduels daarvóór juist verloren gingen (1-2 Oranje-Rood en 1-2 Amsterdam).",
-          "Den Bosch-verdediger Timo Boers (negentien goals) kan voor het tweede seizoen op rij de grens van twintig treffers aantikken. Vorig seizoen kroonde de strafcornerspecialist tot topscorer van de Hoofdklasse met 28 treffers."
-        ],
-        "stats_uit": [
-          "Rotterdam is de nummer 2 van de competitie.",
-          "Rotterdam won zijn laatste vijf wedstrijden, momenteel de langste zegereeks van alle ploegen.",
-          "Rotterdam leed op 16 november vorig jaar zijn laatste nederlaag (4-5 tegen Pinoké).",
-          "Rotterdam verloor maar één van zijn laatste negen uitwedstrijden in de Hoofdklasse (W6 G2).",
-          "Rotterdam (zeventig goals) en Den Bosch (62) zijn dit seizoen de twee meest scorende ploegen van de Hoofdklasse. Ook Pinoké staat na zeventien speelronden op 62 treffers."
-        ],
-        "stats_onderling": [
-          "Den Bosch won zijn laatste drie onderlinge duels met Rotterdam (W3): 3-4 uit in oktober 2024, 4-1 thuis op 30 maart 2025 en 3-4 uit in oktober 2025.",
-          "Vóór de drie opeenvolgende zeges van Den Bosch verloren de Brabanders juist vier keer op rij van Rotterdam.",
-          "De laatste drie edities van Den Bosch-Rotterdam leverden 24 doelpunten op: het werd achtereenvolgens 4-5, 3-7 en 4-1.",
-          "De 22 edities van Den Bosch-Rotterdam leverden 121 doelpunten op, een gemiddelde van 5,50 goals per duel."
-        ],
-        "scheidsrechters": [
-          "Berry van Bentum",
-          "Mark Becholz"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 1,
-            "naam": "Alexander Stadler",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 2,
-            "naam": "Imre Vos",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Mees Kurvers",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Cedric van Otterlo",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Max Pastoor",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Jaïr van der Horst",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Thierry Brinkman",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Pepijn Reijenga",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Gijs Campbell",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Max Kreft",
-            "doelpunten": 8
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Timo Boers",
-            "doelpunten": 19
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Eduard De Ignacio - Simó",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Jasper Tukkers",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Marc Vizcaino",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Koen Bijen",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Fabian Unterkircher",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Lucas Driessen",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 29,
-            "naam": "Thomas Sorsby",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 30,
-            "naam": "Sweder Koens",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 32,
-            "naam": "Sander van Berkel",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 33,
-            "naam": "Joppe Wolbert",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 35,
-            "naam": "Tijn van Groesen",
-            "doelpunten": 0
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 1,
-            "naam": "Derk Meijer",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 2,
-            "naam": "Pepijn van der Heijden",
-            "doelpunten": 14
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Lucas van Tetering",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Vincent Langenhuijsen",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Jesse Steenhoff",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Guus Jansen",
-            "doelpunten": 12
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Menno Boeren",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Olivier Hortensius",
-            "doelpunten": 6
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Thijs van Dam",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Bouwe Buitenhuis",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Tjep Hoedemakers",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Matthijs van der Wielen",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Justen Blok",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Nick van Trigt",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Joaquín Menini",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Marc Recasens",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Dylan Lucieer",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Jeroen Hertzberger",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Timme van der Heijden",
-            "doelpunten": 8
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Steijn van Heijningen",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 25,
-            "naam": "Lars Zijderveld",
-            "doelpunten": 0
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Nick van Trigt",
+          "club": "Rotterdam",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam",
+          "minuut": 42,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "HDM",
@@ -6861,5 +6648,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-13T05:13:52.206Z"
+  "bijgewerkt": "2026-04-13T05:13:54.728Z"
 }
