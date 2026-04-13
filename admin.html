@@ -318,10 +318,24 @@ function slugify(naam) {
     .replace(/['']/g,"").replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
 }
 
+function normaliseerDatum(s) {
+  if (!s) return "";
+  const str = String(s);
+  const m1 = str.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (m1) return str.slice(0,10);
+  const m2 = str.match(/^(\d{2})-(\d{2})-(\d{4})/);
+  if (m2) return `${m2[3]}-${m2[2]}-${m2[1]}`;
+  const parsed = new Date(str);
+  if (!isNaN(parsed)) return parsed.toISOString().slice(0,10);
+  return "";
+}
+
 function formatDatum(s) {
   if (!s) return "—";
-  const m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/);
-  return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+  const norm = normaliseerDatum(s);
+  if (!norm) return String(s).slice(0,10);
+  const m = norm.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${m[3]}-${m[2]}-${m[1]}` : norm;
 }
 
 function vandaag() {
@@ -2328,7 +2342,7 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       });
     });
     return Array.from(map.values())
-      .sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
+      .sort((a,b)=>normaliseerDatum(b.datum).localeCompare(normaliseerDatum(a.datum)));
   }, [nieuwsData]);
 
   const gefilterd = alleItems
