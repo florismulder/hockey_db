@@ -3558,13 +3558,13 @@
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 23,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood H1",
           "minuut": 34,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Sander van de Putte",
@@ -6185,263 +6185,53 @@
       }
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "15:00",
       "thuis": "Amsterdam",
       "uit": "Klein Zwitserland",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "Staat 3e in de competitie.",
-          "Eindigde als derde tijdens het finaleweekend van de Euro Hockey League.",
-          "Bleef zeven duels op rij ongeslagen (W5 G2).",
-          "De laatste nederlaag was op 2 november 2025 thuis tegen Rotterdam (0-3).",
-          "Spelers Dayaan en Mustapha Cassiem staan op 49 goals in de Hoofdklasse."
-        ],
-        "stats_uit": [
-          "Is de nummer 7 van de competitie.",
-          "Won drie van zijn laatste vijf wedstrijden.",
-          "Staat op ruime afstand van de gevarenzone en heeft een piepkleine theoretische kans op de play-offs.",
-          "Won slechts één van haar laatste acht uitwedstrijden in de Hoofdklasse."
-        ],
-        "stats_onderling": [
-          "De onderlinge balans is 31x winst Amsterdam, 22x gelijkspel en 28x winst Klein Zwitserland in 81 duels.",
-          "De meest recente ontmoeting op 19 oktober 2025 eindigde in een 4-3 overwinning voor Klein Zwitserland.",
-          "Amsterdam wacht al vier thuisduels op rij op een overwinning tegen Klein Zwitserland.",
-          "De laatste thuiszege van Amsterdam op Klein Zwitserland was op 28 februari 2021 (4-2)."
-        ],
-        "scheidsrechters": [
-          "Daniël van der Nat",
-          "Joep Everaers"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 1,
-            "naam": "Oliver Payne",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 2,
-            "naam": "Musthapha Cassiem",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Tjeerd Boermans",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Luke Dommershuijzen",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Lucas Middendorp",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Floris Middendorp",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Sam Steins Bisschop",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Karst Timmer",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Dayaan Cassiem",
-            "doelpunten": 10
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Lee Morton",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Lucas Corstens",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Casper Berkman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Robbert Kemperman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Brent van Bijnen",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Thije Harm",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Boris Burkhardt",
-            "doelpunten": 18
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Olivier Paalman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Joost Tolboom",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 28,
-            "naam": "Sam van der Weijden",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 30,
-            "naam": "Jochem Blok",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 31,
-            "naam": "Mirco Pruyser",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 35,
-            "naam": "David Huussen",
-            "doelpunten": 2
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 1,
-            "naam": "Koene Schaper",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Jochem Bakker",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 4,
-            "naam": "Tom Schneider",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 5,
-            "naam": "Pepe Bijlaard",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 6,
-            "naam": "Maurik Smits",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 7,
-            "naam": "Linus Michler",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Štěpán Klaban",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Lars Daniels",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Willem van Campen",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Jonas Ellerman",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Ties Klinkhamer",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 13,
-            "naam": "Chad Futcher",
-            "doelpunten": 5
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Aki Käppeler",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 15,
-            "naam": "Douwe Steens",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Florent Vaal",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Joaquin Toscani",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Lucas Toscani",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Pepijn Jones",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Philip van Aken",
-            "doelpunten": 0
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Nicolas Santiago Keenan",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 35,
-            "naam": "Adrian Lehmann-Richter",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 77,
-            "naam": "Julian Seckel",
-            "doelpunten": 0
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 3,
+      "score_uit": 1,
+      "datum": "2026-04-12",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Nicolas Santiago Keenan",
+          "club": "Klein Zwitserland",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Pepijn Jones",
+          "club": "Klein Zwitserland",
+          "minuut": 57,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-12",
@@ -7439,5 +7229,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-12T08:49:42.952Z"
+  "bijgewerkt": "2026-04-13T05:13:47.228Z"
 }
