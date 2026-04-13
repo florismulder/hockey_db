@@ -1356,7 +1356,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                   </span>
                   <span style={{flex:1,fontSize:12,fontWeight:dl.length>0?700:400,
                     color:actS?"var(--accent)":"var(--text)"}}>
-                    {sp.naam}<Vlag s={sp}/>
+                    {sp.naam}<span style={{display:"inline-block",width:7}}/><Vlag s={sp}/>
                     {sp.keeper&&<span style={{fontSize:9,padding:"1px 4px",background:"#dbeafe",
                       color:"#1e40af",borderRadius:3,fontWeight:700,marginLeft:4}}>K</span>}
                     {sp.aanvoerder&&<span style={{fontSize:9,padding:"1px 4px",background:"var(--surface2)",
@@ -1364,6 +1364,12 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                       border:"1px solid var(--border)"}}>A</span>}
                   </span>
                   {lft&&<span style={{fontSize:10,color:"var(--muted)",flexShrink:0}}>{lft} jr.</span>}
+                  {sp.doelpunten_seizoen>0&&(
+                    <span style={{fontFamily:"monospace",fontSize:11,fontWeight:700,
+                      color:"var(--accent)",flexShrink:0}}>
+                      {sp.doelpunten_seizoen}
+                    </span>
+                  )}
                   {dl.length>0&&(
                     <span style={{fontSize:10,fontWeight:700,color:"var(--accent)",flexShrink:0}}>
                       +{dl.length}
@@ -1444,7 +1450,49 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
       const spelerId=sp.id||slugify(sp.naam||"");
       const bullets=(spelersNieuws[spelerId]||[]).filter(i=>!i.verborgen);
       const heeftSeizoenStats=sp.doelpunten_seizoen>0;
-      const [toontDuelGoals,setToontDuelGoals]=React.useState(false);
+      const [activeStat,setActiveStat]=React.useState(null);
+      const [seizoenWedstrijden,setSeizoenWedstrijden]=React.useState(null);
+      const [loadingW,setLoadingW]=React.useState(false);
+
+      const laadWedstrijden=async(type)=>{
+        if(activeStat===type){setActiveStat(null);return;}
+        setActiveStat(type);
+        if(seizoenWedstrijden){return;}
+        setLoadingW(true);
+        try{
+          const g=geslachtProp||"heren";
+          const prog=await fetch(`competities/${g}/programma.json`)
+            .then(r=>r.json()).then(d=>d.wedstrijden||[]).catch(()=>[]);
+          setSeizoenWedstrijden(prog);
+        }finally{setLoadingW(false);}
+      };
+
+      const wedstrijdenVoorStat=(type)=>{
+        if(!seizoenWedstrijden) return [];
+        const nl=(sp.naam||"").toLowerCase();
+        return seizoenWedstrijden.filter(w2=>{
+          if(w2.score_thuis==null&&w2.gespeeld!==true) return false;
+          return (w2.scorers||[]).some(s=>{
+            const sn=(s.naam||"").toLowerCase();
+            if(!sn.includes(nl)&&!nl.includes(sn)) return false;
+            if(type==="veld") return !s.type||s.type==="veld";
+            return s.type===type;
+          });
+        }).map(w2=>({
+          datum:w2.datum,
+          thuis:stripClub(w2.thuis),
+          uit:stripClub(w2.uit),
+          score:`${w2.score_thuis??w2.doelpunten_thuis}–${w2.score_uit??w2.doelpunten_uit}`,
+          goals:(w2.scorers||[]).filter(s=>{
+            const sn=(s.naam||"").toLowerCase();
+            const match=sn.includes(nl)||nl.includes(sn);
+            if(!match) return false;
+            if(type==="veld") return !s.type||s.type==="veld";
+            return s.type===type;
+          })
+        }));
+      };
+
       return (
         <div style={{padding:"16px"}}>
           {/* Header */}
@@ -1453,7 +1501,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
               <span style={{fontFamily:"monospace",color:"var(--accent)",fontWeight:700,fontSize:13}}>
                 #{sp.rugnummer}
               </span>
-              <span style={{fontSize:15,fontWeight:700}}>{sp.naam}<Vlag s={sp}/></span>
+              <span style={{fontSize:15,fontWeight:700}}>{sp.naam}<span style={{display:"inline-block",width:7}}/><Vlag s={sp}/></span>
               {sp.keeper&&<span style={{fontSize:9,padding:"2px 5px",background:"#dbeafe",
                 color:"#1e40af",borderRadius:3,fontWeight:700}}>K</span>}
             </div>
@@ -1472,54 +1520,85 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                 textTransform:"uppercase",letterSpacing:.5,marginBottom:6}}>
                 Seizoen 25/26
               </div>
-              <div style={{display:"flex",gap:8,marginBottom:toontDuelGoals?0:12}}>
+              <div style={{display:"flex",gap:8,marginBottom:activeStat?0:12}}>
                 {[
-                  ["Goals",sp.doelpunten_seizoen,"var(--accent)",dl.length>0],
-                  ["Veld",sp.vd??0,"var(--muted)",false],
-                  ["SC",sp.sc??0,"#1e40af",false],
-                  ["SB",sp.sb??0,"#166534",false],
-                ].map(([lbl,val,kleur,klikbaar])=>(
-                  <div key={lbl}
-                    onClick={klikbaar?()=>setToontDuelGoals(t=>!t):undefined}
-                    style={{textAlign:"center",background:"var(--surface2)",
-                      border:`1px solid ${klikbaar&&toontDuelGoals?"var(--accent)":"var(--border)"}`,
-                      borderRadius:6,padding:"6px 10px",flex:1,
-                      cursor:klikbaar?"pointer":"default",
-                      transition:"border-color .15s"}}>
-                    <div style={{fontFamily:"monospace",fontWeight:700,fontSize:16,color:kleur}}>{val}</div>
-                    <div style={{fontSize:9,color:"var(--muted)",textTransform:"uppercase",
-                      letterSpacing:.5,marginTop:1}}>
-                      {lbl}{klikbaar?" ›":""}
+                  ["Goals",sp.doelpunten_seizoen,"var(--accent)","goals"],
+                  ["Veld",sp.vd??0,"var(--muted)","veld"],
+                  ["SC",sp.sc??0,"#1e40af","sc"],
+                  ["SB",sp.sb??0,"#166534","sb"],
+                ].map(([lbl,val,kleur,type])=>{
+                  const klikbaar=val>0;
+                  const isActief=activeStat===type;
+                  return (
+                    <div key={lbl}
+                      onClick={klikbaar?()=>laadWedstrijden(type):undefined}
+                      style={{textAlign:"center",background:"var(--surface2)",
+                        border:`1px solid ${isActief?"var(--accent)":"var(--border)"}`,
+                        borderRadius:isActief?"6px 6px 0 0":6,padding:"6px 10px",flex:1,
+                        cursor:klikbaar?"pointer":"default",transition:"all .15s"}}>
+                      <div style={{fontFamily:"monospace",fontWeight:700,fontSize:16,color:kleur}}>{val}</div>
+                      <div style={{fontSize:9,color:"var(--muted)",textTransform:"uppercase",
+                        letterSpacing:.5,marginTop:1}}>
+                        {lbl}{klikbaar?" ›":""}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-              {/* Uitschuif: doelpunten dit duel */}
-              {toontDuelGoals&&dl.length>0&&(
-                <div style={{marginBottom:12,padding:"8px 10px",
-                  background:"var(--accent-light)",borderRadius:"0 0 6px 6px",
-                  border:"1px solid var(--accent)",borderTop:"none"}}>
-                  <div style={{fontSize:10,fontWeight:700,color:"var(--accent)",
-                    textTransform:"uppercase",letterSpacing:.5,marginBottom:5}}>
-                    Doelpunten dit duel
-                  </div>
-                  {dl.map((g,i)=>(
-                    <div key={i} style={{fontSize:12,display:"flex",alignItems:"center",
-                      gap:8,padding:"3px 0",borderBottom:i<dl.length-1?"1px solid rgba(0,0,0,.06)":"none"}}>
-                      {g.minuut!=null&&(
-                        <span style={{fontFamily:"monospace",fontSize:11,fontWeight:700,
-                          color:"var(--accent)",width:28,flexShrink:0}}>
-                          {g.minuut}'
+              {/* Uitschuif: seizoenswedstrijden per type */}
+              {activeStat&&(
+                <div style={{marginBottom:12,background:"var(--accent-light)",
+                  borderRadius:"0 0 6px 6px",
+                  border:"1px solid var(--accent)",borderTop:"none",overflow:"hidden"}}>
+                  {loadingW?(
+                    <div style={{padding:"10px 12px",fontSize:12,color:"var(--muted)"}}>Laden…</div>
+                  ):(()=>{
+                    const type=activeStat==="goals"?"veld":activeStat;
+                    const alleTypes=activeStat==="goals";
+                    const wedstrijdenType=alleTypes
+                      ? seizoenWedstrijden?.filter(w2=>{
+                          if(w2.score_thuis==null&&w2.gespeeld!==true) return false;
+                          const nl=(sp.naam||"").toLowerCase();
+                          return (w2.scorers||[]).some(s=>{const sn=(s.naam||"").toLowerCase();return sn.includes(nl)||nl.includes(sn);});
+                        }).map(w2=>{
+                          const nl=(sp.naam||"").toLowerCase();
+                          const goals=(w2.scorers||[]).filter(s=>{const sn=(s.naam||"").toLowerCase();return sn.includes(nl)||nl.includes(sn);});
+                          return {datum:w2.datum,thuis:stripClub(w2.thuis),uit:stripClub(w2.uit),score:`${w2.score_thuis??w2.doelpunten_thuis}–${w2.score_uit??w2.doelpunten_uit}`,goals};
+                        })
+                      : wedstrijdenVoorStat(activeStat);
+                    if(!wedstrijdenType||!wedstrijdenType.length) return (
+                      <div style={{padding:"10px 12px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
+                        Geen wedstrijden gevonden.
+                      </div>
+                    );
+                    return wedstrijdenType.map((w2,wi)=>(
+                      <div key={wi} style={{display:"flex",alignItems:"center",gap:8,
+                        padding:"6px 12px",borderBottom:"1px solid rgba(196,98,26,.15)",
+                        fontSize:12}}>
+                        <span style={{fontFamily:"monospace",fontSize:10,color:"var(--accent)",
+                          flexShrink:0,width:58}}>
+                          {w2.datum?w2.datum.slice(8)+"-"+w2.datum.slice(5,7):""}
                         </span>
-                      )}
-                      {g.type&&g.type!=="veld"?(
-                        <span style={{fontSize:10,fontWeight:700,padding:"2px 6px",borderRadius:3,
-                          background:typeBg(g.type),color:typeKleur(g.type)}}>
-                          {g.type.toUpperCase()}
+                        <span style={{flex:1,overflow:"hidden",textOverflow:"ellipsis",
+                          whiteSpace:"nowrap",color:"var(--muted)"}}>
+                          {w2.thuis} – {w2.uit}
                         </span>
-                      ):<span style={{fontSize:11,color:"var(--muted)"}}>veld</span>}
-                    </div>
-                  ))}
+                        <span style={{fontFamily:"monospace",fontWeight:700,flexShrink:0}}>
+                          {w2.score}
+                        </span>
+                        <span style={{display:"flex",gap:3,flexShrink:0}}>
+                          {w2.goals.map((g,gi)=>(
+                            <span key={gi} style={{fontSize:9,fontWeight:700,padding:"1px 4px",
+                              borderRadius:3,background:typeBg(g.type||"veld"),
+                              color:typeKleur(g.type||"veld")}}>
+                              {g.minuut!=null?`${g.minuut}'`:"–"}
+                              {g.type&&g.type!=="veld"?` ${g.type.toUpperCase()}`:""}
+                            </span>
+                          ))}
+                        </span>
+                      </div>
+                    ));
+                  })()}
                 </div>
               )}
             </div>
