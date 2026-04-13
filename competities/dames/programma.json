@@ -4895,139 +4895,71 @@
       ]
     },
     {
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
       "thuis": "Amsterdam",
       "uit": "HGC",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "Amsterdam is de nummer 3 van de competitie.",
-          "Won haar laatste vier duels en scoorde daarin 15 goals en kreeg er één tegen.",
-          "Verloor dit seizoen slechts drie duels.",
-          "Marijn Veen staat voor haar vijftigste hoofdklassedoelpunt voor Amsterdam.",
-          "Trijntje Beljaars heeft een nieuw persoonlijk doelpuntenrecord van elf goals dit seizoen.",
-          "De twee beste schutters van Amsterdam maakten bijna net zo veel doelpunten als de gehele selectie van HGC (26 vs 27)."
-        ],
-        "stats_uit": [
-          "HGC staat 10e in de competitie.",
-          "Wonnen dit seizoen slechts drie keer in zeventien duels en verloren tien wedstrijden.",
-          "Verloor twee weken geleden thuis van Tilburg (2-4), een dieptepunt in een al moeizaam seizoen.",
-          "De 2-4 zege bij Oranje-Rood was de enige uitzege van dit seizoen en de eerste overwinning na tien uitduels op rij zonder winst."
-        ],
-        "stats_onderling": [
-          "Amsterdam bleef al 25 onderlinge Hoofdklasseduels op rij ongeslagen tegen HGC.",
-          "Het laatste verlies van Amsterdam tegen HGC dateert van 10 maart 2002.",
-          "Amsterdam won haar laatste zeven duels met HGC.",
-          "Amsterdam scoorde in de laatste drie onderlinge duels twintig goals."
-        ],
-        "scheidsrechters": [
-          "Job Baan",
-          "Anneke Sloet"
-        ],
-        "selectie_thuis": [
-          {
-            "rugnummer": 9,
-            "naam": "Trijntje Beljaars",
-            "doelpunten": 11
-          },
-          {
-            "rugnummer": 10,
-            "naam": "Felice Albers",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Imke Verstraeten",
-            "doelpunten": 13
-          },
-          {
-            "rugnummer": 12,
-            "naam": "Fay van der Elst",
-            "doelpunten": 7
-          },
-          {
-            "rugnummer": 16,
-            "naam": "Katerina Langedijk",
-            "doelpunten": 6
-          },
-          {
-            "rugnummer": 18,
-            "naam": "Freeke Moes",
-            "doelpunten": 9
-          },
-          {
-            "rugnummer": 19,
-            "naam": "Marijn Veen",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 20,
-            "naam": "Reese d' Ariano",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 21,
-            "naam": "Ivy Tellier",
-            "doelpunten": 2
-          }
-        ],
-        "selectie_uit": [
-          {
-            "rugnummer": 2,
-            "naam": "Amy van den Bosch",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 3,
-            "naam": "Faye Muijderman",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 8,
-            "naam": "Isis van Loon",
-            "doelpunten": 2
-          },
-          {
-            "rugnummer": 9,
-            "naam": "Mariona Serrahima",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 11,
-            "naam": "Julie Pieper",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 14,
-            "naam": "Jip Blaas",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 17,
-            "naam": "Marta Segú Rueda",
-            "doelpunten": 3
-          },
-          {
-            "rugnummer": 22,
-            "naam": "Lilly Stoffelsma",
-            "doelpunten": 4
-          },
-          {
-            "rugnummer": 23,
-            "naam": "Tessel Huibregtsen",
-            "doelpunten": 1
-          },
-          {
-            "rugnummer": 24,
-            "naam": "Mikki Roolaart",
-            "doelpunten": 7
-          }
-        ],
-        "bijgewerkt": "2026-04-10"
-      }
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Mariona Serrahima",
+          "club": "HGC",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn van Geest",
+          "club": "HGC",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tessel Huibregtsen",
+          "club": "HGC",
+          "minuut": 22,
+          "type": "groen"
+        },
+        {
+          "naam": "Stella van Gils",
+          "club": "Amsterdam",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Zoë Admiraal",
+          "club": "HGC",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 50,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-12",
@@ -6064,5 +5996,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-12T08:49:44.986Z"
+  "bijgewerkt": "2026-04-13T05:13:34.776Z"
 }
