@@ -1151,8 +1151,7 @@
       "doelpunten_seizoen": 4,
       "vd": 4,
       "sc": 0,
-      "sb": 0,
-      "geboortedatum": "2004-06-29"
+      "sb": 0
     },
     {
       "id": "marco_miltkau",
@@ -8518,6 +8517,22 @@
       "id": "carlijn_van_geest",
       "naam": "Carlijn van Geest",
       "club": "HGC D1",
+      "geslacht": "dames",
+      "rugnummer": "",
+      "keeper": false,
+      "aanvoerder": false,
+      "nationaliteit": "",
+      "land_code": "",
+      "oranje": "",
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
+    },
+    {
+      "id": "speler_z",
+      "naam": "Speler Z",
+      "club": "SCHC",
       "geslacht": "dames",
       "rugnummer": "",
       "keeper": false,
