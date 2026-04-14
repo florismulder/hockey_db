@@ -3103,8 +3103,8 @@ function App() {
           ))}
         </nav>
         <div className="gt">
-          <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>setGeslacht("heren")}>Heren</button>
-          <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>setGeslacht("dames")}>Dames</button>
+          <button className={`gb ${geslacht==="heren"?"on":""}`} onClick={()=>{setGeslacht("heren");nav("dashboard");}}>Heren</button>
+          <button className={`gb ${geslacht==="dames"?"on":""}`} onClick={()=>{setGeslacht("dames");nav("dashboard");}}>Dames</button>
         </div>
       </header>
       <Breadcrumb page={page} pageId={pageId} nav={nav}/>

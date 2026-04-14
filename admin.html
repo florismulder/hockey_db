@@ -522,7 +522,7 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
   };
 
   const onbekend = !b.gekoppeld;
-  const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}`;
+  const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}${b.verdacht?" wq-onbekend":""}`;
 
   return (
     <div className={rowClass}>
@@ -594,6 +594,7 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
           {b.bewerkt&&<span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
           {!b.gekoppeld&&b.type==="speler"&&
             <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>}
+          {b.verdacht&&<span style={{fontSize:10,color:"#dc2626",fontWeight:600}}>⚠ verkeerd geslacht?</span>}
         </div>
       </div>
       <div className="wq-bullet-btns">
@@ -2688,6 +2689,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
         score_uit:   edit.score_uit   === "" || edit.score_uit   === null ? null : parseInt(edit.score_uit),
         scorers: (edit.scorers||[]).map(s => ({...s, minuut: s.minuut === "" ? null : parseInt(s.minuut)||null})),
         kaarten: (edit.kaarten||[]).map(k => ({...k, minuut: k.minuut === "" ? null : parseInt(k.minuut)||null})),
+        geverifieerd: edit.geverifieerd || false,
       };
 
       huidig.wedstrijden[idx] = schoon;
@@ -2709,6 +2711,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
   // Detecteer mismatches: scorer/kaart club hoort bij thuis of uit
   const heeftFout = (w) => {
     if (!w.gespeeld) return false;
+    if (w.geverifieerd) return false;
     const thuis = (w.thuis||"").toLowerCase();
     const uit = (w.uit||"").toLowerCase();
     const check = (items) => (items||[]).some(item => {
@@ -2849,7 +2852,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                   borderRadius:8,padding:"12px 16px",marginBottom:16}}>
                   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
                     <div style={{fontWeight:600,color:"#dc2626",fontSize:13}}>⚠ Verdachte clubkoppelingen</div>
-                    <button className="btn btn-success btn-sm" onClick={opslaan} disabled={bezig}>✓ Klopt toch</button>
+                    <button className="btn btn-success btn-sm"
+                      onClick={()=>{ setEdit(e=>({...e,geverifieerd:true})); setTimeout(opslaan,30); }}
+                      disabled={bezig}>✓ Klopt toch</button>
                   </div>
                   <div style={{fontSize:12,color:"#dc2626",marginBottom:6}}>
                     Verwachte clubs: <strong>{edit.thuis}</strong> en <strong>{edit.uit}</strong>
