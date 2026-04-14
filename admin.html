@@ -611,28 +611,7 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
       </div>
 
       <div className="content">
-        {/* URL invoer */}
-        <div className="url-invoer">
-          <div style={{fontSize:13,fontWeight:700,marginBottom:10}}>
-            🔗 URL invoer
-          </div>
-          <div style={{display:"flex",gap:8}}>
-            <input
-              className="form-input"
-              placeholder="https://hockey.nl/nieuws/… of hockey-magazine.nl/…"
-              value={urlInvoer}
-              onChange={e=>setUrlInvoer(e.target.value)}
-              onKeyDown={e=>e.key==="Enter"&&!urlBusy&&verwerkUrl()}
-              style={{flex:1}}
-            />
-            <button className="btn btn-primary" onClick={verwerkUrl} disabled={urlBusy||!urlInvoer}>
-              {urlBusy ? <span className="spinner"/> : "Verwerk"}
-            </button>
-          </div>
-          <div style={{fontSize:11,color:"var(--muted)",marginTop:6}}>
-            hockey.nl · hockey-magazine.nl · tulphoofdklasse.com — allemaal uitleesbaar
-          </div>
-        </div>
+        {/* URL invoer — tijdelijk uitgeschakeld */}
 
         {/* Wachtrij leeg */}
         {aantalOpen === 0 && (
