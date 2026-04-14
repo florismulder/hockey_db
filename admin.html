@@ -379,10 +379,24 @@ function ToastContainer({toasts}) {
 function LoginPagina({onLogin}) {
   const [loading, setLoading] = useState(false);
   const [fout, setFout] = useState("");
+  const [googleKlaar, setGoogleKlaar] = useState(!!window.google);
   const btnRef = useRef(null);
 
+  // Wacht tot google GSI script geladen is (async defer)
   useEffect(() => {
-    if (!window.google) return;
+    if (window.google) { setGoogleKlaar(true); return; }
+    const interval = setInterval(() => {
+      if (window.google) { setGoogleKlaar(true); clearInterval(interval); }
+    }, 200);
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+      setFout("Google Sign-In kon niet laden. Controleer je internetverbinding en herlaad de pagina.");
+    }, 10000);
+    return () => { clearInterval(interval); clearTimeout(timeout); };
+  }, []);
+
+  useEffect(() => {
+    if (!googleKlaar || !btnRef.current) return;
     if (GOOGLE_CLIENT_ID === "JOUW_GOOGLE_CLIENT_ID_HIER.apps.googleusercontent.com") {
       setFout("Stel GOOGLE_CLIENT_ID in bovenaan admin.html");
       return;
@@ -393,26 +407,21 @@ function LoginPagina({onLogin}) {
         setLoading(true);
         setFout("");
         try {
-          // Decode JWT payload (niet veilig voor productie maar OK voor intern gebruik)
           const payload = JSON.parse(atob(response.credential.split(".")[1]));
           localStorage.setItem(TOKEN_KEY, response.credential);
           localStorage.setItem(STORAGE_KEY, JSON.stringify({
-            email: payload.email,
-            name:  payload.name,
-            picture: payload.picture
+            email: payload.email, name: payload.name, picture: payload.picture
           }));
           onLogin({email: payload.email, name: payload.name, picture: payload.picture});
         } catch(e) {
           setFout("Login mislukt: " + e.message);
-        } finally {
-          setLoading(false);
-        }
+        } finally { setLoading(false); }
       }
     });
     window.google.accounts.id.renderButton(btnRef.current, {
       theme: "outline", size: "large", width: "300", text: "signin_with"
     });
-  }, []);
+  }, [googleKlaar]);
 
   return (
     <div className="login-page">
@@ -430,6 +439,8 @@ function LoginPagina({onLogin}) {
         {fout && <div className="alert alert-error" style={{marginBottom:16}}>{fout}</div>}
         {loading
           ? <div style={{textAlign:"center"}}><div className="spinner"/></div>
+          : !googleKlaar && !fout
+          ? <div style={{textAlign:"center",color:"var(--muted)",fontSize:12}}><div className="spinner" style={{display:"inline-block",marginRight:8}}/>Google laden…</div>
           : <div ref={btnRef}/>
         }
         <div style={{marginTop:20,fontSize:11,color:"var(--muted)"}}>
