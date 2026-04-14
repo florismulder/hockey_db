@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "b53291c7-7873-4f5e-95d1-b2e8d072ea05",
+      "naam": "Carrousel HK  Pim Haring keert terug naar Oranje-Rood",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T18:06:32.459Z"
+    },
+    {
       "type": "nieuwe_speler_wachtrij",
       "id": "speler_z",
       "naam": "Speler Z",
