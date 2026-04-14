@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "540b9896-df68-4695-b08f-f7472586f50c",
+      "naam": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "velden": {
+        "goedgekeurd": 13
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T05:14:18.922Z"
+    },
+    {
       "type": "speler",
       "id": "carlijn_van_geest",
       "naam": "Carlijn van Geest",
