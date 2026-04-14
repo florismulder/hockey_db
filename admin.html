@@ -2107,8 +2107,8 @@ function ClubDetail({clubKey, data, toast, onRefresh, setPagina}) {
   const opslaan = async () => {
     setBusy(true);
     try {
-      const res = await apiCall("updateClubInfo", {club:velden.club||clubNaam, velden});
-      if (!res.success) throw new Error(res.error);
+      const res = await apiCall("updateClubInfo", {clubKey: clubKey||slugify(clubNaam), velden});
+      if (!res.ok && !res.success) throw new Error(res.fout||res.error||"Onbekende fout");
       toast("✅ Clubinfo opgeslagen");
       onRefresh();
     } catch(e) { toast(e.message,"error"); }
