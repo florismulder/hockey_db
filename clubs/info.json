@@ -204,5 +204,25 @@
       "Europacup I": "1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009"
     },
     "bijgewerkt": "2026-04-10"
+  },
+  "hockeyclub_s_hertogenbosch": {
+    "club": "Hockeyclub 's-Hertogenbosch",
+    "opgericht": "1937",
+    "stadion": "Oosterplas",
+    "website": "http://www.hcdenbosch.nl/",
+    "successen": {
+      "Landskampioen heren": "1998, 2001",
+      "Landskampioen dames": "1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2024, 2025",
+      "Gold Cup heren": "2023, 2025",
+      "Gold Cup dames": "2022, 2025",
+      "Euro Hockey League dames": "2021, 2023, 2025",
+      "Euro Hockey Club Cup dames": "2010, 2011, 2013, 2016, 2017, 2018",
+      "Europacup I heren": "1999",
+      "Europacup I dames": "2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009",
+      "Europacup II heren": "1998, 2001",
+      "Landskampioen zaalhockey heren": "1970",
+      "Landskampioen zaalhockey dames": "1970, 1971, 1973, 1974, 1992, 2002, 2012, 2014, 2022",
+      "Europacup zaalhockey dames": "2013"
+    }
   }
 }
