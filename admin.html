@@ -259,9 +259,8 @@ input,textarea,select{font-family:inherit;font-size:14px}
 @keyframes fi{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:translateY(0)}}
 /* Wachtrij */
 .wq-artikel{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:16px;overflow:hidden}
-.wq-artikel-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px;cursor:default}
-.wq-meta{flex:1}
-.wq-titel{font-size:14px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.wq-artikel-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:12px}
+.wq-meta{flex:1}.wq-titel{font-size:14px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .wq-sub{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .wq-acties{display:flex;gap:6px;align-items:center;flex-shrink:0}
 .wq-bullets{padding:0}
@@ -270,7 +269,7 @@ input,textarea,select{font-family:inherit;font-size:14px}
 .wq-bullet.goedgekeurd{background:#f0fdf4}
 .wq-bullet.afgekeurd{background:#fef2f2;opacity:.6}
 .wq-bullet-body{flex:1}
-.wq-bullet-tekst{font-size:13px;line-height:1.5;margin-bottom:4px}
+.wq-bullet-tekst{font-size:13px;line-height:1.5;margin-bottom:4px;cursor:text}
 .wq-bron{font-size:11px;color:var(--muted);font-style:italic;margin-top:3px;padding:4px 8px;background:var(--surface2);border-radius:4px;border-left:2px solid var(--border2);display:none}
 .wq-bron.zichtbaar{display:block}
 .wq-koppeling{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;align-items:center}
@@ -283,7 +282,6 @@ input,textarea,select{font-family:inherit;font-size:14px}
 .wq-btn-edit:hover,.wq-btn-edit.actief{background:var(--accent-light);color:var(--accent);border-color:var(--accent)}
 .wq-edit-input{width:100%;padding:6px 10px;border:1px solid var(--accent);border-radius:6px;font-size:13px;line-height:1.5;background:var(--accent-light);outline:none;resize:vertical;margin-top:4px}
 .wq-onbekend{background:var(--yellow-light);border-left:3px solid var(--yellow)}
-.url-invoer{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:20px}
 .wq-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;border-radius:10px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:0 5px}
 
 
@@ -329,7 +327,6 @@ function normaliseerDatum(s) {
   if (!isNaN(parsed)) return parsed.toISOString().slice(0,10);
   return "";
 }
-
 function formatDatum(s) {
   if (!s) return "—";
   const norm = normaliseerDatum(s);
@@ -478,8 +475,6 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
             {item.label}
             {item.badge && aantalWachtrij>0 &&
               <span className="sb-badge2">{aantalWachtrij}</span>}
-            {item.id==="dashboard" && aantalVoorstellen>0 &&
-              <span className="sb-badge2">{aantalVoorstellen}</span>}
           </button>
         ))}
         <div className="sb-section">Links</div>
@@ -496,110 +491,174 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
   );
 }
 
+function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
+  const [editModus, setEditModus] = useState(false);
+  const [editTekst, setEditTekst] = useState(b.bullet||"");
+  const [toonBron,  setToonBron]  = useState(false);
+  const TEAM_OPTIES = ["H1","D1","H1+D1"];
+
+  const goedkeuren = () => {
+    if (editModus) {
+      onChange({bullet:editTekst,bewerkt:editTekst!==(b.originele_bullet||b.bullet),
+        originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
+      setEditModus(false);
+    } else { onChange({goedgekeurd:true}); }
+  };
+  const afkeuren = () => { onChange({goedgekeurd:false}); setEditModus(false); };
+  const bewerkenOpslaan = () => {
+    onChange({bullet:editTekst,bewerkt:true,originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
+    setEditModus(false);
+  };
+
+  const onbekend = !b.gekoppeld;
+  const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}`;
+
+  return (
+    <div className={rowClass}>
+      <div style={{flexShrink:0,marginTop:2}}>
+        {b.type==="speler"
+          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--blue-light)",color:"var(--blue)",borderRadius:4,fontWeight:700}}>S</span>
+          : b.type==="club"
+          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:700}}>C</span>
+          : <span style={{fontSize:10,padding:"2px 6px",background:"var(--yellow-light)",color:"var(--yellow)",borderRadius:4,fontWeight:700}}>?</span>
+        }
+      </div>
+      <div className="wq-bullet-body">
+        {editModus ? (
+          <div>
+            <textarea className="wq-edit-input" rows={2} value={editTekst} autoFocus
+              onChange={e=>setEditTekst(e.target.value)}/>
+            <div style={{display:"flex",gap:6,marginTop:4}}>
+              <button className="btn btn-success btn-sm" onClick={bewerkenOpslaan}>✓ Opslaan</button>
+              <button className="btn btn-secondary btn-sm"
+                onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}>Annuleren</button>
+            </div>
+          </div>
+        ) : (
+          <div className="wq-bullet-tekst"
+            onClick={()=>{setEditModus(true);setEditTekst(b.bullet||"");}}>
+            {b.bullet}
+            <span style={{fontSize:10,color:"var(--muted)",marginLeft:6,opacity:.4}}>✏</span>
+          </div>
+        )}
+        {b.bron_zin && (
+          <div>
+            <button onClick={()=>setToonBron(t=>!t)}
+              style={{fontSize:10,color:"var(--muted)",background:"none",border:"none",cursor:"pointer",padding:"2px 0"}}>
+              {toonBron?"▲ verberg bron":"▾ toon bron"}
+            </button>
+            <div className={`wq-bron${toonBron?" zichtbaar":""}`}>"{b.bron_zin}"</div>
+          </div>
+        )}
+        <div className="wq-koppeling">
+          {b.type==="speler" && (
+            <>
+              <select value={b.speler_id||""}
+                onChange={e=>{
+                  const opt=spelerOpties.find(o=>o.id===e.target.value);
+                  onChange({speler_id:e.target.value,speler_naam:opt?.label?.split(" (")[0]||"",gekoppeld:!!e.target.value});
+                }}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:200,background:"var(--surface)"}}>
+                <option value="">— kies speler —</option>
+                {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
+              </select>
+              <button className="btn btn-secondary btn-sm" style={{fontSize:10,padding:"2px 7px"}}
+                onClick={onNieuweSpeler}>+ Nieuw</button>
+            </>
+          )}
+          {(b.type==="club"||b.type==="onbekend") && (
+            <>
+              <select value={b.club||""}
+                onChange={e=>onChange({club:e.target.value,type:"club",gekoppeld:!!e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
+                <option value="">— kies club —</option>
+                {clubs.map(c=><option key={c} value={c}>{c}</option>)}
+              </select>
+              <select value={b.team||"H1"} onChange={e=>onChange({team:e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:72}}>
+                {TEAM_OPTIES.map(t=><option key={t} value={t}>{t}</option>)}
+              </select>
+            </>
+          )}
+          {b.bewerkt&&<span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
+          {!b.gekoppeld&&b.type==="speler"&&
+            <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>}
+        </div>
+      </div>
+      <div className="wq-bullet-btns">
+        <button className={`wq-btn-ok${b.goedgekeurd===true?" actief":""}`}
+          onClick={goedkeuren} title="Goedkeuren">✓</button>
+        <button className={`wq-btn-nee${b.goedgekeurd===false?" actief":""}`}
+          onClick={afkeuren} title="Afkeuren">✗</button>
+        <button className={`wq-btn-edit${editModus?" actief":""}`}
+          onClick={()=>{setEditModus(m=>!m);setEditTekst(b.bullet||"");}}
+          title="Bewerken">✏</button>
+      </div>
+    </div>
+  );
+}
+
 
 // ── Wachtrij Pagina ───────────────────────────────────────────
 function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
-  const [items, setItems]       = useState(wachtrij.items || []);
-  const [urlInvoer, setUrlInvoer] = useState("");
-  const [urlBusy, setUrlBusy]   = useState(false);
+  const [items, setItems] = useState(wachtrij.items || []);
   const [openArtikel, setOpenArtikel] = useState(null);
+  const [nieuwSpelerModal, setNieuwSpelerModal] = useState(null);
+  const [nieuwSpelerData, setNieuwSpelerData] = useState({naam:"",club:"",geslacht:"heren"});
 
-  // Sync als parent ververst
   React.useEffect(() => { setItems(wachtrij.items || []); }, [wachtrij.items]);
 
-  // Spelers dropdown opties
   const spelerOpties = React.useMemo(() => {
-    return (data.spelers||[]).map(s => ({id: s.id||slugify(s.naam), label: `${s.naam} (${s.club})`}))
-      .sort((a,b) => a.label.localeCompare(b.label,"nl"));
+    return (data.spelers||[]).map(s=>({id:s.id||slugify(s.naam),label:`${s.naam} (${s.club})`}))
+      .sort((a,b)=>a.label.localeCompare(b.label,"nl"));
   }, [data.spelers]);
 
   const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
     "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde","SCHC","Tilburg"];
 
-  // ── URL invoer ──────────────────────────────────────────────
-  const verwerkUrl = async () => {
-    if (!urlInvoer.startsWith("http")) { toast("Voer een geldige URL in", "error"); return; }
-    setUrlBusy(true);
-    try {
-      const res = await apiCall("verwerkUrl", {url: urlInvoer});
-      if (!res.success && !res.aantalSpelers) throw new Error(res.error || "Verwerking mislukt");
-      toast(`✅ URL verwerkt — ${res.aantalSpelers||0} spelers, ${res.aantalTeams||0} clubs in wachtrij`);
-      setUrlInvoer("");
-      onRefresh();
-    } catch(e) { toast(e.message, "error"); }
-    finally { setUrlBusy(false); }
-  };
-
-  // ── Bullet lokaal bijwerken ─────────────────────────────────
   const updateBullet = (artikelId, bulletId, velden) => {
-    setItems(prev => prev.map(art => {
-      if (art.id !== artikelId) return art;
-      return {...art, bullets: art.bullets.map(b => b.id !== bulletId ? b : {...b, ...velden})};
-    }));
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
+      {...art,bullets:art.bullets.map(b=>b.id!==bulletId?b:{...b,...velden})}));
   };
-
-  // ── Artikel metadata bijwerken ──────────────────────────────
   const updateArtikelMeta = (artikelId, velden) => {
-    setItems(prev => prev.map(art => art.id !== artikelId ? art : {...art, ...velden}));
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:{...art,...velden}));
   };
-
-  // ── Alles goedkeuren in artikel ────────────────────────────
   const alleGoedkeuren = (artikelId) => {
-    setItems(prev => prev.map(art => {
-      if (art.id !== artikelId) return art;
-      return {...art, bullets: art.bullets.map(b => ({...b, goedgekeurd: true}))};
-    }));
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
+      {...art,bullets:art.bullets.map(b=>({...b,goedgekeurd:true}))}));
   };
-
-  // ── Opslaan + publiceren ────────────────────────────────────
   const opslaan = async (art) => {
     try {
-      // Stap 1: bullets opslaan
-      await apiCall("updateNieuwsWachtrij", {
-        artikelId: art.id, bullets: art.bullets,
-        geslacht: art.geslacht, competitie: art.competitie
-      });
-      // Stap 2: goedgekeurde publiceren
-      const res = await apiCall("publiceerNieuws", {artikelId: art.id});
-      if (!res.success) throw new Error(res.error || "Publiceren mislukt");
+      await apiCall("updateNieuwsWachtrij",{artikelId:art.id,bullets:art.bullets,geslacht:art.geslacht,competitie:art.competitie});
+      const res = await apiCall("publiceerNieuws",{artikelId:art.id});
+      if (!res.success) throw new Error(res.error||"Publiceren mislukt");
       toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
       onRefresh();
-    } catch(e) { toast(e.message, "error"); }
+    } catch(e) { toast(e.message,"error"); }
   };
-
-  // ── Nieuwe speler aanmaken ──────────────────────────────────
-  const [nieuwSpelerModal, setNieuwSpelerModal] = useState(null); // {artikelId, bulletId}
-  const [nieuwSpelerData, setNieuwSpelerData]   = useState({naam:"",club:"",geslacht:"heren"});
-
   const maakSpelerAan = async () => {
     try {
-      const res = await apiCall("nieuweSpelerWachtrij", {
-        speler: nieuwSpelerData,
-        artikelId: nieuwSpelerModal.artikelId,
-        bulletId: nieuwSpelerModal.bulletId
-      });
+      const res = await apiCall("nieuweSpelerWachtrij",{speler:nieuwSpelerData,
+        artikelId:nieuwSpelerModal.artikelId,bulletId:nieuwSpelerModal.bulletId});
       if (!res.success) throw new Error(res.error);
-      toast("✅ Speler aangemaakt: " + nieuwSpelerData.naam);
-      updateBullet(nieuwSpelerModal.artikelId, nieuwSpelerModal.bulletId, {
-        speler_id: res.spelerId, speler_naam: nieuwSpelerData.naam,
-        club: nieuwSpelerData.club, gekoppeld: true
-      });
+      toast("✅ Speler aangemaakt: "+nieuwSpelerData.naam);
+      updateBullet(nieuwSpelerModal.artikelId,nieuwSpelerModal.bulletId,
+        {speler_id:res.spelerId,speler_naam:nieuwSpelerData.naam,club:nieuwSpelerData.club,gekoppeld:true});
       setNieuwSpelerModal(null);
       setNieuwSpelerData({naam:"",club:"",geslacht:"heren"});
-    } catch(e) { toast(e.message, "error"); }
+    } catch(e) { toast(e.message,"error"); }
   };
 
-  const openItems   = items.filter(a => a.status !== "verwerkt");
-  const aantalOpen  = openItems.length;
+  const openItems = items.filter(a=>a.status!=="verwerkt");
+  const aantalOpen = openItems.length;
 
   return (
     <div className="fade">
-      {/* Topbar */}
       <div className="topbar">
         <div>
           <div className="topbar-title">
             📥 Nieuws wachtrij
-            {aantalOpen > 0 && <span className="wq-badge" style={{marginLeft:8}}>{aantalOpen}</span>}
+            {aantalOpen>0&&<span className="wq-badge" style={{marginLeft:8}}>{aantalOpen}</span>}
           </div>
           <div className="topbar-sub">Goedkeuren vóór publicatie</div>
         </div>
@@ -607,44 +666,31 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
           <button className="btn btn-secondary btn-sm" onClick={onRefresh}>↻ Vernieuwen</button>
         </div>
       </div>
-
       <div className="content">
-        {/* URL invoer — tijdelijk uitgeschakeld */}
-
-        {/* Wachtrij leeg */}
-        {aantalOpen === 0 && (
+        {aantalOpen===0&&(
           <div className="empty" style={{padding:"40px 0"}}>
             ✅ Wachtrij is leeg — alles is goedgekeurd of er zijn nog geen artikelen.
           </div>
         )}
-
-        {/* Artikelen */}
-        {openItems.map(art => {
-          const isOpen = openArtikel === art.id;
-          const aantalOk    = art.bullets.filter(b=>b.goedgekeurd===true).length;
-          const aantalNee   = art.bullets.filter(b=>b.goedgekeurd===false).length;
-          const aantalOpen2 = art.bullets.filter(b=>b.goedgekeurd===null).length;
-          const totaal      = art.bullets.length;
-
+        {openItems.map(art=>{
+          const isOpen=openArtikel===art.id;
+          const aantalOk=art.bullets.filter(b=>b.goedgekeurd===true).length;
+          const aantalNee=art.bullets.filter(b=>b.goedgekeurd===false).length;
+          const aantalOpen2=art.bullets.filter(b=>b.goedgekeurd===null).length;
           return (
             <div key={art.id} className="wq-artikel">
-              {/* Artikel header */}
               <div className="wq-artikel-header">
                 <div className="wq-meta">
                   <div className="wq-titel">{art.titel}</div>
                   <div className="wq-sub">
                     <span>{formatDatum(art.datum)}</span>
-                    {/* Geslacht */}
-                    <select
-                      value={art.geslacht||"heren"}
+                    <select value={art.geslacht||"heren"}
                       onChange={e=>updateArtikelMeta(art.id,{geslacht:e.target.value})}
                       style={{fontSize:11,padding:"1px 4px",border:"1px solid var(--border2)",borderRadius:4,background:"var(--surface)"}}>
                       <option value="heren">Heren</option>
                       <option value="dames">Dames</option>
                     </select>
-                    {/* Competitie */}
-                    <select
-                      value={art.competitie||"onbekend"}
+                    <select value={art.competitie||"onbekend"}
                       onChange={e=>updateArtikelMeta(art.id,{competitie:e.target.value})}
                       style={{fontSize:11,padding:"1px 4px",border:"1px solid var(--border2)",borderRadius:4,background:"var(--surface)"}}>
                       {["HK","EHL","EK","WK","OS","vriendschappelijk","onbekend"].map(c=>(
@@ -654,22 +700,17 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
                     <span style={{color:"var(--green)"}}>{aantalOk}✓</span>
                     {aantalNee>0&&<span style={{color:"var(--red)"}}>{aantalNee}✗</span>}
                     {aantalOpen2>0&&<span style={{color:"var(--muted)"}}>{aantalOpen2} open</span>}
-                    <a href={art.bron_ref} target="_blank" rel="noopener noreferrer"
+                    {art.bron_ref&&<a href={art.bron_ref} target="_blank" rel="noopener noreferrer"
                       style={{color:"var(--accent)",fontSize:11}}
                       onClick={e=>e.stopPropagation()}>
                       {art.bron==="url"?"🔗 Artikel":"📄 PDF"}
-                    </a>
+                    </a>}
                   </div>
                 </div>
                 <div className="wq-acties">
-                  <button className="btn btn-secondary btn-sm"
-                    onClick={()=>alleGoedkeuren(art.id)}>
-                    ✓ Alles
-                  </button>
-                  <button className="btn btn-success btn-sm"
-                    onClick={()=>opslaan(art)}
-                    disabled={aantalOk===0}>
-                    Publiceer {aantalOk>0?`(${aantalOk})`:""}
+                  <button className="btn btn-secondary btn-sm" onClick={()=>alleGoedkeuren(art.id)}>✓ Alles</button>
+                  <button className="btn btn-success btn-sm" onClick={()=>opslaan(art)} disabled={aantalOk===0}>
+                    Publiceer{aantalOk>0?` (${aantalOk})`:""}
                   </button>
                   <button className="btn btn-secondary btn-sm"
                     onClick={()=>setOpenArtikel(isOpen?null:art.id)}>
@@ -677,19 +718,12 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
                   </button>
                 </div>
               </div>
-
-              {/* Bullets */}
-              {isOpen && (
+              {isOpen&&(
                 <div className="wq-bullets">
-                  {art.bullets.map(b => (
-                    <BulletRij
-                      key={b.id}
-                      bullet={b}
-                      spelerOpties={spelerOpties}
-                      clubs={CLUBS}
+                  {art.bullets.map(b=>(
+                    <BulletRij key={b.id} bullet={b} spelerOpties={spelerOpties} clubs={CLUBS}
                       onChange={velden=>updateBullet(art.id,b.id,velden)}
-                      onNieuweSpeler={()=>setNieuwSpelerModal({artikelId:art.id,bulletId:b.id})}
-                    />
+                      onNieuweSpeler={()=>setNieuwSpelerModal({artikelId:art.id,bulletId:b.id})}/>
                   ))}
                 </div>
               )}
@@ -697,9 +731,7 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
           );
         })}
       </div>
-
-      {/* Nieuwe speler modal */}
-      {nieuwSpelerModal && (
+      {nieuwSpelerModal&&(
         <div className="modal-overlay" onClick={()=>setNieuwSpelerModal(null)}>
           <div className="modal fade" onClick={e=>e.stopPropagation()}>
             <div className="modal-header">
@@ -735,144 +767,11 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
               <button className="btn btn-secondary" onClick={()=>setNieuwSpelerModal(null)}>Annuleren</button>
               <button className="btn btn-primary"
                 disabled={!nieuwSpelerData.naam||!nieuwSpelerData.club}
-                onClick={maakSpelerAan}>
-                Aanmaken
-              </button>
+                onClick={maakSpelerAan}>Aanmaken</button>
             </div>
           </div>
         </div>
       )}
-    </div>
-  );
-}
-
-// ── Bullet rij component ──────────────────────────────────────
-function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
-  const [editModus, setEditModus] = useState(false);
-  const [editTekst, setEditTekst] = useState(b.bullet||"");
-  const [toonBron,  setToonBron]  = useState(false);
-
-  // Edit altijd tonen als nog niet goedgekeurd (zodat je tekst kunt aanpassen vóór goedkeuren)
-  const goedkeuren = () => {
-    if (editModus) {
-      // Sla bewerkte tekst op én keur goed
-      onChange({bullet:editTekst,bewerkt:editTekst!==(b.originele_bullet||b.bullet),
-        originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
-      setEditModus(false);
-    } else {
-      onChange({goedgekeurd:true});
-    }
-  };
-  const afkeuren = () => { onChange({goedgekeurd:false}); setEditModus(false); };
-
-  const bewerkenOpslaan = () => {
-    onChange({bullet:editTekst,bewerkt:true,originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
-    setEditModus(false);
-  };
-
-  const TEAM_OPTIES = ["H1","D1","H1+D1"];
-
-  const onbekend = !b.gekoppeld;
-  const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}`;
-
-  return (
-    <div className={rowClass}>
-      {/* Type badge */}
-      <div style={{flexShrink:0,marginTop:2}}>
-        {b.type==="speler"
-          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--blue-light)",color:"var(--blue)",borderRadius:4,fontWeight:700}}>S</span>
-          : b.type==="club"
-          ? <span style={{fontSize:10,padding:"2px 6px",background:"var(--accent-light)",color:"var(--accent)",borderRadius:4,fontWeight:700}}>C</span>
-          : <span style={{fontSize:10,padding:"2px 6px",background:"var(--yellow-light)",color:"var(--yellow)",borderRadius:4,fontWeight:700}}>?</span>
-        }
-      </div>
-
-      <div className="wq-bullet-body">
-        {/* Bullet tekst — altijd bewerkbaar */}
-        {editModus ? (
-          <div>
-            <textarea className="wq-edit-input" rows={2}
-              value={editTekst}
-              onChange={e=>setEditTekst(e.target.value)}
-              autoFocus/>
-            <div style={{display:"flex",gap:6,marginTop:4}}>
-              <button className="btn btn-success btn-sm" onClick={bewerkenOpslaan}>✓ Opslaan</button>
-              <button className="btn btn-secondary btn-sm"
-                onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}>Annuleren</button>
-            </div>
-          </div>
-        ) : (
-          <div className="wq-bullet-tekst" style={{cursor:"text"}}
-            onClick={()=>{setEditModus(true);setEditTekst(b.bullet||"");}}>
-            {b.bullet}
-            <span style={{fontSize:10,color:"var(--muted)",marginLeft:6,opacity:.5}}>✏</span>
-          </div>
-        )}
-
-        {/* Bron zin */}
-        {b.bron_zin && (
-          <div>
-            <button onClick={()=>setToonBron(t=>!t)}
-              style={{fontSize:10,color:"var(--muted)",background:"none",border:"none",cursor:"pointer",padding:"2px 0"}}>
-              {toonBron?"▲ verberg bron":"▾ toon bron"}
-            </button>
-            <div className={`wq-bron${toonBron?" zichtbaar":""}`}>"{b.bron_zin}"</div>
-          </div>
-        )}
-
-        {/* Koppeling */}
-        <div className="wq-koppeling">
-          {b.type==="speler" && (
-            <>
-              <select
-                value={b.speler_id||""}
-                onChange={e=>{
-                  const opt = spelerOpties.find(o=>o.id===e.target.value);
-                  onChange({speler_id:e.target.value,speler_naam:opt?.label?.split(" (")[0]||"",gekoppeld:!!e.target.value});
-                }}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:200,background:"var(--surface)"}}>
-                <option value="">— kies speler —</option>
-                {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
-              </select>
-              <button className="btn btn-secondary btn-sm"
-                style={{fontSize:10,padding:"2px 7px"}} onClick={onNieuweSpeler}>+ Nieuw</button>
-            </>
-          )}
-          {(b.type==="club"||b.type==="onbekend") && (
-            <>
-              <select
-                value={b.club||""}
-                onChange={e=>onChange({club:e.target.value,type:"club",gekoppeld:!!e.target.value})}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
-                <option value="">— kies club —</option>
-                {clubs.map(c=><option key={c} value={c}>{c}</option>)}
-              </select>
-              {/* Team: H1 / D1 / H1+D1 */}
-              <select
-                value={b.team||"H1"}
-                onChange={e=>onChange({team:e.target.value})}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:72}}>
-                {TEAM_OPTIES.map(t=><option key={t} value={t}>{t}</option>)}
-              </select>
-            </>
-          )}
-          {b.bewerkt && <span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
-          {!b.gekoppeld && b.type==="speler" && (
-            <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>
-          )}
-        </div>
-      </div>
-
-      {/* Actie knoppen */}
-      <div className="wq-bullet-btns">
-        <button className={`wq-btn-ok${b.goedgekeurd===true?" actief":""}`}
-          onClick={goedkeuren} title="Goedkeuren">✓</button>
-        <button className={`wq-btn-nee${b.goedgekeurd===false?" actief":""}`}
-          onClick={afkeuren} title="Afkeuren">✗</button>
-        <button className={`wq-btn-edit${editModus?" actief":""}`}
-          onClick={()=>{setEditModus(m=>!m);setEditTekst(b.bullet||"");}}
-          title="Bewerken">✏</button>
-      </div>
     </div>
   );
 }
@@ -903,36 +802,19 @@ function Dashboard({data, setPagina, toast, onRefresh, loading}) {
         </div>
       </div>
       <div className="content">
-        {/* Wachtrij widget */}
-        {(data.wachtrij_badge||0)>0&&(
-          <div className="card" style={{marginBottom:16,borderLeft:"4px solid var(--accent)"}}>
-            <div className="card-header" style={{background:"var(--accent-light)"}}>
-              <div className="card-title">
-                📥 Nieuws wachtrij
-                <span className="wq-badge" style={{marginLeft:8}}>{data.wachtrij_badge}</span>
-              </div>
-              <button className="btn btn-primary btn-sm" onClick={()=>setPagina("wachtrij")}>
-                Bekijk wachtrij →
-              </button>
-            </div>
-            <div style={{padding:"12px 18px",fontSize:13,color:"var(--muted)"}}>
-              {data.wachtrij_badge} artikel{data.wachtrij_badge!==1?"en":""} wacht{data.wachtrij_badge===1?"":"en"} op goedkeuring.
-            </div>
-          </div>
-        )}
         {/* Stats */}
         <div className="stat-grid">
           <div className="stat-card">
             <div className="stat-val">{spelersCount}</div>
             <div className="stat-lbl">Spelers</div>
           </div>
-          <div className="stat-card" style={{cursor:"pointer"}} onClick={()=>setPagina("wachtrij")}>
-            <div className="stat-val" style={{color:"var(--accent)"}}>{data.wachtrij_badge||0}</div>
-            <div className="stat-lbl">In wachtrij</div>
-          </div>
           <div className="stat-card">
             <div className="stat-val" style={{color:"var(--red)"}}>{actieveBlessures.length}</div>
             <div className="stat-lbl">Blessures actief</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-val" style={{color:"var(--yellow)"}}>{voorstellen.length}</div>
+            <div className="stat-lbl">Gemini voorstellen</div>
           </div>
           <div className="stat-card">
             <div className="stat-val" style={{color:"var(--green)"}}>{(data.logboek||[]).length}</div>
@@ -1360,8 +1242,8 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
   const [nieuwsModal, setNieuwsModal] = useState(false);
   const [koppelModal, setKoppelModal] = useState(null);
   const [busy, setBusy] = useState({});
-  const [editBullet, setEditBullet] = useState(null); // {sleutel, tekst}
-  const [nieuwBullet, setNieuwBullet] = useState(null); // {link, titel, datum, competitie}
+  const [editBullet, setEditBullet] = useState(null);
+  const [nieuwBullet, setNieuwBullet] = useState(null);
   const [nieuwBulletTekst, setNieuwBulletTekst] = useState("");
 
   const groepen = useMemo(() => {
@@ -1379,7 +1261,7 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
       map[key].bullets.push({ ...item, _idx: idx });
       if (!item.verborgen) map[key].alleVerborgen = false;
     });
-    return volgorde.map(k => map[k]).sort((a,b) => String(b.datum||"").localeCompare(String(a.datum||"")));
+    return volgorde.map(k => map[k]).sort((a,b) => normaliseerDatum(b.datum).localeCompare(normaliseerDatum(a.datum)));
   }, [spelersNieuws]);
 
   const herlaad = async () => {
@@ -1390,42 +1272,37 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
   const setBusyKey = (k, val) => setBusy(b => ({...b, [k]: val}));
 
   const toggleBullet = async (bulletSleutel, verborgen) => {
-    const key = "b" + bulletSleutel;
-    setBusyKey(key, true);
+    setBusyKey("b"+bulletSleutel, true);
     try {
       const res = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen});
       if (!res.success) throw new Error(res.error);
-      toast(verborgen ? "🙈 Verborgen" : "👁 Zichtbaar gemaakt");
+      toast(verborgen ? "🙈 Verborgen" : "👁 Zichtbaar");
       await new Promise(r => setTimeout(r, 3000));
       await herlaad();
     } catch(e) { toast(e.message, "error"); }
-    finally { setBusyKey(key, false); }
+    finally { setBusyKey("b"+bulletSleutel, false); }
   };
 
   const toggleArtikel = async (link, verborgen) => {
-    const key = "a" + link;
-    setBusyKey(key, true);
+    setBusyKey("a"+link, true);
     try {
       const res = await apiCall("verbergArtikel", {spelerId, artikelLink: link, verborgen});
       if (!res.success) throw new Error(res.error);
-      toast(verborgen ? "🙈 Verborgen" : "👁 Zichtbaar gemaakt");
+      toast(verborgen ? "🙈 Verborgen" : "👁 Zichtbaar");
       await new Promise(r => setTimeout(r, 3000));
       await herlaad();
     } catch(e) { toast(e.message, "error"); }
-    finally { setBusyKey(key, false); }
+    finally { setBusyKey("a"+link, false); }
   };
 
-  // Bewerk bullet inline — sla op als nieuw item, verberg het oude
   const slaEditOp = async (bulletSleutel, oudeBullet, nieuweTekst, groep) => {
     if (!nieuweTekst.trim() || nieuweTekst === oudeBullet) { setEditBullet(null); return; }
     setBusyKey("edit"+bulletSleutel, true);
     try {
-      // Voeg bewerkte versie toe
       await apiCall("voegNieuwsToe", {targetId: spelerId, targetType: "speler", nieuwsItem: {
         datum: groep.datum, titel: groep.titel, link: groep.link,
         bullet: nieuweTekst.trim(), competitie: groep.competitie || "onbekend"
       }});
-      // Verberg origineel
       await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen: true});
       toast("✅ Bullet bewerkt");
       setEditBullet(null);
@@ -1435,7 +1312,6 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
     finally { setBusyKey("edit"+bulletSleutel, false); }
   };
 
-  // Voeg nieuwe bullet toe aan bestaand artikel
   const voegBulletToe = async () => {
     if (!nieuwBulletTekst.trim()) return;
     setBusyKey("nieuw", true);
@@ -1445,8 +1321,7 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
         bullet: nieuwBulletTekst.trim(), competitie: nieuwBullet.competitie || "onbekend"
       }});
       toast("✅ Bullet toegevoegd");
-      setNieuwBullet(null);
-      setNieuwBulletTekst("");
+      setNieuwBullet(null); setNieuwBulletTekst("");
       await new Promise(r => setTimeout(r, 2500));
       await herlaad();
     } catch(e) { toast(e.message, "error"); }
@@ -1457,15 +1332,11 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
     <div>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
         <div style={{fontSize:14,fontWeight:700}}>Nieuws ({(spelersNieuws||[]).length} bullets)</div>
-        <button className="btn btn-primary btn-sm" onClick={()=>setNieuwsModal(true)}>
-          + Nieuws toevoegen
-        </button>
+        <button className="btn btn-primary btn-sm" onClick={()=>setNieuwsModal(true)}>+ Nieuws toevoegen</button>
       </div>
-
       {ladtNieuws && <div className="loading"><div className="spinner"/> Nieuws laden…</div>}
       {!ladtNieuws && (!spelersNieuws || spelersNieuws.length === 0) &&
         <div className="empty">Geen nieuws beschikbaar voor deze speler.</div>}
-
       {!ladtNieuws && groepen.map((groep, gi) => {
         const alleVerborgen = groep.alleVerborgen;
         const busyArtikel = busy["a" + groep.link];
@@ -1474,71 +1345,52 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
             background: alleVerborgen ? "var(--surface2)" : "var(--surface)",
             border: "1px solid " + (alleVerborgen ? "var(--border)" : "var(--border2)"),
             borderRadius: 8, marginBottom: 10, overflow: "hidden",
-            opacity: alleVerborgen ? 0.6 : 1, transition: "opacity .2s"
+            opacity: alleVerborgen ? 0.6 : 1
           }}>
-            {/* Artikel header */}
             <div style={{padding:"10px 12px",borderBottom:"1px solid var(--border)",
               display:"flex",alignItems:"center",gap:8,
               background:alleVerborgen?"var(--surface3)":"var(--surface2)"}}>
-              <span className="mono" style={{fontSize:10,color:"var(--muted)",flexShrink:0}}>
-                {formatDatum(groep.datum)}
-              </span>
+              <span className="mono" style={{fontSize:10,color:"var(--muted)",flexShrink:0}}>{formatDatum(groep.datum)}</span>
               {groep.link
                 ? <a href={groep.link} target="_blank" rel="noopener noreferrer"
-                    style={{fontSize:12,fontWeight:600,flex:1,color:"var(--accent)",
-                      overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                    style={{fontSize:12,fontWeight:600,flex:1,color:"var(--accent)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
                     {groep.titel||groep.link} ›
                   </a>
-                : <span style={{fontSize:12,fontWeight:600,flex:1,overflow:"hidden",
-                    textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+                : <span style={{fontSize:12,fontWeight:600,flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
                     {groep.titel||"Handmatig toegevoegd"}
                   </span>}
               {groep.competitie && groep.competitie !== "onbekend" &&
-                <span className="tag" style={{background:"var(--surface)",border:"1px solid var(--border2)",
-                  color:"var(--muted)",flexShrink:0}}>{groep.competitie}</span>}
-              {/* + bullet per artikel */}
-              <button className="btn btn-secondary btn-sm"
-                style={{flexShrink:0,fontSize:11}}
-                onClick={()=>{ setNieuwBullet(groep); setNieuwBulletTekst(""); }}
-                title="Bullet toevoegen aan dit artikel">
-                + bullet
-              </button>
-              <button
-                className={`btn btn-sm ${alleVerborgen ? "btn-success" : "btn-secondary"}`}
-                onClick={()=>toggleArtikel(groep.link, !alleVerborgen)}
-                disabled={!!busyArtikel} style={{flexShrink:0}}
-                title={alleVerborgen ? "Heel artikel zichtbaar maken" : "Heel artikel verbergen"}>
-                {busyArtikel ? <span className="spinner"/> : alleVerborgen ? "👁" : "🙈"}
+                <span className="tag" style={{background:"var(--surface)",border:"1px solid var(--border2)",color:"var(--muted)",flexShrink:0}}>{groep.competitie}</span>}
+              <button className="btn btn-secondary btn-sm" style={{flexShrink:0,fontSize:11}}
+                onClick={()=>{setNieuwBullet(groep);setNieuwBulletTekst("");}}>+ bullet</button>
+              <button className={`btn btn-sm ${alleVerborgen?"btn-success":"btn-secondary"}`}
+                onClick={()=>toggleArtikel(groep.link,!alleVerborgen)}
+                disabled={!!busyArtikel} style={{flexShrink:0}}>
+                {busyArtikel?<span className="spinner"/>:alleVerborgen?"👁":"🙈"}
               </button>
             </div>
-
-            {/* Bullets */}
             {groep.bullets.map((bullet, bi) => {
               const bulletSleutel = (groep.link||"") + "||" + (bullet.bullet||"");
-              const busyBullet = busy["b" + bulletSleutel];
+              const busyBullet = busy["b"+bulletSleutel];
               const isEdit = editBullet?.sleutel === bulletSleutel;
-              const busyEdit = busy["edit" + bulletSleutel];
               return (
                 <div key={bi} style={{
                   padding:"8px 12px",
-                  borderBottom: bi < groep.bullets.length-1 ? "1px solid var(--border)" : "none",
-                  background: bullet.verborgen ? "var(--surface3)" : "transparent"
+                  borderBottom:bi<groep.bullets.length-1?"1px solid var(--border)":"none",
+                  background:bullet.verborgen?"var(--surface3)":"transparent"
                 }}>
                   {isEdit ? (
                     <div style={{display:"flex",flexDirection:"column",gap:6}}>
-                      <textarea
-                        style={{width:"100%",padding:"6px 10px",border:"1px solid var(--accent)",
-                          borderRadius:6,fontSize:13,fontFamily:"inherit",resize:"vertical",
-                          background:"var(--accent-light)",outline:"none"}}
-                        rows={2}
-                        value={editBullet.tekst}
-                        onChange={e=>setEditBullet(b=>({...b,tekst:e.target.value}))}
-                        autoFocus/>
+                      <textarea style={{width:"100%",padding:"6px 10px",border:"1px solid var(--accent)",
+                        borderRadius:6,fontSize:13,fontFamily:"inherit",resize:"vertical",
+                        background:"var(--accent-light)",outline:"none"}}
+                        rows={2} value={editBullet.tekst} autoFocus
+                        onChange={e=>setEditBullet(b=>({...b,tekst:e.target.value}))}/>
                       <div style={{display:"flex",gap:6}}>
                         <button className="btn btn-success btn-sm"
-                          disabled={!!busyEdit}
+                          disabled={!!busy["edit"+bulletSleutel]}
                           onClick={()=>slaEditOp(bulletSleutel,bullet.bullet,editBullet.tekst,groep)}>
-                          {busyEdit?<span className="spinner"/>:"✓ Opslaan"}
+                          {busy["edit"+bulletSleutel]?<span className="spinner"/>:"✓ Opslaan"}
                         </button>
                         <button className="btn btn-secondary btn-sm"
                           onClick={()=>setEditBullet(null)}>Annuleren</button>
@@ -1556,46 +1408,34 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
                         {bullet.handmatig&&<span style={{fontSize:10,color:"var(--green)",marginLeft:8}}>handmatig</span>}
                       </span>
                       <div style={{display:"flex",gap:4,flexShrink:0}}>
-                        {/* Bewerken */}
                         <button className="btn btn-secondary btn-sm"
-                          onClick={()=>setEditBullet({sleutel:bulletSleutel,tekst:bullet.bullet||""})}
-                          title="Bewerken">✏</button>
-                        {/* Verbergen */}
+                          onClick={()=>setEditBullet({sleutel:bulletSleutel,tekst:bullet.bullet||""})}>✏</button>
                         <button className={`btn btn-sm ${bullet.verborgen?"btn-success":"btn-danger"}`}
-                          onClick={()=>toggleBullet(bulletSleutel, !bullet.verborgen)}
-                          disabled={!!busyBullet}
-                          title={bullet.verborgen?"Zichtbaar maken":"Verbergen"}>
+                          onClick={()=>toggleBullet(bulletSleutel,!bullet.verborgen)}
+                          disabled={!!busyBullet}>
                           {busyBullet?<span className="spinner"/>:bullet.verborgen?"👁":"🙈"}
                         </button>
-                        {/* Koppelen */}
                         <button className="btn btn-secondary btn-sm"
                           onClick={()=>setKoppelModal({bulletSleutel,bullet:bullet.bullet,
-                            titel:groep.titel,link:groep.link,datum:groep.datum})}
-                          title="Ook tonen bij andere speler of club">↗</button>
+                            titel:groep.titel,link:groep.link,datum:groep.datum})}>↗</button>
                       </div>
                     </div>
                   )}
                 </div>
               );
             })}
-
-            {/* Nieuw bullet invoer voor dit artikel */}
             {nieuwBullet?.key === groep.key && (
-              <div style={{padding:"10px 12px",borderTop:"1px solid var(--border)",
-                background:"var(--surface2)"}}>
+              <div style={{padding:"10px 12px",borderTop:"1px solid var(--border)",background:"var(--surface2)"}}>
                 <div style={{fontSize:11,color:"var(--muted)",marginBottom:6}}>
-                  Nieuwe bullet toevoegen aan "{groep.titel||"dit artikel"}"
+                  Nieuwe bullet aan "{groep.titel||"dit artikel"}"
                 </div>
                 <div style={{display:"flex",gap:6}}>
-                  <textarea
-                    style={{flex:1,padding:"6px 10px",border:"1px solid var(--accent)",
-                      borderRadius:6,fontSize:13,fontFamily:"inherit",resize:"none",
-                      background:"var(--accent-light)",outline:"none"}}
-                    rows={2}
-                    placeholder="Begin met de naam van de speler…"
+                  <textarea style={{flex:1,padding:"6px 10px",border:"1px solid var(--accent)",
+                    borderRadius:6,fontSize:13,fontFamily:"inherit",resize:"none",
+                    background:"var(--accent-light)",outline:"none"}}
+                    rows={2} placeholder="Begin met naam speler…"
                     value={nieuwBulletTekst}
-                    onChange={e=>setNieuwBulletTekst(e.target.value)}
-                    autoFocus/>
+                    onChange={e=>setNieuwBulletTekst(e.target.value)} autoFocus/>
                   <div style={{display:"flex",flexDirection:"column",gap:4}}>
                     <button className="btn btn-success btn-sm"
                       disabled={!nieuwBulletTekst.trim()||!!busy.nieuw}
@@ -1611,8 +1451,6 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
           </div>
         );
       })}
-
-      {/* Modals */}
       {nieuwsModal && (
         <NieuwsToevoegenModal spelerId={spelerId} targetType="speler" toast={toast}
           onClose={()=>setNieuwsModal(false)} onOpgeslagen={herlaad}/>
@@ -1621,177 +1459,6 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
         <KoppelNieuwsModal bronSpelerId={spelerId} bulletSleutel={koppelModal.bulletSleutel}
           bullet={koppelModal.bullet} spelers={spelers} toast={toast}
           onClose={()=>setKoppelModal(null)} onOpgeslagen={herlaad}/>
-      )}
-    </div>
-  );
-}
-
-  // Groepeer bullets per artikel (zelfde als publieke site)
-  const groepen = useMemo(() => {
-    if (!spelersNieuws) return [];
-    const map = {};
-    const volgorde = [];
-    spelersNieuws.forEach((item, idx) => {
-      const link  = item.link || item.artikel_link || "";
-      const titel = item.titel || item.artikel_titel || "";
-      const key   = link || titel || item.datum || String(idx);
-      if (!map[key]) {
-        map[key] = { key, link, titel, datum: item.datum, competitie: item.competitie, bullets: [], alleVerborgen: true };
-        volgorde.push(key);
-      }
-      map[key].bullets.push({ ...item, _idx: idx });
-      if (!item.verborgen) map[key].alleVerborgen = false;
-    });
-    return volgorde.map(k => map[k]).sort((a,b) => String(b.datum||"").localeCompare(String(a.datum||"")));
-  }, [spelersNieuws]);
-
-  const herlaad = async () => {
-    // Cache busting: voeg timestamp toe zodat GitHub Pages niet de oude versie geeft
-    const d = await fetch("nieuws/spelersnieuws.json?t=" + Date.now()).then(r=>r.json()).catch(()=>({}));
-    setSpelersNieuws(d[spelerId] || []);
-  };
-
-  const setBusyKey = (k, val) => setBusy(b => ({...b, [k]: val}));
-
-  const toggleBullet = async (bulletSleutel, verborgen) => {
-    const key = "b" + bulletSleutel;
-    setBusyKey(key, true);
-    try {
-      const res = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen});
-      if (!res.success) throw new Error(res.error);
-      toast(verborgen ? "🙈 Verborgen — site bijgewerkt binnen ~1 minuut" : "👁 Zichtbaar gemaakt");
-      await new Promise(r => setTimeout(r, 4000));
-      await herlaad();
-    } catch(e) { toast(e.message, "error"); }
-    finally { setBusyKey(key, false); }
-  };
-
-  const toggleArtikel = async (link, verborgen) => {
-    const key = "a" + link;
-    setBusyKey(key, true);
-    try {
-      const res = await apiCall("verbergArtikel", {spelerId, artikelLink: link, verborgen});
-      if (!res.success) throw new Error(res.error);
-      toast(verborgen ? "🙈 Verborgen — site bijgewerkt binnen ~1 minuut" : "👁 Zichtbaar gemaakt");
-      // Wacht even zodat GitHub Pages de nieuwe versie kan verspreiden
-      await new Promise(r => setTimeout(r, 4000));
-      await herlaad();
-    } catch(e) { toast(e.message, "error"); }
-    finally { setBusyKey(key, false); }
-  };
-
-  return (
-    <div>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
-        <div style={{fontSize:14,fontWeight:700}}>Nieuws ({(spelersNieuws||[]).length} bullets)</div>
-        <button className="btn btn-primary btn-sm" onClick={()=>setNieuwsModal(true)}>
-          + Nieuws toevoegen
-        </button>
-      </div>
-
-      {ladtNieuws && <div className="loading"><div className="spinner"/> Nieuws laden…</div>}
-      {!ladtNieuws && (!spelersNieuws || spelersNieuws.length === 0) &&
-        <div className="empty">Geen nieuws beschikbaar voor deze speler.</div>}
-
-      {!ladtNieuws && groepen.map((groep, gi) => {
-        const alleVerborgen = groep.alleVerborgen;
-        const busyArtikel = busy["a" + groep.link];
-        return (
-          <div key={gi} style={{
-            background: alleVerborgen ? "var(--surface2)" : "var(--surface)",
-            border: "1px solid " + (alleVerborgen ? "var(--border)" : "var(--border2)"),
-            borderRadius: 8, marginBottom: 10, overflow: "hidden",
-            opacity: alleVerborgen ? 0.6 : 1, transition: "opacity .2s"
-          }}>
-            {/* Artikel header */}
-            <div style={{padding:"10px 12px",borderBottom:"1px solid var(--border)",display:"flex",alignItems:"center",gap:8,background:alleVerborgen?"var(--surface3)":"var(--surface2)"}}>
-              <span className="mono" style={{fontSize:10,color:"var(--muted)",flexShrink:0}}>{formatDatum(groep.datum)}</span>
-              {groep.link
-                ? <a href={groep.link} target="_blank" rel="noopener noreferrer"
-                    style={{fontSize:12,fontWeight:600,flex:1,color:"var(--accent)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-                    {groep.titel||groep.link} ›
-                  </a>
-                : <span style={{fontSize:12,fontWeight:600,flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-                    {groep.titel||"Handmatig toegevoegd"}
-                  </span>}
-              {groep.competitie && groep.competitie !== "onbekend" &&
-                <span className="tag" style={{background:"var(--surface)",border:"1px solid var(--border2)",color:"var(--muted)",flexShrink:0}}>{groep.competitie}</span>}
-              <button
-                className={`btn btn-sm ${alleVerborgen ? "btn-success" : "btn-secondary"}`}
-                onClick={()=>toggleArtikel(groep.link, !alleVerborgen)}
-                disabled={!!busyArtikel}
-                style={{flexShrink:0}}
-                title={alleVerborgen ? "Heel artikel zichtbaar maken" : "Heel artikel verbergen"}>
-                {busyArtikel ? <span className="spinner"/> : alleVerborgen ? "👁 Toon alles" : "🙈 Verberg alles"}
-              </button>
-            </div>
-
-            {/* Bullets */}
-            {groep.bullets.map((bullet, bi) => {
-              const bulletSleutel = (groep.link||"") + "||" + (bullet.bullet||"");
-                  const busyBullet = busy["b" + bulletSleutel];
-              return (
-                <div key={bi} style={{
-                  display:"flex",alignItems:"flex-start",gap:8,
-                  padding:"8px 12px",
-                  borderBottom: bi < groep.bullets.length-1 ? "1px solid var(--border)" : "none",
-                  background: bullet.verborgen ? "var(--surface3)" : "transparent"
-                }}>
-                  <span style={{
-                    fontSize:11,marginTop:2,flexShrink:0,
-                    color:bullet.verborgen?"var(--border2)":"var(--accent)",
-                    fontWeight:700
-                  }}>•</span>
-                  <span style={{
-                    flex:1,fontSize:13,
-                    color:bullet.verborgen?"var(--muted)":"var(--text)",
-                    textDecoration:bullet.verborgen?"line-through":"none"
-                  }}>
-                    {bullet.bullet}
-                    {bullet.verborgen && <span style={{fontSize:10,color:"var(--muted)",marginLeft:8}}>(verborgen)</span>}
-                    {bullet.handmatig && <span style={{fontSize:10,color:"var(--green)",marginLeft:8}}>handmatig</span>}
-                  </span>
-                  <div style={{display:"flex",gap:4,flexShrink:0}}>
-                    <button
-                      className={`btn btn-sm ${bullet.verborgen?"btn-success":"btn-danger"}`}
-                      onClick={()=>toggleBullet(bulletSleutel, !bullet.verborgen)}
-                      disabled={!!busyBullet}
-                      title={bullet.verborgen?"Zichtbaar maken":"Verbergen"}>
-                      {busyBullet ? <span className="spinner"/> : bullet.verborgen ? "👁" : "🙈"}
-                    </button>
-                    <button className="btn btn-secondary btn-sm"
-                      onClick={()=>setKoppelModal({bulletSleutel, bullet:bullet.bullet, titel:groep.titel, link:groep.link, datum:groep.datum})}
-                      title="Ook tonen bij andere speler of club">
-                      ↗
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        );
-      })}
-
-      {/* Modals */}
-      {nieuwsModal && (
-        <NieuwsToevoegenModal
-          spelerId={spelerId}
-          targetType="speler"
-          toast={toast}
-          onClose={()=>setNieuwsModal(false)}
-          onOpgeslagen={herlaad}
-        />
-      )}
-      {koppelModal && (
-        <KoppelNieuwsModal
-          bronSpelerId={spelerId}
-          bulletSleutel={koppelModal.bulletSleutel}
-          bullet={koppelModal.bullet}
-          spelers={spelers}
-          toast={toast}
-          onClose={()=>setKoppelModal(null)}
-          onOpgeslagen={herlaad}
-        />
       )}
     </div>
   );
@@ -2539,7 +2206,7 @@ function TeamBulletRij({bullet, bi, verborgen, onToggle, onBewerk}) {
   const [editModus, setEditModus] = useState(false);
   const [editTekst, setEditTekst] = useState(bullet||"");
   return (
-    <li style={{display:"flex",alignItems:"flex-start",gap:6,marginBottom:4,listStyle:"none",marginLeft:-14}}>
+    <li style={{display:"flex",alignItems:"flex-start",gap:6,marginBottom:4}}>
       {editModus ? (
         <div style={{flex:1,display:"flex",flexDirection:"column",gap:4}}>
           <textarea
@@ -2548,8 +2215,10 @@ function TeamBulletRij({bullet, bi, verborgen, onToggle, onBewerk}) {
             rows={2} value={editTekst} autoFocus
             onChange={e=>setEditTekst(e.target.value)}/>
           <div style={{display:"flex",gap:4}}>
-            <button className="btn btn-success btn-sm" onClick={()=>{onBewerk(editTekst);setEditModus(false);}}>✓</button>
-            <button className="btn btn-secondary btn-sm" onClick={()=>{setEditModus(false);setEditTekst(bullet||"");}}>✗</button>
+            <button className="btn btn-success btn-sm"
+              onClick={()=>{onBewerk(editTekst);setEditModus(false);}}>✓</button>
+            <button className="btn btn-secondary btn-sm"
+              onClick={()=>{setEditModus(false);setEditTekst(bullet||"");}}>✗</button>
           </div>
         </div>
       ) : (
@@ -2633,7 +2302,7 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
       });
     });
     return Array.from(map.values())
-      .sort((a,b)=>normaliseerDatum(b.datum).localeCompare(normaliseerDatum(a.datum)));
+      .sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
   }, [nieuwsData]);
 
   const gefilterd = alleItems
@@ -2816,13 +2485,17 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
         </div>
         {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
         {!laden&&gefilterd.map((item)=>{
+          // Bereken sleutel live consistent met alleItems
           const sleutel = (item.titel||"")+"|"+(item.datum||"");
           const bronClub = item._bronClub;
+          // Lees altijd live uit nieuwsData
           const liveItem = (nieuwsData[bronClub]||[]).find(x=>
             (x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||"")
           ) || item;
+          // Als geen clubs array: bronclub is default aangevinkt
           const huidigeClubs = (liveItem.clubs && liveItem.clubs.length > 0)
-            ? liveItem.clubs : [bronClub];
+            ? liveItem.clubs
+            : [bronClub];
           const verborgen = liveItem.verborgen_bullets||[];
           const geslacht = liveItem.geslacht||null;
           const isVerborgen = liveItem.verborgen||false;
@@ -2846,19 +2519,17 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                   {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6,
                     opacity:isVerborgen?.4:1}}>{item.titel.replace(/_/g," ")}</div>}
                   {item.bullets&&item.bullets.length>0&&(
-                    <ul style={{margin:0,paddingLeft:14}}>
+                    <ul style={{margin:0,paddingLeft:14,listStyle:"none"}}>
                       {item.bullets.map((b,bi)=>(
-                        <TeamBulletRij key={bi}
-                          bullet={b}
-                          bi={bi}
+                        <TeamBulletRij key={bi} bullet={b} bi={bi}
                           verborgen={verborgen.includes(bi)}
                           onToggle={()=>toggleBullet(sleutel,bronClub,bi)}
-                          onBewerk={(nieuweTekst)=>{
+                          onBewerk={(t)=>{
                             setNieuwsData(huidig=>{
                               const nieuw=JSON.parse(JSON.stringify(huidig));
-                              const items=nieuw[bronClub]||[];
-                              const idx=items.findIndex(x=>(x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||""));
-                              if(idx>=0&&nieuw[bronClub][idx].bullets) nieuw[bronClub][idx].bullets[bi]=nieuweTekst;
+                              const items2=nieuw[bronClub]||[];
+                              const idx2=items2.findIndex(x=>(x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||""));
+                              if(idx2>=0&&nieuw[bronClub][idx2].bullets) nieuw[bronClub][idx2].bullets[bi]=t;
                               return nieuw;
                             });
                           }}
@@ -3165,15 +2836,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
               {heeftFout(edit) && (
                 <div style={{background:"rgba(239,68,68,.08)",border:"1px solid #fca5a5",
                   borderRadius:8,padding:"12px 16px",marginBottom:16}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:8}}>
-                    <div style={{fontWeight:600,color:"#dc2626",fontSize:13}}>
-                      ⚠ Verdachte clubkoppelingen gedetecteerd
-                    </div>
-                    <button className="btn btn-success btn-sm"
-                      onClick={opslaan} disabled={bezig}
-                      title="Data klopt toch — direct opslaan naar GitHub">
-                      ✓ Klopt toch
-                    </button>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
+                    <div style={{fontWeight:600,color:"#dc2626",fontSize:13}}>⚠ Verdachte clubkoppelingen</div>
+                    <button className="btn btn-success btn-sm" onClick={opslaan} disabled={bezig}>✓ Klopt toch</button>
                   </div>
                   <div style={{fontSize:12,color:"#dc2626",marginBottom:6}}>
                     Verwachte clubs: <strong>{edit.thuis}</strong> en <strong>{edit.uit}</strong>
@@ -3492,11 +3157,8 @@ function App() {
     if (!user) return;
     try {
       const res = await apiCall("haalNieuwsWachtrij");
-      if (res.success) {
-        setWachtrij(res);
-        setData(d => ({...d, wachtrij_badge: res.badge||0}));
-      }
-    } catch(e) { /* stil falen */ }
+      if (res.success) { setWachtrij(res); setData(d=>({...d,wachtrij_badge:res.badge||0})); }
+    } catch(e) {}
   }, [user]);
 
   useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
