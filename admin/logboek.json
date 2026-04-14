@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "carlijn_van_geest",
+      "naam": "Carlijn van Geest",
+      "velden": {
+        "club": "HGC D1",
+        "geslacht": "dames",
+        "rugnummer": 33,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T05:09:35.855Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "2face351-03e1-4170-b15a-bf42fb00d1b4",
       "naam": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
