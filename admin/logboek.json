@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "7047de1b-a059-4490-9560-9dede9f07f33",
+      "naam": "Voskuil sleept Hurley naar zege met blessure  ‘Hopelijk geen last morgen’",
+      "velden": {
+        "goedgekeurd": 5
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T14:55:14.061Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "540b9896-df68-4695-b08f-f7472586f50c",
       "naam": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
       "velden": {
