@@ -16,6 +16,29 @@
         "doelpunten_seizoen": 19,
         "vd": 11,
         "sc": 8,
+        "sb": 0,
+        "geboortedatum": "2022-07-06"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T18:14:42.295Z"
+    },
+    {
+      "type": "speler",
+      "id": "struan_walker",
+      "naam": "Struan Walker",
+      "velden": {
+        "club": "Oranje-Rood",
+        "geslacht": "heren",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "Schots",
+        "land_code": "GB-SCT",
+        "oranje": "",
+        "doelpunten_seizoen": 19,
+        "vd": 11,
+        "sc": 8,
         "sb": 0
       },
       "oud": {},
