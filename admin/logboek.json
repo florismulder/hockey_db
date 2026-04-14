@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "hjalmar_voskuil",
+      "naam": "hjalmar_voskuil",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T17:01:55.982Z"
+    },
+    {
       "type": "speler",
       "id": "casper_van_der_veen",
       "naam": "Casper van der Veen",
