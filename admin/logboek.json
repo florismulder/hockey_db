@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "hjalmar_voskuil",
+      "naam": "Hjalmar Voskuil",
+      "velden": {
+        "club": "Hurley",
+        "geslacht": "heren",
+        "rugnummer": 14,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 6,
+        "vd": 1,
+        "sc": 5,
+        "sb": 0
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T17:02:13.874Z"
+    },
+    {
       "type": "bullet",
       "id": "hjalmar_voskuil",
       "naam": "hjalmar_voskuil",
