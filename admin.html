@@ -754,18 +754,25 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
   const [editTekst, setEditTekst] = useState(b.bullet||"");
   const [toonBron,  setToonBron]  = useState(false);
 
-  const goedkeuren = () => onChange({goedgekeurd:true});
-  const afkeuren   = () => onChange({goedgekeurd:false});
+  // Edit altijd tonen als nog niet goedgekeurd (zodat je tekst kunt aanpassen vóór goedkeuren)
+  const goedkeuren = () => {
+    if (editModus) {
+      // Sla bewerkte tekst op én keur goed
+      onChange({bullet:editTekst,bewerkt:editTekst!==(b.originele_bullet||b.bullet),
+        originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
+      setEditModus(false);
+    } else {
+      onChange({goedgekeurd:true});
+    }
+  };
+  const afkeuren = () => { onChange({goedgekeurd:false}); setEditModus(false); };
 
   const bewerkenOpslaan = () => {
-    onChange({
-      bullet: editTekst,
-      bewerkt: true,
-      originele_bullet: b.originele_bullet || b.bullet,
-      goedgekeurd: true
-    });
+    onChange({bullet:editTekst,bewerkt:true,originele_bullet:b.originele_bullet||b.bullet,goedgekeurd:true});
     setEditModus(false);
   };
+
+  const TEAM_OPTIES = ["H1","D1","H1+D1"];
 
   const onbekend = !b.gekoppeld;
   const rowClass = `wq-bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}${onbekend?" wq-onbekend":""}`;
@@ -783,7 +790,7 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
       </div>
 
       <div className="wq-bullet-body">
-        {/* Bullet tekst of edit */}
+        {/* Bullet tekst — altijd bewerkbaar */}
         {editModus ? (
           <div>
             <textarea className="wq-edit-input" rows={2}
@@ -791,12 +798,17 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
               onChange={e=>setEditTekst(e.target.value)}
               autoFocus/>
             <div style={{display:"flex",gap:6,marginTop:4}}>
-              <button className="btn btn-success btn-sm" onClick={bewerkenOpslaan}>Opslaan ✓</button>
-              <button className="btn btn-secondary btn-sm" onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}>Annuleren</button>
+              <button className="btn btn-success btn-sm" onClick={bewerkenOpslaan}>✓ Opslaan</button>
+              <button className="btn btn-secondary btn-sm"
+                onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}>Annuleren</button>
             </div>
           </div>
         ) : (
-          <div className="wq-bullet-tekst">{b.bullet}</div>
+          <div className="wq-bullet-tekst" style={{cursor:"text"}}
+            onClick={()=>{setEditModus(true);setEditTekst(b.bullet||"");}}>
+            {b.bullet}
+            <span style={{fontSize:10,color:"var(--muted)",marginLeft:6,opacity:.5}}>✏</span>
+          </div>
         )}
 
         {/* Bron zin */}
@@ -818,32 +830,36 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
                 value={b.speler_id||""}
                 onChange={e=>{
                   const opt = spelerOpties.find(o=>o.id===e.target.value);
-                  onChange({speler_id:e.target.value, speler_naam:opt?.label?.split(" (")[0]||"", gekoppeld:!!e.target.value});
+                  onChange({speler_id:e.target.value,speler_naam:opt?.label?.split(" (")[0]||"",gekoppeld:!!e.target.value});
                 }}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:220,background:"var(--surface)"}}>
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:200,background:"var(--surface)"}}>
                 <option value="">— kies speler —</option>
                 {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
               </select>
               <button className="btn btn-secondary btn-sm"
-                style={{fontSize:10,padding:"2px 7px"}}
-                onClick={onNieuweSpeler}>
-                + Nieuw
-              </button>
+                style={{fontSize:10,padding:"2px 7px"}} onClick={onNieuweSpeler}>+ Nieuw</button>
             </>
           )}
-          {b.type==="club" && (
-            <select
-              value={b.club||""}
-              onChange={e=>onChange({club:e.target.value,gekoppeld:!!e.target.value})}
-              style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
-              <option value="">— kies club —</option>
-              {clubs.map(c=><option key={c} value={c}>{c}</option>)}
-            </select>
+          {(b.type==="club"||b.type==="onbekend") && (
+            <>
+              <select
+                value={b.club||""}
+                onChange={e=>onChange({club:e.target.value,type:"club",gekoppeld:!!e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
+                <option value="">— kies club —</option>
+                {clubs.map(c=><option key={c} value={c}>{c}</option>)}
+              </select>
+              {/* Team: H1 / D1 / H1+D1 */}
+              <select
+                value={b.team||"H1"}
+                onChange={e=>onChange({team:e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:72}}>
+                {TEAM_OPTIES.map(t=><option key={t} value={t}>{t}</option>)}
+              </select>
+            </>
           )}
-          {b.bewerkt && (
-            <span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>
-          )}
-          {!b.gekoppeld && b.type!=="onbekend" && (
+          {b.bewerkt && <span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
+          {!b.gekoppeld && b.type==="speler" && (
             <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>
           )}
         </div>
@@ -1091,7 +1107,7 @@ function NieuweSpelerModal({data, toast, onClose, onRefresh}) {
       const d = await apiCall("nieuweSpeler", {speler: {
         naam: form.naam.trim(),
         geslacht: form.geslacht,
-        club: form.club + (form.geslacht==="heren"?" H1":" D1"),
+        club: form.club,
         rugnummer: form.rugnummer ? parseInt(form.rugnummer) : null,
         positie: form.positie || null,
         geboortedatum: form.geboortedatum || null,
@@ -3229,7 +3245,7 @@ function App() {
           {paginaType==="wachtrij" &&
             <WachterijPagina wachtrij={wachtrij} data={data} toast={toast} onRefresh={()=>{laadWachtrij();laadData();}} setPagina={setPagina}/>}
           {paginaType==="dashboard" &&
-            <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={laadData} loading={loading}/>}
+            <Dashboard data={data} setPagina={setPagina} toast={toast} onRefresh={()=>{laadData();laadWachtrij();}} loading={loading}/>}
           {paginaType==="spelers" &&
             <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={laadData}/>}
           {paginaType==="speler_detail" &&
