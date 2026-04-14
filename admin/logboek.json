@@ -21,6 +21,29 @@
       },
       "oud": {},
       "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T15:55:34.599Z"
+    },
+    {
+      "type": "speler",
+      "id": "casper_van_der_veen",
+      "naam": "Casper van der Veen",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 11,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 4,
+        "vd": 4,
+        "sc": 0,
+        "sb": 0,
+        "geboortedatum": "2004-06-29"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
       "datum": "2026-04-14T15:50:57.028Z"
     },
     {
