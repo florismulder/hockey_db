@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "struan_walker",
+      "naam": "struan_walker",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T18:08:57.289Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "b53291c7-7873-4f5e-95d1-b2e8d072ea05",
       "naam": "Carrousel HK  Pim Haring keert terug naar Oranje-Rood",
