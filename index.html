@@ -1012,6 +1012,33 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   }).slice(0,10);
 
   const aantalStats=(speler.doelpunten_seizoen>0?4:0)+(groeneKaarten>0?1:0);
+  const [actieveStat,setActieveStat]=useState(null);
+
+  // Filter gescoordIn per type voor uitschuif
+  const gescoordInPerType=(type)=>{
+    if(!gescoordIn.length) return [];
+    if(type==="goals") return gescoordIn;
+    return gescoordIn.filter(w=>(w.scorers||[]).some(s=>{
+      const nm=s.naam&&s.naam.toLowerCase().includes(volledigeNaam.split(" ")[volledigeNaam.split(" ").length-1]);
+      if(!nm) return false;
+      if(type==="veld") return !s.type||s.type==="veld";
+      return s.type===type;
+    }));
+  };
+  const toggleStat=(type)=>setActieveStat(a=>a===type?null:type);
+
+  // Bio-facts uit spelersnieuws
+  const bioFacts=useMemo(()=>{
+    return spelersNieuws.slice(0,8).map(i=>i.bullet||"").filter(Boolean);
+  },[spelersNieuws]);
+
+  // Oranje-label
+  const oranjeLabel=oranje
+    ?(oranje.senior?.includes(speler.naam)?"🦁 Oranje"
+    :oranje.jong?.includes(speler.naam)?"🦁 Jong Oranje"
+    :oranje.u18?.includes(speler.naam)?"U18 Oranje"
+    :oranje.u16?.includes(speler.naam)?"U16 Oranje"
+    :null):null;
 
   return (
     <div className="fade">
@@ -1024,14 +1051,11 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
           {leeftijd&&<span className="dc">{leeftijd} jaar</span>}
           {speler.keeper&&<span className="dc ke">Keeper</span>}
           {speler.aanvoerder&&<span className="dc av">Aanvoerder</span>}
-          {oranje&&oranje.senior&&oranje.senior.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>🦁 Oranje</span>}
-          {oranje&&oranje.jong&&!oranje.senior?.includes(speler.naam)&&oranje.jong.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>🦁 Jong Oranje</span>}
-          {oranje&&oranje.u18&&!oranje.senior?.includes(speler.naam)&&!oranje.jong?.includes(speler.naam)&&oranje.u18.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"#fef9c3",color:"#854d0e",borderRadius:5}}>U18</span>}
-          {oranje&&oranje.u16&&!oranje.senior?.includes(speler.naam)&&!oranje.jong?.includes(speler.naam)&&!oranje.u18?.includes(speler.naam)&&oranje.u16.includes(speler.naam)&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"#fef9c3",color:"#854d0e",borderRadius:5}}>U16</span>}
+          {oranjeLabel&&<span style={{fontSize:12,fontWeight:600,padding:"4px 10px",background:"var(--oranje-bg)",color:"var(--oranje-text)",borderRadius:5,border:"1px solid var(--oranje-border)"}}>{oranjeLabel}</span>}
         </div>
       </div>
       <div className="db">
-        {/* Blessure blokje */}
+        {/* Blessure */}
         {blessures.length>0&&(
           <div style={{background:"#fdf0ee",border:"1px solid #fecaca",borderRadius:6,padding:"8px 12px",marginBottom:12,display:"flex",alignItems:"center",gap:8}}>
             <span style={{fontSize:14,flexShrink:0}}>🏥</span>
@@ -1047,29 +1071,33 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
             </div>
           </div>
         )}
-        {/* Statistieken */}
+
+        {/* Statistieken — klikbaar voor alle types, heren én dames */}
         {aantalStats>0&&(
-          <div style={{marginBottom:20}}>
+          <div style={{marginBottom:actieveStat?0:20}}>
             <div className="ds" style={{marginTop:0}}>Statistieken 2025-2026</div>
             <div style={{display:"grid",gridTemplateColumns:`repeat(${aantalStats},1fr)`,gap:8}}>
               {speler.doelpunten_seizoen>0&&[
-                ["Goals",speler.doelpunten_seizoen,"var(--accent)",true],
-                ["Veld",speler.vd??0,"var(--muted)",false],
-                ["SC",speler.sc??0,"var(--muted)",false],
-                ["SB",speler.sb??0,"var(--muted)",false],
-              ].map(([lbl,val,kleur,klikbaar])=>(
-                <div key={lbl}
-                  onClick={klikbaar&&gescoordIn.length>0?()=>setToontDoelpunten(t=>!t):undefined}
-                  style={{background:"var(--surface2)",border:`1px solid ${klikbaar&&gescoordIn.length>0?toontDoelpunten?"var(--accent)":"var(--border2)":"var(--border)"}`,
-                    borderRadius:8,padding:"10px 12px",textAlign:"center",
-                    cursor:klikbaar&&gescoordIn.length>0?"pointer":"default",
-                    transition:"border-color .15s"}}>
-                  <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
-                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>
-                    {lbl}{klikbaar&&gescoordIn.length>0?" ›":""}
+                ["Goals","goals",speler.doelpunten_seizoen,"var(--accent)"],
+                ["Veld","veld",speler.vd??0,"var(--muted)"],
+                ["SC","sc",speler.sc??0,"#1e40af"],
+                ["SB","sb",speler.sb??0,"#166534"],
+              ].map(([lbl,type,val,kleur])=>{
+                const klikbaar=val>0&&gescoordIn.length>0;
+                const isActief=actieveStat===type;
+                return (
+                  <div key={type} onClick={klikbaar?()=>toggleStat(type):undefined}
+                    style={{background:"var(--surface2)",
+                      border:`1px solid ${isActief?"var(--accent)":klikbaar?"var(--border2)":"var(--border)"}`,
+                      borderRadius:isActief?"8px 8px 0 0":8,padding:"10px 12px",textAlign:"center",
+                      cursor:klikbaar?"pointer":"default",transition:"all .15s"}}>
+                    <div style={{fontSize:20,fontWeight:700,color:kleur,fontFamily:"'JetBrains Mono',monospace"}}>{val}</div>
+                    <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>
+                      {lbl}{klikbaar?" ›":""}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
               {groeneKaarten>0&&(
                 <div style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
                   <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
@@ -1080,91 +1108,166 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
           </div>
         )}
 
-        {/* Doelpunten detail */}
-        {toontDoelpunten&&gescoordIn.length>0&&(
-          <div style={{marginBottom:20,background:"var(--surface2)",borderRadius:8,padding:"14px",border:"1px solid var(--border)"}}>
-            <div style={{fontSize:12,fontWeight:700,marginBottom:10,display:"flex",justifyContent:"space-between"}}>
-              <span>Doelpunten per wedstrijd</span>
-              <button onClick={()=>setToontDoelpunten(false)} style={{background:"none",border:"none",color:"var(--muted)",cursor:"pointer",fontSize:16}}>×</button>
-            </div>
-            {gescoordIn.map((w,i)=>{
-              const goals=(w.scorers||[]).filter(s=>s.naam&&s.naam.toLowerCase()===volledigeNaam);
-              return (
-                <div key={i} onClick={()=>nav("wedstrijd",w)}
-                  style={{display:"flex",alignItems:"center",gap:10,padding:"6px 0",
-                    borderBottom:"1px solid var(--border)",cursor:"pointer",fontSize:12}}
-                  onMouseEnter={e=>e.currentTarget.style.opacity=".7"}
-                  onMouseLeave={e=>e.currentTarget.style.opacity="1"}>
-                  <span style={{fontFamily:"monospace",color:"var(--muted)",width:82,flexShrink:0,whiteSpace:"nowrap"}}>{formatDatum(w.datum)}</span>
-                  <span style={{flex:1,display:"flex",alignItems:"center",gap:10,flexWrap:"wrap"}}>
-                    <span>{w.thuis} – {w.uit}</span>
-                    <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)"}}>
+        {/* Uitschuif doelpunten per type */}
+        {actieveStat&&(()=>{
+          const lijst=gescoordInPerType(actieveStat);
+          return (
+            <div style={{marginBottom:20,background:"var(--accent-light)",borderRadius:"0 0 8px 8px",
+              border:"1px solid var(--accent)",borderTop:"none",overflow:"hidden"}}>
+              {!lijst.length?(
+                <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
+                  Geen wedstrijden gevonden voor dit type.
+                </div>
+              ):lijst.map((w,i)=>{
+                const goals=(w.scorers||[]).filter(s=>{
+                  const nm=s.naam&&s.naam.toLowerCase().includes(volledigeNaam.split(" ")[volledigeNaam.split(" ").length-1]);
+                  if(!nm) return false;
+                  if(actieveStat==="goals") return true;
+                  if(actieveStat==="veld") return !s.type||s.type==="veld";
+                  return s.type===actieveStat;
+                });
+                return (
+                  <div key={i} onClick={()=>nav("wedstrijd",w)}
+                    style={{display:"flex",alignItems:"center",gap:10,padding:"7px 14px",
+                      borderBottom:"1px solid rgba(196,98,26,.15)",cursor:"pointer",fontSize:12}}
+                    onMouseEnter={e=>e.currentTarget.style.background="rgba(196,98,26,.08)"}
+                    onMouseLeave={e=>e.currentTarget.style.background=""}>
+                    <span style={{fontFamily:"monospace",fontSize:10,color:"var(--accent)",
+                      width:62,flexShrink:0,whiteSpace:"nowrap"}}>{formatDatum(w.datum)}</span>
+                    <span style={{flex:1}}>{w.thuis} – {w.uit}</span>
+                    <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0}}>
+                      {w.score_thuis??w.doelpunten_thuis}–{w.score_uit??w.doelpunten_uit}
+                    </span>
+                    <span style={{display:"flex",gap:4,flexShrink:0}}>
                       {goals.map((g,j)=>(
-                        <span key={j} style={{marginLeft:j>0?6:0}}>
-                          ⚽{g.minuut!=null?` ${g.minuut}'`:""}
-                          {g.type&&g.type!=="veld"?` (${g.type})` :""}
+                        <span key={j} style={{fontSize:10,fontWeight:700,padding:"1px 5px",
+                          borderRadius:3,background:"var(--accent)",color:"#fff"}}>
+                          {g.minuut!=null?`${g.minuut}'`:"⚽"}
+                          {g.type&&g.type!=="veld"?` ${g.type.toUpperCase()}`:""}
                         </span>
                       ))}
                     </span>
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Nieuws twee kolommen */}
-        <div className="ds">Nieuws</div>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}}>
-          {/* Links: AI bullets */}
-          <div>
-            {spelersNieuws.length>0?(
-              <div>
-                {Object.entries(
-                  spelersNieuws.reduce((acc,item)=>{
-                    // Support zowel 'titel' als 'artikel_titel', en 'link' als 'artikel_link'
-                    const titel = item.titel || item.artikel_titel || "";
-                    const link  = item.link  || item.artikel_link  || "";
-                    const bullet= item.bullet|| "";
-                    const key   = titel || link || item.datum || "";
-                    if(!acc[key]) acc[key]={datum:item.datum, titel:titel.replace(/_/g," "), link, bullets:[]};
-                    if(bullet && !acc[key].bullets.includes(bullet)) acc[key].bullets.push(bullet);
-                    return acc;
-                  },{}
-                )).sort((a,b)=>{
-                  const pd = s => new Date(s[1].datum||0).getTime();
-                  return pd(b)-pd(a);
-                }).map(([key,item],i)=>(
-                  <div key={i} style={{marginBottom:12,background:"var(--surface2)",borderRadius:7,padding:"10px 12px",border:"1px solid var(--border)"}}>
-                    <div style={{fontSize:10,color:"var(--muted)",marginBottom:4,fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum(item.datum.slice(0,10))}</div>
-                    {item.titel&&item.link?(
-                      <a href={item.link} target="_blank" rel="noopener noreferrer"
-                        style={{fontSize:12,fontWeight:600,marginBottom:6,display:"block",color:"var(--accent)",textDecoration:"none"}}
-                        onMouseEnter={e=>e.currentTarget.style.textDecoration="underline"}
-                        onMouseLeave={e=>e.currentTarget.style.textDecoration="none"}>
-                        {item.titel} ›
-                      </a>
-                    ):item.titel?(
-                      <div style={{fontSize:12,fontWeight:600,marginBottom:6}}>{item.titel}</div>
-                    ):null}
-                    <ul style={{paddingLeft:14,margin:0}}>
-                      {item.bullets.map((b,j)=>(
-                        <li key={j} style={{fontSize:12,color:"var(--text)",marginBottom:3}}>{b}</li>
-                      ))}
-                    </ul>
                   </div>
-                ))}
-              </div>
+                );
+              })}
+            </div>
+          );
+        })()}
+
+        {/* Onderin: nieuws links, bio rechts */}
+        <div style={{display:"grid",gridTemplateColumns:"3fr 2fr",gap:24,marginTop:4,alignItems:"start"}}>
+
+          {/* Links: nieuwsbullets */}
+          <div>
+            <div className="ds">Nieuws</div>
+            {spelersNieuws.length>0?(
+              Object.entries(
+                spelersNieuws.reduce((acc,item)=>{
+                  const titel=item.titel||item.artikel_titel||"";
+                  const link =item.link ||item.artikel_link ||"";
+                  const bullet=item.bullet||"";
+                  const key=titel||link||item.datum||"";
+                  if(!acc[key]) acc[key]={datum:item.datum,titel:titel.replace(/_/g," "),link,bullets:[]};
+                  if(bullet&&!acc[key].bullets.includes(bullet)) acc[key].bullets.push(bullet);
+                  return acc;
+                },{})
+              ).sort((a,b)=>new Date(b[1].datum||0)-new Date(a[1].datum||0))
+              .map(([key,item],i)=>(
+                <div key={i} style={{marginBottom:10,padding:"9px 11px",
+                  background:"var(--surface2)",borderRadius:7,border:"1px solid var(--border)"}}>
+                  <div style={{fontSize:10,color:"var(--muted)",marginBottom:3,
+                    fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum((item.datum||"").slice(0,10))}</div>
+                  {item.titel&&(item.link?(
+                    <a href={item.link} target="_blank" rel="noopener noreferrer"
+                      style={{fontSize:12,fontWeight:600,marginBottom:4,display:"block",
+                        color:"var(--accent)",textDecoration:"none"}}
+                      onMouseEnter={e=>e.currentTarget.style.textDecoration="underline"}
+                      onMouseLeave={e=>e.currentTarget.style.textDecoration="none"}>
+                      {item.titel} ›
+                    </a>
+                  ):(
+                    <div style={{fontSize:12,fontWeight:600,marginBottom:4,color:"var(--muted)"}}>{item.titel}</div>
+                  ))}
+                  <ul style={{paddingLeft:13,margin:0,display:"flex",flexDirection:"column",gap:2}}>
+                    {item.bullets.map((b,j)=>(
+                      <li key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45}}>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))
             ):<div className="empty">Nog geen nieuwsbullets beschikbaar.</div>}
           </div>
-          {/* Rechts: artikelen */}
+
+          {/* Rechts: bio */}
           <div>
-            {relevant.length>0?relevant.map((n,i)=>(
-              <a className="ni" key={i} href={n.url||n.link||"#"} target="_blank" rel="noopener noreferrer">
-                <div className="nid">{formatNieuwsDatum(n.datum||n.date||"")}</div>
-                <div className="nit">{n.titel||n.title||""}</div>
-              </a>
-            )):<div className="empty">Geen nieuws gevonden.</div>}
+            <div className="ds">Profiel</div>
+            <div style={{background:"var(--surface2)",border:"1px solid var(--border)",
+              borderRadius:8,padding:"14px 16px"}}>
+              {/* Basisinfo */}
+              <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:bioFacts.length?14:0}}>
+                {speler.geboortedatum&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Geboren</span>
+                    <span>{formatNieuwsDatum(speler.geboortedatum)}{leeftijd?` (${leeftijd} jr.)`:""}</span>
+                  </div>
+                )}
+                {speler.nationaliteit&&speler.nationaliteit!=="Nederland"&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Nationaliteit</span>
+                    <span><Vlag s={speler}/>{speler.nationaliteit}</span>
+                  </div>
+                )}
+                {speler.club&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Club</span>
+                    <span style={{fontWeight:600,color:"var(--accent)"}}>{speler.club}</span>
+                  </div>
+                )}
+                {oranjeLabel&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Oranje</span>
+                    <span>{oranjeLabel}</span>
+                  </div>
+                )}
+                {speler.keeper&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Positie</span>
+                    <span>Keeper</span>
+                  </div>
+                )}
+                {speler.aanvoerder&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Rol</span>
+                    <span>Aanvoerder</span>
+                  </div>
+                )}
+                {gescoordIn.length>0&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Seizoen 25/26</span>
+                    <span>{speler.doelpunten_seizoen} goals in {gescoordIn.length} duel{gescoordIn.length!==1?"en":""}</span>
+                  </div>
+                )}
+              </div>
+              {/* Bio-feiten uit nieuws */}
+              {bioFacts.length>0&&(
+                <div style={{borderTop:"1px solid var(--border)",paddingTop:12}}>
+                  <div style={{fontSize:10,fontWeight:700,color:"var(--muted)",
+                    textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>
+                    Feiten
+                  </div>
+                  {bioFacts.map((f,i)=>(
+                    <div key={i} style={{fontSize:12,color:"var(--text)",padding:"3px 0",
+                      borderBottom:i<bioFacts.length-1?"1px solid var(--border)":"none",
+                      lineHeight:1.45,display:"flex",gap:6}}>
+                      <span style={{color:"var(--muted)",flexShrink:0}}>•</span>{f}
+                    </div>
+                  ))}
+                </div>
+              )}
+              {!speler.geboortedatum&&!oranjeLabel&&!bioFacts.length&&(
+                <div className="empty" style={{padding:0}}>Nog geen profieldata beschikbaar.</div>
+              )}
+            </div>
           </div>
         </div>
       </div>
