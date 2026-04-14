@@ -1,6 +1,16 @@
 {
   "SCHC": [
     {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
+      "bullets": [
+        "SCHC speelde op 12 april 2026 voor de tweede keer op rij gelijk (2-2 tegen Oranje-Rood) in de Tulp Hoofdklasse.",
+        "SCHC was op 12 april 2026 32 competitieduels ongeslagen en 25 uitduels zonder nederlaag in de Tulp Hoofdklasse."
+      ],
+      "competitie": "HK"
+    },
+    {
       "datum": "2026-04-13",
       "titel": "Het weekend in cijfers mijlpaal Telgenkamp, einde… Tulp Hoofdklasse",
       "link": "https://drive.google.com/file/d/1MNRcpN1lr6T0iSyZh9SplUgNH-oRaXz3",
@@ -1922,10 +1932,10 @@
   "Rotterdam": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "De zesde zege op rij van Rotterdam op 12 april 2026 is momenteel de langste zegereeks van alle hoofdklasseploegen."
+        "Rotterdam verloor op 12 april 2026 met 1-0 van Den Bosch, wat een einde maakte aan hun reeks van drie ongeslagen duels."
       ],
       "competitie": "HK"
     },
@@ -1947,6 +1957,15 @@
       "link": "https://drive.google.com/file/d/1nyLhZSDLjE-VhqL5xs9UL6wCR8jhc1x6",
       "bullets": [
         "Speelde twee weken voor 12 april 2026 gelijk tegen Hurley in HK"
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "De zesde zege op rij van Rotterdam op 12 april 2026 is momenteel de langste zegereeks van alle hoofdklasseploegen."
       ],
       "competitie": "HK"
     },
@@ -2843,10 +2862,10 @@
   "Den Bosch": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "Den Bosch zakte op 12 april 2026 door de nederlaag naar de vijfde plaats, op twee punten van Pinoké."
+        "Den Bosch verzekerde zich op 12 april 2026 van de play-offs door met 1-0 van Rotterdam te winnen in de Tulp Hoofdklasse."
       ],
       "competitie": "HK"
     },
@@ -2860,6 +2879,15 @@
         "Den Bosch won zondag met 2-0 van Rotterdam.",
         "Den Bosch is recordhouder met 35 uitwedstrijden zonder verlies (gedeeld met SCHC).",
         "Den Bosch had het HK-record van 61 opeenvolgende uitwedstrijden met een doelpunt (2007-2013)."
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "Den Bosch zakte op 12 april 2026 door de nederlaag naar de vijfde plaats, op twee punten van Pinoké."
       ],
       "competitie": "HK"
     },
@@ -4067,6 +4095,15 @@
     }
   ],
   "HDM": [
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
+      "bullets": [
+        "HDM boekte op 12 april 2026 hun eerste thuiszege sinds 28 september vorig jaar door Hurley met 1-0 te verslaan."
+      ],
+      "competitie": "HK"
+    },
     {
       "datum": "2026-04-13",
       "titel": "Het weekend in cijfers mijlpaal Telgenkamp, einde… Tulp Hoofdklasse",
@@ -5307,13 +5344,10 @@
   "Oranje-Rood": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "Koploper Oranje-Rood rekende op 12 april 2026 af met Bloemendaal; het werd 4-1.",
-        "Oranje-Rood boekte op 12 april 2026 pas de tweede thuiszege ooit op Bloemendaal.",
-        "De vorige thuisoverwinning van Oranje-Rood op Bloemendaal dateerde van 26 maart 2017 (5-4).",
-        "Oranje-Rood is op 12 april 2026 al 21 wedstrijden zonder nederlaag en 16 thuiswedstrijden ongeslagen."
+        "Oranje-Rood pakte op 12 april 2026 een verrassend punt tegen SCHC (2-2), wat hen hielp in de degradatiestrijd."
       ],
       "competitie": "HK"
     },
@@ -5359,6 +5393,18 @@
         "Won met 4-1 van Bloemendaal op 12 april 2026 in HK",
         "Is koploper in de competitie",
         "Heeft geleerd van eerder in het seizoen verspeelde punten in de slotfase"
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "Koploper Oranje-Rood rekende op 12 april 2026 af met Bloemendaal; het werd 4-1.",
+        "Oranje-Rood boekte op 12 april 2026 pas de tweede thuiszege ooit op Bloemendaal.",
+        "De vorige thuisoverwinning van Oranje-Rood op Bloemendaal dateerde van 26 maart 2017 (5-4).",
+        "Oranje-Rood is op 12 april 2026 al 21 wedstrijden zonder nederlaag en 16 thuiswedstrijden ongeslagen."
       ],
       "competitie": "HK"
     },
@@ -6121,12 +6167,10 @@
   "Bloemendaal": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "Bloemendaal leed op 12 april 2026 na vijf uitduels weer een nederlaag op vreemde bodem.",
-        "Bloemendaal blijft op 12 april 2026 zesde, op vijf punten van nummer vier Pinoké.",
-        "Bloemendaal dreigt op 12 april 2026 voor het eerst in tien jaar de play-offs te missen (nog vier wedstrijden)."
+        "Bloemendaal beëindigde op 12 april 2026 een reeks van drie nederlagen met een 1-1 gelijkspel tegen Tilburg."
       ],
       "competitie": "HK"
     },
@@ -6163,6 +6207,17 @@
         "Ontbrak slechts twee keer in de play-offs (2001 en 2016) in dertig edities",
         "Leed de zesde nederlaag dit seizoen op 12 april 2026",
         "De kans dat Bloemendaal de play-offs haalt, is na 12 april 2026 een stuk kleiner geworden"
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "Bloemendaal leed op 12 april 2026 na vijf uitduels weer een nederlaag op vreemde bodem.",
+        "Bloemendaal blijft op 12 april 2026 zesde, op vijf punten van nummer vier Pinoké.",
+        "Bloemendaal dreigt op 12 april 2026 voor het eerst in tien jaar de play-offs te missen (nog vier wedstrijden)."
       ],
       "competitie": "HK"
     },
@@ -7302,10 +7357,10 @@
   "Amsterdam": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "Amsterdam won op 12 april 2026 met 3-1 van Klein Zwitserland, de eerste keer sinds 28 februari 2021 in het Wagener Stadion."
+        "Amsterdam won op 12 april 2026 met 3-2 van HGC, hun vijfde overwinning op rij in de Tulp Hoofdklasse."
       ],
       "competitie": "HK"
     },
@@ -7326,6 +7381,15 @@
       "link": "https://drive.google.com/file/d/1nyLhZSDLjE-VhqL5xs9UL6wCR8jhc1x6",
       "bullets": [
         "Yara Akkerman maakt volgend seizoen de overstap naar Amsterdam"
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "Amsterdam won op 12 april 2026 met 3-1 van Klein Zwitserland, de eerste keer sinds 28 februari 2021 in het Wagener Stadion."
       ],
       "competitie": "HK"
     },
@@ -8553,13 +8617,10 @@
   "Hurley": [
     {
       "datum": "2026-04-11T22:00:00.000Z",
-      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
-      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
       "bullets": [
-        "Hurley boekte op 12 april 2026 de eerste competitiezege van het seizoen (2-1 tegen HDM), na 27 duels zonder overwinning.",
-        "Hurley's overwinning op 12 april 2026 was de eerste zege sinds 23 november 2024, toen ze met 3-2 van SCHC wonnen.",
-        "Hurley bleef op 12 april 2026 voor het eerst sinds 8 november vorig jaar (3-3 tegen Laren) niet met lege handen achter.",
-        "Ondanks de zege op 12 april 2026 blijft Hurley hekkensluiter, maar de achterstand op Laren is gekrompen naar één punt."
+        "Hurley is op 12 april 2026 vijf duels zonder overwinning en drie uitduels zonder winst na een 1-0 verlies tegen HDM."
       ],
       "competitie": "HK"
     },
@@ -8584,6 +8645,18 @@
         "Staat negende op de ranglijst op 12 april 2026 in HK",
         "Heeft vijf competitiewedstrijden zonder overwinning op 12 april 2026 in HK",
         "Versloeg HDM eerder dit seizoen met 5-1 in een thuiswedstrijd in HK"
+      ],
+      "competitie": "HK"
+    },
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (H)  eerste zege Hurley, Pinoké passeert Den Bosch",
+      "link": "https://drive.google.com/file/d/1tmoUMUPlO4PnDAZkFcguMMCLmxvogxpt",
+      "bullets": [
+        "Hurley boekte op 12 april 2026 de eerste competitiezege van het seizoen (2-1 tegen HDM), na 27 duels zonder overwinning.",
+        "Hurley's overwinning op 12 april 2026 was de eerste zege sinds 23 november 2024, toen ze met 3-2 van SCHC wonnen.",
+        "Hurley bleef op 12 april 2026 voor het eerst sinds 8 november vorig jaar (3-3 tegen Laren) niet met lege handen achter.",
+        "Ondanks de zege op 12 april 2026 blijft Hurley hekkensluiter, maar de achterstand op Laren is gekrompen naar één punt."
       ],
       "competitie": "HK"
     },
@@ -9849,6 +9922,15 @@
     }
   ],
   "Tilburg": [
+    {
+      "datum": "2026-04-11T22:00:00.000Z",
+      "titel": "HK (D)  OR pakt punt tegen SCHC, DB verzekerd van play-offs",
+      "link": "https://drive.google.com/file/d/13zIx-ZCsLMK3fhDO-t5q3Lkpyony59RN",
+      "bullets": [
+        "Tilburg pakte op 12 april 2026 een punt (1-1 tegen Bloemendaal) na vijf thuisnederlagen op rij, maar bleef hekkensluiter."
+      ],
+      "competitie": "HK"
+    },
     {
       "datum": "2026-04-12",
       "titel": "Hurley in degradatiezorgen ‘Zo hadden we het ons niet voorgesteld’",
