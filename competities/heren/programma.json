@@ -5123,7 +5123,8 @@
           "minuut": 50,
           "type": "geel"
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Laren",
