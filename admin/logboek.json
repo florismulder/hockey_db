@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "nieuwe_speler_wachtrij",
+      "id": "speler_z",
+      "naam": "Speler Z",
+      "velden": {
+        "naam": "Speler Z",
+        "club": "SCHC",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-14T18:04:09.827Z"
+    },
+    {
       "type": "speler",
       "id": "hjalmar_voskuil",
       "naam": "Hjalmar Voskuil",
