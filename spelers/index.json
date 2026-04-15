@@ -8593,6 +8593,14 @@
       "vd": "",
       "sc": "",
       "sb": ""
+    },
+    {
+      "id": "pim_haring",
+      "naam": "Pim Haring",
+      "club": "Oranje-Rood",
+      "geslacht": "heren",
+      "keeper": false,
+      "aanvoerder": false
     }
   ]
 }
