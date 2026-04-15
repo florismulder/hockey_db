@@ -257,5 +257,17 @@
       "EuroHockey Club Champions Cup dames": "2015",
       "Euro Hockey League dames": "2026"
     }
+  },
+  "larensche_mixed_hockey_club": {
+    "club": "Larensche Mixed Hockey Club",
+    "opgericht": "1923",
+    "stadion": "Sportpark Eemnesserweg",
+    "website": "http://www.lmhc.nl/",
+    "successen": {
+      "Landskampioen heren": "1956, 1961, 1969",
+      "Landskampioen zaalhockey dames": "2008, 2018, 2020",
+      "EuroHockey Club Champions Cup dames": "2012",
+      "Europacup zaalhockey dames": "2019"
+    }
   }
 }
