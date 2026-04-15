@@ -8576,6 +8576,22 @@
       "vd": "",
       "sc": "",
       "sb": ""
+    },
+    {
+      "id": "pim_haring",
+      "naam": "Pim Haring",
+      "club": "Oranje-Rood",
+      "geslacht": "heren",
+      "rugnummer": "",
+      "keeper": false,
+      "aanvoerder": false,
+      "nationaliteit": "",
+      "land_code": "",
+      "oranje": "",
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     }
   ]
 }
