@@ -238,5 +238,14 @@
       "Landskampioen zaalhockey heren": "1995, 2006, 2011, 2023, 2026",
       "Landskampioen zaalhockey dames": "1977, 1978, 1981, 1985, 2019"
     }
+  },
+  "thc_hurley": {
+    "club": "THC Hurley",
+    "opgericht": "1932",
+    "stadion": "Amsterdamse Bos",
+    "website": "https://www.hurley.nl/",
+    "successen": {
+      "Kampioen Overgangsklasse heren": "2013"
+    }
   }
 }
