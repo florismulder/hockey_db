@@ -3517,6 +3517,14 @@ function App() {
 
   useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
 
+  // Auto-poll: wachtrij badge elke 30 seconden verversen zodat nieuwe PDF-verwerkingen
+  // automatisch verschijnen zonder handmatig te verversen.
+  useEffect(() => {
+    if (!user) return;
+    const interval = setInterval(laadWachtrij, 30000);
+    return () => clearInterval(interval);
+  }, [user, laadWachtrij]);
+
   const uitloggen = () => {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(TOKEN_KEY);
