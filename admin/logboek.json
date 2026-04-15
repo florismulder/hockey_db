@@ -11,6 +11,19 @@
       },
       "oud": {},
       "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-15T15:50:55.599Z"
+    },
+    {
+      "type": "nieuwe_speler_wachtrij",
+      "id": "pim_haring",
+      "naam": "Pim Haring",
+      "velden": {
+        "naam": "Pim Haring",
+        "club": "Oranje-Rood",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
       "datum": "2026-04-15T15:50:50.031Z"
     },
     {
