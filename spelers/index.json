@@ -5657,13 +5657,14 @@
       "rugnummer": 13,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Schots",
       "land_code": "GB-SCT",
       "oranje": "",
       "doelpunten_seizoen": 19,
       "vd": 11,
       "sc": 8,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "2002-07-06"
     },
     {
       "id": "henrik_mertgens",
