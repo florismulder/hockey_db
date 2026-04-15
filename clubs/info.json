@@ -91,17 +91,12 @@
   },
   "hc_tilburg": {
     "club": "HC Tilburg",
-    "volledige_naam": "HC Tilburg",
     "opgericht": "2011",
-    "plaats": "Tilburg",
     "stadion": "",
-    "leden": "2447",
     "website": "http://www.hctilburg.com/",
-    "beschrijving": "HC Tilburg is een hockeyclub uit Tilburg, ontstaan op 6 juli 2011 uit een fusie van de voormalige clubs TMHC Tilburg en TMHC Forward. Met 2447 leden (per 31-10-2015) is het de op een na grootste hockeyclub van Nederland.",
     "successen": {
-      "Landstitel heren": "1960, 1970"
-    },
-    "bijgewerkt": "2026-04-10"
+      "Landskampioen heren": "1960, 1970"
+    }
   },
   "schc": {
     "club": "SCHC",
