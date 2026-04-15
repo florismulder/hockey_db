@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "a2ec4d12-af02-4be1-b01b-b4b7e58ab28b",
+      "naam": "Opeens een bijrol voor Bloemendaal  'Dat voelt onwennig'",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-15T18:57:46.238Z"
+    },
+    {
       "type": "nieuwe_speler_wachtrij",
       "id": "pim_haring",
       "naam": "Pim Haring",
