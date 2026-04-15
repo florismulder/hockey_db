@@ -708,8 +708,10 @@ function ClubPagina({club, geslacht, spelers, nieuws, programma, nav, oranje}) {
           }
           return true;
         });
-        setClubTeamNieuwsH(zichtbaar.filter(item => !item.geslacht || item.geslacht === "heren"));
-        setClubTeamNieuwsD(zichtbaar.filter(item => !item.geslacht || item.geslacht === "dames"));
+        // Strikte filter: geslacht moet matchen OF geen geslacht
+        // Items met geslacht="heren" mogen NIET bij dames verschijnen en vice versa
+        setClubTeamNieuwsH(zichtbaar.filter(item => !item.geslacht || item.geslacht === "heren" || item.geslacht === "beiden"));
+        setClubTeamNieuwsD(zichtbaar.filter(item => !item.geslacht || item.geslacht === "dames" || item.geslacht === "beiden"));
       })
       .catch(()=>{ setClubTeamNieuwsH([]); setClubTeamNieuwsD([]); });
   }, [club]);
@@ -1110,10 +1112,13 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 ["SB","sb",speler.sb??0,"#166534"],
               ].map(([lbl,type,val,kleur])=>{
                 const typeWedstrijden=gescoordInPerType(type);
-                const klikbaar=val>0&&typeWedstrijden.length>0;
+                // Fallback: als type-specifieke wedstrijden leeg zijn maar val > 0,
+                // gebruik dan alle gescoorde wedstrijden (type-info ontbreekt soms in data)
+                const effectieveWedstrijden = typeWedstrijden.length>0 ? typeWedstrijden : (val>0 ? gescoordIn : []);
+                const klikbaar=val>0&&effectieveWedstrijden.length>0;
                 const isActief=actieveStat===type;
                 return (
-                  <div key={type} onClick={klikbaar?()=>toggleStat(type):undefined}
+                  <div key={type} onClick={klikbaar?()=>{ if(effectieveWedstrijden.length>0&&typeWedstrijden.length===0) toggleStat("goals"); else toggleStat(type); }:undefined}
                     style={{background:"var(--surface2)",
                       border:`1px solid ${isActief?"var(--accent)":klikbaar?"var(--border2)":"var(--border)"}`,
                       borderRadius:isActief?"8px 8px 0 0":8,padding:"10px 12px",textAlign:"center",
@@ -1555,7 +1560,17 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
             </div>
           )}
           {!scheids.length&&!w.viaplay?.stats_onderling?.length&&(
-            <div className="empty" style={{fontSize:12}}>Geen extra wedstrijdinfo beschikbaar.</div>
+            <div>
+              <div style={{fontSize:12,color:"var(--muted)",fontStyle:"italic",marginBottom:12}}>
+                Geen Viaplay data beschikbaar voor deze wedstrijd.
+              </div>
+              {/* Toon H2H direct als alternatief */}
+              <button onClick={()=>{setGeselecteerd(null);laadH2H();}}
+                style={{fontSize:12,color:"var(--accent)",background:"none",border:"1px solid var(--accent)",
+                  borderRadius:5,padding:"5px 12px",cursor:"pointer",fontFamily:"inherit",fontWeight:600}}>
+                ⚔ Bekijk onderlinge resultaten
+              </button>
+            </div>
           )}
         </div>
       );
@@ -1841,7 +1856,12 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
             {thuisNaam}
           </div>
           <div
-            onClick={()=>setGeselecteerd(g=>g?.type==="wedstrijd"?null:{type:"wedstrijd"})}
+            onClick={()=>{
+              if(geselecteerd?.type==="wedstrijd") { setGeselecteerd(null); return; }
+              setGeselecteerd({type:"wedstrijd"});
+              // Laad H2H automatisch als er geen viaplay is
+              if(!w.viaplay&&!h2hData) laadH2H();
+            }}
             style={{cursor:"pointer"}}>
             {score
               ? <div className="wdsc" style={{
