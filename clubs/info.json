@@ -251,5 +251,17 @@
     "successen": {
       "Kampioen Overgangsklasse heren": "2013"
     }
+  },
+  "stichtsche_cricket_en_hockey_club": {
+    "club": "Stichtsche Cricket en Hockey Club",
+    "opgericht": "1906",
+    "stadion": "Sportpark Kees Boekelaan",
+    "website": "https://www.schc.nl/",
+    "successen": {
+      "Landskampioen heren": "1959",
+      "Landskampioen zaalhockey heren": "2000, 2019",
+      "EuroHockey Club Champions Cup dames": "2015",
+      "Euro Hockey League dames": "2026"
+    }
   }
 }
