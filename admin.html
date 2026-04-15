@@ -1280,7 +1280,12 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
     return volgorde.map(k => map[k]).sort((a,b) => normaliseerDatum(b.datum).localeCompare(normaliseerDatum(a.datum)));
   }, [spelersNieuws]);
 
-  const herlaad = async () => {
+  const herlaad = async (directeItems) => {
+    if (directeItems && Array.isArray(directeItems)) {
+      setSpelersNieuws(directeItems); return;
+    }
+    // Wacht even op GitHub Pages cache
+    await new Promise(r=>setTimeout(r,4000));
     const d = await fetch("nieuws/spelersnieuws.json?t=" + Date.now()).then(r=>r.json()).catch(()=>({}));
     setSpelersNieuws(d[spelerId] || []);
   };
@@ -1329,11 +1334,19 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
         datum: groep.datum, titel: groep.titel, link: groep.link,
         bullet: nieuweTekst.trim(), competitie: groep.competitie || "onbekend"
       }});
-      await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen: true});
+      const verbergRes = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen: true});
       toast("✅ Bullet bewerkt");
       setEditBullet(null);
-      await new Promise(r => setTimeout(r, 2500));
-      await herlaad();
+      // Directe state update: voeg nieuw toe, verberg oud
+      setSpelersNieuws(prev => {
+        const nieuw = {datum:groep.datum,titel:groep.titel,link:groep.link,
+          bullet:nieuweTekst.trim(),competitie:groep.competitie||"onbekend",handmatig:true,verborgen:false};
+        const updated = (prev||[]).map(item => {
+          const s = (item.link||item.artikel_link||"")+"||"+(item.bullet||"");
+          return s === bulletSleutel ? {...item, verborgen:true} : item;
+        });
+        return [nieuw, ...updated];
+      });
     } catch(e) { toast(e.message, "error"); }
     finally { setBusyKey("edit"+bulletSleutel, false); }
   };
@@ -1347,9 +1360,11 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
         bullet: nieuwBulletTekst.trim(), competitie: nieuwBullet.competitie || "onbekend"
       }});
       toast("✅ Bullet toegevoegd");
+      // Directe state update zonder GitHub fetch
+      const nieuwItem = {datum:nieuwBullet.datum,titel:nieuwBullet.titel,link:nieuwBullet.link,
+        bullet:nieuwBulletTekst.trim(),competitie:nieuwBullet.competitie||"onbekend",handmatig:true,verborgen:false};
+      setSpelersNieuws(prev => [nieuwItem, ...(prev||[])]);
       setNieuwBullet(null); setNieuwBulletTekst("");
-      await new Promise(r => setTimeout(r, 2500));
-      await herlaad();
     } catch(e) { toast(e.message, "error"); }
     finally { setBusyKey("nieuw", false); }
   };
@@ -1503,7 +1518,7 @@ function NieuwsToevoegenModal({spelerId, targetType, toast, onClose, onOpgeslage
       const res = await apiCall("voegNieuwsToe", {targetId:spelerId, targetType, nieuwsItem:form});
       if (!res.success) throw new Error(res.error);
       toast("✅ Nieuws toegevoegd");
-      onOpgeslagen();
+      onOpgeslagen(res.nieuws || []);
       onClose();
     } catch(e) { toast(e.message,"error"); }
     finally { setBusy(false); }

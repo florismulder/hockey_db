@@ -49,6 +49,14 @@ function formatNieuwsDatum(str) {
   // yyyy-mm-dd → zet om naar dd-mm-yyyy
   const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (m) return `${m[3]}-${m[2]}-${m[1]}`;
+  // Date.toString() formaat: "Wed Apr 08 2026..." of "Tue Jan 01..."
+  const d = new Date(s);
+  if (!isNaN(d.getTime())) {
+    const dd = String(d.getDate()).padStart(2,"0");
+    const mm = String(d.getMonth()+1).padStart(2,"0");
+    const yyyy = d.getFullYear();
+    return `${dd}-${mm}-${yyyy}`;
+  }
   return s.slice(0,10);
 }
 
@@ -1834,7 +1842,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           </div>
           <div
             onClick={()=>setGeselecteerd(g=>g?.type==="wedstrijd"?null:{type:"wedstrijd"})}
-            style={{cursor:(w.viaplay||scheids.length)?"pointer":"default"}}>
+            style={{cursor:"pointer"}}>
             {score
               ? <div className="wdsc" style={{
                   outline:geselecteerd?.type==="wedstrijd"?"2px solid var(--accent)":"none",
@@ -1972,8 +1980,8 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                     {!e._thuis?(
                       <div style={{fontSize:11,color:"var(--muted)",
                         display:"flex",alignItems:"center",gap:5}}>
-                        {emoji}
                         {e.minuut!=null&&<span style={{fontFamily:"monospace",fontSize:10}}>{e.minuut}'</span>}
+                        {emoji}
                         <SpelerLink naam={e.naam}/>
                       </div>
                     ):<div/>}
@@ -2857,7 +2865,7 @@ function NieuwsPagina({nav, spelers}) {
           <div>
             <div style={{fontSize:20,fontWeight:700,letterSpacing:"-.5px"}}>Nieuws</div>
             <div style={{fontSize:12,color:"var(--muted)",marginTop:2}}>
-              hockey.nl · spelersnieuws · teamnieuws
+              Clubnieuws · Spelersnieuws
             </div>
           </div>
           <div style={{display:"flex",gap:6}}>
