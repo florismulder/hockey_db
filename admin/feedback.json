@@ -1,4 +1,13 @@
 {
-  "positieve_bullets": [],
+  "positieve_bullets": [
+    {
+      "bullet": "Casper van der Veen (Bloemendaal) is op 13 april 2026 door een schouderblessure voor de rest van het seizoen uitgeschakeld.",
+      "bron_zin": "De week dáárop valt Casper op zijn schouder en is zijn seizoen voorbij."
+    },
+    {
+      "bullet": "Jorrit Croon (Bloemendaal) is op 13 april 2026 al wekenlang afwezig door een knieblessure.",
+      "bron_zin": "Bloemendaal al wekenlang geen beroep kan doen op Jorrit Croon (knieblessure)"
+    }
+  ],
   "verborgen_bullets": []
 }
