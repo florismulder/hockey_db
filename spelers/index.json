@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-14",
+  "bijgewerkt": "2026-04-15",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -5657,14 +5657,13 @@
       "rugnummer": 13,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "Schots",
+      "nationaliteit": "",
       "land_code": "GB-SCT",
       "oranje": "",
       "doelpunten_seizoen": 19,
       "vd": 11,
       "sc": 8,
-      "sb": 0,
-      "geboortedatum": "2022-07-06"
+      "sb": 0
     },
     {
       "id": "henrik_mertgens",
@@ -8551,6 +8550,22 @@
       "naam": "Speler Z",
       "club": "SCHC",
       "geslacht": "dames",
+      "rugnummer": "",
+      "keeper": false,
+      "aanvoerder": false,
+      "nationaliteit": "",
+      "land_code": "",
+      "oranje": "",
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
+    },
+    {
+      "id": "pim_haring",
+      "naam": "Pim Haring",
+      "club": "Oranje-Rood",
+      "geslacht": "heren",
       "rugnummer": "",
       "keeper": false,
       "aanvoerder": false,
