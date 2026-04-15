@@ -721,6 +721,10 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
                 </div>
                 <div className="wq-acties">
                   <button className="btn btn-secondary btn-sm" onClick={()=>alleGoedkeuren(art.id)}>✓ Alles</button>
+                  <button className="btn btn-secondary btn-sm"
+                    onClick={()=>setItems(prev=>prev.map(a=>a.id!==art.id?a:{...a,bullets:a.bullets.map(b=>({...b,goedgekeurd:null}))}))}>
+                    ○ Niets
+                  </button>
                   <button className="btn btn-success btn-sm" onClick={()=>opslaan(art)} disabled={aantalOk===0}>
                     Publiceer{aantalOk>0?` (${aantalOk})`:""}
                   </button>
@@ -1285,13 +1289,23 @@ function SpelerNieuwsTab({spelerId, spelers, spelersNieuws, setSpelersNieuws, la
 
   const toggleBullet = async (bulletSleutel, verborgen) => {
     setBusyKey("b"+bulletSleutel, true);
+    // Optimistische update — direct in UI, geen wachten op GitHub cache
+    setSpelersNieuws(prev => (prev||[]).map(item => {
+      const sleutel = (item.link||item.artikel_link||"") + "||" + (item.bullet||"");
+      return sleutel === bulletSleutel ? {...item, verborgen} : item;
+    }));
     try {
       const res = await apiCall("verbergBullet", {spelerId, bulletSleutel, verborgen});
       if (!res.success) throw new Error(res.error);
-      toast(verborgen ? "🙈 Verborgen" : "👁 Zichtbaar");
-      await new Promise(r => setTimeout(r, 3000));
-      await herlaad();
-    } catch(e) { toast(e.message, "error"); }
+      toast(verborgen ? "🙈 Verborgen — live na ~1 min" : "👁 Zichtbaar gemaakt");
+    } catch(e) {
+      // Rollback bij fout
+      setSpelersNieuws(prev => (prev||[]).map(item => {
+        const sleutel = (item.link||item.artikel_link||"") + "||" + (item.bullet||"");
+        return sleutel === bulletSleutel ? {...item, verborgen: !verborgen} : item;
+      }));
+      toast(e.message, "error");
+    }
     finally { setBusyKey("b"+bulletSleutel, false); }
   };
 
@@ -2519,6 +2533,18 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                     <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",flex:1}}>
                       {formatDatum(item.datum)||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
                     </div>
+                    <button onClick={async()=>{
+                        try{
+                          const res=await apiCall("updateTeamnieuws",{club:bronClub,items:nieuwsData[bronClub]||[]});
+                          if(res.ok)toast("✅ "+bronClub+" opgeslagen");
+                          else throw new Error(res.fout||"Fout");
+                        }catch(e){toast("❌ "+e.message,"error");}
+                      }}
+                      style={{background:"var(--accent-light)",border:"1px solid var(--accent)",
+                        borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
+                        color:"var(--accent)",fontWeight:600,flexShrink:0}}>
+                      💾 Opslaan
+                    </button>
                     <button onClick={()=>toggleVerborg(sleutel,bronClub)}
                       title={isVerborgen?"Overal tonen":"Overal verbergen"}
                       style={{background:isVerborgen?"#fee2e2":"var(--surface2)",
@@ -2853,7 +2879,32 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
                     <div style={{fontWeight:600,color:"#dc2626",fontSize:13}}>⚠ Verdachte clubkoppelingen</div>
                     <button className="btn btn-success btn-sm"
-                      onClick={()=>{ setEdit(e=>({...e,geverifieerd:true})); setTimeout(opslaan,30); }}
+                      onClick={async()=>{
+                        setBusy(true);
+                        try{
+                          const e2={...edit,geverifieerd:true};
+                          const origDatum=wedstrijden[geselecteerd].datum;
+                          const origThuis=wedstrijden[geselecteerd].thuis;
+                          const origUit=wedstrijden[geselecteerd].uit;
+                          const resp=await fetch(`https://florismulder.github.io/hockey_db/competities/${geslacht}/programma.json?t=${Date.now()}`);
+                          const huidig=await resp.json();
+                          const idx2=huidig.wedstrijden.findIndex(w=>w.datum===origDatum&&w.thuis===origThuis&&w.uit===origUit);
+                          if(idx2>=0){
+                            huidig.wedstrijden[idx2]={...huidig.wedstrijden[idx2],...e2,geverifieerd:true,
+                              score_thuis:e2.score_thuis===""||e2.score_thuis===null?null:parseInt(e2.score_thuis),
+                              score_uit:e2.score_uit===""||e2.score_uit===null?null:parseInt(e2.score_uit),
+                              scorers:(e2.scorers||[]).map(s=>({...s,minuut:s.minuut===""?null:parseInt(s.minuut)||null})),
+                              kaarten:(e2.kaarten||[]).map(k=>({...k,minuut:k.minuut===""?null:parseInt(k.minuut)||null}))};
+                            const res=await apiCall("adminSlaWedstrijdOp",{geslacht,programma:huidig});
+                            if(res.ok){
+                              toast("✅ Geverifieerd — verdacht-markering verwijderd");
+                              const n=[...wedstrijden]; n[geselecteerd]={...e2,geverifieerd:true};
+                              setWedstrijden(n); setEdit({...e2,geverifieerd:true});
+                            } else throw new Error(res.fout||"Fout");
+                          }
+                        }catch(err){toast("❌ "+err.message,"error");}
+                        finally{setBusy(false);}
+                      }}
                       disabled={bezig}>✓ Klopt toch</button>
                   </div>
                   <div style={{fontSize:12,color:"#dc2626",marginBottom:6}}>
