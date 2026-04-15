@@ -3094,7 +3094,29 @@ function App() {
     }));
   },[topscorers]);
 
-  const nav=(p,id=null)=>{setPage(p);setPageId(id);window.scrollTo(0,0);};
+  // Nav met URL-hash voor browser back/forward
+  const nav=React.useCallback((p,id=null)=>{
+    setPage(p);setPageId(id);window.scrollTo(0,0);
+    // Sla pagina op in hash (alleen simpele pagina's, geen complexe objecten)
+    if(window.history.pushState) window.history.pushState({p,id:null},"","#"+p);
+  },[]);
+
+  // Luister naar browser back/forward
+  React.useEffect(()=>{
+    const handler=(e)=>{
+      if(e.state?.p) { setPage(e.state.p); setPageId(e.state.id||null); window.scrollTo(0,0); }
+      else {
+        // Fallback: parse hash
+        const hash=window.location.hash.replace("#","");
+        if(hash) { setPage(hash); setPageId(null); window.scrollTo(0,0); }
+        else { setPage("dashboard"); setPageId(null); }
+      }
+    };
+    window.addEventListener("popstate",handler);
+    // Zet initiële hash
+    if(!window.location.hash) window.history.replaceState({p:"dashboard",id:null},"","#dashboard");
+    return ()=>window.removeEventListener("popstate",handler);
+  },[]);
   const isActive=id=>page===id||(page==="speler"&&id==="spelers")||(page==="nieuws"&&id==="nieuws");
 
   return (

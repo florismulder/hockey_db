@@ -552,49 +552,79 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
             <span style={{fontSize:10,color:"var(--muted)",marginLeft:6,opacity:.4}}>✏</span>
           </div>
         )}
-        {b.bron_zin && (
-          <div>
+        <div>
             <button onClick={()=>setToonBron(t=>!t)}
-              style={{fontSize:10,color:"var(--muted)",background:"none",border:"none",cursor:"pointer",padding:"2px 0"}}>
+              style={{fontSize:10,color:"var(--muted)",background:"none",border:"none",cursor:"pointer",padding:"2px 0",opacity:b.bron_zin?1:.4}}>
               {toonBron?"▲ verberg bron":"▾ toon bron"}
             </button>
-            <div className={`wq-bron${toonBron?" zichtbaar":""}`}>"{b.bron_zin}"</div>
+            <div className={`wq-bron${toonBron?" zichtbaar":""}`}>
+              {b.bron_zin
+                ? `"${b.bron_zin}"`
+                : <span style={{color:"var(--muted)",fontStyle:"italic"}}>Geen bronzin beschikbaar</span>}
+            </div>
           </div>
-        )}
         <div className="wq-koppeling">
+          {/* Speler koppeling */}
           {b.type==="speler" && (
-            <>
+            <div style={{display:"flex",gap:4,alignItems:"center",flexWrap:"wrap"}}>
               <select value={b.speler_id||""}
                 onChange={e=>{
                   const opt=spelerOpties.find(o=>o.id===e.target.value);
                   onChange({speler_id:e.target.value,speler_naam:opt?.label?.split(" (")[0]||"",gekoppeld:!!e.target.value});
                 }}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:200,background:"var(--surface)"}}>
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,maxWidth:190,background:"var(--surface)"}}>
                 <option value="">— kies speler —</option>
                 {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
               </select>
               <button className="btn btn-secondary btn-sm" style={{fontSize:10,padding:"2px 7px"}}
                 onClick={onNieuweSpeler}>+ Nieuw</button>
-            </>
+              {/* Club + team ook bij speler-bullets */}
+              <select value={b.club||""}
+                onChange={e=>onChange({club:e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",maxWidth:130}}>
+                <option value="">— club —</option>
+                {clubs.map(c=><option key={c} value={c}>{c}</option>)}
+              </select>
+              <select value={b.team||"H1"} onChange={e=>onChange({team:e.target.value})}
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:68}}>
+                {TEAM_OPTIES.map(t=><option key={t} value={t}>{t}</option>)}
+              </select>
+            </div>
           )}
+          {/* Club koppeling */}
           {(b.type==="club"||b.type==="onbekend") && (
-            <>
+            <div style={{display:"flex",gap:4,alignItems:"center",flexWrap:"wrap"}}>
               <select value={b.club||""}
                 onChange={e=>onChange({club:e.target.value,type:"club",gekoppeld:!!e.target.value})}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)"}}>
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",maxWidth:160}}>
                 <option value="">— kies club —</option>
                 {clubs.map(c=><option key={c} value={c}>{c}</option>)}
               </select>
               <select value={b.team||"H1"} onChange={e=>onChange({team:e.target.value})}
-                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:72}}>
+                style={{fontSize:11,padding:"2px 6px",border:"1px solid var(--border2)",borderRadius:5,background:"var(--surface)",width:68}}>
                 {TEAM_OPTIES.map(t=><option key={t} value={t}>{t}</option>)}
               </select>
-            </>
+            </div>
           )}
-          {b.bewerkt&&<span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
-          {!b.gekoppeld&&b.type==="speler"&&
-            <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>}
-          {b.verdacht&&<span style={{fontSize:10,color:"#dc2626",fontWeight:600}}>⚠ verkeerd geslacht?</span>}
+          <div style={{display:"flex",gap:6,alignItems:"center",marginTop:2,flexWrap:"wrap"}}>
+            {b.bewerkt&&<span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
+            {!b.gekoppeld&&b.type==="speler"&&
+              <span style={{fontSize:10,color:"var(--yellow)",fontWeight:600}}>⚠ niet gekoppeld</span>}
+            {b.verdacht&&(
+              <span style={{display:"flex",alignItems:"center",gap:4}}>
+                <span style={{fontSize:10,color:"#dc2626",fontWeight:600}}>⚠ geslacht?</span>
+                {["heren","dames"].map(g=>(
+                  <button key={g} onClick={()=>onChange({geslacht:g,verdacht:false})}
+                    style={{fontSize:9,padding:"1px 6px",borderRadius:3,border:"1px solid",cursor:"pointer",
+                      background:b.geslacht===g?"var(--accent)":"var(--surface2)",
+                      color:b.geslacht===g?"#fff":"var(--muted)",
+                      borderColor:b.geslacht===g?"var(--accent)":"var(--border2)",fontFamily:"inherit"}}>
+                    {g}
+                  </button>
+                ))}
+              </span>
+            )}
+          </div>
         </div>
       </div>
       <div className="wq-bullet-btns">
