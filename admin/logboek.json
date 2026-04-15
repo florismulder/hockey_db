@@ -1,6 +1,23 @@
 {
   "entries": [
     {
+      "type": "blessure",
+      "id": "casper_van_der_veen",
+      "naam": "casper_van_der_veen",
+      "velden": {
+        "id": "3fdfaffa-f56a-4f97-83f1-68fbcefeb462",
+        "plek": "Schouder",
+        "start": "2026-04-12",
+        "uitleg": "Speelde op 12-4-26 niet mee tegen Oranje-Rood, schouderblessure tot einde van het seizoen.",
+        "verwacht_herstel": "",
+        "actief": true,
+        "toegevoegd": "2026-04-15T04:14:05.516Z"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-15T04:14:06.279Z"
+    },
+    {
       "type": "speler",
       "id": "struan_walker",
       "naam": "Struan Walker",
