@@ -10,5 +10,16 @@
       "actief": true,
       "ingevoerd_door": "fm.florismulder@gmail.com"
     }
+  ],
+  "casper_van_der_veen": [
+    {
+      "id": "3fdfaffa-f56a-4f97-83f1-68fbcefeb462",
+      "plek": "Schouder",
+      "start": "2026-04-12",
+      "uitleg": "Speelde op 12-4-26 niet mee tegen Oranje-Rood, schouderblessure tot einde van het seizoen.",
+      "verwacht_herstel": "",
+      "actief": true,
+      "toegevoegd": "2026-04-15T04:14:05.516Z"
+    }
   ]
 }
