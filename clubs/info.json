@@ -133,18 +133,19 @@
   },
   "pinoke": {
     "club": "Pinoké",
-    "volledige_naam": "Pinoké",
     "opgericht": "1929",
-    "plaats": "Amstelveen",
     "stadion": "Amsterdamse Bos",
-    "leden": "ruim 2.000",
     "website": "http://www.pinoke.nl/",
-    "beschrijving": "Pinoké is een Nederlandse hockeyclub uit Amstelveen. De heren- en damesteams spelen beide op het hoogste niveau. De club, opgericht in 1929, staat bekend om zijn sterke jeugdopleiding en moderne faciliteiten in het Amsterdamse Bos.",
     "successen": {
-      "Landstitel heren": "2023",
-      "EHL": "2024"
-    },
-    "bijgewerkt": "2026-04-10"
+      "Landskampioen heren": "2023",
+      "KNHB Gold Cup heren": "2018",
+      "NK Zaalhockey heren": "2022",
+      "EHL heren": "2024",
+      "NK Zaalhockey dames": "2023",
+      "NK JO18 (zaal)": "2010, 2016, 2020",
+      "NK JO16": "2014, 2015, 2017, 2018, 2024",
+      "NK MO16": "1995, 2011, 2012, 2014"
+    }
   },
   "hurley": {
     "club": "Hurley",
