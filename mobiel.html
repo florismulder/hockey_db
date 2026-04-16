@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hockey Wachtrij">
+<title>Hockey DB — Wachtrij</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏑</text></svg>">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg:#0f0f0f;
+  --surface:#1a1a1a;
+  --surface2:#242424;
+  --surface3:#2e2e2e;
+  --border:#333;
+  --border2:#444;
+  --text:#f0ede8;
+  --muted:#888;
+  --accent:#e07b30;
+  --accent-dim:rgba(224,123,48,.15);
+  --green:#22c55e;
+  --green-dim:rgba(34,197,94,.15);
+  --red:#ef4444;
+  --red-dim:rgba(239,68,68,.15);
+  --blue:#60a5fa;
+  --blue-dim:rgba(96,165,250,.15);
+  --safe-top:env(safe-area-inset-top,0px);
+  --safe-bottom:env(safe-area-inset-bottom,0px);
+}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;overflow:hidden}
+#root{height:100%;display:flex;flex-direction:column}
+button{cursor:pointer;font-family:inherit;border:none;outline:none}
+input,textarea,select{font-family:inherit;outline:none}
+
+/* ── Header ── */
+.hdr{
+  padding:calc(var(--safe-top) + 10px) 16px 12px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:10px;
+  flex-shrink:0;
+}
+.hdr-logo{font-size:20px;font-weight:700;color:var(--accent);letter-spacing:-.5px}
+.hdr-sub{font-size:12px;color:var(--muted);margin-top:1px}
+.hdr-spacer{flex:1}
+.hdr-avatar{width:32px;height:32px;border-radius:50%;border:2px solid var(--border2)}
+.hdr-badge{
+  background:var(--accent);color:#fff;
+  font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:20px;
+  font-family:'DM Mono',monospace;
+}
+
+/* ── Scroll container ── */
+.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+
+/* ── Artikel card ── */
+.artikel{
+  margin:10px 12px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+}
+.artikel-hdr{
+  padding:12px 14px 10px;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:flex-start;gap:8px;
+}
+.artikel-meta{flex:1;min-width:0}
+.artikel-titel{
+  font-size:13px;font-weight:600;
+  line-height:1.3;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.artikel-info{
+  display:flex;gap:6px;align-items:center;margin-top:4px;flex-wrap:wrap;
+}
+.chip{
+  font-size:10px;font-weight:600;padding:2px 7px;border-radius:6px;
+  font-family:'DM Mono',monospace;
+}
+.chip-accent{background:var(--accent-dim);color:var(--accent)}
+.chip-muted{background:var(--surface3);color:var(--muted)}
+.chip-green{background:var(--green-dim);color:var(--green)}
+
+.artikel-toggle{
+  width:32px;height:32px;border-radius:8px;
+  background:var(--surface2);
+  color:var(--muted);font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+
+/* ── Publiceer knop in artikel header ── */
+.btn-pub{
+  display:flex;align-items:center;gap:6px;
+  background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;
+  padding:7px 14px;border-radius:8px;
+  letter-spacing:.2px;
+  width:100%;margin:10px 14px;
+  width:calc(100% - 28px);
+  justify-content:center;
+}
+.btn-pub:disabled{opacity:.4}
+.btn-pub-wrap{padding:2px 0 10px}
+
+/* ── Bullet card ── */
+.bullet{
+  padding:12px 14px;
+  border-top:1px solid var(--border);
+  position:relative;
+}
+.bullet.goedgekeurd{background:var(--green-dim)}
+.bullet.afgekeurd{background:var(--red-dim);opacity:.6}
+
+.bullet-type{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:18px;height:18px;border-radius:4px;
+  font-size:9px;font-weight:800;flex-shrink:0;
+  font-family:'DM Mono',monospace;
+}
+.bt-s{background:var(--blue-dim);color:var(--blue)}
+.bt-c{background:var(--accent-dim);color:var(--accent)}
+.bt-u{background:rgba(234,179,8,.15);color:#eab308}
+
+.bullet-top{display:flex;gap:8px;align-items:flex-start}
+.bullet-tekst{
+  flex:1;font-size:13px;line-height:1.5;
+  color:var(--text);
+}
+.bullet-tekst.klik{cursor:pointer}
+
+.bullet-edit-area{
+  width:100%;background:var(--surface2);
+  border:1px solid var(--accent);border-radius:8px;
+  color:var(--text);font-size:13px;
+  padding:8px 10px;resize:none;
+  margin-top:6px;
+  line-height:1.5;
+}
+
+.bullet-bron{
+  font-size:11px;color:var(--muted);
+  margin-top:6px;padding:6px 8px;
+  background:var(--surface2);border-radius:6px;
+  font-style:italic;line-height:1.4;
+}
+
+.bullet-koppeling{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.bullet-warning{
+  font-size:11px;color:#facc15;font-weight:600;
+  display:flex;align-items:center;gap:4px;
+}
+
+/* ── Swipe actie knoppen ── */
+.bullet-acties{
+  display:flex;gap:6px;margin-top:10px;
+}
+.btn-ok{
+  flex:1;height:40px;border-radius:10px;
+  background:var(--green-dim);color:var(--green);
+  font-size:18px;font-weight:700;
+  border:1.5px solid var(--green);
+  transition:all .1s;
+}
+.btn-ok.actief,.btn-ok:active{background:var(--green);color:#fff}
+.btn-nee{
+  flex:1;height:40px;border-radius:10px;
+  background:var(--red-dim);color:var(--red);
+  font-size:18px;font-weight:700;
+  border:1.5px solid var(--red);
+  transition:all .1s;
+}
+.btn-nee.actief,.btn-nee:active{background:var(--red);color:#fff}
+.btn-edit-sm{
+  width:40px;height:40px;border-radius:10px;
+  background:var(--surface2);color:var(--muted);
+  font-size:15px;
+  border:1.5px solid var(--border2);
+}
+.btn-edit-sm.actief{border-color:var(--accent);color:var(--accent)}
+
+/* ── Select ── */
+.sel{
+  background:var(--surface2);color:var(--text);
+  border:1px solid var(--border2);border-radius:8px;
+  font-size:12px;padding:6px 10px;
+  width:100%;-webkit-appearance:none;
+}
+.sel:active{border-color:var(--accent)}
+
+/* ── Lege state ── */
+.leeg{
+  display:flex;flex-direction:column;align-items:center;
+  padding:60px 24px;gap:12px;
+  color:var(--muted);text-align:center;
+}
+.leeg-icon{font-size:48px;opacity:.4}
+.leeg-titel{font-size:16px;font-weight:600;color:var(--text)}
+.leeg-sub{font-size:13px;line-height:1.5}
+
+/* ── Refresh knop ── */
+.fab{
+  position:fixed;
+  bottom:calc(var(--safe-bottom) + 16px);
+  right:16px;
+  width:50px;height:50px;border-radius:25px;
+  background:var(--accent);color:#fff;
+  font-size:20px;
+  box-shadow:0 4px 20px rgba(224,123,48,.4);
+  display:flex;align-items:center;justify-content:center;
+  border:none;z-index:50;
+  transition:transform .15s;
+}
+.fab:active{transform:scale(.92)}
+
+/* ── Loading spinner ── */
+.spinner{
+  width:18px;height:18px;border-radius:50%;
+  border:2px solid var(--border2);
+  border-top-color:var(--accent);
+  animation:spin .7s linear infinite;display:inline-block;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.laden{display:flex;align-items:center;justify-content:center;padding:40px;gap:10px;color:var(--muted);font-size:13px}
+
+/* ── Login ── */
+.login-wrap{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:32px 24px calc(var(--safe-bottom) + 32px);
+  gap:24px;
+}
+.login-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:20px;padding:28px 24px;
+  width:100%;max-width:340px;
+  display:flex;flex-direction:column;align-items:center;gap:16px;
+}
+.login-logo{font-size:40px;line-height:1}
+.login-titel{font-size:20px;font-weight:700;letter-spacing:-.3px}
+.login-sub{font-size:13px;color:var(--muted);text-align:center;line-height:1.5}
+.alert-err{
+  background:var(--red-dim);border:1px solid var(--red);
+  border-radius:8px;padding:10px 12px;
+  font-size:12px;color:var(--red);width:100%;text-align:center;
+}
+
+/* ── Alles goedkeuren knop ── */
+.btn-alle{
+  background:var(--surface2);color:var(--muted);
+  font-size:11px;font-weight:600;
+  padding:5px 10px;border-radius:7px;
+  border:1px solid var(--border2);
+  display:flex;align-items:center;gap:4px;
+}
+.btn-alle:active{background:var(--surface3)}
+
+/* ── Toast ── */
+.toast-wrap{
+  position:fixed;top:calc(var(--safe-top) + 60px);
+  left:50%;transform:translateX(-50%);
+  z-index:100;pointer-events:none;
+  display:flex;flex-direction:column;gap:6px;align-items:center;
+}
+.toast{
+  background:#fff;color:#111;
+  font-size:13px;font-weight:600;
+  padding:10px 18px;border-radius:20px;
+  box-shadow:0 4px 20px rgba(0,0,0,.3);
+  animation:toastIn .2s ease;
+  white-space:nowrap;
+}
+.toast.err{background:var(--red);color:#fff}
+@keyframes toastIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Bron toggle ── */
+.btn-bron{
+  font-size:10px;color:var(--muted);
+  background:none;border:none;cursor:pointer;
+  padding:3px 0;opacity:.7;
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useCallback, useRef } = React;
+
+const GOOGLE_CLIENT_ID = "1036246976600-u6l19h0hfqgsf09q5qqid91mp601jpgq.apps.googleusercontent.com";
+const APPS_SCRIPT_URL  = "https://script.google.com/macros/s/AKfycbyYsMM_O-w8X0HsjZhDrB8OmnGwIep9yrlBFRXBqo6Y5uYpCakDtZw0CL4DdcrbIXgx/exec";
+const STORAGE_KEY      = "hdb_admin_token";
+const TOKEN_KEY        = "hdb_admin_credential";
+
+const ALLE_CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+  "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde","SCHC","Tilburg"];
+
+async function apiCall(actie, data = {}) {
+  const token = localStorage.getItem(TOKEN_KEY);
+  const email = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}").email || "";
+  const resp = await fetch(APPS_SCRIPT_URL, {
+    method: "POST",
+    body: JSON.stringify({ actie, data, token, email })
+  });
+  if (!resp.ok) throw new Error("Netwerk fout: " + resp.status);
+  const text = await resp.text();
+  try { return JSON.parse(text); }
+  catch(e) { throw new Error("Ongeldig antwoord: " + text.slice(0,100)); }
+}
+
+// ── Toast ──
+function useToast() {
+  const [toasts, setToasts] = useState([]);
+  const show = (msg, type="ok") => {
+    const id = Date.now();
+    setToasts(t => [...t, {id, msg, type}]);
+    setTimeout(() => setToasts(t => t.filter(x => x.id !== id)), 2500);
+  };
+  return { toasts, show };
+}
+
+function ToastContainer({ toasts }) {
+  return (
+    <div className="toast-wrap">
+      {toasts.map(t => (
+        <div key={t.id} className={`toast${t.type==="error"?" err":""}`}>{t.msg}</div>
+      ))}
+    </div>
+  );
+}
+
+// ── Login ──
+function Login({ onLogin }) {
+  const [fout, setFout] = useState("");
+  const [googleKlaar, setGoogleKlaar] = useState(!!window.google);
+  const btnRef = useRef(null);
+
+  useEffect(() => {
+    if (window.google) { setGoogleKlaar(true); return; }
+    const iv = setInterval(() => { if (window.google) { setGoogleKlaar(true); clearInterval(iv); } }, 200);
+    const to = setTimeout(() => { clearInterval(iv); setFout("Google laden mislukt."); }, 10000);
+    return () => { clearInterval(iv); clearTimeout(to); };
+  }, []);
+
+  useEffect(() => {
+    if (!googleKlaar || !btnRef.current) return;
+    window.google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: (resp) => {
+        try {
+          const p = JSON.parse(atob(resp.credential.split(".")[1]));
+          localStorage.setItem(TOKEN_KEY, resp.credential);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({email:p.email,name:p.name,picture:p.picture}));
+          onLogin({email:p.email, name:p.name, picture:p.picture});
+        } catch(e) { setFout("Login mislukt: " + e.message); }
+      }
+    });
+    window.google.accounts.id.renderButton(btnRef.current, {
+      theme:"filled_black", size:"large", width:"280", text:"signin_with"
+    });
+  }, [googleKlaar]);
+
+  return (
+    <div className="login-wrap">
+      <div className="login-card">
+        <div className="login-logo">🏑</div>
+        <div className="login-titel">Hockey DB</div>
+        <div className="login-sub">Log in om de nieuwswachtrij te beheren</div>
+        {fout && <div className="alert-err">{fout}</div>}
+        {!googleKlaar && !fout
+          ? <div style={{color:"var(--muted)",fontSize:13}}><span className="spinner"/> Laden…</div>
+          : <div ref={btnRef}/>
+        }
+      </div>
+    </div>
+  );
+}
+
+// ── Bullet ──
+function Bullet({ b, artikelId, spelerOpties, onChange, toast }) {
+  const [editModus, setEditModus] = useState(false);
+  const [editTekst, setEditTekst] = useState(b.bullet || "");
+  const [toonBron, setToonBron] = useState(false);
+
+  const goedkeuren = () => {
+    const nieuweWaarden = editModus
+      ? {bullet:editTekst, bewerkt:editTekst!==(b.originele_bullet||b.bullet), originele_bullet:b.originele_bullet||b.bullet, goedgekeurd:true}
+      : {goedgekeurd:true};
+    onChange(nieuweWaarden);
+    setEditModus(false);
+  };
+  const afkeuren = () => { onChange({goedgekeurd:false}); setEditModus(false); };
+  const opslaan = () => {
+    onChange({bullet:editTekst, bewerkt:true, originele_bullet:b.originele_bullet||b.bullet, goedgekeurd:true});
+    setEditModus(false);
+  };
+
+  const typeLabel = b.type==="speler" ? "S" : b.type==="club" ? "C" : "?";
+  const typeCls = b.type==="speler" ? "bt-s" : b.type==="club" ? "bt-c" : "bt-u";
+
+  return (
+    <div className={`bullet${b.goedgekeurd===true?" goedgekeurd":b.goedgekeurd===false?" afgekeurd":""}`}>
+      <div className="bullet-top">
+        <span className={`bullet-type ${typeCls}`}>{typeLabel}</span>
+        <div className="bullet-tekst" style={{flex:1}}>
+          {editModus ? (
+            <div>
+              <textarea className="bullet-edit-area" rows={3} value={editTekst}
+                onChange={e=>setEditTekst(e.target.value)} autoFocus/>
+              <div style={{display:"flex",gap:6,marginTop:6}}>
+                <button onClick={opslaan}
+                  style={{flex:1,height:36,borderRadius:8,background:"var(--green)",color:"#fff",fontSize:13,fontWeight:700}}>
+                  ✓ Opslaan
+                </button>
+                <button onClick={()=>{setEditModus(false);setEditTekst(b.bullet||"");}}
+                  style={{flex:1,height:36,borderRadius:8,background:"var(--surface3)",color:"var(--muted)",fontSize:13}}>
+                  Annuleer
+                </button>
+              </div>
+            </div>
+          ) : (
+            <span onClick={()=>{setEditModus(true);setEditTekst(b.bullet||"");}}>
+              {b.bullet}
+              <span style={{color:"var(--muted)",marginLeft:6,fontSize:11,opacity:.5}}>✏</span>
+            </span>
+          )}
+          <div>
+            <button className="btn-bron" onClick={()=>setToonBron(t=>!t)}>
+              {toonBron ? "▲ verberg bron" : "▾ bron"}
+            </button>
+            {toonBron && (
+              <div className="bullet-bron">
+                {b.bron_zin ? `"${b.bron_zin}"` : <i>Geen bronzin</i>}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Koppeling */}
+      <div className="bullet-koppeling">
+        {b.type==="speler" && (
+          <select className="sel" value={b.speler_id||""}
+            onChange={e=>{
+              const opt = spelerOpties.find(o=>o.id===e.target.value);
+              onChange({speler_id:e.target.value, speler_naam:opt?.label?.split(" (")[0]||"", gekoppeld:!!e.target.value});
+            }}>
+            <option value="">— kies speler —</option>
+            {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
+          </select>
+        )}
+        <select className="sel" value={b.club||""}
+          onChange={e=>onChange({club:e.target.value, ...(b.type==="club"||b.type==="onbekend"?{type:"club",gekoppeld:!!e.target.value}:{})})}>
+          <option value="">— club —</option>
+          {ALLE_CLUBS.map(c=><option key={c} value={c}>{c}</option>)}
+        </select>
+        {!b.gekoppeld && b.type==="speler" &&
+          <div className="bullet-warning">⚠ speler niet gekoppeld</div>}
+        {b.verdacht &&
+          <div style={{display:"flex",gap:6,alignItems:"center"}}>
+            <span className="bullet-warning">⚠ geslacht?</span>
+            {["heren","dames"].map(g=>(
+              <button key={g} onClick={()=>onChange({geslacht:g,verdacht:false})}
+                style={{fontSize:11,padding:"4px 10px",borderRadius:6,
+                  background:b.geslacht===g?"var(--accent)":"var(--surface3)",
+                  color:b.geslacht===g?"#fff":"var(--muted)",border:"none"}}>
+                {g}
+              </button>
+            ))}
+          </div>
+        }
+      </div>
+
+      {/* Acties */}
+      <div className="bullet-acties">
+        <button className={`btn-ok${b.goedgekeurd===true?" actief":""}`} onClick={goedkeuren}>✓</button>
+        <button className={`btn-nee${b.goedgekeurd===false?" actief":""}`} onClick={afkeuren}>✗</button>
+        <button className={`btn-edit-sm${editModus?" actief":""}`}
+          onClick={()=>{setEditModus(m=>!m);setEditTekst(b.bullet||"");}}>✏</button>
+        <button className="btn-edit-sm"
+          onClick={()=>onChange({type:b.type==="speler"?"club":"speler",
+            ...(b.type==="speler"?{speler_id:null,speler_naam:null}:{})})}
+          style={{fontSize:10,fontWeight:700}}>
+          {b.type==="speler"?"S→C":"C→S"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+// ── Artikel ──
+function Artikel({ art, spelerOpties, onChange, onPubliceer, toast }) {
+  const [open, setOpen] = useState(false);
+  const [bezig, setBezig] = useState(false);
+
+  const aantalOk = (art.bullets||[]).filter(b=>b.goedgekeurd===true).length;
+  const aantalTotaal = (art.bullets||[]).length;
+
+  const publiceer = async () => {
+    setBezig(true);
+    try {
+      const res = await apiCall("publiceerNieuws", {artikelId: art.id});
+      if (!res.success) throw new Error(res.error || "Mislukt");
+      toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
+      onPubliceer(art.id);
+    } catch(e) { toast("❌ " + e.message, "error"); }
+    finally { setBezig(false); }
+  };
+
+  const alleGoedkeuren = () => {
+    onChange(art.id, null, null, true); // signal: alles goedkeuren
+  };
+
+  return (
+    <div className="artikel">
+      <div className="artikel-hdr" onClick={()=>setOpen(o=>!o)}>
+        <div className="artikel-meta">
+          <div className="artikel-titel">{art.titel || "Onbekend artikel"}</div>
+          <div className="artikel-info">
+            <span className="chip chip-accent">{art.geslacht}</span>
+            <span className="chip chip-muted">{art.competitie}</span>
+            <span className="chip chip-muted">{art.datum?.slice(0,10)}</span>
+            {aantalOk > 0 && <span className="chip chip-green">{aantalOk}/{aantalTotaal} ✓</span>}
+          </div>
+        </div>
+        <div className="artikel-toggle">{open ? "▲" : "▼"}</div>
+      </div>
+
+      {open && (
+        <>
+          {/* Bullets */}
+          {(art.bullets||[]).map(b => (
+            <Bullet key={b.id} b={b} artikelId={art.id}
+              spelerOpties={spelerOpties}
+              onChange={velden => onChange(art.id, b.id, velden, false)}
+              toast={toast}/>
+          ))}
+
+          {/* Acties onderin */}
+          <div style={{padding:"10px 14px",borderTop:"1px solid var(--border)",display:"flex",gap:8}}>
+            <button className="btn-alle" onClick={alleGoedkeuren}>
+              ✓✓ Alles
+            </button>
+            <button onClick={publiceer} disabled={bezig||aantalOk===0}
+              style={{flex:1,height:38,borderRadius:10,
+                background:aantalOk>0?"var(--accent)":"var(--surface3)",
+                color:aantalOk>0?"#fff":"var(--muted)",
+                fontSize:13,fontWeight:700,
+                opacity:bezig?0.5:1}}>
+              {bezig ? <span className="spinner"/> : `Publiceer ${aantalOk} bullet${aantalOk!==1?"s":""}`}
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ── Wachtrij ──
+function Wachtrij({ user, toast, onUitloggen }) {
+  const [items, setItems] = useState([]);
+  const [spelerOpties, setSpelerOpties] = useState([]);
+  const [laden, setLaden] = useState(true);
+  const [bezig, setBezig] = useState(false);
+
+  const slugify = naam => (naam||"").toLowerCase()
+    .replace(/[àáâä]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
+    .replace(/[òóôö]/g,"o").replace(/[ùúûü]/g,"u")
+    .replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");
+
+  const laad = useCallback(async () => {
+    setLaden(true);
+    try {
+      const [wRes, dRes] = await Promise.all([
+        apiCall("haalNieuwsWachtrij"),
+        apiCall("haalAdminData"),
+      ]);
+      if (wRes.success) setItems(wRes.items||[]);
+      if (dRes.success) {
+        setSpelerOpties((dRes.spelers||[])
+          .map(s=>({id:s.id||slugify(s.naam),label:`${s.naam} (${s.club})`}))
+          .sort((a,b)=>a.label.localeCompare(b.label,"nl")));
+      }
+    } catch(e) { toast("Laden mislukt: " + e.message, "error"); }
+    finally { setLaden(false); }
+  }, []);
+
+  useEffect(() => { laad(); }, []);
+
+  const onChange = useCallback((artikelId, bulletId, velden, alleGoed) => {
+    setItems(prev => {
+      const nieuw = prev.map(art => {
+        if (art.id !== artikelId) return art;
+        let bullets = art.bullets;
+        if (alleGoed) {
+          bullets = bullets.map(b => ({...b, goedgekeurd:true}));
+        } else if (bulletId && velden) {
+          bullets = bullets.map(b => b.id!==bulletId ? b : {...b,...velden});
+        }
+        return {...art, bullets};
+      });
+      // Auto-save naar server
+      const art = nieuw.find(a=>a.id===artikelId);
+      if (art && !art._kopie) {
+        apiCall("updateNieuwsWachtrij", {
+          artikelId, bullets: art.bullets,
+          geslacht: art.geslacht, competitie: art.competitie,
+          titel: art.titel, datum: art.datum,
+        }).catch(()=>{});
+      }
+      return nieuw;
+    });
+  }, []);
+
+  const onPubliceer = (artikelId) => {
+    setItems(prev => prev.filter(a => a.id !== artikelId));
+  };
+
+  const openItems = items.filter(a => a.status !== "verwerkt");
+
+  return (
+    <>
+      {/* Header */}
+      <div className="hdr">
+        <div>
+          <div className="hdr-logo">🏑 Wachtrij</div>
+          <div className="hdr-sub">Hockey DB Admin</div>
+        </div>
+        <div className="hdr-spacer"/>
+        {openItems.length > 0 && <div className="hdr-badge">{openItems.length}</div>}
+        {user.picture
+          ? <img className="hdr-avatar" src={user.picture} alt="" onClick={onUitloggen}/>
+          : <button onClick={onUitloggen}
+              style={{background:"var(--surface2)",color:"var(--muted)",borderRadius:8,padding:"4px 8px",fontSize:11}}>
+              Uit
+            </button>
+        }
+      </div>
+
+      {/* Lijst */}
+      <div className="scroll" style={{paddingBottom:"calc(var(--safe-bottom) + 70px)"}}>
+        {laden
+          ? <div className="laden"><span className="spinner"/> Laden…</div>
+          : openItems.length === 0
+          ? <div className="leeg">
+              <div className="leeg-icon">📭</div>
+              <div className="leeg-titel">Wachtrij leeg</div>
+              <div className="leeg-sub">Geen artikelen wachten op goedkeuring.<br/>Pull to refresh om te vernieuwen.</div>
+            </div>
+          : openItems.map(art => (
+              <Artikel key={art.id} art={art}
+                spelerOpties={spelerOpties}
+                onChange={onChange}
+                onPubliceer={onPubliceer}
+                toast={toast}/>
+            ))
+        }
+      </div>
+
+      {/* Refresh FAB */}
+      <button className="fab" onClick={laad} disabled={laden}>
+        {laden ? <span className="spinner" style={{borderTopColor:"#fff"}}/> : "↻"}
+      </button>
+    </>
+  );
+}
+
+// ── App ──
+function App() {
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null"); }
+    catch { return null; }
+  });
+  const { toasts, show: toast } = useToast();
+
+  const uitloggen = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(TOKEN_KEY);
+    if (window.google) window.google.accounts.id.disableAutoSelect();
+    setUser(null);
+  };
+
+  return (
+    <>
+      <ToastContainer toasts={toasts}/>
+      {!user
+        ? <Login onLogin={setUser}/>
+        : <Wachtrij user={user} toast={toast} onUitloggen={uitloggen}/>
+      }
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
