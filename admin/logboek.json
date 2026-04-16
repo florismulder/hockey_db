@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "casper_van_der_veen",
+      "naam": "casper_van_der_veen",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T19:51:55.312Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "e639f3a4-4d43-49b6-b406-1524c5ca3961",
       "naam": "Tomás Santiago kijkt uit naar clash met Nederland   Hockey Magazine",
