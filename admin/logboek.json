@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "b71afcd3-919f-48d6-9361-88e9db47944c",
+      "naam": "Hurley in degradatiezorgen  ‘Zo hadden we het ons niet voorgesteld’",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T20:00:40.031Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "9092ff27-80d4-487f-8a80-5a611c2ea8d5",
       "naam": "Play offs nog verder uit zicht voor Bloemendaal na harde tik van OR  4 1",
       "velden": {
