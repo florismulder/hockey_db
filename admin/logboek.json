@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "78c84906-e340-4fc8-8ad8-bef653baf2bf",
+      "naam": "Emma & Babs Reijnen  Samen sterker!   Hockey Magazine",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T05:14:40.303Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "a2ec4d12-af02-4be1-b01b-b4b7e58ab28b",
       "naam": "Opeens een bijrol voor Bloemendaal  'Dat voelt onwennig'",
       "velden": {
