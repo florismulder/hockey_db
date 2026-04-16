@@ -809,16 +809,40 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
   const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
     "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde","SCHC","Tilburg"];
 
+  // Auto-save: bullet wijziging direct naar server (voorkomt verlies bij refresh)
   const updateBullet = (artikelId, bulletId, velden) => {
-    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
-      {...art,bullets:art.bullets.map(b=>b.id!==bulletId?b:{...b,...velden})}));
+    setItems(prev => {
+      const nieuw = prev.map(art => art.id!==artikelId ? art :
+        {...art, bullets: art.bullets.map(b => b.id!==bulletId ? b : {...b,...velden})});
+      const art = nieuw.find(a => a.id === artikelId);
+      if (art && !art._kopie) {
+        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets}).catch(()=>{});
+      }
+      return nieuw;
+    });
   };
   const updateArtikelMeta = (artikelId, velden) => {
-    setItems(prev=>prev.map(art=>art.id!==artikelId?art:{...art,...velden}));
+    setItems(prev => {
+      const nieuw = prev.map(art => art.id!==artikelId ? art : {...art,...velden});
+      const art = nieuw.find(a => a.id === artikelId);
+      if (art && !art._kopie) {
+        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets,
+          geslacht: art.geslacht, competitie: art.competitie,
+          titel: art.titel, datum: art.datum}).catch(()=>{});
+      }
+      return nieuw;
+    });
   };
   const alleGoedkeuren = (artikelId) => {
-    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
-      {...art,bullets:art.bullets.map(b=>({...b,goedgekeurd:true}))}));
+    setItems(prev => {
+      const nieuw = prev.map(art => art.id!==artikelId ? art :
+        {...art, bullets: art.bullets.map(b => ({...b, goedgekeurd:true}))});
+      const art = nieuw.find(a => a.id === artikelId);
+      if (art && !art._kopie) {
+        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets}).catch(()=>{});
+      }
+      return nieuw;
+    });
   };
   const opslaan = async (art) => {
     try {
