@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "5c5ef4d8-d4a0-48d8-a551-3824cf295d99",
+      "naam": "Voskuil sleept Hurley naar zege met blessure  ‘Hopelijk geen last morgen’",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T05:25:45.455Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "e1aafe8d-9ed6-42f3-8297-4a378cf5a21c",
       "naam": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
       "velden": {
