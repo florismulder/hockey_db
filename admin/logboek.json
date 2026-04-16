@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "e1aafe8d-9ed6-42f3-8297-4a378cf5a21c",
+      "naam": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 7
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T05:17:02.732Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "78c84906-e340-4fc8-8ad8-bef653baf2bf",
       "naam": "Emma & Babs Reijnen  Samen sterker!   Hockey Magazine",
       "velden": {
