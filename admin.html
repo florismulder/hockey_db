@@ -3022,6 +3022,18 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
   };
 
   // Detecteer mismatches: scorer/kaart club hoort bij thuis of uit
+  const MAX_GOALS_PER_SPELER = 5; // meer dan dit in één wedstrijd = verdacht
+
+  const heeftVeelGoals = (w) => {
+    if (!w.gespeeld || w.geverifieerd) return false;
+    const telPerSpeler = {};
+    (w.scorers||[]).forEach(s => {
+      const k = (s.naam||"").toLowerCase();
+      if (k) telPerSpeler[k] = (telPerSpeler[k]||0) + 1;
+    });
+    return Object.values(telPerSpeler).some(n => n > MAX_GOALS_PER_SPELER);
+  };
+
   const heeftFout = (w) => {
     if (!w.gespeeld) return false;
     if (w.geverifieerd) return false;
@@ -3033,7 +3045,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       return club && !thuis.includes(club) && !club.includes(thuis) &&
                      !uit.includes(club)   && !club.includes(uit);
     });
-    return check(w.scorers) || check(w.kaarten);
+    return check(w.scorers) || check(w.kaarten) || heeftVeelGoals(w);
   };
 
   const foutDetails = (w) => {
@@ -3048,6 +3060,17 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       if (club && !thuis.includes(club) && !club.includes(thuis) &&
                   !uit.includes(club)   && !club.includes(uit)) {
         fouten.push(item);
+      }
+    });
+    // Voeg ook spelers met veel goals toe als verdacht
+    const telPerSpeler = {};
+    (w.scorers||[]).forEach(s => {
+      const k = (s.naam||"").toLowerCase();
+      if (k) telPerSpeler[k] = (telPerSpeler[k]||0) + 1;
+    });
+    Object.entries(telPerSpeler).forEach(([naam, n]) => {
+      if (n > MAX_GOALS_PER_SPELER) {
+        fouten.push({naam, club: "", _type: "veelGoals", _aantal: n});
       }
     });
     return fouten;
@@ -3101,14 +3124,22 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
             <input className="filter-input" placeholder="Zoek club of datum…"
               value={filterTekst} onChange={e=>setFilterTekst(e.target.value)}
               style={{width:"100%",fontSize:12}}/>
-            {aantalFouten > 0 && (
-              <button onClick={()=>setFilterTekst("⚠")}
+            <div style={{display:"flex",gap:6,alignItems:"center"}}>
+              {aantalFouten > 0 && (
+                <button onClick={()=>setFilterTekst("⚠")}
+                  style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",flex:1,
+                    border:"1px solid #ef4444",background:"rgba(239,68,68,.1)",
+                    color:"#ef4444",fontWeight:600,textAlign:"left"}}>
+                  ⚠ {aantalFouten} wedstrijd{aantalFouten>1?"en":""} met verdachte data
+                </button>
+              )}
+              <button onClick={()=>{ onRefresh(); toast("🔍 Verdachte wedstrijden hergecontroleerd"); }}
                 style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",
-                  border:"1px solid #ef4444",background:"rgba(239,68,68,.1)",
-                  color:"#ef4444",fontWeight:600,textAlign:"left"}}>
-                ⚠ {aantalFouten} wedstrijd{aantalFouten>1?"en":""} met verdachte data — klik om te filteren
+                  border:"1px solid var(--border)",background:"var(--surface2)",
+                  color:"var(--muted)",fontWeight:600,whiteSpace:"nowrap"}}>
+                ↻ Hercontroleer
               </button>
-            )}
+            </div>
           </div>
           <div style={{overflowY:"auto",flex:1}}>
             {laden && <div className="loading"><div className="spinner"/> Laden…</div>}
@@ -3188,7 +3219,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                               const n=[...wedstrijden]; n[geselecteerd]={...e2,geverifieerd:true};
                               setWedstrijden(n); setEdit({...e2,geverifieerd:true});
                             } else throw new Error(res.fout||"Fout");
-                          }
+                          } else throw new Error("Wedstrijd niet gevonden in programma.json — probeer eerst op te slaan");
                         }catch(err){toast("❌ "+err.message,"error");}
                         finally{setBusy(false);}
                       }}
@@ -3199,7 +3230,10 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                   </div>
                   {foutDetails(edit).map((item, i) => (
                     <div key={i} style={{fontSize:12,color:"#7f1d1d",padding:"2px 0"}}>
-                      {item._type==="scorer"?"⚽":"🟨"} <strong>{item.naam}</strong> staat bij <strong>{item.club}</strong>
+                      {item._type==="veelGoals"
+                        ? <>🚨 <strong>{item.naam}</strong> scoorde {item._aantal}x — controleer of dit klopt</>
+                        : <>{item._type==="scorer"?"⚽":"🟨"} <strong>{item.naam}</strong> staat bij <strong>{item.club}</strong></>
+                      }
                     </div>
                   ))}
                 </div>
@@ -3516,20 +3550,6 @@ function App() {
   }, [user]);
 
   useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
-
-  // Auto-poll: alleen badge bijwerken, NIET als gebruiker op wachtrij-pagina zit
-  // (anders worden selecties/vinkjes overschreven).
-  useEffect(() => {
-    if (!user) return;
-    const interval = setInterval(async () => {
-      if (pagina === "wachtrij") return;
-      try {
-        const res = await apiCall("haalNieuwsWachtrij");
-        if (res.success) setData(d => ({...d, wachtrij_badge: res.badge || 0}));
-      } catch(e) {}
-    }, 30000);
-    return () => clearInterval(interval);
-  }, [user, pagina]);
 
   const uitloggen = () => {
     localStorage.removeItem(STORAGE_KEY);
