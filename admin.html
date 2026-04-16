@@ -3517,13 +3517,19 @@ function App() {
 
   useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
 
-  // Auto-poll: wachtrij badge elke 30 seconden verversen zodat nieuwe PDF-verwerkingen
-  // automatisch verschijnen zonder handmatig te verversen.
+  // Auto-poll: alleen badge bijwerken, NIET als gebruiker op wachtrij-pagina zit
+  // (anders worden selecties/vinkjes overschreven).
   useEffect(() => {
     if (!user) return;
-    const interval = setInterval(laadWachtrij, 30000);
+    const interval = setInterval(async () => {
+      if (pagina === "wachtrij") return;
+      try {
+        const res = await apiCall("haalNieuwsWachtrij");
+        if (res.success) setData(d => ({...d, wachtrij_badge: res.badge || 0}));
+      } catch(e) {}
+    }, 30000);
     return () => clearInterval(interval);
-  }, [user, laadWachtrij]);
+  }, [user, pagina]);
 
   const uitloggen = () => {
     localStorage.removeItem(STORAGE_KEY);
