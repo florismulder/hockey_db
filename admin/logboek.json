@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "9092ff27-80d4-487f-8a80-5a611c2ea8d5",
+      "naam": "Play offs nog verder uit zicht voor Bloemendaal na harde tik van OR  4 1",
+      "velden": {
+        "goedgekeurd": 5
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T19:58:08.523Z"
+    },
+    {
       "type": "speler",
       "id": "casper_van_der_veen",
       "naam": "Casper van der Veen",
