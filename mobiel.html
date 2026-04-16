@@ -386,6 +386,83 @@ function Login({ onLogin }) {
   );
 }
 
+// ── SpelerZoek ──
+function SpelerZoek({ waarde, label, opties, onKies }) {
+  const [query, setQuery] = useState(label || "");
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  // Sluit dropdown als er buiten geklikt wordt
+  useEffect(() => {
+    const handler = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    document.addEventListener("touchstart", handler);
+    return () => document.removeEventListener("touchstart", handler);
+  }, []);
+
+  const gefilterd = query.length < 1
+    ? opties.slice(0, 20)
+    : opties.filter(o => o.label.toLowerCase().includes(query.toLowerCase())).slice(0, 20);
+
+  const kies = (opt) => {
+    const naam = opt.label.split(" (")[0];
+    setQuery(opt.label);
+    setOpen(false);
+    onKies(opt.id, naam);
+  };
+
+  const wis = () => {
+    setQuery("");
+    setOpen(true);
+    onKies("", "");
+  };
+
+  return (
+    <div ref={ref} style={{position:"relative"}}>
+      <div style={{display:"flex",gap:6,alignItems:"center"}}>
+        <input
+          className="sel"
+          value={query}
+          placeholder="Zoek speler…"
+          onChange={e => { setQuery(e.target.value); setOpen(true); }}
+          onFocus={() => setOpen(true)}
+          style={{flex:1}}
+        />
+        {query && (
+          <button onClick={wis}
+            style={{width:32,height:34,borderRadius:8,background:"var(--surface3)",
+              color:"var(--muted)",fontSize:16,flexShrink:0,border:"1px solid var(--border2)"}}>
+            ×
+          </button>
+        )}
+      </div>
+      {open && gefilterd.length > 0 && (
+        <div style={{
+          position:"absolute",top:"calc(100% + 4px)",left:0,right:0,zIndex:99,
+          background:"var(--surface2)",border:"1px solid var(--border2)",
+          borderRadius:10,overflow:"hidden",
+          boxShadow:"0 8px 24px rgba(0,0,0,.4)",
+          maxHeight:220,overflowY:"auto",
+        }}>
+          {gefilterd.map(opt => (
+            <div key={opt.id}
+              onMouseDown={e => { e.preventDefault(); kies(opt); }}
+              onTouchStart={e => { e.preventDefault(); kies(opt); }}
+              style={{
+                padding:"11px 14px",fontSize:13,
+                borderBottom:"1px solid var(--border)",
+                cursor:"pointer",
+                background: opt.id === waarde ? "var(--accent-dim)" : "transparent",
+                color: opt.id === waarde ? "var(--accent)" : "var(--text)",
+              }}>
+              {opt.label}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Bullet ──
 function Bullet({ b, artikelId, spelerOpties, onChange, toast }) {
   const [editModus, setEditModus] = useState(false);
@@ -450,14 +527,12 @@ function Bullet({ b, artikelId, spelerOpties, onChange, toast }) {
       {/* Koppeling */}
       <div className="bullet-koppeling">
         {b.type==="speler" && (
-          <select className="sel" value={b.speler_id||""}
-            onChange={e=>{
-              const opt = spelerOpties.find(o=>o.id===e.target.value);
-              onChange({speler_id:e.target.value, speler_naam:opt?.label?.split(" (")[0]||"", gekoppeld:!!e.target.value});
-            }}>
-            <option value="">— kies speler —</option>
-            {spelerOpties.map(o=><option key={o.id} value={o.id}>{o.label}</option>)}
-          </select>
+          <SpelerZoek
+            waarde={b.speler_id||""}
+            label={b.speler_naam||""}
+            opties={spelerOpties}
+            onKies={(id, naam) => onChange({speler_id:id, speler_naam:naam, gekoppeld:!!id})}
+          />
         )}
         <select className="sel" value={b.club||""}
           onChange={e=>onChange({club:e.target.value, ...(b.type==="club"||b.type==="onbekend"?{type:"club",gekoppeld:!!e.target.value}:{})})}>
