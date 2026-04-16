@@ -850,7 +850,8 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
         geslacht:art.geslacht,competitie:art.competitie,titel:art.titel,datum:art.datum});
       const res = await apiCall("publiceerNieuws",{artikelId:art.id});
       if (!res.success) throw new Error(res.error||"Publiceren mislukt");
-      toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
+      const ovMsg = res.overgeslagen?.length ? ` (${res.overgeslagen.length} overgeslagen: ${res.overgeslagen.join(", ")})` : "";
+      toast(`✅ ${res.gepubliceerd} gepubliceerd${ovMsg}`);
       onRefresh();
     } catch(e) { toast(e.message,"error"); }
   };

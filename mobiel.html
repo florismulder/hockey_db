@@ -586,7 +586,8 @@ function Artikel({ art, spelerOpties, onChange, onPubliceer, toast }) {
     try {
       const res = await apiCall("publiceerNieuws", {artikelId: art.id});
       if (!res.success) throw new Error(res.error || "Mislukt");
-      toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
+      const ovMsg = res.overgeslagen?.length ? ` (${res.overgeslagen.length} overgeslagen!)` : "";
+      toast(`✅ ${res.gepubliceerd} gepubliceerd${ovMsg}`);
       onPubliceer(art.id);
     } catch(e) { toast("❌ " + e.message, "error"); }
     finally { setBezig(false); }
