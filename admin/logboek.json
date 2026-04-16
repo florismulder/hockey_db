@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "38ec7b20-2364-48e3-9711-379ec204a582",
+      "naam": "Play offs nog verder uit zicht voor Bloemendaal na harde tik van OR  4 1",
+      "velden": {
+        "goedgekeurd": 7
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-16T19:42:20.187Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "5c5ef4d8-d4a0-48d8-a551-3824cf295d99",
       "naam": "Voskuil sleept Hurley naar zege met blessure  ‘Hopelijk geen last morgen’",
       "velden": {
