@@ -1,1 +1,69 @@
-{}
+{
+  "Oranje-Rood": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Oranje-Rood kan op 12 april 2026 als achtste club ooit de reguliere competitie ongeslagen afsluiten als ze de resterende duels winnen."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Amsterdam": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Amsterdam was in 1973-1974 de eerste club die de reguliere competitie ongeslagen afsloot (13 overwinningen, 9 gelijke spelen)."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Klein Zwitserland": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Klein Zwitserland sloot in 1978-1979 (18W, 3G) en 1979-1980 (16W, 6G) twee keer op rij de reguliere competitie ongeslagen af."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Kampong": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Kampong sloot in het verkorte seizoen 1980-1981 (12W, 6G) en in 2017-2018 (17W, 5G) de reguliere competitie ongeslagen af."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Bloemendaal": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Bloemendaal bleef in het seizoen 2017-2018 (16W, 6G) ongeslagen in de reguliere competitie, net als Kampong.",
+        "Bloemendaal bleef in 2019-2020 ongeslagen, maar dit seizoen werd na vijftien duels gestaakt door corona."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Hurley": [
+    {
+      "datum": "2026-04-13T22:00:00.000Z",
+      "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
+      "bullets": [
+        "Hurley behaalde op 12 april 2026 hun eerste competitiezege van het seizoen, waarmee een recordreeks zonder overwinningen eindigde."
+      ],
+      "competitie": "HK"
+    }
+  ]
+}
