@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "4537b8e5-0d78-41f8-83cb-1ea72a2403e8",
+      "naam": 1,
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T07:14:00.194Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "46b53d0c-1c9b-4641-8ba7-fa7d692c8b9f",
       "naam": "Bloemendaal verovert Gold Cup op hockeyfeest in Wageningen",
       "velden": {
