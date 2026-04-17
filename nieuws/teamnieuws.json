@@ -115,7 +115,11 @@
       "bullets": [
         "Hurley boekte op 12 april 2026 de eerste overwinning van het seizoen (1-2 tegen HDM) na zeventien wedstrijden zonder winst."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Hurley"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-13T22:00:00.000Z",
@@ -124,7 +128,11 @@
       "bullets": [
         "Hurley behaalde op 12 april 2026 hun eerste competitiezege van het seizoen, waarmee een recordreeks zonder overwinningen eindigde."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Oranje-Rood"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-12T22:00:00.000Z",
@@ -133,7 +141,12 @@
       "bullets": [
         "Hurley stond drie seizoenen geleden nog in de play-offs."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Amsterdam",
+        "HDM",
+        "Hurley"
+      ]
     }
   ],
   "HDM": [
