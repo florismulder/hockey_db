@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "5f62dbb9-4921-488c-84e1-68dd03982571",
+      "naam": 2,
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T07:16:29.678Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "4537b8e5-0d78-41f8-83cb-1ea72a2403e8",
       "naam": 1,
       "velden": {
