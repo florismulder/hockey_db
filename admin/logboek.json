@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "hjalmar_voskuil",
+      "naam": "hjalmar_voskuil",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T04:58:42.720Z"
+    },
+    {
       "type": "speler",
       "id": "jorrit_croon",
       "naam": "Jorrit Croon",
