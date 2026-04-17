@@ -7,7 +7,11 @@
       "bullets": [
         "Oranje-Rood kan op 12 april 2026 als achtste club ooit de reguliere competitie ongeslagen afsluiten als ze de resterende duels winnen."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Oranje-Rood"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-12T22:00:00.000Z",
@@ -16,7 +20,12 @@
       "bullets": [
         "Oranje-Rood stuntte met een gelijkspel tegen EHL-winnaar SCHC, speelronde 18, 25-26"
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Amsterdam",
+        "HDM",
+        "Hurley"
+      ]
     }
   ],
   "Amsterdam": [
