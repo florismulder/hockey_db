@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "7fb75cda-8d1c-4d6c-9d39-2c082982bee6",
+      "naam": "Bregman wint Gold Cup acht jaar na gemiste finale  ‘Maak het tóch mee’",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T14:18:59.530Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "1cdeeda4-8ebe-4f4a-8099-9c31b8784a0b",
       "naam": 14,
       "velden": {
