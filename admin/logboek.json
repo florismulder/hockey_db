@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "jorrit_croon",
+      "naam": "jorrit_croon",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T04:44:37.841Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "b71afcd3-919f-48d6-9361-88e9db47944c",
       "naam": "Hurley in degradatiezorgen  ‘Zo hadden we het ons niet voorgesteld’",
