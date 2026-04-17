@@ -69,7 +69,11 @@
       "bullets": [
         "Bloemendaal (D) veroverde de Gold Cup 2025-2026. Dat was voor de tweede keer. Eerste was in 2018."
       ],
-      "competitie": "onbekend"
+      "competitie": "onbekend",
+      "clubs": [
+        "Bloemendaal"
+      ],
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-13T22:00:00.000Z",
@@ -79,7 +83,11 @@
         "Bloemendaal bleef in het seizoen 2017-2018 (16W, 6G) ongeslagen in de reguliere competitie, net als Kampong.",
         "Bloemendaal bleef in 2019-2020 ongeslagen, maar dit seizoen werd na vijftien duels gestaakt door corona."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Oranje-Rood"
+      ],
+      "geslacht": "heren"
     },
     {
       "datum": "2026-04-11T22:00:00.000Z",
@@ -93,7 +101,10 @@
         "Bloemendaal dreigt voor het eerst in tien jaar de play-offs te missen.",
         "Bloemendaal ontbrak in 30 play-off edities slechts twee keer (2001, 2016)."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "clubs": [
+        "Bloemendaal"
+      ]
     }
   ],
   "Hurley": [
