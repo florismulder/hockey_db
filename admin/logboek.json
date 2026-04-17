@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "398ba324-a06a-49a1-a382-912c40f8c01f",
+      "naam": "Wie gaat waarheen",
+      "velden": {
+        "goedgekeurd": 13
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T05:10:46.315Z"
+    },
+    {
       "type": "speler",
       "id": "hjalmar_voskuil",
       "naam": "Hjalmar Voskuil",
