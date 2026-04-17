@@ -277,5 +277,25 @@
       "handmatig": false,
       "verborgen": false
     }
+  ],
+  "marc_recasens": [
+    {
+      "datum": "2026-02-15T23:00:00.000Z",
+      "titel": 4,
+      "bullet": "Marc Recasens (Rotterdam) speelde 121 interlands voor de Spaanse nationale ploeg.",
+      "link": "https://drive.google.com/file/d/1sKVFPQ0ML4oncdooWd4NoFgJAnV8BUwv",
+      "competitie": "onbekend",
+      "handmatig": false,
+      "verborgen": false
+    },
+    {
+      "datum": "2026-02-15T23:00:00.000Z",
+      "titel": 4,
+      "bullet": "Marc Recasens (Rotterdam) verruilt zomer ‘26 Rotterdam voor KHC Dragons uit België.",
+      "link": "https://drive.google.com/file/d/1sKVFPQ0ML4oncdooWd4NoFgJAnV8BUwv",
+      "competitie": "onbekend",
+      "handmatig": false,
+      "verborgen": false
+    }
   ]
 }
