@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "jorrit_croon",
+      "naam": "Jorrit Croon",
+      "velden": {
+        "club": "Bloemendaal",
+        "geslacht": "heren",
+        "rugnummer": 10,
+        "keeper": false,
+        "aanvoerder": true,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 2,
+        "vd": 2,
+        "sc": 0,
+        "sb": 0
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-17T04:44:51.532Z"
+    },
+    {
       "type": "bullet",
       "id": "jorrit_croon",
       "naam": "jorrit_croon",
