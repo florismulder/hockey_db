@@ -29,6 +29,15 @@
   ],
   "Amsterdam": [
     {
+      "datum": "2026-04-14T22:00:00.000Z",
+      "titel": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/15tsQNua5_qxdlOVeF-H3lcgiwQzkk16N",
+      "bullets": [
+        "Amsterdam heeft zich in seizoen 25-26 voor de 23ste opeenvolgende keer geplaatst voor de play-offs."
+      ],
+      "competitie": "HK"
+    },
+    {
       "datum": "2026-04-13T22:00:00.000Z",
       "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
       "link": "https://drive.google.com/file/d/1SDRMY7gXjpZAt9lwBTl90edgqJASLj6D",
@@ -58,6 +67,15 @@
     }
   ],
   "Kampong": [
+    {
+      "datum": "2026-04-14T22:00:00.000Z",
+      "titel": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/15tsQNua5_qxdlOVeF-H3lcgiwQzkk16N",
+      "bullets": [
+        "Kampong is verzekerd van deelname aan de nacompetitie om de landstitel in seizoen 25-26. plaatst zich voor de tweede keer samen met SCHC, Amsterdam en Den Bosch voor de play-offs.✏\n."
+      ],
+      "competitie": "HK"
+    },
     {
       "datum": "2026-04-13T22:00:00.000Z",
       "titel": "Oranje Rood op koers voor zeldzaam goede prestatie   Tulp Hoofdklasse",
@@ -183,6 +201,28 @@
         "Hurley"
       ],
       "geslacht": "dames"
+    }
+  ],
+  "SCHC": [
+    {
+      "datum": "2026-04-14T22:00:00.000Z",
+      "titel": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/15tsQNua5_qxdlOVeF-H3lcgiwQzkk16N",
+      "bullets": [
+        "SCHC heeft zich in 25-26 voor de vijftiende keer achter elkaar geplaatst voor de play-offs. SCHC plaatst zich voor de tweede keer samen met Kampong, Amsterdam en Den Bosch voor de play-offs."
+      ],
+      "competitie": "HK"
+    }
+  ],
+  "Den Bosch": [
+    {
+      "datum": "2026-04-14T22:00:00.000Z",
+      "titel": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/15tsQNua5_qxdlOVeF-H3lcgiwQzkk16N",
+      "bullets": [
+        "Den Bosch heeft zich voor de 28ste keer op rij geplaatst voor de play-offs, voor de tweede keer met SCHC, Kampong en Amsterdam."
+      ],
+      "competitie": "HK"
     }
   ]
 }
