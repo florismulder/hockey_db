@@ -35,7 +35,8 @@
       "bullets": [
         "Amsterdam heeft zich in seizoen 25-26 voor de 23ste opeenvolgende keer geplaatst voor de play-offs."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-13T22:00:00.000Z",
@@ -74,7 +75,8 @@
       "bullets": [
         "Kampong is verzekerd van deelname aan de nacompetitie om de landstitel in seizoen 25-26. plaatst zich voor de tweede keer samen met SCHC, Amsterdam en Den Bosch voor de play-offs.✏\n."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-13T22:00:00.000Z",
@@ -99,7 +101,8 @@
         "Bloemendaal won op 16 april 2026 de Gold Cup finale met 3-1 van overgangsklasser Wageningen. Bloemendaal won de Gold Cup voor de tweede keer in de clubgeschiedenis.",
         "Bloemendaal degradeerde in 2024 naar de Promotieklasse en promoveerde een seizoen later direct terug."
       ],
-      "competitie": "onbekend"
+      "competitie": "onbekend",
+      "geslacht": "dames"
     },
     {
       "datum": "2026-04-15T22:00:00.000Z",
@@ -211,7 +214,8 @@
       "bullets": [
         "SCHC heeft zich in 25-26 voor de vijftiende keer achter elkaar geplaatst voor de play-offs. SCHC plaatst zich voor de tweede keer samen met Kampong, Amsterdam en Den Bosch voor de play-offs."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "geslacht": "dames"
     }
   ],
   "Den Bosch": [
@@ -222,7 +226,8 @@
       "bullets": [
         "Den Bosch heeft zich voor de 28ste keer op rij geplaatst voor de play-offs, voor de tweede keer met SCHC, Kampong en Amsterdam."
       ],
-      "competitie": "HK"
+      "competitie": "HK",
+      "geslacht": "dames"
     }
   ]
 }
