@@ -2789,9 +2789,10 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
             onChange={e=>setFilterBron(e.target.value)}
             style={{width:"auto",fontSize:12,padding:"4px 8px"}}>
             <option value="alle">Alle bronclubs ({alleItems.length})</option>
-            {Object.keys(nieuwsData).sort().map(k=>
-              <option key={k} value={k}>{k} ({(nieuwsData[k]||[]).length})</option>
-            )}
+            {Object.keys(nieuwsData).sort().map(k=>{
+              const n = alleItems.filter(i=>i._bronClub===k).length;
+              return <option key={k} value={k}>{k} ({n})</option>;
+            })}
           </select>
           {filterBron!=="alle"&&(
             <span style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap"}}>
