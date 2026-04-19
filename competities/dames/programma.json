@@ -5121,13 +5121,65 @@
       ]
     },
     {
-      "datum": "2026-04-18",
-      "tijdstip": "16:30",
       "thuis": "HGC",
       "uit": "HDM",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 3,
+      "score_uit": 0,
+      "datum": "2026-04-18",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carlijn van Geest",
+          "club": "HGC",
+          "minuut": 30,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Mariona Serrahima",
+          "club": "HGC",
+          "minuut": 33,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 52,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Carlijn van Geest",
+          "club": "HGC",
+          "minuut": 36,
+          "type": "groen"
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Frederique Dekker",
+          "club": "HDM",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Frederique Dekker",
+          "club": "HDM",
+          "minuut": 52,
+          "type": "geel"
+        },
+        {
+          "naam": "Claudia Negrete Garcia",
+          "club": "HDM",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "SCHC",
@@ -5662,5 +5714,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:06:36.907Z"
+  "bijgewerkt": "2026-04-19T17:12:16.108Z"
 }
