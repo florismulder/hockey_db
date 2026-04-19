@@ -6277,13 +6277,35 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
       "thuis": "Klein Zwitserland",
       "uit": "HDM",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland",
+          "minuut": 5,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM",
+          "minuut": 50,
+          "type": "groen"
+        },
+        {
+          "naam": "Adrian Lehmann-Richter",
+          "club": "Klein Zwitserland",
+          "minuut": 50,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -6475,5 +6497,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:17:16.992Z"
+  "bijgewerkt": "2026-04-19T17:22:18.281Z"
 }
