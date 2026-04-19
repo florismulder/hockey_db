@@ -6357,13 +6357,89 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
       "thuis": "Schaerweijde",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 8,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 3,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Teun van Aalderen",
+          "club": "Schaerweijde",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "strafbal"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 38,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 55,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Jaïr van der Horst",
+          "club": "Den Bosch",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Daan Troost",
+          "club": "Schaerweijde",
+          "minuut": 52,
+          "type": "groen"
+        },
+        {
+          "naam": "Daan Troost",
+          "club": "Schaerweijde",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -6537,5 +6613,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:27:19.244Z"
+  "bijgewerkt": "2026-04-19T17:32:19.927Z"
 }
