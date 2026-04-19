@@ -5252,13 +5252,53 @@
       "kaarten": []
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
       "thuis": "Rotterdam",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 0,
+      "score_uit": 4,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Kyra Fortuin",
+          "club": "Kampong",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Melle Vaessen",
+          "club": "Rotterdam",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 53,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -5594,5 +5634,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T16:56:36.913Z"
+  "bijgewerkt": "2026-04-19T17:01:35.312Z"
 }
