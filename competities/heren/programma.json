@@ -6442,13 +6442,59 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
       "thuis": "Rotterdam",
       "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 1,
+          "type": "SC"
+        },
+        {
+          "naam": "Bob de Voogd",
+          "club": "Oranje-Rood",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Struan Walker",
+          "club": "Oranje-Rood",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 45,
+          "type": "SB"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Max de Bie",
+          "club": "Oranje-Rood",
+          "minuut": 16,
+          "type": "groen"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
     },
     {
       "datum": "2026-04-25",
@@ -6613,5 +6659,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:32:19.927Z"
+  "bijgewerkt": "2026-04-19T17:39:00.758Z"
 }
