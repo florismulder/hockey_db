@@ -5173,13 +5173,41 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
       "thuis": "Bloemendaal",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 24,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Li Hong",
+          "club": "Amsterdam",
+          "minuut": 51,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -5533,5 +5561,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T16:46:34.235Z"
+  "bijgewerkt": "2026-04-19T16:51:33.344Z"
 }
