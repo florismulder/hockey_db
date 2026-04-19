@@ -6308,13 +6308,53 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
       "thuis": "Hurley",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Derck de Vilder",
+          "club": "Kampong",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Fred Newbold",
+          "club": "Hurley",
+          "minuut": 28,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Jonas de Geus",
+          "club": "Kampong",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Caspar Dobbelaar",
+          "club": "Kampong",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -6497,5 +6537,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:22:18.281Z"
+  "bijgewerkt": "2026-04-19T17:27:19.244Z"
 }
