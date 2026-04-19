@@ -6231,13 +6231,83 @@
       ]
     },
     {
-      "datum": "2026-04-18",
-      "tijdstip": "16:30",
       "thuis": "Bloemendaal",
       "uit": "Laren",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 5,
+      "score_uit": 3,
+      "datum": "2026-04-18",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Berend van Langeveld",
+          "club": "Laren",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal",
+          "minuut": 11,
+          "type": "sc"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal",
+          "minuut": 13,
+          "type": "sc"
+        },
+        {
+          "naam": "Jan van 't Land",
+          "club": "Bloemendaal",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Kenneth Bain",
+          "club": "Laren",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Max Langer",
+          "club": "Bloemendaal",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Laren",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Wout Kooijman",
+          "club": "Laren",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Thomas Selles",
+          "club": "Laren",
+          "minuut": 46,
+          "type": "geel"
+        }
+      ]
     },
     {
       "thuis": "Pinoké",
@@ -6659,5 +6729,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:39:00.758Z"
+  "bijgewerkt": "2026-04-19T17:42:17.607Z"
 }
