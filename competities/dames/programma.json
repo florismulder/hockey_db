@@ -5210,13 +5210,46 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
       "thuis": "Hurley",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 37,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 40,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-04-19",
@@ -5561,5 +5594,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T16:51:33.344Z"
+  "bijgewerkt": "2026-04-19T16:56:36.913Z"
 }
