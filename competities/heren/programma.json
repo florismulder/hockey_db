@@ -6240,13 +6240,41 @@
       "score_uit": null
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
       "thuis": "Pinoké",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 34,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 40,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-19",
@@ -6447,5 +6475,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-13T06:35:42.380Z"
+  "bijgewerkt": "2026-04-19T17:17:16.992Z"
 }
