@@ -5301,13 +5301,41 @@
       ]
     },
     {
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
       "thuis": "Pinoké",
       "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "minuut": 28,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Josephine Murray",
+          "club": "Pinoké",
+          "minuut": 33,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Madelief de Beer",
+          "club": "Oranje-Rood",
+          "minuut": 33,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "minuut": 45,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-04-25",
@@ -5634,5 +5662,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:01:35.312Z"
+  "bijgewerkt": "2026-04-19T17:06:36.907Z"
 }
