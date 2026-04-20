@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Florent van Aubel verlengde zijn contract bij Pinoké met één jaar tot zomer 27 en overweegt daarna te stoppen.",
+      "bron_zin": "Van Aubel, die onlangs zijn contract bij Pinoké met één jaar verlengde en vermoedelijk daarna stopt.",
+      "origineel": "Florent van Aubel verlengde zijn contract bij Pinoké met één jaar en overweegt daarna te stoppen."
+    },
+    {
       "bullet": "Casper Berkman verliet Schaerweijde al op jonge leeftijd voor Amsterdam.",
       "bron_zin": "eerder verliet Casper Berkman Schaerweijde al op jonge leeftijd voor Amsterdam."
     },
@@ -227,10 +232,6 @@
     {
       "bullet": "Babs Reijnen (Den Bosch) speelde op het WK Jong Oranje, ondanks een reserverol, in de finale, een persoonlijk hoogtepunt na hard werken.",
       "bron_zin": "Ik ben heel blij dat ik die wedstrijd heb mogen spelen, daar ben ik trots op."
-    },
-    {
-      "bullet": "Emma Reijnen (Den Bosch) scheurde rond augustus 2025 haar kruisband af, wat haar seizoen 2025/2026 tekent met een ernstige knieblessure.",
-      "bron_zin": "Het seizoen van Emma is tot nu toe getekend door een ernstige knieblessure. Ruim acht maanden geleden scheurde ze haar kruisband af."
     }
   ],
   "verborgen_bullets": []
