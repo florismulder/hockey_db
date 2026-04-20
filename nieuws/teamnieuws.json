@@ -249,5 +249,18 @@
       "competitie": "HK",
       "geslacht": "dames"
     }
+  ],
+  "Pinoké": [
+    {
+      "datum": "2026-04-18T22:00:00.000Z",
+      "titel": "Pinoké doet helemaal mee door late derbyzege op Amsterdam",
+      "link": "https://drive.google.com/file/d/177YwVnqBNiOnZTCouCwiGAhOl7ELoCsN",
+      "bullets": [
+        "Pinoké haalde in 2022 voor het eerst de play-offs.",
+        "Pinoké werd in 2023 landskampioen."
+      ],
+      "competitie": "HK",
+      "geslacht": "heren"
+    }
   ]
 }
