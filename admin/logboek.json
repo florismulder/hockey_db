@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "c6718c36-9ba8-4fe0-907c-a2f408a7079a",
+      "naam": "Pinoké doet helemaal mee door late derbyzege op Amsterdam",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-20T04:29:09.458Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "cdbc9d29-cdde-4464-acc6-e82c9a0b3868",
       "naam": "HK (H)  Oranje Rood naar play offs, Pinoké verslaat Amsterdam",
       "velden": {
