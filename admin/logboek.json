@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "e7ebe734-2e62-4c16-9b38-b0e32d8fbd1a",
+      "naam": "HK (D)  Tilburg pakt punt tegen SCHC, verlies OR en Hurley",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-20T04:31:53.203Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "c6718c36-9ba8-4fe0-907c-a2f408a7079a",
       "naam": "Pinoké doet helemaal mee door late derbyzege op Amsterdam",
       "velden": {
