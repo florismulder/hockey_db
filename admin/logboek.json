@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "cdbc9d29-cdde-4464-acc6-e82c9a0b3868",
+      "naam": "HK (H)  Oranje Rood naar play offs, Pinoké verslaat Amsterdam",
+      "velden": {
+        "goedgekeurd": 5
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-20T04:28:00.434Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "d25c8350-5b32-4dad-b733-82131d5b41c1",
       "naam": "Thierry Brinkman treedt toe tot Athletes Commission van het EOC   Hockey Magazine",
       "velden": {
