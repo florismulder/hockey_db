@@ -1,6 +1,50 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Casper Berkman verliet Schaerweijde al op jonge leeftijd voor Amsterdam.",
+      "bron_zin": "eerder verliet Casper Berkman Schaerweijde al op jonge leeftijd voor Amsterdam."
+    },
+    {
+      "bullet": "Boris Aardenburg verliet Schaerweijde al op jonge leeftijd voor Pinoké.",
+      "bron_zin": "eerder verliet Boris Aardenburg Schaerweijde al op jonge leeftijd voor Pinoké."
+    },
+    {
+      "bullet": "Tim Knapper verliet Schaerweijde al op jonge leeftijd voor Pinoké.",
+      "bron_zin": "eerder verliet Tim Knapper Schaerweijde al op jonge leeftijd voor Pinoké."
+    },
+    {
+      "bullet": "Lucas Veen verliet Schaerweijde al op jonge leeftijd voor Bloemendaal.",
+      "bron_zin": "eerder verliet Lucas Veen Schaerweijde al op jonge leeftijd voor Bloemendaal."
+    },
+    {
+      "bullet": "Thies Bakker maakte de overstap van Schaerweijde naar Kampong, zomer 25",
+      "bron_zin": "Thies Bakker zocht zijn geluk bij Kampong.",
+      "origineel": "Thies Bakker maakte de overstap van Schaerweijde naar Kampong."
+    },
+    {
+      "bullet": "Lucas Corstens vertrok op 17-jarige leeftijd na één seizoen in de Promotieklasse van Schaerweijde naar Amsterdam - zomer 25.",
+      "bron_zin": "Lucas Corstens op 17-jarige leeftijd, na slechts één seizoen in de Promotieklasse.",
+      "origineel": "Lucas Corstens vertrok op 17-jarige leeftijd na één seizoen in de Promotieklasse."
+    },
+    {
+      "bullet": "Juup Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
+      "bron_zin": "Na slechts één seizoen in de Hoofdklasse zijn we ze alweer kwijt."
+    },
+    {
+      "bullet": "Juup Veen maakt zomer 26 de overstap van Schaerweijde naar Kampong.",
+      "bron_zin": "De overstap van de tweelingbroers Peppe en Juup Veen van Schaerweijde naar Kampong.",
+      "origineel": "Juup Veen maakt de overstap van Schaerweijde naar Kampong."
+    },
+    {
+      "bullet": "Peppe Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
+      "bron_zin": "Na slechts één seizoen in de Hoofdklasse zijn we ze alweer kwijt."
+    },
+    {
+      "bullet": "Peppe Veen maakt zomer 26 de overstap van Schaerweijde naar Kampong.",
+      "bron_zin": "De overstap van de tweelingbroers Peppe en Juup Veen van Schaerweijde naar Kampong.",
+      "origineel": "Peppe Veen maakt de overstap van Schaerweijde naar Kampong."
+    },
+    {
       "bullet": "Kyra Fortuin scoorde haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd, tegen Rotterdam op 19 april 26",
       "bron_zin": "Het was voor Fortuin haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd.",
       "origineel": "Kyra Fortuin scoorde haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd."
@@ -187,14 +231,6 @@
     {
       "bullet": "Emma Reijnen (Den Bosch) scheurde rond augustus 2025 haar kruisband af, wat haar seizoen 2025/2026 tekent met een ernstige knieblessure.",
       "bron_zin": "Het seizoen van Emma is tot nu toe getekend door een ernstige knieblessure. Ruim acht maanden geleden scheurde ze haar kruisband af."
-    },
-    {
-      "bullet": "Casper van der Veen (Bloemendaal) is op 13 april 2026 door een schouderblessure voor de rest van het seizoen uitgeschakeld.",
-      "bron_zin": "De week dáárop valt Casper op zijn schouder en is zijn seizoen voorbij."
-    },
-    {
-      "bullet": "Jorrit Croon (Bloemendaal) is op 13 april 2026 al wekenlang afwezig door een knieblessure.",
-      "bron_zin": "Bloemendaal al wekenlang geen beroep kan doen op Jorrit Croon (knieblessure)"
     }
   ],
   "verborgen_bullets": []
