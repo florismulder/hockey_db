@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "d25c8350-5b32-4dad-b733-82131d5b41c1",
+      "naam": "Thierry Brinkman treedt toe tot Athletes Commission van het EOC   Hockey Magazine",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-20T04:24:25.679Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "d6deb5cc-85c6-4c84-b190-229bb8410284",
       "naam": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
       "velden": {
