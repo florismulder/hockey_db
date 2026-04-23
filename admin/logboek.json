@@ -1,6 +1,23 @@
 {
   "entries": [
     {
+      "type": "blessure",
+      "id": "emma_reijnen",
+      "naam": "emma_reijnen",
+      "velden": {
+        "id": "ddc54761-fee1-40a7-8c86-3233fc6f0a3d",
+        "plek": "Voorste kruisband",
+        "start": "2025-08-11",
+        "uitleg": "Gescheurde voorste kruisband door botsing met keeper. Rentree was tegen Hurley op 19 april 26.",
+        "verwacht_herstel": "2026-04-18",
+        "actief": true,
+        "toegevoegd": "2026-04-23T17:54:21.491Z"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-23T17:54:22.174Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "826f5829-88a8-4257-9b02-c9a14bc0b5e7",
       "naam": "Reijnen terug bij Den Bosch na lange revalidatie  ‘Ik heb het onderschat’",
