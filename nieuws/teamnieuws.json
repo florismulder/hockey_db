@@ -248,6 +248,16 @@
   ],
   "SCHC": [
     {
+      "datum": "2026-04-19T22:00:00.000Z",
+      "titel": "Het weekend in cijfers  volop clubrecords,…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1VbzO6p-PWIpCDHEshHoGXryMF0NeLE9Q",
+      "bullets": [
+        "SCHC zette een clubrecord neer met drie gelijke spelen op rij in de hoofdklasse, in april 26"
+      ],
+      "competitie": "HK",
+      "geslacht": "dames"
+    },
+    {
       "datum": "2026-04-14T22:00:00.000Z",
       "titel": "Play offtickets al vergeven  top vier bij vrouwen…   Tulp Hoofdklasse",
       "link": "https://drive.google.com/file/d/15tsQNua5_qxdlOVeF-H3lcgiwQzkk16N",
@@ -291,6 +301,18 @@
       ],
       "competitie": "HK",
       "geslacht": "heren"
+    }
+  ],
+  "Tilburg": [
+    {
+      "datum": "2026-04-19T22:00:00.000Z",
+      "titel": "Het weekend in cijfers  volop clubrecords,…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/1VbzO6p-PWIpCDHEshHoGXryMF0NeLE9Q",
+      "bullets": [
+        "Tilburg pakte voor het eerst in haar hoofdklassebestaan een punt tegen SCHC, op 19 april 26."
+      ],
+      "competitie": "HK",
+      "geslacht": "dames"
     }
   ]
 }
