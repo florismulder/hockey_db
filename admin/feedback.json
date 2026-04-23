@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie, scheurde voorste kruisband tijdens training Oranje. Rentree 19 april 26 tegen Hurley. Miste EK. Miste EHL. Trainde lang met MO18-1.",
+      "bron_zin": "Emma Reijnen (22) maakte na maanden revalideren haar rentree bij Den Bosch.",
+      "origineel": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie."
+    },
+    {
       "bullet": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel, mist de play-offs en een mogelijke WK-selectie voor Oranje. Blessure liep ze op in duel met Tilburg op 19 april 26.",
       "bron_zin": "Na de gewonnen wedstrijd (4-0) tegen Rotterdam werd duidelijk dat de international van Kampong haar voorste kruisband heeft gescheurd.",
       "origineel": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel."
@@ -230,11 +235,6 @@
       "bullet": "Had eigen fanclub meegenomen naar de wedstrijd tegen Bloemendaal.",
       "bron_zin": "Extra leuk voor de Spanjaard: hij had zondag een eigen fanclub meegenomen.",
       "origineel": "Had eigen fanclub meegenomen naar de wedstrijd."
-    },
-    {
-      "bullet": "Mist rest van seizoen 25-26 door knieblessure.",
-      "bron_zin": "Jorrit Croon (knie), die dit hockeyjaar allebei niet meer in actie komen.",
-      "origineel": "Mist rest van seizoen door knieblessure."
     }
   ],
   "verborgen_bullets": []
