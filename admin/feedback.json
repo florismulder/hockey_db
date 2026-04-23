@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel, mist de play-offs en een mogelijke WK-selectie voor Oranje. Blessure liep ze op in duel met Tilburg op 19 april 26.",
+      "bron_zin": "Na de gewonnen wedstrijd (4-0) tegen Rotterdam werd duidelijk dat de international van Kampong haar voorste kruisband heeft gescheurd.",
+      "origineel": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel."
+    },
+    {
       "bullet": "Yibbi Jansen scoorde voor het vijfde seizoen op rij minstens twintig Hoofdklasse-doelpunten, in het weekend van 19 april 26.",
       "bron_zin": "Het is het vijfde seizoen op rij dat ze minstens twintig doelpunten laat aantekenen in de Hoofdklasse.",
       "origineel": "Yibbi Jansen scoorde voor het vijfde seizoen op rij minstens twintig Hoofdklasse-doelpunten."
@@ -230,11 +235,6 @@
       "bullet": "Mist rest van seizoen 25-26 door knieblessure.",
       "bron_zin": "Jorrit Croon (knie), die dit hockeyjaar allebei niet meer in actie komen.",
       "origineel": "Mist rest van seizoen door knieblessure."
-    },
-    {
-      "bullet": "Mist rest van seizoen 25-26 door schouderblessure.",
-      "bron_zin": "Casper van der Veen (schouder) [...] die dit hockeyjaar allebei niet meer in actie komen.",
-      "origineel": "Mist rest van seizoen door schouderblessure."
     }
   ],
   "verborgen_bullets": []
