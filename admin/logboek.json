@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "6d9d0c74-97c0-4827-a9d5-2035a4594ca0",
+      "naam": "Het weekend in cijfers  volop clubrecords,…   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-23T17:02:33.653Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "01c06b5b-1416-48c4-ae60-33513b52d4c5",
       "naam": "Spanning in de Hoofdklasse heren  strijd om play offs én degradatie nog volledig open   Hockey Magazine",
       "velden": {
