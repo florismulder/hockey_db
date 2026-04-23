@@ -32,5 +32,16 @@
       "actief": true,
       "toegevoegd": "2026-04-23T17:07:50.309Z"
     }
+  ],
+  "emma_reijnen": [
+    {
+      "id": "ddc54761-fee1-40a7-8c86-3233fc6f0a3d",
+      "plek": "Voorste kruisband",
+      "start": "2025-08-11",
+      "uitleg": "Gescheurde voorste kruisband door botsing met keeper. Rentree was tegen Hurley op 19 april 26.",
+      "verwacht_herstel": "2026-04-18",
+      "actief": true,
+      "toegevoegd": "2026-04-23T17:54:21.491Z"
+    }
   ]
 }
