@@ -40,8 +40,9 @@
       "start": "2025-08-11",
       "uitleg": "Gescheurde voorste kruisband door botsing met keeper. Rentree was tegen Hurley op 19 april 26.",
       "verwacht_herstel": "2026-04-18",
-      "actief": true,
-      "toegevoegd": "2026-04-23T17:54:21.491Z"
+      "actief": false,
+      "toegevoegd": "2026-04-23T17:54:21.491Z",
+      "eind": "2026-04-19"
     }
   ]
 }
