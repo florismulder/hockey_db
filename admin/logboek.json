@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "655040f0-d7ca-4ae4-94df-c08bee830030",
+      "naam": "Carrousel HK  Dylan Lucieer naar Kampong, Julie van Dam stopt",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-23T17:50:48.037Z"
+    },
+    {
       "type": "blessure",
       "id": "noor_van_den_nieuwenhof",
       "naam": "noor_van_den_nieuwenhof",
