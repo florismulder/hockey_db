@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Yibbi Jansen scoorde voor het vijfde seizoen op rij minstens twintig Hoofdklasse-doelpunten, in het weekend van 19 april 26.",
+      "bron_zin": "Het is het vijfde seizoen op rij dat ze minstens twintig doelpunten laat aantekenen in de Hoofdklasse.",
+      "origineel": "Yibbi Jansen scoorde voor het vijfde seizoen op rij minstens twintig Hoofdklasse-doelpunten."
+    },
+    {
+      "bullet": "Kyra Fortuin scoorde haar eerste competitiedoelpunt in bijna drie jaar tijd op 19 april 26.",
+      "bron_zin": "Dat was haar eerste competitiedoelpunt in bijna drie jaar tijd.",
+      "origineel": "Kyra Fortuin scoorde haar eerste competitiedoelpunt in bijna drie jaar tijd."
+    },
+    {
       "bullet": "Julie van Dam stopt op 26-jarige leeftijd zomer 26 met hockeyen door een slepende knieblessure.",
       "bron_zin": "Haar knie dwingt Julie van Dam (26) tot stoppen.",
       "origineel": "Julie van Dam stopt op 26-jarige leeftijd met hockeyen door een slepende knieblessure."
@@ -225,14 +235,6 @@
       "bullet": "Mist rest van seizoen 25-26 door schouderblessure.",
       "bron_zin": "Casper van der Veen (schouder) [...] die dit hockeyjaar allebei niet meer in actie komen.",
       "origineel": "Mist rest van seizoen door schouderblessure."
-    },
-    {
-      "bullet": "Hjalmar Voskuil (Hurley) had op 12 april 2026 vier weken lang geen strafcorner gepusht door een schouderblessure, maar scoorde desondanks de winnende goal.",
-      "bron_zin": "Vier weken lang had hij door een schouderblessure geen strafcorner gepusht."
-    },
-    {
-      "bullet": "Hjalmar Voskuil (Hurley) scoorde op 12 april 2026 de winnende strafcorner in de laatste 15 seconden tegen HDM (1-2), wat Hurley de eerste zege van het seizoen bezorgde.",
-      "bron_zin": "Met nog vijftien seconden op de klok sleepte Hurley-speler Hjalmar Voskuil in de belangrijke uitwedstrijd tegen HDM (1-2) zijn ploeg naar de eerste overwinning van het seizoen."
     }
   ],
   "verborgen_bullets": []
