@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "b3e31d0f-d2d6-4806-8f2a-dcb5d687dde3",
+      "naam": "Van den Nieuwenhof maanden buitenspel  ‘Wist meteen dat het fout zat’",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-23T17:06:42.723Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "6d9d0c74-97c0-4827-a9d5-2035a4594ca0",
       "naam": "Het weekend in cijfers  volop clubrecords,…   Tulp Hoofdklasse",
       "velden": {
