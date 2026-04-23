@@ -1,6 +1,23 @@
 {
   "entries": [
     {
+      "type": "blessure",
+      "id": "noor_van_den_nieuwenhof",
+      "naam": "noor_van_den_nieuwenhof",
+      "velden": {
+        "id": "75f62588-7929-41bd-a8e3-324b1a72296b",
+        "plek": "Voorste kruisband",
+        "start": "2026-04-23",
+        "uitleg": "Opgelopen op 19 april 26 tegen Tilburg.",
+        "verwacht_herstel": "",
+        "actief": true,
+        "toegevoegd": "2026-04-23T17:07:50.309Z"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-23T17:07:51.103Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "b3e31d0f-d2d6-4806-8f2a-dcb5d687dde3",
       "naam": "Van den Nieuwenhof maanden buitenspel  ‘Wist meteen dat het fout zat’",
