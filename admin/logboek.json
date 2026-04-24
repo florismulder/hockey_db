@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "a27cf93d-8789-4036-b787-f4bff9098217",
+      "naam": "Sorsby schiet Den Bosch naar Gold Cup titel   Hockey Magazine",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T14:43:13.172Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "9561dd1a-c9df-4218-8ec5-048377d88941",
       "naam": "LIVE op hockey.nl  de Brabantse bekerfinale tussen twee topteams",
       "velden": {
