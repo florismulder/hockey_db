@@ -5437,7 +5437,35 @@
       "score_uit": null,
       "scorers": [],
       "kaarten": [],
-      "geverifieerd": false
+      "geverifieerd": false,
+      "viaplay": {
+        "scheidsrechters": [
+          "Paul van Beuzekom",
+          "Marije Appels"
+        ],
+        "stats_thuis": [
+          "HDM verloor acht van haar laatste elf wedstrijden.",
+          "HDM beëindigde een reeks van vier thuisnederlagen op rij.",
+          "HDM won slechts één van haar laatste 46 thuisduels tegen de Grote Drie."
+        ],
+        "stats_uit": [
+          "Den Bosch won haar laatste drie competitieduels en tien van de laatste twaalf.",
+          "Den Bosch won haar laatste vier uitwedstrijden op rij.",
+          "Frédérique Matla kan voor het derde seizoen op rij twintig goals halen.",
+          "Frédérique Matla scoorde al twintig doelpunten tegen HDM.",
+          "Joosje Burg is dit seizoen de beste schaduwschutter van Den Bosch.",
+          "Joosje Burg was direct betrokken bij zestien van de 49 doelpunten."
+        ],
+        "stats_onderling": [
+          "Den Bosch is al negen wedstrijden ongeslagen tegen HDM.",
+          "HDM won slechts één van de laatste 52 duels tegen Den Bosch.",
+          "HDM won voor het laatst thuis van Den Bosch op 8 november 1992.",
+          "HDM bleef 25 keer op rij zonder thuiszege tegen Den Bosch.",
+          "Den Bosch won 21 keer op rij op het veld van HDM.",
+          "In 57 duels won HDM 4 keer, Den Bosch 47 keer."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
     },
     {
       "datum": "2026-04-26",
@@ -5863,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T15:01:32.827Z"
+  "bijgewerkt": "2026-04-24T15:02:17.473Z"
 }
