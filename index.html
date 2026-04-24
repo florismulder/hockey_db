@@ -1185,21 +1185,13 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
 
         {/* Uitschuif doelpunten per type */}
         {actieveStat&&(()=>{
-          const lijstType=gescoordInPerType(actieveStat);
-          const heeftTypeInfo=lijstType.length>0;
-          const lijst=heeftTypeInfo?lijstType:gescoordIn;
+          const lijst=gescoordInPerType(actieveStat);
           return (
             <div style={{marginBottom:20,background:"var(--accent-light)",borderRadius:"0 0 8px 8px",
               border:"1px solid var(--accent)",borderTop:"none",overflow:"hidden"}}>
-              {!heeftTypeInfo&&actieveStat!=="goals"&&actieveStat!=="kaart"&&actieveStat!=="groenekaart"&&(
-                <div style={{padding:"6px 14px",fontSize:11,color:"var(--muted)",fontStyle:"italic",
-                  borderBottom:"1px solid rgba(196,98,26,.15)"}}>
-                  ⚠ Type-info niet beschikbaar per duel — alle gescoorde duels getoond
-                </div>
-              )}
               {!lijst.length?(
                 <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
-                  Geen wedstrijden gevonden.
+                  Geen wedstrijden gevonden voor dit type.
                 </div>
               ):lijst.map((w,i)=>{
                 const achterN=volledigeNaam.split(" ").filter(Boolean).pop()||"";
