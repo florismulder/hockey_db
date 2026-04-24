@@ -770,5 +770,27 @@
       "handmatig": false,
       "verborgen": false
     }
+  ],
+  "sander_van_berkel": [
+    {
+      "datum": "2026-04-23T22:00:00.000Z",
+      "titel": "Van Berkel mist finale door file  ‘Had mijn hoogtepunt moeten zijn'",
+      "bullet": "Sander van Berkel (keeper) miste de Gold Cup finale door een file veroorzaakt door een ernstig ongeluk. Normaal keept Van Berkel in de beker, nu deed eerste keeper Alexander Stadler dat.",
+      "link": "https://drive.google.com/file/d/1lthWjCboDh2AyvEzFIdu4qbj86IVaFBy",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "alexander_stadler": [
+    {
+      "datum": "2026-04-23T22:00:00.000Z",
+      "titel": "Van Berkel mist finale door file  ‘Had mijn hoogtepunt moeten zijn'",
+      "bullet": "Alexander Stadler verving onverwacht Sander van Berkel in de Gold Cup finale.",
+      "link": "https://drive.google.com/file/d/1lthWjCboDh2AyvEzFIdu4qbj86IVaFBy",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
   ]
 }
