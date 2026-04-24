@@ -974,6 +974,20 @@ function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
   );
 }
 
+class SpelerErrorBoundary extends React.Component {
+  constructor(props) { super(props); this.state = {fout: null}; }
+  static getDerivedStateFromError(e) { return {fout: e.message}; }
+  render() {
+    if (this.state.fout) return (
+      <div style={{padding:24,color:"var(--red)",background:"#fdf0ee",borderRadius:8,margin:16}}>
+        <div style={{fontWeight:700,marginBottom:8}}>Fout bij laden spelerspagina:</div>
+        <div style={{fontSize:13,fontFamily:"monospace"}}>{this.state.fout}</div>
+      </div>
+    );
+    return this.props.children;
+  }
+}
+
 function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
   if(!speler.naam) return <div className="loading">Spelersdata ontbreekt.</div>;
@@ -3098,18 +3112,24 @@ function App() {
   // Nav met URL-hash voor browser back/forward
   const nav=React.useCallback((p,id=null)=>{
     setPage(p);setPageId(id);window.scrollTo(0,0);
-    // Sla pagina op in hash (alleen simpele pagina's, geen complexe objecten)
-    if(window.history.pushState) window.history.pushState({p,id:null},"","#"+p);
+    // Speler-ID in hash zodat URL werkt en back/forward de speler onthoudt
+    let hash = p;
+    if((p==="speler"||p==="speler_via_club") && id?.id) hash = p+"/"+id.id;
+    if(window.history.pushState) window.history.pushState({p,id},"","#"+hash);
   },[]);
 
   // Luister naar browser back/forward
   React.useEffect(()=>{
     const handler=(e)=>{
-      if(e.state?.p) { setPage(e.state.p); setPageId(e.state.id||null); window.scrollTo(0,0); }
-      else {
+      if(e.state?.p) {
+        setPage(e.state.p);
+        setPageId(e.state.id||null);
+        window.scrollTo(0,0);
+      } else {
         // Fallback: parse hash
         const hash=window.location.hash.replace("#","");
-        if(hash) { setPage(hash); setPageId(null); window.scrollTo(0,0); }
+        const [basePage] = hash.split("/");
+        if(hash) { setPage(basePage||"dashboard"); setPageId(null); window.scrollTo(0,0); }
         else { setPage("dashboard"); setPageId(null); }
       }
     };
@@ -3142,12 +3162,12 @@ function App() {
       {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers} spelers={spelers} nav={nav}/>}
       {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav} geslacht={geslacht} spelers={spelers}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
-      {page==="speler"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
+      {page==="speler"&&<SpelerErrorBoundary><SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} geslacht={geslacht}/>}
       {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId?._club||pageId} geslacht={pageId?._geslacht||geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
-      {page==="speler_via_club"&&<SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/>}
+      {page==="speler_via_club"&&<SpelerErrorBoundary><SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
     </>
   );
 }
