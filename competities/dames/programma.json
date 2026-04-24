@@ -5485,7 +5485,35 @@
       "uit": "Pinoké",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Coen van Bunge",
+          "Amber van Roon"
+        ],
+        "stats_thuis": [
+          "Tilburg is nog steeds de hekkensluiter van de competitie.",
+          "Tilburg hield vijf punten over aan haar laatste drie duels.",
+          "Tilburg incasseerde dit seizoen de meeste doelpunten (62).",
+          "Tilburg kwam in negen thuiswedstrijden tot zeven treffers, het minste van alle clubs.",
+          "Tilburg leed dit seizoen de meeste nederlagen op eigen veld (zeven).",
+          "Tilburg won maar één van haar laatste twaalf thuiswedstrijden in de Hoofdklasse."
+        ],
+        "stats_uit": [
+          "Pinoké is nog steeds de nummer 5 van de competitie.",
+          "Pinoké won vorige speelronde met 2-1 van Oranje-Rood.",
+          "Pinoké sluit de reguliere competitie waarschijnlijk af als nummer vijf.",
+          "Pinoké kan voor het zevende seizoen op rij bij de top vijf eindigen.",
+          "Lana Kalse maakte dit seizoen al twaalf goals voor Pinoké.",
+          "Lana Kalse is drie goals verwijderd van het clubrecord (vijftien)."
+        ],
+        "stats_onderling": [
+          "Pinoké won alle zeven onderlinge duels met Tilburg.",
+          "De heenwedstrijd eindigde in een 5-2 zege voor Pinoké.",
+          "Pinoké won ook alle drie de onderlinge duels in Tilburg."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
     },
     {
       "datum": "2026-04-26",
@@ -5776,5 +5804,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T13:59:19.892Z"
+  "bijgewerkt": "2026-04-24T14:04:16.182Z"
 }
