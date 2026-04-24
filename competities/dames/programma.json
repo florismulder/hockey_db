@@ -5133,13 +5133,13 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 30,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Mariona Serrahima",
           "club": "HGC",
           "minuut": 33,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Lilly Stoffelsma",
@@ -5194,13 +5194,13 @@
           "naam": "Floor de Haan",
           "club": "Pinoké",
           "minuut": 28,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Josephine Murray",
           "club": "Pinoké",
           "minuut": 33,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Madelief de Beer",
@@ -5280,13 +5280,13 @@
           "naam": "Pien Sanders",
           "club": "Den Bosch",
           "minuut": 37,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 40,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Frédérique Matla",
@@ -5328,21 +5328,21 @@
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
           "minuut": 24,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Maud Preyde",
           "club": "Bloemendaal",
-          "minuut": 23,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Li Hong",
           "club": "Amsterdam",
-          "minuut": 51,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 51
         }
       ]
     },
@@ -5891,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:15:31.745Z"
+  "bijgewerkt": "2026-04-24T18:15:33.616Z"
 }
