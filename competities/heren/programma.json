@@ -6526,20 +6526,7 @@
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Sam Spencer",
-          "club": "HDM",
-          "minuut": 50,
-          "type": "groen"
-        },
-        {
-          "naam": "Adrian Lehmann-Richter",
-          "club": "Klein Zwitserland",
-          "minuut": 50,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Pinoké",
@@ -6995,5 +6982,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:23:03.491Z"
+  "bijgewerkt": "2026-04-24T18:23:05.726Z"
 }
