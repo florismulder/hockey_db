@@ -62,78 +62,70 @@
       ]
     },
     {
-      "thuis": "SCHC",
-      "uit": "HDM",
-      "score_thuis": 2,
-      "score_uit": 0,
+      "thuis": "Oranje-Rood",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 3,
       "datum": "2025-09-14",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 3,
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 40,
           "type": "veld"
         },
         {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 22,
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 59,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Lotte Ruts",
-          "club": "SCHC",
-          "minuut": 49,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
-      "thuis": "Bloemendaal",
-      "uit": "Pinoké",
-      "score_thuis": 2,
-      "score_uit": 2,
+      "thuis": "Tilburg",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 4,
       "datum": "2025-09-14",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Sam Luttmer",
-          "club": "Pinoké",
-          "minuut": 10,
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 17,
           "type": "veld"
         },
         {
-          "naam": "Rosalie Rosman",
-          "club": "Bloemendaal",
-          "minuut": 14,
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 42,
           "type": "veld"
         },
         {
-          "naam": "Mijntje van Campen",
-          "club": "Bloemendaal",
-          "minuut": 25,
+          "naam": "Babs Reijnen",
+          "club": "Den Bosch",
+          "minuut": 47,
           "type": "veld"
         },
         {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 25,
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 50,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Pientje Molenaar",
-          "club": "Bloemendaal",
-          "minuut": 30,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "HGC",
@@ -185,122 +177,75 @@
       ]
     },
     {
-      "thuis": "Tilburg",
-      "uit": "Den Bosch",
-      "score_thuis": 0,
-      "score_uit": 4,
-      "datum": "2025-09-14",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 17,
-          "type": "veld"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 42,
-          "type": "veld"
-        },
-        {
-          "naam": "Babs Reijnen",
-          "club": "Den Bosch",
-          "minuut": 47,
-          "type": "veld"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 50,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Oranje-Rood",
-      "uit": "Kampong",
-      "score_thuis": 0,
-      "score_uit": 3,
-      "datum": "2025-09-14",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
-          "minuut": 40,
-          "type": "veld"
-        },
-        {
-          "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 56,
-          "type": "veld"
-        },
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 59,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "Amsterdam",
-      "score_thuis": 1,
+      "thuis": "Bloemendaal",
+      "uit": "Pinoké",
+      "score_thuis": 2,
       "score_uit": 2,
-      "datum": "2025-09-20",
-      "tijdstip": "16:30",
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Reese d'Ariano",
-          "club": "Amsterdam",
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 10,
+          "type": "veld"
+        },
+        {
+          "naam": "Rosalie Rosman",
+          "club": "Bloemendaal",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Mijntje van Campen",
+          "club": "Bloemendaal",
           "minuut": 25,
           "type": "veld"
         },
         {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 44,
-          "type": "veld"
-        },
-        {
-          "naam": "Trijntje Beljaars",
-          "club": "Amsterdam",
-          "minuut": 58,
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 25,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Alessia Norbiato",
-          "club": "Amsterdam",
-          "minuut": 17,
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 30,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "SCHC",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2025-09-14",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 3,
+          "type": "veld"
         },
         {
-          "naam": "Maartje Krekelaar",
-          "club": "Den Bosch",
-          "minuut": 19,
-          "type": "groen"
-        },
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 22,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
         {
-          "naam": "Ivy Tellier",
-          "club": "Amsterdam",
-          "minuut": 50,
-          "type": "groen"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 55,
+          "naam": "Lotte Ruts",
+          "club": "SCHC",
+          "minuut": 49,
           "type": "groen"
         }
       ]
@@ -367,6 +312,183 @@
       ]
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-20",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Reese d'Ariano",
+          "club": "Amsterdam",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Alessia Norbiato",
+          "club": "Amsterdam",
+          "minuut": 17,
+          "type": "groen"
+        },
+        {
+          "naam": "Maartje Krekelaar",
+          "club": "Den Bosch",
+          "minuut": 19,
+          "type": "groen"
+        },
+        {
+          "naam": "Ivy Tellier",
+          "club": "Amsterdam",
+          "minuut": 50,
+          "type": "groen"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 55,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "HDM",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 0,
+      "datum": "2025-09-21",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sabine van den Eijnden",
+          "club": "HDM",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Sabine van den Eijnden",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 41,
+          "type": "groen"
+        },
+        {
+          "naam": "Amber Brouwer",
+          "club": "Oranje-Rood",
+          "minuut": 42,
+          "type": "groen"
+        },
+        {
+          "naam": "Brechje Scheepers",
+          "club": "Oranje-Rood",
+          "minuut": 45,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2025-09-21",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Lisa Post",
+          "club": "SCHC",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 44,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 41,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 1,
+      "datum": "2025-09-21",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 21,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Kampong",
       "uit": "Tilburg",
       "score_thuis": 5,
@@ -428,270 +550,88 @@
       ]
     },
     {
-      "thuis": "Rotterdam",
-      "uit": "Bloemendaal",
-      "score_thuis": 0,
-      "score_uit": 1,
-      "datum": "2025-09-21",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 21,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
       "thuis": "Pinoké",
-      "uit": "SCHC",
-      "score_thuis": 0,
-      "score_uit": 6,
-      "datum": "2025-09-21",
-      "tijdstip": "12:45",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 2,
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 51,
           "type": "veld"
         },
         {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 17,
+          "naam": "Elin van Erk",
+          "club": "Pinoké",
+          "minuut": 54,
           "type": "veld"
         },
         {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Lisa Post",
-          "club": "SCHC",
-          "minuut": 20,
-          "type": "veld"
-        },
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 44,
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 56,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Sam Luttmer",
+          "naam": "Daan Sabel",
           "club": "Pinoké",
-          "minuut": 41,
+          "minuut": 26,
           "type": "geel"
+        },
+        {
+          "naam": "Pien van der Heide",
+          "club": "HDM",
+          "minuut": 42,
+          "type": "groen"
         }
       ]
     },
     {
-      "thuis": "HDM",
+      "thuis": "Tilburg",
       "uit": "Oranje-Rood",
-      "score_thuis": 3,
-      "score_uit": 0,
-      "datum": "2025-09-21",
-      "tijdstip": "12:45",
+      "score_thuis": 0,
+      "score_uit": 1,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Sabine van den Eijnden",
-          "club": "HDM",
-          "minuut": 30,
-          "type": "veld"
-        },
-        {
-          "naam": "Sabine van den Eijnden",
-          "club": "HDM",
-          "minuut": 37,
-          "type": "veld"
-        },
-        {
-          "naam": "Delany van den Broek",
-          "club": "HDM",
-          "minuut": 51,
+          "naam": "Charlotte Schrijvers",
+          "club": "Oranje-Rood",
+          "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 41,
-          "type": "groen"
-        },
-        {
-          "naam": "Amber Brouwer",
-          "club": "Oranje-Rood",
+          "naam": "Emmely Bekker",
+          "club": "Tilburg",
           "minuut": 42,
           "type": "groen"
         },
         {
-          "naam": "Brechje Scheepers",
+          "naam": "Merel Voermans",
           "club": "Oranje-Rood",
-          "minuut": 45,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "SCHC",
-      "uit": "Rotterdam",
-      "score_thuis": 8,
-      "score_uit": 0,
-      "datum": "2025-09-25",
-      "tijdstip": "20:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 17,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 24,
-          "type": "veld"
-        },
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 28,
-          "type": "veld"
-        },
-        {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 33,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 36,
-          "type": "veld"
-        },
-        {
-          "naam": "Noa Boterman",
-          "club": "SCHC",
-          "minuut": 37,
-          "type": "veld"
-        },
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 40,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 43,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lotte Ruts",
-          "club": "SCHC",
-          "minuut": 12,
+          "minuut": 54,
           "type": "groen"
         },
         {
-          "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 24,
+          "naam": "Carolin Hoffmann",
+          "club": "Tilburg",
+          "minuut": 55,
           "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Bloemendaal",
-      "uit": "Hurley",
-      "score_thuis": 1,
-      "score_uit": 1,
-      "datum": "2025-09-25",
-      "tijdstip": "20:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 29,
-          "type": "veld"
         },
         {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 45,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "HGC",
-      "uit": "Den Bosch",
-      "score_thuis": 1,
-      "score_uit": 4,
-      "datum": "2025-09-25",
-      "tijdstip": "20:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lieve Wijckmans",
-          "club": "Den Bosch",
-          "minuut": 16,
-          "type": "veld"
-        },
-        {
-          "naam": "Elke Brinkman-Boers",
-          "club": "Den Bosch",
-          "minuut": 25,
-          "type": "veld"
-        },
-        {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 41,
-          "type": "veld"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 53,
-          "type": "veld"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 57,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 46,
-          "type": "groen"
+          "naam": "Hannah Salden",
+          "club": "Tilburg",
+          "minuut": 59,
+          "type": "geel"
         }
       ]
     },
@@ -769,87 +709,410 @@
       ]
     },
     {
-      "thuis": "Tilburg",
-      "uit": "Oranje-Rood",
-      "score_thuis": 0,
+      "thuis": "HGC",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2025-09-25",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lieve Wijckmans",
+          "club": "Den Bosch",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Elke Brinkman-Boers",
+          "club": "Den Bosch",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 53,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 46,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Hurley",
+      "score_thuis": 1,
       "score_uit": 1,
       "datum": "2025-09-25",
       "tijdstip": "20:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Charlotte Schrijvers",
-          "club": "Oranje-Rood",
-          "minuut": 59,
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 45,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Emmely Bekker",
-          "club": "Tilburg",
-          "minuut": 42,
-          "type": "groen"
-        },
-        {
-          "naam": "Merel Voermans",
-          "club": "Oranje-Rood",
-          "minuut": 54,
-          "type": "groen"
-        },
-        {
-          "naam": "Carolin Hoffmann",
-          "club": "Tilburg",
-          "minuut": 55,
-          "type": "groen"
-        },
-        {
-          "naam": "Hannah Salden",
-          "club": "Tilburg",
-          "minuut": 59,
-          "type": "geel"
-        }
-      ]
+      "kaarten": []
     },
     {
-      "thuis": "Pinoké",
-      "uit": "HDM",
-      "score_thuis": 1,
-      "score_uit": 2,
+      "thuis": "SCHC",
+      "uit": "Rotterdam",
+      "score_thuis": 8,
+      "score_uit": 0,
       "datum": "2025-09-25",
       "tijdstip": "20:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 51,
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 17,
           "type": "veld"
         },
         {
-          "naam": "Elin van Erk",
-          "club": "Pinoké",
-          "minuut": 54,
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 24,
           "type": "veld"
         },
         {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 56,
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Noa Boterman",
+          "club": "SCHC",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 43,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Daan Sabel",
-          "club": "Pinoké",
-          "minuut": 26,
-          "type": "geel"
+          "naam": "Lotte Ruts",
+          "club": "SCHC",
+          "minuut": 12,
+          "type": "groen"
         },
         {
-          "naam": "Pien van der Heide",
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 24,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "HDM",
+      "uit": "Tilburg",
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Yara Akkerman",
           "club": "HDM",
-          "minuut": 42,
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "HDM",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Iris Dominicus",
+          "club": "Tilburg",
+          "minuut": 60,
+          "type": "veld"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Pinoké",
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Maria Steensma",
+          "club": "Pinoké",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Maria Steensma",
+          "club": "Pinoké",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Luttmer",
+          "club": "Pinoké",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Melle Vaessen",
+          "club": "Rotterdam",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Noor Omrani",
+          "club": "Rotterdam",
+          "minuut": 38,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Hurley",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Renée van Laarhoven",
+          "club": "SCHC",
+          "minuut": 49,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Sanne Caarls",
+          "club": "Hurley",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Taheera Augousti",
+          "club": "Hurley",
+          "minuut": 45,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Sophie Thoolen",
+          "club": "Bloemendaal",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Sanne Koolen",
+          "club": "Den Bosch",
+          "minuut": 34,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "groen"
+        },
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "minuut": 39,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Kampong",
+      "uit": "HGC",
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2025-09-28",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 8,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 58,
+          "type": "groen"
+        },
+        {
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "groen"
+        },
+        {
+          "naam": "Marta Segú Rueda",
+          "club": "HGC",
+          "minuut": 60,
           "type": "groen"
         }
       ]
@@ -928,269 +1191,6 @@
       ]
     },
     {
-      "thuis": "Kampong",
-      "uit": "HGC",
-      "score_thuis": 3,
-      "score_uit": 3,
-      "datum": "2025-09-28",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 3,
-          "type": "veld"
-        },
-        {
-          "naam": "Lilly Stoffelsma",
-          "club": "HGC",
-          "minuut": 8,
-          "type": "veld"
-        },
-        {
-          "naam": "Carlijn Tukkers",
-          "club": "Kampong",
-          "minuut": 35,
-          "type": "veld"
-        },
-        {
-          "naam": "Sosha Benninga",
-          "club": "Kampong",
-          "minuut": 43,
-          "type": "veld"
-        },
-        {
-          "naam": "Faye Muijderman",
-          "club": "HGC",
-          "minuut": 58,
-          "type": "veld"
-        },
-        {
-          "naam": "Luna Fokke",
-          "club": "Kampong",
-          "minuut": 60,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Faye Muijderman",
-          "club": "HGC",
-          "minuut": 58,
-          "type": "groen"
-        },
-        {
-          "naam": "Eline Jansen",
-          "club": "Kampong",
-          "minuut": 59,
-          "type": "groen"
-        },
-        {
-          "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 60,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "Bloemendaal",
-      "score_thuis": 1,
-      "score_uit": 2,
-      "datum": "2025-09-28",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 15,
-          "type": "veld"
-        },
-        {
-          "naam": "Sophie Thoolen",
-          "club": "Bloemendaal",
-          "minuut": 25,
-          "type": "veld"
-        },
-        {
-          "naam": "Sanne Koolen",
-          "club": "Den Bosch",
-          "minuut": 34,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 29,
-          "type": "groen"
-        },
-        {
-          "naam": "Pientje Molenaar",
-          "club": "Bloemendaal",
-          "minuut": 32,
-          "type": "groen"
-        },
-        {
-          "naam": "Maud Preyde",
-          "club": "Bloemendaal",
-          "minuut": 39,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Hurley",
-      "uit": "SCHC",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2025-09-28",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 7,
-          "type": "veld"
-        },
-        {
-          "naam": "Renée van Laarhoven",
-          "club": "SCHC",
-          "minuut": 49,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Xan de Waard",
-          "club": "SCHC",
-          "minuut": 32,
-          "type": "groen"
-        },
-        {
-          "naam": "Sanne Caarls",
-          "club": "Hurley",
-          "minuut": 39,
-          "type": "groen"
-        },
-        {
-          "naam": "Taheera Augousti",
-          "club": "Hurley",
-          "minuut": 45,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "Pinoké",
-      "score_thuis": 1,
-      "score_uit": 4,
-      "datum": "2025-09-28",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Maria Steensma",
-          "club": "Pinoké",
-          "minuut": 20,
-          "type": "veld"
-        },
-        {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 25,
-          "type": "veld"
-        },
-        {
-          "naam": "Maria Steensma",
-          "club": "Pinoké",
-          "minuut": 29,
-          "type": "veld"
-        },
-        {
-          "naam": "Sam Luttmer",
-          "club": "Pinoké",
-          "minuut": 44,
-          "type": "veld"
-        },
-        {
-          "naam": "Melle Vaessen",
-          "club": "Rotterdam",
-          "minuut": 45,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Noor Omrani",
-          "club": "Rotterdam",
-          "minuut": 38,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "HDM",
-      "uit": "Tilburg",
-      "score_thuis": 3,
-      "score_uit": 2,
-      "datum": "2025-09-28",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Yara Akkerman",
-          "club": "HDM",
-          "minuut": 30,
-          "type": "veld"
-        },
-        {
-          "naam": "Carmen Victoria",
-          "club": "Tilburg",
-          "minuut": 58,
-          "type": "veld"
-        },
-        {
-          "naam": "Tessa Clasener",
-          "club": "HDM",
-          "minuut": 58,
-          "type": "veld"
-        },
-        {
-          "naam": "Iris Dominicus",
-          "club": "Tilburg",
-          "minuut": 60,
-          "type": "veld"
-        },
-        {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 60,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 26,
-          "type": "groen"
-        },
-        {
-          "naam": "Tessa Clasener",
-          "club": "HDM",
-          "minuut": 37,
-          "type": "groen"
-        }
-      ]
-    },
-    {
       "thuis": "Amsterdam",
       "uit": "Tilburg",
       "score_thuis": 2,
@@ -1231,6 +1231,166 @@
         }
       ],
       "kaarten": []
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Florine Rodenburg",
+          "club": "Pinoké",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Pam van der Laan",
+          "club": "Pinoké",
+          "minuut": 48,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Julia Duffhuis",
+          "club": "HDM",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Julie van Dam",
+          "club": "Rotterdam",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Melle Vaessen",
+          "club": "Rotterdam",
+          "minuut": 46,
+          "type": "groen"
+        },
+        {
+          "naam": "Floor Holzenbosch",
+          "club": "HDM",
+          "minuut": 46,
+          "type": "geel"
+        },
+        {
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
+          "minuut": 56,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "HGC",
+      "uit": "Oranje-Rood",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Isis van Loon",
+          "club": "HGC",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lilly Stoffelsma",
+          "club": "HGC",
+          "minuut": 49,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-10-05",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lilli de Nooijer",
+          "club": "Bloemendaal",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "minuut": 48,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "SCHC",
@@ -1300,166 +1460,6 @@
       ]
     },
     {
-      "thuis": "Bloemendaal",
-      "uit": "Kampong",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2025-10-05",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
-          "minuut": 56,
-          "type": "veld"
-        },
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 58,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lilli de Nooijer",
-          "club": "Bloemendaal",
-          "minuut": 27,
-          "type": "groen"
-        },
-        {
-          "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
-          "minuut": 48,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "HGC",
-      "uit": "Oranje-Rood",
-      "score_thuis": 4,
-      "score_uit": 0,
-      "datum": "2025-10-05",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lilly Stoffelsma",
-          "club": "HGC",
-          "minuut": 30,
-          "type": "veld"
-        },
-        {
-          "naam": "Isis van Loon",
-          "club": "HGC",
-          "minuut": 44,
-          "type": "veld"
-        },
-        {
-          "naam": "Lilly Stoffelsma",
-          "club": "HGC",
-          "minuut": 51,
-          "type": "veld"
-        },
-        {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 59,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lilly Stoffelsma",
-          "club": "HGC",
-          "minuut": 49,
-          "type": "groene kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "HDM",
-      "score_thuis": 2,
-      "score_uit": 1,
-      "datum": "2025-10-05",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Julia Duffhuis",
-          "club": "HDM",
-          "minuut": 47,
-          "type": "veld"
-        },
-        {
-          "naam": "Julie van Dam",
-          "club": "Rotterdam",
-          "minuut": 53,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Melle Vaessen",
-          "club": "Rotterdam",
-          "minuut": 46,
-          "type": "groen"
-        },
-        {
-          "naam": "Floor Holzenbosch",
-          "club": "HDM",
-          "minuut": 46,
-          "type": "geel"
-        },
-        {
-          "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 56,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "Pinoké",
-      "uit": "Hurley",
-      "score_thuis": 2,
-      "score_uit": 0,
-      "datum": "2025-10-05",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Florine Rodenburg",
-          "club": "Pinoké",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Pam van der Laan",
-          "club": "Pinoké",
-          "minuut": 48,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 56,
-          "type": "groen"
-        }
-      ]
-    },
-    {
       "thuis": "Kampong",
       "uit": "SCHC",
       "score_thuis": 1,
@@ -1495,6 +1495,136 @@
           "type": "groen"
         }
       ]
+    },
+    {
+      "thuis": "HDM",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Ivy Tellier",
+          "club": "Amsterdam",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Roos Alkemade",
+          "minuut": 38,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Marijn Veen",
+          "minuut": 43,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Merle Blaffert",
+          "minuut": 51,
+          "type": "gele kaart"
+        }
+      ]
+    },
+    {
+      "thuis": "Hurley",
+      "uit": "Rotterdam",
+      "score_thuis": 0,
+      "score_uit": 1,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 9,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 15,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Oranje-Rood",
+      "uit": "Bloemendaal",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-10-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": []
     },
     {
       "thuis": "Tilburg",
@@ -1564,136 +1694,6 @@
       ]
     },
     {
-      "thuis": "Oranje-Rood",
-      "uit": "Bloemendaal",
-      "score_thuis": 0,
-      "score_uit": 0,
-      "datum": "2025-10-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [],
-      "kaarten": []
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "Pinoké",
-      "score_thuis": 2,
-      "score_uit": 1,
-      "datum": "2025-10-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 54,
-          "type": "veld"
-        },
-        {
-          "naam": "Floor de Haan",
-          "club": "Pinoké",
-          "minuut": 55,
-          "type": "veld"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 57,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 15,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Hurley",
-      "uit": "Rotterdam",
-      "score_thuis": 0,
-      "score_uit": 1,
-      "datum": "2025-10-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 9,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "HDM",
-      "uit": "Amsterdam",
-      "score_thuis": 0,
-      "score_uit": 6,
-      "datum": "2025-10-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 14,
-          "type": "veld"
-        },
-        {
-          "naam": "Ivy Tellier",
-          "club": "Amsterdam",
-          "minuut": 25,
-          "type": "veld"
-        },
-        {
-          "naam": "Trijntje Beljaars",
-          "club": "Amsterdam",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Fay van der Elst",
-          "club": "Amsterdam",
-          "minuut": 55,
-          "type": "veld"
-        },
-        {
-          "naam": "Fay van der Elst",
-          "club": "Amsterdam",
-          "minuut": 57,
-          "type": "veld"
-        },
-        {
-          "naam": "Trijntje Beljaars",
-          "club": "Amsterdam",
-          "minuut": 60,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Roos Alkemade",
-          "minuut": 38,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Marijn Veen",
-          "minuut": 43,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Merle Blaffert",
-          "minuut": 51,
-          "type": "gele kaart"
-        }
-      ]
-    },
-    {
       "thuis": "Bloemendaal",
       "uit": "Tilburg",
       "score_thuis": 4,
@@ -1749,62 +1749,116 @@
       ]
     },
     {
-      "thuis": "SCHC",
-      "uit": "Oranje-Rood",
-      "score_thuis": 5,
-      "score_uit": 0,
+      "thuis": "Pinoké",
+      "uit": "Kampong",
+      "score_thuis": 1,
+      "score_uit": 1,
       "datum": "2025-10-19",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 12,
+          "naam": "Pam van der Laan",
+          "club": "Pinoké",
+          "minuut": 7,
           "type": "veld"
         },
         {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 15,
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 27,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": [
+        {
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
+          "minuut": 21,
+          "type": "groen"
+        },
+        {
+          "naam": "Rosa Fernig",
+          "club": "Den Bosch",
+          "minuut": 49,
+          "type": "groen"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Hurley",
+      "uit": "HDM",
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2025-10-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 3,
           "type": "veld"
         },
         {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 18,
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 40,
           "type": "veld"
         },
         {
-          "naam": "Xan de Waard",
-          "club": "SCHC",
-          "minuut": 35,
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 42,
           "type": "veld"
         },
         {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 47,
+          "naam": "Teuntje Horn",
+          "club": "Hurley",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivia Huisman",
+          "club": "Hurley",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Suus Meininger",
+          "club": "Hurley",
+          "minuut": 55,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
-          "minuut": 20,
+          "naam": "Lotte Beetsma",
+          "club": "HDM",
+          "minuut": 3,
           "type": "groen"
         },
         {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 50,
-          "type": "groen"
-        },
-        {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 56,
+          "naam": "Teuntje Horn",
+          "club": "Hurley",
+          "minuut": 31,
           "type": "groen"
         }
       ]
@@ -1883,119 +1937,65 @@
       ]
     },
     {
-      "thuis": "Hurley",
-      "uit": "HDM",
+      "thuis": "SCHC",
+      "uit": "Oranje-Rood",
       "score_thuis": 5,
-      "score_uit": 1,
-      "datum": "2025-10-19",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 3,
-          "type": "veld"
-        },
-        {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 40,
-          "type": "veld"
-        },
-        {
-          "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
-          "minuut": 42,
-          "type": "veld"
-        },
-        {
-          "naam": "Teuntje Horn",
-          "club": "Hurley",
-          "minuut": 45,
-          "type": "veld"
-        },
-        {
-          "naam": "Olivia Huisman",
-          "club": "Hurley",
-          "minuut": 55,
-          "type": "veld"
-        },
-        {
-          "naam": "Suus Meininger",
-          "club": "Hurley",
-          "minuut": 55,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lotte Beetsma",
-          "club": "HDM",
-          "minuut": 3,
-          "type": "groen"
-        },
-        {
-          "naam": "Teuntje Horn",
-          "club": "Hurley",
-          "minuut": 31,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "Den Bosch",
-      "score_thuis": 0,
       "score_uit": 0,
       "datum": "2025-10-19",
       "tijdstip": "12:45",
       "gespeeld": true,
-      "scorers": [],
-      "kaarten": [
-        {
-          "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 21,
-          "type": "groen"
-        },
-        {
-          "naam": "Rosa Fernig",
-          "club": "Den Bosch",
-          "minuut": 49,
-          "type": "groen"
-        },
-        {
-          "naam": "Pien Sanders",
-          "club": "Den Bosch",
-          "minuut": 57,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Pinoké",
-      "uit": "Kampong",
-      "score_thuis": 1,
-      "score_uit": 1,
-      "datum": "2025-10-19",
-      "tijdstip": "12:45",
-      "gespeeld": true,
       "scorers": [
         {
-          "naam": "Pam van der Laan",
-          "club": "Pinoké",
-          "minuut": 7,
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 12,
           "type": "veld"
         },
         {
-          "naam": "Guusje Moes",
-          "club": "Kampong",
-          "minuut": 27,
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 47,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Thirsa Kho",
+          "club": "Oranje-Rood",
+          "minuut": 20,
+          "type": "groen"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 50,
+          "type": "groen"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "Tilburg",
@@ -2059,59 +2059,76 @@
       ]
     },
     {
-      "thuis": "Amsterdam",
-      "uit": "Bloemendaal",
-      "score_thuis": 4,
-      "score_uit": 1,
+      "thuis": "Den Bosch",
+      "uit": "Hurley",
+      "score_thuis": 3,
+      "score_uit": 2,
       "datum": "2025-10-26",
-      "tijdstip": "12:30",
+      "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Felice Albers",
-          "club": "Amsterdam",
-          "minuut": 25,
+          "naam": "Maartje Krekelaar",
+          "club": "Den Bosch",
+          "minuut": 1,
           "type": "veld"
         },
         {
-          "naam": "Freeke Moes",
-          "club": "Amsterdam",
-          "minuut": 29,
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 10,
           "type": "veld"
         },
         {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 44,
+          "naam": "Suus Meininger",
+          "club": "Den Bosch",
+          "minuut": 37,
           "type": "veld"
         },
         {
-          "naam": "Sophie Thoolen",
-          "club": "Bloemendaal",
-          "minuut": 48,
+          "naam": "Frédérique Matla",
+          "club": "Hurley",
+          "minuut": 51,
           "type": "veld"
         },
         {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 58,
+          "naam": "Annelotte Nijhuis",
+          "club": "Hurley",
+          "minuut": 54,
           "type": "veld"
         }
       ],
-      "kaarten": [
+      "kaarten": []
+    },
+    {
+      "thuis": "Kampong",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-10-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
         {
-          "naam": "Noa Muller",
-          "club": "Amsterdam",
-          "minuut": 23,
-          "type": "groen"
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 20,
+          "type": "veld"
         },
         {
-          "naam": "Pientje Molenaar",
-          "club": "Bloemendaal",
-          "minuut": 30,
-          "type": "groen"
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 50,
+          "type": "veld"
         }
-      ]
+      ],
+      "kaarten": []
     },
     {
       "thuis": "Oranje-Rood",
@@ -2181,76 +2198,90 @@
       ]
     },
     {
-      "thuis": "Kampong",
-      "uit": "Rotterdam",
-      "score_thuis": 2,
+      "thuis": "Amsterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
       "score_uit": 1,
       "datum": "2025-10-26",
-      "tijdstip": "12:45",
+      "tijdstip": "12:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 20,
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 25,
           "type": "veld"
         },
         {
-          "naam": "Eline Jansen",
-          "club": "Kampong",
-          "minuut": 42,
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 29,
           "type": "veld"
         },
         {
-          "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 50,
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Sophie Thoolen",
+          "club": "Bloemendaal",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 58,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Noa Muller",
+          "club": "Amsterdam",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "minuut": 30,
+          "type": "groen"
+        }
+      ]
     },
     {
-      "thuis": "Den Bosch",
-      "uit": "Hurley",
-      "score_thuis": 3,
-      "score_uit": 2,
-      "datum": "2025-10-26",
-      "tijdstip": "12:45",
+      "thuis": "Rotterdam",
+      "uit": "Oranje-Rood",
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2025-11-01",
+      "tijdstip": "16:30",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Maartje Krekelaar",
-          "club": "Den Bosch",
-          "minuut": 1,
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 12,
           "type": "veld"
         },
         {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 10,
-          "type": "veld"
-        },
-        {
-          "naam": "Suus Meininger",
-          "club": "Den Bosch",
-          "minuut": 37,
-          "type": "veld"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Hurley",
-          "minuut": 51,
-          "type": "veld"
-        },
-        {
-          "naam": "Annelotte Nijhuis",
-          "club": "Hurley",
-          "minuut": 54,
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 16,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Brechje Scheepers",
+          "club": "Oranje-Rood",
+          "minuut": 43,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "Bloemendaal",
@@ -2298,177 +2329,6 @@
           "club": "HGC",
           "minuut": 58,
           "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "Oranje-Rood",
-      "score_thuis": 2,
-      "score_uit": 0,
-      "datum": "2025-11-01",
-      "tijdstip": "16:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 12,
-          "type": "veld"
-        },
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 16,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Brechje Scheepers",
-          "club": "Oranje-Rood",
-          "minuut": 43,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "SCHC",
-      "uit": "Amsterdam",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2025-11-02",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 1,
-          "type": "veld"
-        },
-        {
-          "naam": "Katerina Langedijk",
-          "club": "Amsterdam",
-          "minuut": 7,
-          "type": "veld"
-        },
-        {
-          "naam": "Fay van der Elst",
-          "club": "Amsterdam",
-          "minuut": 19,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 48,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Isa van Heerde",
-          "club": "SCHC",
-          "minuut": 24,
-          "type": "groen"
-        },
-        {
-          "naam": "Marleen Jochems",
-          "club": "SCHC",
-          "minuut": 56,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "HDM",
-      "score_thuis": 2,
-      "score_uit": 1,
-      "datum": "2025-11-02",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 17,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien van der Heide",
-          "club": "HDM",
-          "minuut": 37,
-          "type": "veld"
-        },
-        {
-          "naam": "Josephine Bekkers",
-          "club": "Den Bosch",
-          "minuut": 41,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Hurley",
-      "uit": "Kampong",
-      "score_thuis": 2,
-      "score_uit": 3,
-      "datum": "2025-11-02",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Michelle van der Drift",
-          "club": "Hurley",
-          "minuut": 5,
-          "type": "veld"
-        },
-        {
-          "naam": "Maria de Vries",
-          "club": "Kampong",
-          "minuut": 5,
-          "type": "veld"
-        },
-        {
-          "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
-          "minuut": 12,
-          "type": "veld"
-        },
-        {
-          "naam": "Guusje Moes",
-          "club": "Kampong",
-          "minuut": 27,
-          "type": "veld"
-        },
-        {
-          "naam": "Carlijn Tukkers",
-          "club": "Kampong",
-          "minuut": 37,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Imme van Es",
-          "club": "Kampong",
-          "minuut": 39,
-          "type": "groen"
-        },
-        {
-          "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 52,
-          "type": "groen"
-        },
-        {
-          "naam": "Teuntje Horn",
-          "club": "Hurley",
-          "minuut": 58,
-          "type": "groen"
         }
       ]
     },
@@ -2534,6 +2394,146 @@
       ]
     },
     {
+      "thuis": "Hurley",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2025-11-02",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Michelle van der Drift",
+          "club": "Hurley",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Maria de Vries",
+          "club": "Kampong",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 37,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Imme van Es",
+          "club": "Kampong",
+          "minuut": 39,
+          "type": "groen"
+        },
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 52,
+          "type": "groen"
+        },
+        {
+          "naam": "Teuntje Horn",
+          "club": "Hurley",
+          "minuut": 58,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "HDM",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-11-02",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien van der Heide",
+          "club": "HDM",
+          "minuut": 37,
+          "type": "veld"
+        },
+        {
+          "naam": "Josephine Bekkers",
+          "club": "Den Bosch",
+          "minuut": 41,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "SCHC",
+      "uit": "Amsterdam",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-11-02",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Fay van der Elst",
+          "club": "Amsterdam",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 48,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Isa van Heerde",
+          "club": "SCHC",
+          "minuut": 24,
+          "type": "groen"
+        },
+        {
+          "naam": "Marleen Jochems",
+          "club": "SCHC",
+          "minuut": 56,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "Tilburg",
       "uit": "Rotterdam",
       "score_thuis": 1,
@@ -2573,184 +2573,6 @@
           "club": "Rotterdam",
           "minuut": 55,
           "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Bloemendaal",
-      "uit": "HDM",
-      "score_thuis": 1,
-      "score_uit": 2,
-      "datum": "2025-11-09",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frederique Dekker",
-          "club": "HDM",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Phileine van den Bosch",
-          "club": "HDM",
-          "minuut": 36,
-          "type": "veld"
-        },
-        {
-          "naam": "Rosalie Rosman",
-          "club": "Bloemendaal",
-          "minuut": 56,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Luca Preyde",
-          "club": "Bloemendaal",
-          "minuut": 39,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "HGC",
-      "uit": "SCHC",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2025-11-09",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 36,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 43,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 30,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Amsterdam",
-      "uit": "Pinoké",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2025-11-09",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Renske Balemans",
-          "club": "Amsterdam",
-          "minuut": 5,
-          "type": "veld"
-        },
-        {
-          "naam": "Kiki Rozemeijer",
-          "club": "Pinoké",
-          "minuut": 33,
-          "type": "veld"
-        },
-        {
-          "naam": "Renske Balemans",
-          "club": "Amsterdam",
-          "minuut": 41,
-          "type": "veld"
-        },
-        {
-          "naam": "Nina van der Marel",
-          "club": "Pinoké",
-          "minuut": 59,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Marijn Veen",
-          "club": "Amsterdam",
-          "minuut": 47,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Elin van Erk",
-          "club": "Pinoké",
-          "minuut": 54,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Tessa Beetsma",
-          "club": "Pinoké",
-          "minuut": 60,
-          "type": "gele kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Oranje-Rood",
-      "uit": "Hurley",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2025-11-09",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Suus Meininger",
-          "club": "Hurley",
-          "minuut": 9,
-          "type": "veld"
-        },
-        {
-          "naam": "Sanne Caarls",
-          "club": "Hurley",
-          "minuut": 41,
-          "type": "veld"
-        },
-        {
-          "naam": "Madelief de Beer",
-          "club": "Oranje-Rood",
-          "minuut": 52,
-          "type": "veld"
-        },
-        {
-          "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
-          "minuut": 58,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lynn Vasterink",
-          "club": "Oranje-Rood",
-          "minuut": 48,
-          "type": "groen"
-        },
-        {
-          "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 50,
-          "type": "geel"
-        },
-        {
-          "naam": "Romée Corver",
-          "club": "Hurley",
-          "minuut": 60,
-          "type": "geel"
         }
       ]
     },
@@ -2816,6 +2638,184 @@
       ]
     },
     {
+      "thuis": "Oranje-Rood",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-11-09",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Suus Meininger",
+          "club": "Hurley",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Sanne Caarls",
+          "club": "Hurley",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Madelief de Beer",
+          "club": "Oranje-Rood",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Thirsa Kho",
+          "club": "Oranje-Rood",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Lynn Vasterink",
+          "club": "Oranje-Rood",
+          "minuut": 48,
+          "type": "groen"
+        },
+        {
+          "naam": "Fiona Morgenstern",
+          "club": "Hurley",
+          "minuut": 50,
+          "type": "geel"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Amsterdam",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-11-09",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Renske Balemans",
+          "club": "Amsterdam",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Kiki Rozemeijer",
+          "club": "Pinoké",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Renske Balemans",
+          "club": "Amsterdam",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Nina van der Marel",
+          "club": "Pinoké",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 47,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Elin van Erk",
+          "club": "Pinoké",
+          "minuut": 54,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 60,
+          "type": "gele kaart"
+        }
+      ]
+    },
+    {
+      "thuis": "HGC",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2025-11-09",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 43,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Marta Segú Rueda",
+          "club": "HGC",
+          "minuut": 30,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2025-11-09",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frederique Dekker",
+          "club": "HDM",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Phileine van den Bosch",
+          "club": "HDM",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Rosalie Rosman",
+          "club": "Bloemendaal",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Luca Preyde",
+          "club": "Bloemendaal",
+          "minuut": 39,
+          "type": "groen"
+        }
+      ]
+    },
+    {
       "thuis": "SCHC",
       "uit": "Bloemendaal",
       "score_thuis": 3,
@@ -2858,44 +2858,92 @@
       "kaarten": []
     },
     {
-      "thuis": "Den Bosch",
-      "uit": "Oranje-Rood",
-      "score_thuis": 2,
-      "score_uit": 0,
+      "thuis": "HDM",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 3,
       "datum": "2025-11-16",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 49,
+          "naam": "Sosha Benninga",
+          "club": "Kampong",
+          "minuut": 41,
           "type": "veld"
         },
         {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 58,
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 55,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Juul van der Velden",
-          "club": "Oranje-Rood",
-          "minuut": 27,
+          "naam": "Kyra Fortuin",
+          "club": "Kampong",
+          "minuut": 7,
           "type": "groen"
         },
         {
-          "naam": "Pheline Vos",
-          "club": "Oranje-Rood",
-          "minuut": 58,
-          "type": "geel"
+          "naam": "Maria de Vries",
+          "club": "Kampong",
+          "minuut": 29,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-11-16",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 23,
+          "type": "veld"
         },
         {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 60,
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Faye Muijderman",
+          "club": "HGC",
+          "minuut": 42,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 0,
+      "datum": "2025-11-16",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [],
+      "kaarten": [
+        {
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 38,
           "type": "groen"
         }
       ]
@@ -2949,138 +2997,187 @@
       "kaarten": []
     },
     {
-      "thuis": "Rotterdam",
-      "uit": "Amsterdam",
-      "score_thuis": 0,
+      "thuis": "Den Bosch",
+      "uit": "Oranje-Rood",
+      "score_thuis": 2,
       "score_uit": 0,
       "datum": "2025-11-16",
       "tijdstip": "12:45",
       "gespeeld": true,
-      "scorers": [],
-      "kaarten": [
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 38,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Pinoké",
-      "uit": "HGC",
-      "score_thuis": 2,
-      "score_uit": 1,
-      "datum": "2025-11-16",
-      "tijdstip": "12:45",
-      "gespeeld": true,
       "scorers": [
         {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 23,
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 49,
           "type": "veld"
         },
         {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 38,
-          "type": "veld"
-        },
-        {
-          "naam": "Faye Muijderman",
-          "club": "HGC",
-          "minuut": 42,
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 58,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Juul van der Velden",
+          "club": "Oranje-Rood",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Pheline Vos",
+          "club": "Oranje-Rood",
+          "minuut": 58,
+          "type": "geel"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 60,
+          "type": "groen"
+        }
+      ]
     },
     {
       "thuis": "HDM",
-      "uit": "Kampong",
-      "score_thuis": 0,
-      "score_uit": 3,
-      "datum": "2025-11-16",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Sosha Benninga",
-          "club": "Kampong",
-          "minuut": 41,
-          "type": "veld"
-        },
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 54,
-          "type": "veld"
-        },
-        {
-          "naam": "Guusje Moes",
-          "club": "Kampong",
-          "minuut": 55,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Kyra Fortuin",
-          "club": "Kampong",
-          "minuut": 7,
-          "type": "groen"
-        },
-        {
-          "naam": "Maria de Vries",
-          "club": "Kampong",
-          "minuut": 29,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Pinoké",
-      "uit": "Bloemendaal",
-      "score_thuis": 2,
-      "score_uit": 2,
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 6,
       "datum": "2025-11-23",
-      "tijdstip": "15:00",
+      "tijdstip": "14:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Ankelein Baardemans",
-          "club": "Bloemendaal",
+          "naam": "Elzemiek Zandee",
+          "club": "SCHC",
           "minuut": 1,
           "type": "veld"
         },
         {
-          "naam": "Elin van Erk",
-          "club": "Pinoké",
-          "minuut": 23,
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 8,
           "type": "veld"
         },
         {
-          "naam": "Julie Hoogendoorn",
-          "club": "Bloemendaal",
-          "minuut": 44,
+          "naam": "Yara Akkerman",
+          "club": "HDM",
+          "minuut": 11,
           "type": "veld"
         },
         {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 48,
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 39,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Tessa Beetsma",
-          "club": "Pinoké",
-          "minuut": 45,
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 56,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-11-23",
+      "tijdstip": "14:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Blaas",
+          "club": "HGC",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Kirsten Zennemers",
+          "club": "Rotterdam",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Amy van den Bosch",
+          "club": "HGC",
+          "minuut": 40,
+          "type": "veld"
+        },
+        {
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Noor Omrani",
+          "club": "Rotterdam",
+          "minuut": 60,
           "type": "groen"
         }
       ]
+    },
+    {
+      "thuis": "Hurley",
+      "uit": "Amsterdam",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2025-11-23",
+      "tijdstip": "14:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Felice Albers",
+          "club": "Amsterdam",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 34,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "thuis": "Den Bosch",
@@ -3186,142 +3283,45 @@
       ]
     },
     {
-      "thuis": "Hurley",
-      "uit": "Amsterdam",
-      "score_thuis": 1,
-      "score_uit": 3,
-      "datum": "2025-11-23",
-      "tijdstip": "14:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Katerina Langedijk",
-          "club": "Amsterdam",
-          "minuut": 12,
-          "type": "veld"
-        },
-        {
-          "naam": "Freeke Moes",
-          "club": "Amsterdam",
-          "minuut": 17,
-          "type": "veld"
-        },
-        {
-          "naam": "Felice Albers",
-          "club": "Amsterdam",
-          "minuut": 27,
-          "type": "veld"
-        },
-        {
-          "naam": "Romée Corver",
-          "club": "Hurley",
-          "minuut": 34,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "HGC",
+      "thuis": "Pinoké",
+      "uit": "Bloemendaal",
       "score_thuis": 2,
       "score_uit": 2,
       "datum": "2025-11-23",
-      "tijdstip": "14:45",
+      "tijdstip": "15:00",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Jip Blaas",
-          "club": "HGC",
-          "minuut": 19,
-          "type": "veld"
-        },
-        {
-          "naam": "Kirsten Zennemers",
-          "club": "Rotterdam",
-          "minuut": 32,
-          "type": "veld"
-        },
-        {
-          "naam": "Amy van den Bosch",
-          "club": "HGC",
-          "minuut": 40,
-          "type": "veld"
-        },
-        {
-          "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 59,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Noor Omrani",
-          "club": "Rotterdam",
-          "minuut": 60,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "HDM",
-      "uit": "SCHC",
-      "score_thuis": 1,
-      "score_uit": 6,
-      "datum": "2025-11-23",
-      "tijdstip": "14:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Elzemiek Zandee",
-          "club": "SCHC",
+          "naam": "Ankelein Baardemans",
+          "club": "Bloemendaal",
           "minuut": 1,
           "type": "veld"
         },
         {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 8,
+          "naam": "Elin van Erk",
+          "club": "Pinoké",
+          "minuut": 23,
           "type": "veld"
         },
         {
-          "naam": "Yara Akkerman",
-          "club": "HDM",
-          "minuut": 11,
+          "naam": "Julie Hoogendoorn",
+          "club": "Bloemendaal",
+          "minuut": 44,
           "type": "veld"
         },
         {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 20,
-          "type": "veld"
-        },
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 39,
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 48,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 56,
-          "type": "groene kaart"
+          "naam": "Tessa Beetsma",
+          "club": "Pinoké",
+          "minuut": 45,
+          "type": "groen"
         }
       ]
     },
@@ -3375,38 +3375,118 @@
       ]
     },
     {
-      "thuis": "SCHC",
-      "uit": "Pinoké",
-      "score_thuis": 3,
-      "score_uit": 0,
+      "thuis": "Tilburg",
+      "uit": "Kampong",
+      "score_thuis": 0,
+      "score_uit": 2,
       "datum": "2026-03-01",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 3,
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 33,
           "type": "veld"
         },
         {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 29,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 38,
+          "naam": "Imme van Es",
+          "club": "Kampong",
+          "minuut": 53,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Bente Jager",
-          "club": "Pinoké",
-          "minuut": 40,
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 19,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Pleun Wester",
+          "club": "Tilburg",
+          "minuut": 45,
+          "type": "groene kaart"
+        }
+      ]
+    },
+    {
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-03-01",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Lieve Wijckmans",
+          "club": "Den Bosch",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 43,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 44,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "HGC",
+      "uit": "Hurley",
+      "score_thuis": 0,
+      "score_uit": 4,
+      "datum": "2026-03-01",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Taheera Augousti",
+          "club": "Hurley",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 28,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 58,
           "type": "groen"
         }
       ]
@@ -3455,119 +3535,39 @@
       ]
     },
     {
-      "thuis": "HGC",
-      "uit": "Hurley",
-      "score_thuis": 0,
-      "score_uit": 4,
+      "thuis": "SCHC",
+      "uit": "Pinoké",
+      "score_thuis": 3,
+      "score_uit": 0,
       "datum": "2026-03-01",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 1,
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 3,
           "type": "veld"
         },
         {
-          "naam": "Taheera Augousti",
-          "club": "Hurley",
-          "minuut": 12,
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 29,
           "type": "veld"
         },
         {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 27,
-          "type": "veld"
-        },
-        {
-          "naam": "Romée Corver",
-          "club": "Hurley",
-          "minuut": 28,
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 38,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 58,
+          "naam": "Bente Jager",
+          "club": "Pinoké",
+          "minuut": 40,
           "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Amsterdam",
-      "uit": "Den Bosch",
-      "score_thuis": 1,
-      "score_uit": 2,
-      "datum": "2026-03-01",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 39,
-          "type": "veld"
-        },
-        {
-          "naam": "Lieve Wijckmans",
-          "club": "Den Bosch",
-          "minuut": 41,
-          "type": "veld"
-        },
-        {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 43,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 44,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Tilburg",
-      "uit": "Kampong",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2026-03-01",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Luna Fokke",
-          "club": "Kampong",
-          "minuut": 33,
-          "type": "veld"
-        },
-        {
-          "naam": "Imme van Es",
-          "club": "Kampong",
-          "minuut": 53,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Guusje Moes",
-          "club": "Kampong",
-          "minuut": 19,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 45,
-          "type": "groene kaart"
         }
       ]
     },
@@ -3651,106 +3651,94 @@
       ]
     },
     {
-      "thuis": "Rotterdam",
-      "uit": "SCHC",
+      "thuis": "Hurley",
+      "uit": "Bloemendaal",
       "score_thuis": 1,
-      "score_uit": 3,
-      "datum": "2026-03-08",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 19,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 32,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 42,
-          "type": "veld"
-        },
-        {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 46,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 22,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Lisa Post",
-          "club": "SCHC",
-          "minuut": 51,
-          "type": "groene kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Oranje-Rood",
-      "uit": "Tilburg",
-      "score_thuis": 2,
       "score_uit": 2,
       "datum": "2026-03-08",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 4,
+          "naam": "Fleur Loomans",
+          "club": "Hurley",
+          "minuut": 12,
           "type": "veld"
         },
         {
-          "naam": "Margje van der Loo",
-          "club": "Oranje-Rood",
-          "minuut": 16,
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 42,
           "type": "veld"
         },
         {
-          "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
-          "minuut": 56,
-          "type": "veld"
-        },
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 59,
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 49,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Margje van der Loo",
-          "club": "Oranje-Rood",
-          "minuut": 14,
+          "naam": "Isa Huybers",
+          "club": "Bloemendaal",
+          "minuut": 38,
           "type": "groen"
         },
         {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 22,
+          "naam": "Taheera Augousti",
+          "club": "Hurley",
+          "minuut": 41,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "HGC",
+      "score_thuis": 5,
+      "score_uit": 0,
+      "datum": "2026-03-08",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 4,
+          "type": "veld"
         },
         {
-          "naam": "Jolien Bogers",
-          "club": "Oranje-Rood",
-          "minuut": 42,
-          "type": "groen"
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "minuut": 52,
+          "type": "groene kaart"
         }
       ]
     },
@@ -3828,94 +3816,106 @@
       ]
     },
     {
-      "thuis": "Den Bosch",
-      "uit": "HGC",
-      "score_thuis": 5,
-      "score_uit": 0,
-      "datum": "2026-03-08",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 4,
-          "type": "veld"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 11,
-          "type": "veld"
-        },
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 29,
-          "type": "veld"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 30,
-          "type": "veld"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 51,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Charlotte Englebert",
-          "club": "Den Bosch",
-          "minuut": 52,
-          "type": "groene kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Hurley",
-      "uit": "Bloemendaal",
-      "score_thuis": 1,
+      "thuis": "Oranje-Rood",
+      "uit": "Tilburg",
+      "score_thuis": 2,
       "score_uit": 2,
       "datum": "2026-03-08",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Fleur Loomans",
-          "club": "Hurley",
-          "minuut": 12,
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 4,
           "type": "veld"
         },
         {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 42,
+          "naam": "Margje van der Loo",
+          "club": "Oranje-Rood",
+          "minuut": 16,
           "type": "veld"
         },
         {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 49,
+          "naam": "Thirsa Kho",
+          "club": "Oranje-Rood",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Isa Huybers",
-          "club": "Bloemendaal",
-          "minuut": 38,
+          "naam": "Margje van der Loo",
+          "club": "Oranje-Rood",
+          "minuut": 14,
           "type": "groen"
         },
         {
-          "naam": "Taheera Augousti",
-          "club": "Hurley",
-          "minuut": 41,
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 22,
           "type": "groen"
+        },
+        {
+          "naam": "Jolien Bogers",
+          "club": "Oranje-Rood",
+          "minuut": 42,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "SCHC",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-03-08",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 32,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 46,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
+          "minuut": 22,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Lisa Post",
+          "club": "SCHC",
+          "minuut": 51,
+          "type": "groene kaart"
         }
       ]
     },
@@ -3959,6 +3959,201 @@
           "club": "Kampong",
           "minuut": 48,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Pinoké",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lana Kalse",
+          "club": "Pinoké",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Julie van Dam",
+          "club": "Rotterdam",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Julie van Dam",
+          "club": "Rotterdam",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Flo Klinkhamer",
+          "club": "Pinoké",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Anouk Stam",
+          "club": "Pinoké",
+          "minuut": 49,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Tilburg",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Carolin Hoffmann",
+          "club": "Tilburg",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Julia Duffhuis",
+          "club": "HDM",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 27,
+          "type": "groen"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 33,
+          "type": "geel"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 43,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Amsterdam",
+      "uit": "Oranje-Rood",
+      "score_thuis": 6,
+      "score_uit": 0,
+      "datum": "2026-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Freeke Moes",
+          "club": "Amsterdam",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 56,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 25,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Isa Huybers",
+          "club": "Bloemendaal",
+          "minuut": 56,
+          "type": "gele kaart"
+        },
+        {
+          "naam": "Florien Sondern",
+          "club": "Bloemendaal",
+          "minuut": 57,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "gele kaart"
         }
       ]
     },
@@ -4036,201 +4231,6 @@
       ]
     },
     {
-      "thuis": "Bloemendaal",
-      "uit": "Den Bosch",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2026-03-15",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 18,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien Sanders",
-          "club": "Den Bosch",
-          "minuut": 56,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 25,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Isa Huybers",
-          "club": "Bloemendaal",
-          "minuut": 56,
-          "type": "gele kaart"
-        },
-        {
-          "naam": "Florien Sondern",
-          "club": "Bloemendaal",
-          "minuut": 57,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 58,
-          "type": "gele kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Amsterdam",
-      "uit": "Oranje-Rood",
-      "score_thuis": 6,
-      "score_uit": 0,
-      "datum": "2026-03-15",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Freeke Moes",
-          "club": "Amsterdam",
-          "minuut": 23,
-          "type": "veld"
-        },
-        {
-          "naam": "Marijn Veen",
-          "club": "Amsterdam",
-          "minuut": 27,
-          "type": "veld"
-        },
-        {
-          "naam": "Marijn Veen",
-          "club": "Amsterdam",
-          "minuut": 28,
-          "type": "veld"
-        },
-        {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Imke Verstraeten",
-          "club": "Amsterdam",
-          "minuut": 42,
-          "type": "veld"
-        },
-        {
-          "naam": "Trijntje Beljaars",
-          "club": "Amsterdam",
-          "minuut": 45,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Tilburg",
-      "uit": "HDM",
-      "score_thuis": 1,
-      "score_uit": 3,
-      "datum": "2026-03-15",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 7,
-          "type": "veld"
-        },
-        {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 17,
-          "type": "veld"
-        },
-        {
-          "naam": "Carolin Hoffmann",
-          "club": "Tilburg",
-          "minuut": 22,
-          "type": "veld"
-        },
-        {
-          "naam": "Julia Duffhuis",
-          "club": "HDM",
-          "minuut": 53,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 27,
-          "type": "groen"
-        },
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 33,
-          "type": "geel"
-        },
-        {
-          "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 43,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Pinoké",
-      "uit": "Rotterdam",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2026-03-15",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 26,
-          "type": "veld"
-        },
-        {
-          "naam": "Julie van Dam",
-          "club": "Rotterdam",
-          "minuut": 51,
-          "type": "veld"
-        },
-        {
-          "naam": "Julie van Dam",
-          "club": "Rotterdam",
-          "minuut": 52,
-          "type": "veld"
-        },
-        {
-          "naam": "Flo Klinkhamer",
-          "club": "Pinoké",
-          "minuut": 58,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Anouk Stam",
-          "club": "Pinoké",
-          "minuut": 49,
-          "type": "geel"
-        }
-      ]
-    },
-    {
       "thuis": "Hurley",
       "uit": "Pinoké",
       "score_thuis": 0,
@@ -4280,41 +4280,162 @@
       ]
     },
     {
-      "thuis": "Tilburg",
-      "uit": "Amsterdam",
-      "score_thuis": 0,
-      "score_uit": 2,
+      "thuis": "HDM",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 3,
       "datum": "2026-03-22",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Katerina Langedijk",
-          "club": "Amsterdam",
-          "minuut": 33,
+          "naam": "Amber van den Dijssel",
+          "club": "Rotterdam",
+          "minuut": 12,
           "type": "veld"
         },
         {
-          "naam": "Ivy Tellier",
-          "club": "Amsterdam",
-          "minuut": 56,
+          "naam": "Amber van den Dijssel",
+          "club": "Rotterdam",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien van der Heide",
+          "club": "HDM",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 51,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Stella van Gils",
-          "club": "Amsterdam",
-          "minuut": 53,
+          "naam": "Myrthe van Kesteren",
+          "club": "Rotterdam",
+          "minuut": 21,
           "type": "groen"
         },
         {
-          "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 57,
+          "naam": "Brechtje van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 29,
           "type": "groen"
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "minuut": 32,
+          "type": "groen"
+        },
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 35,
+          "type": "groen"
+        },
+        {
+          "naam": "Emma van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 58,
+          "type": "geel"
         }
       ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "SCHC",
+      "score_thuis": 0,
+      "score_uit": 4,
+      "datum": "2026-03-22",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 56,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 57,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "minuut": 28,
+          "type": "groen"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Rosa Fernig",
+          "club": "Den Bosch",
+          "minuut": 57,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Kampong",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2026-03-22",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "thuis": "Oranje-Rood",
@@ -4390,160 +4511,39 @@
       ]
     },
     {
-      "thuis": "Kampong",
-      "uit": "Bloemendaal",
-      "score_thuis": 4,
-      "score_uit": 0,
-      "datum": "2026-03-22",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 19,
-          "type": "veld"
-        },
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 39,
-          "type": "veld"
-        },
-        {
-          "naam": "Luna Fokke",
-          "club": "Kampong",
-          "minuut": 49,
-          "type": "veld"
-        },
-        {
-          "naam": "Carlijn Tukkers",
-          "club": "Kampong",
-          "minuut": 59,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "SCHC",
+      "thuis": "Tilburg",
+      "uit": "Amsterdam",
       "score_thuis": 0,
-      "score_uit": 4,
+      "score_uit": 2,
       "datum": "2026-03-22",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 4,
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 33,
           "type": "veld"
         },
         {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 29,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
+          "naam": "Ivy Tellier",
+          "club": "Amsterdam",
           "minuut": 56,
           "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 57,
-          "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Charlotte Englebert",
-          "club": "Den Bosch",
-          "minuut": 28,
+          "naam": "Stella van Gils",
+          "club": "Amsterdam",
+          "minuut": 53,
           "type": "groen"
         },
         {
-          "naam": "Xan de Waard",
-          "club": "SCHC",
-          "minuut": 45,
-          "type": "groen"
-        },
-        {
-          "naam": "Rosa Fernig",
-          "club": "Den Bosch",
+          "naam": "Pleun Wester",
+          "club": "Tilburg",
           "minuut": 57,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "HDM",
-      "uit": "Rotterdam",
-      "score_thuis": 2,
-      "score_uit": 3,
-      "datum": "2026-03-22",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 12,
-          "type": "veld"
-        },
-        {
-          "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 36,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien van der Heide",
-          "club": "HDM",
-          "minuut": 46,
-          "type": "veld"
-        },
-        {
-          "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 51,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 21,
           "type": "groen"
-        },
-        {
-          "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 29,
-          "type": "groen"
-        },
-        {
-          "naam": "Delany van den Broek",
-          "club": "HDM",
-          "minuut": 32,
-          "type": "groen"
-        },
-        {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 35,
-          "type": "groen"
-        },
-        {
-          "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 58,
-          "type": "geel"
         }
       ]
     },
@@ -4584,44 +4584,147 @@
       "kaarten": []
     },
     {
-      "thuis": "Rotterdam",
-      "uit": "Hurley",
-      "score_thuis": 1,
-      "score_uit": 1,
+      "thuis": "SCHC",
+      "uit": "Kampong",
+      "score_thuis": 2,
+      "score_uit": 2,
       "datum": "2026-03-29",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 6,
+          "naam": "Bente van der Veldt",
+          "club": "Kampong",
+          "minuut": 35,
           "type": "veld"
         },
         {
-          "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 17,
+          "naam": "Carlijn Tukkers",
+          "club": "Kampong",
+          "minuut": 48,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 49,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 55,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 34,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Sophie Schelfhout",
-          "club": "Hurley",
-          "minuut": 34,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Iris Hollander",
-          "club": "Rotterdam",
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
           "minuut": 60,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Oranje-Rood",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-03-29",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lynn Vasterink",
+          "club": "Oranje-Rood",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Julianna Tornetta",
+          "club": "Oranje-Rood",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Julianna Tornetta",
+          "club": "Oranje-Rood",
+          "minuut": 33,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "HGC",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "datum": "2026-03-29",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carolin Hoffmann",
+          "club": "Tilburg",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 16,
+          "type": "veld"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Hannah Salden",
+          "club": "Tilburg",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Emmely Bekker",
+          "club": "Tilburg",
+          "minuut": 58,
+          "type": "veld"
+        },
+        {
+          "naam": "Amy van den Bosch",
+          "club": "HGC",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 34,
+          "type": "gele kaart"
+        },
+        {
+          "naam": "Roos Ezendam",
+          "club": "Tilburg",
+          "minuut": 37,
+          "type": "groene kaart"
+        },
+        {
+          "naam": "Zoë Admiraal",
+          "club": "HGC",
+          "minuut": 52,
           "type": "groene kaart"
         }
       ]
@@ -4700,148 +4803,45 @@
       ]
     },
     {
-      "thuis": "HGC",
-      "uit": "Tilburg",
-      "score_thuis": 2,
-      "score_uit": 4,
+      "thuis": "Rotterdam",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 1,
       "datum": "2026-03-29",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Carolin Hoffmann",
-          "club": "Tilburg",
+          "naam": "Fiona Morgenstern",
+          "club": "Hurley",
           "minuut": 6,
           "type": "veld"
         },
         {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 16,
-          "type": "veld"
-        },
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 43,
-          "type": "veld"
-        },
-        {
-          "naam": "Hannah Salden",
-          "club": "Tilburg",
-          "minuut": 50,
-          "type": "veld"
-        },
-        {
-          "naam": "Emmely Bekker",
-          "club": "Tilburg",
-          "minuut": 58,
-          "type": "veld"
-        },
-        {
-          "naam": "Amy van den Bosch",
-          "club": "HGC",
-          "minuut": 60,
+          "naam": "Emma van Santbrink",
+          "club": "Rotterdam",
+          "minuut": 17,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
+          "naam": "Daphne Koolhaas",
+          "club": "Rotterdam",
           "minuut": 34,
-          "type": "gele kaart"
-        },
-        {
-          "naam": "Roos Ezendam",
-          "club": "Tilburg",
-          "minuut": 37,
           "type": "groene kaart"
         },
         {
-          "naam": "Zoë Admiraal",
-          "club": "HGC",
-          "minuut": 52,
+          "naam": "Sophie Schelfhout",
+          "club": "Hurley",
+          "minuut": 34,
           "type": "groene kaart"
-        }
-      ]
-    },
-    {
-      "thuis": "Bloemendaal",
-      "uit": "Oranje-Rood",
-      "score_thuis": 1,
-      "score_uit": 3,
-      "datum": "2026-03-29",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lynn Vasterink",
-          "club": "Oranje-Rood",
-          "minuut": 3,
-          "type": "veld"
         },
         {
-          "naam": "Julianna Tornetta",
-          "club": "Oranje-Rood",
-          "minuut": 4,
-          "type": "veld"
-        },
-        {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 19,
-          "type": "veld"
-        },
-        {
-          "naam": "Julianna Tornetta",
-          "club": "Oranje-Rood",
-          "minuut": 33,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "SCHC",
-      "uit": "Kampong",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2026-03-29",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 35,
-          "type": "veld"
-        },
-        {
-          "naam": "Carlijn Tukkers",
-          "club": "Kampong",
-          "minuut": 48,
-          "type": "veld"
-        },
-        {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 49,
-          "type": "veld"
-        },
-        {
-          "naam": "Jip Dicke",
-          "club": "SCHC",
-          "minuut": 55,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "naam": "Iris Hollander",
+          "club": "Rotterdam",
           "minuut": 60,
-          "type": "groen"
+          "type": "groene kaart"
         }
       ]
     },
@@ -4891,6 +4891,165 @@
           "club": "Pinoké",
           "minuut": 55,
           "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "HDM",
+      "uit": "Hurley",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 38,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Fiona Morgenstern",
+          "club": "Hurley",
+          "minuut": 34,
+          "type": "groen"
+        },
+        {
+          "naam": "Nora Bruinsma",
+          "club": "Hurley",
+          "minuut": 59,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "Den Bosch",
+      "uit": "Rotterdam",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 37,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Oranje-Rood",
+      "uit": "SCHC",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Merel Voermans",
+          "club": "Oranje-Rood",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Lynn Vasterink",
+          "club": "Oranje-Rood",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Famke Richardson",
+          "club": "SCHC",
+          "minuut": 26,
+          "type": "groen"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 59,
+          "type": "geel"
+        }
+      ]
+    },
+    {
+      "thuis": "Tilburg",
+      "uit": "Bloemendaal",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-04-12",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Emmely Bekker",
+          "club": "Tilburg",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Precious Oud",
+          "club": "Tilburg",
+          "minuut": 33,
+          "type": "groen"
+        },
+        {
+          "naam": "Malou Nanninga",
+          "club": "Bloemendaal",
+          "minuut": 34,
+          "type": "groen"
+        },
+        {
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "minuut": 40,
+          "type": "groen"
+        },
+        {
+          "naam": "Pleun Wester",
+          "club": "Tilburg",
+          "minuut": 45,
+          "type": "groen"
+        },
+        {
+          "naam": "Ankelein Baardemans",
+          "club": "Bloemendaal",
+          "minuut": 55,
+          "type": "groen"
+        },
+        {
+          "naam": "Precious Oud",
+          "club": "Tilburg",
+          "minuut": 59,
+          "type": "geel"
         }
       ]
     },
@@ -4962,165 +5121,6 @@
       ]
     },
     {
-      "thuis": "Tilburg",
-      "uit": "Bloemendaal",
-      "score_thuis": 1,
-      "score_uit": 1,
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Emmely Bekker",
-          "club": "Tilburg",
-          "minuut": 31,
-          "type": "veld"
-        },
-        {
-          "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
-          "minuut": 45,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Precious Oud",
-          "club": "Tilburg",
-          "minuut": 33,
-          "type": "groen"
-        },
-        {
-          "naam": "Malou Nanninga",
-          "club": "Bloemendaal",
-          "minuut": 34,
-          "type": "groen"
-        },
-        {
-          "naam": "Maud Preyde",
-          "club": "Bloemendaal",
-          "minuut": 40,
-          "type": "groen"
-        },
-        {
-          "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 45,
-          "type": "groen"
-        },
-        {
-          "naam": "Ankelein Baardemans",
-          "club": "Bloemendaal",
-          "minuut": 55,
-          "type": "groen"
-        },
-        {
-          "naam": "Precious Oud",
-          "club": "Tilburg",
-          "minuut": 59,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "Oranje-Rood",
-      "uit": "SCHC",
-      "score_thuis": 2,
-      "score_uit": 2,
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Pien Dicke",
-          "club": "SCHC",
-          "minuut": 42,
-          "type": "veld"
-        },
-        {
-          "naam": "Merel Voermans",
-          "club": "Oranje-Rood",
-          "minuut": 44,
-          "type": "veld"
-        },
-        {
-          "naam": "Lynn Vasterink",
-          "club": "Oranje-Rood",
-          "minuut": 51,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 55,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Famke Richardson",
-          "club": "SCHC",
-          "minuut": 26,
-          "type": "groen"
-        },
-        {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 59,
-          "type": "geel"
-        }
-      ]
-    },
-    {
-      "thuis": "Den Bosch",
-      "uit": "Rotterdam",
-      "score_thuis": 1,
-      "score_uit": 0,
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 37,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
-      "thuis": "HDM",
-      "uit": "Hurley",
-      "score_thuis": 1,
-      "score_uit": 0,
-      "datum": "2026-04-12",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 38,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 34,
-          "type": "groen"
-        },
-        {
-          "naam": "Nora Bruinsma",
-          "club": "Hurley",
-          "minuut": 59,
-          "type": "groen"
-        }
-      ]
-    },
-    {
       "thuis": "HGC",
       "uit": "HDM",
       "score_thuis": 3,
@@ -5182,126 +5182,41 @@
       ]
     },
     {
-      "thuis": "SCHC",
-      "uit": "Tilburg",
+      "thuis": "Pinoké",
+      "uit": "Oranje-Rood",
       "score_thuis": 2,
-      "score_uit": 2,
+      "score_uit": 1,
       "datum": "2026-04-19",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Carmen Victoria",
-          "club": "Tilburg",
-          "minuut": 5,
-          "type": "veld"
-        },
-        {
-          "naam": "Elzemiek Zandee",
-          "club": "SCHC",
-          "minuut": 35,
-          "type": "veld"
-        },
-        {
-          "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 49,
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "minuut": 28,
           "type": "strafcorner"
         },
         {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 60,
+          "naam": "Josephine Murray",
+          "club": "Pinoké",
+          "minuut": 33,
           "type": "strafcorner"
+        },
+        {
+          "naam": "Madelief de Beer",
+          "club": "Oranje-Rood",
+          "minuut": 33,
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Merlijn Roodenburg",
-          "club": "Tilburg",
-          "minuut": 53,
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "minuut": 45,
           "type": "groen"
         }
       ]
-    },
-    {
-      "thuis": "Bloemendaal",
-      "uit": "Amsterdam",
-      "score_thuis": 0,
-      "score_uit": 2,
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Trijntje Beljaars",
-          "club": "Amsterdam",
-          "minuut": 5,
-          "type": "veld"
-        },
-        {
-          "naam": "Katerina Langedijk",
-          "club": "Amsterdam",
-          "minuut": 24,
-          "type": "strafcorner"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Maud Preyde",
-          "club": "Bloemendaal",
-          "minuut": 23,
-          "type": "groen"
-        },
-        {
-          "naam": "Li Hong",
-          "club": "Amsterdam",
-          "minuut": 51,
-          "type": "groen"
-        }
-      ]
-    },
-    {
-      "thuis": "Hurley",
-      "uit": "Den Bosch",
-      "score_thuis": 1,
-      "score_uit": 4,
-      "datum": "2026-04-19",
-      "tijdstip": "12:45",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Pien Sanders",
-          "club": "Den Bosch",
-          "minuut": 37,
-          "type": "strafcorner"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 40,
-          "type": "strafcorner"
-        },
-        {
-          "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 47,
-          "type": "veld"
-        },
-        {
-          "naam": "Romée Corver",
-          "club": "Hurley",
-          "minuut": 50,
-          "type": "veld"
-        },
-        {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 58,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
     },
     {
       "thuis": "Rotterdam",
@@ -5353,38 +5268,123 @@
       ]
     },
     {
-      "thuis": "Pinoké",
-      "uit": "Oranje-Rood",
-      "score_thuis": 2,
-      "score_uit": 1,
+      "thuis": "Hurley",
+      "uit": "Den Bosch",
+      "score_thuis": 1,
+      "score_uit": 4,
       "datum": "2026-04-19",
       "tijdstip": "12:45",
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Floor de Haan",
-          "club": "Pinoké",
-          "minuut": 28,
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 37,
           "type": "strafcorner"
         },
         {
-          "naam": "Josephine Murray",
-          "club": "Pinoké",
-          "minuut": 33,
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 40,
           "type": "strafcorner"
         },
         {
-          "naam": "Madelief de Beer",
-          "club": "Oranje-Rood",
-          "minuut": 33,
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 47,
           "type": "veld"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Bloemendaal",
+      "uit": "Amsterdam",
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Trijntje Beljaars",
+          "club": "Amsterdam",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 24,
+          "type": "strafcorner"
         }
       ],
       "kaarten": [
         {
-          "naam": "Floor de Haan",
-          "club": "Pinoké",
-          "minuut": 45,
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "minuut": 23,
+          "type": "groen"
+        },
+        {
+          "naam": "Li Hong",
+          "club": "Amsterdam",
+          "minuut": 51,
+          "type": "groen"
+        }
+      ]
+    },
+    {
+      "thuis": "SCHC",
+      "uit": "Tilburg",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-04-19",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carmen Victoria",
+          "club": "Tilburg",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Elzemiek Zandee",
+          "club": "SCHC",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 49,
+          "type": "strafcorner"
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 60,
+          "type": "strafcorner"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Merlijn Roodenburg",
+          "club": "Tilburg",
+          "minuut": 53,
           "type": "groen"
         }
       ]
@@ -5430,39 +5430,84 @@
     {
       "datum": "2026-04-26",
       "tijdstip": "12:45",
-      "thuis": "HGC",
-      "uit": "Bloemendaal",
+      "thuis": "HDM",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null,
+      "scorers": [],
+      "kaarten": [],
+      "geverifieerd": false
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "Kampong",
+      "uit": "Hurley",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null,
       "viaplay": {
         "scheidsrechters": [
-          "Merijn Goezinne",
-          "Pieter Houtkoop"
+          "Maikel Rabbers",
+          "Rik Kroon"
         ],
         "stats_thuis": [
-          "HGC beëindigde een minireeks van twee nederlagen met een 3-0 zege op HDM.",
-          "HGC verloor vijf van haar laatste zeven Hoofdklasse wedstrijden.",
-          "HGC hield de nul voor het eerst dit seizoen in de 3-0 overwinning op HDM.",
-          "HGC verloor slechts één van haar elf thuisduels tegen Bloemendaal.",
-          "HGC bleef in zestien van achttien thuisduels tegen Bloemendaal ongeslagen.",
-          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
+          "Kampong won dit seizoen veertien van haar negentien wedstrijden.",
+          "Kampong maakt nog kans om de reguliere competitie als nummer één af te sluiten.",
+          "Kampong leed dit seizoen pas twee nederlagen.",
+          "Kampong-aanvoerder Luna Fokke is met acht treffers de meest trefzekere speelster.",
+          "Luna Fokke gaf dit seizoen zeven assists en was betrokken bij vijftien doelpunten.",
+          "Luna Fokke is vier doelpunten verwijderd van haar vijftigste Hoofdklasse-goal voor Kampong."
         ],
         "stats_uit": [
-          "Bloemendaal wacht al vijf Hoofdklasse wedstrijden op een overwinning.",
-          "Bloemendaal haalde slechts één punt in de laatste vijf wedstrijden.",
-          "Bloemendaal won voor het laatst op 8 maart met 1-2 van Hurley.",
-          "Bloemendaal bleef dit seizoen in zes van haar negen uitduels ongeslagen.",
-          "Bloemendaal maakte slechts elf doelpunten in negen uitduels dit seizoen.",
-          "Bloemendaal-verdediger Demi Hilterman scoorde acht van haar 56 Hoofdklasse doelpunten tegen HGC."
+          "Noor van den Nieuwenhof raakte geblesseerd en is er een tijdje uit.",
+          "Hurley verloor vijf van haar laatste zes wedstrijden.",
+          "Hurley won slechts één van haar laatste twaalf uitwedstrijden in de Hoofdklasse.",
+          "Hurley nadert mijlpaal van 500 Hoofdklasse-wedstrijden."
         ],
         "stats_onderling": [
-          "De laatste ontmoeting op 1 november eindigde in 1-1.",
-          "De laatste zes onderlinge duels zijn in evenwicht met twee zeges elk.",
-          "Bloemendaal bleef in acht van de laatste elf duels met HGC ongeslagen.",
-          "HGC won 23 van de 37 onderlinge duels, Bloemendaal 8.",
-          "HGC won 14 van de 18 thuisduels tegen Bloemendaal.",
-          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
+          "Kampong is al vier wedstrijden ongeslagen tegen Hurley.",
+          "Kampong is thuis al vijf wedstrijden ongeslagen tegen Hurley.",
+          "In 44 duels won Kampong 21 keer, Hurley 12 keer, en 11 keer gelijk.",
+          "In 22 thuisduels won Kampong 11 keer, Hurley 6 keer, en 5 keer gelijk."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
+    },
+    {
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "thuis": "Tilburg",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Coen van Bunge",
+          "Amber van Roon"
+        ],
+        "stats_thuis": [
+          "Tilburg is nog steeds de hekkensluiter van de competitie.",
+          "Tilburg hield vijf punten over aan haar laatste drie duels.",
+          "Tilburg incasseerde dit seizoen de meeste doelpunten (62).",
+          "Tilburg kwam in negen thuiswedstrijden tot zeven treffers, het minste van alle clubs.",
+          "Tilburg leed dit seizoen de meeste nederlagen op eigen veld (zeven).",
+          "Tilburg won maar één van haar laatste twaalf thuiswedstrijden in de Hoofdklasse."
+        ],
+        "stats_uit": [
+          "Pinoké is nog steeds de nummer 5 van de competitie.",
+          "Pinoké won vorige speelronde met 2-1 van Oranje-Rood.",
+          "Pinoké sluit de reguliere competitie waarschijnlijk af als nummer vijf.",
+          "Pinoké kan voor het zevende seizoen op rij bij de top vijf eindigen.",
+          "Lana Kalse maakte dit seizoen al twaalf goals voor Pinoké.",
+          "Lana Kalse is drie goals verwijderd van het clubrecord (vijftien)."
+        ],
+        "stats_onderling": [
+          "Pinoké won alle zeven onderlinge duels met Tilburg.",
+          "De heenwedstrijd eindigde in een 5-2 zege voor Pinoké.",
+          "Pinoké won ook alle drie de onderlinge duels in Tilburg."
         ],
         "bijgewerkt": "2026-04-24"
       }
@@ -5510,120 +5555,48 @@
     {
       "datum": "2026-04-26",
       "tijdstip": "12:45",
-      "thuis": "Tilburg",
-      "uit": "Pinoké",
+      "thuis": "HGC",
+      "uit": "Bloemendaal",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null,
       "viaplay": {
         "scheidsrechters": [
-          "Coen van Bunge",
-          "Amber van Roon"
+          "Merijn Goezinne",
+          "Pieter Houtkoop"
         ],
         "stats_thuis": [
-          "Tilburg is nog steeds de hekkensluiter van de competitie.",
-          "Tilburg hield vijf punten over aan haar laatste drie duels.",
-          "Tilburg incasseerde dit seizoen de meeste doelpunten (62).",
-          "Tilburg kwam in negen thuiswedstrijden tot zeven treffers, het minste van alle clubs.",
-          "Tilburg leed dit seizoen de meeste nederlagen op eigen veld (zeven).",
-          "Tilburg won maar één van haar laatste twaalf thuiswedstrijden in de Hoofdklasse."
+          "HGC beëindigde een minireeks van twee nederlagen met een 3-0 zege op HDM.",
+          "HGC verloor vijf van haar laatste zeven Hoofdklasse wedstrijden.",
+          "HGC hield de nul voor het eerst dit seizoen in de 3-0 overwinning op HDM.",
+          "HGC verloor slechts één van haar elf thuisduels tegen Bloemendaal.",
+          "HGC bleef in zestien van achttien thuisduels tegen Bloemendaal ongeslagen.",
+          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
         ],
         "stats_uit": [
-          "Pinoké is nog steeds de nummer 5 van de competitie.",
-          "Pinoké won vorige speelronde met 2-1 van Oranje-Rood.",
-          "Pinoké sluit de reguliere competitie waarschijnlijk af als nummer vijf.",
-          "Pinoké kan voor het zevende seizoen op rij bij de top vijf eindigen.",
-          "Lana Kalse maakte dit seizoen al twaalf goals voor Pinoké.",
-          "Lana Kalse is drie goals verwijderd van het clubrecord (vijftien)."
+          "Bloemendaal wacht al vijf Hoofdklasse wedstrijden op een overwinning.",
+          "Bloemendaal haalde slechts één punt in de laatste vijf wedstrijden.",
+          "Bloemendaal won voor het laatst op 8 maart met 1-2 van Hurley.",
+          "Bloemendaal bleef dit seizoen in zes van haar negen uitduels ongeslagen.",
+          "Bloemendaal maakte slechts elf doelpunten in negen uitduels dit seizoen.",
+          "Bloemendaal-verdediger Demi Hilterman scoorde acht van haar 56 Hoofdklasse doelpunten tegen HGC."
         ],
         "stats_onderling": [
-          "Pinoké won alle zeven onderlinge duels met Tilburg.",
-          "De heenwedstrijd eindigde in een 5-2 zege voor Pinoké.",
-          "Pinoké won ook alle drie de onderlinge duels in Tilburg."
+          "De laatste ontmoeting op 1 november eindigde in 1-1.",
+          "De laatste zes onderlinge duels zijn in evenwicht met twee zeges elk.",
+          "Bloemendaal bleef in acht van de laatste elf duels met HGC ongeslagen.",
+          "HGC won 23 van de 37 onderlinge duels, Bloemendaal 8.",
+          "HGC won 14 van de 18 thuisduels tegen Bloemendaal.",
+          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
         ],
         "bijgewerkt": "2026-04-24"
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "12:45",
-      "thuis": "Kampong",
-      "uit": "Hurley",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Maikel Rabbers",
-          "Rik Kroon"
-        ],
-        "stats_thuis": [
-          "Kampong won dit seizoen veertien van haar negentien wedstrijden.",
-          "Kampong maakt nog kans om de reguliere competitie als nummer één af te sluiten.",
-          "Kampong leed dit seizoen pas twee nederlagen.",
-          "Kampong-aanvoerder Luna Fokke is met acht treffers de meest trefzekere speelster.",
-          "Luna Fokke gaf dit seizoen zeven assists en was betrokken bij vijftien doelpunten.",
-          "Luna Fokke is vier doelpunten verwijderd van haar vijftigste Hoofdklasse-goal voor Kampong."
-        ],
-        "stats_uit": [
-          "Noor van den Nieuwenhof raakte geblesseerd en is er een tijdje uit.",
-          "Hurley verloor vijf van haar laatste zes wedstrijden.",
-          "Hurley won slechts één van haar laatste twaalf uitwedstrijden in de Hoofdklasse.",
-          "Hurley nadert mijlpaal van 500 Hoofdklasse-wedstrijden."
-        ],
-        "stats_onderling": [
-          "Kampong is al vier wedstrijden ongeslagen tegen Hurley.",
-          "Kampong is thuis al vijf wedstrijden ongeslagen tegen Hurley.",
-          "In 44 duels won Kampong 21 keer, Hurley 12 keer, en 11 keer gelijk.",
-          "In 22 thuisduels won Kampong 11 keer, Hurley 6 keer, en 5 keer gelijk."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
-    },
-    {
-      "datum": "2026-04-26",
-      "tijdstip": "12:45",
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
       "thuis": "HDM",
-      "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "scorers": [],
-      "kaarten": [],
-      "geverifieerd": false
-    },
-    {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
-      "thuis": "SCHC",
-      "uit": "HGC",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
-      "thuis": "Den Bosch",
-      "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
-      "thuis": "Hurley",
-      "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
-      "thuis": "Rotterdam",
-      "uit": "Tilburg",
+      "uit": "Bloemendaal",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5640,8 +5613,35 @@
     {
       "datum": "2026-05-02",
       "tijdstip": "16:30",
-      "thuis": "HDM",
-      "uit": "Bloemendaal",
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Hurley",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "thuis": "SCHC",
+      "uit": "HGC",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5649,35 +5649,8 @@
     {
       "datum": "2026-05-10",
       "tijdstip": "15:00",
-      "thuis": "Bloemendaal",
-      "uit": "SCHC",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-10",
-      "tijdstip": "15:00",
-      "thuis": "HGC",
-      "uit": "Pinoké",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-10",
-      "tijdstip": "15:00",
-      "thuis": "Amsterdam",
-      "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-10",
-      "tijdstip": "15:00",
-      "thuis": "Tilburg",
-      "uit": "Hurley",
+      "thuis": "Kampong",
+      "uit": "HDM",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5694,17 +5667,35 @@
     {
       "datum": "2026-05-10",
       "tijdstip": "15:00",
-      "thuis": "Kampong",
-      "uit": "HDM",
+      "thuis": "Tilburg",
+      "uit": "Hurley",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
     },
     {
-      "datum": "2026-05-15",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse nr 4",
-      "uit": "Hoofdklasse nr 1",
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "HGC",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "thuis": "Bloemendaal",
+      "uit": "SCHC",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5719,19 +5710,10 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-16",
+      "datum": "2026-05-15",
       "tijdstip": null,
-      "thuis": "Hoofdklasse nr 1",
-      "uit": "Hoofdklasse nr 4",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-16",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse nr 2",
-      "uit": "Hoofdklasse nr 3",
+      "thuis": "Hoofdklasse nr 4",
+      "uit": "Hoofdklasse nr 1",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5739,17 +5721,8 @@
     {
       "datum": "2026-05-16",
       "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 4",
-      "uit": "Hoofdklasse Dames nr 1",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-16",
-      "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 3",
-      "uit": "Hoofdklasse Dames nr 2",
+      "thuis": "Hoofdklasse Dames nr 2",
+      "uit": "Hoofdklasse Dames nr 3",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5766,17 +5739,35 @@
     {
       "datum": "2026-05-16",
       "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 2",
-      "uit": "Hoofdklasse Dames nr 3",
+      "thuis": "Hoofdklasse Dames nr 3",
+      "uit": "Hoofdklasse Dames nr 2",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
     },
     {
-      "datum": "2026-05-23",
+      "datum": "2026-05-16",
+      "tijdstip": "n.n.b.",
+      "thuis": "Hoofdklasse Dames nr 4",
+      "uit": "Hoofdklasse Dames nr 1",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
       "tijdstip": null,
-      "thuis": "Play-Offs Winnaar Halve finale",
-      "uit": "Play-Offs Winnaar Halve finale",
+      "thuis": "Hoofdklasse nr 2",
+      "uit": "Hoofdklasse nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 1",
+      "uit": "Hoofdklasse nr 4",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5791,19 +5782,19 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-30",
+      "datum": "2026-05-23",
       "tijdstip": null,
-      "thuis": "Promotieklasse nr 3",
-      "uit": "Hoofdklasse nr 10",
+      "thuis": "Play-Offs Winnaar Halve finale",
+      "uit": "Play-Offs Winnaar Halve finale",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
     },
     {
       "datum": "2026-05-30",
-      "tijdstip": null,
-      "thuis": "Promotieklasse nr 2",
-      "uit": "Hoofdklasse nr 11",
+      "tijdstip": "n.n.b.",
+      "thuis": "Promotieklasse Dames nr 2",
+      "uit": "Hoofdklasse Dames nr 11",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5819,27 +5810,27 @@
     },
     {
       "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Promotieklasse nr 2",
+      "uit": "Hoofdklasse nr 11",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Promotieklasse nr 3",
+      "uit": "Hoofdklasse nr 10",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
       "tijdstip": "n.n.b.",
-      "thuis": "Promotieklasse Dames nr 2",
-      "uit": "Hoofdklasse Dames nr 11",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-31",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse nr 10",
-      "uit": "Promotieklasse nr 3",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-31",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse nr 11",
-      "uit": "Promotieklasse nr 2",
+      "thuis": "Hoofdklasse Dames nr 11",
+      "uit": "Promotieklasse Dames nr 2",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -5855,13 +5846,22 @@
     },
     {
       "datum": "2026-05-31",
-      "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 11",
-      "uit": "Promotieklasse Dames nr 2",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 11",
+      "uit": "Promotieklasse nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 10",
+      "uit": "Promotieklasse nr 3",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T14:50:50.856Z"
+  "bijgewerkt": "2026-04-24T15:01:32.827Z"
 }
