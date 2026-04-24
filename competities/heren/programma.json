@@ -6364,15 +6364,15 @@
       "kaarten": [
         {
           "naam": "Max de Bie",
-          "club": "Oranje-Rood",
-          "minuut": 16,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 16
         },
         {
           "naam": "Olivier Hortensius",
           "club": "Rotterdam",
-          "minuut": 60,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -6982,5 +6982,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:23:10.276Z"
+  "bijgewerkt": "2026-04-24T18:23:12.530Z"
 }
