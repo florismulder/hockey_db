@@ -976,6 +976,7 @@ function SpelersOverzicht({geslacht,nav,spelers,oranje}) {
 
 function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
   if(!speler) return <div className="loading">Speler niet gevonden.</div>;
+  if(!speler.naam) return <div className="loading">Spelersdata ontbreekt.</div>;
   const volledigeNaam=speler.naam.toLowerCase();
   const delen=speler.naam.split(" ");
   const vn=delen[0]; const an=delen[delen.length-1];
@@ -1107,8 +1108,9 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
             <div style={{display:"grid",gridTemplateColumns:`repeat(${aantalStats},1fr)`,gap:8}}>
               {speler.doelpunten_seizoen>0&&[
                 ["Goals","goals",speler.doelpunten_seizoen,"var(--accent)"],
-                ["Strafcorner","sc",speler.sc??0,"#1e40af"],
-                ["Strafbal","sb",speler.sb??0,"#166534"],
+                ["Veld","veld",speler.vd??0,"var(--muted)"],
+                ["SC","sc",speler.sc??0,"#1e40af"],
+                ["SB","sb",speler.sb??0,"#166534"],
               ].map(([lbl,type,val,kleur])=>{
                 const typeWedstrijden=gescoordInPerType(type);
                 // Fallback: als type-specifieke wedstrijden leeg zijn maar val > 0,
@@ -1178,7 +1180,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                         <span key={j} style={{fontSize:10,fontWeight:700,padding:"1px 5px",
                           borderRadius:3,background:"var(--accent)",color:"#fff"}}>
                           {g.minuut!=null?`${g.minuut}'`:"⚽"}
-                          {g.type&&g.type!=="veld"?` ${g.type.toUpperCase()}`:""}
+                          {g.type&&g.type!=="veld"?` ${({"strafcorner":"SC","strafbal":"SB","sc":"SC","sb":"SB"}[g.type.toLowerCase()]||g.type.toUpperCase())}`:""}
                         </span>
                       ))}
                     </span>
@@ -1372,7 +1374,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
     const ev=[
       ...scorers.map(s=>({...s,_evt:"goal"})),
       ...kaarten.map(k=>({...k,_evt:"kaart"})),
-    ].sort((a,b)=>(a.minuut??999)-(b.minuut??999));
+    ].sort((a,b)=>(b.minuut??-1)-(a.minuut??-1));
     let st=0,su=0;
     return ev.map(e=>{
       const th=eventIsThuis(e.club);
@@ -1725,7 +1727,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                               borderRadius:3,background:typeBg(g.type||"veld"),
                               color:typeKleur(g.type||"veld")}}>
                               {g.minuut!=null?`${g.minuut}'`:"–"}
-                              {g.type&&g.type!=="veld"?` ${g.type.toUpperCase()}`:""}
+                              {g.type&&g.type!=="veld"?` ${({"strafcorner":"SC","strafbal":"SB","sc":"SC","sb":"SB"}[g.type.toLowerCase()]||g.type.toUpperCase())}`:""}
                             </span>
                           ))}
                         </span>
@@ -1952,7 +1954,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           <div style={{maxWidth:600,margin:"0 auto"}}>
             {tijdlijn.map((e,i)=>{
               if(e._evt==="goal"){
-                const tl=e.type&&e.type!=="veld"?e.type.toUpperCase():null;
+                const tl=e.type&&e.type!=="veld"?({"strafcorner":"SC","strafbal":"SB","sc":"SC","sb":"SB"}[e.type.toLowerCase()]||e.type.toUpperCase()):null;
                 return (
                   <div key={i} style={{display:"grid",gridTemplateColumns:"1fr 50px 1fr",
                     alignItems:"center",gap:6,padding:"5px 0",
