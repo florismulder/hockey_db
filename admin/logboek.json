@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "f789e340-429b-4de5-bd2f-d53bd20020d6",
+      "naam": "De laatste weken van 'Kempi'  'Ik wilde mijn einde zelf bepalen'",
+      "velden": {
+        "goedgekeurd": 11
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T08:47:39.519Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "6bfd1c9e-8490-4785-98fa-a45e2f29984f",
       "naam": "Kan Kampong kampioen worden  'We doen niet onder voor de topclubs'",
       "velden": {
