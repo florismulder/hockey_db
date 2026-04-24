@@ -5581,13 +5581,16 @@
       }
     },
     {
-      "datum": "2026-05-01",
+      "datum": "2026-04-26",
       "tijdstip": "12:45",
       "thuis": "HDM",
       "uit": "Den Bosch",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "scorers": [],
+      "kaarten": [],
+      "geverifieerd": false
     },
     {
       "datum": "2026-05-02",
