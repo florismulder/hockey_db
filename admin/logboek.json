@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "oliver_payne",
+      "naam": "oliver_payne",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T15:14:48.187Z"
+    },
+    {
       "type": "speler",
       "id": "oliver_payne",
       "naam": "Oliver Payne",
