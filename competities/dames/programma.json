@@ -5195,8 +5195,8 @@
         {
           "naam": "Floor de Haan",
           "club": "Pinoké",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -5873,5 +5873,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:25:21.139Z"
+  "bijgewerkt": "2026-04-24T18:31:18.804Z"
 }
