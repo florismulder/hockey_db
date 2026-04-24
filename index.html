@@ -1070,11 +1070,13 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
     const achter = volledigeNaam.split(" ").filter(Boolean).pop()||"";
     return gescoordIn.filter(w=>(w.scorers||[]).some(s=>{
       if(!s.naam) return false;
-      const nm = s.naam.toLowerCase().includes(achter)|| volledigeNaam.includes(s.naam.toLowerCase());
+      const sn = s.naam.toLowerCase();
+      // Exacte match óf achternaam-match óf volledigeNaam bevat scorer-naam
+      const nm = sn===volledigeNaam || sn.includes(achter) || volledigeNaam.includes(sn);
       if(!nm) return false;
       if(type==="veld") return !s.type||s.type==="veld"||s.type==="";
-      if(type==="sc") return s.type==="sc"||s.type==="strafcorner";
-      if(type==="sb") return s.type==="sb"||s.type==="strafbal"||s.type==="penalty";
+      if(type==="sc")   return s.type==="sc"||s.type==="strafcorner";
+      if(type==="sb")   return s.type==="sb"||s.type==="strafbal"||s.type==="penalty";
       return s.type===type;
     }));
   };
@@ -1137,10 +1139,9 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 ["SB","sb",speler.sb??0,"#166534"],
               ].map(([lbl,type,val,kleur])=>{
                 const typeWedstrijden=gescoordInPerType(type);
-                // Fallback: als type-specifieke wedstrijden leeg zijn maar val > 0,
-                // gebruik dan alle gescoorde wedstrijden (type-info ontbreekt soms in data)
-                const effectieveWedstrijden = typeWedstrijden.length>0 ? typeWedstrijden : (val>0 ? gescoordIn : []);
-                const klikbaar=val>0&&effectieveWedstrijden.length>0;
+                // Gebruik altijd de type-specifieke lijst — geen fallback naar alle goals
+                const effectieveWedstrijden = typeWedstrijden;
+                const klikbaar=val>0;
                 const isActief=actieveStat===type;
                 return (
                   <div key={type} onClick={klikbaar?()=>{ if(effectieveWedstrijden.length>0&&typeWedstrijden.length===0) toggleStat("goals"); else toggleStat(type); }:undefined}
@@ -1190,6 +1191,10 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
               {!lijst.length?(
                 <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
                   Geen wedstrijden gevonden voor dit type.
+                </div>
+              ):lijst.length===0?(
+                <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
+                  Geen wedstrijden met dit type gevonden — mogelijk ontbreekt type-info in de data.
                 </div>
               ):lijst.map((w,i)=>{
                 const achterN=volledigeNaam.split(" ").filter(Boolean).pop()||"";
@@ -2052,7 +2057,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                         <SpelerLink naam={e.naam}/>
                         {tl&&<span style={{fontSize:9,fontWeight:700,padding:"1px 4px",borderRadius:3,
                           background:typeBg(e.type),color:typeKleur(e.type)}}>{tl}</span>}
-                        <span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)"}}>
+                        <span style={{fontFamily:"monospace",fontSize:12,color:"var(--muted)"}}>
                           {e.minuut!=null?`${e.minuut}'`:""}
                         </span>
                       </div>
@@ -2061,7 +2066,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                       fontSize:13,color:"var(--accent)"}}>{e._st}–{e._su}</div>
                     {!e._thuis?(
                       <div style={{fontSize:12,display:"flex",alignItems:"center",gap:5,flexWrap:"wrap"}}>
-                        <span style={{fontFamily:"monospace",fontSize:10,color:"var(--muted)"}}>
+                        <span style={{fontFamily:"monospace",fontSize:12,color:"var(--muted)"}}>
                           {e.minuut!=null?`${e.minuut}'`:""}
                         </span>
                         {tl&&<span style={{fontSize:9,fontWeight:700,padding:"1px 4px",borderRadius:3,
@@ -2078,17 +2083,17 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
                     alignItems:"center",gap:6,padding:"3px 0",
                     borderBottom:"1px solid var(--border)"}}>
                     {e._thuis?(
-                      <div style={{textAlign:"right",fontSize:11,color:"var(--muted)",
+                      <div style={{textAlign:"right",fontSize:12,color:"var(--muted)",
                         display:"flex",alignItems:"center",gap:5,justifyContent:"flex-end"}}>
                         <SpelerLink naam={e.naam}/>{emoji}
-                        {e.minuut!=null&&<span style={{fontFamily:"monospace",fontSize:10}}>{e.minuut}'</span>}
+                        {e.minuut!=null&&<span style={{fontFamily:"monospace",fontSize:12}}>{e.minuut}'</span>}
                       </div>
                     ):<div/>}
                     <div/>
                     {!e._thuis?(
-                      <div style={{fontSize:11,color:"var(--muted)",
+                      <div style={{fontSize:12,color:"var(--muted)",
                         display:"flex",alignItems:"center",gap:5}}>
-                        {e.minuut!=null&&<span style={{fontFamily:"monospace",fontSize:10}}>{e.minuut}'</span>}
+                        {e.minuut!=null&&<span style={{fontFamily:"monospace",fontSize:12}}>{e.minuut}'</span>}
                         {emoji}
                         <SpelerLink naam={e.naam}/>
                       </div>
@@ -2356,19 +2361,23 @@ function HistoriePagina({nav}) {
 
     // Sorteer scorers op minuut (chronologisch), nulls achteraan
     const scorersGesorteerd = m.scorers
-      ? [...m.scorers].sort((a,b) => {
-          if(a.minuut==null && b.minuut==null) return 0;
-          if(a.minuut==null) return 1;
-          if(b.minuut==null) return -1;
-          return a.minuut - b.minuut;
-        })
+      ? [...m.scorers]
+          // Dedup op naam+minuut (voorkomt dubbele vermeldingen)
+          .filter((s,i,arr)=>arr.findIndex(x=>x.naam===s.naam&&x.minuut===s.minuut)===i)
+          .sort((a,b) => {
+            if(a.minuut==null && b.minuut==null) return 0;
+            if(a.minuut==null) return 1;
+            if(b.minuut==null) return -1;
+            return a.minuut - b.minuut;
+          })
       : [];
 
     // Groepeer per club (thuis eerst, dan uit)
-    const scorersThuis = scorersGesorteerd.filter(s => s.club && m.thuis && s.club.toLowerCase()===m.thuis.toLowerCase());
-    const scorersUit   = scorersGesorteerd.filter(s => s.club && m.uit && s.club.toLowerCase()===m.uit.toLowerCase());
+    const normClub = (n) => (n||"").toLowerCase().replace(/\s*(h1|d1|heren|dames)$/i,"").trim();
+    const scorersThuis = scorersGesorteerd.filter(s => s.club && m.thuis && normClub(s.club)===normClub(m.thuis));
+    const scorersUit   = scorersGesorteerd.filter(s => s.club && m.uit && normClub(s.club)===normClub(m.uit));
     const scorersOnbekend = scorersGesorteerd.filter(s => !s.club ||
-      (s.club.toLowerCase()!==m.thuis?.toLowerCase() && s.club.toLowerCase()!==m.uit?.toLowerCase()));
+      (normClub(s.club)!==normClub(m.thuis) && normClub(s.club)!==normClub(m.uit)));
     const heeftClubInfo = scorersThuis.length > 0 || scorersUit.length > 0;
 
     const ScorerLijst = ({scorers, club}) => scorers.length === 0 ? null : (
