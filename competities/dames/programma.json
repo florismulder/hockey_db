@@ -3909,13 +3909,13 @@
           "naam": "Daphne Koolhaas",
           "club": "Rotterdam",
           "minuut": 22,
-          "type": "groene kaart"
+          "type": "groen"
         },
         {
           "naam": "Lisa Post",
           "club": "SCHC",
           "minuut": 51,
-          "type": "groene kaart"
+          "type": "groen"
         }
       ]
     },
@@ -4291,25 +4291,31 @@
         {
           "naam": "Amber van den Dijssel",
           "club": "Rotterdam",
-          "minuut": 12,
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Roos Alkemade",
+          "club": "HDM",
+          "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Amber van den Dijssel",
           "club": "Rotterdam",
-          "minuut": 36,
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Pien van der Heide",
           "club": "HDM",
-          "minuut": 46,
+          "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Bobbi Dijk",
           "club": "Rotterdam",
-          "minuut": 51,
+          "minuut": 50,
           "type": "veld"
         }
       ],
@@ -4317,31 +4323,31 @@
         {
           "naam": "Myrthe van Kesteren",
           "club": "Rotterdam",
-          "minuut": 21,
+          "minuut": 20,
           "type": "groen"
         },
         {
           "naam": "Brechtje van Santbrink",
           "club": "Rotterdam",
-          "minuut": 29,
+          "minuut": 28,
           "type": "groen"
         },
         {
           "naam": "Delany van den Broek",
           "club": "HDM",
-          "minuut": 32,
+          "minuut": 31,
           "type": "groen"
         },
         {
           "naam": "Kaat Walhof",
           "club": "HDM",
-          "minuut": 35,
+          "minuut": 34,
           "type": "groen"
         },
         {
           "naam": "Emma van Santbrink",
           "club": "Rotterdam",
-          "minuut": 58,
+          "minuut": 57,
           "type": "geel"
         }
       ]
@@ -4358,25 +4364,25 @@
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 4,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 29,
+          "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
           "club": "SCHC",
-          "minuut": 56,
+          "minuut": 55,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 57,
+          "minuut": 56,
           "type": "veld"
         }
       ],
@@ -4384,19 +4390,19 @@
         {
           "naam": "Charlotte Englebert",
           "club": "Den Bosch",
-          "minuut": 28,
+          "minuut": 27,
           "type": "groen"
         },
         {
           "naam": "Xan de Waard",
           "club": "SCHC",
-          "minuut": 45,
+          "minuut": 44,
           "type": "groen"
         },
         {
           "naam": "Rosa Fernig",
           "club": "Den Bosch",
-          "minuut": 57,
+          "minuut": 56,
           "type": "geel"
         }
       ]
@@ -4413,25 +4419,25 @@
         {
           "naam": "Iris de Kemp",
           "club": "Kampong",
-          "minuut": 19,
+          "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Bente van der Veldt",
           "club": "Kampong",
-          "minuut": 39,
+          "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Luna Fokke",
           "club": "Kampong",
-          "minuut": 49,
+          "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Carlijn Tukkers",
           "club": "Kampong",
-          "minuut": 59,
+          "minuut": 58,
           "type": "veld"
         }
       ],
@@ -4449,37 +4455,37 @@
         {
           "naam": "Carlijn van Geest",
           "club": "HGC",
-          "minuut": 4,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 20,
+          "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Juul van der Velden",
           "club": "Oranje-Rood",
-          "minuut": 28,
+          "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 34,
+          "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Amy van den Bosch",
           "club": "HGC",
-          "minuut": 38,
+          "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 50,
+          "minuut": 49,
           "type": "veld"
         }
       ],
@@ -4487,25 +4493,25 @@
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 21,
+          "minuut": 20,
           "type": "groen"
         },
         {
           "naam": "Thirsa Kho",
           "club": "Oranje-Rood",
-          "minuut": 24,
+          "minuut": 23,
           "type": "groen"
         },
         {
           "naam": "Faye Muijderman",
-          "club": "HGC",
-          "minuut": 45,
+          "club": "Oranje-Rood",
+          "minuut": 44,
           "type": "groen"
         },
         {
           "naam": "Pieke van de Pas",
-          "club": "Oranje-Rood",
-          "minuut": 49,
+          "club": "HGC",
+          "minuut": 48,
           "type": "groen"
         }
       ]
@@ -4522,27 +4528,27 @@
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 33,
+          "minuut": 32,
           "type": "veld"
         },
         {
           "naam": "Ivy Tellier",
           "club": "Amsterdam",
-          "minuut": 56,
+          "minuut": 55,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Stella van Gils",
-          "club": "Amsterdam",
-          "minuut": 53,
+          "club": "Tilburg",
+          "minuut": 52,
           "type": "groen"
         },
         {
           "naam": "Pleun Wester",
           "club": "Tilburg",
-          "minuut": 57,
+          "minuut": 56,
           "type": "groen"
         }
       ]
@@ -4559,7 +4565,7 @@
         {
           "naam": "Pien Sanders",
           "club": "Den Bosch",
-          "minuut": 16,
+          "minuut": 15,
           "type": "veld"
         },
         {
@@ -4570,14 +4576,14 @@
         },
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 41,
+          "club": "Den Bosch",
+          "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Frédérique Matla",
-          "club": "Den Bosch",
-          "minuut": 51,
+          "club": "Pinoké",
+          "minuut": 50,
           "type": "veld"
         }
       ],
@@ -4594,26 +4600,26 @@
       "scorers": [
         {
           "naam": "Bente van der Veldt",
-          "club": "Kampong",
-          "minuut": 35,
+          "club": "SCHC",
+          "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Carlijn Tukkers",
           "club": "Kampong",
-          "minuut": 48,
+          "minuut": 47,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
           "club": "SCHC",
-          "minuut": 49,
+          "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
           "club": "SCHC",
-          "minuut": 55,
+          "minuut": 54,
           "type": "veld"
         }
       ],
@@ -4621,7 +4627,7 @@
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 60,
+          "minuut": 59,
           "type": "groen"
         }
       ]
@@ -4638,25 +4644,25 @@
         {
           "naam": "Lynn Vasterink",
           "club": "Oranje-Rood",
-          "minuut": 3,
+          "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 4,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
-          "minuut": 19,
+          "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 33,
+          "minuut": 32,
           "type": "veld"
         }
       ],
@@ -4673,59 +4679,59 @@
       "scorers": [
         {
           "naam": "Carolin Hoffmann",
-          "club": "Tilburg",
-          "minuut": 6,
+          "club": "HGC",
+          "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 16,
+          "club": "Tilburg",
+          "minuut": 15,
           "type": "veld"
         },
         {
           "naam": "Mikki Roberts",
           "club": "Tilburg",
-          "minuut": 43,
+          "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Hannah Salden",
           "club": "Tilburg",
-          "minuut": 50,
+          "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Emmely Bekker",
           "club": "Tilburg",
-          "minuut": 58,
+          "minuut": 57,
           "type": "veld"
         },
         {
           "naam": "Amy van den Bosch",
           "club": "HGC",
-          "minuut": 60,
+          "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 34,
-          "type": "gele kaart"
+          "club": "Tilburg",
+          "minuut": 33,
+          "type": "geel"
         },
         {
           "naam": "Roos Ezendam",
           "club": "Tilburg",
-          "minuut": 37,
-          "type": "groene kaart"
+          "minuut": 36,
+          "type": "groen"
         },
         {
           "naam": "Zoë Admiraal",
-          "club": "HGC",
-          "minuut": 52,
-          "type": "groene kaart"
+          "club": "Tilburg",
+          "minuut": 51,
+          "type": "groen"
         }
       ]
     },
@@ -4741,63 +4747,63 @@
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 3,
+          "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 12,
+          "minuut": 11,
           "type": "veld"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 23,
+          "minuut": 22,
           "type": "veld"
         },
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 24,
+          "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 27,
+          "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Kaat Walhof",
           "club": "HDM",
-          "minuut": 46,
+          "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
-          "minuut": 52,
+          "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Daantje de Kruijff",
           "club": "Amsterdam",
-          "minuut": 60,
+          "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Julia Duffhuis",
-          "club": "HDM",
-          "minuut": 12,
+          "club": "Amsterdam",
+          "minuut": 11,
           "type": "groen"
         },
         {
           "naam": "Tessa Clasener",
           "club": "HDM",
-          "minuut": 48,
+          "minuut": 47,
           "type": "groen"
         }
       ]
@@ -4813,14 +4819,14 @@
       "scorers": [
         {
           "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 6,
+          "club": "Rotterdam",
+          "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 17,
+          "club": "Hurley",
+          "minuut": 16,
           "type": "veld"
         }
       ],
@@ -4828,20 +4834,20 @@
         {
           "naam": "Daphne Koolhaas",
           "club": "Rotterdam",
-          "minuut": 34,
-          "type": "groene kaart"
+          "minuut": 33,
+          "type": "groen"
         },
         {
           "naam": "Sophie Schelfhout",
           "club": "Hurley",
-          "minuut": 34,
-          "type": "groene kaart"
+          "minuut": 33,
+          "type": "groen"
         },
         {
           "naam": "Iris Hollander",
           "club": "Rotterdam",
-          "minuut": 60,
-          "type": "groene kaart"
+          "minuut": 59,
+          "type": "groen"
         }
       ]
     },
@@ -5205,25 +5211,25 @@
       "scorers": [
         {
           "naam": "Kyra Fortuin",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Eline Jansen",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 53,
           "type": "veld"
         }
@@ -5231,13 +5237,13 @@
       "kaarten": [
         {
           "naam": "Melle Vaessen",
-          "club": "Rotterdam D1",
+          "club": "Rotterdam",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "type": "groen",
           "minuut": 53
         }
@@ -5867,5 +5873,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:23:01.334Z"
+  "bijgewerkt": "2026-04-24T18:25:21.139Z"
 }
