@@ -6389,7 +6389,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch",
           "minuut": 3,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Teun van Aalderen",
@@ -6401,7 +6401,7 @@
           "naam": "Timo Boers",
           "club": "Den Bosch",
           "minuut": 17,
-          "type": "sb"
+          "type": "veld"
         },
         {
           "naam": "Koen Bijen",
@@ -6419,13 +6419,13 @@
           "naam": "Timo Boers",
           "club": "Den Bosch",
           "minuut": 38,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch",
           "minuut": 55,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Koen Bijen",
@@ -6480,7 +6480,7 @@
           "naam": "Fred Newbold",
           "club": "Hurley",
           "minuut": 28,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Jonas de Geus",
@@ -6560,7 +6560,7 @@
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam",
           "minuut": 34,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Florent van Aubel",
@@ -6573,8 +6573,8 @@
         {
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam",
-          "minuut": 40,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 40
         }
       ]
     },
@@ -6995,5 +6995,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T17:57:29.173Z"
+  "bijgewerkt": "2026-04-24T18:23:03.491Z"
 }
