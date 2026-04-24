@@ -1,6 +1,24 @@
 {
   "wedstrijden": [
     {
+      "datum": null,
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 4",
+      "uit": "Hoofdklasse Heren nr 1",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": null,
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 3",
+      "uit": "Hoofdklasse Heren nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -6909,7 +6927,79 @@
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
+    },
+    {
+      "datum": "2026-05-17",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 1",
+      "uit": "Hoofdklasse Heren nr 4",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-17",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 2",
+      "uit": "Hoofdklasse Heren nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-23",
+      "tijdstip": null,
+      "thuis": "Play-Offs Heren Verliezer Halve Finale",
+      "uit": "Play-Offs Heren Verliezer Halve Finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-23",
+      "tijdstip": null,
+      "thuis": "Play-Offs Heren Winnaar Halve Finale",
+      "uit": "Play-Offs Heren Winnaar Halve Finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 10",
+      "uit": "Promotieklasse Heren nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse Heren nr 11",
+      "uit": "Promotieklasse Heren nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Promotieklasse Heren nr 3",
+      "uit": "Hoofdklasse Heren nr 10",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Promotieklasse Heren nr 2",
+      "uit": "Hoofdklasse Heren nr 11",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T14:19:19.266Z"
+  "bijgewerkt": "2026-04-24T14:50:22.877Z"
 }
