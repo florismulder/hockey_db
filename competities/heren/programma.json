@@ -6573,7 +6573,38 @@
       "uit": "Pinoké",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Marc van Tuijl",
+          "Daniël van der Nat"
+        ],
+        "stats_thuis": [
+          "Klein Zwitserland is de nummer 8 van de Tulp Hoofdklasse.",
+          "KZ won vorige week met 1-0 van HDM; Lucas Toscani scoorde al na 5 minuten.",
+          "Klein Zwitserland is veilig en kan niet meer onder de streep zakken.",
+          "De ploeg van Laurence Docherty is thuis moeilijk te kloppen met slechts twee nederlagen in negen duels.",
+          "KZ won vier en verloor drie van zijn laatste zeven wedstrijden.",
+          "KZ kwam in zijn laatste vijftien thuiswedstrijden tegen Pinoké altijd tot scoren."
+        ],
+        "stats_uit": [
+          "Pinoké is de nieuwe nummer 3 van de Tulp Hoofdklasse.",
+          "Pinoké won vorige speelronde met 2-1 van Amsterdam door goals van Prinz en Van Aubel.",
+          "Pinoké won zijn laatste twee wedstrijden na daarvóór twee keer te hebben verloren.",
+          "Pinoké staat derde op de ranglijst met 38 punten en heeft plaatsing voor de play-offs in eigen hand.",
+          "In de laatste vier uitwedstrijden van Pinoké vielen in totaal 35 doelpunten, bijna negen goals gemiddeld.",
+          "Pinoké-aanvaller Joep Troost kan voor het eerst twintig doelpunten in één seizoen bereiken."
+        ],
+        "stats_onderling": [
+          "Het heenduel op 30 oktober 2025 werd met 2-1 gewonnen door Pinoké.",
+          "Pinoké won zijn laatste vijf wedstrijden tegen KZ en is al acht duels op rij ongeslagen.",
+          "De laatste keer dat KZ van Pinoké won, was op 3 oktober 2021 (3-1).",
+          "Pinoké bleef bij de laatste drie bezoekjes aan KZ ongeslagen (G W W).",
+          "In 50 onderlinge duels won KZ 23 keer, Pinoké 14 keer en 13 keer gelijk.",
+          "Bij KZ thuis won KZ 12 keer, Pinoké 6 keer en 7 keer gelijk in 25 duels."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
     },
     {
       "datum": "2026-04-26",
@@ -6760,5 +6791,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T13:24:26.269Z"
+  "bijgewerkt": "2026-04-24T13:29:17.435Z"
 }
