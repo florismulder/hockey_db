@@ -1049,14 +1049,23 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
       ||(an.length>4&&tekst.includes(an.toLowerCase()));
   }).slice(0,10);
 
-  const aantalStats=(speler.doelpunten_seizoen>0?4:0)+(groeneKaarten>0?1:0);
+  const geelRoodInW=useMemo(()=>{
+    return (programma||[]).filter(w=>
+      (w.kaarten||[]).some(k=>k.naam&&k.naam.toLowerCase()===volledigeNaam&&(k.type==="geel"||k.type==="rood"))
+    );
+  },[programma,volledigeNaam]);
+  const aantalKaarten=geelRoodInW.length;
+  const aantalStats=(speler.doelpunten_seizoen>0?4:0)+(groeneKaarten>0?1:0)+(aantalKaarten>0?1:0);
   const [actieveStat,setActieveStat]=useState(null);
 
   // Filter gescoordIn per type voor uitschuif
   const gescoordInPerType=(type)=>{
-    if(!gescoordIn.length) return [];
     if(type==="goals") return gescoordIn;
-    // Filter op achternaam (robuuster dan volledige naam)
+    if(type==="kaart") return geelRoodInW;
+    if(type==="groenekaart") return (programma||[]).filter(w=>
+      (w.kaarten||[]).some(k=>k.type==="groen"&&k.naam&&k.naam.toLowerCase()===volledigeNaam)
+    );
+    if(!gescoordIn.length) return [];
     const achter = volledigeNaam.split(" ").filter(Boolean).pop()||"";
     return gescoordIn.filter(w=>(w.scorers||[]).some(s=>{
       if(!s.naam) return false;
@@ -1151,6 +1160,18 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                   <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
                 </div>
               )}
+              {aantalKaarten>0&&(
+                <div onClick={()=>toggleStat("kaart")}
+                  style={{background:"var(--surface2)",
+                    border:`1px solid ${actieveStat==="kaart"?"var(--accent)":"var(--border2)"}`,
+                    borderRadius:actieveStat==="kaart"?"8px 8px 0 0":8,padding:"10px 12px",textAlign:"center",
+                    cursor:"pointer",transition:"all .15s"}}>
+                  <div style={{fontSize:20,fontWeight:700,color:"#b45309",fontFamily:"'JetBrains Mono',monospace"}}>{aantalKaarten}</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>
+                    🟨 Kaarten ›
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -1189,14 +1210,25 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                     <span style={{fontFamily:"monospace",fontWeight:700,color:"var(--accent)",flexShrink:0}}>
                       {w.score_thuis??w.doelpunten_thuis}–{w.score_uit??w.doelpunten_uit}
                     </span>
-                    <span style={{display:"flex",gap:4,flexShrink:0}}>
-                      {goals.map((g,j)=>(
-                        <span key={j} style={{fontSize:10,fontWeight:700,padding:"1px 5px",
-                          borderRadius:3,background:"var(--accent)",color:"#fff"}}>
-                          {g.minuut!=null?`${g.minuut}'`:"⚽"}
-                          {g.type&&g.type!=="veld"?` ${({"strafcorner":"SC","strafbal":"SB","sc":"SC","sb":"SB"}[g.type.toLowerCase()]||g.type.toUpperCase())}`:""}
-                        </span>
-                      ))}
+                    <span style={{display:"flex",gap:4,flexShrink:0,flexWrap:"wrap"}}>
+                      {actieveStat==="kaart"
+                        ? (w.kaarten||[]).filter(k=>{
+                            const kn=(k.naam||"").toLowerCase();
+                            const achterK=volledigeNaam.split(" ").pop()||"";
+                            return (kn.includes(achterK)||volledigeNaam.includes(kn))&&(k.type==="geel"||k.type==="rood");
+                          }).map((k,j)=>(
+                            <span key={j} style={{fontSize:10,fontWeight:700,padding:"1px 5px",
+                              borderRadius:3,background:k.type==="rood"?"#991b1b":"#b45309",color:"#fff"}}>
+                              {k.type==="rood"?"🟥":"🟨"}{k.minuut!=null?` ${k.minuut}'`:""}
+                            </span>
+                          ))
+                        : goals.map((g,j)=>(
+                            <span key={j} style={{fontSize:10,fontWeight:700,padding:"1px 5px",
+                              borderRadius:3,background:"var(--accent)",color:"#fff"}}>
+                              {g.minuut!=null?`${g.minuut}'`:"⚽"}
+                              {g.type&&g.type!=="veld"?` ${({"strafcorner":"SC","strafbal":"SB","sc":"SC","sb":"SB"}[g.type.toLowerCase()]||g.type.toUpperCase())}`:""}</span>
+                          ))
+                      }
                     </span>
                   </div>
                 );
@@ -1214,7 +1246,7 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
             {spelersNieuws.length>0?(
               Object.entries(
                 spelersNieuws.reduce((acc,item)=>{
-                  const titel=item.titel||item.artikel_titel||"";
+                  const titel=String(item.titel||item.artikel_titel||"");
                   const link =item.link ||item.artikel_link ||"";
                   const bullet=item.bullet||"";
                   const key=titel||link||item.datum||"";
