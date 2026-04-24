@@ -1,6 +1,29 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "oliver_payne",
+      "naam": "Oliver Payne",
+      "velden": {
+        "club": "Amsterdam",
+        "geslacht": "heren",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "GB-ENG",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "1999-04-06"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T15:11:38.717Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "a27cf93d-8789-4036-b787-f4bff9098217",
       "naam": "Sorsby schiet Den Bosch naar Gold Cup titel   Hockey Magazine",
