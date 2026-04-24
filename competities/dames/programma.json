@@ -5133,13 +5133,13 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 30,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Mariona Serrahima",
           "club": "HGC",
           "minuut": 33,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Lilly Stoffelsma",
@@ -5194,13 +5194,13 @@
           "naam": "Floor de Haan",
           "club": "Pinoké",
           "minuut": 28,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Josephine Murray",
           "club": "Pinoké",
           "minuut": 33,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Madelief de Beer",
@@ -5280,13 +5280,13 @@
           "naam": "Pien Sanders",
           "club": "Den Bosch",
           "minuut": 37,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 40,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
@@ -5328,7 +5328,7 @@
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
           "minuut": 24,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -5357,13 +5357,13 @@
       "scorers": [
         {
           "naam": "Carmen Victoria",
-          "club": "Tilburg",
+          "club": "SCHC",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Elzemiek Zandee",
-          "club": "SCHC",
+          "club": "Tilburg",
           "minuut": 35,
           "type": "veld"
         },
@@ -5371,21 +5371,21 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 49,
-          "type": "strafcorner"
+          "type": "veld"
         },
         {
           "naam": "Mikki Roberts",
           "club": "Tilburg",
           "minuut": 60,
-          "type": "strafcorner"
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Merlijn Roodenburg",
           "club": "Tilburg",
-          "minuut": 53,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 53
         }
       ]
     },
@@ -5891,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T15:02:17.473Z"
+  "bijgewerkt": "2026-04-24T18:15:31.745Z"
 }
