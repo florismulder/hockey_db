@@ -1,6 +1,36 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Babette Backers (Kampong) maakt deel uit van de trainingsgroep van Oranje. April '26.",
+      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
+      "origineel": "Babette Backers (Kampong) maakt deel uit van de trainingsgroep van Oranje."
+    },
+    {
+      "bullet": "Guusje Moes (Kampong) maakt deel uit van de trainingsgroep van Oranje. April '26.",
+      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
+      "origineel": "Guusje Moes (Kampong) maakt deel uit van de trainingsgroep van Oranje."
+    },
+    {
+      "bullet": "Noor van den Nieuwenhof (Kampong) heeft vijf interlands gespeeld voor Oranje. Cijfers april 26, raakte in april 26 geblesseerd.",
+      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
+      "origineel": "Noor van den Nieuwenhof (Kampong) heeft vijf interlands gespeeld voor Oranje."
+    },
+    {
+      "bullet": "Eline Jansen (Kampong) heeft twaalf interlands gespeeld voor Oranje. Cijfers april 26.",
+      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
+      "origineel": "Eline Jansen (Kampong) heeft twaalf interlands gespeeld voor Oranje."
+    },
+    {
+      "bullet": "Luna Fokke (Kampong) heeft de grens van zeventig interlands doorbroken (71 caps). Cijfers april 26.",
+      "bron_zin": "Middenvelder Luna Fokke, die met Oranje goud won op de Olympische Spelen van Parijs, heeft de grens van zeventig interlands inmiddels doorbroken (71 caps)...",
+      "origineel": "Luna Fokke (Kampong) heeft de grens van zeventig interlands doorbroken (71 caps)."
+    },
+    {
+      "bullet": "Julie Roovers (Kampong) miste het WK-21 december 25  in Chili door een blessure.",
+      "bron_zin": "Dat hadden er zelfs acht kunnen zijn als Julie Roovers niet geblesseerd was geraakt.",
+      "origineel": "Julie Roovers (Kampong) miste het WK-21 door een blessure."
+    },
+    {
       "bullet": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie, scheurde voorste kruisband tijdens training Oranje. Rentree 19 april 26 tegen Hurley. Miste EK. Miste EHL. Trainde lang met MO18-1.",
       "bron_zin": "Emma Reijnen (22) maakte na maanden revalideren haar rentree bij Den Bosch.",
       "origineel": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie."
@@ -208,33 +238,6 @@
       "bullet": "Julie van Dam (Rotterdam) stopt na dit seizoen met tophockey, in zomer 2026. Vanwege een knieblessure.",
       "bron_zin": "Julie van Dam heeft haar afscheid aangekondigd bij de dames van Rotterdam.",
       "origineel": "Julie van Dam (Rotterdam) stopt na dit seizoen met tophockey."
-    },
-    {
-      "bullet": "Dylan Lucieer (Kampong) maakt transfer van Rotterdam naar Kampong in zomer 2026.",
-      "bron_zin": "Dylan Lucieer speelt komend seizoen bij Kampong.",
-      "origineel": "Dylan Lucieer (Kampong) maakt transfer van Rotterdam naar Kampong."
-    },
-    {
-      "bullet": "Borja Lacalle (Oranje-Rood) had een eigen fanclub van acht Spaanse fans meegenomen naar de wedstrijd tegen Bloemendaal.",
-      "bron_zin": "Extra leuk voor de Spanjaard: hij had zondag een eigen fanclub meegenomen.",
-      "origineel": "Borja Lacalle (Oranje-Rood) had een eigen fanclub van acht Spaanse fans meegenomen naar de wedstrijd."
-    },
-    {
-      "bullet": "Jorrit Croon (Bloemendaal) komt dit hockeyjaar niet meer in actie door een knieblessure.",
-      "bron_zin": "Jorrit Croon (knie) [...] die dit hockeyjaar allebei niet meer in actie komen."
-    },
-    {
-      "bullet": "Casper van der Veen (Bloemendaal) komt dit hockeyjaar niet meer in actie door een schouderblessure.",
-      "bron_zin": "Casper van der Veen (schouder) [...] die dit hockeyjaar allebei niet meer in actie komen."
-    },
-    {
-      "bullet": "Tomás Santiago (Oranje-Rood) is de minst gepasseerde keeper in de Tulp Hoofdklasse Heren dit seizoen.",
-      "bron_zin": "In de Tulp Hoofdklasse Heren is hij tot nu toe de minst gepasseerde keeper van de competitie"
-    },
-    {
-      "bullet": "Had eigen fanclub meegenomen naar de wedstrijd tegen Bloemendaal.",
-      "bron_zin": "Extra leuk voor de Spanjaard: hij had zondag een eigen fanclub meegenomen.",
-      "origineel": "Had eigen fanclub meegenomen naar de wedstrijd."
     }
   ],
   "verborgen_bullets": []
