@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "eduardo_de_ignacio_simo",
+      "naam": "Eduardo De Ignacio-Simó",
+      "velden": {
+        "club": "Den Bosch",
+        "geslacht": "heren",
+        "rugnummer": 17,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "ES",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T17:54:16.141Z"
+    },
+    {
       "type": "bullet",
       "id": "oliver_payne",
       "naam": "oliver_payne",
