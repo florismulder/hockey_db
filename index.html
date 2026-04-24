@@ -1155,9 +1155,13 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 );
               })}
               {groeneKaarten>0&&(
-                <div style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
+                <div onClick={()=>toggleStat("groenekaart")}
+                  style={{background:"var(--surface2)",
+                    border:`1px solid ${actieveStat==="groenekaart"?"var(--accent)":"var(--border)"}`,
+                    borderRadius:actieveStat==="groenekaart"?"8px 8px 0 0":8,padding:"10px 12px",textAlign:"center",
+                    cursor:"pointer",transition:"all .15s"}}>
                   <div style={{fontSize:20,fontWeight:700,color:"#16a34a",fontFamily:"'JetBrains Mono',monospace"}}>{groeneKaarten}</div>
-                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen</div>
+                  <div style={{fontSize:10,color:"var(--muted)",textTransform:"uppercase",letterSpacing:".5px",marginTop:2}}>🟩 Groen ›</div>
                 </div>
               )}
               {aantalKaarten>0&&(
@@ -1648,6 +1652,12 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
         }finally{setLoadingW(false);}
       };
 
+      const matchType=(sType,type)=>{
+        if(type==="veld") return !sType||sType==="veld"||sType==="";
+        if(type==="sc")   return sType==="sc"||sType==="strafcorner";
+        if(type==="sb")   return sType==="sb"||sType==="strafbal"||sType==="penalty";
+        return sType===type;
+      };
       const wedstrijdenVoorStat=(type)=>{
         if(!seizoenWedstrijden) return [];
         const nl=(sp.naam||"").toLowerCase();
@@ -1656,8 +1666,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           return (w2.scorers||[]).some(s=>{
             const sn=(s.naam||"").toLowerCase();
             if(!sn.includes(nl)&&!nl.includes(sn)) return false;
-            if(type==="veld") return !s.type||s.type==="veld";
-            return s.type===type;
+            return matchType(s.type,type);
           });
         }).map(w2=>({
           datum:w2.datum,
@@ -1666,10 +1675,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
           score:`${w2.score_thuis??w2.doelpunten_thuis}–${w2.score_uit??w2.doelpunten_uit}`,
           goals:(w2.scorers||[]).filter(s=>{
             const sn=(s.naam||"").toLowerCase();
-            const match=sn.includes(nl)||nl.includes(sn);
-            if(!match) return false;
-            if(type==="veld") return !s.type||s.type==="veld";
-            return s.type===type;
+            return (sn.includes(nl)||nl.includes(sn))&&matchType(s.type,type);
           })
         }));
       };
@@ -3194,12 +3200,12 @@ function App() {
       {page==="topscorers"&&<TopscorersOverzicht topscorers={topscorers} spelers={spelers} nav={nav}/>}
       {page==="oranje"&&<OranjePagina oranje={oranje} nav={nav} geslacht={geslacht} spelers={spelers}/>}
       {page==="historie"&&<HistoriePagina nav={nav}/>}
-      {page==="speler"&&<SpelerErrorBoundary><SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
+      {page==="speler"&&<SpelerErrorBoundary><SpelerDetail speler={spelers.find(s=>(s.id||slugify(s.naam))===((pageId?.id)||slugify(pageId?.naam||"")))||pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
       {page==="wedstrijd"&&<WedstrijdDetail wedstrijd={pageId} nav={nav} spelers={spelers} geslacht={geslacht}/>}
       {page==="invoer"&&<InvoerPagina />}
       {page==="club"&&<ClubPagina club={pageId?._club||pageId} geslacht={pageId?._geslacht||geslacht} spelers={spelers} nieuws={nieuws} programma={programma} nav={nav} oranje={oranje}/>}
       {page==="club_historie"&&<ClubHistoriePagina club={pageId?.club||pageId} geslacht={pageId?.geslacht||geslacht} nav={nav}/>}
-      {page==="speler_via_club"&&<SpelerErrorBoundary><SpelerDetail speler={pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
+      {page==="speler_via_club"&&<SpelerErrorBoundary><SpelerDetail speler={spelers.find(s=>(s.id||slugify(s.naam))===((pageId?.id)||slugify(pageId?.naam||"")))||pageId} nav={nav} nieuws={nieuws} programma={programma} oranje={oranje}/></SpelerErrorBoundary>}
     </>
   );
 }
