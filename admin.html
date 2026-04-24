@@ -3207,9 +3207,8 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                     <div style={{fontWeight:600,color:"#dc2626",fontSize:13}}>⚠ Verdachte clubkoppelingen</div>
                     <button className="btn btn-success btn-sm"
                       onClick={async()=>{
-                        setBusy(true);
+                        setBezig(true);
                         try{
-                          // Gebruik lokale wedstrijden state — geen afhankelijkheid van GitHub Pages CDN-cache
                           const e2={...edit,geverifieerd:true,
                             score_thuis:edit.score_thuis===""||edit.score_thuis===null?null:parseInt(edit.score_thuis),
                             score_uit:edit.score_uit===""||edit.score_uit===null?null:parseInt(edit.score_uit),
@@ -3225,7 +3224,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                             setEdit(e2);
                           } else throw new Error(res.fout||"Opslaan mislukt");
                         }catch(err){toast("❌ "+err.message,"error");}
-                        finally{setBusy(false);}
+                        finally{setBezig(false);}
                       }}
                       disabled={bezig}>✓ Klopt toch</button>
                   </div>
