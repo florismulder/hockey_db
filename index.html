@@ -1331,6 +1331,30 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                     <span>Aanvoerder</span>
                   </div>
                 )}
+                {speler.positie&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Positie</span>
+                    <span style={{textTransform:"capitalize"}}>{speler.positie}</span>
+                  </div>
+                )}
+                {speler.lengte&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Lengte</span>
+                    <span>{speler.lengte} cm</span>
+                  </div>
+                )}
+                {speler.eerste_club&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Eerste club</span>
+                    <span>{speler.eerste_club}</span>
+                  </div>
+                )}
+                {speler.vorige_clubs&&(
+                  <div style={{display:"flex",gap:10,fontSize:13}}>
+                    <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Vorige clubs</span>
+                    <span>{speler.vorige_clubs}</span>
+                  </div>
+                )}
                 {gescoordIn.length>0&&(
                   <div style={{display:"flex",gap:10,fontSize:13}}>
                     <span style={{color:"var(--muted)",width:90,flexShrink:0,fontSize:11,paddingTop:1}}>Seizoen 25/26</span>
@@ -1339,7 +1363,13 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 )}
               </div>
 
-              {!speler.geboortedatum&&!oranjeLabel&&!bioFacts.length&&(
+              {speler.bio&&(
+                <div style={{marginTop:bioFacts.length||speler.geboortedatum?12:0,
+                  fontSize:12,color:"var(--muted)",lineHeight:1.6,fontStyle:"italic"}}>
+                  {speler.bio}
+                </div>
+              )}
+              {!speler.geboortedatum&&!oranjeLabel&&!bioFacts.length&&!speler.bio&&(
                 <div className="empty" style={{padding:0}}>Nog geen profieldata beschikbaar.</div>
               )}
             </div>
@@ -2346,7 +2376,7 @@ function HistoriePagina({nav}) {
         <div style={{fontSize:10,fontWeight:700,color:"var(--muted)",textTransform:"uppercase",letterSpacing:.3,marginBottom:2}}>{club}</div>
         {scorers.map((s,i)=>(
           <div key={i} style={{fontSize:11,color:"var(--muted)",paddingLeft:6}}>
-            ⚽ <span style={{color:"var(--text)",fontWeight:500}}>{s.naam}</span>{s.minuut!=null?` ${s.minuut}'`:""}{s.type&&s.type!=="veld"?` (${s.type})`:""}
+            ⚽ <span style={{color:"var(--text)",fontWeight:500}}>{s.naam}</span>{s.minuut!=null?` ${s.minuut}'`:""}{s.type&&s.type!=="veld"&&s.type!==""&&<span style={{fontSize:9,fontWeight:700,marginLeft:3,padding:"1px 4px",borderRadius:3,background:"#dbeafe",color:"#1e40af"}}>{({"sc":"SC","strafcorner":"SC","sb":"SB","strafbal":"SB","penalty":"SB"}[s.type.toLowerCase()]||s.type.toUpperCase())}</span>}
           </div>
         ))}
       </div>
@@ -2377,7 +2407,7 @@ function HistoriePagina({nav}) {
           ) : (
             scorersGesorteerd.map((s,i)=>(
               <div key={i} style={{fontSize:11,color:"var(--muted)"}}>
-                ⚽ <span style={{color:"var(--text)",fontWeight:500}}>{s.naam}</span>{s.minuut!=null?` ${s.minuut}'`:""}{s.type&&s.type!=="veld"?` (${s.type})`:""}
+                ⚽ <span style={{color:"var(--text)",fontWeight:500}}>{s.naam}</span>{s.minuut!=null?` ${s.minuut}'`:""}{s.type&&s.type!=="veld"&&s.type!==""&&<span style={{fontSize:9,fontWeight:700,marginLeft:3,padding:"1px 4px",borderRadius:3,background:"#dbeafe",color:"#1e40af"}}>{({"sc":"SC","strafcorner":"SC","sb":"SB","strafbal":"SB","penalty":"SB"}[s.type.toLowerCase()]||s.type.toUpperCase())}</span>}
               </div>
             ))
           )}

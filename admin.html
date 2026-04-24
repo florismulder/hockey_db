@@ -809,40 +809,16 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
   const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
     "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde","SCHC","Tilburg"];
 
-  // Auto-save: bullet wijziging direct naar server (voorkomt verlies bij refresh)
   const updateBullet = (artikelId, bulletId, velden) => {
-    setItems(prev => {
-      const nieuw = prev.map(art => art.id!==artikelId ? art :
-        {...art, bullets: art.bullets.map(b => b.id!==bulletId ? b : {...b,...velden})});
-      const art = nieuw.find(a => a.id === artikelId);
-      if (art && !art._kopie) {
-        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets}).catch(()=>{});
-      }
-      return nieuw;
-    });
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
+      {...art,bullets:art.bullets.map(b=>b.id!==bulletId?b:{...b,...velden})}));
   };
   const updateArtikelMeta = (artikelId, velden) => {
-    setItems(prev => {
-      const nieuw = prev.map(art => art.id!==artikelId ? art : {...art,...velden});
-      const art = nieuw.find(a => a.id === artikelId);
-      if (art && !art._kopie) {
-        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets,
-          geslacht: art.geslacht, competitie: art.competitie,
-          titel: art.titel, datum: art.datum}).catch(()=>{});
-      }
-      return nieuw;
-    });
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:{...art,...velden}));
   };
   const alleGoedkeuren = (artikelId) => {
-    setItems(prev => {
-      const nieuw = prev.map(art => art.id!==artikelId ? art :
-        {...art, bullets: art.bullets.map(b => ({...b, goedgekeurd:true}))});
-      const art = nieuw.find(a => a.id === artikelId);
-      if (art && !art._kopie) {
-        apiCall("updateNieuwsWachtrij", {artikelId, bullets: art.bullets}).catch(()=>{});
-      }
-      return nieuw;
-    });
+    setItems(prev=>prev.map(art=>art.id!==artikelId?art:
+      {...art,bullets:art.bullets.map(b=>({...b,goedgekeurd:true}))}));
   };
   const opslaan = async (art) => {
     try {
@@ -850,8 +826,7 @@ function WachterijPagina({wachtrij, data, toast, onRefresh, setPagina}) {
         geslacht:art.geslacht,competitie:art.competitie,titel:art.titel,datum:art.datum});
       const res = await apiCall("publiceerNieuws",{artikelId:art.id});
       if (!res.success) throw new Error(res.error||"Publiceren mislukt");
-      const ovMsg = res.overgeslagen?.length ? ` (${res.overgeslagen.length} overgeslagen: ${res.overgeslagen.join(", ")})` : "";
-      toast(`✅ ${res.gepubliceerd} gepubliceerd${ovMsg}`);
+      toast(`✅ ${res.gepubliceerd} bullets gepubliceerd`);
       onRefresh();
     } catch(e) { toast(e.message,"error"); }
   };
@@ -2102,6 +2077,46 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
                   </div>
                 </div>
               </div>
+              {/* Extra bio velden */}
+              <div className="form-grid" style={{marginTop:8}}>
+                <div className="form-group">
+                  <label className="form-label">Lengte (cm)</label>
+                  <input className="form-input" type="number" placeholder="185"
+                    value={velden.lengte||""}
+                    onChange={e=>set("lengte",e.target.value?parseInt(e.target.value):"")}/>
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Positie</label>
+                  <select className="form-select" value={velden.positie||""}
+                    onChange={e=>set("positie",e.target.value)}>
+                    <option value="">—</option>
+                    <option value="aanvaller">Aanvaller</option>
+                    <option value="middenvelder">Middenvelder</option>
+                    <option value="verdediger">Verdediger</option>
+                    <option value="keeper">Keeper</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group" style={{marginTop:8}}>
+                <label className="form-label">Eerste club</label>
+                <input className="form-input" placeholder="bijv. SCHC"
+                  value={velden.eerste_club||""}
+                  onChange={e=>set("eerste_club",e.target.value)}/>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Vorige clubs</label>
+                <input className="form-input" placeholder="bijv. Kampong, Amsterdam"
+                  value={velden.vorige_clubs||""}
+                  onChange={e=>set("vorige_clubs",e.target.value)}/>
+                <div className="form-hint">Kommagescheiden, meest recent eerst</div>
+              </div>
+              <div className="form-group">
+                <label className="form-label">Bio</label>
+                <textarea className="form-input" rows={3} placeholder="Korte biografie..."
+                  value={velden.bio||""}
+                  onChange={e=>set("bio",e.target.value)}
+                  style={{resize:"vertical"}}/>
+              </div>
             </div>
 
             {/* Club & status */}
@@ -2789,10 +2804,9 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
             onChange={e=>setFilterBron(e.target.value)}
             style={{width:"auto",fontSize:12,padding:"4px 8px"}}>
             <option value="alle">Alle bronclubs ({alleItems.length})</option>
-            {Object.keys(nieuwsData).sort().map(k=>{
-              const n = alleItems.filter(i=>i._bronClub===k).length;
-              return <option key={k} value={k}>{k} ({n})</option>;
-            })}
+            {Object.keys(nieuwsData).sort().map(k=>
+              <option key={k} value={k}>{k} ({(nieuwsData[k]||[]).length})</option>
+            )}
           </select>
           {filterBron!=="alle"&&(
             <span style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap"}}>
@@ -3048,18 +3062,6 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
   };
 
   // Detecteer mismatches: scorer/kaart club hoort bij thuis of uit
-  const MAX_GOALS_PER_SPELER = 5; // meer dan dit in één wedstrijd = verdacht
-
-  const heeftVeelGoals = (w) => {
-    if (!w.gespeeld || w.geverifieerd) return false;
-    const telPerSpeler = {};
-    (w.scorers||[]).forEach(s => {
-      const k = (s.naam||"").toLowerCase();
-      if (k) telPerSpeler[k] = (telPerSpeler[k]||0) + 1;
-    });
-    return Object.values(telPerSpeler).some(n => n > MAX_GOALS_PER_SPELER);
-  };
-
   const heeftFout = (w) => {
     if (!w.gespeeld) return false;
     if (w.geverifieerd) return false;
@@ -3071,7 +3073,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       return club && !thuis.includes(club) && !club.includes(thuis) &&
                      !uit.includes(club)   && !club.includes(uit);
     });
-    return check(w.scorers) || check(w.kaarten) || heeftVeelGoals(w);
+    return check(w.scorers) || check(w.kaarten);
   };
 
   const foutDetails = (w) => {
@@ -3086,17 +3088,6 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       if (club && !thuis.includes(club) && !club.includes(thuis) &&
                   !uit.includes(club)   && !club.includes(uit)) {
         fouten.push(item);
-      }
-    });
-    // Voeg ook spelers met veel goals toe als verdacht
-    const telPerSpeler = {};
-    (w.scorers||[]).forEach(s => {
-      const k = (s.naam||"").toLowerCase();
-      if (k) telPerSpeler[k] = (telPerSpeler[k]||0) + 1;
-    });
-    Object.entries(telPerSpeler).forEach(([naam, n]) => {
-      if (n > MAX_GOALS_PER_SPELER) {
-        fouten.push({naam, club: "", _type: "veelGoals", _aantal: n});
       }
     });
     return fouten;
@@ -3150,22 +3141,14 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
             <input className="filter-input" placeholder="Zoek club of datum…"
               value={filterTekst} onChange={e=>setFilterTekst(e.target.value)}
               style={{width:"100%",fontSize:12}}/>
-            <div style={{display:"flex",gap:6,alignItems:"center"}}>
-              {aantalFouten > 0 && (
-                <button onClick={()=>setFilterTekst("⚠")}
-                  style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",flex:1,
-                    border:"1px solid #ef4444",background:"rgba(239,68,68,.1)",
-                    color:"#ef4444",fontWeight:600,textAlign:"left"}}>
-                  ⚠ {aantalFouten} wedstrijd{aantalFouten>1?"en":""} met verdachte data
-                </button>
-              )}
-              <button onClick={()=>{ onRefresh(); toast("🔍 Verdachte wedstrijden hergecontroleerd"); }}
+            {aantalFouten > 0 && (
+              <button onClick={()=>setFilterTekst("⚠")}
                 style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",
-                  border:"1px solid var(--border)",background:"var(--surface2)",
-                  color:"var(--muted)",fontWeight:600,whiteSpace:"nowrap"}}>
-                ↻ Hercontroleer
+                  border:"1px solid #ef4444",background:"rgba(239,68,68,.1)",
+                  color:"#ef4444",fontWeight:600,textAlign:"left"}}>
+                ⚠ {aantalFouten} wedstrijd{aantalFouten>1?"en":""} met verdachte data — klik om te filteren
               </button>
-            </div>
+            )}
           </div>
           <div style={{overflowY:"auto",flex:1}}>
             {laden && <div className="loading"><div className="spinner"/> Laden…</div>}
@@ -3226,26 +3209,21 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                       onClick={async()=>{
                         setBusy(true);
                         try{
-                          const e2={...edit,geverifieerd:true};
-                          const origDatum=wedstrijden[geselecteerd].datum;
-                          const origThuis=wedstrijden[geselecteerd].thuis;
-                          const origUit=wedstrijden[geselecteerd].uit;
-                          const resp=await fetch(`https://florismulder.github.io/hockey_db/competities/${geslacht}/programma.json?t=${Date.now()}`);
-                          const huidig=await resp.json();
-                          const idx2=huidig.wedstrijden.findIndex(w=>w.datum===origDatum&&w.thuis===origThuis&&w.uit===origUit);
-                          if(idx2>=0){
-                            huidig.wedstrijden[idx2]={...huidig.wedstrijden[idx2],...e2,geverifieerd:true,
-                              score_thuis:e2.score_thuis===""||e2.score_thuis===null?null:parseInt(e2.score_thuis),
-                              score_uit:e2.score_uit===""||e2.score_uit===null?null:parseInt(e2.score_uit),
-                              scorers:(e2.scorers||[]).map(s=>({...s,minuut:s.minuut===""?null:parseInt(s.minuut)||null})),
-                              kaarten:(e2.kaarten||[]).map(k=>({...k,minuut:k.minuut===""?null:parseInt(k.minuut)||null}))};
-                            const res=await apiCall("adminSlaWedstrijdOp",{geslacht,programma:huidig});
-                            if(res.ok){
-                              toast("✅ Geverifieerd — verdacht-markering verwijderd");
-                              const n=[...wedstrijden]; n[geselecteerd]={...e2,geverifieerd:true};
-                              setWedstrijden(n); setEdit({...e2,geverifieerd:true});
-                            } else throw new Error(res.fout||"Fout");
-                          } else throw new Error("Wedstrijd niet gevonden in programma.json — probeer eerst op te slaan");
+                          // Gebruik lokale wedstrijden state — geen afhankelijkheid van GitHub Pages CDN-cache
+                          const e2={...edit,geverifieerd:true,
+                            score_thuis:edit.score_thuis===""||edit.score_thuis===null?null:parseInt(edit.score_thuis),
+                            score_uit:edit.score_uit===""||edit.score_uit===null?null:parseInt(edit.score_uit),
+                            scorers:(edit.scorers||[]).map(s=>({...s,minuut:s.minuut===""?null:parseInt(s.minuut)||null})),
+                            kaarten:(edit.kaarten||[]).map(k=>({...k,minuut:k.minuut===""?null:parseInt(k.minuut)||null}))};
+                          const bijgewerkt=[...wedstrijden];
+                          bijgewerkt[geselecteerd]=e2;
+                          const programma={wedstrijden:bijgewerkt,bijgewerkt:new Date().toISOString()};
+                          const res=await apiCall("adminSlaWedstrijdOp",{geslacht,programma});
+                          if(res.ok){
+                            toast("✅ Geverifieerd — verdacht-markering verwijderd");
+                            setWedstrijden(bijgewerkt);
+                            setEdit(e2);
+                          } else throw new Error(res.fout||"Opslaan mislukt");
                         }catch(err){toast("❌ "+err.message,"error");}
                         finally{setBusy(false);}
                       }}
@@ -3256,10 +3234,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                   </div>
                   {foutDetails(edit).map((item, i) => (
                     <div key={i} style={{fontSize:12,color:"#7f1d1d",padding:"2px 0"}}>
-                      {item._type==="veelGoals"
-                        ? <>🚨 <strong>{item.naam}</strong> scoorde {item._aantal}x — controleer of dit klopt</>
-                        : <>{item._type==="scorer"?"⚽":"🟨"} <strong>{item.naam}</strong> staat bij <strong>{item.club}</strong></>
-                      }
+                      {item._type==="scorer"?"⚽":"🟨"} <strong>{item.naam}</strong> staat bij <strong>{item.club}</strong>
                     </div>
                   ))}
                 </div>
