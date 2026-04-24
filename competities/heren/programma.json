@@ -6731,7 +6731,36 @@
       "uit": "Hurley",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Lisette Baljon",
+          "Lizelotte Wolter"
+        ],
+        "stats_thuis": [
+          "Den Bosch is de kersverse bekerwinnaar van de Gold Cup.",
+          "Den Bosch won de Gold Cup voor de derde keer (na 2023 en 2025).",
+          "Den Bosch scoorde voor het eerst acht keer in een uitwedstrijd in de Hoofdklasse.",
+          "Den Bosch won vier van de laatste vijf wedstrijden.",
+          "Den Bosch was negentien thuiswedstrijden op rij ongeslagen (W13 G6).",
+          "Timo Boers staat op 24 treffers, dichtbij zijn record van 28 goals."
+        ],
+        "stats_uit": [
+          "Hurley is de hekkensluiter van de Tulp Hoofdklasse.",
+          "Hurley verloor zeven van de laatste acht wedstrijden.",
+          "Hurley bleef in 28 van de laatste 29 wedstrijden zonder winst.",
+          "Hurley verloor elf uitwedstrijden op rij voordat het bij HDM won."
+        ],
+        "stats_onderling": [
+          "Den Bosch won de laatste tien onderlinge duels van Hurley.",
+          "Den Bosch maakte twintig goals in de laatste vier duels met Hurley.",
+          "De vorige editie Den Bosch-Hurley eindigde in een 8-1 thuiszege.",
+          "De 8-1 was de grootste zege ooit van Den Bosch op Hurley.",
+          "Den Bosch won 23 van de 34 onderlinge duels tegen Hurley.",
+          "Den Bosch won 12 van de 17 thuisduels tegen Hurley."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
     },
     {
       "datum": "2026-04-26",
@@ -6851,5 +6880,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T13:49:17.075Z"
+  "bijgewerkt": "2026-04-24T14:14:14.712Z"
 }
