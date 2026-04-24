@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "6bfd1c9e-8490-4785-98fa-a45e2f29984f",
+      "naam": "Kan Kampong kampioen worden  'We doen niet onder voor de topclubs'",
+      "velden": {
+        "goedgekeurd": 9
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-24T08:45:30.314Z"
+    },
+    {
       "type": "blessure",
       "id": "emma_reijnen",
       "naam": "emma_reijnen",
