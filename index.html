@@ -1139,9 +1139,10 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 ["SB","sb",speler.sb??0,"#166534"],
               ].map(([lbl,type,val,kleur])=>{
                 const typeWedstrijden=gescoordInPerType(type);
-                // Gebruik altijd de type-specifieke lijst — geen fallback naar alle goals
-                const effectieveWedstrijden = typeWedstrijden;
-                const klikbaar=val>0;
+                const heeftTypeData = typeWedstrijden.length>0;
+                // Fallback naar alle goals als type-info ontbreekt in data
+                const effectieveWedstrijden = heeftTypeData ? typeWedstrijden : (val>0 ? gescoordIn : []);
+                const klikbaar=val>0&&effectieveWedstrijden.length>0;
                 const isActief=actieveStat===type;
                 return (
                   <div key={type} onClick={klikbaar?()=>{ if(effectieveWedstrijden.length>0&&typeWedstrijden.length===0) toggleStat("goals"); else toggleStat(type); }:undefined}
@@ -1184,17 +1185,21 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
 
         {/* Uitschuif doelpunten per type */}
         {actieveStat&&(()=>{
-          const lijst=gescoordInPerType(actieveStat);
+          const lijstType=gescoordInPerType(actieveStat);
+          const heeftTypeInfo=lijstType.length>0;
+          const lijst=heeftTypeInfo?lijstType:gescoordIn;
           return (
             <div style={{marginBottom:20,background:"var(--accent-light)",borderRadius:"0 0 8px 8px",
               border:"1px solid var(--accent)",borderTop:"none",overflow:"hidden"}}>
+              {!heeftTypeInfo&&actieveStat!=="goals"&&actieveStat!=="kaart"&&actieveStat!=="groenekaart"&&(
+                <div style={{padding:"6px 14px",fontSize:11,color:"var(--muted)",fontStyle:"italic",
+                  borderBottom:"1px solid rgba(196,98,26,.15)"}}>
+                  ⚠ Type-info niet beschikbaar per duel — alle gescoorde duels getoond
+                </div>
+              )}
               {!lijst.length?(
                 <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
-                  Geen wedstrijden gevonden voor dit type.
-                </div>
-              ):lijst.length===0?(
-                <div style={{padding:"10px 14px",fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
-                  Geen wedstrijden met dit type gevonden — mogelijk ontbreekt type-info in de data.
+                  Geen wedstrijden gevonden.
                 </div>
               ):lijst.map((w,i)=>{
                 const achterN=volledigeNaam.split(" ").filter(Boolean).pop()||"";
