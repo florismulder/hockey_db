@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-04-17",
+  "bijgewerkt": "2026-04-24",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -383,7 +383,8 @@
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1999-04-06"
     },
     {
       "id": "lucas_middendorp",
