@@ -5414,7 +5414,38 @@
       "uit": "SCHC",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Joep Everaers",
+          "Xander Damen"
+        ],
+        "stats_thuis": [
+          "Amsterdam is de nummer 3 van de competitie.",
+          "Amsterdam won haar laatste zes wedstrijden, de langstlopende zegereeks van alle ploegen.",
+          "Amsterdam won zeven van haar laatste acht wedstrijden, verloor alleen thuis van Den Bosch.",
+          "Amsterdam bleef in dertien van haar laatste veertien wedstrijden ongeslagen (W10 G3 V1).",
+          "Amsterdam won haar laatste drie thuiswedstrijden en produceerde zestien doelpunten.",
+          "Marijn Veen staat op 49 hoofdklassedoelpunten voor Amsterdam en nadert haar vijftigste."
+        ],
+        "stats_uit": [
+          "SCHC is de koploper van de Tulp Hoofdklasse.",
+          "SCHC kwam in haar laatste drie competitieduels niet tot winst (drie gelijke spelen).",
+          "SCHC is in de reguliere competitie al 33 duels op rij ongeslagen (W26 G7).",
+          "SCHC's reeks van 33 duels ongeslagen is de op één na langste in clubhistorie.",
+          "SCHC maakte zeventig goals in negentien wedstrijden, het meeste van alle ploegen.",
+          "Yibbi Jansen is topscorer met twintig goals, vijfde seizoen op rij boven twintig treffers."
+        ],
+        "stats_onderling": [
+          "In speelronde 9, op 2 november, eindigde het duel tussen SCHC en Amsterdam in 2-2.",
+          "Van de laatste veertien onderlinge duels eindigden er acht in een gelijkspel.",
+          "Amsterdam kon al vier duels op rij niet winnen van SCHC (drie gelijke spelen, één verlies).",
+          "Amsterdam's laatste zege op SCHC was 8 oktober 2023 (3-4), beëindigde SCHC's recordreeks.",
+          "Amsterdam won maar één van de laatste negen competitieduels met SCHC (G5 V3).",
+          "Amsterdam wacht al vijf thuisduels op een overwinning tegen SCHC."
+        ],
+        "bijgewerkt": "2026-04-24"
+      }
     },
     {
       "datum": "2026-04-26",
@@ -5714,5 +5745,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-19T17:12:16.108Z"
+  "bijgewerkt": "2026-04-24T13:54:21.902Z"
 }
