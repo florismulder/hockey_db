@@ -3138,11 +3138,15 @@ function App() {
       const slug = s.id || slugify(s.naam);
       const ts = topscorers.find(t => t.naam_slug === slug);
       if (!ts) return s;
+      // Alleen overschrijven als waarde aanwezig is — voorkomt dat vd/sc/sb gewist worden
+      // als de topscorers-PDF geen breakdown heeft (dan zijn vd/sc/sb 0 of undefined)
+      const totaal = (ts.vd||0) + (ts.sc||0) + (ts.sb||0);
+      const heeftBreakdown = totaal > 0;
       return {...s,
-        doelpunten_seizoen: ts.doelpunten,
-        vd: ts.vd,
-        sc: ts.sc,
-        sb: ts.sb,
+        doelpunten_seizoen: ts.doelpunten ?? s.doelpunten_seizoen,
+        vd: heeftBreakdown ? (ts.vd ?? s.vd) : s.vd,
+        sc: heeftBreakdown ? (ts.sc ?? s.sc) : s.sc,
+        sb: heeftBreakdown ? (ts.sb ?? s.sb) : s.sb,
       };
     }));
   },[topscorers]);
