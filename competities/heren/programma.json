@@ -6444,20 +6444,20 @@
         {
           "naam": "Jaïr van der Horst",
           "club": "Den Bosch",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Daan Troost",
-          "club": "Schaerweijde",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 52
         },
         {
           "naam": "Daan Troost",
-          "club": "Schaerweijde",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Den Bosch",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -6982,5 +6982,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:23:07.957Z"
+  "bijgewerkt": "2026-04-24T18:23:10.276Z"
 }
