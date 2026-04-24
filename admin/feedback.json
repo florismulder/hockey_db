@@ -1,6 +1,15 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Alexander Stadler verving onverwacht Sander van Berkel in de Gold Cup finale.",
+      "bron_zin": "Zijn plek onder de lat was ingenomen door Alexander Stadler"
+    },
+    {
+      "bullet": "Sander van Berkel (keeper) miste de Gold Cup finale door een file veroorzaakt door een ernstig ongeluk. Normaal keept Van Berkel in de beker, nu deed eerste keeper Alexander Stadler dat.",
+      "bron_zin": "Hij miste de finale door een file.",
+      "origineel": "Sander van Berkel miste de Gold Cup finale door een file veroorzaakt door een ernstig ongeluk."
+    },
+    {
       "bullet": "Robbert Kemperman kreeg de bijnaam 'mister backhand' vanwege zijn vele backhand-doelpunten.",
       "bron_zin": "Kemperman gaat de boeken in als ‘mister backhand’. Een bijnaam die hij zo’n tien jaar geleden kreeg"
     },
@@ -223,15 +232,6 @@
     {
       "bullet": "Marc Recasens (Rotterdam) speelde 121 interlands voor de Spaanse nationale ploeg.",
       "bron_zin": "Voor de Spaanse nationale ploeg kwam hij tot 121 interlands"
-    },
-    {
-      "bullet": "Marc Recasens (Rotterdam) verruilt zomer ‘26 Rotterdam voor KHC Dragons uit België.",
-      "bron_zin": "Marc Recasens verruilt Rotterdam voor KHC Dragons uit België.",
-      "origineel": "Marc Recasens (Rotterdam) verruilt Rotterdam voor KHC Dragons uit België."
-    },
-    {
-      "bullet": "Duco Telgenkamp (Kampong) keerde dit seizoen terug bij Oranje na focus op persoonlijke loopbaan.",
-      "bron_zin": "Die aanvaller keerde dit seizoen terug bij het Nederlands elftal"
     }
   ],
   "verborgen_bullets": []
