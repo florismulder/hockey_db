@@ -6452,69 +6452,69 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 11,
           "type": "sc"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 13,
           "type": "sc"
         },
         {
           "naam": "Jan van 't Land",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Kenneth Bain",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Max Langer",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 55,
           "type": "veld"
         },
         {
-          "naam": "Onbekend",
-          "club": "Laren",
-          "minuut": 58,
-          "type": "sc"
+          "naam": "Thomas Vis",
+          "club": "Laren H1",
+          "minuut": 60,
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Wout Kooijman",
-          "club": "Laren",
+          "club": "Laren H1",
           "type": "groen",
           "minuut": 21
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Thomas Selles",
-          "club": "Laren",
+          "club": "Laren H1",
           "type": "geel",
           "minuut": 46
         }
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:46.802Z"
+  "bijgewerkt": "2026-04-25T15:04:48.531Z"
 }
