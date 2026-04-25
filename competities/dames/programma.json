@@ -1148,13 +1148,13 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 20,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
           "minuut": 28,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Fay van der Elst",
@@ -1164,7 +1164,7 @@
         },
         {
           "naam": "Charlotte Schrijvers",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 56,
           "type": "veld"
         }
@@ -1173,18 +1173,18 @@
         {
           "naam": "Alessia Norbiato",
           "club": "Amsterdam",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Pheline Vos",
-          "club": "Oranje-Rood",
-          "minuut": 30,
-          "type": "groen"
+          "club": "Oranje-Rood D1",
+          "type": "groen",
+          "minuut": 30
         },
         {
           "naam": "Amber Brouwer",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 37,
           "type": "groen"
         }
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:19.800Z"
+  "bijgewerkt": "2026-04-25T16:09:41.446Z"
 }
