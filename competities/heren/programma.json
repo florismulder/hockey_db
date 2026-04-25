@@ -6594,7 +6594,7 @@
           "naam": "Teun van Aalderen",
           "club": "Schaerweijde",
           "minuut": 5,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:42.079Z"
+  "bijgewerkt": "2026-04-25T15:04:43.811Z"
 }
