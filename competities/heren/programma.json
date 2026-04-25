@@ -145,13 +145,13 @@
       "scorers": [
         {
           "naam": "Jip Janssen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 26,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Finn van Bijnen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 49,
           "type": "veld"
         }
@@ -159,27 +159,27 @@
       "kaarten": [
         {
           "naam": "Luke Friederich",
-          "club": "Laren H1",
-          "minuut": 4,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 4
         },
         {
           "naam": "Stan Thoolen",
-          "club": "Laren H1",
-          "minuut": 46,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 46
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
-          "minuut": 57,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 57
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren H1",
-          "minuut": 59,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 59
         }
       ]
     },
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:30.711Z"
+  "bijgewerkt": "2026-04-25T16:09:32.704Z"
 }
