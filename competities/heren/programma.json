@@ -19,6 +19,24 @@
       "score_uit": null
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2025-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland",
+          "minuut": 5,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -6692,24 +6710,6 @@
       ]
     },
     {
-      "thuis": "Klein Zwitserland",
-      "uit": "HDM",
-      "score_thuis": 1,
-      "score_uit": 0,
-      "datum": "2026-04-19",
-      "tijdstip": "15:00",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland",
-          "minuut": 5,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
       "thuis": "Pinoké",
       "uit": "Amsterdam",
       "score_thuis": 2,
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:38.068Z"
+  "bijgewerkt": "2026-04-25T15:04:40.341Z"
 }
