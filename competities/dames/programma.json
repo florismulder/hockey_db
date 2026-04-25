@@ -3344,13 +3344,13 @@
           "naam": "Madelief de Beer",
           "club": "Oranje-Rood",
           "minuut": 16,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Tessa Clasener",
           "club": "HDM",
           "minuut": 55,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3436,7 +3436,7 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 43,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -3510,7 +3510,7 @@
           "naam": "Bobbi Dijk",
           "club": "Rotterdam",
           "minuut": 33,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -3559,7 +3559,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 38,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -3590,19 +3590,19 @@
           "naam": "Lynn Vasterink",
           "club": "Oranje-Rood",
           "minuut": 30,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Guusje Moes",
           "club": "Kampong",
           "minuut": 41,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Luna Fokke",
           "club": "Kampong",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -3620,7 +3620,7 @@
           "naam": "Sam Luttmer",
           "club": "Pinoké",
           "minuut": 24,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Yara Akkerman",
@@ -3669,13 +3669,13 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 49,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3718,19 +3718,19 @@
           "naam": "Teuntje de Wit",
           "club": "Den Bosch",
           "minuut": 29,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 30,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3755,7 +3755,7 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 5,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Fay van der Elst",
@@ -3767,7 +3767,7 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 53,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Trijntje Beljaars",
@@ -3828,7 +3828,7 @@
           "naam": "Mikki Roberts",
           "club": "Tilburg",
           "minuut": 4,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Margje van der Loo",
@@ -3840,13 +3840,13 @@
           "naam": "Thirsa Kho",
           "club": "Oranje-Rood",
           "minuut": 56,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mikki Roberts",
           "club": "Tilburg",
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3883,7 +3883,7 @@
           "naam": "Brechtje van Santbrink",
           "club": "Rotterdam",
           "minuut": 19,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jip Dicke",
@@ -3895,7 +3895,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mette Winter",
@@ -3932,19 +3932,19 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 14,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Luna Fokke",
           "club": "Kampong",
           "minuut": 29,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Noor van den Nieuwenhof",
           "club": "Kampong",
           "minuut": 59,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -3981,7 +3981,7 @@
           "naam": "Julie van Dam",
           "club": "Rotterdam",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Julie van Dam",
@@ -4018,7 +4018,7 @@
           "naam": "Belén van den Broek",
           "club": "HDM",
           "minuut": 7,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Kaat Walhof",
@@ -4036,7 +4036,7 @@
           "naam": "Julia Duffhuis",
           "club": "HDM",
           "minuut": 53,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4091,13 +4091,13 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 34,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 42,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Trijntje Beljaars",
@@ -4127,7 +4127,7 @@
           "naam": "Pien Sanders",
           "club": "Den Bosch",
           "minuut": 56,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4176,13 +4176,13 @@
           "naam": "Pien Dicke",
           "club": "SCHC",
           "minuut": 40,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 40,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jip Dicke",
@@ -4194,7 +4194,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Michelle van der Drift",
@@ -4212,7 +4212,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 58,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4243,13 +4243,13 @@
           "naam": "Bente Jager",
           "club": "Pinoké",
           "minuut": 4,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Nina van der Marel",
           "club": "Pinoké",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4298,7 +4298,7 @@
           "naam": "Roos Alkemade",
           "club": "HDM",
           "minuut": 19,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Amber van den Dijssel",
@@ -4383,7 +4383,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 56,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4432,7 +4432,7 @@
           "naam": "Luna Fokke",
           "club": "Kampong",
           "minuut": 48,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Carlijn Tukkers",
@@ -4456,19 +4456,19 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 3,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
           "minuut": 19,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Juul van der Velden",
           "club": "Oranje-Rood",
           "minuut": 27,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Marta Segú Rueda",
@@ -4480,13 +4480,13 @@
           "naam": "Amy van den Bosch",
           "club": "HGC",
           "minuut": 37,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
           "minuut": 49,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4584,7 +4584,7 @@
           "naam": "Frédérique Matla",
           "club": "Pinoké",
           "minuut": 50,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": []
@@ -4657,7 +4657,7 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 18,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Julianna Tornetta",
@@ -4693,13 +4693,13 @@
           "naam": "Mikki Roberts",
           "club": "Tilburg",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Hannah Salden",
           "club": "Tilburg",
           "minuut": 49,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Emmely Bekker",
@@ -4766,7 +4766,7 @@
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
           "minuut": 23,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Freeke Moes",
@@ -4784,13 +4784,13 @@
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Daantje de Kruijff",
           "club": "Amsterdam",
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -4876,7 +4876,7 @@
           "naam": "Lana Kalse",
           "club": "Pinoké",
           "minuut": 32,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Eline Jansen",
@@ -4944,7 +4944,7 @@
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 37,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -5017,7 +5017,7 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 45,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
@@ -5072,19 +5072,19 @@
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
           "minuut": 17,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
           "minuut": 18,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Mariona Serrahima",
           "club": "HGC",
           "minuut": 34,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Katerina Langedijk",
@@ -5096,7 +5096,7 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -5139,13 +5139,13 @@
           "naam": "Carlijn van Geest",
           "club": "HGC",
           "minuut": 30,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mariona Serrahima",
           "club": "HGC",
           "minuut": 33,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Lilly Stoffelsma",
@@ -5176,13 +5176,13 @@
           "naam": "Floor de Haan",
           "club": "Pinoké",
           "minuut": 28,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Josephine Murray",
           "club": "Pinoké",
           "minuut": 33,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Madelief de Beer",
@@ -5262,31 +5262,31 @@
           "naam": "Pien Sanders",
           "club": "Den Bosch",
           "minuut": 37,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 40,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 47,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Romée Corver",
           "club": "Hurley",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Teuntje de Wit",
           "club": "Den Bosch",
           "minuut": 58,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -5310,7 +5310,7 @@
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
           "minuut": 24,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -5353,13 +5353,13 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 49,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mikki Roberts",
           "club": "Tilburg",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -5873,5 +5873,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-24T18:39:45.497Z"
+  "bijgewerkt": "2026-04-25T05:29:11.458Z"
 }
