@@ -6549,13 +6549,13 @@
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam",
+          "club": "Oranje-Rood",
           "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood",
+          "club": "Rotterdam",
           "minuut": 45,
           "type": "sb"
         }
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:43.811Z"
+  "bijgewerkt": "2026-04-25T15:04:46.802Z"
 }
