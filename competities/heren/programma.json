@@ -1442,25 +1442,25 @@
       "scorers": [
         {
           "naam": "Willem van Campen",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Koen Bijen",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 42,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Pepijn Reijenga",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 50,
           "type": "veld"
         }
@@ -1468,13 +1468,13 @@
       "kaarten": [
         {
           "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland H1",
-          "minuut": 42,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 42
         },
         {
           "naam": "Pepijn Jones",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 50,
           "type": "groen"
         }
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:32.704Z"
+  "bijgewerkt": "2026-04-25T16:09:35.210Z"
 }
