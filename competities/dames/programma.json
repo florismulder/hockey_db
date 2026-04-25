@@ -5156,10 +5156,34 @@
       ],
       "kaarten": [
         {
-          "naam": "Frederique Dekker",
+          "naam": "Carlijn van Geest",
           "club": "HGC",
+          "type": "groen",
+          "minuut": 36
+        },
+        {
+          "naam": "Delany van den Broek",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 39
+        },
+        {
+          "naam": "Frederique Dekker",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 42
+        },
+        {
+          "naam": "Frederique Dekker",
+          "club": "HDM",
           "type": "geel",
           "minuut": 52
+        },
+        {
+          "naam": "Claudia Negrete Garcia",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -5873,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T15:04:17.476Z"
+  "bijgewerkt": "2026-04-25T15:04:19.800Z"
 }
