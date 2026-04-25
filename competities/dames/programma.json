@@ -770,7 +770,7 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 29,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Fleur Loomans",
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:52.761Z"
+  "bijgewerkt": "2026-04-25T16:09:54.667Z"
 }
