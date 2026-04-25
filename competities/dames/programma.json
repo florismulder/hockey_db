@@ -922,7 +922,7 @@
           "naam": "Maria Steensma",
           "club": "Pinoké",
           "minuut": 20,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Lana Kalse",
@@ -940,7 +940,7 @@
           "naam": "Sam Luttmer",
           "club": "Pinoké",
           "minuut": 44,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Melle Vaessen",
@@ -953,8 +953,8 @@
         {
           "naam": "Noor Omrani",
           "club": "Rotterdam",
-          "minuut": 38,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 38
         }
       ]
     },
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:47.112Z"
+  "bijgewerkt": "2026-04-25T16:09:48.958Z"
 }
