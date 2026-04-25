@@ -1014,7 +1014,7 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 15,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Sophie Thoolen",
@@ -1026,27 +1026,27 @@
           "naam": "Sanne Koolen",
           "club": "Den Bosch",
           "minuut": 34,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Teuntje de Wit",
           "club": "Den Bosch",
-          "minuut": 29,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Pientje Molenaar",
           "club": "Bloemendaal",
-          "minuut": 32,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 32
         },
         {
           "naam": "Maud Preyde",
           "club": "Bloemendaal",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 39
         }
       ]
     },
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:43.323Z"
+  "bijgewerkt": "2026-04-25T16:09:45.212Z"
 }
