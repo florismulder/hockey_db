@@ -1338,31 +1338,31 @@
       "scorers": [
         {
           "naam": "Marco Miltkau",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 7,
           "type": "veld"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Casper van der Veen",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Jorrit Croon",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Jan van 't Land",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 59,
           "type": "veld"
         }
@@ -1370,9 +1370,9 @@
       "kaarten": [
         {
           "naam": "Nikas Berendts",
-          "club": "Hurley H1",
-          "minuut": 2,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 2
         }
       ]
     },
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:37.359Z"
+  "bijgewerkt": "2026-04-25T16:09:39.462Z"
 }
