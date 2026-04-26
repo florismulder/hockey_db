@@ -5268,19 +5268,19 @@
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 47,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Romée Corver",
           "club": "Hurley",
           "minuut": 50,
-          "type": "sc"
+          "type": "veld"
         },
         {
           "naam": "Teuntje de Wit",
           "club": "Den Bosch",
           "minuut": 58,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": []
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:33:45.709Z"
+  "bijgewerkt": "2026-04-26T06:33:47.545Z"
 }
