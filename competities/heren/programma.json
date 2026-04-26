@@ -41,7 +41,7 @@
       "uit": "Pinoké",
       "score_thuis": 2,
       "score_uit": 4,
-      "datum": "2025-04-25",
+      "datum": "2026-04-25",
       "tijdstip": "16:30",
       "gespeeld": true,
       "scorers": [
@@ -89,7 +89,8 @@
           "type": "groen",
           "minuut": 35
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
@@ -6541,12 +6542,25 @@
       "scorers": [
         {
           "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland",
+          "club": "Klein Zwitserland H1",
           "minuut": 5,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM H1",
+          "type": "groen",
+          "minuut": 50
+        },
+        {
+          "naam": "Adrian Lehmann-Richter",
+          "club": "HDM H1",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
     },
     {
       "thuis": "Rotterdam",
@@ -6577,13 +6591,13 @@
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Oranje-Rood",
+          "club": "Rotterdam",
           "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Rotterdam",
+          "club": "Oranje-Rood",
           "minuut": 45,
           "type": "sb"
         }
@@ -6699,13 +6713,13 @@
       "scorers": [
         {
           "naam": "Derck de Vilder",
-          "club": "Hurley",
+          "club": "Kampong",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Fred Newbold",
-          "club": "Kampong",
+          "club": "Hurley",
           "minuut": 28,
           "type": "sc"
         },
@@ -6731,7 +6745,7 @@
       "kaarten": [
         {
           "naam": "Jip Janssen",
-          "club": "Hurley",
+          "club": "Kampong",
           "type": "groen",
           "minuut": 56
         }
@@ -7151,5 +7165,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:34:13.820Z"
+  "bijgewerkt": "2026-04-26T06:18:05.943Z"
 }
