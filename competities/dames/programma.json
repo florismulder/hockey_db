@@ -13,7 +13,7 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 10,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Fay van der Elst",
@@ -37,13 +37,13 @@
           "naam": "Margot van Hecking Colenbrander",
           "club": "Hurley",
           "minuut": 35,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Michelle van der Drift",
           "club": "Hurley",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Felice Albers",
@@ -56,8 +56,8 @@
         {
           "naam": "Felice Albers",
           "club": "Amsterdam",
-          "minuut": 44,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 44
         }
       ]
     },
@@ -5891,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:03.038Z"
+  "bijgewerkt": "2026-04-26T05:09:05.172Z"
 }
