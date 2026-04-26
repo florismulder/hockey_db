@@ -620,65 +620,65 @@
       "scorers": [
         {
           "naam": "Jip Janssen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 4,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Kampong H1",
+          "club": "Amsterdam",
           "minuut": 24,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 33,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jip Janssen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 34,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Brent van Bijnen",
-          "club": "Kampong H1",
-          "minuut": 9,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 9
         },
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
-          "minuut": 11,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 11
         },
         {
           "naam": "Kjell Plantenga",
-          "club": "Kampong H1",
-          "minuut": 24,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
-          "minuut": 32,
-          "type": "geel"
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 32
         },
         {
           "naam": "Derck de Vilder",
-          "club": "Kampong H1",
-          "minuut": 41,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 41
         },
         {
           "naam": "Kjell Plantenga",
-          "club": "Kampong H1",
-          "minuut": 53,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 53
         }
       ]
     },
@@ -7143,5 +7143,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:27.230Z"
+  "bijgewerkt": "2026-04-26T05:09:29.237Z"
 }
