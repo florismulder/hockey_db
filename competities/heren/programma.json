@@ -571,13 +571,13 @@
       "scorers": [
         {
           "naam": "Chad Futcher",
-          "club": "Hurley H1",
+          "club": "Klein Zwitserland H1",
           "minuut": 29,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Fred Newbold",
-          "club": "Klein Zwitserland H1",
+          "club": "Hurley H1",
           "minuut": 35,
           "type": "veld"
         },
@@ -585,29 +585,10 @@
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland H1",
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Willem van Campen",
-          "club": "Hurley H1",
-          "minuut": 41,
-          "type": "groen"
-        },
-        {
-          "naam": "Hjalmar Voskuil",
-          "club": "Hurley H1",
-          "minuut": 41,
-          "type": "groen"
-        },
-        {
-          "naam": "Laurens Nievelstein",
-          "club": "Hurley H1",
-          "minuut": 43,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Kampong",
@@ -7143,5 +7124,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:29.237Z"
+  "bijgewerkt": "2026-04-26T05:09:31.277Z"
 }
