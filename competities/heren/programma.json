@@ -4712,14 +4712,14 @@
       "scorers": [
         {
           "naam": "Teun Beins",
-          "club": "Schaerweijde",
-          "minuut": 29,
+          "club": "Bloemendaal",
+          "minuut": 30,
           "type": "sc"
         },
         {
           "naam": "Mick Bosse",
-          "club": "Bloemendaal",
-          "minuut": 40,
+          "club": "Schaerweijde",
+          "minuut": 41,
           "type": "sc"
         }
       ],
@@ -4727,20 +4727,20 @@
         {
           "naam": "Maarten Bruisten",
           "club": "Schaerweijde",
-          "minuut": 17,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 18
         },
         {
           "naam": "Pepijn Leenhouts",
           "club": "Schaerweijde",
-          "minuut": 23,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal",
-          "minuut": 47,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 48
         }
       ]
     },
@@ -7158,5 +7158,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:44.490Z"
+  "bijgewerkt": "2026-04-26T21:19:46.641Z"
 }
