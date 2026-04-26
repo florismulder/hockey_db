@@ -426,37 +426,37 @@
       "scorers": [
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 17,
           "type": "veld"
         },
         {
           "naam": "Mette Winter",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Lisa Post",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 20,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 44,
           "type": "veld"
         }
@@ -464,9 +464,9 @@
       "kaarten": [
         {
           "naam": "Sam Luttmer",
-          "club": "Pinoké",
-          "minuut": 41,
-          "type": "geel"
+          "club": "Pinoké D1",
+          "type": "geel",
+          "minuut": 41
         }
       ]
     },
@@ -5885,5 +5885,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:44.685Z"
+  "bijgewerkt": "2026-04-26T05:08:46.632Z"
 }
