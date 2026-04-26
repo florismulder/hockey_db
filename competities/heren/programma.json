@@ -1113,49 +1113,49 @@
       "scorers": [
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 15,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 26,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 32,
           "type": "veld"
         },
         {
           "naam": "Sam Steins Bisschop",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 56,
           "type": "veld"
         }
@@ -1163,39 +1163,39 @@
       "kaarten": [
         {
           "naam": "Brent van Bijnen",
-          "club": "Amsterdam H1",
-          "minuut": 20,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 20
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
-          "minuut": 23,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Sem de Roij",
-          "club": "Oranje-Rood H1",
-          "minuut": 28,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Bob de Voogd",
-          "club": "Oranje-Rood H1",
-          "minuut": 36,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 36
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
-          "minuut": 45,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Florian Gosselink",
-          "club": "Oranje-Rood H1",
-          "minuut": 54,
-          "type": "geel"
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 54
         }
       ]
     },
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:09.429Z"
+  "bijgewerkt": "2026-04-26T05:09:11.727Z"
 }
