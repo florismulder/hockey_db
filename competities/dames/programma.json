@@ -261,15 +261,15 @@
       "scorers": [
         {
           "naam": "Mikki Roolaart",
-          "club": "HGC",
+          "club": "Hurley",
           "minuut": 4,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Floor van den Dungen",
           "club": "Hurley",
           "minuut": 37,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Teuntje Horn",
@@ -279,35 +279,35 @@
         },
         {
           "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
+          "club": "HGC",
           "minuut": 53,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Sanne Caarls",
           "club": "Hurley",
-          "minuut": 23,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Amy van den Bosch",
-          "club": "HGC",
-          "minuut": 37,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 37
         },
         {
           "naam": "Albert Kees Manenschijn",
-          "club": "Hurley",
-          "minuut": 48,
-          "type": "groen"
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 48
         },
         {
           "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
-          "minuut": 56,
-          "type": "geel"
+          "club": "HGC",
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -5891,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:50.497Z"
+  "bijgewerkt": "2026-04-26T05:08:52.554Z"
 }
