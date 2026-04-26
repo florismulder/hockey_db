@@ -5205,25 +5205,25 @@
       "scorers": [
         {
           "naam": "Kyra Fortuin",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Eline Jansen",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "minuut": 53,
           "type": "veld"
         }
@@ -5231,13 +5231,13 @@
       "kaarten": [
         {
           "naam": "Melle Vaessen",
-          "club": "Rotterdam D1",
+          "club": "Rotterdam",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong D1",
+          "club": "Kampong",
           "type": "groen",
           "minuut": 53
         }
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:16:06.675Z"
+  "bijgewerkt": "2026-04-26T06:16:08.253Z"
 }
