@@ -20,6 +20,24 @@
     },
     {
       "thuis": "Klein Zwitserland",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2025-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland",
+          "minuut": 5,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
+    },
+    {
+      "thuis": "Klein Zwitserland",
       "uit": "Pinoké",
       "score_thuis": 2,
       "score_uit": 4,
@@ -7133,5 +7151,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:16:13.324Z"
+  "bijgewerkt": "2026-04-26T06:16:15.031Z"
 }
