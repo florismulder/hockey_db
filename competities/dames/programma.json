@@ -230,25 +230,18 @@
       "scorers": [
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 22,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Lotte Ruts",
-          "club": "SCHC",
-          "minuut": 49,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Hurley",
@@ -5891,5 +5884,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:52.554Z"
+  "bijgewerkt": "2026-04-26T05:08:54.495Z"
 }
