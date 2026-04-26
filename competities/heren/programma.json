@@ -47,47 +47,47 @@
       "scorers": [
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Mirco Pruyser",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "David Huussen",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley H1",
+          "club": "Hurley",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Thije Harm",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 56,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
-          "minuut": 48,
-          "type": "geel"
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 48
         }
       ]
     },
@@ -7118,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:45.471Z"
+  "bijgewerkt": "2026-04-26T05:09:47.455Z"
 }
