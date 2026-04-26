@@ -821,29 +821,29 @@
       "scorers": [
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Pol Cabre-Verdiell Badia",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Ruben van Meer",
-          "club": "Laren H1",
-          "minuut": 60,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -7150,5 +7150,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:20.411Z"
+  "bijgewerkt": "2026-04-26T05:09:22.861Z"
 }
