@@ -383,55 +383,55 @@
       "scorers": [
         {
           "naam": "Tijmen Reyenga",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 2,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 10,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jelle Galema",
-          "club": "HDM H1",
+          "club": "Oranje-Rood",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM H1",
+          "club": "Oranje-Rood",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Rick van den IJssel",
-          "club": "Oranje-Rood H1",
+          "club": "HDM",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 50,
           "type": "veld"
         },
         {
           "naam": "Gerard Clapes",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Arthur de Sloover",
-          "club": "Oranje-Rood H1",
+          "club": "HDM",
           "minuut": 58,
           "type": "veld"
         }
@@ -439,9 +439,9 @@
       "kaarten": [
         {
           "naam": "Max de Bie",
-          "club": "Oranje-Rood H1",
-          "minuut": 41,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 41
         }
       ]
     },
@@ -7118,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:35.269Z"
+  "bijgewerkt": "2026-04-26T05:09:37.289Z"
 }
