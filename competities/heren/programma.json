@@ -6541,25 +6541,12 @@
       "scorers": [
         {
           "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 5,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Sam Spencer",
-          "club": "HDM H1",
-          "type": "groen",
-          "minuut": 50
-        },
-        {
-          "naam": "Adrian Lehmann-Richter",
-          "club": "HDM H1",
-          "type": "groen",
-          "minuut": 50
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Rotterdam",
@@ -7164,5 +7151,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:33:30.391Z"
+  "bijgewerkt": "2026-04-26T06:33:32.232Z"
 }
