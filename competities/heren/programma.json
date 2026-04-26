@@ -19,24 +19,6 @@
       "score_uit": null
     },
     {
-      "thuis": "Klein Zwitserland",
-      "uit": "HDM",
-      "score_thuis": 1,
-      "score_uit": 0,
-      "datum": "2025-04-19",
-      "tijdstip": "15:00",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland",
-          "minuut": 5,
-          "type": "veld"
-        }
-      ],
-      "kaarten": []
-    },
-    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -6476,6 +6458,37 @@
       ]
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-04-19",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lucas Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 5,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sam Spencer",
+          "club": "HDM H1",
+          "type": "groen",
+          "minuut": 50
+        },
+        {
+          "naam": "Adrian Lehmann-Richter",
+          "club": "HDM H1",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
+    },
+    {
       "thuis": "Rotterdam",
       "uit": "Oranje-Rood",
       "score_thuis": 1,
@@ -7118,5 +7131,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:53.510Z"
+  "bijgewerkt": "2026-04-26T05:09:55.439Z"
 }
