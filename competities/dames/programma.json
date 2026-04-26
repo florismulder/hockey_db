@@ -654,7 +654,7 @@
           "naam": "Imke Verstraeten",
           "club": "Amsterdam",
           "minuut": 20,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Sophie van Grimbergen",
@@ -672,39 +672,39 @@
           "naam": "Noor van den Nieuwenhof",
           "club": "Kampong",
           "minuut": 35,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 23,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
-          "minuut": 35,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 35
         },
         {
           "naam": "Luna Fokke",
           "club": "Kampong",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Eline Jansen",
           "club": "Kampong",
-          "minuut": 48,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 48
         },
         {
           "naam": "Felice Albers",
           "club": "Amsterdam",
-          "minuut": 56,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:35.149Z"
+  "bijgewerkt": "2026-04-26T05:08:37.151Z"
 }
