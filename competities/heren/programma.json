@@ -102,35 +102,35 @@
       "scorers": [
         {
           "naam": "Koen Bijen",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 20,
           "type": "veld"
         },
         {
           "naam": "Tijmen Reyenga",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 43,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Pepijn Reijenga",
-          "club": "Oranje-Rood H1",
-          "minuut": 17,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 17
         },
         {
           "naam": "Marc Vizcaino",
-          "club": "Oranje-Rood H1",
-          "minuut": 26,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 26
         }
       ]
     },
@@ -7118,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:43.395Z"
+  "bijgewerkt": "2026-04-26T05:09:45.471Z"
 }
