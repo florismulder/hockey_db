@@ -821,5 +821,16 @@
       "handmatig": true,
       "verborgen": true
     }
+  ],
+  "joep_troost": [
+    {
+      "datum": "2026-04-24T22:00:00.000Z",
+      "titel": "HK  dames OR doen goede zaken, Troost leidt Pinoké naar zege",
+      "bullet": "Joep Troost doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen, op 25-04-26 tegen KZ.",
+      "link": "https://drive.google.com/file/d/1z8KTG3a2GFbtq6BiCzyGA037c6eWctGB",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
   ]
 }
