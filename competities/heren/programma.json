@@ -4211,21 +4211,9 @@
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Olivier Hortensius",
-          "club": "Rotterdam",
-          "minuut": 13,
-          "type": "veld"
-        },
-        {
-          "naam": "Guus Jansen",
-          "club": "Rotterdam",
-          "minuut": 24,
-          "type": "veld"
-        },
-        {
           "naam": "Elian Mazkour",
           "club": "Bloemendaal",
-          "minuut": 59,
+          "minuut": 60,
           "type": "sb"
         }
       ],
@@ -4233,14 +4221,8 @@
         {
           "naam": "Tobias Bovelander",
           "club": "Bloemendaal",
-          "minuut": 40,
-          "type": "groen"
-        },
-        {
-          "naam": "Guus Jansen",
-          "club": "Rotterdam",
-          "minuut": 55,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 41
         }
       ]
     },
@@ -7134,5 +7116,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:40.254Z"
+  "bijgewerkt": "2026-04-26T21:19:42.408Z"
 }
