@@ -1,7 +1,7 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-19T16:45:32.110Z",
+  "bijgewerkt": "2026-04-26T05:09:15.538Z",
   "stand": [
     {
       "positie": 1,
@@ -71,13 +71,13 @@
     {
       "positie": 6,
       "club": "Rotterdam",
-      "gespeeld": 19,
+      "gespeeld": 20,
       "gewonnen": 5,
       "gelijk": 6,
-      "verloren": 8,
-      "doelpunten_voor": 19,
-      "doelpunten_tegen": 35,
-      "doelsaldo": -16,
+      "verloren": 9,
+      "doelpunten_voor": 20,
+      "doelpunten_tegen": 37,
+      "doelsaldo": -17,
       "punten": 21,
       "zone": ""
     },
@@ -95,20 +95,7 @@
       "zone": ""
     },
     {
-      "positie": 8,
-      "club": "Bloemendaal",
-      "gespeeld": 19,
-      "gewonnen": 4,
-      "gelijk": 7,
-      "verloren": 8,
-      "doelpunten_voor": 22,
-      "doelpunten_tegen": 33,
-      "doelsaldo": -11,
-      "punten": 19,
-      "zone": ""
-    },
-    {
-      "positie": 9,
+      "positie": 10,
       "club": "HGC",
       "gespeeld": 19,
       "gewonnen": 4,
@@ -121,7 +108,7 @@
       "zone": ""
     },
     {
-      "positie": 10,
+      "positie": 11,
       "club": "Hurley",
       "gespeeld": 19,
       "gewonnen": 4,
@@ -131,19 +118,6 @@
       "doelpunten_tegen": 42,
       "doelsaldo": -11,
       "punten": 15,
-      "zone": ""
-    },
-    {
-      "positie": 11,
-      "club": "Oranje-Rood",
-      "gespeeld": 19,
-      "gewonnen": 3,
-      "gelijk": 5,
-      "verloren": 11,
-      "doelpunten_voor": 20,
-      "doelpunten_tegen": 51,
-      "doelsaldo": -31,
-      "punten": 14,
       "zone": ""
     },
     {
