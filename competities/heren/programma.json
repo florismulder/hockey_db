@@ -6462,49 +6462,49 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 11,
           "type": "sc"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 13,
           "type": "sc"
         },
         {
           "naam": "Jan van 't Land",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Kenneth Bain",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Max Langer",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 55,
           "type": "veld"
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 60,
           "type": "veld"
         }
@@ -6512,19 +6512,19 @@
       "kaarten": [
         {
           "naam": "Wout Kooijman",
-          "club": "Laren H1",
+          "club": "Laren",
           "type": "groen",
           "minuut": 21
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Thomas Selles",
-          "club": "Laren H1",
+          "club": "Laren",
           "type": "geel",
           "minuut": 46
         }
@@ -7151,5 +7151,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:16:22.168Z"
+  "bijgewerkt": "2026-04-26T06:16:23.857Z"
 }
