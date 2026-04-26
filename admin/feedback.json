@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Joep Troost doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen, op 25-04-26 tegen KZ.",
+      "bron_zin": "doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen.",
+      "origineel": "Joep Troost doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen."
+    },
+    {
       "bullet": "Thomas Sorsby scoorde het winnende doelpunt in de Gold Cup-finale. Op 23 april 26, tegen Oranje-Rood, scoort hij in 47ste minuut de 2-3.",
       "bron_zin": "Uiteindelijk was het Thomas Sorsby die in de 47e minuut het verschil maakte door de 2-3 binnen te werken.",
       "origineel": "Thomas Sorsby scoorde het winnende doelpunt in de Gold Cup-finale."
@@ -228,11 +233,6 @@
       "bullet": "Thomas Sorsby (Den Bosch) verhuist zomer 26 naar Amsterdam, hij vertegenwoordigde Groot-Brittannië op de Olympische Spelen van Tokio en Parijs.",
       "bron_zin": "Amsterdam heeft zich voor het komende seizoen versterkt met de Engelse international Tom Sorsby.",
       "origineel": "Thomas Sorsby (Den Bosch) verhuist komend seizoen naar Amsterdam."
-    },
-    {
-      "bullet": "Isis van Loon (HGC) maakt komend seizoen (zomer 26) de overstap naar Den Bosch, debuteerde op 8 april 2022 voor Oranje in de Pro League, veroverde in 2022 brons met Jong Oranje op het EK in Gent, won in 2023 de wereldtitel met Jong Oranje in Santiago.",
-      "bron_zin": "Isis van Loon maakt komend seizoen de overstap naar Den Bosch.",
-      "origineel": "Isis van Loon (HGC) maakt komend seizoen de overstap naar Den Bosch."
     }
   ],
   "verborgen_bullets": []
