@@ -104,7 +104,7 @@
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
           "minuut": 17,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Joosje Burg",
@@ -5884,5 +5884,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:58.334Z"
+  "bijgewerkt": "2026-04-26T05:09:00.801Z"
 }
