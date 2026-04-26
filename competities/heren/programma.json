@@ -693,47 +693,47 @@
       "scorers": [
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 5,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 6,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 30,
           "type": "veld"
         },
         {
           "naam": "Luke Friederich",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 58,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
-          "minuut": 44,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 44
         }
       ]
     },
@@ -7143,5 +7143,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:25.228Z"
+  "bijgewerkt": "2026-04-26T05:09:27.230Z"
 }
