@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "3aa826b0-0d03-4245-bb6c-fab9758f9e02",
+      "naam": "HK (D)  Den Bosch derde na winst, punt voor Hurley",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-26T20:49:15.384Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "ca0d79fa-7650-4927-89f9-52c73f15bdb4",
       "naam": "Verhitte Klassieker levert alleen maar teleurgestelde koppen op",
       "velden": {
