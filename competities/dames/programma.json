@@ -5390,42 +5390,34 @@
       ]
     },
     {
-      "datum": "2026-04-25",
-      "tijdstip": "16:30",
       "thuis": "Oranje-Rood",
       "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Maurits van Dalen",
-          "Sophie Bockelmann"
-        ],
-        "stats_thuis": [
-          "Oranje-Rood is de nummer 11 van de Tulp Hoofdklasse.",
-          "Oranje-Rood verloor vorig weekend met 2-1 van Pinoké.",
-          "Oranje-Rood won één van de laatste zeven wedstrijden (G2 V4).",
-          "Oranje-Rood wacht op eigen veld al drie duels op een zege.",
-          "Oranje-Rood's laatste thuiszege was 2-1 tegen HDM op 28 februari.",
-          "Madelief de Beer heeft vier goals, onder het clubrecord van vijf voor een clubtopscorer."
-        ],
-        "stats_uit": [
-          "Rotterdam is de knappe nummer 6 van de competitie.",
-          "Rotterdam ging vorige week op eigen veld met 0-4 onderuit tegen Kampong.",
-          "Rotterdam verloor de laatste twee wedstrijden en kwam niet tot scoren.",
-          "Rotterdam's laatste zege was 2-3 op bezoek bij HDM op 22 maart.",
-          "De nederlaag bij Den Bosch beëindigde een reeks van vier uitduels zonder verlies.",
-          "Vier Rotterdamse speelsters maakten drie goals, minder dan vorig seizoen's topscorer."
-        ],
-        "stats_onderling": [
-          "Op 1 november 2025 won Rotterdam met 2-0 van Oranje-Rood.",
-          "Beide ploegen stonden pas vijf keer tegenover elkaar in de Hoofdklasse.",
-          "Oranje-Rood won drie keer, Rotterdam zegevierde twee keer in de Hoofdklasse.",
-          "Oranje-Rood won beide thuisduels tegen Rotterdam."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-04-25",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Juul van der Velden",
+          "club": "Oranje-Rood",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Julie van Dam",
+          "club": "Oranje-Rood",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Vivienne Peters",
+          "club": "Rotterdam",
+          "minuut": 42,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-04-26",
@@ -5891,5 +5883,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:10:08.991Z"
+  "bijgewerkt": "2026-04-26T05:33:31.426Z"
 }
