@@ -140,7 +140,7 @@
           "naam": "Julie Pieper",
           "club": "HGC",
           "minuut": 38,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mariona Serrahima",
@@ -153,26 +153,26 @@
         {
           "naam": "Faye Muijderman",
           "club": "HGC",
-          "minuut": 13,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Tessel Huibregtsen",
           "club": "HGC",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Lilly Stoffelsma",
           "club": "HGC",
-          "minuut": 45,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 45
         },
         {
           "naam": "Iris Langejans",
-          "club": "Rotterdam",
-          "minuut": 47,
-          "type": "groen"
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 47
         }
       ]
     },
@@ -5884,5 +5884,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:56.406Z"
+  "bijgewerkt": "2026-04-26T05:08:58.334Z"
 }
