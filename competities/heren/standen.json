@@ -1,7 +1,7 @@
 {
   "geslacht": "heren",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-04-19T16:45:53.717Z",
+  "bijgewerkt": "2026-04-26T05:09:42.322Z",
   "stand": [
     {
       "positie": 1,
@@ -14,7 +14,7 @@
       "doelpunten_tegen": 28,
       "doelsaldo": 40,
       "punten": 47,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 2,
@@ -27,20 +27,20 @@
       "doelpunten_tegen": 34,
       "doelsaldo": 40,
       "punten": 41,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 3,
       "club": "Pinoké",
-      "gespeeld": 19,
-      "gewonnen": 11,
+      "gespeeld": 20,
+      "gewonnen": 12,
       "gelijk": 5,
       "verloren": 3,
-      "doelpunten_voor": 69,
-      "doelpunten_tegen": 41,
-      "doelsaldo": 28,
-      "punten": 38,
-      "zone": ""
+      "doelpunten_voor": 73,
+      "doelpunten_tegen": 43,
+      "doelsaldo": 30,
+      "punten": 41,
+      "zone": "playoff"
     },
     {
       "positie": 4,
@@ -53,7 +53,7 @@
       "doelpunten_tegen": 36,
       "doelsaldo": 23,
       "punten": 37,
-      "zone": ""
+      "zone": "playoff"
     },
     {
       "positie": 5,
@@ -97,13 +97,13 @@
     {
       "positie": 8,
       "club": "Klein Zwitserland",
-      "gespeeld": 19,
+      "gespeeld": 20,
       "gewonnen": 7,
       "gelijk": 6,
-      "verloren": 6,
-      "doelpunten_voor": 39,
-      "doelpunten_tegen": 35,
-      "doelsaldo": 4,
+      "verloren": 7,
+      "doelpunten_voor": 41,
+      "doelpunten_tegen": 39,
+      "doelsaldo": 2,
       "punten": 27,
       "zone": ""
     },
@@ -144,7 +144,7 @@
       "doelpunten_tegen": 83,
       "doelsaldo": -53,
       "punten": 5,
-      "zone": ""
+      "zone": "playout"
     },
     {
       "positie": 12,
@@ -157,7 +157,7 @@
       "doelpunten_tegen": 76,
       "doelsaldo": -60,
       "punten": 4,
-      "zone": ""
+      "zone": "playout"
     }
   ]
 }
