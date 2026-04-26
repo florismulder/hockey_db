@@ -483,7 +483,7 @@
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
           "minuut": 21,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -5885,5 +5885,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:42.771Z"
+  "bijgewerkt": "2026-04-26T05:08:44.685Z"
 }
