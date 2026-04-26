@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "noor_van_den_nieuwenhof",
+      "naam": "noor_van_den_nieuwenhof",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-26T12:42:31.068Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "416282eb-7d25-43e7-a43c-212b6b390db9",
       "naam": "HK  dames OR doen goede zaken, Troost leidt Pinoké naar zege",
