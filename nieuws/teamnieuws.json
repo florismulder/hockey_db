@@ -59,6 +59,16 @@
   ],
   "Amsterdam": [
     {
+      "datum": "2026-04-25T22:00:00.000Z",
+      "titel": "HK (H)  Den Bosch naar vierde plaats, Rotterdam naar play offs",
+      "link": "https://drive.google.com/file/d/1d5xjftr3164mHPozvi9o_ppIHjN-21Il",
+      "bullets": [
+        "Amsterdam lukte het niet om op 26-04-26 Bloemendaal te verslaan, al ruim negen jaar geen competitiezege."
+      ],
+      "competitie": "HK",
+      "geslacht": "heren"
+    },
+    {
       "datum": "2026-04-18T22:00:00.000Z",
       "titel": "HK (H)  Oranje Rood naar play offs, Pinoké verslaat Amsterdam",
       "link": "https://drive.google.com/file/d/1htp6IYx0YaiL_aZkxj22USmYypcEVTJe",
@@ -355,6 +365,18 @@
       ],
       "competitie": "HK",
       "geslacht": "dames"
+    }
+  ],
+  "Rotterdam": [
+    {
+      "datum": "2026-04-25T22:00:00.000Z",
+      "titel": "HK (H)  Den Bosch naar vierde plaats, Rotterdam naar play offs",
+      "link": "https://drive.google.com/file/d/1d5xjftr3164mHPozvi9o_ppIHjN-21Il",
+      "bullets": [
+        "Rotterdam heeft zich verzekerd van deelname aan de play-offs. Op 26-04-26 winnen ze met 1-7 uit van Laren."
+      ],
+      "competitie": "HK",
+      "geslacht": "heren"
     }
   ]
 }
