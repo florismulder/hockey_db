@@ -4146,13 +4146,13 @@
         {
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
-          "minuut": 4,
+          "minuut": 5,
           "type": "sc"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch",
-          "minuut": 13,
+          "minuut": 11,
           "type": "sc"
         },
         {
@@ -4164,40 +4164,40 @@
         {
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
-          "minuut": 22,
+          "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
-          "minuut": 43,
+          "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Koen Bijen",
           "club": "Den Bosch",
-          "minuut": 50,
+          "minuut": 51,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Floris van der Wal",
-          "club": "Laren",
-          "minuut": 6,
-          "type": "geel"
-        },
-        {
           "naam": "Joppe Wolbert",
           "club": "Laren",
-          "minuut": 7,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 8
         },
         {
           "naam": "Pepijn Reyenga",
           "club": "Laren",
-          "minuut": 10,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 15
+        },
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren",
+          "type": "geel",
+          "minuut": 51
         }
       ]
     },
@@ -7147,5 +7147,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:45:06.054Z"
+  "bijgewerkt": "2026-04-26T21:19:32.110Z"
 }
