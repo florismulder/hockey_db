@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "f87c8864-75b4-4122-a06d-c654dc09fb4e",
+      "naam": "HK (H)  Den Bosch naar vierde plaats, Rotterdam naar play offs",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-26T20:42:03.101Z"
+    },
+    {
       "type": "bullet",
       "id": "noor_van_den_nieuwenhof",
       "naam": "noor_van_den_nieuwenhof",
