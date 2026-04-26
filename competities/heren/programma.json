@@ -4317,42 +4317,29 @@
         {
           "naam": "Willem van Campen",
           "club": "Klein Zwitserland",
-          "minuut": 24,
-          "type": "veld"
-        },
-        {
-          "naam": "Imko de Vries",
-          "club": "Klein Zwitserland",
-          "minuut": 29,
+          "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Štěpán Klaban",
           "club": "Klein Zwitserland",
-          "minuut": 33,
+          "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Pepijn Jones",
           "club": "Klein Zwitserland",
-          "minuut": 39,
+          "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Ties Klinkhamer",
-          "club": "Hurley",
-          "minuut": 46,
+          "club": "Klein Zwitserland",
+          "minuut": 47,
           "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Hjalmar Voskuil",
-          "club": "Hurley",
-          "minuut": 46,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Amsterdam",
@@ -7147,5 +7134,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:36.206Z"
+  "bijgewerkt": "2026-04-26T21:19:38.326Z"
 }
