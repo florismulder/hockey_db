@@ -328,31 +328,31 @@
       "scorers": [
         {
           "naam": "Casper van der Veen",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Casper van der Veen",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Lucas Veen",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Marco Miltkau",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Casper van der Veen",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 56,
           "type": "veld"
         }
@@ -360,15 +360,15 @@
       "kaarten": [
         {
           "naam": "Sam Spencer",
-          "club": "HDM H1",
-          "minuut": 46,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 46
         },
         {
           "naam": "Jorrit Croon",
-          "club": "HDM H1",
-          "minuut": 55,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 55
         }
       ]
     },
@@ -7118,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:37.289Z"
+  "bijgewerkt": "2026-04-26T05:09:39.327Z"
 }
