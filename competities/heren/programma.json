@@ -517,45 +517,45 @@
       "scorers": [
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Schaerweijde H1",
+          "club": "Pinoké",
           "minuut": 12,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Thies Prinz",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 41,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Pepijn Leenhouts",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 45,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 60,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Schaerweijde",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -7124,5 +7124,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:31.277Z"
+  "bijgewerkt": "2026-04-26T05:09:33.318Z"
 }
