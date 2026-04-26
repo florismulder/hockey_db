@@ -1456,16 +1456,19 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
 
   // Tijdlijn met standontwikkeling
   const tijdlijn=useMemo(()=>{
+    // Eerst chronologisch sorteren voor correcte scoreberekening
     const ev=[
       ...scorers.map(s=>({...s,_evt:"goal"})),
       ...kaarten.map(k=>({...k,_evt:"kaart"})),
-    ].sort((a,b)=>(b.minuut??-1)-(a.minuut??-1));
+    ].sort((a,b)=>(a.minuut??999)-(b.minuut??999));
     let st=0,su=0;
-    return ev.map(e=>{
+    const metScore=ev.map(e=>{
       const th=eventIsThuis(e.club);
       if(e._evt==="goal"){if(th)st++;else su++;return{...e,_thuis:th,_st:st,_su:su};}
       return{...e,_thuis:th};
     });
+    // Dan omdraaien voor weergave (laatste minuut bovenaan)
+    return metScore.reverse();
   },[scorers,kaarten]);
 
   // Type badge helpers
