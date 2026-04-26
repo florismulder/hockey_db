@@ -397,21 +397,21 @@
       "kaarten": [
         {
           "naam": "Belén van den Broek",
-          "club": "HDM",
-          "minuut": 41,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 41
         },
         {
           "naam": "Amber Brouwer",
           "club": "Oranje-Rood",
-          "minuut": 42,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 42
         },
         {
           "naam": "Brechje Scheepers",
           "club": "Oranje-Rood",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -5885,5 +5885,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:46.632Z"
+  "bijgewerkt": "2026-04-26T05:08:48.509Z"
 }
