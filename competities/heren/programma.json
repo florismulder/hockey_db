@@ -456,53 +456,47 @@
       "scorers": [
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 1,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 10,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 57,
           "type": "veld"
         },
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 57,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
-          "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
-          "minuut": 13,
-          "type": "groen"
-        },
-        {
           "naam": "Michel van den Heuvel",
-          "club": "Bloemendaal H1",
-          "minuut": 59,
-          "type": "geel"
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 59
         }
       ]
     },
@@ -7124,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:33.318Z"
+  "bijgewerkt": "2026-04-26T05:09:35.269Z"
 }
