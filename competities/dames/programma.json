@@ -513,7 +513,7 @@
           "naam": "Noor van den Nieuwenhof",
           "club": "Kampong",
           "minuut": 40,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Bente van der Veldt",
@@ -531,21 +531,9 @@
       "kaarten": [
         {
           "naam": "Hannah Salden",
-          "club": "Tilburg",
-          "minuut": 24,
-          "type": "groen"
-        },
-        {
-          "naam": "Noor van den Nieuwenhof",
           "club": "Kampong",
-          "minuut": 25,
-          "type": "groen"
-        },
-        {
-          "naam": "Hannah Salden",
-          "club": "Tilburg",
-          "minuut": 40,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 40
         }
       ]
     },
@@ -5897,5 +5885,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:40.778Z"
+  "bijgewerkt": "2026-04-26T05:08:42.771Z"
 }
