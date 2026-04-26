@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "ca0d79fa-7650-4927-89f9-52c73f15bdb4",
+      "naam": "Verhitte Klassieker levert alleen maar teleurgestelde koppen op",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-26T20:43:50.157Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "f87c8864-75b4-4122-a06d-c654dc09fb4e",
       "naam": "HK (H)  Den Bosch naar vierde plaats, Rotterdam naar play offs",
       "velden": {
