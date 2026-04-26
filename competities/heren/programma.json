@@ -1210,47 +1210,47 @@
       "scorers": [
         {
           "naam": "Guus van den Boezem",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Teun van Uunen",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 26,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Mats Dicke",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Berend van Langeveld",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 55,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Ruben van Meer",
-          "club": "HDM H1",
-          "minuut": 39,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Merijn Maas",
-          "club": "Laren H1",
-          "minuut": 59,
-          "type": "geel"
+          "club": "Laren",
+          "type": "geel",
+          "minuut": 59
         }
       ]
     },
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:07.204Z"
+  "bijgewerkt": "2026-04-26T05:09:09.429Z"
 }
