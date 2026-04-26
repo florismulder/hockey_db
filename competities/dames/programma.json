@@ -189,7 +189,7 @@
           "naam": "Sam Luttmer",
           "club": "Pinoké",
           "minuut": 10,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Rosalie Rosman",
@@ -207,15 +207,15 @@
           "naam": "Lana Kalse",
           "club": "Pinoké",
           "minuut": 25,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Pientje Molenaar",
           "club": "Bloemendaal",
-          "minuut": 30,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 30
         }
       ]
     },
@@ -5884,5 +5884,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:54.495Z"
+  "bijgewerkt": "2026-04-26T05:08:56.406Z"
 }
