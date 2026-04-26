@@ -4256,31 +4256,31 @@
         {
           "naam": "Joep Troost",
           "club": "Pinoké",
-          "minuut": 0,
+          "minuut": 1,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Valk",
           "club": "Pinoké",
-          "minuut": 11,
+          "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Schaerweijde",
-          "minuut": 13,
+          "club": "Pinoké",
+          "minuut": 14,
           "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
           "club": "Pinoké",
-          "minuut": 26,
+          "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké",
-          "minuut": 46,
+          "club": "Schaerweijde",
+          "minuut": 47,
           "type": "veld"
         }
       ],
@@ -4288,19 +4288,19 @@
         {
           "naam": "Joppe Stappenbelt",
           "club": "Pinoké",
-          "minuut": 6,
+          "minuut": 7,
           "type": "groen"
         },
         {
           "naam": "Stijn Draaijer",
           "club": "Pinoké",
-          "minuut": 18,
+          "minuut": 19,
           "type": "groen"
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Schaerweijde",
-          "minuut": 36,
+          "club": "Pinoké",
+          "minuut": 37,
           "type": "groen"
         }
       ]
@@ -7134,5 +7134,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:38.326Z"
+  "bijgewerkt": "2026-04-26T21:19:40.254Z"
 }
