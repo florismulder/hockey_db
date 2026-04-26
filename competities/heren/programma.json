@@ -37,6 +37,61 @@
       "kaarten": []
     },
     {
+      "thuis": "Klein Zwitserland",
+      "uit": "Pinoké",
+      "score_thuis": 2,
+      "score_uit": 4,
+      "datum": "2025-04-25",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joep Troost",
+          "club": "Klein Zwitserland",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Aki Käppeler",
+          "club": "Klein Zwitserland",
+          "minuut": 35,
+          "type": "sc"
+        },
+        {
+          "naam": "Willem van Campen",
+          "club": "Pinoké",
+          "minuut": 38,
+          "type": "veld"
+        },
+        {
+          "naam": "Texas Bukkens",
+          "club": "Pinoké",
+          "minuut": 48,
+          "type": "sc"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 50,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Linus Michler",
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -7165,5 +7220,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:35:46.698Z"
+  "bijgewerkt": "2026-04-26T06:36:01.041Z"
 }
