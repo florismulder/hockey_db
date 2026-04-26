@@ -6681,13 +6681,13 @@
       "scorers": [
         {
           "naam": "Derck de Vilder",
-          "club": "Kampong",
+          "club": "Hurley",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Fred Newbold",
-          "club": "Hurley",
+          "club": "Kampong",
           "minuut": 28,
           "type": "sc"
         },
@@ -6713,7 +6713,7 @@
       "kaarten": [
         {
           "naam": "Jip Janssen",
-          "club": "Kampong",
+          "club": "Hurley",
           "type": "groen",
           "minuut": 56
         }
@@ -7133,5 +7133,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:15:52.755Z"
+  "bijgewerkt": "2026-04-26T06:15:54.529Z"
 }
