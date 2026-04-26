@@ -560,35 +560,35 @@
       "scorers": [
         {
           "naam": "Kaat Walhof",
-          "club": "HDM",
+          "club": "Pinoké",
           "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Elin van Erk",
-          "club": "Pinoké",
+          "club": "HDM",
           "minuut": 54,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Belén van den Broek",
           "club": "HDM",
           "minuut": 56,
-          "type": "veld"
+          "type": "sb"
         }
       ],
       "kaarten": [
         {
           "naam": "Daan Sabel",
           "club": "Pinoké",
-          "minuut": 26,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 26
         },
         {
           "naam": "Pien van der Heide",
           "club": "HDM",
-          "minuut": 42,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 42
         }
       ]
     },
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:39.015Z"
+  "bijgewerkt": "2026-04-26T05:08:40.778Z"
 }
