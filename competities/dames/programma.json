@@ -72,24 +72,31 @@
       "scorers": [
         {
           "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 40,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 56,
           "type": "veld"
         },
         {
           "naam": "Bente van der Veldt",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 59,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Veere ter Horst",
+          "club": "Oranje-Rood D1",
+          "type": "groen",
+          "minuut": 33
+        }
+      ]
     },
     {
       "thuis": "Tilburg",
@@ -5884,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:00.801Z"
+  "bijgewerkt": "2026-04-26T05:09:03.038Z"
 }
