@@ -760,9 +760,9 @@
         },
         {
           "naam": "Thijs van Dam",
-          "club": "HDM H1",
+          "club": "Rotterdam H1",
           "minuut": 30,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Olivier Hortensius",
@@ -792,23 +792,16 @@
           "naam": "Marc Recasens",
           "club": "HDM H1",
           "minuut": 49,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Justen Blok",
-          "club": "Rotterdam H1",
+          "club": "HDM H1",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Sander Groenheijde",
-          "club": "HDM H1",
-          "minuut": 20,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Laren",
@@ -7150,5 +7143,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:22.861Z"
+  "bijgewerkt": "2026-04-26T05:09:25.228Z"
 }
