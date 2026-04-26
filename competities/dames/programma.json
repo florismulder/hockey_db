@@ -343,26 +343,32 @@
         {
           "naam": "Alessia Norbiato",
           "club": "Amsterdam",
-          "minuut": 17,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 17
         },
         {
           "naam": "Maartje Krekelaar",
           "club": "Den Bosch",
-          "minuut": 19,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Ivy Tellier",
           "club": "Amsterdam",
-          "minuut": 50,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 50
         },
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
-          "minuut": 55,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 55
+        },
+        {
+          "naam": "Jesse Mahieu",
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -5885,5 +5891,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:08:48.509Z"
+  "bijgewerkt": "2026-04-26T05:08:50.497Z"
 }
