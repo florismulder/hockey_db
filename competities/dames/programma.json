@@ -752,8 +752,8 @@
         {
           "naam": "Frédérique Matla",
           "club": "Den Bosch",
-          "minuut": 46,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 46
         }
       ]
     },
@@ -5897,5 +5897,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:54.667Z"
+  "bijgewerkt": "2026-04-26T05:08:35.149Z"
 }
