@@ -1003,49 +1003,36 @@
       "scorers": [
         {
           "naam": "Boris Aardenburg",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 11,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 53,
           "type": "veld"
         },
         {
           "naam": "Thies Prinz",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 54,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Laurens Nievelstein",
-          "club": "Hurley H1",
-          "minuut": 24,
-          "type": "groen"
-        },
-        {
-          "naam": "Teo Hinrichs",
-          "club": "Hurley H1",
-          "minuut": 56,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Bloemendaal",
@@ -7163,5 +7150,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:14.050Z"
+  "bijgewerkt": "2026-04-26T05:09:16.272Z"
 }
