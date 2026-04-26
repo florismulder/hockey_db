@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "416282eb-7d25-43e7-a43c-212b6b390db9",
+      "naam": "HK  dames OR doen goede zaken, Troost leidt Pinoké naar zege",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-26T05:25:42.069Z"
+    },
+    {
       "type": "speler",
       "id": "eduardo_de_ignacio_simo",
       "naam": "Eduardo De Ignacio-Simó",
