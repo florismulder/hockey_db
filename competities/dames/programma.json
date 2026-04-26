@@ -5131,53 +5131,29 @@
       "scorers": [
         {
           "naam": "Carlijn van Geest",
-          "club": "HGC D1",
+          "club": "HGC",
           "minuut": 30,
           "type": "sc"
         },
         {
           "naam": "Mariona Serrahima",
-          "club": "HGC D1",
+          "club": "HGC",
           "minuut": 33,
           "type": "sc"
         },
         {
           "naam": "Lilly Stoffelsma",
-          "club": "HGC D1",
+          "club": "HGC",
           "minuut": 52,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Carlijn van Geest",
-          "club": "HGC D1",
-          "type": "groen",
-          "minuut": 36
-        },
-        {
-          "naam": "Delany van den Broek",
-          "club": "HGC D1",
-          "type": "groen",
-          "minuut": 39
-        },
-        {
           "naam": "Frederique Dekker",
-          "club": "HGC D1",
-          "type": "groen",
-          "minuut": 42
-        },
-        {
-          "naam": "Frederique Dekker",
-          "club": "HGC D1",
+          "club": "HGC",
           "type": "geel",
           "minuut": 52
-        },
-        {
-          "naam": "Claudia Negrete Garcia",
-          "club": "HGC D1",
-          "type": "groen",
-          "minuut": 56
         }
       ]
     },
@@ -5883,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:15:47.770Z"
+  "bijgewerkt": "2026-04-26T06:15:49.404Z"
 }
