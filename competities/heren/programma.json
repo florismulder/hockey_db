@@ -4422,6 +4422,48 @@
       ]
     },
     {
+      "thuis": "HDM",
+      "uit": "Rotterdam",
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-03-07",
+      "tijdstip": "18:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guus Jansen",
+          "club": "HDM",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Dylan Lucieer",
+          "club": "Rotterdam",
+          "minuut": 12,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 16,
+          "type": "sb"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "Rotterdam",
+          "minuut": 47,
+          "type": "sb"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Oranje-Rood",
       "uit": "Laren",
       "score_thuis": 5,
@@ -7116,5 +7158,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:42.408Z"
+  "bijgewerkt": "2026-04-26T21:19:44.490Z"
 }
