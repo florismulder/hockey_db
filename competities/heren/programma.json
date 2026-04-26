@@ -194,77 +194,77 @@
       "scorers": [
         {
           "naam": "Pepe Bijlaard",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 5,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Niels de Joode",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 15,
           "type": "veld"
         },
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 22,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Lars Daniels",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 32,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Willem van Campen",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 39,
           "type": "veld"
         },
         {
           "naam": "Pepe Bijlaard",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 57,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Juup Veen",
-          "club": "Klein Zwitserland H1",
-          "minuut": 29,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland H1",
-          "minuut": 49,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 49
         },
         {
           "naam": "Lode Draaijer",
-          "club": "Klein Zwitserland H1",
-          "minuut": 56,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 56
         },
         {
           "naam": "Maarten Bruisten",
-          "club": "Klein Zwitserland H1",
-          "minuut": 57,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 57
         }
       ]
     },
@@ -7118,5 +7118,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T05:09:41.453Z"
+  "bijgewerkt": "2026-04-26T05:09:43.395Z"
 }
