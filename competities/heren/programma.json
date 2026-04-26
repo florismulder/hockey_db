@@ -1265,37 +1265,37 @@
       "scorers": [
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 17,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Schaerweijde H1",
+          "club": "Rotterdam",
           "minuut": 22,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Joost van Eijck",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 35,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jens Hagen",
-          "club": "Rotterdam H1",
+          "club": "Schaerweijde",
           "minuut": 44,
           "type": "veld"
         }
@@ -1303,27 +1303,27 @@
       "kaarten": [
         {
           "naam": "Jelle Westendorp",
-          "club": "Schaerweijde H1",
-          "minuut": 22,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 22
         },
         {
           "naam": "Tijs van Horn",
-          "club": "Schaerweijde H1",
-          "minuut": 31,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 31
         },
         {
           "naam": "Nick van Trigt",
-          "club": "Rotterdam H1",
-          "minuut": 37,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 37
         },
         {
           "naam": "Tijs van Horn",
-          "club": "Schaerweijde H1",
-          "minuut": 58,
-          "type": "geel"
+          "club": "Schaerweijde",
+          "type": "geel",
+          "minuut": 58
         }
       ]
     },
@@ -7163,5 +7163,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-25T16:09:39.462Z"
+  "bijgewerkt": "2026-04-26T05:09:07.204Z"
 }
