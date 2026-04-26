@@ -4373,21 +4373,21 @@
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam",
           "minuut": 54,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Floris Middendorp",
           "club": "Amsterdam",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Luke Dommershuijzen",
-          "club": "Kampong",
-          "minuut": 56,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -7147,5 +7147,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:34.195Z"
+  "bijgewerkt": "2026-04-26T21:19:36.206Z"
 }
