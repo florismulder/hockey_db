@@ -4808,34 +4808,34 @@
         {
           "naam": "Bente van der Veldt",
           "club": "SCHC",
-          "minuut": 34,
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Carlijn Tukkers",
           "club": "Kampong",
-          "minuut": 47,
+          "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
           "club": "SCHC",
-          "minuut": 48,
+          "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
           "club": "SCHC",
-          "minuut": 54,
-          "type": "veld"
+          "minuut": 55,
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
-          "minuut": 59,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -5852,5 +5852,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:10:44.791Z"
+  "bijgewerkt": "2026-04-27T08:11:00.849Z"
 }
