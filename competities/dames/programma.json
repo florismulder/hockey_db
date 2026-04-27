@@ -5400,19 +5400,19 @@
       "scorers": [
         {
           "naam": "Juul van der Velden",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Julie van Dam",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 35,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Vivienne Peters",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 42,
           "type": "sc"
         }
@@ -5883,5 +5883,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T06:45:07.469Z"
+  "bijgewerkt": "2026-04-27T07:40:02.106Z"
 }
