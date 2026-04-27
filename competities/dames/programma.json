@@ -760,37 +760,12 @@
       "scorers": [
         {
           "naam": "Charlotte Schrijvers",
-          "club": "Oranje-Rood D1",
+          "club": "Oranje-Rood",
           "minuut": 59,
           "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Emmely Bekker",
-          "club": "Tilburg D1",
-          "type": "groen",
-          "minuut": 42
-        },
-        {
-          "naam": "Merel Voermans",
-          "club": "Tilburg D1",
-          "type": "groen",
-          "minuut": 54
-        },
-        {
-          "naam": "Carolin Hoffmann",
-          "club": "Tilburg D1",
-          "type": "groen",
-          "minuut": 55
-        },
-        {
-          "naam": "Hannah Salden",
-          "club": "Tilburg D1",
-          "type": "geel",
-          "minuut": 59
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Pinoké",
@@ -5839,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T10:10:14.373Z"
+  "bijgewerkt": "2026-04-27T10:10:16.324Z"
 }
