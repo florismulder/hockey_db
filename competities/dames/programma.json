@@ -644,13 +644,13 @@
         },
         {
           "naam": "Elke Brinkman-Boers",
-          "club": "Den Bosch",
+          "club": "HGC",
           "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Mikki Roolaart",
-          "club": "HGC",
+          "club": "Den Bosch",
           "minuut": 41,
           "type": "veld"
         },
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T10:41:06.619Z"
+  "bijgewerkt": "2026-04-27T10:41:08.388Z"
 }
