@@ -267,7 +267,7 @@
       "gespeeld": true,
       "scorers": [
         {
-          "naam": "Reese d'Ariano",
+          "naam": "Reese d' Ariano",
           "club": "Amsterdam",
           "minuut": 25,
           "type": "veld"
@@ -309,12 +309,6 @@
           "club": "Den Bosch",
           "type": "groen",
           "minuut": 55
-        },
-        {
-          "naam": "Jesse Mahieu",
-          "club": "Amsterdam",
-          "type": "geel",
-          "minuut": 60
         }
       ]
     },
@@ -5853,5 +5847,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:16:13.699Z"
+  "bijgewerkt": "2026-04-27T08:16:15.630Z"
 }
