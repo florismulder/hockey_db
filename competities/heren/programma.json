@@ -139,25 +139,25 @@
       "scorers": [
         {
           "naam": "Thijs van Dam",
-          "club": "Pinoké",
+          "club": null,
           "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Pinoké",
+          "club": null,
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Indra Aerts",
-          "club": "Rotterdam",
+          "club": null,
           "minuut": 55,
           "type": "sc"
         },
         {
           "naam": "Boris Aardenburg",
-          "club": "Rotterdam",
+          "club": null,
           "minuut": 59,
           "type": "veld"
         }
@@ -165,13 +165,13 @@
       "kaarten": [
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké",
+          "club": null,
           "type": "groen",
           "minuut": 36
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam",
+          "club": null,
           "type": "groen",
           "minuut": 47
         }
@@ -7146,5 +7146,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:39:48.467Z"
+  "bijgewerkt": "2026-04-27T07:39:50.514Z"
 }
