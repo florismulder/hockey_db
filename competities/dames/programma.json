@@ -366,12 +366,6 @@
           "minuut": 37
         },
         {
-          "naam": "Albert Kees Manenschijn",
-          "club": "HGC",
-          "type": "groen",
-          "minuut": 48
-        },
-        {
           "naam": "Margot van Hecking Colenbrander",
           "club": "HGC",
           "type": "geel",
@@ -5859,5 +5853,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:16:11.731Z"
+  "bijgewerkt": "2026-04-27T08:16:13.699Z"
 }
