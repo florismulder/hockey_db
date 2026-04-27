@@ -5573,44 +5573,41 @@
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "12:45",
       "thuis": "HDM",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "scorers": [],
-      "kaarten": [],
-      "geverifieerd": false,
-      "viaplay": {
-        "scheidsrechters": [
-          "Paul van Beuzekom",
-          "Marije Appels"
-        ],
-        "stats_thuis": [
-          "HDM verloor acht van haar laatste elf wedstrijden.",
-          "HDM beëindigde een reeks van vier thuisnederlagen op rij.",
-          "HDM won slechts één van haar laatste 46 thuisduels tegen de Grote Drie."
-        ],
-        "stats_uit": [
-          "Den Bosch won haar laatste drie competitieduels en tien van de laatste twaalf.",
-          "Den Bosch won haar laatste vier uitwedstrijden op rij.",
-          "Frédérique Matla kan voor het derde seizoen op rij twintig goals halen.",
-          "Frédérique Matla scoorde al twintig doelpunten tegen HDM.",
-          "Joosje Burg is dit seizoen de beste schaduwschutter van Den Bosch.",
-          "Joosje Burg was direct betrokken bij zestien van de 49 doelpunten."
-        ],
-        "stats_onderling": [
-          "Den Bosch is al negen wedstrijden ongeslagen tegen HDM.",
-          "HDM won slechts één van de laatste 52 duels tegen Den Bosch.",
-          "HDM won voor het laatst thuis van Den Bosch op 8 november 1992.",
-          "HDM bleef 25 keer op rij zonder thuiszege tegen Den Bosch.",
-          "Den Bosch won 21 keer op rij op het veld van HDM.",
-          "In 57 duels won HDM 4 keer, Den Bosch 47 keer."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 0,
+      "score_uit": 2,
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 24,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Sanne Koolen",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 15
+        },
+        {
+          "naam": "Lieve Wijckmans",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 30
+        }
+      ]
     },
     {
       "datum": "2026-05-02",
@@ -5883,5 +5880,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:40:02.106Z"
+  "bijgewerkt": "2026-04-27T07:40:04.135Z"
 }
