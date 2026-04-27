@@ -2236,25 +2236,25 @@
       "scorers": [
         {
           "naam": "Tom Provily",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Mats Dicke",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Yorben Fontaine",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 54,
           "type": "sc"
         }
@@ -7146,5 +7146,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:39:46.372Z"
+  "bijgewerkt": "2026-04-27T07:39:48.467Z"
 }
