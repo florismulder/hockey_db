@@ -500,43 +500,24 @@
       "scorers": [
         {
           "naam": "Sabine van den Eijnden",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 30,
           "type": "veld"
         },
         {
           "naam": "Sabine van den Eijnden",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Delany van den Broek",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 51,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Belén van den Broek",
-          "club": "Oranje-Rood",
-          "type": "groen",
-          "minuut": 41
-        },
-        {
-          "naam": "Amber Brouwer",
-          "club": "Oranje-Rood",
-          "type": "groen",
-          "minuut": 42
-        },
-        {
-          "naam": "Brechje Scheepers",
-          "club": "Oranje-Rood",
-          "type": "groen",
-          "minuut": 45
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "SCHC",
@@ -5847,5 +5828,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:44:21.458Z"
+  "bijgewerkt": "2026-04-27T10:10:07.596Z"
 }
