@@ -72,18 +72,25 @@
       "scorers": [
         {
           "naam": "Jip Dicke",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 22,
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Lotte Ruts",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 49
+        }
+      ]
     },
     {
       "thuis": "Bloemendaal",
@@ -5852,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:16:09.105Z"
+  "bijgewerkt": "2026-04-27T08:16:11.731Z"
 }
