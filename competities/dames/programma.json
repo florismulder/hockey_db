@@ -1053,31 +1053,31 @@
       "scorers": [
         {
           "naam": "Maria Steensma",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 20,
           "type": "sc"
         },
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
+          "club": "Rotterdam D1",
           "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Maria Steensma",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Sam Luttmer",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 44,
           "type": "sc"
         },
         {
           "naam": "Melle Vaessen",
-          "club": "Rotterdam",
+          "club": "Pinoké D1",
           "minuut": 45,
           "type": "veld"
         }
@@ -1085,7 +1085,7 @@
       "kaarten": [
         {
           "naam": "Noor Omrani",
-          "club": "Rotterdam",
+          "club": "Pinoké D1",
           "type": "groen",
           "minuut": 38
         }
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T11:04:18.854Z"
+  "bijgewerkt": "2026-04-27T11:04:20.756Z"
 }
