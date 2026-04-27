@@ -411,6 +411,18 @@
         {
           "naam": "Hannah Salden",
           "club": "Kampong",
+          "type": "groen",
+          "minuut": 24
+        },
+        {
+          "naam": "Noor van den Nieuwenhof",
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 25
+        },
+        {
+          "naam": "Hannah Salden",
+          "club": "Kampong",
           "type": "geel",
           "minuut": 40
         }
@@ -5827,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T10:10:10.313Z"
+  "bijgewerkt": "2026-04-27T10:10:12.430Z"
 }
