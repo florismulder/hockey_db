@@ -1464,7 +1464,7 @@
       "scorers": [
         {
           "naam": "Luna Fokke",
-          "club": "Kampong",
+          "club": "SCHC",
           "minuut": 10,
           "type": "sc"
         },
@@ -1476,7 +1476,7 @@
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "club": "Kampong",
           "minuut": 53,
           "type": "sc"
         }
@@ -1485,8 +1485,8 @@
         {
           "naam": "Pien Dicke",
           "club": "SCHC",
-          "minuut": 42,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 42
         }
       ]
     },
@@ -5852,5 +5852,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:40:13.944Z"
+  "bijgewerkt": "2026-04-27T08:10:44.791Z"
 }
