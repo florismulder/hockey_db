@@ -431,8 +431,7 @@
           "minuut": 21,
           "type": "sc"
         }
-      ],
-      "kaarten": []
+      ]
     },
     {
       "thuis": "Pinoké",
@@ -5828,5 +5827,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T10:10:07.596Z"
+  "bijgewerkt": "2026-04-27T10:10:10.313Z"
 }
