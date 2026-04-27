@@ -188,13 +188,13 @@
       "scorers": [
         {
           "naam": "Pepe Bijlaard",
-          "club": "Klein Zwitserland",
+          "club": "Schaerweijde",
           "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
-          "club": "Schaerweijde",
+          "club": "Klein Zwitserland",
           "minuut": 5,
           "type": "sc"
         },
@@ -7146,5 +7146,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:39:56.576Z"
+  "bijgewerkt": "2026-04-27T07:39:58.698Z"
 }
