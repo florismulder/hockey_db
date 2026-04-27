@@ -2854,7 +2854,7 @@
     {
       "thuis": "Den Bosch",
       "uit": "Oranje-Rood",
-      "score_thuis": 2,
+      "score_thuis": 4,
       "score_uit": 0,
       "datum": "2025-11-16",
       "tijdstip": "12:45",
@@ -2876,21 +2876,15 @@
       "kaarten": [
         {
           "naam": "Juul van der Velden",
-          "club": "Oranje-Rood",
-          "minuut": 27,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 27
         },
         {
           "naam": "Pheline Vos",
           "club": "Oranje-Rood",
-          "minuut": 58,
-          "type": "geel"
-        },
-        {
-          "naam": "Joosje Burg",
-          "club": "Den Bosch",
-          "minuut": 60,
-          "type": "groen"
+          "type": "geel",
+          "minuut": 58
         }
       ]
     },
@@ -5858,5 +5852,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:40:08.672Z"
+  "bijgewerkt": "2026-04-27T07:40:11.398Z"
 }
