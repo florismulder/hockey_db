@@ -5724,43 +5724,43 @@
         {
           "naam": "Jelle Galema",
           "club": "Oranje-Rood",
-          "minuut": 5,
+          "minuut": 6,
           "type": "sc"
         },
         {
           "naam": "Tijmen Reyenga",
           "club": "Oranje-Rood",
-          "minuut": 14,
+          "minuut": 15,
           "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké",
-          "minuut": 15,
+          "club": "Oranje-Rood",
+          "minuut": 16,
           "type": "sc"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 40,
+          "minuut": 41,
           "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
           "club": "Oranje-Rood",
-          "minuut": 48,
+          "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 51,
+          "minuut": 52,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood",
-          "minuut": 53,
+          "club": "Pinoké",
+          "minuut": 54,
           "type": "veld"
         }
       ],
@@ -5768,14 +5768,14 @@
         {
           "naam": "Henrik Mertgens",
           "club": "Oranje-Rood",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 27
         },
         {
           "naam": "Pieter Sutorius",
           "club": "Pinoké",
-          "minuut": 48,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 49
         }
       ]
     },
@@ -7158,5 +7158,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-26T21:19:46.641Z"
+  "bijgewerkt": "2026-04-27T07:39:44.268Z"
 }
