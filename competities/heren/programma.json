@@ -3742,35 +3742,23 @@
       "scorers": [
         {
           "naam": "Jan van 't Land",
-          "club": "Den Bosch H1",
+          "club": "Bloemendaal",
           "minuut": 34,
-          "type": "veld"
-        },
-        {
-          "naam": "Eduard De Ignacio - Simó",
-          "club": "Bloemendaal H1",
-          "minuut": 47,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
-          "minuut": 19,
-          "type": "groen"
-        },
-        {
-          "naam": "Gijs Campbell",
-          "club": "Bloemendaal H1",
-          "minuut": 34,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Floris Wortelboer",
-          "club": "Bloemendaal H1",
-          "minuut": 39,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 39
         }
       ]
     },
@@ -7158,5 +7146,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T07:39:44.268Z"
+  "bijgewerkt": "2026-04-27T07:39:46.372Z"
 }
