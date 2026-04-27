@@ -541,49 +541,49 @@
       "scorers": [
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 17,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 24,
           "type": "veld"
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Mette Winter",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Noa Boterman",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 43,
           "type": "veld"
         }
@@ -591,13 +591,13 @@
       "kaarten": [
         {
           "naam": "Lotte Ruts",
-          "club": "SCHC D1",
+          "club": "Rotterdam",
           "type": "groen",
           "minuut": 12
         },
         {
           "naam": "Bobbi Dijk",
-          "club": "SCHC D1",
+          "club": "Rotterdam",
           "type": "groen",
           "minuut": 24
         }
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T10:41:10.382Z"
+  "bijgewerkt": "2026-04-27T10:41:12.399Z"
 }
