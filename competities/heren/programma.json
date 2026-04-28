@@ -1484,89 +1484,89 @@
       "scorers": [
         {
           "naam": "Floris Wortelboer",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 14,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Teun Hogenhout",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 24,
           "type": "veld"
         },
         {
           "naam": "Jonas de Geus",
-          "club": "Bloemendaal H1",
+          "club": "Kampong",
           "minuut": 42,
           "type": "sc"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 44,
           "type": "sc"
         },
         {
+          "naam": "Zachary Wallace",
+          "club": "Bloemendaal",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
           "naam": "Finn van Bijnen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 53,
           "type": "sc"
-        },
-        {
-          "naam": "Elian Mazkour",
-          "club": "Bloemendaal H1",
-          "minuut": 55,
-          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Casper van der Veen",
-          "club": "Bloemendaal H1",
-          "minuut": 13,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Michel van den Heuvel",
-          "club": "Bloemendaal H1",
-          "minuut": 13,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal H1",
-          "minuut": 27,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 27
         },
         {
           "naam": "Bram van Battum",
-          "club": "Kampong H1",
-          "minuut": 28,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Terrance Pieters",
-          "club": "Kampong H1",
-          "minuut": 57,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 57
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:05.989Z"
+  "bijgewerkt": "2026-04-28T06:45:08.244Z"
 }
