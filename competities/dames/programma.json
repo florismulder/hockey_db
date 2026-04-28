@@ -2060,14 +2060,14 @@
         {
           "naam": "Noa Muller",
           "club": "Amsterdam",
-          "minuut": 23,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Pientje Molenaar",
           "club": "Bloemendaal",
-          "minuut": 30,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 30
         }
       ]
     },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:41:20.371Z"
+  "bijgewerkt": "2026-04-28T06:41:23.211Z"
 }
