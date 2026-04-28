@@ -2886,37 +2886,37 @@
       "scorers": [
         {
           "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 7,
           "type": "sc"
         },
         {
           "naam": "Chrisje van der Salm",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 25,
           "type": "sc"
         },
         {
           "naam": "Margot van Hecking Colenbrander",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 38,
           "type": "sc"
         },
         {
           "naam": "Romée Corver",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 50,
           "type": "veld"
         },
         {
           "naam": "Mikki Roberts",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 54,
           "type": "sb"
         },
         {
           "naam": "Carmen Victoria",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 60,
           "type": "veld"
         }
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:26.616Z"
+  "bijgewerkt": "2026-04-28T06:42:29.487Z"
 }
