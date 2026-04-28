@@ -894,59 +894,59 @@
       "scorers": [
         {
           "naam": "Mikki Roolaart",
-          "club": "HGC",
+          "club": "Kampong D1",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Lilly Stoffelsma",
-          "club": "HGC",
+          "club": "HGC D1",
           "minuut": 8,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Carlijn Tukkers",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 35,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong",
+          "club": "HGC D1",
           "minuut": 43,
           "type": "veld"
         },
         {
           "naam": "Faye Muijderman",
-          "club": "HGC",
+          "club": "Kampong D1",
           "minuut": 58,
           "type": "veld"
         },
         {
           "naam": "Luna Fokke",
-          "club": "Kampong",
+          "club": "HGC D1",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Faye Muijderman",
-          "club": "HGC",
-          "minuut": 58,
-          "type": "groen"
+          "club": "Kampong D1",
+          "type": "groen",
+          "minuut": 58
         },
         {
           "naam": "Eline Jansen",
-          "club": "Kampong",
-          "minuut": 59,
-          "type": "groen"
+          "club": "HGC D1",
+          "type": "groen",
+          "minuut": 59
         },
         {
           "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 60,
-          "type": "groen"
+          "club": "Kampong D1",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:34:56.292Z"
+  "bijgewerkt": "2026-04-28T05:34:58.139Z"
 }
