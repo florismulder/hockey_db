@@ -3322,31 +3322,31 @@
       "scorers": [
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 11,
           "type": "veld"
         },
         {
           "naam": "Joppe Wolbert",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 41,
           "type": "sc"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 47,
           "type": "veld"
         }
@@ -3354,21 +3354,21 @@
       "kaarten": [
         {
           "naam": "Pepijn Reijenga",
-          "club": "Den Bosch H1",
-          "minuut": 12,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 12
         },
         {
           "naam": "Thies Bakker",
-          "club": "Kampong H1",
-          "minuut": 33,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 33
         },
         {
           "naam": "Cedric van Otterlo",
-          "club": "Kampong H1",
-          "minuut": 44,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 44
         }
       ]
     },
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:55.524Z"
+  "bijgewerkt": "2026-04-28T06:45:57.905Z"
 }
