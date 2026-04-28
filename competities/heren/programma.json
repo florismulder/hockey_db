@@ -493,13 +493,13 @@
       "scorers": [
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "Hurley H1",
           "minuut": 29,
           "type": "sc"
         },
         {
           "naam": "Fred Newbold",
-          "club": "Hurley H1",
+          "club": "Klein Zwitserland H1",
           "minuut": 35,
           "type": "veld"
         },
@@ -7200,5 +7200,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:20.677Z"
+  "bijgewerkt": "2026-04-28T06:44:23.029Z"
 }
