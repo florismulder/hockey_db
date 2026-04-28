@@ -7137,7 +7137,68 @@
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
+    },
+    {
+      "thuis": "Rotterdam",
+      "uit": "Bloemendaal",
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2026-09-18",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal",
+          "minuut": 1,
+          "type": "sc"
+        },
+        {
+          "naam": "Teun Beins",
+          "club": "Bloemendaal",
+          "minuut": 10,
+          "type": "sc"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 33,
+          "type": "veld"
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Thijs van Dam",
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 13
+        },
+        {
+          "naam": "Michel van den Heuvel",
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 59
+        }
+      ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:15.970Z"
+  "bijgewerkt": "2026-04-28T06:44:18.246Z"
 }
