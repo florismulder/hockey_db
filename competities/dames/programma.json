@@ -5466,44 +5466,59 @@
       "kaarten": []
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "12:45",
       "thuis": "HGC",
       "uit": "Bloemendaal",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Merijn Goezinne",
-          "Pieter Houtkoop"
-        ],
-        "stats_thuis": [
-          "HGC beëindigde een minireeks van twee nederlagen met een 3-0 zege op HDM.",
-          "HGC verloor vijf van haar laatste zeven Hoofdklasse wedstrijden.",
-          "HGC hield de nul voor het eerst dit seizoen in de 3-0 overwinning op HDM.",
-          "HGC verloor slechts één van haar elf thuisduels tegen Bloemendaal.",
-          "HGC bleef in zestien van achttien thuisduels tegen Bloemendaal ongeslagen.",
-          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
-        ],
-        "stats_uit": [
-          "Bloemendaal wacht al vijf Hoofdklasse wedstrijden op een overwinning.",
-          "Bloemendaal haalde slechts één punt in de laatste vijf wedstrijden.",
-          "Bloemendaal won voor het laatst op 8 maart met 1-2 van Hurley.",
-          "Bloemendaal bleef dit seizoen in zes van haar negen uitduels ongeslagen.",
-          "Bloemendaal maakte slechts elf doelpunten in negen uitduels dit seizoen.",
-          "Bloemendaal-verdediger Demi Hilterman scoorde acht van haar 56 Hoofdklasse doelpunten tegen HGC."
-        ],
-        "stats_onderling": [
-          "De laatste ontmoeting op 1 november eindigde in 1-1.",
-          "De laatste zes onderlinge duels zijn in evenwicht met twee zeges elk.",
-          "Bloemendaal bleef in acht van de laatste elf duels met HGC ongeslagen.",
-          "HGC won 23 van de 37 onderlinge duels, Bloemendaal 8.",
-          "HGC won 14 van de 18 thuisduels tegen Bloemendaal.",
-          "HGC is al vier thuisduels ongeslagen tegen Bloemendaal."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-04-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Carlijn van Geest",
+          "club": "HGC",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Mariona Serrahima",
+          "club": "HGC",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Ryanne van Dooijeweerd",
+          "club": "Bloemendaal",
+          "minuut": 28,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mariona Serrahima",
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 19
+        },
+        {
+          "naam": "Bente Kolmus",
+          "club": "HGC",
+          "type": "geel",
+          "minuut": 53
+        },
+        {
+          "naam": "Ryanne van Dooijeweerd",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 53
+        },
+        {
+          "naam": "Pientje Molenaar",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 55
+        }
+      ]
     },
     {
       "thuis": "Amsterdam",
@@ -5904,5 +5919,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:11.449Z"
+  "bijgewerkt": "2026-04-28T06:44:13.690Z"
 }
