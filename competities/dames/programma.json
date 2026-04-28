@@ -4739,37 +4739,18 @@
       "scorers": [
         {
           "naam": "Fiona Morgenstern",
-          "club": "Rotterdam",
-          "minuut": 5,
+          "club": "Rotterdam D1",
+          "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Emma van Santbrink",
-          "club": "Hurley",
-          "minuut": 16,
+          "club": "Hurley D1",
+          "minuut": 17,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 33,
-          "type": "groen"
-        },
-        {
-          "naam": "Sophie Schelfhout",
-          "club": "Hurley",
-          "minuut": 33,
-          "type": "groen"
-        },
-        {
-          "naam": "Iris Hollander",
-          "club": "Rotterdam",
-          "minuut": 59,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Kampong",
@@ -5779,5 +5760,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T07:07:06.074Z"
+  "bijgewerkt": "2026-04-28T07:25:39.729Z"
 }
