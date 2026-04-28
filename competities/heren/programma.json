@@ -632,13 +632,13 @@
       "scorers": [
         {
           "naam": "Tijmen Reyenga",
-          "club": "Oranje-Rood",
+          "club": "HDM",
           "minuut": 2,
           "type": "sc"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood",
+          "club": "HDM",
           "minuut": 10,
           "type": "sc"
         },
@@ -662,7 +662,7 @@
         },
         {
           "naam": "Rick van den IJssel",
-          "club": "HDM",
+          "club": "Oranje-Rood",
           "minuut": 48,
           "type": "veld"
         },
@@ -680,19 +680,12 @@
         },
         {
           "naam": "Arthur de Sloover",
-          "club": "HDM",
+          "club": "Oranje-Rood",
           "minuut": 58,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Max de Bie",
-          "club": "Oranje-Rood",
-          "type": "groen",
-          "minuut": 41
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Bloemendaal",
@@ -7146,5 +7139,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T08:10:27.162Z"
+  "bijgewerkt": "2026-04-28T06:44:15.970Z"
 }
