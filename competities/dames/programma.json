@@ -2791,14 +2791,14 @@
         {
           "naam": "Pien Sanders",
           "club": "Den Bosch",
-          "minuut": 24,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Carlijn Tukkers",
           "club": "Kampong",
-          "minuut": 28,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 28
         }
       ]
     },
@@ -5845,5 +5845,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:06.855Z"
+  "bijgewerkt": "2026-04-28T06:42:08.961Z"
 }
