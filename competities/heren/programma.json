@@ -969,68 +969,75 @@
     {
       "thuis": "Rotterdam",
       "uit": "HDM",
-      "score_thuis": 7,
-      "score_uit": 2,
+      "score_thuis": 6,
+      "score_uit": 3,
       "datum": "2025-09-21",
       "tijdstip": "15:00",
       "gespeeld": true,
       "scorers": [
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 1,
           "type": "veld"
         },
         {
           "naam": "Tom Provily",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 21,
           "type": "veld"
         },
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 30,
           "type": "sc"
         },
         {
           "naam": "Olivier Hortensius",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Floris van der Kroon",
-          "club": "Rotterdam H1",
+          "club": "HDM",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Marc Recasens",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 49,
           "type": "sc"
         },
         {
           "naam": "Justen Blok",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 50,
           "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Sander Groenheijde",
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 20
+        }
+      ]
     },
     {
       "thuis": "Oranje-Rood",
@@ -7200,5 +7207,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:27.835Z"
+  "bijgewerkt": "2026-04-28T06:44:30.077Z"
 }
