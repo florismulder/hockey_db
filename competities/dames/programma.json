@@ -1702,14 +1702,14 @@
         {
           "naam": "Daphne Nikkels",
           "club": "Tilburg",
-          "minuut": 24,
-          "type": "groene kaart"
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Hannah Salden",
           "club": "Tilburg",
-          "minuut": 43,
-          "type": "groene kaart"
+          "type": "groen",
+          "minuut": 43
         }
       ]
     },
@@ -5823,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:22:39.025Z"
+  "bijgewerkt": "2026-04-28T06:22:41.201Z"
 }
