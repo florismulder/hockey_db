@@ -4625,7 +4625,7 @@
         {
           "naam": "Pien Sanders",
           "club": "Den Bosch",
-          "minuut": 15,
+          "minuut": 16,
           "type": "veld"
         },
         {
@@ -4636,14 +4636,14 @@
         },
         {
           "naam": "Lana Kalse",
-          "club": "Den Bosch",
-          "minuut": 40,
+          "club": "Pinoké",
+          "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Frédérique Matla",
-          "club": "Pinoké",
-          "minuut": 50,
+          "club": "Den Bosch",
+          "minuut": 51,
           "type": "sb"
         }
       ],
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:34.804Z"
+  "bijgewerkt": "2026-04-28T06:43:36.983Z"
 }
