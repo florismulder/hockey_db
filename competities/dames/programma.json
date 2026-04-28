@@ -1201,13 +1201,13 @@
           "naam": "Jip Dicke",
           "club": "SCHC",
           "minuut": 12,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Frédérique Matla",
-          "club": "Den Bosch",
+          "club": "SCHC",
           "minuut": 17,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Babs Reijnen",
@@ -1217,7 +1217,7 @@
         },
         {
           "naam": "Renee van Laarhoven",
-          "club": "SCHC",
+          "club": "Den Bosch",
           "minuut": 60,
           "type": "sb"
         }
@@ -1226,32 +1226,32 @@
         {
           "naam": "Sanne Koolen",
           "club": "Den Bosch",
-          "minuut": 32,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 32
         },
         {
           "naam": "Anna de Geus",
-          "club": "SCHC",
-          "minuut": 36,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 36
         },
         {
           "naam": "Xan de Waard",
-          "club": "SCHC",
-          "minuut": 37,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 37
         },
         {
           "naam": "Pien Sanders",
           "club": "Den Bosch",
-          "minuut": 42,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 42
         },
         {
           "naam": "Pien Sanders",
           "club": "Den Bosch",
-          "minuut": 50,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 50
         }
       ]
     },
@@ -5820,5 +5820,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:46:22.361Z"
+  "bijgewerkt": "2026-04-28T05:46:24.264Z"
 }
