@@ -2982,19 +2982,19 @@
       "scorers": [
         {
           "naam": "Sosha Benninga",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Bente van der Veldt",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Guusje Moes",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 55,
           "type": "sc"
         }
@@ -3002,15 +3002,15 @@
       "kaarten": [
         {
           "naam": "Kyra Fortuin",
-          "club": "Kampong",
-          "minuut": 7,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 7
         },
         {
           "naam": "Maria de Vries",
-          "club": "Kampong",
-          "minuut": 29,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 29
         }
       ]
     },
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:20.001Z"
+  "bijgewerkt": "2026-04-28T06:42:22.223Z"
 }
