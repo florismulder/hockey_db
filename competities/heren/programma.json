@@ -2419,25 +2419,25 @@
       "scorers": [
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "HDM",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Guus van den Boezem",
-          "club": "HDM H1",
+          "club": "Klein Zwitserland",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 53,
           "type": "sc"
         },
         {
           "naam": "Jochem Bakker",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 60,
           "type": "sc"
         }
@@ -2445,33 +2445,33 @@
       "kaarten": [
         {
           "naam": "Ruben Versteeg",
-          "club": "HDM H1",
-          "minuut": 3,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 3
         },
         {
           "naam": "Cédric de Gier",
-          "club": "HDM H1",
-          "minuut": 16,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 16
         },
         {
           "naam": "Nicolas Santiago Keenan",
-          "club": "Klein Zwitserland H1",
-          "minuut": 18,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 18
         },
         {
           "naam": "Jelte Kaptein",
-          "club": "HDM H1",
-          "minuut": 20,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 20
         },
         {
           "naam": "Aki Käppeler",
-          "club": "Klein Zwitserland H1",
-          "minuut": 33,
-          "type": "geel"
+          "club": "HDM",
+          "type": "geel",
+          "minuut": 33
         }
       ]
     },
@@ -7196,5 +7196,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:29.079Z"
+  "bijgewerkt": "2026-04-28T06:45:31.251Z"
 }
