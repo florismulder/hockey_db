@@ -37,6 +37,55 @@
       "kaarten": []
     },
     {
+      "thuis": "Den Bosch",
+      "uit": "HGC",
+      "score_thuis": 5,
+      "score_uit": 0,
+      "datum": "2025-03-08",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 11,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 29,
+          "type": "sc"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 30,
+          "type": "sc"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 51,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 52
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 4,
@@ -5825,5 +5874,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:02.211Z"
+  "bijgewerkt": "2026-04-28T06:43:04.419Z"
 }
