@@ -1970,19 +1970,19 @@
       "scorers": [
         {
           "naam": "Mirco Pruyser",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Mirco Pruyser",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 59,
           "type": "sb"
         }
@@ -1990,15 +1990,15 @@
       "kaarten": [
         {
           "naam": "Ruben Versteeg",
-          "club": "HDM H1",
-          "minuut": 8,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 8
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:08.244Z"
+  "bijgewerkt": "2026-04-28T06:45:10.499Z"
 }
