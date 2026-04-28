@@ -2455,21 +2455,21 @@
       "kaarten": [
         {
           "naam": "Imme van Es",
-          "club": "Kampong",
-          "minuut": 39,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 52
         },
         {
           "naam": "Teuntje Horn",
           "club": "Hurley",
-          "minuut": 58,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 58
         }
       ]
     },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:41:58.078Z"
+  "bijgewerkt": "2026-04-28T06:42:00.224Z"
 }
