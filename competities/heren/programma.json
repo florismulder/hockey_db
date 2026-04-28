@@ -1581,39 +1581,39 @@
       "scorers": [
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": null,
           "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Jacob Draper",
-          "club": "Pinoké H1",
+          "club": null,
           "minuut": 21,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jaïr van der Horst",
-          "club": "Den Bosch H1",
+          "club": null,
           "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Indra Aerts",
-          "club": "Den Bosch H1",
+          "club": null,
           "minuut": 30,
           "type": "veld"
         },
         {
           "naam": "Jaïr van der Horst",
-          "club": "Den Bosch H1",
+          "club": null,
           "minuut": 57,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": null,
           "minuut": 59,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:03.715Z"
+  "bijgewerkt": "2026-04-28T06:45:05.989Z"
 }
