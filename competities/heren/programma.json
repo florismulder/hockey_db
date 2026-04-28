@@ -2611,23 +2611,17 @@
       "scorers": [
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 33,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Joep Troost",
-          "club": "Pinoké H1",
-          "minuut": 16,
-          "type": "groen"
-        },
-        {
           "naam": "Lucas Corstens",
-          "club": "Amsterdam H1",
-          "minuut": 55,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 55
         }
       ]
     },
@@ -7182,5 +7176,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:40.559Z"
+  "bijgewerkt": "2026-04-28T06:45:42.751Z"
 }
