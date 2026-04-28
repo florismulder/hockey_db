@@ -6942,42 +6942,52 @@
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "15:00",
       "thuis": "Den Bosch",
       "uit": "Hurley",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Lisette Baljon",
-          "Lizelotte Wolter"
-        ],
-        "stats_thuis": [
-          "Den Bosch is de kersverse bekerwinnaar van de Gold Cup.",
-          "Den Bosch won de Gold Cup voor de derde keer (na 2023 en 2025).",
-          "Den Bosch scoorde voor het eerst acht keer in een uitwedstrijd in de Hoofdklasse.",
-          "Den Bosch won vier van de laatste vijf wedstrijden.",
-          "Den Bosch was negentien thuiswedstrijden op rij ongeslagen (W13 G6).",
-          "Timo Boers staat op 24 treffers, dichtbij zijn record van 28 goals."
-        ],
-        "stats_uit": [
-          "Hurley is de hekkensluiter van de Tulp Hoofdklasse.",
-          "Hurley verloor zeven van de laatste acht wedstrijden.",
-          "Hurley bleef in 28 van de laatste 29 wedstrijden zonder winst.",
-          "Hurley verloor elf uitwedstrijden op rij voordat het bij HDM won."
-        ],
-        "stats_onderling": [
-          "Den Bosch won de laatste tien onderlinge duels van Hurley.",
-          "Den Bosch maakte twintig goals in de laatste vier duels met Hurley.",
-          "De vorige editie Den Bosch-Hurley eindigde in een 8-1 thuiszege.",
-          "De 8-1 was de grootste zege ooit van Den Bosch op Hurley.",
-          "Den Bosch won 23 van de 34 onderlinge duels tegen Hurley.",
-          "Den Bosch won 12 van de 17 thuisduels tegen Hurley."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 5,
+      "score_uit": 1,
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Max Kreft",
+          "club": "Den Bosch",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 34,
+          "type": "sc"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Nikas Berendts",
+          "club": "Den Bosch",
+          "minuut": 49,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 59,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "thuis": "HDM",
@@ -7306,5 +7316,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:10.990Z"
+  "bijgewerkt": "2026-04-28T06:56:13.410Z"
 }
