@@ -4040,13 +4040,13 @@
       "scorers": [
         {
           "naam": "Arno van Dessel",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Arno van Dessel",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 60,
           "type": "veld"
         }
@@ -4054,21 +4054,21 @@
       "kaarten": [
         {
           "naam": "Jan van 't Land",
-          "club": "HDM H1",
-          "minuut": 29,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Tom Provily",
-          "club": "HDM H1",
-          "minuut": 31,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 31
         },
         {
           "naam": "Jasper Brinkman",
-          "club": "Bloemendaal H1",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Bloemendaal",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7157,5 +7157,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:28.677Z"
+  "bijgewerkt": "2026-04-28T06:46:31.027Z"
 }
