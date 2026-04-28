@@ -5909,58 +5909,58 @@
         {
           "naam": "Sam Steins Bisschop",
           "club": "Amsterdam",
-          "minuut": 34,
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Tom Provily",
           "club": "HDM",
-          "minuut": 40,
+          "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "David Huussen",
           "club": "Amsterdam",
-          "minuut": 45,
+          "minuut": 46,
           "type": "sc"
         },
         {
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam",
-          "minuut": 47,
+          "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Luke Dommershuijzen",
           "club": "Amsterdam",
-          "minuut": 52,
+          "minuut": 53,
           "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Pepijn Schras",
-          "club": "Amsterdam",
-          "minuut": 14,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 15
         },
         {
           "naam": "Sam Steins Bisschop",
           "club": "Amsterdam",
-          "minuut": 24,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 25
         },
         {
           "naam": "Lucas Corstens",
           "club": "Amsterdam",
-          "minuut": 28,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Chris Taberima",
           "club": "HDM",
-          "minuut": 55,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -7233,5 +7233,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:40.940Z"
+  "bijgewerkt": "2026-04-28T06:47:43.096Z"
 }
