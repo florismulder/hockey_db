@@ -4497,25 +4497,25 @@
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 3,
+          "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 28,
+          "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
           "club": "SCHC",
-          "minuut": 55,
+          "minuut": 56,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
-          "minuut": 56,
+          "minuut": 57,
           "type": "sc"
         }
       ],
@@ -4523,20 +4523,20 @@
         {
           "naam": "Charlotte Englebert",
           "club": "Den Bosch",
-          "minuut": 27,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Xan de Waard",
           "club": "SCHC",
-          "minuut": 44,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Rosa Fernig",
           "club": "Den Bosch",
-          "minuut": 56,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 57
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:26.261Z"
+  "bijgewerkt": "2026-04-28T06:43:28.434Z"
 }
