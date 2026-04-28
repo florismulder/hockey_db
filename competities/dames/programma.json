@@ -2508,7 +2508,7 @@
         },
         {
           "naam": "Iris Dominicus",
-          "club": "Tilburg",
+          "club": "Pinoké",
           "minuut": 38,
           "type": "sc"
         },
@@ -2520,7 +2520,7 @@
         },
         {
           "naam": "Bente Jager",
-          "club": "Pinoké",
+          "club": "Tilburg",
           "minuut": 60,
           "type": "veld"
         }
@@ -2529,8 +2529,8 @@
         {
           "naam": "Floor de Haan",
           "club": "Pinoké",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         }
       ]
     },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:41:55.878Z"
+  "bijgewerkt": "2026-04-28T06:41:58.078Z"
 }
