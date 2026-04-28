@@ -6355,38 +6355,38 @@
         {
           "naam": "Sander Groenheijde",
           "club": "HDM",
-          "minuut": 17,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 17
         },
         {
           "naam": "Noam Sheridan",
           "club": "Hurley",
-          "minuut": 36,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 36
         },
         {
           "naam": "Tieme Wiggers",
-          "club": "Hurley",
-          "minuut": 43,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Sam Spencer",
-          "club": "HDM",
-          "minuut": 47,
-          "type": "geel"
+          "club": "Hurley",
+          "type": "geel",
+          "minuut": 47
         },
         {
           "naam": "Mees Loman",
-          "club": "Hurley",
-          "minuut": 56,
-          "type": "geel"
+          "club": "HDM",
+          "type": "geel",
+          "minuut": 56
         },
         {
           "naam": "Alexander Weterings",
-          "club": "HDM",
-          "minuut": 57,
-          "type": "geel"
+          "club": "Hurley",
+          "type": "geel",
+          "minuut": 57
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:50:48.489Z"
+  "bijgewerkt": "2026-04-28T06:50:50.618Z"
 }
