@@ -4651,56 +4651,56 @@
       "scorers": [
         {
           "naam": "Joep Troost",
-          "club": "Pinoké",
-          "minuut": 3,
+          "club": "Hurley",
+          "minuut": 4,
           "type": "sc"
         },
         {
           "naam": "Thies Prinz",
           "club": "Pinoké",
-          "minuut": 7,
+          "minuut": 8,
           "type": "veld"
         },
         {
           "naam": "Boris Aardenburg",
           "club": "Pinoké",
-          "minuut": 12,
+          "minuut": 13,
           "type": "veld"
         },
         {
           "naam": "Indra Aerts",
           "club": "Pinoké",
-          "minuut": 25,
+          "minuut": 26,
           "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké",
-          "minuut": 31,
+          "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Valk",
           "club": "Pinoké",
-          "minuut": 34,
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
           "club": "Pinoké",
-          "minuut": 56,
+          "minuut": 57,
           "type": "sc"
         },
         {
           "naam": "Noam Sheridan",
-          "club": "Hurley",
-          "minuut": 58,
+          "club": "Pinoké",
+          "minuut": 59,
           "type": "veld"
         },
         {
           "naam": "Boris Aardenburg",
           "club": "Pinoké",
-          "minuut": 59,
+          "minuut": 60,
           "type": "veld"
         }
       ],
@@ -4708,20 +4708,20 @@
         {
           "naam": "Hjalmar Voskuil",
           "club": "Hurley",
-          "minuut": 17,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 18
         },
         {
           "naam": "Florent van Aubel",
           "club": "Pinoké",
-          "minuut": 21,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 22
         },
         {
           "naam": "Daan Dekker",
           "club": "Pinoké",
-          "minuut": 44,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 45
         }
       ]
     },
@@ -7243,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:58.786Z"
+  "bijgewerkt": "2026-04-28T06:47:01.170Z"
 }
