@@ -6980,44 +6980,89 @@
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "15:00",
       "thuis": "HDM",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Berry van Bentum",
-          "Thijs Retra"
-        ],
-        "stats_thuis": [
-          "HDM is de nummer 9 van de Tulp Hoofdklasse.",
-          "HDM verloor vorige speelronde met 1-0 van Klein Zwitserland.",
-          "HDM staat negende met veertien punten uit negentien wedstrijden.",
-          "HDM is nog niet zeker van directe handhaving, Schaerweijde staat op één punt.",
-          "HDM verloor drie keer op rij sinds het 1-1 gelijkspel op 22 maart.",
-          "HDM won slechts één van zijn laatste twaalf wedstrijden (G2 V9)."
-        ],
-        "stats_uit": [
-          "Kampong is de nummer 7 van de Tulp Hoofdklasse.",
-          "Kampong won vorige week met 1-4 van Hurley.",
-          "Kampong won zijn laatste twee duels na vijf wedstrijden zonder zege.",
-          "Kampong bezet de zevende plaats met 27 punten uit negentien duels.",
-          "Kampong is bij puntenverlies definitief uitgeschakeld voor de play-offs.",
-          "Kampong-aanvaller Duco Telgenkamp staat op veertien doelpunten dit seizoen."
-        ],
-        "stats_onderling": [
-          "Kampong won het heenduel op 30 oktober met 6-1, Duco Telgenkamp scoorde een hattrick.",
-          "Kampong won de vorige editie van HDM-Kampong met 0-5.",
-          "Kampong won de laatste drie duels met HDM sinds 7 april 2024.",
-          "Kampong is al tien duels op rij ongeslagen tegen HDM (W9 G1).",
-          "HDM won één van de laatste negen thuisduels tegen Kampong (G3 V5).",
-          "Van 53 duels won HDM 15 keer, Kampong 31 keer, 7 keer gelijk."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 3,
+      "score_uit": 6,
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 14,
+          "type": "sc"
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "HDM",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Caspar Dobbelaar",
+          "club": "Kampong",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Sander de Wijn",
+          "club": "Kampong",
+          "minuut": 22,
+          "type": "sc"
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Kampong",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Fabian Verzuu",
+          "club": "HDM",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 29,
+          "type": "sc"
+        },
+        {
+          "naam": "Rick van den IJssel",
+          "club": "Kampong",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Ruben Versteeg",
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 29
+        },
+        {
+          "naam": "Sander van de Putte",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 37
+        },
+        {
+          "naam": "Luis Calzado",
+          "club": "HDM",
+          "type": "geel",
+          "minuut": 54
+        }
+      ]
     },
     {
       "datum": "2026-05-03",
@@ -7261,5 +7306,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:08.604Z"
+  "bijgewerkt": "2026-04-28T06:56:10.990Z"
 }
