@@ -1,6 +1,42 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Kampong",
+      "uit": "Oranje-Rood",
+      "score_thuis": 3,
+      "score_uit": 1,
+      "datum": "2025-03-05",
+      "tijdstip": "20:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Lynn Vasterink",
+          "club": "Oranje-Rood",
+          "minuut": 30,
+          "type": "sc"
+        },
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 41,
+          "type": "sc"
+        },
+        {
+          "naam": "Luna Fokke",
+          "club": "Kampong",
+          "minuut": 50,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 4,
@@ -5802,5 +5838,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:53.661Z"
+  "bijgewerkt": "2026-04-28T06:42:55.770Z"
 }
