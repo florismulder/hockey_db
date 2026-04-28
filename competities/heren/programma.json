@@ -3937,19 +3937,19 @@
       "scorers": [
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 56,
           "type": "sc"
         }
@@ -7150,5 +7150,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:33.309Z"
+  "bijgewerkt": "2026-04-28T06:46:35.507Z"
 }
