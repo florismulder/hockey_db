@@ -4369,43 +4369,43 @@
       "scorers": [
         {
           "naam": "Fabian Verzuu",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood H1",
           "minuut": 13,
           "type": "veld"
         },
         {
           "naam": "Jelle Galema",
-          "club": "Oranje-Rood",
+          "club": "HDM H1",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood H1",
           "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood H1",
           "minuut": 56,
           "type": "sb"
         },
         {
           "naam": "Jelle Galema",
-          "club": "Oranje-Rood",
+          "club": "HDM H1",
           "minuut": 57,
           "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "HDM",
+          "club": "Oranje-Rood H1",
           "minuut": 59,
           "type": "veld"
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "HDM",
+          "club": "Oranje-Rood H1",
           "minuut": 60,
           "type": "veld"
         }
@@ -4413,9 +4413,9 @@
       "kaarten": [
         {
           "naam": "Fabian Verzuu",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood H1",
           "type": "groen",
-          "minuut": 58
+          "minuut": 59
         }
       ]
     },
@@ -7217,5 +7217,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:42.688Z"
+  "bijgewerkt": "2026-04-28T06:46:44.876Z"
 }
