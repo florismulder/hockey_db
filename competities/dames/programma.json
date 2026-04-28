@@ -5101,7 +5101,7 @@
           "naam": "Pien Dicke",
           "club": "SCHC",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Merel Voermans",
@@ -5119,23 +5119,10 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 55,
-          "type": "veld"
+          "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Famke Richardson",
-          "club": "SCHC",
-          "minuut": 26,
-          "type": "groen"
-        },
-        {
-          "naam": "Mette Winter",
-          "club": "SCHC",
-          "minuut": 59,
-          "type": "geel"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Den Bosch",
@@ -5924,5 +5911,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:52.125Z"
+  "bijgewerkt": "2026-04-28T06:43:54.352Z"
 }
