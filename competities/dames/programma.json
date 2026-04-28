@@ -1640,18 +1640,21 @@
       "kaarten": [
         {
           "naam": "Roos Alkemade",
-          "minuut": 38,
-          "type": "groene kaart"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 38
         },
         {
           "naam": "Marijn Veen",
-          "minuut": 43,
-          "type": "groene kaart"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Merle Blaffert",
-          "minuut": 51,
-          "type": "gele kaart"
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 51
         }
       ]
     },
@@ -5820,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:46:24.264Z"
+  "bijgewerkt": "2026-04-28T05:46:26.201Z"
 }
