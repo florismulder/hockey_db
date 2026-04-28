@@ -6346,18 +6346,18 @@
       "scorers": [
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam",
+          "club": "Den Bosch",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch",
+          "club": "Rotterdam",
           "minuut": 24,
           "type": "sb"
         },
         {
-          "naam": "Pepijn van der Heijden",
+          "naam": "Timme van der Heijden",
           "club": "Rotterdam",
           "minuut": 35,
           "type": "veld"
@@ -6372,9 +6372,9 @@
       "kaarten": [
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam",
-          "minuut": 42,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 42
         }
       ]
     },
@@ -7362,5 +7362,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:20.590Z"
+  "bijgewerkt": "2026-04-28T06:59:26.451Z"
 }
