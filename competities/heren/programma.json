@@ -4609,25 +4609,25 @@
         {
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland",
-          "minuut": 21,
+          "minuut": 22,
           "type": "sc"
         },
         {
           "naam": "Lucas Toscani",
           "club": "Klein Zwitserland",
-          "minuut": 29,
+          "minuut": 30,
           "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland",
-          "minuut": 35,
+          "minuut": 36,
           "type": "sc"
         },
         {
           "naam": "Sander de Wijn",
           "club": "Kampong",
-          "minuut": 49,
+          "minuut": 50,
           "type": "veld"
         }
       ],
@@ -4635,8 +4635,8 @@
         {
           "naam": "Bram van Battum",
           "club": "Kampong",
-          "minuut": 34,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 35
         }
       ]
     },
@@ -7243,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:01.170Z"
+  "bijgewerkt": "2026-04-28T06:47:03.536Z"
 }
