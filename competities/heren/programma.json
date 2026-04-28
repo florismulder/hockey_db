@@ -3147,13 +3147,13 @@
       "scorers": [
         {
           "naam": "Jan van 't Land",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 8,
           "type": "veld"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 30,
           "type": "veld"
         }
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:04.611Z"
+  "bijgewerkt": "2026-04-28T06:46:07.075Z"
 }
