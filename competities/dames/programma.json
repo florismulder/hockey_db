@@ -3382,20 +3382,20 @@
         {
           "naam": "Iris Langejans",
           "club": "Rotterdam",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Ryanne van Dooijeweerd",
           "club": "Bloemendaal",
-          "minuut": 33,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 33
         },
         {
           "naam": "Iris Langejans",
           "club": "Rotterdam",
-          "minuut": 59,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 59
         }
       ]
     },
@@ -5802,5 +5802,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:49.357Z"
+  "bijgewerkt": "2026-04-28T06:42:51.589Z"
 }
