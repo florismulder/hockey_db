@@ -1745,55 +1745,55 @@
       "scorers": [
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 3,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 10,
           "type": "sc"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 41,
           "type": "sc"
         },
         {
           "naam": "Menno Boeren",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 47,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 57,
           "type": "sc"
         },
         {
           "naam": "Matthijs van der Wielen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 60,
           "type": "veld"
         }
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:57.131Z"
+  "bijgewerkt": "2026-04-28T06:44:59.264Z"
 }
