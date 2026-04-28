@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "a7495b59-aede-46cc-b17d-f182f6c9f383",
+      "naam": "Koploper Oranje Rood breekt clubrecord (70 goals)   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-28T08:21:10.457Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "ac11a705-2e59-40fe-93c1-278e39ae921e",
       "naam": "‘Brokkenpiloot’ Jip Dicke  ‘Anderen draaien weg, ik blijf kijken’",
       "velden": {
