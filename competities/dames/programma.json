@@ -1973,55 +1973,48 @@
       "scorers": [
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 43,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 46,
           "type": "sc"
         },
         {
           "naam": "Pien Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 60,
           "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 24,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Amsterdam",
@@ -5823,5 +5816,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:40:38.361Z"
+  "bijgewerkt": "2026-04-28T06:40:40.765Z"
 }
