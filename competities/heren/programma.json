@@ -3098,25 +3098,25 @@
       "scorers": [
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 17,
           "type": "sc"
         },
         {
           "naam": "Daan Bonhof",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 25,
           "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 35,
           "type": "sc"
         }
@@ -3124,15 +3124,15 @@
       "kaarten": [
         {
           "naam": "Tom Provily",
-          "club": "HDM H1",
-          "minuut": 28,
-          "type": "groen"
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "HDM H1",
-          "minuut": 45,
-          "type": "groen"
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:07.075Z"
+  "bijgewerkt": "2026-04-28T06:46:09.420Z"
 }
