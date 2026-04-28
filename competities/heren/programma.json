@@ -3876,43 +3876,43 @@
       "scorers": [
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Sander van de Putte",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 8,
           "type": "veld"
         },
         {
           "naam": "Finn van Bijnen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 13,
           "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 38,
           "type": "sb"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 40,
           "type": "sc"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 48,
           "type": "veld"
         }
@@ -3920,9 +3920,9 @@
       "kaarten": [
         {
           "naam": "Floris van der Wal",
-          "club": "Laren H1",
-          "minuut": 38,
-          "type": "geel"
+          "club": "Laren",
+          "type": "geel",
+          "minuut": 38
         }
       ]
     },
@@ -7150,5 +7150,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:35.507Z"
+  "bijgewerkt": "2026-04-28T06:46:37.936Z"
 }
