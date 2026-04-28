@@ -1860,41 +1860,35 @@
       "scorers": [
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 19,
           "type": "sc"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 31,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 45,
           "type": "sc"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Arthur de Sloover",
-          "club": "Pinoké H1",
-          "minuut": 34,
-          "type": "groen"
-        },
-        {
           "naam": "Jelle Galema",
-          "club": "Oranje-Rood H1",
-          "minuut": 42,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 42
         }
       ]
     },
@@ -7220,5 +7214,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:12.852Z"
+  "bijgewerkt": "2026-04-28T06:45:15.332Z"
 }
