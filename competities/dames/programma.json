@@ -3351,8 +3351,8 @@
         {
           "naam": "Bente Jager",
           "club": "Pinoké",
-          "minuut": 40,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 40
         }
       ]
     },
@@ -5802,5 +5802,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:51.589Z"
+  "bijgewerkt": "2026-04-28T06:42:53.661Z"
 }
