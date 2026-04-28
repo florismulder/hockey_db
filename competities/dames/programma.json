@@ -4922,31 +4922,31 @@
       "scorers": [
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 1,
           "type": "veld"
         },
         {
           "naam": "Iris de Kemp",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
+          "club": "Kampong D1",
           "minuut": 32,
           "type": "sb"
         },
         {
           "naam": "Eline Jansen",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Luna Fokke",
-          "club": "Kampong",
+          "club": "Pinoké D1",
           "minuut": 45,
           "type": "veld"
         }
@@ -4954,9 +4954,9 @@
       "kaarten": [
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
-          "minuut": 55,
-          "type": "groen"
+          "club": "Kampong D1",
+          "type": "groen",
+          "minuut": 55
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:45.641Z"
+  "bijgewerkt": "2026-04-28T06:43:47.782Z"
 }
