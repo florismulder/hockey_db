@@ -3869,14 +3869,14 @@
         {
           "naam": "Isa Huybers",
           "club": "Bloemendaal",
-          "minuut": 38,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 38
         },
         {
           "naam": "Taheera Augousti",
           "club": "Hurley",
-          "minuut": 41,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 41
         }
       ]
     },
@@ -5825,5 +5825,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:00.135Z"
+  "bijgewerkt": "2026-04-28T06:43:02.211Z"
 }
