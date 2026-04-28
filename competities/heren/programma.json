@@ -86,6 +86,43 @@
       ]
     },
     {
+      "thuis": "Schaerweijde",
+      "uit": "Hurley",
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2025-03-29",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Niels de Joode",
+          "club": "Schaerweijde",
+          "minuut": 36,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Westendorp",
+          "club": "Schaerweijde",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Nikas Berendts",
+          "club": "Hurley",
+          "minuut": 59,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Fred Newbold",
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 34
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -7196,5 +7233,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:38.681Z"
+  "bijgewerkt": "2026-04-28T06:47:40.940Z"
 }
