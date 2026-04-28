@@ -5166,7 +5166,7 @@
       "scorers": [
         {
           "naam": "Kaat Walhof",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 38,
           "type": "veld"
         }
@@ -5174,15 +5174,15 @@
       "kaarten": [
         {
           "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 34,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 34
         },
         {
           "naam": "Nora Bruinsma",
-          "club": "Hurley",
-          "minuut": 59,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 59
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:47.782Z"
+  "bijgewerkt": "2026-04-28T06:43:49.951Z"
 }
