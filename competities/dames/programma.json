@@ -4316,26 +4316,26 @@
         {
           "naam": "Olivia Huisman",
           "club": "Hurley",
-          "minuut": 9,
-          "type": "groene kaart"
+          "type": "groen",
+          "minuut": 9
         },
         {
           "naam": "Fleur Loomans",
           "club": "Hurley",
-          "minuut": 26,
-          "type": "groene kaart"
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Anouk Stam",
-          "club": "Pinoké",
-          "minuut": 26,
-          "type": "groene kaart"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Sanne Caarls",
           "club": "Hurley",
-          "minuut": 40,
-          "type": "gele kaart"
+          "type": "geel",
+          "minuut": 40
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:21.762Z"
+  "bijgewerkt": "2026-04-28T06:43:24.040Z"
 }
