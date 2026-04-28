@@ -3250,7 +3250,7 @@
       "scorers": [
         {
           "naam": "Elzemiek Zandee",
-          "club": "SCHC",
+          "club": "HDM",
           "minuut": 1,
           "type": "veld"
         },
@@ -3262,7 +3262,7 @@
         },
         {
           "naam": "Yara Akkerman",
-          "club": "HDM",
+          "club": "SCHC",
           "minuut": 11,
           "type": "veld"
         },
@@ -3294,9 +3294,9 @@
       "kaarten": [
         {
           "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 56,
-          "type": "groene kaart"
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:31.606Z"
+  "bijgewerkt": "2026-04-28T06:42:33.864Z"
 }
