@@ -2879,25 +2879,25 @@
       "scorers": [
         {
           "naam": "Thierry Brinkman",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 43,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley H1",
+          "club": "Hurley",
           "minuut": 53,
           "type": "veld"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 57,
           "type": "veld"
         }
@@ -2905,27 +2905,27 @@
       "kaarten": [
         {
           "naam": "Max Kreft",
-          "club": "Hurley H1",
-          "minuut": 10,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 10
         },
         {
           "naam": "Jaïr van der Horst",
-          "club": "Hurley H1",
-          "minuut": 15,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 15
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley H1",
-          "minuut": 44,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 44
         },
         {
           "naam": "Marc Vizcaino",
-          "club": "Hurley H1",
-          "minuut": 56,
-          "type": "geel"
+          "club": "Den Bosch",
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -7176,5 +7176,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:47.298Z"
+  "bijgewerkt": "2026-04-28T06:45:49.511Z"
 }
