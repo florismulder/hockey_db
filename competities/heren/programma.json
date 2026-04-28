@@ -6017,32 +6017,32 @@
       "scorers": [
         {
           "naam": "Koen Bijen",
-          "club": "Den Bosch",
-          "minuut": 9,
+          "club": "Bloemendaal",
+          "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Max Kreft",
           "club": "Bloemendaal",
-          "minuut": 11,
+          "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal",
-          "minuut": 51,
+          "club": "Den Bosch",
+          "minuut": 52,
           "type": "sc"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch",
-          "minuut": 56,
+          "minuut": 57,
           "type": "sc"
         },
         {
           "naam": "Zachary Wallace",
           "club": "Den Bosch",
-          "minuut": 59,
+          "minuut": 60,
           "type": "sb"
         }
       ],
@@ -6050,20 +6050,20 @@
         {
           "naam": "Max Kreft",
           "club": "Bloemendaal",
-          "minuut": 42,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Wiegert Schut",
-          "club": "Den Bosch",
-          "minuut": 44,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Elian Mazkour",
           "club": "Bloemendaal",
-          "minuut": 53,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 54
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:45.460Z"
+  "bijgewerkt": "2026-04-28T06:47:47.689Z"
 }
