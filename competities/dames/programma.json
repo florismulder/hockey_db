@@ -2611,13 +2611,13 @@
       "scorers": [
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Pien Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 43,
           "type": "veld"
         }
@@ -2625,9 +2625,9 @@
       "kaarten": [
         {
           "naam": "Marta Segú Rueda",
-          "club": "HGC",
-          "minuut": 30,
-          "type": "groen"
+          "club": "HGC D1",
+          "type": "groen",
+          "minuut": 30
         }
       ]
     },
@@ -5833,5 +5833,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:13.386Z"
+  "bijgewerkt": "2026-04-28T06:42:15.629Z"
 }
