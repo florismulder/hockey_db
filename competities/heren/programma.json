@@ -2642,47 +2642,47 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Jorrit Croon",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Teun van Uunen",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 49,
-          "type": "straffcorner"
+          "type": "sc"
         },
         {
           "naam": "Diederick van Berckel",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 57,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 59,
-          "type": "straffcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Diederick van Berckel",
-          "club": "Laren H1",
-          "minuut": 25,
-          "type": "geel"
+          "club": "Laren",
+          "type": "geel",
+          "minuut": 25
         },
         {
           "naam": "Diederick van Berckel",
-          "club": "Laren H1",
-          "minuut": 40,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 40
         }
       ]
     },
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:38.161Z"
+  "bijgewerkt": "2026-04-28T06:45:40.559Z"
 }
