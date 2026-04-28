@@ -1584,7 +1584,7 @@
       "scorers": [
         {
           "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 9,
           "type": "sc"
         }
@@ -5823,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:46:26.201Z"
+  "bijgewerkt": "2026-04-28T05:46:28.095Z"
 }
