@@ -6099,20 +6099,20 @@
         {
           "naam": "Duco Telgenkamp",
           "club": "Kampong",
-          "minuut": 32,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 32
         },
         {
           "naam": "Jens Hagen",
-          "club": "Schaerweijde",
-          "minuut": 33,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 33
         },
         {
           "naam": "Koen Meijerink",
           "club": "Kampong",
-          "minuut": 60,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:47.689Z"
+  "bijgewerkt": "2026-04-28T06:50:48.489Z"
 }
