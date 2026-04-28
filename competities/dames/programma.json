@@ -3052,8 +3052,8 @@
         {
           "naam": "Tessa Beetsma",
           "club": "Pinoké",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:29.487Z"
+  "bijgewerkt": "2026-04-28T06:42:31.606Z"
 }
