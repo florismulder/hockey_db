@@ -6824,43 +6824,77 @@
       ]
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "15:00",
       "thuis": "Amsterdam",
       "uit": "Bloemendaal",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Daniël Veerman",
-          "Maarten Boxma"
-        ],
-        "stats_thuis": [
-          "Amsterdam is de nummer 4 van de competitie.",
-          "Amsterdam jaagt op eerste reguliere competitiezege op Bloemendaal sinds 9 april 2017.",
-          "Amsterdam's reeks van acht wedstrijden zonder verlies (W6 G2) eindigde vorige week.",
-          "De laatste thuisnederlaag van Amsterdam was 0-3 tegen Rotterdam op 2 november vorig jaar.",
-          "Op eigen veld koestert Amsterdam een ongeslagen reeks van vier wedstrijden (W G W W).",
-          "Amsterdam-aanvaller Boris Burkhardt bereikte voor derde seizoen op rij grens van twintig doelpunten."
-        ],
-        "stats_uit": [
-          "Bloemendaal is de nummer 6 van de Tulp Hoofdklasse.",
-          "Bloemendaal herstelde zich vorige week van twee opeenvolgende nederlagen met een 5-3 zege.",
-          "In de laatste vier duels van Bloemendaal vielen 26 doelpunten, gemiddeld 6,5 per duel.",
-          "Bloemendaal won dit seizoen slechts één van zijn vier topduels op vreemde bodem.",
-          "Bloemendaal-verdediger Teun Beins verbeterde zijn persoonlijk record met vijftien doelpunten dit seizoen."
-        ],
-        "stats_onderling": [
-          "De Klassieker is de 97ste editie; Amsterdam zoekt eerste zege op Bloemendaal sinds 2017.",
-          "Het heenduel op 30 oktober eindigde in een 5-3 overwinning voor Bloemendaal.",
-          "Amsterdam kon de laatste zestien wedstrijden niet winnen van Bloemendaal (G1 V15).",
-          "Amsterdam verloor de laatste dertien ontmoetingen met Bloemendaal.",
-          "Op eigen veld leed Amsterdam zes opeenvolgende nederlagen tegen Bloemendaal.",
-          "De totale balans is 96 duels: 37x Winst AMS, 17x Gelijkspel, 42x Winst BLO."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Marco Miltkau",
+          "club": "Bloemendaal",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal",
+          "minuut": 45,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 15
+        },
+        {
+          "naam": "Robbert Kemperman",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 29
+        },
+        {
+          "naam": "David Huussen",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 45
+        },
+        {
+          "naam": "Elian Mazkour",
+          "club": "Bloemendaal",
+          "type": "geel",
+          "minuut": 49
+        },
+        {
+          "naam": "Jasper Brinkman",
+          "club": "Bloemendaal",
+          "type": "geel",
+          "minuut": 55
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal",
+          "type": "geel",
+          "minuut": 57
+        }
+      ]
     },
     {
       "thuis": "Laren",
@@ -7328,5 +7362,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:18.199Z"
+  "bijgewerkt": "2026-04-28T06:56:20.590Z"
 }
