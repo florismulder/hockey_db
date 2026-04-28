@@ -3302,20 +3302,20 @@
         {
           "naam": "Pheline Vos",
           "club": "Oranje-Rood",
-          "minuut": 30,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 30
         },
         {
           "naam": "Lynn Vasterink",
           "club": "Oranje-Rood",
-          "minuut": 49,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 49
         },
         {
           "naam": "Julia Duffhuis",
           "club": "HDM",
-          "minuut": 54,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 54
         }
       ]
     },
@@ -5809,5 +5809,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:40.329Z"
+  "bijgewerkt": "2026-04-28T06:42:42.420Z"
 }
