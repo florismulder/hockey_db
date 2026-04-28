@@ -4118,28 +4118,16 @@
       ],
       "kaarten": [
         {
-          "naam": "Teuntje de Wit",
-          "club": "Den Bosch",
-          "minuut": 25,
-          "type": "groene kaart"
-        },
-        {
           "naam": "Isa Huybers",
           "club": "Bloemendaal",
-          "minuut": 56,
-          "type": "gele kaart"
-        },
-        {
-          "naam": "Florien Sondern",
-          "club": "Bloemendaal",
-          "minuut": 57,
-          "type": "groene kaart"
+          "type": "geel",
+          "minuut": 56
         },
         {
           "naam": "Teuntje de Wit",
           "club": "Den Bosch",
-          "minuut": 58,
-          "type": "gele kaart"
+          "type": "geel",
+          "minuut": 58
         }
       ]
     },
@@ -5936,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:17.372Z"
+  "bijgewerkt": "2026-04-28T06:43:19.667Z"
 }
