@@ -2327,9 +2327,9 @@
       "kaarten": [
         {
           "naam": "Brechje Scheepers",
-          "club": "Oranje-Rood",
-          "minuut": 43,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 43
         }
       ]
     },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:41:23.211Z"
+  "bijgewerkt": "2026-04-28T06:41:53.468Z"
 }
