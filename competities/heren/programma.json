@@ -4828,7 +4828,7 @@
         {
           "naam": "Elian Mazkour",
           "club": "Bloemendaal",
-          "minuut": 28,
+          "minuut": 29,
           "type": "sb"
         }
       ],
@@ -4836,20 +4836,20 @@
         {
           "naam": "Nikas Berendts",
           "club": "Hurley",
-          "minuut": 29,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 30
         },
         {
           "naam": "Theun de Leeuw",
           "club": "Hurley",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 40
         },
         {
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal",
-          "minuut": 46,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 47
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:20.143Z"
+  "bijgewerkt": "2026-04-28T06:47:22.512Z"
 }
