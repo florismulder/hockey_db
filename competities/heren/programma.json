@@ -4572,19 +4572,19 @@
         {
           "naam": "Timo Boers",
           "club": "Den Bosch",
-          "minuut": 48,
+          "minuut": 49,
           "type": "sc"
         },
         {
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam",
-          "minuut": 53,
+          "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam",
-          "minuut": 59,
+          "minuut": 60,
           "type": "sc"
         }
       ],
@@ -4592,8 +4592,8 @@
         {
           "naam": "Max Kreft",
           "club": "Amsterdam",
-          "minuut": 52,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 53
         }
       ]
     },
@@ -7243,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:03.536Z"
+  "bijgewerkt": "2026-04-28T06:47:06.070Z"
 }
