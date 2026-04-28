@@ -5383,25 +5383,25 @@
         {
           "naam": "Ruben van Meer",
           "club": "Laren",
-          "minuut": 25,
+          "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Sam Steins Bisschop",
           "club": "Amsterdam",
-          "minuut": 35,
+          "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
           "club": "Amsterdam",
-          "minuut": 55,
+          "minuut": 56,
           "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam",
-          "minuut": 59,
+          "minuut": 60,
           "type": "veld"
         }
       ],
@@ -5409,32 +5409,32 @@
         {
           "naam": "Pelle Vos",
           "club": "Laren",
-          "minuut": 12,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Luke Friederich",
           "club": "Laren",
-          "minuut": 14,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 15
         },
         {
           "naam": "Lucas Corstens",
-          "club": "Laren",
-          "minuut": 36,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 37
         },
         {
           "naam": "Diederick van Berckel",
           "club": "Laren",
-          "minuut": 55,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 56
         },
         {
           "naam": "Floris van der Wal",
           "club": "Laren",
-          "minuut": 58,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 59
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:34.168Z"
+  "bijgewerkt": "2026-04-28T06:47:36.462Z"
 }
