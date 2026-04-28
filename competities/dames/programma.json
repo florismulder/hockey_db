@@ -878,8 +878,8 @@
         {
           "naam": "Amber Brouwer",
           "club": "Oranje-Rood D1",
-          "minuut": 37,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 37
         }
       ]
     },
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:34:58.139Z"
+  "bijgewerkt": "2026-04-28T05:35:00.079Z"
 }
