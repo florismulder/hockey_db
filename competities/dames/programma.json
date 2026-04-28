@@ -4202,25 +4202,25 @@
       "scorers": [
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Julie van Dam",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 51,
           "type": "sc"
         },
         {
           "naam": "Julie van Dam",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 52,
           "type": "veld"
         },
         {
           "naam": "Flo Klinkhamer",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 58,
           "type": "veld"
         }
@@ -4228,9 +4228,9 @@
       "kaarten": [
         {
           "naam": "Anouk Stam",
-          "club": "Pinoké",
-          "minuut": 49,
-          "type": "geel"
+          "club": "Rotterdam D1",
+          "type": "geel",
+          "minuut": 49
         }
       ]
     },
@@ -5868,5 +5868,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:10.932Z"
+  "bijgewerkt": "2026-04-28T06:43:13.093Z"
 }
