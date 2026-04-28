@@ -3207,25 +3207,25 @@
       "scorers": [
         {
           "naam": "Jip Blaas",
-          "club": "HGC",
+          "club": "Rotterdam D1",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Kirsten Zennemers",
-          "club": "Rotterdam",
+          "club": "HGC D1",
           "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Amy van den Bosch",
-          "club": "HGC",
+          "club": "Rotterdam D1",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
+          "club": "HGC D1",
           "minuut": 59,
           "type": "sc"
         }
@@ -3233,9 +3233,9 @@
       "kaarten": [
         {
           "naam": "Noor Omrani",
-          "club": "Rotterdam",
-          "minuut": 60,
-          "type": "groen"
+          "club": "HGC D1",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:33.864Z"
+  "bijgewerkt": "2026-04-28T06:42:36.033Z"
 }
