@@ -4082,15 +4082,15 @@
       "kaarten": [
         {
           "naam": "Chrisje van der Salm",
-          "club": "Hurley",
-          "minuut": 19,
-          "type": "groen"
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Xan de Waard",
           "club": "SCHC",
-          "minuut": 45,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:19.667Z"
+  "bijgewerkt": "2026-04-28T06:43:21.762Z"
 }
