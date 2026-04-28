@@ -1192,9 +1192,9 @@
         },
         {
           "naam": "Pepijn Jones",
-          "club": "Klein Zwitserland",
-          "minuut": 50,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 50
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:52.721Z"
+  "bijgewerkt": "2026-04-28T06:44:54.957Z"
 }
