@@ -2191,13 +2191,13 @@
         },
         {
           "naam": "Suus Meininger",
-          "club": "Den Bosch",
+          "club": "Hurley",
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Frédérique Matla",
-          "club": "Hurley",
+          "club": "Den Bosch",
           "minuut": 51,
           "type": "sc"
         },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:40:42.885Z"
+  "bijgewerkt": "2026-04-28T06:40:45.018Z"
 }
