@@ -3802,38 +3802,38 @@
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 34,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 34
         },
         {
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Fleur Wolfert",
           "club": "Kampong",
-          "minuut": 43,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Julie Roovers",
           "club": "Kampong",
-          "minuut": 47,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 47
         },
         {
           "naam": "Kai de Jager",
           "club": "Kampong",
-          "minuut": 49,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 49
         },
         {
           "naam": "Veere ter Horst",
           "club": "Kampong",
-          "minuut": 53,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 53
         }
       ]
     },
@@ -5874,5 +5874,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:04.419Z"
+  "bijgewerkt": "2026-04-28T06:43:06.677Z"
 }
