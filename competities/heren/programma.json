@@ -2160,25 +2160,25 @@
           "naam": "Lars Daniels",
           "club": "Klein Zwitserland H1",
           "minuut": 12,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Pepe Bijlaard",
           "club": "Klein Zwitserland H1",
           "minuut": 27,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 27,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Lucas Toscani",
           "club": "Klein Zwitserland H1",
           "minuut": 32,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Florent Vaal",
@@ -2188,47 +2188,29 @@
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 54,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 59,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Florent Vaal",
-          "club": "Klein Zwitserland H1",
-          "minuut": 34,
-          "type": "groen"
-        },
-        {
-          "naam": "David Huussen",
-          "club": "Amsterdam H1",
-          "minuut": 35,
-          "type": "groen"
-        },
-        {
-          "naam": "Lucas Toscani",
-          "club": "Klein Zwitserland H1",
-          "minuut": 54,
-          "type": "groen"
-        },
-        {
           "naam": "Willem van Campen",
           "club": "Klein Zwitserland H1",
-          "minuut": 57,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 57
         },
         {
           "naam": "Rick Mathijssen",
-          "club": "Amsterdam H1",
-          "minuut": 57,
-          "type": "geel"
+          "club": "Klein Zwitserland H1",
+          "type": "geel",
+          "minuut": 57
         }
       ]
     },
@@ -7214,5 +7196,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:24.583Z"
+  "bijgewerkt": "2026-04-28T06:45:26.816Z"
 }
