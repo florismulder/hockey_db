@@ -5245,37 +5245,30 @@
       "scorers": [
         {
           "naam": "Carmen Victoria",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Elzemiek Zandee",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "Tilburg D1",
+          "club": "Tilburg",
           "minuut": 49,
           "type": "sc"
         },
         {
           "naam": "Mikki Roberts",
-          "club": "Tilburg D1",
+          "club": "Tilburg",
           "minuut": 60,
           "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Merlijn Roodenburg",
-          "club": "Tilburg D1",
-          "type": "groen",
-          "minuut": 53
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Bloemendaal",
@@ -5911,5 +5904,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:09.209Z"
+  "bijgewerkt": "2026-04-28T06:44:11.449Z"
 }
