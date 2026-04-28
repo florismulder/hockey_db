@@ -1629,13 +1629,13 @@
       "scorers": [
         {
           "naam": "Tijmen Reyenga",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 26,
           "type": "sc"
         },
         {
           "naam": "Adrian Lehmann-Richter",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 60,
           "type": "veld"
         }
@@ -1643,15 +1643,15 @@
       "kaarten": [
         {
           "naam": "Nicolas Santiago Keenan",
-          "club": "Klein Zwitserland H1",
-          "minuut": 44,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 44
         },
         {
           "naam": "Joep de Mol",
-          "club": "Oranje-Rood H1",
-          "minuut": 60,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:01.482Z"
+  "bijgewerkt": "2026-04-28T06:45:03.715Z"
 }
