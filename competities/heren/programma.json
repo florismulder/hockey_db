@@ -4780,37 +4780,37 @@
         {
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam",
-          "minuut": 1,
+          "minuut": 2,
           "type": "sc"
         },
         {
           "naam": "Joaquín Menini",
           "club": "Rotterdam",
-          "minuut": 24,
+          "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Olivier Hortensius",
           "club": "Rotterdam",
-          "minuut": 34,
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Jelle Westendorp",
           "club": "Schaerweijde",
-          "minuut": 37,
+          "minuut": 38,
           "type": "sb"
         },
         {
           "naam": "Guus Jansen",
           "club": "Rotterdam",
-          "minuut": 46,
+          "minuut": 47,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
           "club": "Rotterdam",
-          "minuut": 50,
+          "minuut": 51,
           "type": "veld"
         }
       ],
@@ -7243,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:08.385Z"
+  "bijgewerkt": "2026-04-28T06:47:10.849Z"
 }
