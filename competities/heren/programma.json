@@ -6135,7 +6135,7 @@
           "naam": "Borja LaCalle",
           "club": "Oranje-Rood",
           "minuut": 29,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Struan Walker",
@@ -6160,14 +6160,14 @@
         {
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal",
-          "minuut": 29,
-          "type": "Groene kaart"
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 52,
-          "type": "Groene kaart"
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:50:50.618Z"
+  "bijgewerkt": "2026-04-28T06:50:53.407Z"
 }
