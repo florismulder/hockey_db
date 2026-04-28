@@ -2691,49 +2691,49 @@
       "scorers": [
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 13,
           "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 14,
           "type": "sc"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 14,
           "type": "sc"
         },
         {
           "naam": "Jasper Brinkman",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 19,
           "type": "sc"
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 22,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 48,
           "type": "sc"
         },
         {
           "naam": "Marco Miltkau",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 57,
           "type": "veld"
         },
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 58,
           "type": "veld"
         }
@@ -2741,27 +2741,33 @@
       "kaarten": [
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal H1",
-          "minuut": 15,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 15
         },
         {
           "naam": "Lucas Veen",
-          "club": "Amsterdam H1",
-          "minuut": 24,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
-          "minuut": 43,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Casper Berkman",
-          "club": "Amsterdam H1",
-          "minuut": 49,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 49
+        },
+        {
+          "naam": "Floris Wortelboer",
+          "club": "Bloemendaal",
+          "type": "geel",
+          "minuut": 50
         }
       ]
     },
@@ -7176,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:51.759Z"
+  "bijgewerkt": "2026-04-28T06:45:55.524Z"
 }
