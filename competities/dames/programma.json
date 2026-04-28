@@ -1757,20 +1757,20 @@
         {
           "naam": "Thirsa Kho",
           "club": "Oranje-Rood",
-          "minuut": 20,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 20
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
-          "minuut": 50,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 50
         },
         {
           "naam": "Mette Winter",
           "club": "SCHC",
-          "minuut": 56,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -5823,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:39:51.079Z"
+  "bijgewerkt": "2026-04-28T06:40:38.361Z"
 }
