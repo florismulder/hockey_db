@@ -4776,59 +4776,59 @@
       "scorers": [
         {
           "naam": "Carolin Hoffmann",
-          "club": "HGC",
-          "minuut": 5,
+          "club": "Tilburg",
+          "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Mikki Roolaart",
-          "club": "Tilburg",
-          "minuut": 15,
+          "club": "HGC",
+          "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Mikki Roberts",
           "club": "Tilburg",
-          "minuut": 42,
+          "minuut": 43,
           "type": "sc"
         },
         {
           "naam": "Hannah Salden",
           "club": "Tilburg",
-          "minuut": 49,
+          "minuut": 50,
           "type": "sc"
         },
         {
           "naam": "Emmely Bekker",
           "club": "Tilburg",
-          "minuut": 57,
+          "minuut": 58,
           "type": "veld"
         },
         {
           "naam": "Amy van den Bosch",
           "club": "HGC",
-          "minuut": 59,
+          "minuut": 60,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Mikki Roolaart",
-          "club": "Tilburg",
-          "minuut": 33,
-          "type": "geel"
+          "club": "HGC",
+          "type": "geel",
+          "minuut": 34
         },
         {
           "naam": "Roos Ezendam",
           "club": "Tilburg",
-          "minuut": 36,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 37
         },
         {
           "naam": "Zoë Admiraal",
           "club": "Tilburg",
-          "minuut": 51,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:41.303Z"
+  "bijgewerkt": "2026-04-28T06:43:43.352Z"
 }
