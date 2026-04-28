@@ -6779,37 +6779,37 @@
       "scorers": [
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 2,
           "type": "veld"
         },
         {
           "naam": "Aki Käppeler",
-          "club": "Klein Zwitserland H1",
+          "club": "Pinoké",
           "minuut": 35,
           "type": "sc"
         },
         {
           "naam": "Willem van Campen",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Texas Bukkens",
-          "club": "Pinoké H1",
+          "club": "Klein Zwitserland",
           "minuut": 48,
           "type": "sc"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 50,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 57,
           "type": "sc"
         }
@@ -6817,12 +6817,11 @@
       "kaarten": [
         {
           "naam": "Linus Michler",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "type": "groen",
           "minuut": 35
         }
-      ],
-      "geverifieerd": false
+      ]
     },
     {
       "datum": "2026-04-26",
@@ -7262,5 +7261,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:06.241Z"
+  "bijgewerkt": "2026-04-28T06:56:08.604Z"
 }
