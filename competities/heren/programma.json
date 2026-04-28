@@ -4301,6 +4301,12 @@
           "type": "veld"
         },
         {
+          "naam": "Imko de Vries",
+          "club": "Klein Zwitserland",
+          "minuut": 30,
+          "type": "veld"
+        },
+        {
           "naam": "Štěpán Klaban",
           "club": "Klein Zwitserland",
           "minuut": 34,
@@ -4314,12 +4320,19 @@
         },
         {
           "naam": "Ties Klinkhamer",
-          "club": "Klein Zwitserland",
+          "club": "Hurley",
           "minuut": 47,
           "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Hjalmar Voskuil",
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 47
+        }
+      ]
     },
     {
       "thuis": "Amsterdam",
@@ -7217,5 +7230,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:47.111Z"
+  "bijgewerkt": "2026-04-28T06:46:49.395Z"
 }
