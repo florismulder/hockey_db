@@ -4189,7 +4189,20 @@
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Merle Blaffert",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 43
+        },
+        {
+          "naam": "Charlotte Schrijvers",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
     },
     {
       "thuis": "Tilburg",
@@ -5923,5 +5936,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:15.197Z"
+  "bijgewerkt": "2026-04-28T06:43:17.372Z"
 }
