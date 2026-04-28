@@ -5139,70 +5139,70 @@
         {
           "naam": "Jaïr van der Horst",
           "club": "Den Bosch",
-          "minuut": 13,
+          "minuut": 14,
           "type": "veld"
         },
         {
           "naam": "Thomas Sorsby",
           "club": "Den Bosch",
-          "minuut": 15,
+          "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 18,
+          "club": "Den Bosch",
+          "minuut": 19,
           "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké",
-          "minuut": 28,
+          "minuut": 29,
           "type": "sc"
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Den Bosch",
-          "minuut": 34,
+          "club": "Pinoké",
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Florent van Aubel",
+          "club": "Pinoké",
+          "minuut": 36,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
           "club": "Den Bosch",
-          "minuut": 35,
+          "minuut": 38,
           "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 37,
-          "type": "sc"
-        },
-        {
-          "naam": "Timo Boers",
-          "club": "Pinoké",
-          "minuut": 47,
+          "club": "Den Bosch",
+          "minuut": 48,
           "type": "sc"
         },
         {
           "naam": "Koen Bijen",
           "club": "Den Bosch",
-          "minuut": 53,
+          "minuut": 54,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Tim Knapper",
-          "club": "Den Bosch",
-          "minuut": 20,
-          "type": "groen"
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 21
         },
         {
           "naam": "Miles Bukkens",
           "club": "Pinoké",
-          "minuut": 51,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:22.512Z"
+  "bijgewerkt": "2026-04-28T06:47:24.842Z"
 }
