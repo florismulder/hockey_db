@@ -2825,43 +2825,43 @@
       "scorers": [
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 1,
           "type": "veld"
         },
         {
           "naam": "Finn van Bijnen",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 10,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 25,
           "type": "sc"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Hidde Plantenga",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "HDM H1",
+          "club": "Kampong",
           "minuut": 43,
           "type": "sc"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 47,
           "type": "veld"
         }
@@ -7176,5 +7176,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:49.511Z"
+  "bijgewerkt": "2026-04-28T06:45:51.759Z"
 }
