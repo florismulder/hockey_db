@@ -3450,37 +3450,37 @@
       "scorers": [
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 5,
           "type": "veld"
         },
         {
           "naam": "Texas Bukkens",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Jan van 't Land",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 31,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Marco Miltkau",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 48,
           "type": "veld"
         }
@@ -7157,5 +7157,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:21.672Z"
+  "bijgewerkt": "2026-04-28T06:46:23.981Z"
 }
