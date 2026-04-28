@@ -782,7 +782,20 @@
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Laurens Nievelstein",
+          "club": "Pinoké",
+          "type": "geel",
+          "minuut": 24
+        },
+        {
+          "naam": "Teo Hinrichs",
+          "club": "Pinoké",
+          "type": "geel",
+          "minuut": 56
+        }
+      ]
     },
     {
       "thuis": "Klein Zwitserland",
@@ -7207,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:36.936Z"
+  "bijgewerkt": "2026-04-28T06:44:39.225Z"
 }
