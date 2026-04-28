@@ -3498,49 +3498,36 @@
       "scorers": [
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
-          "minuut": 10,
+          "club": "Oranje-Rood",
+          "minuut": 30,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
-          "minuut": 23,
-          "type": "veld"
-        },
-        {
-          "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
-          "minuut": 34,
-          "type": "veld"
+          "club": "Oranje-Rood",
+          "minuut": 30,
+          "type": "sc"
         },
         {
           "naam": "Sander van de Putte",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
-          "minuut": 42,
+          "club": "Oranje-Rood",
+          "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
-          "minuut": 43,
+          "club": "Kampong",
+          "minuut": 40,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Florian Gosselink",
-          "club": "Oranje-Rood H1",
-          "minuut": 36,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Schaerweijde",
@@ -7170,5 +7157,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:19.174Z"
+  "bijgewerkt": "2026-04-28T06:46:21.672Z"
 }
