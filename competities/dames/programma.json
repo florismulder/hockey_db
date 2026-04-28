@@ -3955,14 +3955,14 @@
         {
           "naam": "Tessel Huibregtsen",
           "club": "HGC",
-          "minuut": 19,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Luna Fokke",
           "club": "Kampong",
-          "minuut": 48,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 48
         }
       ]
     },
@@ -5868,5 +5868,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:08.824Z"
+  "bijgewerkt": "2026-04-28T06:43:10.932Z"
 }
