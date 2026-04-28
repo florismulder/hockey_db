@@ -6401,7 +6401,7 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 4,
           "type": "veld"
         },
@@ -6431,7 +6431,7 @@
         },
         {
           "naam": "Kenneth Bain",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 28,
           "type": "veld"
         },
@@ -6443,7 +6443,7 @@
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 60,
           "type": "veld"
         }
@@ -6451,7 +6451,7 @@
       "kaarten": [
         {
           "naam": "Wout Kooijman",
-          "club": "Laren",
+          "club": "Laren H1",
           "type": "groen",
           "minuut": 21
         },
@@ -6463,7 +6463,7 @@
         },
         {
           "naam": "Thomas Selles",
-          "club": "Laren",
+          "club": "Laren H1",
           "type": "geel",
           "minuut": 46
         }
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:50:57.766Z"
+  "bijgewerkt": "2026-04-28T06:50:59.894Z"
 }
