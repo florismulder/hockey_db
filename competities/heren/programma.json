@@ -19,6 +19,73 @@
       "score_uit": null
     },
     {
+      "thuis": "Laren",
+      "uit": "Den Bosch",
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2025-02-28",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 5,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 14,
+          "type": "sc"
+        },
+        {
+          "naam": "Eduard De Ignacio - Simó",
+          "club": "Den Bosch",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 23,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 44,
+          "type": "veld"
+        },
+        {
+          "naam": "Koen Bijen",
+          "club": "Den Bosch",
+          "minuut": 51,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris van der Wal",
+          "club": "Laren",
+          "type": "geel",
+          "minuut": 7
+        },
+        {
+          "naam": "Joppe Wolbert",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 8
+        },
+        {
+          "naam": "Pepijn Reyenga",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 11
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 5,
@@ -7150,5 +7217,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:40.391Z"
+  "bijgewerkt": "2026-04-28T06:46:42.688Z"
 }
