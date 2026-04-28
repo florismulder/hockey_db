@@ -4449,13 +4449,13 @@
         },
         {
           "naam": "Dylan Lucieer",
-          "club": "Rotterdam",
+          "club": "HDM",
           "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "HDM",
+          "club": "Rotterdam",
           "minuut": 15,
           "type": "veld"
         },
@@ -4472,7 +4472,20 @@
           "type": "sb"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Matthijs van der Wielen",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 18
+        },
+        {
+          "naam": "Cédric de Gier",
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
     },
     {
       "thuis": "Oranje-Rood",
@@ -7230,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:54.241Z"
+  "bijgewerkt": "2026-04-28T06:46:56.552Z"
 }
