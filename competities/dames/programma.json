@@ -1010,33 +1010,33 @@
       "scorers": [
         {
           "naam": "Pien Dicke",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 7,
           "type": "veld"
         },
         {
           "naam": "Renee van Laarhoven",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "minuut": 49,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Xan de Waard",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "type": "groen",
           "minuut": 32
         },
         {
           "naam": "Sanne Caarls",
-          "club": "SCHC D1",
+          "club": "SCHC",
           "type": "groen",
           "minuut": 39
         },
         {
           "naam": "Taheera Augousti",
-          "club": "SCHC D1",
+          "club": "Hurley",
           "type": "geel",
           "minuut": 45
         }
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-27T11:04:20.756Z"
+  "bijgewerkt": "2026-04-28T05:34:54.212Z"
 }
