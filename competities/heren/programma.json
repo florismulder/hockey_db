@@ -1909,31 +1909,31 @@
       "scorers": [
         {
           "naam": "Fred Newbold",
-          "club": "Hurley H1",
+          "club": "Hurley",
           "minuut": 17,
           "type": "veld"
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 28,
-          "type": "sc"
+          "type": "sb"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 47,
           "type": "sc"
         },
         {
           "naam": "Stijn Draaijer",
-          "club": "Schaerweijde H1",
+          "club": "Hurley",
           "minuut": 53,
           "type": "sc"
         },
         {
           "naam": "Daan Troost",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 55,
           "type": "veld"
         }
@@ -1941,21 +1941,21 @@
       "kaarten": [
         {
           "naam": "Jake Raben",
-          "club": "Hurley H1",
-          "minuut": 28,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Tieme Wiggers",
-          "club": "Hurley H1",
-          "minuut": 35,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 35
         },
         {
           "naam": "Mees Loman",
-          "club": "Schaerweijde H1",
-          "minuut": 51,
-          "type": "geel"
+          "club": "Hurley",
+          "type": "geel",
+          "minuut": 51
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:10.499Z"
+  "bijgewerkt": "2026-04-28T06:45:12.852Z"
 }
