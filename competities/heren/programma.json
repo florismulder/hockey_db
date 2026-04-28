@@ -1811,41 +1811,41 @@
       "scorers": [
         {
           "naam": "Aki Käppeler",
-          "club": "Klein Zwitserland H1",
+          "club": "Laren",
           "minuut": 15,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Teun van Uunen",
-          "club": "Laren H1",
+          "club": "Klein Zwitserland",
           "minuut": 41,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Valentijn Charbon",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Chad Futcher",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 57,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Pelle Vos",
-          "club": "Laren H1",
-          "minuut": 31,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 31
         },
         {
           "naam": "Pepijn Jones",
-          "club": "Laren H1",
-          "minuut": 46,
-          "type": "groen"
+          "club": "Klein Zwitserland",
+          "type": "groen",
+          "minuut": 46
         }
       ]
     },
@@ -7214,5 +7214,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:15.332Z"
+  "bijgewerkt": "2026-04-28T06:45:17.646Z"
 }
