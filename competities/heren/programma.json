@@ -4247,7 +4247,7 @@
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Pinoké",
+          "club": "Schaerweijde",
           "minuut": 14,
           "type": "sc"
         },
@@ -4259,7 +4259,7 @@
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Schaerweijde",
+          "club": "Pinoké",
           "minuut": 47,
           "type": "veld"
         }
@@ -4268,20 +4268,20 @@
         {
           "naam": "Joppe Stappenbelt",
           "club": "Pinoké",
-          "minuut": 7,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 7
         },
         {
           "naam": "Stijn Draaijer",
           "club": "Pinoké",
-          "minuut": 19,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Pinoké",
-          "minuut": 37,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 37
         }
       ]
     },
@@ -7230,5 +7230,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:49.395Z"
+  "bijgewerkt": "2026-04-28T06:46:52.006Z"
 }
