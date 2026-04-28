@@ -2582,35 +2582,21 @@
       "scorers": [
         {
           "naam": "Terrance Pieters",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Laurens Nievelstein",
-          "club": "Hurley H1",
+          "club": "Hurley",
           "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Terrance Pieters",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 45,
           "type": "sc"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Mees Loman",
-          "club": "Hurley H1",
-          "minuut": 42,
-          "type": "groen"
-        },
-        {
-          "naam": "Rutger Plat",
-          "club": "Hurley H1",
-          "minuut": 60,
-          "type": "groen"
         }
       ]
     },
@@ -7196,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:31.251Z"
+  "bijgewerkt": "2026-04-28T06:45:33.527Z"
 }
