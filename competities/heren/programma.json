@@ -3171,19 +3171,19 @@
       "scorers": [
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 22,
           "type": "sc"
         },
         {
           "naam": "Nick van Trigt",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 25,
           "type": "veld"
         }
@@ -3191,33 +3191,33 @@
       "kaarten": [
         {
           "naam": "Justen Blok",
-          "club": "Rotterdam H1",
-          "minuut": 2,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 2
         },
         {
           "naam": "Joaquín Menini",
-          "club": "Rotterdam H1",
-          "minuut": 24,
-          "type": "geel"
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 24
         },
         {
           "naam": "Olivier Hortensius",
-          "club": "Rotterdam H1",
-          "minuut": 31,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 31
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Rotterdam H1",
-          "minuut": 46,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 46
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Rotterdam H1",
-          "minuut": 55,
-          "type": "geel"
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 55
         }
       ]
     },
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:02.401Z"
+  "bijgewerkt": "2026-04-28T06:46:04.611Z"
 }
