@@ -2667,22 +2667,10 @@
       ],
       "kaarten": [
         {
-          "naam": "Marijn Veen",
-          "club": "Amsterdam",
-          "minuut": 47,
-          "type": "groene kaart"
-        },
-        {
-          "naam": "Elin van Erk",
-          "club": "Pinoké",
-          "minuut": 54,
-          "type": "groene kaart"
-        },
-        {
           "naam": "Tessa Beetsma",
           "club": "Pinoké",
-          "minuut": 60,
-          "type": "gele kaart"
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -5845,5 +5833,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:11.242Z"
+  "bijgewerkt": "2026-04-28T06:42:13.386Z"
 }
