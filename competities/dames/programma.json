@@ -2279,26 +2279,26 @@
         {
           "naam": "Maud Preyde",
           "club": "Bloemendaal",
-          "minuut": 21,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 21
         },
         {
           "naam": "Tessel Huibregtsen",
           "club": "HGC",
-          "minuut": 39,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Mikki Roolaart",
           "club": "HGC",
-          "minuut": 44,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 44
         },
         {
           "naam": "Valentina Raposo Ruiz De Los Llanos",
           "club": "HGC",
-          "minuut": 58,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 58
         }
       ]
     },
@@ -5859,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:41:53.468Z"
+  "bijgewerkt": "2026-04-28T06:41:55.878Z"
 }
