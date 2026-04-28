@@ -2697,25 +2697,25 @@
       "scorers": [
         {
           "naam": "Suus Meininger",
-          "club": "Hurley",
+          "club": "Oranje-Rood D1",
           "minuut": 9,
           "type": "veld"
         },
         {
           "naam": "Sanne Caarls",
-          "club": "Hurley",
+          "club": "Oranje-Rood D1",
           "minuut": 41,
           "type": "sb"
         },
         {
           "naam": "Madelief de Beer",
-          "club": "Oranje-Rood",
+          "club": "Hurley D1",
           "minuut": 52,
           "type": "sb"
         },
         {
           "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
+          "club": "Hurley D1",
           "minuut": 58,
           "type": "sc"
         }
@@ -2723,21 +2723,21 @@
       "kaarten": [
         {
           "naam": "Lynn Vasterink",
-          "club": "Oranje-Rood",
-          "minuut": 48,
-          "type": "groen"
+          "club": "Oranje-Rood D1",
+          "type": "groen",
+          "minuut": 48
         },
         {
           "naam": "Fiona Morgenstern",
-          "club": "Hurley",
-          "minuut": 50,
-          "type": "geel"
+          "club": "Hurley D1",
+          "type": "geel",
+          "minuut": 50
         },
         {
           "naam": "Romée Corver",
-          "club": "Hurley",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Oranje-Rood D1",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -5845,5 +5845,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:08.961Z"
+  "bijgewerkt": "2026-04-28T06:42:11.242Z"
 }
