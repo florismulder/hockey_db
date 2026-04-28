@@ -3490,13 +3490,13 @@
       "scorers": [
         {
           "naam": "Luna Fokke",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Imme van Es",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 53,
           "type": "veld"
         }
@@ -3504,15 +3504,15 @@
       "kaarten": [
         {
           "naam": "Guusje Moes",
-          "club": "Kampong",
-          "minuut": 19,
-          "type": "groene kaart"
+          "club": "Tilburg D1",
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 45,
-          "type": "groene kaart"
+          "club": "Tilburg D1",
+          "type": "groen",
+          "minuut": 45
         }
       ]
     },
@@ -5809,5 +5809,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:42.420Z"
+  "bijgewerkt": "2026-04-28T06:42:44.545Z"
 }
