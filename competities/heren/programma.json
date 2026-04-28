@@ -6903,43 +6903,28 @@
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "15:00",
       "thuis": "Oranje-Rood",
       "uit": "Schaerweijde",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Jacir Soares de Brito",
-          "Pascal Engelbertink"
-        ],
-        "stats_thuis": [
-          "Oranje-Rood is na negentien speelronden nog altijd ongeslagen (W14 G5).",
-          "Oranje-Rood is al 22 wedstrijden op rij ongeslagen (W16 G6), een clubrecord.",
-          "Oranje-Rood verloor afgelopen donderdag in de Gold Cup zijn eerste wedstrijd van dit seizoen.",
-          "Oranje-Rood is al zestien thuisduels op rij zonder nederlaag (W12 G4).",
-          "Oranje-Rood heeft nog twee doelpunten nodig voor een nieuw clubrecord van 69 treffers.",
-          "Struan Walker kan de eerste Oranje-Rood speler worden die dertig keer scoort in één seizoen."
-        ],
-        "stats_uit": [
-          "Schaerweijde verloor vorige speelronde met 1-8 van Den Bosch.",
-          "Schaerweijde kreeg vorige week een historisch pak slaag: 1-8 tegen Den Bosch.",
-          "Schaerweijde evenaarde de grootste thuisnederlaag ooit op het hoogste niveau (1-8).",
-          "Schaerweijde verloor zijn laatste twee wedstrijden (3-0 bij Kampong en 1-8).",
-          "Schaerweijde pakte daarvóór zeven punten uit zeven wedstrijden (W1 G4 V2)."
-        ],
-        "stats_onderling": [
-          "Oranje-Rood won de heenwedstrijd op 30 oktober met 5-1.",
-          "Oranje-Rood en Schaerweijde stonden vijf keer tegenover elkaar in de Hoofdklasse.",
-          "Oranje-Rood bleef telkens ongeslagen tegen Schaerweijde (W4 G1).",
-          "Oranje-Rood boekte drie zeges op rij na het enige gelijkspel (2-2).",
-          "Oranje-Rood's 5-1 overwinning was de grootste zege op Schaerweijde.",
-          "Oranje-Rood heeft thuis een perfecte balans tegen Schaerweijde (W2 G0 V0)."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 2,
+      "score_uit": 0,
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "minuut": 25,
+          "type": "sc"
+        },
+        {
+          "naam": "Boaz Houben",
+          "club": "Oranje-Rood",
+          "minuut": 52,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "thuis": "Den Bosch",
@@ -7316,5 +7301,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:13.410Z"
+  "bijgewerkt": "2026-04-28T06:56:15.879Z"
 }
