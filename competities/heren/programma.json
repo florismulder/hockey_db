@@ -5450,11 +5450,18 @@
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 29,
+          "minuut": 30,
           "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [
+        {
+          "naam": "Joaquin Toscani",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 53
+        }
+      ]
     },
     {
       "thuis": "Kampong",
@@ -7213,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:31.887Z"
+  "bijgewerkt": "2026-04-28T06:47:34.168Z"
 }
