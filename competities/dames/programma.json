@@ -4704,64 +4704,64 @@
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 2,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 11,
+          "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 22,
+          "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 23,
+          "minuut": 24,
           "type": "sc"
         },
         {
           "naam": "Freeke Moes",
           "club": "Amsterdam",
-          "minuut": 26,
+          "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Kaat Walhof",
           "club": "HDM",
-          "minuut": 45,
+          "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Trijntje Beljaars",
           "club": "Amsterdam",
-          "minuut": 51,
+          "minuut": 52,
           "type": "sc"
         },
         {
           "naam": "Daantje de Kruijff",
           "club": "Amsterdam",
-          "minuut": 59,
+          "minuut": 60,
           "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Julia Duffhuis",
-          "club": "Amsterdam",
-          "minuut": 11,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 12
         },
         {
           "naam": "Tessa Clasener",
           "club": "HDM",
-          "minuut": 47,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 48
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:39.132Z"
+  "bijgewerkt": "2026-04-28T06:43:41.303Z"
 }
