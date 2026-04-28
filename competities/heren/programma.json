@@ -3013,49 +3013,49 @@
       "scorers": [
         {
           "naam": "Nick van Trigt",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 9,
           "type": "veld"
         },
         {
           "naam": "Pieter Paul Houting",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Matthijs van der Wielen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Marc Recasens",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 45,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 57,
           "type": "veld"
         },
         {
           "naam": "Luke Friederich",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 57,
           "type": "sc"
         }
@@ -3063,21 +3063,21 @@
       "kaarten": [
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
-          "minuut": 21,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 21
         },
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren H1",
-          "minuut": 32,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 32
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
-          "minuut": 57,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 57
         }
       ]
     },
@@ -7176,5 +7176,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:42.751Z"
+  "bijgewerkt": "2026-04-28T06:45:45.102Z"
 }
