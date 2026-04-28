@@ -3609,20 +3609,7 @@
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Flo Klinkhamer",
-          "club": "Pinoké",
-          "minuut": 44,
-          "type": "groen"
-        },
-        {
-          "naam": "Tessa Beetsma",
-          "club": "Pinoké",
-          "minuut": 59,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Rotterdam",
@@ -5838,5 +5825,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:55.770Z"
+  "bijgewerkt": "2026-04-28T06:42:58.003Z"
 }
