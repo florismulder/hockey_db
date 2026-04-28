@@ -3681,25 +3681,25 @@
       "scorers": [
         {
           "naam": "Joppe Wolbert",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 12,
           "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 26,
           "type": "sc"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 27,
           "type": "sb"
         },
         {
           "naam": "Koen Bijen",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 42,
           "type": "veld"
         }
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:11.782Z"
+  "bijgewerkt": "2026-04-28T06:46:14.097Z"
 }
