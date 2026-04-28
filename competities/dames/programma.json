@@ -4351,28 +4351,28 @@
         {
           "naam": "Katerina Langedijk",
           "club": "Amsterdam",
-          "minuut": 32,
+          "minuut": 33,
           "type": "veld"
         },
         {
           "naam": "Ivy Tellier",
           "club": "Amsterdam",
-          "minuut": 55,
+          "minuut": 56,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Stella van Gils",
-          "club": "Tilburg",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 53
         },
         {
           "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 56,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 57
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:32.698Z"
+  "bijgewerkt": "2026-04-28T06:43:34.804Z"
 }
