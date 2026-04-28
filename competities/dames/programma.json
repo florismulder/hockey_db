@@ -3622,25 +3622,25 @@
       "scorers": [
         {
           "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 19,
           "type": "sc"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 32,
           "type": "veld"
         },
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 42,
           "type": "sc"
         },
         {
           "naam": "Mette Winter",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 46,
           "type": "veld"
         }
@@ -3648,15 +3648,15 @@
       "kaarten": [
         {
           "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 22,
-          "type": "groen"
+          "club": "Rotterdam D1",
+          "type": "groen",
+          "minuut": 22
         },
         {
           "naam": "Lisa Post",
-          "club": "SCHC",
-          "minuut": 51,
-          "type": "groen"
+          "club": "SCHC D1",
+          "type": "groen",
+          "minuut": 51
         }
       ]
     },
@@ -5825,5 +5825,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:58.003Z"
+  "bijgewerkt": "2026-04-28T06:43:00.135Z"
 }
