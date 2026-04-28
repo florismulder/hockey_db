@@ -1666,55 +1666,55 @@
       "scorers": [
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 9,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 21,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 31,
           "type": "veld"
         },
         {
           "naam": "Boris Burkhardt",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 32,
           "type": "veld"
         },
         {
           "naam": "Luke Dommershuijzen",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 34,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Luke Dommershuijzen",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 47,
           "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 49,
           "type": "veld"
         },
         {
           "naam": "Dayaan Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 60,
           "type": "veld"
         }
@@ -1722,15 +1722,15 @@
       "kaarten": [
         {
           "naam": "Thomas Vis",
-          "club": "Laren H1",
-          "minuut": 38,
-          "type": "groen"
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 38
         },
         {
           "naam": "Joost Tolboom",
-          "club": "Laren H1",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:59.264Z"
+  "bijgewerkt": "2026-04-28T06:45:01.482Z"
 }
