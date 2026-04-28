@@ -2940,37 +2940,37 @@
       "scorers": [
         {
           "naam": "Arthur de Sloover",
-          "club": "Oranje-Rood H1",
+          "club": "Schaerweijde",
           "minuut": 17,
           "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Teun van Aalderen",
-          "club": "Schaerweijde H1",
+          "club": "Oranje-Rood",
           "minuut": 31,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Bob de Voogd",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 39,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 50,
           "type": "veld"
         }
@@ -2978,27 +2978,27 @@
       "kaarten": [
         {
           "naam": "Florian Gosselink",
-          "club": "Oranje-Rood H1",
-          "minuut": 39,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Michiel Moret",
-          "club": "Schaerweijde H1",
-          "minuut": 41,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 41
         },
         {
           "naam": "Juup Veen",
-          "club": "Schaerweijde H1",
-          "minuut": 54,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 54
         },
         {
           "naam": "Tijmen Reyenga",
-          "club": "Oranje-Rood H1",
-          "minuut": 60,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 60
         }
       ]
     },
@@ -7176,5 +7176,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:45.102Z"
+  "bijgewerkt": "2026-04-28T06:45:47.298Z"
 }
