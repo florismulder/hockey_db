@@ -6677,19 +6677,19 @@
       "kaarten": [
         {
           "naam": "Jaïr van der Horst",
-          "club": "Den Bosch",
+          "club": "Schaerweijde",
           "type": "groen",
           "minuut": 45
         },
         {
           "naam": "Daan Troost",
-          "club": "Den Bosch",
+          "club": "Schaerweijde",
           "type": "groen",
           "minuut": 52
         },
         {
           "naam": "Daan Troost",
-          "club": "Den Bosch",
+          "club": "Schaerweijde",
           "type": "geel",
           "minuut": 60
         }
@@ -7275,5 +7275,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:51:02.085Z"
+  "bijgewerkt": "2026-04-28T06:51:04.202Z"
 }
