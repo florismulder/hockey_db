@@ -3410,37 +3410,30 @@
       "scorers": [
         {
           "naam": "Fleur Loomans",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 1,
           "type": "veld"
         },
         {
           "naam": "Taheera Augousti",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Fleur Loomans",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Romée Corver",
-          "club": "Hurley",
+          "club": "Hurley D1",
           "minuut": 28,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Mikki Roolaart",
-          "club": "HGC",
-          "minuut": 58,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Amsterdam",
@@ -5809,5 +5802,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:46.925Z"
+  "bijgewerkt": "2026-04-28T06:42:49.357Z"
 }
