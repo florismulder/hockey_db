@@ -5468,49 +5468,43 @@
         {
           "naam": "Floris Wortelboer",
           "club": "Bloemendaal",
-          "minuut": 8,
+          "minuut": 9,
           "type": "sc"
         },
         {
           "naam": "Sander van de Putte",
           "club": "Kampong",
-          "minuut": 22,
+          "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Teun Beins",
           "club": "Bloemendaal",
-          "minuut": 22,
+          "minuut": 23,
           "type": "sc"
         },
         {
           "naam": "Zachary Wallace",
           "club": "Bloemendaal",
-          "minuut": 31,
+          "minuut": 32,
           "type": "veld"
         },
         {
           "naam": "Teun Hogenhout",
           "club": "Bloemendaal",
-          "minuut": 42,
+          "minuut": 43,
           "type": "veld"
         },
         {
           "naam": "Derck de Vilder",
           "club": "Kampong",
-          "minuut": 50,
+          "minuut": 51,
           "type": "sc"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Kampong",
-          "minuut": 55,
-          "type": "veld"
-        },
-        {
-          "naam": "Elian Mazkour",
-          "club": "Kampong",
-          "minuut": 58,
+          "club": "Bloemendaal",
+          "minuut": 56,
           "type": "veld"
         }
       ],
@@ -5518,14 +5512,14 @@
         {
           "naam": "Sander van de Putte",
           "club": "Kampong",
-          "minuut": 52,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 53
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Kampong",
-          "minuut": 55,
-          "type": "groen"
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -7219,5 +7213,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:29.575Z"
+  "bijgewerkt": "2026-04-28T06:47:31.887Z"
 }
