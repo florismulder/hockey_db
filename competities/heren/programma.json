@@ -553,13 +553,13 @@
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké",
+          "club": "Schaerweijde",
           "minuut": 60,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Schaerweijde",
+          "club": "Pinoké",
           "minuut": 60,
           "type": "sc"
         }
@@ -7200,5 +7200,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:18.246Z"
+  "bijgewerkt": "2026-04-28T06:44:20.677Z"
 }
