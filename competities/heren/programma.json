@@ -2279,43 +2279,43 @@
       "scorers": [
         {
           "naam": "Hidde Plantenga",
-          "club": "Kampong H1",
+          "club": "Schaerweijde",
           "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Schaerweijde",
           "minuut": 39,
           "type": "veld"
         },
         {
           "naam": "Stijn Draaijer",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 39,
           "type": "sc"
         },
         {
           "naam": "Daan Troost",
-          "club": "Schaerweijde H1",
+          "club": "Kampong",
           "minuut": 40,
           "type": "veld"
         },
         {
           "naam": "Jens Hagen",
-          "club": "Schaerweijde H1",
+          "club": "Kampong",
           "minuut": 41,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 52,
           "type": "veld"
         },
         {
           "naam": "Duco Telgenkamp",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 55,
           "type": "veld"
         }
@@ -2323,33 +2323,33 @@
       "kaarten": [
         {
           "naam": "Teun van Aalderen",
-          "club": "Schaerweijde H1",
-          "minuut": 19,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 19
         },
         {
           "naam": "Peppe Veen",
-          "club": "Schaerweijde H1",
-          "minuut": 23,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 23
         },
         {
           "naam": "Bram van Battum",
-          "club": "Kampong H1",
-          "minuut": 39,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 39
         },
         {
           "naam": "Lode Draaijer",
-          "club": "Schaerweijde H1",
-          "minuut": 54,
-          "type": "groen"
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 54
         },
         {
           "naam": "Juup Veen",
-          "club": "Schaerweijde H1",
-          "minuut": 56,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -7214,5 +7214,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:22.297Z"
+  "bijgewerkt": "2026-04-28T06:45:24.583Z"
 }
