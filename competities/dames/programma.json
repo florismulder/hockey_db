@@ -1169,7 +1169,7 @@
         },
         {
           "naam": "Ellemijn Harm",
-          "club": "Amsterdam",
+          "club": "Tilburg",
           "minuut": 29,
           "type": "veld"
         },
@@ -1181,7 +1181,7 @@
         },
         {
           "naam": "Carmen Victoria",
-          "club": "Tilburg",
+          "club": "Amsterdam",
           "minuut": 55,
           "type": "veld"
         }
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:35:00.079Z"
+  "bijgewerkt": "2026-04-28T05:36:10.689Z"
 }
