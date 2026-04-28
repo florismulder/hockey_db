@@ -4551,65 +4551,65 @@
       "scorers": [
         {
           "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 11,
+          "club": "Rotterdam D1",
+          "minuut": 12,
           "type": "veld"
         },
         {
           "naam": "Roos Alkemade",
-          "club": "HDM",
-          "minuut": 19,
+          "club": "HDM D1",
+          "minuut": 20,
           "type": "sc"
         },
         {
           "naam": "Amber van den Dijssel",
-          "club": "Rotterdam",
-          "minuut": 35,
+          "club": "Rotterdam D1",
+          "minuut": 36,
           "type": "veld"
         },
         {
           "naam": "Pien van der Heide",
-          "club": "HDM",
-          "minuut": 45,
+          "club": "HDM D1",
+          "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 50,
+          "club": "Rotterdam D1",
+          "minuut": 51,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
-          "minuut": 20,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 21
         },
         {
           "naam": "Brechtje van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 28,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Delany van den Broek",
-          "club": "HDM",
-          "minuut": 31,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 32
         },
         {
           "naam": "Kaat Walhof",
-          "club": "HDM",
-          "minuut": 34,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 35
         },
         {
           "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
-          "minuut": 57,
-          "type": "geel"
+          "club": "HDM D1",
+          "type": "geel",
+          "minuut": 58
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:24.040Z"
+  "bijgewerkt": "2026-04-28T06:43:26.261Z"
 }
