@@ -3967,67 +3967,60 @@
       "scorers": [
         {
           "naam": "Jeroen Hertzberger",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 7,
           "type": "veld"
         },
         {
           "naam": "Florent van Aubel",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 7,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 15,
           "type": "veld"
         },
         {
           "naam": "Dylan Lucieer",
-          "club": "Rotterdam H1",
+          "club": "Pinoké",
           "minuut": 20,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 43,
           "type": "sb"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 44,
           "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Rotterdam",
           "minuut": 52,
           "type": "veld"
         },
         {
           "naam": "Joep Troost",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 56,
           "type": "sc"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Pinoké H1",
+          "club": "Pinoké",
           "minuut": 60,
           "type": "sc"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Menno Boeren",
-          "club": "Rotterdam H1",
-          "minuut": 30,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "HDM",
@@ -7157,5 +7150,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:31.027Z"
+  "bijgewerkt": "2026-04-28T06:46:33.309Z"
 }
