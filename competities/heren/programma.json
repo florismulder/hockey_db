@@ -4499,25 +4499,25 @@
         {
           "naam": "Gerard Clapes",
           "club": "Oranje-Rood",
-          "minuut": 2,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
           "club": "Oranje-Rood",
-          "minuut": 2,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Tijmen Reyenga",
-          "club": "Oranje-Rood",
-          "minuut": 11,
+          "club": "Laren",
+          "minuut": 12,
           "type": "sc"
         },
         {
           "naam": "Thomas Vis",
           "club": "Laren",
-          "minuut": 16,
+          "minuut": 17,
           "type": "sc"
         },
         {
@@ -4529,13 +4529,13 @@
         {
           "naam": "Quinten Moojen",
           "club": "Oranje-Rood",
-          "minuut": 53,
+          "minuut": 54,
           "type": "veld"
         },
         {
           "naam": "Jelle Galema",
-          "club": "Laren",
-          "minuut": 59,
+          "club": "Oranje-Rood",
+          "minuut": 60,
           "type": "veld"
         }
       ],
@@ -4543,20 +4543,20 @@
         {
           "naam": "Pelle Vos",
           "club": "Laren",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 27
         },
         {
           "naam": "Thomas Selles",
-          "club": "Laren",
-          "minuut": 40,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 41
         },
         {
           "naam": "Thomas Vis",
           "club": "Laren",
-          "minuut": 59,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7243,5 +7243,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:06.070Z"
+  "bijgewerkt": "2026-04-28T06:47:08.385Z"
 }
