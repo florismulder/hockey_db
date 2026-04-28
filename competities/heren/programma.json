@@ -5602,40 +5602,40 @@
         {
           "naam": "Tom Provily",
           "club": "HDM",
-          "minuut": 24,
+          "minuut": 25,
           "type": "veld"
         },
         {
           "naam": "Niels de Joode",
           "club": "Schaerweijde",
-          "minuut": 59,
+          "minuut": 60,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Joaquin Toscani",
-          "club": "Schaerweijde",
-          "minuut": 52,
-          "type": "groen"
-        },
-        {
           "naam": "Pepijn Leenhouts",
           "club": "HDM",
-          "minuut": 25,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Peppe Veen",
-          "club": "Schaerweijde",
-          "minuut": 29,
-          "type": "groen"
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 30
         },
         {
           "naam": "Cédric de Gier",
-          "club": "HDM",
-          "minuut": 31,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 32
+        },
+        {
+          "naam": "Ruben Versteeg",
+          "club": "Schaerweijde",
+          "type": "geel",
+          "minuut": 45
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:24.842Z"
+  "bijgewerkt": "2026-04-28T06:47:27.117Z"
 }
