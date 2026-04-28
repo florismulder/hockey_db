@@ -4844,25 +4844,25 @@
         {
           "naam": "Lynn Vasterink",
           "club": "Oranje-Rood",
-          "minuut": 2,
+          "minuut": 3,
           "type": "veld"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 3,
+          "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Demi Hilterman",
           "club": "Bloemendaal",
-          "minuut": 18,
-          "type": "sc"
+          "minuut": 19,
+          "type": "veld"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 32,
+          "minuut": 33,
           "type": "veld"
         }
       ],
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:43.352Z"
+  "bijgewerkt": "2026-04-28T06:43:45.641Z"
 }
