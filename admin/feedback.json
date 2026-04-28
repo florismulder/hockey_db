@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal, op 26-04-26. Het werd 2-2.",
+      "bron_zin": "Hij kreeg geel, net als Mustapha Cassiem die woest op Wortelboer afkwam.",
+      "origineel": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal."
+    },
+    {
+      "bullet": "Floris Wortelboer kreeg geel na een massaal opstootje in de Klassieker tegen Amsterdam op 26-04-26. Het werd 2-2.",
+      "bron_zin": "Hij kreeg geel, net als Mustapha Cassiem die woest op Wortelboer afkwam.",
+      "origineel": "Floris Wortelboer kreeg geel na een massaal opstootje in de Klassieker tegen Amsterdam."
+    },
+    {
       "bullet": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug. Ze miste vorig jaar in 2025 de EHL, play-offs en EK door hamstringblessures.",
       "bron_zin": "Die heeft dan ook de laatste tijd een behoorlijke lijst met blessures achter de rug",
       "origineel": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug."
@@ -223,16 +233,6 @@
     {
       "bullet": "Diana Beemster was als reservekeepster ook onderdeel van het Gold Cup winnende team in 2018.",
       "bron_zin": "reservekeepster Diana Beemster — destijds nog de heldin in de finale tegen HDM, die op shoot-outs werd beslist"
-    },
-    {
-      "bullet": "Sterre Bregman won in april 26 met Bloemendaal de Gold Cup, acht jaar nadat ze de finale van 2018 miste door een zware kruisbandblessure. Ze was in 26 de enige veldspeelster van Bloemendaal die in 2018 de Gold Cup won en nu weer speelde.",
-      "bron_zin": "Maar donderdagavond, acht jaar na die legendarische wedstrijd op ‘t Kopje, stond ze alsnog met de trofee in haar handen.",
-      "origineel": "Sterre Bregman won de Gold Cup, acht jaar nadat ze de finale van 2018 miste door een zware kruisbandblessure."
-    },
-    {
-      "bullet": "Iris Langejans (Rotterdam) transfereert zomer 26 van Rotterdam naar de Duitse club Mannheimer HC.",
-      "bron_zin": "Iris Langejans komt over van Rotterdam.",
-      "origineel": "Iris Langejans (Rotterdam) transfereert van Rotterdam naar de Duitse club Mannheimer HC."
     }
   ],
   "verborgen_bullets": []
