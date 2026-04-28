@@ -3723,31 +3723,31 @@
       "scorers": [
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 14,
           "type": "sb"
         },
         {
           "naam": "Rik Sprengers",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 15,
           "type": "sc"
         },
         {
           "naam": "Terrance Pieters",
-          "club": "Kampong H1",
+          "club": "Kampong",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 20,
           "type": "veld"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 33,
           "type": "sc"
         }
@@ -3755,15 +3755,15 @@
       "kaarten": [
         {
           "naam": "Steijn van Heijningen",
-          "club": "Rotterdam H1",
-          "minuut": 26,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Sander de Wijn",
-          "club": "Kampong H1",
-          "minuut": 33,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 33
         }
       ]
     },
@@ -7157,5 +7157,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:23.981Z"
+  "bijgewerkt": "2026-04-28T06:46:26.270Z"
 }
