@@ -2821,19 +2821,19 @@
           "naam": "Isa Huybers",
           "club": "Bloemendaal",
           "minuut": 43,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Yibbi Jansen",
           "club": "SCHC",
           "minuut": 51,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Rosalie Rosman",
           "club": "Bloemendaal",
           "minuut": 58,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:17.838Z"
+  "bijgewerkt": "2026-04-28T06:42:20.001Z"
 }
