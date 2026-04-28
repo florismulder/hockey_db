@@ -5089,65 +5089,41 @@
       "scorers": [
         {
           "naam": "Luke Friederich",
-          "club": "Laren",
-          "minuut": 22,
+          "club": "Laren H1",
+          "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Balder Reyenga",
-          "club": "Laren",
-          "minuut": 33,
+          "club": "HDM H1",
+          "minuut": 34,
           "type": "sc"
         },
         {
           "naam": "Yorben Fontaine",
-          "club": "HDM",
-          "minuut": 49,
+          "club": "HDM H1",
+          "minuut": 50,
           "type": "sc"
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "HDM",
-          "minuut": 50,
+          "club": "Laren H1",
+          "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM",
-          "minuut": 56,
+          "club": "HDM H1",
+          "minuut": 57,
           "type": "sc"
         }
       ],
       "kaarten": [
         {
-          "naam": "Floris van der Wal",
-          "club": "Laren",
-          "minuut": 14,
-          "type": "groen"
-        },
-        {
           "naam": "Yorben Fontaine",
-          "club": "HDM",
-          "minuut": 22,
-          "type": "groen"
-        },
-        {
-          "naam": "Sam Spencer",
-          "club": "HDM",
-          "minuut": 37,
-          "type": "groen"
-        },
-        {
-          "naam": "Valentijn Charbon",
-          "club": "Laren",
-          "minuut": 46,
-          "type": "geel"
-        },
-        {
-          "naam": "Quinten Mooijen",
-          "club": "HDM",
-          "minuut": 48,
-          "type": "geel"
+          "club": "HDM H1",
+          "type": "groen",
+          "minuut": 23
         }
       ]
     },
@@ -7243,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:10.849Z"
+  "bijgewerkt": "2026-04-28T06:47:13.220Z"
 }
