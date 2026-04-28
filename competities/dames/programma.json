@@ -2952,19 +2952,19 @@
       "scorers": [
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Lana Kalse",
-          "club": "Pinoké",
+          "club": "Pinoké D1",
           "minuut": 38,
           "type": "veld"
         },
         {
           "naam": "Faye Muijderman",
-          "club": "HGC",
+          "club": "HGC D1",
           "minuut": 42,
           "type": "veld"
         }
@@ -5839,5 +5839,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:22.223Z"
+  "bijgewerkt": "2026-04-28T06:42:24.440Z"
 }
