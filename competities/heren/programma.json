@@ -1235,19 +1235,19 @@
         },
         {
           "naam": "Sander van de Putte",
-          "club": "Pinoké",
+          "club": "Kampong",
           "type": "groen",
           "minuut": 43
         },
         {
           "naam": "Jip Janssen",
-          "club": "Pinoké",
+          "club": "Kampong",
           "type": "groen",
           "minuut": 45
         },
         {
           "naam": "Bram van Battum",
-          "club": "Pinoké",
+          "club": "Kampong",
           "type": "geel",
           "minuut": 51
         }
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:50.375Z"
+  "bijgewerkt": "2026-04-28T06:44:52.721Z"
 }
