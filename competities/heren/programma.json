@@ -3234,25 +3234,25 @@
           "naam": "Pepijn Leenhouts",
           "club": "Schaerweijde H1",
           "minuut": 22,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Stijn Draaijer",
           "club": "Schaerweijde H1",
           "minuut": 37,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Jens Hagen",
           "club": "Schaerweijde H1",
           "minuut": 54,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Valentijn Charbon",
           "club": "Laren H1",
           "minuut": 55,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": []
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:00.263Z"
+  "bijgewerkt": "2026-04-28T06:46:02.401Z"
 }
