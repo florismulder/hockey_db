@@ -4387,38 +4387,38 @@
       "scorers": [
         {
           "naam": "Carlijn van Geest",
-          "club": "HGC",
-          "minuut": 3,
+          "club": "Oranje-Rood",
+          "minuut": 4,
           "type": "sc"
         },
         {
           "naam": "Julianna Tornetta",
           "club": "Oranje-Rood",
-          "minuut": 19,
+          "minuut": 20,
           "type": "sc"
         },
         {
           "naam": "Juul van der Velden",
-          "club": "Oranje-Rood",
-          "minuut": 27,
+          "club": "HGC",
+          "minuut": 28,
           "type": "sc"
         },
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 33,
+          "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Amy van den Bosch",
           "club": "HGC",
-          "minuut": 37,
+          "minuut": 38,
           "type": "sc"
         },
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 49,
+          "minuut": 50,
           "type": "sc"
         }
       ],
@@ -4426,26 +4426,26 @@
         {
           "naam": "Marta Segú Rueda",
           "club": "HGC",
-          "minuut": 20,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 21
         },
         {
           "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
-          "minuut": 23,
-          "type": "groen"
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 24
         },
         {
           "naam": "Faye Muijderman",
-          "club": "Oranje-Rood",
-          "minuut": 44,
-          "type": "groen"
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Pieke van de Pas",
           "club": "HGC",
-          "minuut": 48,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 49
         }
       ]
     },
@@ -5924,5 +5924,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:30.626Z"
+  "bijgewerkt": "2026-04-28T06:43:32.698Z"
 }
