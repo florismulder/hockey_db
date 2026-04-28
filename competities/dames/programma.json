@@ -1508,20 +1508,20 @@
         {
           "naam": "Isis van Loon",
           "club": "HGC",
-          "minuut": 13,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Carmen Victoria",
           "club": "Tilburg",
-          "minuut": 22,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 22
         },
         {
           "naam": "Bas Bogaard",
           "club": "HGC",
-          "minuut": 51,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 51
         }
       ]
     },
@@ -5823,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:22:36.712Z"
+  "bijgewerkt": "2026-04-28T06:22:39.025Z"
 }
