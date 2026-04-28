@@ -5791,59 +5791,35 @@
       "scorers": [
         {
           "naam": "Jip Janssen",
-          "club": "Kampong",
-          "minuut": 35,
+          "club": "Rotterdam H1",
+          "minuut": 36,
           "type": "sc"
         },
         {
           "naam": "Nick van Trigt",
-          "club": "Rotterdam",
-          "minuut": 36,
+          "club": "Rotterdam H1",
+          "minuut": 37,
           "type": "veld"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam",
-          "minuut": 41,
+          "club": "Rotterdam H1",
+          "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam",
-          "minuut": 56,
+          "club": "Kampong H1",
+          "minuut": 57,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Thijs van Dam",
-          "club": "Rotterdam",
-          "minuut": 12,
-          "type": "groen"
-        },
-        {
-          "naam": "Derck de Vilder",
-          "club": "Kampong",
-          "minuut": 18,
-          "type": "groen"
-        },
-        {
-          "naam": "Sander van de Putte",
-          "club": "Kampong",
-          "minuut": 21,
-          "type": "groen"
-        },
-        {
           "naam": "Bouwe Buitenhuis",
-          "club": "Rotterdam",
-          "minuut": 24,
-          "type": "groen"
-        },
-        {
-          "naam": "Bouwe Buitenhuis",
-          "club": "Rotterdam",
-          "minuut": 33,
-          "type": "geel"
+          "club": "Rotterdam H1",
+          "type": "geel",
+          "minuut": 34
         }
       ]
     },
@@ -7220,5 +7196,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:36.462Z"
+  "bijgewerkt": "2026-04-28T06:47:38.681Z"
 }
