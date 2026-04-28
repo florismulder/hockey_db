@@ -3778,13 +3778,13 @@
       "scorers": [
         {
           "naam": "Niels de Joode",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 25,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Nicolas Santiago Keenan",
-          "club": "Klein Zwitserland H1",
+          "club": "Klein Zwitserland",
           "minuut": 28,
           "type": "veld"
         }
@@ -3792,33 +3792,33 @@
       "kaarten": [
         {
           "naam": "Graeme Scott",
-          "club": "Schaerweijde H1",
-          "minuut": 15,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 15
         },
         {
           "naam": "Willem van Campen",
-          "club": "Klein Zwitserland H1",
-          "minuut": 41,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 41
         },
         {
           "naam": "Douwe Steens",
-          "club": "Klein Zwitserland H1",
-          "minuut": 56,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 56
         },
         {
           "naam": "Peppe Veen",
-          "club": "Schaerweijde H1",
-          "minuut": 56,
-          "type": "groen"
+          "club": "Schaerweijde",
+          "type": "groen",
+          "minuut": 56
         },
         {
           "naam": "Jelle Westendorp",
-          "club": "Schaerweijde H1",
-          "minuut": 57,
-          "type": "geel"
+          "club": "Schaerweijde",
+          "type": "geel",
+          "minuut": 57
         }
       ]
     },
@@ -7157,5 +7157,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:26.270Z"
+  "bijgewerkt": "2026-04-28T06:46:28.677Z"
 }
