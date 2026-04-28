@@ -5540,53 +5540,53 @@
       "scorers": [
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam",
-          "minuut": 14,
+          "club": "Rotterdam H1",
+          "minuut": 15,
           "type": "sc"
         },
         {
           "naam": "Tjep Hoedemakers",
-          "club": "Rotterdam",
-          "minuut": 26,
+          "club": "Rotterdam H1",
+          "minuut": 27,
           "type": "veld"
         },
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam",
-          "minuut": 34,
+          "club": "Rotterdam H1",
+          "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Olivier Hortensius",
-          "club": "Rotterdam",
-          "minuut": 43,
+          "club": "Rotterdam H1",
+          "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Olivier Hortensius",
-          "club": "Rotterdam",
-          "minuut": 43,
+          "club": "Rotterdam H1",
+          "minuut": 44,
           "type": "veld"
         },
         {
           "naam": "Nick van Trigt",
-          "club": "Rotterdam",
-          "minuut": 47,
+          "club": "Rotterdam H1",
+          "minuut": 48,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Noam Sheridan",
-          "club": "Hurley",
-          "minuut": 8,
-          "type": "groen"
+          "club": "Rotterdam H1",
+          "type": "groen",
+          "minuut": 9
         },
         {
           "naam": "Justen Blok",
-          "club": "Hurley",
-          "minuut": 11,
-          "type": "groen"
+          "club": "Rotterdam H1",
+          "type": "groen",
+          "minuut": 12
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:27.117Z"
+  "bijgewerkt": "2026-04-28T06:47:29.575Z"
 }
