@@ -3590,83 +3590,71 @@
       "scorers": [
         {
           "naam": "Steijn van Heijningen",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 7,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 8,
-          "type": "veld"
+          "type": "sb"
         },
         {
           "naam": "Timme van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Olivier Hortensius",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Jochem Bakker",
-          "club": "Klein Zwitserland H1",
+          "club": "Rotterdam",
           "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 37,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 39,
-          "type": "sc"
-        },
-        {
-          "naam": "Nick van Trigt",
-          "club": "Rotterdam H1",
-          "minuut": 45,
-          "type": "veld"
-        },
-        {
-          "naam": "Aki Käppeler",
-          "club": "Klein Zwitserland H1",
-          "minuut": 48,
           "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Guus Jansen",
-          "club": "Rotterdam H1",
-          "minuut": 26,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Steijn van Heijningen",
-          "club": "Rotterdam H1",
-          "minuut": 29,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Florent Vaal",
-          "club": "Klein Zwitserland H1",
-          "minuut": 35,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 35
         },
         {
           "naam": "Jochem Bakker",
-          "club": "Klein Zwitserland H1",
-          "minuut": 49,
-          "type": "geel"
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 49
         }
       ]
     },
@@ -7182,5 +7170,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:14.097Z"
+  "bijgewerkt": "2026-04-28T06:46:16.797Z"
 }
