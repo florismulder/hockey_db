@@ -6209,14 +6209,14 @@
         {
           "naam": "Floris Middendorp",
           "club": "Amsterdam",
-          "minuut": 26,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         },
         {
           "naam": "Pepijn Jones",
           "club": "Klein Zwitserland",
-          "minuut": 57,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 57
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:50:55.496Z"
+  "bijgewerkt": "2026-04-28T06:50:57.766Z"
 }
