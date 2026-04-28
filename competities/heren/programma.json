@@ -3389,13 +3389,13 @@
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley",
+          "club": "Laren",
           "minuut": 21,
           "type": "sc"
         },
         {
           "naam": "Joep Hagendoorn",
-          "club": "Laren",
+          "club": "Hurley",
           "minuut": 39,
           "type": "veld"
         },
@@ -3407,35 +3407,35 @@
         },
         {
           "naam": "Kenneth Bain",
-          "club": "Laren",
+          "club": "Hurley",
           "minuut": 50,
           "type": "veld"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley",
+          "club": "Laren",
           "minuut": 60,
-          "type": "sc"
+          "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Diederick van Berckel",
-          "club": "Laren",
-          "minuut": 42,
-          "type": "groen"
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 42
         },
         {
           "naam": "Valentijn Charbon",
           "club": "Laren",
-          "minuut": 48,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 48
         },
         {
           "naam": "Pieter Paul Houting",
-          "club": "Laren",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Hurley",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:09.420Z"
+  "bijgewerkt": "2026-04-28T06:46:11.782Z"
 }
