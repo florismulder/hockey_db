@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "3d55756b-67e3-4580-9005-226415aa72d4",
+      "naam": "Kampioen Amsterdam in wachtkamer  ‘We moeten grote jongens zijn'",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-04-28T19:16:15.489Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "a7495b59-aede-46cc-b17d-f182f6c9f383",
       "naam": "Koploper Oranje Rood breekt clubrecord (70 goals)   Tulp Hoofdklasse",
       "velden": {
