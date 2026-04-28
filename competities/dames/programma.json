@@ -1266,13 +1266,13 @@
       "scorers": [
         {
           "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 56,
           "type": "sb"
         },
         {
           "naam": "Bente van der Veldt",
-          "club": "Kampong",
+          "club": "Kampong D1",
           "minuut": 58,
           "type": "veld"
         }
@@ -1281,14 +1281,14 @@
         {
           "naam": "Lilli de Nooijer",
           "club": "Bloemendaal",
-          "minuut": 27,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 27
         },
         {
           "naam": "Noor van den Nieuwenhof",
-          "club": "Kampong",
-          "minuut": 48,
-          "type": "groen"
+          "club": "Kampong D1",
+          "type": "groen",
+          "minuut": 48
         }
       ]
     },
@@ -5820,5 +5820,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:36:16.559Z"
+  "bijgewerkt": "2026-04-28T05:46:22.361Z"
 }
