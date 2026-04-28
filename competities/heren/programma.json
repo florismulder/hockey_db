@@ -4932,70 +4932,70 @@
         {
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
-          "minuut": 5,
+          "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Tom Schneider",
           "club": "Klein Zwitserland",
-          "minuut": 15,
+          "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Eduard De Ignacio - Simó",
           "club": "Den Bosch",
-          "minuut": 20,
+          "minuut": 21,
           "type": "veld"
         },
         {
           "naam": "Willem van Campen",
           "club": "Klein Zwitserland",
-          "minuut": 25,
+          "minuut": 26,
           "type": "veld"
         },
         {
           "naam": "Timo Boers",
           "club": "Den Bosch",
-          "minuut": 35,
+          "minuut": 36,
           "type": "sc"
         },
         {
           "naam": "Max Kreft",
           "club": "Den Bosch",
-          "minuut": 52,
+          "minuut": 53,
           "type": "veld"
         }
       ],
       "kaarten": [
         {
           "naam": "Nicolas Santiago Keenan",
-          "club": "Den Bosch",
-          "minuut": 29,
-          "type": "geel"
+          "club": "Klein Zwitserland",
+          "type": "geel",
+          "minuut": 30
         },
         {
           "naam": "Douwe Steens",
           "club": "Klein Zwitserland",
-          "minuut": 54,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 55
         },
         {
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
-          "minuut": 57,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 58
         },
         {
           "naam": "Pepijn Reyenga",
           "club": "Klein Zwitserland",
-          "minuut": 58,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 59
         },
         {
           "naam": "Nicolas Santiago Keenan",
-          "club": "Den Bosch",
-          "minuut": 59,
-          "type": "geel"
+          "club": "Klein Zwitserland",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:15.451Z"
+  "bijgewerkt": "2026-04-28T06:47:17.757Z"
 }
