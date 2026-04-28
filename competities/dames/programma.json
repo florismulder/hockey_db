@@ -2211,6 +2211,49 @@
       "kaarten": []
     },
     {
+      "thuis": "HDM",
+      "uit": "HGC",
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2025-10-26",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 21,
+          "type": "sc"
+        },
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Marta Segú Rueda",
+          "club": "HGC",
+          "minuut": 35,
+          "type": "veld"
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 59,
+          "type": "sb"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roolaart",
+          "club": "HGC",
+          "type": "groen",
+          "minuut": 51
+        }
+      ]
+    },
+    {
       "thuis": "Bloemendaal",
       "uit": "HGC",
       "score_thuis": 1,
@@ -5816,5 +5859,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:40:40.765Z"
+  "bijgewerkt": "2026-04-28T06:40:42.885Z"
 }
