@@ -2364,43 +2364,43 @@
       "scorers": [
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 14,
           "type": "sc"
         },
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 20,
           "type": "veld"
         },
         {
           "naam": "Timo Boers",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 26,
           "type": "sb"
         },
         {
           "naam": "Thomas Sorsby",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 29,
           "type": "sc"
         },
         {
           "naam": "Pepijn van der Heijden",
-          "club": "Rotterdam H1",
+          "club": "Rotterdam",
           "minuut": 32,
           "type": "sc"
         },
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 45,
           "type": "sc"
         },
         {
           "naam": "Thierry Brinkman",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 54,
           "type": "veld"
         }
@@ -2408,21 +2408,21 @@
       "kaarten": [
         {
           "naam": "Max Kreft",
-          "club": "Den Bosch H1",
-          "minuut": 13,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 13
         },
         {
           "naam": "Thijs van Dam",
-          "club": "Rotterdam H1",
-          "minuut": 16,
-          "type": "groen"
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 16
         },
         {
           "naam": "Jaïr van der Horst",
-          "club": "Den Bosch H1",
-          "minuut": 40,
-          "type": "groen"
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 40
         }
       ]
     },
@@ -7214,5 +7214,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:19.962Z"
+  "bijgewerkt": "2026-04-28T06:45:22.297Z"
 }
