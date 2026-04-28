@@ -1410,8 +1410,8 @@
         {
           "naam": "Fleur Loomans",
           "club": "Hurley",
-          "minuut": 56,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 56
         }
       ]
     },
@@ -5814,5 +5814,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:36:10.689Z"
+  "bijgewerkt": "2026-04-28T05:36:12.651Z"
 }
