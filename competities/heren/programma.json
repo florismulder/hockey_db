@@ -1449,7 +1449,7 @@
           "naam": "Chris Taberima",
           "club": "HDM H1",
           "minuut": 27,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Guus van den Boezem",
@@ -1462,14 +1462,14 @@
         {
           "naam": "Mick Bosse",
           "club": "Schaerweijde H1",
-          "minuut": 26,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 26
         },
         {
           "naam": "Juup Veen",
-          "club": "HDM H1",
-          "minuut": 52,
-          "type": "groen"
+          "club": "Schaerweijde H1",
+          "type": "groen",
+          "minuut": 52
         }
       ]
     },
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:54.957Z"
+  "bijgewerkt": "2026-04-28T06:44:57.131Z"
 }
