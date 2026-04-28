@@ -2007,43 +2007,43 @@
       "scorers": [
         {
           "naam": "Arno van Dessel",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Zachary Wallace",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 20,
           "type": "veld"
         },
         {
           "naam": "Bob de Voogd",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 42,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 48,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 52,
           "type": "veld"
         },
         {
           "naam": "Floris Wortelboer",
-          "club": "Bloemendaal H1",
+          "club": "Bloemendaal",
           "minuut": 60,
           "type": "veld"
         }
@@ -7214,5 +7214,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:17.646Z"
+  "bijgewerkt": "2026-04-28T06:45:19.962Z"
 }
