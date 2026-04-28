@@ -1346,41 +1346,47 @@
       "scorers": [
         {
           "naam": "Myrthe van Kesteren",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Julia Duffhuis",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 47,
           "type": "sc"
         },
         {
           "naam": "Julie van Dam",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 53,
           "type": "sb"
         }
       ],
       "kaarten": [
         {
+          "naam": "Amber van den Dijssel",
+          "club": "Rotterdam D1",
+          "type": "groen",
+          "minuut": 45
+        },
+        {
           "naam": "Melle Vaessen",
-          "club": "Rotterdam",
-          "minuut": 46,
-          "type": "groen"
+          "club": "HDM D1",
+          "type": "groen",
+          "minuut": 46
         },
         {
           "naam": "Floor Holzenbosch",
-          "club": "HDM",
-          "minuut": 46,
-          "type": "geel"
+          "club": "HDM D1",
+          "type": "geel",
+          "minuut": 46
         },
         {
           "naam": "Daphne Koolhaas",
-          "club": "Rotterdam",
-          "minuut": 56,
-          "type": "geel"
+          "club": "HDM D1",
+          "type": "geel",
+          "minuut": 56
         }
       ]
     },
@@ -5814,5 +5820,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:36:12.651Z"
+  "bijgewerkt": "2026-04-28T05:36:14.661Z"
 }
