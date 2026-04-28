@@ -5011,37 +5011,37 @@
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 17,
+          "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
           "club": "Oranje-Rood",
-          "minuut": 30,
+          "minuut": 31,
           "type": "sc"
         },
         {
           "naam": "Borja LaCalle",
           "club": "Oranje-Rood",
-          "minuut": 39,
+          "minuut": 40,
           "type": "sc"
         },
         {
           "naam": "Boris Burkhardt",
           "club": "Amsterdam",
-          "minuut": 46,
+          "minuut": 47,
           "type": "veld"
         },
         {
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam",
-          "minuut": 50,
+          "minuut": 51,
           "type": "sc"
         },
         {
           "naam": "Dayaan Cassiem",
           "club": "Amsterdam",
-          "minuut": 54,
+          "minuut": 55,
           "type": "veld"
         }
       ],
@@ -5049,32 +5049,32 @@
         {
           "naam": "Robbert Kemperman",
           "club": "Amsterdam",
-          "minuut": 27,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 28
         },
         {
           "naam": "Mustapha Cassiem",
           "club": "Amsterdam",
-          "minuut": 28,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 29
         },
         {
           "naam": "Luke Dommershuijzen",
           "club": "Amsterdam",
-          "minuut": 41,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 42
         },
         {
           "naam": "Gerard Clapes",
           "club": "Oranje-Rood",
-          "minuut": 46,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 47
         },
         {
           "naam": "Arthur de Sloover",
           "club": "Oranje-Rood",
-          "minuut": 49,
-          "type": "geel"
+          "type": "geel",
+          "minuut": 50
         }
       ]
     },
@@ -7219,5 +7219,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:13.220Z"
+  "bijgewerkt": "2026-04-28T06:47:15.451Z"
 }
