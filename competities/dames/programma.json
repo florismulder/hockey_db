@@ -86,6 +86,61 @@
       ]
     },
     {
+      "thuis": "Tilburg",
+      "uit": "HDM",
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2025-03-15",
+      "tijdstip": "12:45",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "minuut": 7,
+          "type": "sb"
+        },
+        {
+          "naam": "Kaat Walhof",
+          "club": "HDM",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Carolin Hoffmann",
+          "club": "Tilburg",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Julia Duffhuis",
+          "club": "HDM",
+          "minuut": 53,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 27
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "type": "geel",
+          "minuut": 33
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 43
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 4,
@@ -5868,5 +5923,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:13.093Z"
+  "bijgewerkt": "2026-04-28T06:43:15.197Z"
 }
