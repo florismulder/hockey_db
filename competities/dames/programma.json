@@ -2545,35 +2545,21 @@
       "scorers": [
         {
           "naam": "Carmen Victoria",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Emma van Santbrink",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 24,
           "type": "sc"
         },
         {
           "naam": "Jaidy Greebe",
-          "club": "Rotterdam",
+          "club": "Rotterdam D1",
           "minuut": 41,
           "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Lotte de Heer",
-          "club": "Tilburg",
-          "minuut": 41,
-          "type": "groen"
-        },
-        {
-          "naam": "Isis van der Kooij",
-          "club": "Rotterdam",
-          "minuut": 55,
-          "type": "groen"
         }
       ]
     },
@@ -5859,5 +5845,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:04.704Z"
+  "bijgewerkt": "2026-04-28T06:42:06.855Z"
 }
