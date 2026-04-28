@@ -5976,48 +5976,35 @@
         {
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland",
-          "minuut": 11,
+          "minuut": 12,
           "type": "sc"
         },
         {
           "naam": "Willem van Campen",
           "club": "Klein Zwitserland",
-          "minuut": 23,
+          "minuut": 24,
           "type": "veld"
         },
         {
           "naam": "Ties Klinkhamer",
           "club": "Klein Zwitserland",
-          "minuut": 26,
-          "type": "veld"
+          "minuut": 27,
+          "type": "sc"
         },
         {
           "naam": "Aki Käppeler",
           "club": "Klein Zwitserland",
-          "minuut": 39,
-          "type": "veld"
+          "minuut": 40,
+          "type": "sc"
         },
         {
           "naam": "Luke Friederich",
           "club": "Laren",
-          "minuut": 55,
+          "minuut": 56,
           "type": "veld"
         }
       ],
-      "kaarten": [
-        {
-          "naam": "Wout Kooijman",
-          "club": "Klein Zwitserland",
-          "minuut": 35,
-          "type": "groen"
-        },
-        {
-          "naam": "Chad Futcher",
-          "club": "Klein Zwitserland",
-          "minuut": 49,
-          "type": "groen"
-        }
-      ]
+      "kaarten": []
     },
     {
       "thuis": "Bloemendaal",
@@ -7233,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:47:43.096Z"
+  "bijgewerkt": "2026-04-28T06:47:45.460Z"
 }
