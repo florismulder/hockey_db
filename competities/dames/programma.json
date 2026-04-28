@@ -3720,25 +3720,25 @@
       "scorers": [
         {
           "naam": "Mikki Roberts",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 4,
           "type": "sc"
         },
         {
           "naam": "Margje van der Loo",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 16,
           "type": "veld"
         },
         {
           "naam": "Thirsa Kho",
-          "club": "Oranje-Rood",
+          "club": "Oranje-Rood D1",
           "minuut": 56,
           "type": "sc"
         },
         {
           "naam": "Mikki Roberts",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 59,
           "type": "sc"
         }
@@ -3746,21 +3746,15 @@
       "kaarten": [
         {
           "naam": "Margje van der Loo",
-          "club": "Oranje-Rood",
-          "minuut": 14,
-          "type": "groen"
-        },
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 22,
-          "type": "groen"
+          "club": "Oranje-Rood D1",
+          "type": "groen",
+          "minuut": 14
         },
         {
           "naam": "Jolien Bogers",
-          "club": "Oranje-Rood",
-          "minuut": 42,
-          "type": "groen"
+          "club": "Oranje-Rood D1",
+          "type": "groen",
+          "minuut": 42
         }
       ]
     },
@@ -5874,5 +5868,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:06.677Z"
+  "bijgewerkt": "2026-04-28T06:43:08.824Z"
 }
