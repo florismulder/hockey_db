@@ -6231,13 +6231,13 @@
       "scorers": [
         {
           "naam": "Texas Bukkens",
-          "club": "Pinoké",
+          "club": "Laren",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Indra Aerts",
-          "club": "Pinoké",
+          "club": "Laren",
           "minuut": 7,
           "type": "veld"
         },
@@ -6261,7 +6261,7 @@
         },
         {
           "naam": "Teun van Uunen",
-          "club": "Laren",
+          "club": "Pinoké",
           "minuut": 37,
           "type": "sc"
         },
@@ -6269,11 +6269,11 @@
           "naam": "Joep Troost",
           "club": "Pinoké",
           "minuut": 39,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren",
+          "club": "Pinoké",
           "minuut": 44,
           "type": "sc"
         }
@@ -7220,5 +7220,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:50:53.407Z"
+  "bijgewerkt": "2026-04-28T06:50:55.496Z"
 }
