@@ -5038,7 +5038,7 @@
       "scorers": [
         {
           "naam": "Emmely Bekker",
-          "club": "Tilburg",
+          "club": "Tilburg D1",
           "minuut": 31,
           "type": "veld"
         },
@@ -5052,39 +5052,39 @@
       "kaarten": [
         {
           "naam": "Precious Oud",
-          "club": "Tilburg",
-          "minuut": 33,
-          "type": "groen"
+          "club": "Tilburg D1",
+          "type": "groen",
+          "minuut": 33
         },
         {
           "naam": "Malou Nanninga",
           "club": "Bloemendaal",
-          "minuut": 34,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 34
         },
         {
           "naam": "Maud Preyde",
           "club": "Bloemendaal",
-          "minuut": 40,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 40
         },
         {
           "naam": "Pleun Wester",
-          "club": "Tilburg",
-          "minuut": 45,
-          "type": "groen"
+          "club": "Tilburg D1",
+          "type": "groen",
+          "minuut": 45
         },
         {
           "naam": "Ankelein Baardemans",
           "club": "Bloemendaal",
-          "minuut": 55,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 55
         },
         {
           "naam": "Precious Oud",
-          "club": "Tilburg",
-          "minuut": 59,
-          "type": "geel"
+          "club": "Tilburg D1",
+          "type": "geel",
+          "minuut": 59
         }
       ]
     },
@@ -5911,5 +5911,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:43:54.352Z"
+  "bijgewerkt": "2026-04-28T06:43:56.357Z"
 }
