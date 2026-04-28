@@ -3833,19 +3833,19 @@
       "scorers": [
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 17,
           "type": "veld"
         },
         {
           "naam": "Koen Bijen",
-          "club": "Den Bosch H1",
+          "club": "Den Bosch",
           "minuut": 28,
           "type": "veld"
         },
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 49,
           "type": "sc"
         }
@@ -3853,15 +3853,15 @@
       "kaarten": [
         {
           "naam": "Struan Walker",
-          "club": "Oranje-Rood H1",
-          "minuut": 25,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 25
         },
         {
           "naam": "Mees Kurvers",
-          "club": "Den Bosch H1",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Den Bosch",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7150,5 +7150,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:46:37.936Z"
+  "bijgewerkt": "2026-04-28T06:46:40.391Z"
 }
