@@ -3070,12 +3070,6 @@
           "naam": "Sanne Koolen",
           "club": "Den Bosch",
           "minuut": 9,
-          "type": "sc"
-        },
-        {
-          "naam": "Sanne Koks",
-          "club": "Tilburg",
-          "minuut": 14,
           "type": "veld"
         },
         {
@@ -3125,38 +3119,14 @@
           "club": "Den Bosch",
           "minuut": 50,
           "type": "veld"
-        },
-        {
-          "naam": "Daphne Nikkels",
-          "club": "Tilburg",
-          "minuut": 55,
-          "type": "veld"
         }
       ],
       "kaarten": [
         {
-          "naam": "Lotte de Heer",
-          "club": "Tilburg",
-          "minuut": 24,
-          "type": "groen"
-        },
-        {
           "naam": "Rosa Fernig",
           "club": "Den Bosch",
-          "minuut": 26,
-          "type": "groen"
-        },
-        {
-          "naam": "Hannah Salden",
-          "club": "Tilburg",
-          "minuut": 45,
-          "type": "groen"
-        },
-        {
-          "naam": "Elke Brinkman-Boers",
-          "club": "Den Bosch",
-          "minuut": 56,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 26
         }
       ]
     },
@@ -5839,5 +5809,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:42:38.221Z"
+  "bijgewerkt": "2026-04-28T06:42:40.329Z"
 }
