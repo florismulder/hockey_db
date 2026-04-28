@@ -6486,13 +6486,13 @@
       "scorers": [
         {
           "naam": "Derck de Vilder",
-          "club": "Kampong",
+          "club": "Hurley",
           "minuut": 18,
           "type": "veld"
         },
         {
           "naam": "Fred Newbold",
-          "club": "Hurley",
+          "club": "Kampong",
           "minuut": 28,
           "type": "sc"
         },
@@ -7094,5 +7094,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T07:07:03.983Z"
+  "bijgewerkt": "2026-04-28T07:11:58.365Z"
 }
