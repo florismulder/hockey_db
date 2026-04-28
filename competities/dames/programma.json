@@ -2228,7 +2228,7 @@
         },
         {
           "naam": "Tessa Beetsma",
-          "club": "Pinoké",
+          "club": "Oranje-Rood",
           "minuut": 15,
           "type": "veld"
         },
@@ -2246,7 +2246,7 @@
         },
         {
           "naam": "Babs van Hest",
-          "club": "Oranje-Rood",
+          "club": "Pinoké",
           "minuut": 52,
           "type": "veld"
         },
@@ -2260,21 +2260,21 @@
       "kaarten": [
         {
           "naam": "Tessa Beetsma",
-          "club": "Pinoké",
-          "minuut": 35,
-          "type": "groen"
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 35
         },
         {
           "naam": "Brechje Scheepers",
-          "club": "Oranje-Rood",
-          "minuut": 43,
-          "type": "groen"
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 43
         },
         {
           "naam": "Vivienne Peters",
           "club": "Oranje-Rood",
-          "minuut": 57,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 57
         }
       ]
     },
@@ -5919,5 +5919,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:44:13.690Z"
+  "bijgewerkt": "2026-04-28T06:50:08.050Z"
 }
