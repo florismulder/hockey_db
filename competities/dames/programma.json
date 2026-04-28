@@ -1330,8 +1330,8 @@
         {
           "naam": "Lilly Stoffelsma",
           "club": "HGC",
-          "minuut": 49,
-          "type": "groene kaart"
+          "type": "groen",
+          "minuut": 49
         }
       ]
     },
@@ -5820,5 +5820,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T05:36:14.661Z"
+  "bijgewerkt": "2026-04-28T05:36:16.559Z"
 }
