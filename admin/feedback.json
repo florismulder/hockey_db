@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug. Ze miste vorig jaar in 2025 de EHL, play-offs en EK door hamstringblessures.",
+      "bron_zin": "Die heeft dan ook de laatste tijd een behoorlijke lijst met blessures achter de rug",
+      "origineel": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug."
+    },
+    {
+      "bullet": "Lisa Post viel uit met een op het oog heftige duimblessure, op 26-04-26 in duel tegen Amsterdam. Ze liep de blessure op bij het uitlopen van een strafcorner. SCHC won de wedstrijd met 0-1.",
+      "bron_zin": "het uitvallen van verdediger Lisa Post, met een - op het oog - heftige duimblessure.",
+      "origineel": "Lisa Post viel uit met een op het oog heftige duimblessure."
+    },
+    {
       "bullet": "Timo Boers scoorde zijn zevende hattrick in zijn Bossche carrière, op 26-04-26 tegen Hurley (5-1). Hij evenaart hiermee het clubrecord van Piet-Hein Geeris.",
       "bron_zin": "Met zijn zevende hattrick in zijn Bossche carrière had Timo Boers een groot aandeel",
       "origineel": "Timo Boers scoorde zijn zevende hattrick in zijn Bossche carrière."
@@ -223,16 +233,6 @@
       "bullet": "Iris Langejans (Rotterdam) transfereert zomer 26 van Rotterdam naar de Duitse club Mannheimer HC.",
       "bron_zin": "Iris Langejans komt over van Rotterdam.",
       "origineel": "Iris Langejans (Rotterdam) transfereert van Rotterdam naar de Duitse club Mannheimer HC."
-    },
-    {
-      "bullet": "Marc Boltó Gimó (HDM) transfereert zomer 26 van HDM naar de Duitse club Mannheimer HC. Hij speelde op de OS van 21. ",
-      "bron_zin": "De Spaanse ex-international Marc Bolto gaat van HDM naar de Duitse club",
-      "origineel": "Marc Boltó Gimó (HDM) transfereert van HDM naar de Duitse club Mannheimer HC."
-    },
-    {
-      "bullet": "Jaïr van der Horst (Den Bosch) keert komend seizoen, vanaf zomer 26, terug bij zijn jeugdclub Oranje-Rood.",
-      "bron_zin": "Jaïr van der Horst keert komend seizoen terug bij Oranje-Rood.",
-      "origineel": "Jaïr van der Horst (Den Bosch) keert komend seizoen terug bij zijn jeugdclub Oranje-Rood."
     }
   ],
   "verborgen_bullets": []
