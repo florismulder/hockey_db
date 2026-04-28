@@ -3268,43 +3268,43 @@
       "scorers": [
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 4,
           "type": "veld"
         },
         {
           "naam": "Pol Cabre-Verdiell Badia",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 7,
           "type": "veld"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 22,
           "type": "veld"
         },
         {
           "naam": "Tijmen Reyenga",
-          "club": "Hurley H1",
+          "club": "Oranje-Rood",
           "minuut": 30,
           "type": "sc"
         },
         {
           "naam": "Borja LaCalle",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 35,
           "type": "veld"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Hurley H1",
+          "club": "Hurley",
           "minuut": 36,
           "type": "sc"
         },
         {
           "naam": "Henrik Mertgens",
-          "club": "Oranje-Rood H1",
+          "club": "Oranje-Rood",
           "minuut": 58,
           "type": "veld"
         }
@@ -7182,5 +7182,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:45:57.905Z"
+  "bijgewerkt": "2026-04-28T06:46:00.263Z"
 }
