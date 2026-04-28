@@ -6863,44 +6863,71 @@
       }
     },
     {
-      "datum": "2026-04-26",
-      "tijdstip": "15:00",
       "thuis": "Laren",
       "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Bo Verwer",
-          "Job Baan"
-        ],
-        "stats_thuis": [
-          "Laren is de nummer 11 van de Tulp Hoofdklasse.",
-          "Laren strijdt met hekkensluiter Hurley tegen rechtstreekse degradatie uit de Hoofdklasse.",
-          "Laren verloor zijn laatste acht wedstrijden in de Hoofdklasse en wacht al elf duels op een zege.",
-          "De laatste zege van Laren stamt van 26 oktober 2025, thuis tegen Bloemendaal.",
-          "Laren verloor zijn laatste acht Hoofdklasse wedstrijden en kreeg gemiddeld bijna vijf doelpunten tegen.",
-          "Laren verloor zijn laatste vijf thuiswedstrijden en incasseerde daarbij gemiddeld vier doelpunten per duel."
-        ],
-        "stats_uit": [
-          "Rotterdam is de nummer 2 van de Tulp Hoofdklasse.",
-          "Rotterdam verloor vorige week de topper tegen Oranje-Rood, wat een einde maakte aan zes overwinningen op rij.",
-          "Rotterdam heeft een zegereeks van vier uitduels op rij gewonnen.",
-          "Rotterdam is met 74 doelpunten uit negentien duels de meest trefzekere ploeg in de Hoofdklasse.",
-          "Rotterdam heeft nog negen doelpunten nodig om het clubrecord van 82 goals uit 2016-2017 te verbeteren.",
-          "Rotterdam-aanvaller Olivier Hortensius voert samen met Miles Bukkens het assist-klassement aan."
-        ],
-        "stats_onderling": [
-          "Rotterdam won de heenwedstrijd op 30 oktober 2025 met 6-2, met liefst acht verschillende doelpuntenmakers.",
-          "Laren won slechts één van de negentien Hoofdklasse duels tegen Rotterdam (G4 V14).",
-          "Sinds de laatste Laren-zege won Rotterdam alle acht daaropvolgende onderonsjes, met 33 goals.",
-          "De grootste zege van Rotterdam bij Laren was 3-7 (7 oktober 2023), met een hattrick van Tjep Hoedemakers.",
-          "Rotterdam maakte zestien goals in zijn laatste drie uitduels met Laren.",
-          "De negen eerdere edities van Laren-Rotterdam in de Hoofdklasse waren goed voor 61 doelpunten."
-        ],
-        "bijgewerkt": "2026-04-24"
-      }
+      "score_thuis": 1,
+      "score_uit": 7,
+      "datum": "2026-04-26",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Laren",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam",
+          "minuut": 10,
+          "type": "sc"
+        },
+        {
+          "naam": "Matthijs van der Wielen",
+          "club": "Rotterdam",
+          "minuut": 15,
+          "type": "veld"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Thomas Vis",
+          "club": "Rotterdam",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 50,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Luke Friederich",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 49
+        }
+      ]
     },
     {
       "thuis": "Oranje-Rood",
@@ -7301,5 +7328,5 @@
       ]
     }
   ],
-  "bijgewerkt": "2026-04-28T06:56:15.879Z"
+  "bijgewerkt": "2026-04-28T06:56:18.199Z"
 }
