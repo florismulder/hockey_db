@@ -1897,14 +1897,14 @@
         {
           "naam": "Lotte Beetsma",
           "club": "HDM",
-          "minuut": 3,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 3
         },
         {
           "naam": "Teuntje Horn",
           "club": "Hurley",
-          "minuut": 31,
-          "type": "groen"
+          "type": "groen",
+          "minuut": 31
         }
       ]
     },
@@ -5823,5 +5823,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T06:39:46.493Z"
+  "bijgewerkt": "2026-04-28T06:39:48.843Z"
 }
