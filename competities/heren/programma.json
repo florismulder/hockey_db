@@ -6863,21 +6863,21 @@
         },
         {
           "naam": "Marco Miltkau",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 22,
           "type": "veld"
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "minuut": 45,
-          "type": "sc"
+          "type": "strafcorner"
         }
       ],
       "kaarten": [
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "type": "groen",
           "minuut": 15
         },
@@ -6895,23 +6895,30 @@
         },
         {
           "naam": "Elian Mazkour",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "type": "geel",
           "minuut": 49
         },
         {
           "naam": "Jasper Brinkman",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "type": "geel",
           "minuut": 55
         },
         {
           "naam": "Floris Wortelboer",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal H1",
           "type": "geel",
           "minuut": 57
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 57,
+          "type": "geel"
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "datum": "2026-05-03",
