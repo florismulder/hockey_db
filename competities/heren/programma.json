@@ -6930,13 +6930,59 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-03",
-      "tijdstip": "15:00",
       "thuis": "Rotterdam",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam",
+          "minuut": 3,
+          "type": "sc"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam",
+          "minuut": 13,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 22,
+          "type": "sc"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 41,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 45
+        },
+        {
+          "naam": "Guus Jansen",
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 49
+        }
+      ]
     },
     {
       "thuis": "Schaerweijde",
@@ -7290,5 +7336,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:58:12.114Z"
+  "bijgewerkt": "2026-05-04T18:58:14.091Z"
 }
