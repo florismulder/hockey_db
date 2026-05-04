@@ -5526,13 +5526,46 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "Den Bosch",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 1,
+          "type": "veld"
+        },
+        {
+          "naam": "Guusje Moes",
+          "club": "Kampong",
+          "minuut": 9,
+          "type": "veld"
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Eline Jansen",
+          "club": "Kampong",
+          "minuut": 26,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 53,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "thuis": "SCHC",
@@ -5800,5 +5833,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:21:42.081Z"
+  "bijgewerkt": "2026-05-04T18:21:43.951Z"
 }
