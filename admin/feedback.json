@@ -1,6 +1,26 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Phileine Hazen werd december 25 wereldkampioen met Jong Oranje.",
+      "bron_zin": "Met Jong Oranje werd Hazen afgelopen december wereldkampioen.",
+      "origineel": "Phileine Hazen werd afgelopen december wereldkampioen met Jong Oranje."
+    },
+    {
+      "bullet": "Phileine Hazen werd vorig jaar kampioen van de Promotieklasse met Bloemendaal. Seizoen 24-25. Phileine Hazen won eerder deze maand de Gold Cup met Bloemendaal.",
+      "bron_zin": "Met De Mussen werd ze vorig jaar kampioen van de Promotieklasse",
+      "origineel": "Phileine Hazen werd vorig jaar kampioen van de Promotieklasse met Bloemendaal."
+    },
+    {
+      "bullet": "Phileine Hazen van Bloemendaal wordt de opvolger van Elodie Picard bij SCHC. Elodie Picard speelt komend seizoen in België bij Leuven. Elodie Picard kwam na de winterstop niet meer in actie door een zware knieblessure.",
+      "bron_zin": "Phileine Hazen wordt de opvolger van Picard.",
+      "origineel": "Phileine Hazen wordt de opvolger van Elodie Picard bij SCHC."
+    },
+    {
+      "bullet": "Phileine Hazen wordt de opvolger van Elodie Picard bij SCHC. Elodie Picard vertrekt volgend seizoen bij SCHC. Elodie Picard speelt komend seizoen in België bij Leuven. Elodie Picard kwam na de winterstop niet meer in actie door een zware knieblessure.",
+      "bron_zin": "De Bilthovenaren nemen afscheid van eerste keus Elodie Picard.",
+      "origineel": "Elodie Picard vertrekt volgend seizoen bij SCHC."
+    },
+    {
       "bullet": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal, op 26-04-26. Het werd 2-2.",
       "bron_zin": "Hij kreeg geel, net als Mustapha Cassiem die woest op Wortelboer afkwam.",
       "origineel": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal."
@@ -214,25 +234,6 @@
       "bullet": "Koen Bijen scoorde op 19 april een hattrick tegen Schaerweijde.",
       "bron_zin": "en een hattrick van Koen Bijen werd het in de Zeister Kuil 1-8.",
       "origineel": "Koen Bijen scoorde een hattrick tegen Schaerweijde."
-    },
-    {
-      "bullet": "Timo Boers scoorde vier doelpunten op 19 april 26 tegen Schaerweijde en tilde zijn seizoentotaal naar 24.",
-      "bron_zin": "Mede dankzij vier doelpunten van Timo Boers, die zijn seizoentotaal tilde naar 24 doelpunten",
-      "origineel": "Timo Boers scoorde vier doelpunten en tilde zijn seizoentotaal naar 24."
-    },
-    {
-      "bullet": "Struan Walker verbrak het clubrecord van Mink van der Weerden met 26 doelpunten in één seizoen, op 19 april 26.",
-      "bron_zin": "Daarmee staat hij inmiddels op 26 doelpunten en heeft hij het clubrecord van Mink van der Weerden verbroken.",
-      "origineel": "Struan Walker verbrak het clubrecord van Mink van der Weerden met 26 doelpunten in één seizoen."
-    },
-    {
-      "bullet": "Thierry Brinkman is toegetreden tot de Athletes Commission van het European Olympic Committees (EOC), april 26",
-      "bron_zin": "De hockeyer van HC Den Bosch is onlangs toegetreden tot de Athletes Commission van het European Olympic Committees (EOC).",
-      "origineel": "Thierry Brinkman is toegetreden tot de Athletes Commission van het European Olympic Committees (EOC)."
-    },
-    {
-      "bullet": "Diana Beemster was als reservekeepster ook onderdeel van het Gold Cup winnende team in 2018.",
-      "bron_zin": "reservekeepster Diana Beemster — destijds nog de heldin in de finale tegen HDM, die op shoot-outs werd beslist"
     }
   ],
   "verborgen_bullets": []
