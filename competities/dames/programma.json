@@ -5543,49 +5543,50 @@
       "scorers": [
         {
           "naam": "Roos Alkemade",
-          "club": "HDM",
+          "club": "HDM D1",
           "minuut": 24,
           "type": "veld"
         },
         {
           "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal D1",
           "minuut": 43,
-          "type": "sc"
+          "type": "strafcorner"
         },
         {
           "naam": "Demi Hilterman",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal D1",
           "minuut": 57,
-          "type": "sc"
+          "type": "strafcorner"
         }
       ],
       "kaarten": [
         {
           "naam": "Mijntje van Campen",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal D1",
           "type": "groen",
           "minuut": 30
         },
         {
           "naam": "Maud Preyde",
-          "club": "Bloemendaal",
+          "club": "Bloemendaal D1",
           "type": "groen",
           "minuut": 40
         },
         {
           "naam": "Tessa Clasener",
-          "club": "Bloemendaal",
+          "club": "HDM D1",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Belén van den Broek",
-          "club": "Bloemendaal",
+          "club": "HDM D1",
           "type": "groen",
           "minuut": 41
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Pinoké",
