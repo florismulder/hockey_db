@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "310763b8-7ffb-48f6-b4b3-de27a18247d8",
+      "naam": "Carrousel HK  Dylan Lucieer naar Kampong, Julie van Dam stopt",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-04T18:47:26.286Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "3d55756b-67e3-4580-9005-226415aa72d4",
       "naam": "Kampioen Amsterdam in wachtkamer  ‘We moeten grote jongens zijn'",
       "velden": {
