@@ -6939,13 +6939,77 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-03",
-      "tijdstip": "15:00",
       "thuis": "Schaerweijde",
       "uit": "Laren",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 4,
+      "score_uit": 3,
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Daan Troost",
+          "club": "Schaerweijde",
+          "minuut": 30,
+          "type": "sc"
+        },
+        {
+          "naam": "Stijn Draaijer",
+          "club": "Schaerweijde",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn Leenhouts",
+          "club": "Schaerweijde",
+          "minuut": 35,
+          "type": "sc"
+        },
+        {
+          "naam": "Juup Veen",
+          "club": "Laren",
+          "minuut": 46,
+          "type": "veld"
+        },
+        {
+          "naam": "Kenneth Bain",
+          "club": "Schaerweijde",
+          "minuut": 47,
+          "type": "sc"
+        },
+        {
+          "naam": "Stan Thoolen",
+          "club": "Laren",
+          "minuut": 51,
+          "type": "veld"
+        },
+        {
+          "naam": "Kenneth Bain",
+          "club": "Laren",
+          "minuut": 55,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Balder Reyenga",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 30
+        },
+        {
+          "naam": "Niels de Joode",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 41
+        },
+        {
+          "naam": "Peppe Veen",
+          "club": "Laren",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
     },
     {
       "thuis": "Hurley",
@@ -7226,5 +7290,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:58:10.192Z"
+  "bijgewerkt": "2026-05-04T18:58:12.114Z"
 }
