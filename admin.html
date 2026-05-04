@@ -2989,7 +2989,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
   const setVeld = (veld, val) => setEdit(e => ({...e, [veld]: val}));
 
   const addScorer = () => setEdit(e => ({...e,
-    scorers: [...(e.scorers||[]), {naam:"", club: e.thuis+(geslacht==="heren"?" H1":" D1"), minuut:"", type:"veld"}]
+    scorers: [...(e.scorers||[]), {naam:"", club: e.thuis, minuut:"", type:"veld"}]
   }));
 
   const setScorer = (i, veld, val) => setEdit(e => {
@@ -3005,7 +3005,7 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
   });
 
   const addKaart = () => setEdit(e => ({...e,
-    kaarten: [...(e.kaarten||[]), {naam:"", club: e.thuis+(geslacht==="heren"?" H1":" D1"), minuut:"", type:"groen"}]
+    kaarten: [...(e.kaarten||[]), {naam:"", club: e.thuis, minuut:"", type:"groen"}]
   }));
 
   const setKaart = (i, veld, val) => setEdit(e => {
@@ -3302,9 +3302,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                         onChange={e=>setScorer(i,"naam",e.target.value)}/>
                       <select className="form-select" value={s.club||""}
                         onChange={e=>setScorer(i,"club",e.target.value)}>
-                        {CLUBS.map(c=>[c+" H1",c+" D1"]).flat().map(opt=>
-                          <option key={opt} value={opt}>{opt}</option>
-                        )}
+                        {CLUBS.map(c=>(
+                          <option key={c} value={c}>{c}</option>
+                        ))}
                       </select>
                       <input className="form-input" placeholder="Min" type="number" min="1" max="70"
                         value={s.minuut??""} onChange={e=>setScorer(i,"minuut",e.target.value)}
@@ -3312,8 +3312,8 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                       <select className="form-select" value={s.type||"veld"}
                         onChange={e=>setScorer(i,"type",e.target.value)}>
                         <option value="veld">Veld</option>
-                        <option value="strafcorner">Strafcorner</option>
-                        <option value="strafbal">Strafbal</option>
+                        <option value="sc">Strafcorner</option>
+                        <option value="sb">Strafbal</option>
                       </select>
                       <button onClick={()=>verwijderScorer(i)}
                         style={{background:"none",border:"none",cursor:"pointer",fontSize:16,
@@ -3340,9 +3340,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
                         onChange={e=>setKaart(i,"naam",e.target.value)}/>
                       <select className="form-select" value={k.club||""}
                         onChange={e=>setKaart(i,"club",e.target.value)}>
-                        {CLUBS.map(cl=>[cl+" H1",cl+" D1"]).flat().map(opt=>
-                          <option key={opt} value={opt}>{opt}</option>
-                        )}
+                        {CLUBS.map(cl=>(
+                          <option key={cl} value={cl}>{cl}</option>
+                        ))}
                       </select>
                       <input className="form-input" placeholder="Min" type="number" min="1" max="70"
                         value={k.minuut??""} onChange={e=>setKaart(i,"minuut",e.target.value)}
