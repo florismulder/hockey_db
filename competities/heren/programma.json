@@ -6921,13 +6921,59 @@
       "geverifieerd": false
     },
     {
-      "datum": "2026-05-03",
-      "tijdstip": "15:00",
       "thuis": "HDM",
       "uit": "Pinoké",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 3,
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jack Waller",
+          "club": "Pinoké",
+          "minuut": 7,
+          "type": "veld"
+        },
+        {
+          "naam": "Yorben Fontaine",
+          "club": "HDM",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Joep Troost",
+          "club": "Pinoké",
+          "minuut": 44,
+          "type": "sc"
+        },
+        {
+          "naam": "Thies Prinz",
+          "club": "Pinoké",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM",
+          "minuut": 60,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Texas Bukkens",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 49
+        },
+        {
+          "naam": "Sander Groenheijde",
+          "club": "HDM",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
     },
     {
       "thuis": "Rotterdam",
@@ -7336,5 +7382,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:58:14.091Z"
+  "bijgewerkt": "2026-05-04T18:59:38.857Z"
 }
