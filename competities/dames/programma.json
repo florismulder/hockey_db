@@ -5517,13 +5517,41 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "Hurley",
       "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Amber Brouwer",
+          "club": "Hurley",
+          "minuut": 17,
+          "type": "sc"
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Oranje-Rood",
+          "minuut": 53,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Madelief de Beer",
+          "club": "Hurley",
+          "type": "geel",
+          "minuut": 29
+        },
+        {
+          "naam": "Fiona Morgenstern",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 48
+        }
+      ]
     },
     {
       "thuis": "Den Bosch",
@@ -5833,5 +5861,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:21:43.951Z"
+  "bijgewerkt": "2026-05-04T18:21:45.941Z"
 }
