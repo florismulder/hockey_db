@@ -6957,13 +6957,113 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-03",
-      "tijdstip": "15:00",
       "thuis": "Kampong",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 6,
+      "score_uit": 5,
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 14,
+          "type": "sc"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 20,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 21,
+          "type": "sc"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 36,
+          "type": "sc"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 44,
+          "type": "sc"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 45,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 45,
+          "type": "sc"
+        },
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "minuut": 47,
+          "type": "sb"
+        },
+        {
+          "naam": "Thomas Sorsby",
+          "club": "Kampong",
+          "minuut": 52,
+          "type": "veld"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 58,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Jip Janssen",
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 25
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 30
+        },
+        {
+          "naam": "Marc Vizcaino",
+          "club": "Den Bosch",
+          "type": "geel",
+          "minuut": 58
+        },
+        {
+          "naam": "Finn van Bijnen",
+          "club": "Den Bosch",
+          "type": "geel",
+          "minuut": 59
+        },
+        {
+          "naam": "Silas Lageman",
+          "club": "Den Bosch",
+          "minuut": 60,
+          "type": "geel"
+        }
+      ]
     },
     {
       "thuis": "Bloemendaal",
@@ -7110,5 +7210,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:43:46.939Z"
+  "bijgewerkt": "2026-05-04T18:43:48.874Z"
 }
