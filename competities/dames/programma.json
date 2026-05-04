@@ -5535,13 +5535,53 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "SCHC",
       "uit": "HGC",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 4,
+      "score_uit": 0,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Jip Dicke",
+          "club": "SCHC",
+          "minuut": 19,
+          "type": "veld"
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Xan de Waard",
+          "club": "SCHC",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Marta Segú Rueda",
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 44
+        },
+        {
+          "naam": "Maud van den Heuvel",
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 51
+        }
+      ]
     },
     {
       "datum": "2026-05-10",
@@ -5760,5 +5800,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-04-28T07:25:41.731Z"
+  "bijgewerkt": "2026-05-04T18:21:42.081Z"
 }
