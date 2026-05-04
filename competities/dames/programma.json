@@ -1,6 +1,49 @@
 {
   "wedstrijden": [
     {
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2025-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mikki Roberts",
+          "club": "Rotterdam",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Tilburg",
+          "minuut": 36,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Iris Dominicus",
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 20
+        },
+        {
+          "naam": "Caoimhe Perdue",
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 29
+        },
+        {
+          "naam": "Sanne Koks",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
+    },
+    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 4,
@@ -5861,5 +5904,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:21:45.941Z"
+  "bijgewerkt": "2026-05-04T18:21:47.843Z"
 }
