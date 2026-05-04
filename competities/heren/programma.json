@@ -6948,13 +6948,29 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-03",
-      "tijdstip": "15:00",
       "thuis": "Hurley",
       "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 0,
+      "score_uit": 1,
+      "datum": "2026-05-03",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood",
+          "minuut": 33,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Rutger Plat",
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 15
+        }
+      ]
     },
     {
       "thuis": "Kampong",
@@ -7210,5 +7226,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:43:48.874Z"
+  "bijgewerkt": "2026-05-04T18:58:10.192Z"
 }
