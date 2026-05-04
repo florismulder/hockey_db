@@ -5730,25 +5730,25 @@
       "scorers": [
         {
           "naam": "Yibbi Jansen",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 5,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Jip Dicke",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 19,
           "type": "veld"
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 21,
           "type": "veld"
         },
         {
           "naam": "Xan de Waard",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "minuut": 45,
           "type": "veld"
         }
@@ -5756,17 +5756,18 @@
       "kaarten": [
         {
           "naam": "Marta Segú Rueda",
-          "club": "SCHC",
+          "club": "HGC D1",
           "type": "groen",
           "minuut": 44
         },
         {
           "naam": "Maud van den Heuvel",
-          "club": "SCHC",
+          "club": "SCHC D1",
           "type": "groen",
           "minuut": 51
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "datum": "2026-05-10",
