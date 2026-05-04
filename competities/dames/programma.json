@@ -5533,13 +5533,59 @@
       ]
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "HDM",
       "uit": "Bloemendaal",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 2,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Roos Alkemade",
+          "club": "HDM",
+          "minuut": 24,
+          "type": "veld"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 43,
+          "type": "sc"
+        },
+        {
+          "naam": "Demi Hilterman",
+          "club": "Bloemendaal",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Mijntje van Campen",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 30
+        },
+        {
+          "naam": "Maud Preyde",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 40
+        },
+        {
+          "naam": "Tessa Clasener",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 41
+        },
+        {
+          "naam": "Belén van den Broek",
+          "club": "Bloemendaal",
+          "type": "groen",
+          "minuut": 41
+        }
+      ]
     },
     {
       "thuis": "Pinoké",
@@ -5938,5 +5984,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:43:43.220Z"
+  "bijgewerkt": "2026-05-04T18:43:45.086Z"
 }
