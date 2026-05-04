@@ -5542,13 +5542,47 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "Pinoké",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 3,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 18,
+          "type": "sc"
+        },
+        {
+          "naam": "Stella van Gils",
+          "club": "Amsterdam",
+          "minuut": 22,
+          "type": "veld"
+        },
+        {
+          "naam": "Katerina Langedijk",
+          "club": "Amsterdam",
+          "minuut": 39,
+          "type": "sc"
+        },
+        {
+          "naam": "Florine Rodenburg",
+          "club": "Pinoké",
+          "minuut": 57,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Floor de Haan",
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 49
+        }
+      ]
     },
     {
       "datum": "2026-05-02",
@@ -5904,5 +5938,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:21:47.843Z"
+  "bijgewerkt": "2026-05-04T18:43:43.220Z"
 }
