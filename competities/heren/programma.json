@@ -7059,13 +7059,13 @@
         },
         {
           "naam": "Juup Veen",
-          "club": "Laren",
+          "club": "Schaerweijde",
           "minuut": 46,
           "type": "veld"
         },
         {
           "naam": "Kenneth Bain",
-          "club": "Schaerweijde",
+          "club": "Laren",
           "minuut": 47,
           "type": "sc"
         },
@@ -7091,13 +7091,13 @@
         },
         {
           "naam": "Niels de Joode",
-          "club": "Laren",
+          "club": "Schaerweijde",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Peppe Veen",
-          "club": "Laren",
+          "club": "Schaerweijde",
           "type": "groen",
           "minuut": 50
         }
@@ -7382,5 +7382,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:34:56.159Z"
+  "bijgewerkt": "2026-05-05T04:34:58.101Z"
 }
