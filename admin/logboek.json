@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "96c4ab0f-77da-461b-bfb3-e67e190295fc",
+      "naam": "Transfers nog meer",
+      "velden": {
+        "goedgekeurd": 15
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T12:48:21.335Z"
+    },
+    {
       "type": "nieuwe_speler_wachtrij",
       "id": "maddie_zimmer",
       "naam": "Maddie Zimmer",
