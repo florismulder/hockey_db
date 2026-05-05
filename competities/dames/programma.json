@@ -5543,50 +5543,49 @@
       "scorers": [
         {
           "naam": "Roos Alkemade",
-          "club": "HDM D1",
+          "club": "HDM",
           "minuut": 24,
           "type": "veld"
         },
         {
           "naam": "Demi Hilterman",
-          "club": "Bloemendaal D1",
+          "club": "Bloemendaal",
           "minuut": 43,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Demi Hilterman",
-          "club": "Bloemendaal D1",
+          "club": "Bloemendaal",
           "minuut": 57,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Mijntje van Campen",
-          "club": "Bloemendaal D1",
+          "club": "Bloemendaal",
           "type": "groen",
           "minuut": 30
         },
         {
           "naam": "Maud Preyde",
-          "club": "Bloemendaal D1",
+          "club": "Bloemendaal",
           "type": "groen",
           "minuut": 40
         },
         {
           "naam": "Tessa Clasener",
-          "club": "HDM D1",
+          "club": "HDM",
           "type": "groen",
           "minuut": 41
         },
         {
           "naam": "Belén van den Broek",
-          "club": "HDM D1",
+          "club": "HDM",
           "type": "groen",
           "minuut": 41
         }
-      ],
-      "geverifieerd": false
+      ]
     },
     {
       "thuis": "Pinoké",
@@ -5653,7 +5652,7 @@
           "naam": "Amber Brouwer",
           "club": "Oranje-Rood D1",
           "minuut": 17,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Romée Corver",
@@ -5733,7 +5732,7 @@
           "naam": "Yibbi Jansen",
           "club": "SCHC D1",
           "minuut": 5,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Jip Dicke",
@@ -5987,5 +5986,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-04T18:43:45.086Z"
+  "bijgewerkt": "2026-05-05T04:37:56.127Z"
 }
