@@ -192,6 +192,15 @@
   ],
   "juup_veen": [
     {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Juup Veen vertrekt na dit seizoen 25-26 van Schaerweijde naar Kampong.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    },
+    {
       "datum": "2026-04-17T22:00:00.000Z",
       "titel": "Ook Schaerweijde pleit voor opleidingsvergoeding  ‘10.000 euro’",
       "bullet": "Juup Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
@@ -220,6 +229,15 @@
     }
   ],
   "peppe_veen": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Peppe Veen vertrekt na dit seizoen 25-26 van Schaerweijde naar Kampong.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    },
     {
       "datum": "2026-04-17T22:00:00.000Z",
       "titel": "Ook Schaerweijde pleit voor opleidingsvergoeding  ‘10.000 euro’",
@@ -574,6 +592,15 @@
   ],
   "lucas_corstens": [
     {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Lucas Corstens verliet Schaerweijde zomer '25 en vertrok naar Amsterdam.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    },
+    {
       "datum": "2026-04-17T22:00:00.000Z",
       "titel": "Ook Schaerweijde pleit voor opleidingsvergoeding  ‘10.000 euro’",
       "bullet": "Lucas Corstens vertrok op 17-jarige leeftijd na één seizoen in de Promotieklasse van Schaerweijde naar Amsterdam - zomer 25.",
@@ -584,6 +611,15 @@
     }
   ],
   "thies_bakker": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Thies Bakker verliet Schaerweijde zomer 25 en vertrok naar Kampong.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    },
     {
       "datum": "2026-04-17T22:00:00.000Z",
       "titel": "Ook Schaerweijde pleit voor opleidingsvergoeding  ‘10.000 euro’",
@@ -1019,6 +1055,61 @@
       "titel": "HK (H)  Pinoké naar de play offs, EHL ticket Oranje Rood",
       "bullet": "Jip Janssen scoorde vijf keer op 3 mei 2026 tegen Den Bosch, de tweede keer dat hij vijf of meer goals in één wedstrijd maakte. ",
       "link": "https://drive.google.com/file/d/1EFiuDcLY9YpgE5DMuGH5BP5Y6QjdkcIJ",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "pepijn_leenhouts": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Pepijn Leenhouts bleef Schaerweijde trouw afgelopen zomer, voor het seizoen 25-26, ondanks het vertrek van veel spelers.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "joost_van_eijck": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Joost van Eijck kwam zomer '25 van Victoria en voegde direct veel kwaliteit toe aan Schaerweijde.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "stijn_draaijer": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Stijn Draaijer kwam zomer '25 van Ede en voegde direct veel kwaliteit toe aan Schaerweijde.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "lode_draaijer": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Lode Draaijer kwam zomer '25 van Ede en voegde direct veel kwaliteit toe aan Schaerweijde.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "kenny_bain": [
+    {
+      "datum": "2026-05-03T22:00:00.000Z",
+      "titel": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "bullet": "Kenny Bain, invalspits van Laren, kwam uit zijn hockeypensioen voor dit seizoen 25-26. In de laatste fase van de competitie.",
+      "link": "https://drive.google.com/file/d/1nH5sWLKzGyW1ykeNCK57FL9Qg6yBH7j3",
       "competitie": "HK",
       "handmatig": false,
       "verborgen": false
