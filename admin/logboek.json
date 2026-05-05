@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "42417a7f-2900-490c-a48e-4e9b88562f8e",
+      "naam": "Xan de Waard kondigt haar afscheid aan",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T04:37:46.066Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "310763b8-7ffb-48f6-b4b3-de27a18247d8",
       "naam": "Carrousel HK  Dylan Lucieer naar Kampong, Julie van Dam stopt",
       "velden": {
