@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "peppe_veen",
+      "naam": "peppe_veen",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:25:51.425Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "3b62f047-6d77-4214-a4ee-a26e97091a23",
       "naam": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
