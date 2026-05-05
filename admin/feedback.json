@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Timo Boers bracht zijn seizoentotaal op dertig doelpunten na drie treffers in de wedstrijd, tegen Kampong op 3 mei 2026.",
+      "bron_zin": "Voor de bezoekers scoorde Timo Boers drie keer en bracht daarmee zijn seizoentotaal op dertig.",
+      "origineel": "Timo Boers bracht zijn seizoentotaal op dertig doelpunten na drie treffers in de wedstrijd."
+    },
+    {
+      "bullet": "Jip Janssen scoorde vijf keer op 3 mei 2026 tegen Den Bosch, de tweede keer dat hij vijf of meer goals in één wedstrijd maakte. ",
+      "bron_zin": "Het was de tweede keer dat de strafcornerspecialist vijf of meer goals in één wedstrijd maakte.",
+      "origineel": "Jip Janssen scoorde vijf keer, de tweede keer dat hij vijf of meer goals in één wedstrijd maakte."
+    },
+    {
       "bullet": "Sander de Wijn speelde op 3 mei tegen Den Bosch zijn afscheidsduel voor eigen publiek, maar moest geblesseerd het veld verlaten.",
       "bron_zin": "Het afscheidsduel van Kampong-icoon Sander de Wijn, die na dik dertig minuten de strijd geblesseerd en geëmotioneerd staakte.",
       "origineel": "Sander de Wijn speelde zijn afscheidsduel, maar moest geblesseerd het veld verlaten."
@@ -226,15 +236,6 @@
       "bullet": "Thies Bakker maakte de overstap van Schaerweijde naar Kampong, zomer 25",
       "bron_zin": "Thies Bakker zocht zijn geluk bij Kampong.",
       "origineel": "Thies Bakker maakte de overstap van Schaerweijde naar Kampong."
-    },
-    {
-      "bullet": "Lucas Corstens vertrok op 17-jarige leeftijd na één seizoen in de Promotieklasse van Schaerweijde naar Amsterdam - zomer 25.",
-      "bron_zin": "Lucas Corstens op 17-jarige leeftijd, na slechts één seizoen in de Promotieklasse.",
-      "origineel": "Lucas Corstens vertrok op 17-jarige leeftijd na één seizoen in de Promotieklasse."
-    },
-    {
-      "bullet": "Juup Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
-      "bron_zin": "Na slechts één seizoen in de Hoofdklasse zijn we ze alweer kwijt."
     }
   ],
   "verborgen_bullets": []
