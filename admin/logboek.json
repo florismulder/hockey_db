@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "juup_veen",
+      "naam": "juup_veen",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:26:11.677Z"
+    },
+    {
       "type": "speler",
       "id": "peppe_veen",
       "naam": "Peppe Veen",
