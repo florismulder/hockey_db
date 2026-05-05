@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "e6e5da3f-4573-46e7-a1ba-812a412fdb4c",
+      "naam": "Laatste transfer nieuws over Victor Foubert   Hockey Magazine",
+      "velden": {
+        "goedgekeurd": 9
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:32:26.906Z"
+    },
+    {
       "type": "speler",
       "id": "juup_veen",
       "naam": "Juup Veen",
