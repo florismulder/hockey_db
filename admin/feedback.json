@@ -1,6 +1,15 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Famke Richardson stopt na dit seizoen bij SCHC.",
+      "bron_zin": "Vlak voor tijd kreeg zij een publiekswissel, samen met Famke Richardson die eveneens stopt."
+    },
+    {
+      "bullet": "Xan de Waard kreeg een publiekswissel in haar laatste thuisduel in de reguliere competitie. Dat gebeurde op 2 mei tegen HGC (4-0, Xan de Waard scoorde zelf ook).",
+      "bron_zin": "Vlak voor tijd kreeg zij een publiekswissel, samen met Famke Richardson die eveneens stopt.",
+      "origineel": "Xan de Waard kreeg een publiekswissel in haar laatste thuisduel in de reguliere competitie."
+    },
+    {
       "bullet": "Dylan Lucieer maakt zomer 26 de overstap van Rotterdam naar Kampong Heren 1.",
       "bron_zin": "SV Kampong Heren 1 heeft zich voor komend seizoen versterkt met aanvaller Dylan Lucieer.",
       "origineel": "Dylan Lucieer maakt de overstap van Rotterdam naar Kampong Heren 1."
@@ -231,15 +240,6 @@
     {
       "bullet": "Robbert Kemperman speelde twee jaar voor Rot-Weiss Köln in Duitsland.",
       "bron_zin": "het jaar dat Kemperman begon aan een tweejarig avontuur bij Rot-Weiss Köln."
-    },
-    {
-      "bullet": "Robbert Kemperman debuteerde op 30 april 2006 in de Hoofdklasse bij Den Bosch.",
-      "bron_zin": "Een reis die op 30 april 2006 - toen nog Koninginnedag - begon bij Den Bosch, met een 5-3 nederlaag tegen Bloemendaal."
-    },
-    {
-      "bullet": "Robbert Kemperman is 228-voudig international.",
-      "bron_zin": "De 228-voudig international, die door de hele hockeywereld ‘Kempi’ al jaren liefkozend wordt genoemd, vindt het dan echt mooi geweest.",
-      "origineel": "Robbert Kemperman is 228-voudig international."
     }
   ],
   "verborgen_bullets": []
