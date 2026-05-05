@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Sander de Wijn speelde op 3 mei tegen Den Bosch zijn afscheidsduel voor eigen publiek, maar moest geblesseerd het veld verlaten.",
+      "bron_zin": "Het afscheidsduel van Kampong-icoon Sander de Wijn, die na dik dertig minuten de strijd geblesseerd en geëmotioneerd staakte.",
+      "origineel": "Sander de Wijn speelde zijn afscheidsduel, maar moest geblesseerd het veld verlaten."
+    },
+    {
       "bullet": "Kelsey Bing keerde twee cruciale strafballen van Mikki Roberts in de degradatiewedstrijd, 2 mei 2026.",
       "bron_zin": "Beide keren vond Roberts de uitblinkende Rotterdam-keeper Kelsey Bing op haar weg, die haar pogingen met haar handschoen keerde.",
       "origineel": "Kelsey Bing keerde twee cruciale strafballen van Mikki Roberts in de degradatiewedstrijd."
@@ -230,11 +235,6 @@
     {
       "bullet": "Juup Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
       "bron_zin": "Na slechts één seizoen in de Hoofdklasse zijn we ze alweer kwijt."
-    },
-    {
-      "bullet": "Juup Veen maakt zomer 26 de overstap van Schaerweijde naar Kampong.",
-      "bron_zin": "De overstap van de tweelingbroers Peppe en Juup Veen van Schaerweijde naar Kampong.",
-      "origineel": "Juup Veen maakt de overstap van Schaerweijde naar Kampong."
     }
   ],
   "verborgen_bullets": []
