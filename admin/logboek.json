@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "3b62f047-6d77-4214-a4ee-a26e97091a23",
+      "naam": "Schaerweijde ruikt handhaving  ‘Een jaar geleden dacht niemand dit’",
+      "velden": {
+        "goedgekeurd": 12
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:24:18.220Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "3843ae4b-dabc-4552-90b7-cbf4399b1245",
       "naam": "Salarissen in de Hoofdklasse  'Van 2.200 tot 50.000 euro of meer'",
       "velden": {
