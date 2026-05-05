@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "peppe_veen",
+      "naam": "Peppe Veen",
+      "velden": {
+        "club": "Schaerweijde",
+        "geslacht": "heren",
+        "rugnummer": 7,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "jong",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:25:57.748Z"
+    },
+    {
       "type": "bullet",
       "id": "peppe_veen",
       "naam": "peppe_veen",
