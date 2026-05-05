@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "juup_veen",
+      "naam": "Juup Veen",
+      "velden": {
+        "club": "Schaerweijde",
+        "geslacht": "heren",
+        "rugnummer": 8,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": ""
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:26:18.059Z"
+    },
+    {
       "type": "bullet",
       "id": "juup_veen",
       "naam": "juup_veen",
