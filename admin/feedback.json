@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Xan de Waard werd vorig jaar 25 voor de tweede keer uitgeroepen tot beste speelster ter wereld. Ze won olympisch goud in Tokio (2021) en Parijs (2024) met Oranje. Ze veroverde drie wereldtitels en vier Europese titels met Oranje.",
+      "bron_zin": "een half jaar nadat ze voor de tweede keer werd uitgeroepen tot beste speelster ter wereld.",
+      "origineel": "Xan de Waard werd voor de tweede keer uitgeroepen tot beste speelster ter wereld."
+    },
+    {
+      "bullet": "Xan de Waard stopt na dit seizoen in zomer 26 als actief hockeyster bij SCHC en Oranje. Seizoen 25-26 is haar 11e seizoen bij SCHC.",
+      "bron_zin": "Xan de Waard stopt na dit seizoen als actief hockeyster.",
+      "origineel": "Xan de Waard stopt na dit seizoen als actief hockeyster bij SCHC en Oranje."
+    },
+    {
       "bullet": "Phileine Hazen werd december 25 wereldkampioen met Jong Oranje.",
       "bron_zin": "Met Jong Oranje werd Hazen afgelopen december wereldkampioen.",
       "origineel": "Phileine Hazen werd afgelopen december wereldkampioen met Jong Oranje."
@@ -224,16 +234,6 @@
       "bullet": "Noor van den Nieuwenhof moest het veld verlaten met ogenschijnlijk een zware blessure in duel tegen Rotterdam op 19 april 26.",
       "bron_zin": "Noor van den Nieuwenhof, die niet veel later het veld moest verlaten met ogenschijnlijk een zware blessure.",
       "origineel": "Noor van den Nieuwenhof moest het veld verlaten met ogenschijnlijk een zware blessure."
-    },
-    {
-      "bullet": "Hidde Brink ging na medische verzorging verder na een blessure tegen Amsterdam op 19 april 26.",
-      "bron_zin": "Die ging even naar de grond, maar kon na medische verzorging en een flinke teug uit zijn bidon weer verder.",
-      "origineel": "Hidde Brink ging na medische verzorging verder na een blessure."
-    },
-    {
-      "bullet": "Koen Bijen scoorde op 19 april een hattrick tegen Schaerweijde.",
-      "bron_zin": "en een hattrick van Koen Bijen werd het in de Zeister Kuil 1-8.",
-      "origineel": "Koen Bijen scoorde een hattrick tegen Schaerweijde."
     }
   ],
   "verborgen_bullets": []
