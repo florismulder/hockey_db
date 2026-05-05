@@ -1,6 +1,51 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Dylan Lucieer maakt zomer 26 de overstap van Rotterdam naar Kampong Heren 1.",
+      "bron_zin": "SV Kampong Heren 1 heeft zich voor komend seizoen versterkt met aanvaller Dylan Lucieer.",
+      "origineel": "Dylan Lucieer maakt de overstap van Rotterdam naar Kampong Heren 1."
+    },
+    {
+      "bullet": "Bente Jager heeft haar contract voorjaar 26 verlengd bij Pinoké Dames 1.",
+      "bron_zin": "Florine Rodenburg en Bente Jager hebben hun contract verlengd.",
+      "origineel": "Bente Jager heeft haar contract verlengd bij Pinoké Dames 1."
+    },
+    {
+      "bullet": "Florine Rodenburg heeft haar contract voorjaar 26 verlengd bij Pinoké Dames 1.",
+      "bron_zin": "Florine Rodenburg en Bente Jager hebben hun contract verlengd.",
+      "origineel": "Florine Rodenburg heeft haar contract verlengd bij Pinoké Dames 1."
+    },
+    {
+      "bullet": "Hjalmar Voskuil maakt in zomer 26 de overstap van Hurley naar HC Den Bosch Heren 1.",
+      "bron_zin": "HC Den Bosch Heren 1 versterkt zich komend seizoen met de komst van Hjalmar Voskuil.",
+      "origineel": "Hjalmar Voskuil maakt de overstap naar HC Den Bosch Heren 1."
+    },
+    {
+      "bullet": "Harry Martin heeft zijn contract voorjaar 26 verlengd bij Hurley Heren 1.",
+      "bron_zin": "Theun, Joren, Daan, Josh en Harry hebben hun contract verlengd en blijven onderdeel van de selectie.",
+      "origineel": "Harry Martin heeft zijn contract verlengd bij Hurley Heren 1."
+    },
+    {
+      "bullet": "Joshua Keaveney heeft zijn contract voorjaar 26 verlengd bij Hurley Heren 1.",
+      "bron_zin": "Theun, Joren, Daan, Josh en Harry hebben hun contract verlengd en blijven onderdeel van de selectie.",
+      "origineel": "Joshua Keaveney heeft zijn contract verlengd bij Hurley Heren 1."
+    },
+    {
+      "bullet": "Daan Dekker heeft zijn contract voorjaar 26 verlengd bij Hurley Heren 1.",
+      "bron_zin": "Theun, Joren, Daan, Josh en Harry hebben hun contract verlengd en blijven onderdeel van de selectie.",
+      "origineel": "Daan Dekker heeft zijn contract verlengd bij Hurley Heren 1."
+    },
+    {
+      "bullet": "Joren Romijn heeft zijn contract voorjaar 26 verlengd bij Hurley Heren 1.",
+      "bron_zin": "Theun, Joren, Daan, Josh en Harry hebben hun contract verlengd en blijven onderdeel van de selectie.",
+      "origineel": "Joren Romijn heeft zijn contract verlengd bij Hurley Heren 1."
+    },
+    {
+      "bullet": "Theun de Leeuw heeft zijn contract voorjaar 26 verlengd bij Hurley Heren 1.",
+      "bron_zin": "Theun, Joren, Daan, Josh en Harry hebben hun contract verlengd en blijven onderdeel van de selectie.",
+      "origineel": "Theun de Leeuw heeft zijn contract verlengd bij Hurley Heren 1."
+    },
+    {
       "bullet": "Kenny Bain, invalspits van Laren, kwam uit zijn hockeypensioen voor dit seizoen 25-26. In de laatste fase van de competitie.",
       "bron_zin": "Bain, de invalspits die eigenlijk na vorig seizoen zijn stick aan de wilgen hing.",
       "origineel": "Kenny Bain, invalspits van Laren, kwam uit zijn hockeypensioen voor dit seizoen."
@@ -195,51 +240,6 @@
       "bullet": "Robbert Kemperman is 228-voudig international.",
       "bron_zin": "De 228-voudig international, die door de hele hockeywereld ‘Kempi’ al jaren liefkozend wordt genoemd, vindt het dan echt mooi geweest.",
       "origineel": "Robbert Kemperman is 228-voudig international."
-    },
-    {
-      "bullet": "Robbert Kemperman stopt na dit seizoen, in de zomer van 26, met hockeyen na een loopbaan van twintig jaar.",
-      "bron_zin": "Na een ongelooflijke loopbaan van twintig jaar zet Robbert Kemperman na dit seizoen een punt achter zijn carrière.",
-      "origineel": "Robbert Kemperman stopt na dit seizoen met hockeyen na een loopbaan van twintig jaar."
-    },
-    {
-      "bullet": "Babette Backers (Kampong) maakt deel uit van de trainingsgroep van Oranje. April '26.",
-      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
-      "origineel": "Babette Backers (Kampong) maakt deel uit van de trainingsgroep van Oranje."
-    },
-    {
-      "bullet": "Guusje Moes (Kampong) maakt deel uit van de trainingsgroep van Oranje. April '26.",
-      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
-      "origineel": "Guusje Moes (Kampong) maakt deel uit van de trainingsgroep van Oranje."
-    },
-    {
-      "bullet": "Noor van den Nieuwenhof (Kampong) heeft vijf interlands gespeeld voor Oranje. Cijfers april 26, raakte in april 26 geblesseerd.",
-      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
-      "origineel": "Noor van den Nieuwenhof (Kampong) heeft vijf interlands gespeeld voor Oranje."
-    },
-    {
-      "bullet": "Eline Jansen (Kampong) heeft twaalf interlands gespeeld voor Oranje. Cijfers april 26.",
-      "bron_zin": "...maar ook Eline Jansen (twaalf interlands), Noor van den Nieuwenhof (vijf), Guusje Moes en Babette Backers (beiden nog zonder interland) maken deel uit van de trainingsgroep.",
-      "origineel": "Eline Jansen (Kampong) heeft twaalf interlands gespeeld voor Oranje."
-    },
-    {
-      "bullet": "Luna Fokke (Kampong) heeft de grens van zeventig interlands doorbroken (71 caps). Cijfers april 26.",
-      "bron_zin": "Middenvelder Luna Fokke, die met Oranje goud won op de Olympische Spelen van Parijs, heeft de grens van zeventig interlands inmiddels doorbroken (71 caps)...",
-      "origineel": "Luna Fokke (Kampong) heeft de grens van zeventig interlands doorbroken (71 caps)."
-    },
-    {
-      "bullet": "Julie Roovers (Kampong) miste het WK-21 december 25  in Chili door een blessure.",
-      "bron_zin": "Dat hadden er zelfs acht kunnen zijn als Julie Roovers niet geblesseerd was geraakt.",
-      "origineel": "Julie Roovers (Kampong) miste het WK-21 door een blessure."
-    },
-    {
-      "bullet": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie, scheurde voorste kruisband tijdens training Oranje. Rentree 19 april 26 tegen Hurley. Miste EK. Miste EHL. Trainde lang met MO18-1.",
-      "bron_zin": "Emma Reijnen (22) maakte na maanden revalideren haar rentree bij Den Bosch.",
-      "origineel": "Emma Reijnen maakte haar rentree bij Den Bosch na negen maanden revalidatie."
-    },
-    {
-      "bullet": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel, mist de play-offs en een mogelijke WK-selectie voor Oranje. Blessure liep ze op in duel met Tilburg op 19 april 26.",
-      "bron_zin": "Na de gewonnen wedstrijd (4-0) tegen Rotterdam werd duidelijk dat de international van Kampong haar voorste kruisband heeft gescheurd.",
-      "origineel": "Noor van den Nieuwenhof heeft haar voorste kruisband gescheurd en staat maanden buitenspel."
     }
   ],
   "verborgen_bullets": []
