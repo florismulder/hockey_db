@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "8ba737ae-b726-4f40-b0e5-e8b3b69bb31d",
+      "naam": "Carrousel HK  Pinoké iconen nemen afscheid",
+      "velden": {
+        "goedgekeurd": 19
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T09:02:45.305Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "7247b7aa-8915-4f99-ab1c-8c1206affe7f",
       "naam": "HK (D)  Tilburg degradeert, EHL ticket SCHC",
       "velden": {
