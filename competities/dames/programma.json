@@ -5684,13 +5684,13 @@
       "scorers": [
         {
           "naam": "Amber Brouwer",
-          "club": "Oranje-Rood D1",
+          "club": "Oranje-Rood",
           "minuut": 17,
           "type": "sc"
         },
         {
           "naam": "Romée Corver",
-          "club": "Hurley D1",
+          "club": "Hurley",
           "minuut": 53,
           "type": "veld"
         }
@@ -5698,18 +5698,17 @@
       "kaarten": [
         {
           "naam": "Madelief de Beer",
-          "club": "Oranje-Rood D1",
+          "club": "Oranje-Rood",
           "type": "geel",
           "minuut": 29
         },
         {
           "naam": "Fiona Morgenstern",
-          "club": "Hurley D1",
+          "club": "Hurley",
           "type": "groen",
           "minuut": 48
         }
-      ],
-      "geverifieerd": false
+      ]
     },
     {
       "thuis": "Den Bosch",
@@ -6020,5 +6019,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:40:44.698Z"
+  "bijgewerkt": "2026-05-05T04:40:46.674Z"
 }
