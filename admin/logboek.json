@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "40d32303-e6db-481b-9617-1c796c710ccf",
+      "naam": "Degradatie is een feit  gemiste kansen en strafballen nekken Tilburg",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T04:40:15.712Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "42417a7f-2900-490c-a48e-4e9b88562f8e",
       "naam": "Xan de Waard kondigt haar afscheid aan",
       "velden": {
