@@ -5631,13 +5631,47 @@
       ]
     },
     {
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
       "thuis": "Rotterdam",
       "uit": "Tilburg",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 36,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Iris Dominicus",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 20
+        },
+        {
+          "naam": "Caoimhe Perdue",
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 29
+        },
+        {
+          "naam": "Sanne Koks",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
     },
     {
       "thuis": "Hurley",
@@ -5986,5 +6020,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:37:58.029Z"
+  "bijgewerkt": "2026-05-05T04:40:44.698Z"
 }
