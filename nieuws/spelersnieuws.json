@@ -1010,6 +1010,15 @@
   "xan_de_waard": [
     {
       "datum": "2026-05-01T22:00:00.000Z",
+      "titel": "HK (D)  Tilburg degradeert, EHL ticket SCHC",
+      "bullet": "Xan de Waard kreeg een publiekswissel in haar laatste thuisduel in de reguliere competitie. Dat gebeurde op 2 mei tegen HGC (4-0, Xan de Waard scoorde zelf ook).",
+      "link": "https://drive.google.com/file/d/1ei9NPiNlFGegm-s1eX5mAreIlw3uJ_YZ",
+      "competitie": "HK",
+      "handmatig": false,
+      "verborgen": false
+    },
+    {
+      "datum": "2026-05-01T22:00:00.000Z",
       "titel": "Xan de Waard kondigt haar afscheid aan",
       "bullet": "Xan de Waard werd vorig jaar 25 voor de tweede keer uitgeroepen tot beste speelster ter wereld. Ze won olympisch goud in Tokio (2021) en Parijs (2024) met Oranje. Ze veroverde drie wereldtitels en vier Europese titels met Oranje.",
       "link": "https://drive.google.com/file/d/1VtrPFt6bK30yQ-huXMqJbFT874JHpyrk",
@@ -1206,6 +1215,17 @@
       "bullet": "Bente Jager heeft haar contract voorjaar 26 verlengd bij Pinoké Dames 1.",
       "link": "https://drive.google.com/file/d/1uoazWbneyx9zu0-6ooRTj2b53N_lhfUX",
       "competitie": "onbekend",
+      "handmatig": false,
+      "verborgen": false
+    }
+  ],
+  "famke_richardson": [
+    {
+      "datum": "2026-05-01T22:00:00.000Z",
+      "titel": "HK (D)  Tilburg degradeert, EHL ticket SCHC",
+      "bullet": "Famke Richardson stopt na dit seizoen bij SCHC.",
+      "link": "https://drive.google.com/file/d/1ei9NPiNlFGegm-s1eX5mAreIlw3uJ_YZ",
+      "competitie": "HK",
       "handmatig": false,
       "verborgen": false
     }
