@@ -8610,6 +8610,14 @@
       "geslacht": "heren",
       "keeper": false,
       "aanvoerder": false
+    },
+    {
+      "id": "maddie_zimmer",
+      "naam": "Maddie Zimmer",
+      "club": "Rotterdam",
+      "geslacht": "dames",
+      "keeper": false,
+      "aanvoerder": false
     }
   ]
 }
