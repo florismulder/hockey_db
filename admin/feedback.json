@@ -1,6 +1,21 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Kelsey Bing keerde twee cruciale strafballen van Mikki Roberts in de degradatiewedstrijd, 2 mei 2026.",
+      "bron_zin": "Beide keren vond Roberts de uitblinkende Rotterdam-keeper Kelsey Bing op haar weg, die haar pogingen met haar handschoen keerde.",
+      "origineel": "Kelsey Bing keerde twee cruciale strafballen van Mikki Roberts in de degradatiewedstrijd."
+    },
+    {
+      "bullet": "Mikki Roberts beleefde het sportieve dieptepunt in haar hockeyloopbaan na de degradatie van Tilburg op 2 mei 2026, tegen Rotterdam. Ze overweegt haar toekomst... ",
+      "bron_zin": "Aan alles is te merken dat het 24-jarige clubicoon zojuist het sportieve dieptepunt in haar hockeyloopbaan heeft beleefd.",
+      "origineel": "Mikki Roberts beleefde het sportieve dieptepunt in haar hockeyloopbaan na de degradatie van Tilburg."
+    },
+    {
+      "bullet": "Mikki Roberts miste voor Tilburg twee cruciale strafballen in de degradatiewedstrijd tegen Rotterdam op 2 mei 2026.",
+      "bron_zin": "Ze scoorde uit een strafcorner, maar miste ook twee strafballen in de wedstrijd die Tilburg in de Hoofdklasse moest houden.",
+      "origineel": "Mikki Roberts miste twee cruciale strafballen in de degradatiewedstrijd tegen Rotterdam."
+    },
+    {
       "bullet": "Mikki Roberts miste op 2 mei 2026 twee strafballen in de cruciale degradatiewedstrijd tegen Rotterdam.",
       "bron_zin": "Tilburg-aanvoerder Mikki Roberts werd de pechvogel van de middag met twee gemiste strafballen.",
       "origineel": "Mikki Roberts miste twee strafballen in de cruciale degradatiewedstrijd tegen Rotterdam."
@@ -220,20 +235,6 @@
       "bullet": "Juup Veen maakt zomer 26 de overstap van Schaerweijde naar Kampong.",
       "bron_zin": "De overstap van de tweelingbroers Peppe en Juup Veen van Schaerweijde naar Kampong.",
       "origineel": "Juup Veen maakt de overstap van Schaerweijde naar Kampong."
-    },
-    {
-      "bullet": "Peppe Veen vertrekt na slechts één seizoen in de Hoofdklasse bij Schaerweijde.",
-      "bron_zin": "Na slechts één seizoen in de Hoofdklasse zijn we ze alweer kwijt."
-    },
-    {
-      "bullet": "Peppe Veen maakt zomer 26 de overstap van Schaerweijde naar Kampong.",
-      "bron_zin": "De overstap van de tweelingbroers Peppe en Juup Veen van Schaerweijde naar Kampong.",
-      "origineel": "Peppe Veen maakt de overstap van Schaerweijde naar Kampong."
-    },
-    {
-      "bullet": "Kyra Fortuin scoorde haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd, tegen Rotterdam op 19 april 26",
-      "bron_zin": "Het was voor Fortuin haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd.",
-      "origineel": "Kyra Fortuin scoorde haar eerste doelpunt in de Tulp Hoofdklasse in bijna drie jaar tijd."
     }
   ],
   "verborgen_bullets": []
