@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "7247b7aa-8915-4f99-ab1c-8c1206affe7f",
+      "naam": "HK (D)  Tilburg degradeert, EHL ticket SCHC",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:36:05.539Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "e6e5da3f-4573-46e7-a1ba-812a412fdb4c",
       "naam": "Laatste transfer nieuws over Victor Foubert   Hockey Magazine",
       "velden": {
