@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "nieuwe_speler_wachtrij",
+      "id": "maddie_zimmer",
+      "naam": "Maddie Zimmer",
+      "velden": {
+        "naam": "Maddie Zimmer",
+        "club": "Rotterdam",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T12:46:37.138Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "8ba737ae-b726-4f40-b0e5-e8b3b69bb31d",
       "naam": "Carrousel HK  Pinoké iconen nemen afscheid",
