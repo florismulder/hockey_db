@@ -5391,7 +5391,7 @@
       "tijdstip": "12:45",
       "thuis": "Kampong",
       "uit": "Hurley",
-      "gespeeld": false,
+      "gespeeld": true,
       "score_thuis": 0,
       "score_uit": 0,
       "viaplay": {
