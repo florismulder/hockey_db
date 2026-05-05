@@ -7187,7 +7187,7 @@
         },
         {
           "naam": "Thomas Sorsby",
-          "club": "Kampong",
+          "club": "Den Bosch",
           "minuut": 52,
           "type": "veld"
         },
@@ -7195,6 +7195,12 @@
           "naam": "Thierry Brinkman",
           "club": "Den Bosch",
           "minuut": 55,
+          "type": "veld"
+        },
+        {
+          "naam": "Duco Telgenkamp",
+          "club": "Kampong",
+          "minuut": 57,
           "type": "veld"
         },
         {
@@ -7225,15 +7231,15 @@
         },
         {
           "naam": "Finn van Bijnen",
-          "club": "Den Bosch",
+          "club": "Kampong",
           "type": "geel",
           "minuut": 59
         },
         {
           "naam": "Silas Lageman",
-          "club": "Den Bosch",
-          "minuut": 60,
-          "type": "geel"
+          "club": "Kampong",
+          "type": "geel",
+          "minuut": 60
         }
       ]
     },
@@ -7382,5 +7388,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:34:59.883Z"
+  "bijgewerkt": "2026-05-05T04:37:52.241Z"
 }
