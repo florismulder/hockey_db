@@ -5392,8 +5392,8 @@
       "thuis": "Kampong",
       "uit": "Hurley",
       "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
+      "score_thuis": 0,
+      "score_uit": 0,
       "viaplay": {
         "scheidsrechters": [
           "Maikel Rabbers",
@@ -5420,7 +5420,17 @@
           "In 22 thuisduels won Kampong 11 keer, Hurley 6 keer, en 5 keer gelijk."
         ],
         "bijgewerkt": "2026-04-24"
-      }
+      },
+      "kaarten": [
+        {
+          "naam": "Fleur Wolfert",
+          "club": "Kampong",
+          "minuut": 47,
+          "type": "groen"
+        }
+      ],
+      "scorers": [],
+      "geverifieerd": false
     },
     {
       "thuis": "Tilburg",
