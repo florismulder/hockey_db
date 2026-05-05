@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "82129bf7-ce29-41c7-9a39-9b71e6a3aa95",
+      "naam": "HK (H)  Pinoké naar de play offs, EHL ticket Oranje Rood",
+      "velden": {
+        "goedgekeurd": 6
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-05T08:17:39.044Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "bbf7464a-e963-439d-a404-77c82ad76be8",
       "naam": "Den Bosch gooit z'n glazen in  ‘Dit was het slechtste scenario’",
       "velden": {
