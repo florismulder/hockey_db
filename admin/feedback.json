@@ -1,6 +1,100 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Sabine Plönissen bergt haar stick voorgoed op en stopt met hockey.",
+      "bron_zin": "Eerder al werd bekend dat Julia Remmerswaal vertrekt bij HDM en dat Sabine Plönissen (Amsterdam) haar stick voorgoed opbergt."
+    },
+    {
+      "bullet": "Floks van der Beek verlaat Bloemendaal in de zomer van 26.",
+      "bron_zin": "Keeper Phileine Hazen verkast naar SCHC, terwijl ook Floks van de Beek de club verlaat.",
+      "origineel": "Floks van der Beek verlaat Bloemendaal."
+    },
+    {
+      "bullet": "Annelies Pos van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26",
+      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
+      "origineel": "Annelies Pos kondigde haar afscheid van het tophockey aan."
+    },
+    {
+      "bullet": "Sterre Bregman van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26.",
+      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
+      "origineel": "Sterre Bregman kondigde haar afscheid van het tophockey aan."
+    },
+    {
+      "bullet": "Demi Hilterman van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26.",
+      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
+      "origineel": "Demi Hilterman kondigde haar afscheid van het tophockey aan."
+    },
+    {
+      "bullet": "Josephine Bekkers keert na zomer 26 niet meer terug bij Den Bosch.",
+      "bron_zin": "Verder zien we komend seizoen Teuntje de Wit en Josephine Bekkers niet meer terug bij Den Bosch",
+      "origineel": "Josephine Bekkers keert komend seizoen niet meer terug bij Den Bosch."
+    },
+    {
+      "bullet": "Teuntje de Wit keert na zomer 26 niet meer terug bij Den Bosch.",
+      "bron_zin": "Verder zien we komend seizoen Teuntje de Wit en Josephine Bekkers niet meer terug bij Den Bosch",
+      "origineel": "Teuntje de Wit keert komend seizoen niet meer terug bij Den Bosch."
+    },
+    {
+      "bullet": "Amber Ezechiels neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Amber Ezechiels neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Meeuw Tulp neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Meeuw Tulp neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Anouk Stam neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Anouk Stam neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Nina van der Marel neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Nina van der Marel neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Marloes Timmermans neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Marloes Timmermans neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Elin van Erk neemt zomer 26 afscheid van Pinoké.",
+      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
+      "origineel": "Elin van Erk neemt afscheid van Pinoké."
+    },
+    {
+      "bullet": "Brechtje van Santbrink neemt zomer 26 afscheid van Rotterdam; nieuwe club begin mei 26 onbekend.",
+      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
+      "origineel": "Brechtje van Santbrink neemt afscheid van Rotterdam; nieuwe club onbekend."
+    },
+    {
+      "bullet": "Iris Langejans verlaat zomer 26 Rotterdam en vertrekt naar Mannheim (Dui).",
+      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
+      "origineel": "Iris Langejans verlaat Rotterdam en vertrekt naar Mannheim (Dui)."
+    },
+    {
+      "bullet": "Joy Haarman neemt zomer 26 afscheid van Rotterdam.",
+      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
+      "origineel": "Joy Haarman neemt afscheid van Rotterdam."
+    },
+    {
+      "bullet": "Kirsten Zennemers neemt zomer 26 afscheid van Rotterdam.",
+      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
+      "origineel": "Kirsten Zennemers neemt afscheid van Rotterdam."
+    },
+    {
+      "bullet": "Naomi Brunsveld keert na zomer 26 niet meer terug bij SCHC.",
+      "bron_zin": "Bij Stichtsche keren [...] Naomi Brunsveld en Elodie Picard (Leuven) komend seizoen niet meer terug in Bilthoven.",
+      "origineel": "Naomi Brunsveld keert komend seizoen niet meer terug bij SCHC."
+    },
+    {
+      "bullet": "Keeper Rifka Bakker keert na zomer 26 niet meer terug bij SCHC.",
+      "bron_zin": "Bij Stichtsche keren Xan de Waard, Famke Richardson, keeper Rifka Bakker [...] komend seizoen niet meer terug in Bilthoven.",
+      "origineel": "Keeper Rifka Bakker keert komend seizoen niet meer terug bij SCHC."
+    },
+    {
       "bullet": "Famke Richardson stopt na dit seizoen bij SCHC.",
       "bron_zin": "Vlak voor tijd kreeg zij een publiekswissel, samen met Famke Richardson die eveneens stopt."
     },
@@ -153,93 +247,6 @@
       "bullet": "Phileine Hazen werd vorig jaar kampioen van de Promotieklasse met Bloemendaal. Seizoen 24-25. Phileine Hazen won eerder deze maand de Gold Cup met Bloemendaal.",
       "bron_zin": "Met De Mussen werd ze vorig jaar kampioen van de Promotieklasse",
       "origineel": "Phileine Hazen werd vorig jaar kampioen van de Promotieklasse met Bloemendaal."
-    },
-    {
-      "bullet": "Phileine Hazen van Bloemendaal wordt de opvolger van Elodie Picard bij SCHC. Elodie Picard speelt komend seizoen in België bij Leuven. Elodie Picard kwam na de winterstop niet meer in actie door een zware knieblessure.",
-      "bron_zin": "Phileine Hazen wordt de opvolger van Picard.",
-      "origineel": "Phileine Hazen wordt de opvolger van Elodie Picard bij SCHC."
-    },
-    {
-      "bullet": "Phileine Hazen wordt de opvolger van Elodie Picard bij SCHC. Elodie Picard vertrekt volgend seizoen bij SCHC. Elodie Picard speelt komend seizoen in België bij Leuven. Elodie Picard kwam na de winterstop niet meer in actie door een zware knieblessure.",
-      "bron_zin": "De Bilthovenaren nemen afscheid van eerste keus Elodie Picard.",
-      "origineel": "Elodie Picard vertrekt volgend seizoen bij SCHC."
-    },
-    {
-      "bullet": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal, op 26-04-26. Het werd 2-2.",
-      "bron_zin": "Hij kreeg geel, net als Mustapha Cassiem die woest op Wortelboer afkwam.",
-      "origineel": "Mustapha Cassiem kreeg geel na een massaal opstootje in de Klassieker tegen Bloemendaal."
-    },
-    {
-      "bullet": "Floris Wortelboer kreeg geel na een massaal opstootje in de Klassieker tegen Amsterdam op 26-04-26. Het werd 2-2.",
-      "bron_zin": "Hij kreeg geel, net als Mustapha Cassiem die woest op Wortelboer afkwam.",
-      "origineel": "Floris Wortelboer kreeg geel na een massaal opstootje in de Klassieker tegen Amsterdam."
-    },
-    {
-      "bullet": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug. Ze miste vorig jaar in 2025 de EHL, play-offs en EK door hamstringblessures.",
-      "bron_zin": "Die heeft dan ook de laatste tijd een behoorlijke lijst met blessures achter de rug",
-      "origineel": "Jip Dicke heeft de laatste tijd een behoorlijke lijst met blessures achter de rug."
-    },
-    {
-      "bullet": "Lisa Post viel uit met een op het oog heftige duimblessure, op 26-04-26 in duel tegen Amsterdam. Ze liep de blessure op bij het uitlopen van een strafcorner. SCHC won de wedstrijd met 0-1.",
-      "bron_zin": "het uitvallen van verdediger Lisa Post, met een - op het oog - heftige duimblessure.",
-      "origineel": "Lisa Post viel uit met een op het oog heftige duimblessure."
-    },
-    {
-      "bullet": "Timo Boers scoorde zijn zevende hattrick in zijn Bossche carrière, op 26-04-26 tegen Hurley (5-1). Hij evenaart hiermee het clubrecord van Piet-Hein Geeris.",
-      "bron_zin": "Met zijn zevende hattrick in zijn Bossche carrière had Timo Boers een groot aandeel",
-      "origineel": "Timo Boers scoorde zijn zevende hattrick in zijn Bossche carrière."
-    },
-    {
-      "bullet": "Joep Troost doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen, op 25-04-26 tegen KZ.",
-      "bron_zin": "doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen.",
-      "origineel": "Joep Troost doorbrak voor het eerst in zijn loopbaan de grens van twintig treffers in één seizoen."
-    },
-    {
-      "bullet": "Thomas Sorsby scoorde het winnende doelpunt in de Gold Cup-finale. Op 23 april 26, tegen Oranje-Rood, scoort hij in 47ste minuut de 2-3.",
-      "bron_zin": "Uiteindelijk was het Thomas Sorsby die in de 47e minuut het verschil maakte door de 2-3 binnen te werken.",
-      "origineel": "Thomas Sorsby scoorde het winnende doelpunt in de Gold Cup-finale."
-    },
-    {
-      "bullet": "Alexander Stadler verving onverwacht Sander van Berkel in de Gold Cup finale.",
-      "bron_zin": "Zijn plek onder de lat was ingenomen door Alexander Stadler"
-    },
-    {
-      "bullet": "Sander van Berkel (keeper) miste de Gold Cup finale door een file veroorzaakt door een ernstig ongeluk. Normaal keept Van Berkel in de beker, nu deed eerste keeper Alexander Stadler dat.",
-      "bron_zin": "Hij miste de finale door een file.",
-      "origineel": "Sander van Berkel miste de Gold Cup finale door een file veroorzaakt door een ernstig ongeluk."
-    },
-    {
-      "bullet": "Robbert Kemperman kreeg de bijnaam 'mister backhand' vanwege zijn vele backhand-doelpunten.",
-      "bron_zin": "Kemperman gaat de boeken in als ‘mister backhand’. Een bijnaam die hij zo’n tien jaar geleden kreeg"
-    },
-    {
-      "bullet": "Robbert Kemperman nam in 2021 afscheid van Oranje na de Olympische Spelen.",
-      "bron_zin": "na zijn Oranje-afscheid in 2021. De verloren kwartfinale tegen Australië op de Olympische Spelen was zijn laatste interland."
-    },
-    {
-      "bullet": "Robbert Kemperman won vorig seizoen, in het seizoen 24-25, de landstitel met Amsterdam.",
-      "bron_zin": "had een belangrijke rol in de gewonnen landstitel van vorig seizoen.",
-      "origineel": "Robbert Kemperman won vorig seizoen de landstitel met Amsterdam."
-    },
-    {
-      "bullet": "Robbert Kemperman stapte in 2022 verrassend over naar Amsterdam.",
-      "bron_zin": "voordat hij in 2022 verrassend overstapte naar Amsterdam."
-    },
-    {
-      "bullet": "Robbert Kemperman won twee landstitels en de EHL met Kampong.",
-      "bron_zin": "In Utrecht won hij twee landstitels en de EHL"
-    },
-    {
-      "bullet": "Robbert Kemperman speelde tien jaar voor Kampong.",
-      "bron_zin": "Na zijn periode in Duitsland speelde Kemperman tien jaar voor Kampong"
-    },
-    {
-      "bullet": "Robbert Kemperman debuteerde als zeventienjarige in Oranje, destijds een record.",
-      "bron_zin": "Hij was toen al speler van Oranje, waar hij als zeventienjarige debuteerde. Op dat moment een record."
-    },
-    {
-      "bullet": "Robbert Kemperman speelde twee jaar voor Rot-Weiss Köln in Duitsland.",
-      "bron_zin": "het jaar dat Kemperman begon aan een tweejarig avontuur bij Rot-Weiss Köln."
     }
   ],
   "verborgen_bullets": []
