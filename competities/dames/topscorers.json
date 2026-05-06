@@ -1,7 +1,7 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-05-04",
+  "bijgewerkt": "2026-05-06",
   "topscorers": [
     {
       "naam": "Frédérique Matla",
@@ -945,7 +945,7 @@
     },
     {
       "naam": "Reese D'Ariano",
-      "naam_slug": "reese_dariano",
+      "naam_slug": "reese_d_ariano",
       "club": "Amsterdam",
       "doelpunten": 1,
       "vd": 1,
