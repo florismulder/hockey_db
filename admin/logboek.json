@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "4158cc30-b072-45df-b872-2bf9cafcbed7",
+      "naam": "Trainerscarrousel HK  Bas Bogaard nieuwe hoofdcoach Hurley",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-07T06:42:30.621Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "96c4ab0f-77da-461b-bfb3-e67e190295fc",
       "naam": "Transfers nog meer",
       "velden": {
