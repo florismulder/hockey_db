@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Noam Sheridan promoveerde met zijn vader als teammanager naar de Hoofdklasse.",
+      "bron_zin": "Met je vader promoveren naar de Hoofdklasse, wie kan dat nou zeggen?",
+      "origineel": "Noam Sheridan promoveerde met zijn vader naar de Hoofdklasse."
+    },
+    {
+      "bullet": "Noam Sheridan stopt na dit seizoen met tophockey. Speelt sinds 2019 bij Hurley.",
+      "bron_zin": "Daar vertelde Sheridan dat hij ging stoppen en maakte hij ook een belofte.",
+      "origineel": "Noam Sheridan stopt na dit seizoen met tophockey."
+    },
+    {
       "bullet": "Pepijn Reyenga stopt na dit seizoen 25-26 bij Den Bosch voor een maatschappelijke carrière. Speelde in 23 negen interlands voor Oranje. Stond eerder een jaar buitenspel ivm een hersenschudding.",
       "bron_zin": "Pepijn Reyenga stopt na dit seizoen bij Den Bosch.",
       "origineel": "Pepijn Reyenga stopt na dit seizoen bij Den Bosch voor een maatschappelijke carrière."
@@ -236,16 +246,6 @@
       "bullet": "Juup Veen vertrekt na dit seizoen 25-26 van Schaerweijde naar Kampong.",
       "bron_zin": "Een bosje bloemen voor de naar Kampong vertrekkende Juup en Peppe Veen.",
       "origineel": "Juup Veen vertrekt na dit seizoen van Schaerweijde naar Kampong."
-    },
-    {
-      "bullet": "Lode Draaijer kwam zomer '25 van Ede en voegde direct veel kwaliteit toe aan Schaerweijde.",
-      "bron_zin": "Onder andere de nieuwelingen Joost van Eijck (Victoria) en de broers Stijn en Lode Draaijer (Ede) voegden direct al veel kwaliteit toe.",
-      "origineel": "Lode Draaijer kwam van Ede en voegde direct veel kwaliteit toe aan Schaerweijde."
-    },
-    {
-      "bullet": "Stijn Draaijer kwam zomer '25 van Ede en voegde direct veel kwaliteit toe aan Schaerweijde.",
-      "bron_zin": "Onder andere de nieuwelingen Joost van Eijck (Victoria) en de broers Stijn en Lode Draaijer (Ede) voegden direct al veel kwaliteit toe.",
-      "origineel": "Stijn Draaijer kwam van Ede en voegde direct veel kwaliteit toe aan Schaerweijde."
     }
   ],
   "verborgen_bullets": []
