@@ -1017,7 +1017,7 @@ function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws, o
   const nieuws = useMemo(() => {
     const slug = speler.id || slugify(speler.naam);
     const items = (spelersnieuws||{})[slug] || [];
-    return [...items].sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
+    return [...items].filter(i => !i.verborgen).sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
   }, [spelersnieuws, speler]);
 
   const doelpunten = ts?.doelpunten || wedstrijden.length;
