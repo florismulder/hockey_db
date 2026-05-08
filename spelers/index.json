@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-05-05",
+  "bijgewerkt": "2026-05-08",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -8616,6 +8616,14 @@
       "naam": "Maddie Zimmer",
       "club": "Rotterdam",
       "geslacht": "dames",
+      "keeper": false,
+      "aanvoerder": false
+    },
+    {
+      "id": "brieuc_delemazure",
+      "naam": "Brieuc Delemazure",
+      "club": "Rotterdam",
+      "geslacht": "heren",
       "keeper": false,
       "aanvoerder": false
     }
