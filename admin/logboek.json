@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "b099b274-746b-4eb9-bc00-e5152a7451f5",
+      "naam": "Weer een thriller voor Hurley  ‘Deze opdracht past beter bij ons’",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T14:44:31.423Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "4158cc30-b072-45df-b872-2bf9cafcbed7",
       "naam": "Trainerscarrousel HK  Bas Bogaard nieuwe hoofdcoach Hurley",
       "velden": {
