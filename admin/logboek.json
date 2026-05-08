@@ -2,6 +2,19 @@
   "entries": [
     {
       "type": "nieuwe_speler_wachtrij",
+      "id": "alfredo_baron_estarellas",
+      "naam": "Alfredo Baron Estarellas",
+      "velden": {
+        "naam": "Alfredo Baron Estarellas",
+        "club": "Hurley",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T14:56:00.304Z"
+    },
+    {
+      "type": "nieuwe_speler_wachtrij",
       "id": "brieuc_delemazure",
       "naam": "Brieuc Delemazure",
       "velden": {
