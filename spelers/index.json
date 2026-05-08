@@ -8729,7 +8729,7 @@
       "naam": "Yara Akkerman",
       "club": "HDM",
       "geslacht": "dames",
-      "rugnummer": "",
+      "rugnummer": 7,
       "keeper": false,
       "aanvoerder": false,
       "nationaliteit": "",
@@ -8738,7 +8738,10 @@
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "positie": "aanvaller",
+      "geboortedatum": "2009-09-24",
+      "eerste_club": "HDM"
     }
   ]
 }
