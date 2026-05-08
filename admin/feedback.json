@@ -1,6 +1,10 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Kenny Bain speelde eerder voor Hurley en komt nu uit voor Laren.",
+      "bron_zin": "Bain speelt inmiddels voor Laren, de ploeg die zaterdag juist moet voorkomen dat Hurley opnieuw toeslaat op Schaerweijde."
+    },
+    {
       "bullet": "Xan de Waard (SCHC) speelde dertien jaar voor het Nederlands elftal (Oranje).",
       "bron_zin": "De aankomende strijd om de wereldtitel in Nederland en België voelt voor De Waard als een perfect eindstation van haar lange hockeyreis, die inmiddels vijftien seizoenen in de Hoofdklasse en dertien jaar in Oranje behelst."
     },
@@ -235,11 +239,6 @@
       "bullet": "Dylan Lucieer maakt zomer 26 de overstap van Rotterdam naar Kampong Heren 1.",
       "bron_zin": "SV Kampong Heren 1 heeft zich voor komend seizoen versterkt met aanvaller Dylan Lucieer.",
       "origineel": "Dylan Lucieer maakt de overstap van Rotterdam naar Kampong Heren 1."
-    },
-    {
-      "bullet": "Bente Jager heeft haar contract voorjaar 26 verlengd bij Pinoké Dames 1.",
-      "bron_zin": "Florine Rodenburg en Bente Jager hebben hun contract verlengd.",
-      "origineel": "Bente Jager heeft haar contract verlengd bij Pinoké Dames 1."
     }
   ],
   "verborgen_bullets": []
