@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Alfredo Baron Estarellas (ESP) versterkt Hurley. Hij komt over van Real Club de Polo en tekent voor twee seizoenen. Hij speelde vier keer de EHL en werd vijf keer landskampioen.",
+      "bron_zin": "Hurley verwelkomt de Spanjaard Alfredo Baron Estarellas.",
+      "origineel": "Alfredo Baron Estarellas versterkt Hurley."
+    },
+    {
+      "bullet": "Brieuc Delemazure versterkt Rotterdam voor komend seizoen 26-27. Komt voer van Lille. Speelde als Frans international op het EK, WK en de OS van 24.",
+      "bron_zin": "Rotterdam heeft zich voor komend seizoen versterkt met Frans international Brieuc Delemazure.",
+      "origineel": "Brieuc Delemazure versterkt Rotterdam voor komend seizoen."
+    },
+    {
       "bullet": "Noam Sheridan promoveerde met zijn vader als teammanager naar de Hoofdklasse.",
       "bron_zin": "Met je vader promoveren naar de Hoofdklasse, wie kan dat nou zeggen?",
       "origineel": "Noam Sheridan promoveerde met zijn vader naar de Hoofdklasse."
@@ -236,16 +246,6 @@
       "bullet": "Kenny Bain, invalspits van Laren, kwam uit zijn hockeypensioen voor dit seizoen 25-26. In de laatste fase van de competitie.",
       "bron_zin": "Bain, de invalspits die eigenlijk na vorig seizoen zijn stick aan de wilgen hing.",
       "origineel": "Kenny Bain, invalspits van Laren, kwam uit zijn hockeypensioen voor dit seizoen."
-    },
-    {
-      "bullet": "Peppe Veen vertrekt na dit seizoen 25-26 van Schaerweijde naar Kampong.",
-      "bron_zin": "Een bosje bloemen voor de naar Kampong vertrekkende Juup en Peppe Veen.",
-      "origineel": "Peppe Veen vertrekt na dit seizoen van Schaerweijde naar Kampong."
-    },
-    {
-      "bullet": "Juup Veen vertrekt na dit seizoen 25-26 van Schaerweijde naar Kampong.",
-      "bron_zin": "Een bosje bloemen voor de naar Kampong vertrekkende Juup en Peppe Veen.",
-      "origineel": "Juup Veen vertrekt na dit seizoen van Schaerweijde naar Kampong."
     }
   ],
   "verborgen_bullets": []
