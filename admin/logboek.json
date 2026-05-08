@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "9ecf0705-9b13-48bc-b73e-6b57965045c2",
+      "naam": "Carrousel HK  Brieuc Delemazure versterkt Rotterdam",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T14:59:24.809Z"
+    },
+    {
       "type": "nieuwe_speler_wachtrij",
       "id": "alfredo_baron_estarellas",
       "naam": "Alfredo Baron Estarellas",
