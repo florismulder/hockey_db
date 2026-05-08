@@ -1,6 +1,19 @@
 {
   "entries": [
     {
+      "type": "nieuwe_speler_wachtrij",
+      "id": "brieuc_delemazure",
+      "naam": "Brieuc Delemazure",
+      "velden": {
+        "naam": "Brieuc Delemazure",
+        "club": "Rotterdam",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T14:54:37.364Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "b099b274-746b-4eb9-bc00-e5152a7451f5",
       "naam": "Weer een thriller voor Hurley  ‘Deze opdracht past beter bij ons’",
