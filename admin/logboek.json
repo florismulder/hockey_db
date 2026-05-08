@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "ce203988-f149-4d02-90f8-42a0b2dfb340",
+      "naam": "Alles of niets  Laren en Hurley strijden tegen…   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 10
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T15:44:33.770Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "e17a364c-ed7d-44c6-9f04-7a8267f61488",
       "naam": "Geen perfect slot nodig voor Xan de Waard  ‘Het voelt af’",
       "velden": {
