@@ -8626,6 +8626,14 @@
       "geslacht": "heren",
       "keeper": false,
       "aanvoerder": false
+    },
+    {
+      "id": "alfredo_baron_estarellas",
+      "naam": "Alfredo Baron Estarellas",
+      "club": "Hurley",
+      "geslacht": "heren",
+      "keeper": false,
+      "aanvoerder": false
     }
   ]
 }
