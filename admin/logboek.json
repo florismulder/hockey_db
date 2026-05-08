@@ -1,6 +1,31 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "roos_alkemade",
+      "naam": "Roos Alkemade",
+      "velden": {
+        "club": "HDM",
+        "geslacht": "dames",
+        "rugnummer": 21,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "geboortedatum": "2005-03-04",
+        "positie": "middenvelder",
+        "eerste_club": "HDM"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T15:09:16.406Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "9ecf0705-9b13-48bc-b73e-6b57965045c2",
       "naam": "Carrousel HK  Brieuc Delemazure versterkt Rotterdam",
