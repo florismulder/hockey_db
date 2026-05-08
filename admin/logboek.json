@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "e17a364c-ed7d-44c6-9f04-7a8267f61488",
+      "naam": "Geen perfect slot nodig voor Xan de Waard  ‘Het voelt af’",
+      "velden": {
+        "goedgekeurd": 8
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-08T15:42:15.635Z"
+    },
+    {
       "type": "bullet",
       "id": "sabine_plonissen",
       "naam": "sabine_plonissen",
