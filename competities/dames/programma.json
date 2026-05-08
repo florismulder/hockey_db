@@ -5396,30 +5396,19 @@
       "score_uit": 0,
       "viaplay": {
         "scheidsrechters": [
-          "Maikel Rabbers",
-          "Rik Kroon"
+          "Naam 1"
         ],
         "stats_thuis": [
-          "Kampong won dit seizoen veertien van haar negentien wedstrijden.",
-          "Kampong maakt nog kans om de reguliere competitie als nummer één af te sluiten.",
-          "Kampong leed dit seizoen pas twee nederlagen.",
-          "Kampong-aanvoerder Luna Fokke is met acht treffers de meest trefzekere speelster.",
-          "Luna Fokke gaf dit seizoen zeven assists en was betrokken bij vijftien doelpunten.",
-          "Luna Fokke is vier doelpunten verwijderd van haar vijftigste Hoofdklasse-goal voor Kampong."
+          "Bullet 1",
+          "Bullet 2"
         ],
         "stats_uit": [
-          "Noor van den Nieuwenhof raakte geblesseerd en is er een tijdje uit.",
-          "Hurley verloor vijf van haar laatste zes wedstrijden.",
-          "Hurley won slechts één van haar laatste twaalf uitwedstrijden in de Hoofdklasse.",
-          "Hurley nadert mijlpaal van 500 Hoofdklasse-wedstrijden."
+          "Bullet 1"
         ],
         "stats_onderling": [
-          "Kampong is al vier wedstrijden ongeslagen tegen Hurley.",
-          "Kampong is thuis al vijf wedstrijden ongeslagen tegen Hurley.",
-          "In 44 duels won Kampong 21 keer, Hurley 12 keer, en 11 keer gelijk.",
-          "In 22 thuisduels won Kampong 11 keer, Hurley 6 keer, en 5 keer gelijk."
+          "H2H bullet"
         ],
-        "bijgewerkt": "2026-04-24"
+        "bijgewerkt": "2026-05-08"
       },
       "kaarten": [
         {
@@ -6028,5 +6017,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:51:26.451Z"
+  "bijgewerkt": "2026-05-08T16:19:18.041Z"
 }
