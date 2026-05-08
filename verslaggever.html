@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hockey DB · Verslaggever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    :root {
+      --bg: #f9f8f5;
+      --surface: #ffffff;
+      --surface2: #f1f0ed;
+      --border: #e5e3de;
+      --border2: #d0cdc6;
+      --text: #1a1916;
+      --muted: #7a7672;
+      --accent: #c4621a;
+      --accent-light: #fdf0e8;
+      --green: #1a6b3a;
+      --green-light: #e8f5ed;
+      --red: #c0392b;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    #root {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--surface);
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 16px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .page { padding-bottom: 80px; }
+
+    /* Home */
+    .home-hero {
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .home-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .home-sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+    .gender-btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .gender-btn {
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 16px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: all .15s;
+    }
+    .gender-btn:active { transform: scale(0.97); }
+    .gender-btn.heren { border-color: #3b82f6; background: #eff6ff; color: #1e40af; }
+    .gender-btn.dames { border-color: #ec4899; background: #fdf2f8; color: #9d174d; }
+    .gender-emoji { font-size: 36px; }
+
+    /* Clubs */
+    .section-title {
+      padding: 20px 16px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .club-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 0 16px;
+    }
+    .club-card {
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 14px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      text-align: left;
+      transition: all .12s;
+    }
+    .club-card:active { transform: scale(0.97); background: var(--accent-light); border-color: var(--accent); }
+
+    /* Club page */
+    .club-header {
+      padding: 20px 16px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .club-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .club-gender-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--surface2);
+      color: var(--muted);
+    }
+
+    /* Stand strip */
+    .stand-strip {
+      margin: 16px 16px 0;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .stand-strip-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .stand-strip-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .stand-full-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+    }
+    .stand-row {
+      display: grid;
+      grid-template-columns: 28px 1fr 28px 28px 28px 28px 40px;
+      gap: 4px;
+      align-items: center;
+      font-size: 13px;
+    }
+    .stand-pos {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .stand-club { font-weight: 600; }
+    .stand-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .stand-pnt {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-align: center;
+    }
+    .stand-labels {
+      display: grid;
+      grid-template-columns: 28px 1fr 28px 28px 28px 28px 40px;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .stand-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* Volledige stand */
+    .full-stand {
+      padding: 0 16px;
+    }
+    .full-stand-row {
+      display: grid;
+      grid-template-columns: 24px 1fr 24px 24px 24px 24px 36px;
+      gap: 4px;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .full-stand-row.highlight {
+      background: var(--accent-light);
+      margin: 0 -16px;
+      padding: 8px 16px;
+      border-radius: 0;
+    }
+
+    /* Speler matrix */
+    .speler-matrix {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 0 16px;
+    }
+    .speler-card {
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 8px;
+      cursor: pointer;
+      font-family: inherit;
+      text-align: center;
+      transition: all .12s;
+    }
+    .speler-card:active { transform: scale(0.96); background: var(--accent-light); border-color: var(--accent); }
+    .speler-nr {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .speler-naam {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .speler-goals {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    /* Nieuws bullets */
+    .bullet-list { padding: 0 16px; }
+    .bullet-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .bullet-datum {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 3px;
+    }
+    .bullet-naam {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+    .bullet-tekst { font-size: 14px; line-height: 1.5; }
+
+    /* Spelerspagina */
+    .speler-header {
+      padding: 20px 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(to bottom, var(--surface2), var(--surface));
+    }
+    .speler-nr-groot {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .speler-naam-groot {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -.5px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .speler-club-tag {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Stats card */
+    .stats-card {
+      margin: 16px 16px 0;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .stats-totaal {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      gap: 12px;
+    }
+    .stats-getal {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stats-label {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .stats-breakdown {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--border);
+    }
+    .stats-breakdown-item {
+      padding: 12px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      cursor: pointer;
+    }
+    .stats-breakdown-item:last-child { border-right: none; }
+    .stats-breakdown-item.active { background: var(--accent-light); }
+    .stats-breakdown-getal {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .stats-breakdown-label {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* Wedstrijden uitklap */
+    .wedstrijden-lijst {
+      border-top: 1px solid var(--border);
+    }
+    .wedstrijd-rij {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+    .wedstrijd-rij:last-child { border-bottom: none; }
+    .wedstrijd-datum {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .wedstrijd-teams { font-weight: 500; }
+    .wedstrijd-type {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: var(--surface2);
+      color: var(--muted);
+    }
+    .wedstrijd-type.sc { background: #dbeafe; color: #1e40af; }
+    .wedstrijd-type.sb { background: #fef3c7; color: #92400e; }
+
+    /* Bio */
+    .bio-card {
+      margin: 12px 16px 0;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    /* Loader */
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 0;
+      color: var(--muted);
+      font-size: 14px;
+      gap: 8px;
+    }
+    .spinner {
+      width: 16px; height: 16px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .empty {
+      padding: 32px 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Bottom back */
+    .bottom-back {
+      padding: 20px 16px;
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+    .bottom-back-btn {
+      width: 100%;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .bottom-back-btn:active { background: var(--accent-light); }
+
+    .zone-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    .zone-playoff { background: #166534; color: white; }
+    .zone-playout { background: #facc15; color: #1a1a1a; }
+    .zone-degradatie { background: #991b1b; color: white; }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 16px 0;
+    }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const {useState, useEffect, useMemo, useCallback} = React;
+
+const BASE = "https://florismulder.github.io/hockey_db";
+
+const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong",
+  "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+const CLUBS_D = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+  "Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+
+function slugify(naam) {
+  return (naam||"").toLowerCase()
+    .replace(/é/g,"e").replace(/ë/g,"e").replace(/ï/g,"i").replace(/ö/g,"o").replace(/ü/g,"u")
+    .replace(/ä/g,"a").replace(/â/g,"a").replace(/ê/g,"e").replace(/î/g,"i").replace(/ô/g,"o")
+    .replace(/û/g,"u").replace(/ç/g,"c").replace(/ñ/g,"n").replace(/ß/g,"ss")
+    .replace(/[^a-z0-9\s-]/g,"").trim().replace(/\s+/g,"_");
+}
+
+function formatDatum(d) {
+  if (!d) return "";
+  const dt = new Date(d);
+  if (isNaN(dt)) return d.slice(0,10)||"";
+  return dt.toLocaleDateString("nl-NL",{day:"numeric",month:"short"});
+}
+
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [laden, setLaden] = useState(false);
+  useEffect(() => {
+    if (!url) return;
+    setLaden(true);
+    setData(null);
+    fetch(url + "?t=" + Date.now())
+      .then(r => r.json())
+      .then(d => { setData(d); setLaden(false); })
+      .catch(() => setLaden(false));
+  }, [url]);
+  return {data, laden};
+}
+
+// ── Speler pagina ──────────────────────────────────────────────
+function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws, onTerug}) {
+  const [uitgeklapt, setUitgeklapt] = useState(null); // "veld"|"sc"|"sb"
+
+  // Stats uit topscorers
+  const ts = useMemo(() => {
+    return (topscorers||[]).find(t => t.naam === speler.naam) || null;
+  }, [topscorers, speler]);
+
+  // Alle wedstrijden van speler gesorteerd
+  const wedstrijden = useMemo(() => {
+    const res = [];
+    (programma?.wedstrijden||[]).forEach(w => {
+      (w.scorers||[]).forEach(s => {
+        if ((s.naam||"").toLowerCase() === (speler.naam||"").toLowerCase()) {
+          const type = (s.type||"veld").toLowerCase();
+          const t = type === "strafcorner" ? "sc" : type === "strafbal" ? "sb" : type;
+          res.push({datum: w.datum, thuis: w.thuis, uit: w.uit,
+            score: `${w.score_thuis}-${w.score_uit}`, type: t, minuut: s.minuut});
+        }
+      });
+    });
+    return res.sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
+  }, [programma, speler]);
+
+  const gefilterdeWedstrijden = useMemo(() => {
+    if (!uitgeklapt) return wedstrijden;
+    return wedstrijden.filter(w => w.type === uitgeklapt);
+  }, [wedstrijden, uitgeklapt]);
+
+  // Nieuws van speler
+  const nieuws = useMemo(() => {
+    const slug = speler.id || slugify(speler.naam);
+    const items = (spelersnieuws||{})[slug] || [];
+    return [...items].sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
+  }, [spelersnieuws, speler]);
+
+  const doelpunten = ts?.doelpunten || wedstrijden.length;
+  const veld = ts?.vd ?? wedstrijden.filter(w=>w.type==="veld").length;
+  const sc   = ts?.sc ?? wedstrijden.filter(w=>w.type==="sc").length;
+  const sb   = ts?.sb ?? wedstrijden.filter(w=>w.type==="sb").length;
+
+  return (
+    <div className="page">
+      {/* Header */}
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Terug</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+
+      {/* Speler info */}
+      <div className="speler-header">
+        {speler.rugnummer && <div className="speler-nr-groot">#{speler.rugnummer}</div>}
+        <div className="speler-naam-groot">{speler.naam}</div>
+        <div className="speler-club-tag">{speler.club} · {geslacht === "heren" ? "Heren" : "Dames"}</div>
+      </div>
+
+      {/* Doelpunten stats */}
+      <div className="stats-card">
+        <div className="stats-totaal">
+          <div className="stats-getal">{doelpunten}</div>
+          <div>
+            <div style={{fontWeight:700, fontSize:15}}>Doelpunten</div>
+            <div className="stats-label">seizoen 2025-2026</div>
+          </div>
+        </div>
+        <div className="stats-breakdown">
+          {[["veld","Veld",veld],["sc","SC",sc],["sb","SB",sb]].map(([type, label, n]) => (
+            <div key={type} className={`stats-breakdown-item ${uitgeklapt===type?"active":""}`}
+              onClick={() => setUitgeklapt(uitgeklapt===type ? null : type)}>
+              <div className="stats-breakdown-getal">{n}</div>
+              <div className="stats-breakdown-label">{label}</div>
+            </div>
+          ))}
+        </div>
+        {uitgeklapt && (
+          <div className="wedstrijden-lijst">
+            {gefilterdeWedstrijden.length === 0
+              ? <div className="empty">Geen wedstrijden</div>
+              : gefilterdeWedstrijden.map((w,i) => (
+                <div key={i} className="wedstrijd-rij">
+                  <div>
+                    <div className="wedstrijd-datum">{w.datum?.slice(0,10)}</div>
+                    <div className="wedstrijd-teams">{w.thuis} – {w.uit}</div>
+                  </div>
+                  <div style={{display:"flex",alignItems:"center",gap:8}}>
+                    <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:12,color:"var(--muted)"}}>{w.minuut}'</div>
+                    <div className={`wedstrijd-type ${w.type}`}>{w.type}</div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        )}
+      </div>
+
+      {/* Bio */}
+      {speler.bio && (
+        <>
+          <div className="section-title">Bio</div>
+          <div className="bio-card">{speler.bio}</div>
+        </>
+      )}
+
+      {/* Nieuws */}
+      {nieuws.length > 0 && (
+        <>
+          <div className="section-title">Nieuws</div>
+          <div className="bullet-list">
+            {nieuws.map((n,i) => (
+              <div key={i} className="bullet-item">
+                <div className="bullet-datum">{formatDatum(n.datum)}</div>
+                <div className="bullet-tekst">{n.bullet}</div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* Onderste terugknop */}
+      <div className="bottom-back">
+        <button className="bottom-back-btn" onClick={onTerug}>← Terug naar {speler.club}</button>
+      </div>
+    </div>
+  );
+}
+
+// ── Club pagina ────────────────────────────────────────────────
+function ClubPagina({club, geslacht, onTerug, onSpeler}) {
+  const [toonVolleSt, setToonVolleSt] = useState(false);
+
+  const g = geslacht === "heren" ? "heren" : "dames";
+  const {data: progData, laden: progLaden} = useFetch(`${BASE}/competities/${g}/programma.json`);
+  const {data: standData} = useFetch(`${BASE}/competities/${g}/standen.json`);
+  const {data: topData} = useFetch(`${BASE}/competities/${g}/topscorers.json`);
+  const {data: spelersData} = useFetch(`${BASE}/spelers/index.json`);
+  const {data: nieuws} = useFetch(`${BASE}/nieuws/spelersnieuws.json`);
+
+  // Spelers van deze club gesorteerd op rugnummer
+  const spelers = useMemo(() => {
+    const lijst = (spelersData?.spelers||[]).filter(s =>
+      (s.club||"").toLowerCase() === club.toLowerCase() &&
+      (s.geslacht||"").toLowerCase() === (geslacht === "heren" ? "heren" : "dames")
+    );
+    return lijst.sort((a,b) => parseInt(a.rugnummer||99) - parseInt(b.rugnummer||99));
+  }, [spelersData, club, geslacht]);
+
+  // Spelers afgeleid uit programma als geen roster data
+  const spelersUitProg = useMemo(() => {
+    if (spelers.length > 0) return [];
+    const namen = new Set();
+    const res = [];
+    (progData?.wedstrijden||[]).forEach(w => {
+      [...(w.scorers||[]), ...(w.kaarten||[])].forEach(s => {
+        if ((s.club||"").toLowerCase() === club.toLowerCase() && s.naam && !namen.has(s.naam)) {
+          namen.add(s.naam);
+          const ts = (topData?.topscorers||[]).find(t => t.naam === s.naam);
+          res.push({naam: s.naam, rugnummer: null, doelpunten: ts?.doelpunten || 0});
+        }
+      });
+    });
+    return res.sort((a,b) => b.doelpunten - a.doelpunten);
+  }, [progData, club, spelers, topData]);
+
+  const alleSpelers = spelers.length > 0 ? spelers : spelersUitProg;
+
+  // Club stand
+  const clubStand = useMemo(() => {
+    return (standData?.stand||[]).find(s => s.club?.toLowerCase() === club.toLowerCase());
+  }, [standData, club]);
+
+  // Nieuws bullets van de club (club-gebonden spelers)
+  const clubNieuws = useMemo(() => {
+    if (!nieuws || !progData) return [];
+    const res = [];
+    // Alle spelersnamen bij deze club
+    const clubSpelerNamen = new Set(alleSpelers.map(s => slugify(s.naam)));
+    Object.entries(nieuws).forEach(([id, items]) => {
+      if (clubSpelerNamen.has(id)) {
+        items.forEach(item => res.push({...item, spelerId: id}));
+      }
+    });
+    return res.sort((a,b) => (b.datum||"").localeCompare(a.datum||"")).slice(0,20);
+  }, [nieuws, alleSpelers, progData]);
+
+  const handleSpeler = (s) => {
+    const ts = (topData?.topscorers||[]).find(t => t.naam === s.naam);
+    onSpeler({
+      ...s,
+      id: s.id || slugify(s.naam),
+      club,
+      doelpunten: ts?.doelpunten || 0,
+    }, progData, topData?.topscorers, nieuws);
+  };
+
+  return (
+    <div className="page">
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Clubs</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+
+      <div className="club-header">
+        <div className="club-name">{club}</div>
+        <span className="club-gender-tag">{geslacht === "heren" ? "💙 Heren" : "🩷 Dames"}</span>
+      </div>
+
+      {/* Ranglijst */}
+      {clubStand && (
+        <div className="stand-strip">
+          <div className="stand-strip-header">
+            <div className="stand-strip-title">Ranglijst</div>
+            <button className="stand-full-btn" onClick={() => setToonVolleSt(v => !v)}>
+              {toonVolleSt ? "Inklappen" : "Volledige stand"}
+            </button>
+          </div>
+          {!toonVolleSt ? (
+            <>
+              <div className="stand-labels">
+                <div className="stand-label">#</div>
+                <div></div>
+                <div className="stand-label">G</div>
+                <div className="stand-label">W</div>
+                <div className="stand-label">V</div>
+                <div className="stand-label">DS</div>
+                <div className="stand-label">Pnt</div>
+              </div>
+              <div className="stand-row">
+                <div className="stand-pos">{clubStand.positie}</div>
+                <div className="stand-club">
+                  {club}
+                  {clubStand.zone && <span className={`zone-badge zone-${clubStand.zone}`}>{clubStand.zone}</span>}
+                </div>
+                <div className="stand-num">{clubStand.gespeeld}</div>
+                <div className="stand-num">{clubStand.gewonnen}</div>
+                <div className="stand-num">{clubStand.verloren}</div>
+                <div className="stand-num">{clubStand.doelsaldo > 0 ? "+"+clubStand.doelsaldo : clubStand.doelsaldo}</div>
+                <div className="stand-pnt">{clubStand.punten}</div>
+              </div>
+            </>
+          ) : (
+            <div className="full-stand">
+              <div className="stand-labels">
+                <div className="stand-label">#</div>
+                <div></div>
+                <div className="stand-label">G</div>
+                <div className="stand-label">W</div>
+                <div className="stand-label">V</div>
+                <div className="stand-label">DS</div>
+                <div className="stand-label">Pnt</div>
+              </div>
+              {(standData?.stand||[]).map((s,i) => (
+                <div key={i} className={`full-stand-row ${s.club===club?"highlight":""}`}>
+                  <div className="stand-pos">{s.positie}</div>
+                  <div className="stand-club" style={{fontSize:12}}>{s.club}</div>
+                  <div className="stand-num">{s.gespeeld}</div>
+                  <div className="stand-num">{s.gewonnen}</div>
+                  <div className="stand-num">{s.verloren}</div>
+                  <div className="stand-num">{s.doelsaldo > 0 ? "+"+s.doelsaldo : s.doelsaldo}</div>
+                  <div className="stand-pnt">{s.punten}</div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Speler matrix */}
+      <div className="section-title">Selectie</div>
+      {progLaden && <div className="loader"><div className="spinner"/> Laden…</div>}
+      {!progLaden && alleSpelers.length === 0 && <div className="empty">Geen spelers gevonden</div>}
+      {!progLaden && alleSpelers.length > 0 && (
+        <div className="speler-matrix">
+          {alleSpelers.map((s,i) => {
+            const ts = (topData?.topscorers||[]).find(t => t.naam === s.naam);
+            return (
+              <button key={i} className="speler-card" onClick={() => handleSpeler(s)}>
+                {s.rugnummer && <div className="speler-nr">#{s.rugnummer}</div>}
+                <div className="speler-naam">{s.naam}</div>
+                {ts && ts.doelpunten > 0 && (
+                  <div className="speler-goals">⚽ {ts.doelpunten}</div>
+                )}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Club nieuws */}
+      {clubNieuws.length > 0 && (
+        <>
+          <div className="section-title">Nieuws</div>
+          <div className="bullet-list">
+            {clubNieuws.map((n,i) => {
+              const naam = alleSpelers.find(s => slugify(s.naam) === n.spelerId)?.naam || n.spelerId;
+              return (
+                <div key={i} className="bullet-item">
+                  <div className="bullet-datum">{formatDatum(n.datum)}</div>
+                  <div className="bullet-naam">{naam}</div>
+                  <div className="bullet-tekst">{n.bullet}</div>
+                </div>
+              );
+            })}
+          </div>
+        </>
+      )}
+
+      <div className="bottom-back">
+        <button className="bottom-back-btn" onClick={onTerug}>← Terug naar clubs</button>
+      </div>
+    </div>
+  );
+}
+
+// ── Clubs pagina ───────────────────────────────────────────────
+function ClubsPagina({geslacht, onTerug, onClub}) {
+  const clubs = geslacht === "heren" ? CLUBS_H : CLUBS_D;
+  return (
+    <div className="page">
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Start</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+      <div className="section-title">
+        {geslacht === "heren" ? "💙 Heren — Clubs" : "🩷 Dames — Clubs"}
+      </div>
+      <div className="club-grid">
+        {clubs.map(club => (
+          <button key={club} className="club-card" onClick={() => onClub(club)}>
+            {club}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── Home pagina ────────────────────────────────────────────────
+function HomePagina({onGeslacht}) {
+  return (
+    <div className="page">
+      <div className="header">
+        <div className="logo">🏑 Hockey DB</div>
+      </div>
+      <div className="home-hero">
+        <div className="home-title">Verslaggever</div>
+        <div className="home-sub">Tulp Hoofdklasse 2025-2026</div>
+        <div className="gender-btns">
+          <button className="gender-btn heren" onClick={() => onGeslacht("heren")}>
+            <span className="gender-emoji">💙</span>
+            Heren
+          </button>
+          <button className="gender-btn dames" onClick={() => onGeslacht("dames")}>
+            <span className="gender-emoji">🩷</span>
+            Dames
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── App ────────────────────────────────────────────────────────
+function App() {
+  const [stack, setStack] = useState([{view:"home"}]);
+  const huidig = stack[stack.length - 1];
+
+  const push = (state) => {
+    setStack(s => [...s, state]);
+    window.scrollTo(0,0);
+  };
+  const pop = () => {
+    setStack(s => s.length > 1 ? s.slice(0,-1) : s);
+    window.scrollTo(0,0);
+  };
+
+  if (huidig.view === "home") {
+    return <HomePagina onGeslacht={g => push({view:"clubs", geslacht:g})} />;
+  }
+  if (huidig.view === "clubs") {
+    return <ClubsPagina
+      geslacht={huidig.geslacht}
+      onTerug={pop}
+      onClub={c => push({view:"club", club:c, geslacht:huidig.geslacht})}
+    />;
+  }
+  if (huidig.view === "club") {
+    return <ClubPagina
+      club={huidig.club}
+      geslacht={huidig.geslacht}
+      onTerug={pop}
+      onSpeler={(s, prog, ts, nieuws) => push({view:"speler", speler:s,
+        geslacht:huidig.geslacht, programma:prog, topscorers:ts, spelersnieuws:nieuws})}
+    />;
+  }
+  if (huidig.view === "speler") {
+    return <SpelerPagina
+      speler={huidig.speler}
+      geslacht={huidig.geslacht}
+      programma={huidig.programma}
+      topscorers={huidig.topscorers}
+      spelersnieuws={huidig.spelersnieuws}
+      onTerug={pop}
+    />;
+  }
+  return null;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
