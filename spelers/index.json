@@ -8710,7 +8710,7 @@
       "naam": "Roos Alkemade",
       "club": "HDM",
       "geslacht": "dames",
-      "rugnummer": "",
+      "rugnummer": 21,
       "keeper": false,
       "aanvoerder": false,
       "nationaliteit": "",
@@ -8719,7 +8719,10 @@
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "2005-03-04",
+      "positie": "middenvelder",
+      "eerste_club": "HDM"
     },
     {
       "id": "yara_akkerman",
