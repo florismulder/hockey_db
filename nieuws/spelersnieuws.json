@@ -1635,5 +1635,16 @@
       "handmatig": false,
       "verborgen": false
     }
+  ],
+  "roos_alkemade": [
+    {
+      "datum": "2026-05-08",
+      "titel": "Alkemade naar Amsterdam",
+      "link": "",
+      "bullet": "Roos Alkemade stapt in zomer 26 over van HDM naar Amsterdam.",
+      "competitie": "HK",
+      "handmatig": true,
+      "verborgen": false
+    }
   ]
 }
