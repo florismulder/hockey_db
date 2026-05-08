@@ -501,6 +501,205 @@
       background: var(--border);
       margin: 16px 0;
     }
+
+    /* Programma knop */
+    .programma-btn {
+      display: block;
+      width: calc(100% - 32px);
+      margin: 16px 16px 0;
+      background: var(--text);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 16px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: .2px;
+    }
+    .programma-btn:active { opacity: .85; }
+
+    /* Programma lijst */
+    .prog-groep-header {
+      padding: 14px 16px 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      border-top: 1px solid var(--border);
+    }
+    .prog-groep-header:first-child { border-top: none; }
+    .prog-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      gap: 12px;
+      background: var(--surface);
+      transition: background .1s;
+    }
+    .prog-item:active { background: var(--accent-light); }
+    .prog-tijd {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      width: 36px;
+      flex-shrink: 0;
+    }
+    .prog-teams {
+      flex: 1;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .prog-vp-badge {
+      font-size: 9px;
+      font-weight: 700;
+      color: #0099cc;
+      background: #e0f4ff;
+      border-radius: 4px;
+      padding: 2px 5px;
+      flex-shrink: 0;
+    }
+
+    /* Wedstrijd detail */
+    .wedstrijd-detail-header {
+      padding: 20px 16px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(to bottom, var(--surface2), var(--surface));
+    }
+    .wedstrijd-datum-groot {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .wedstrijd-clubs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .wedstrijd-club-btn {
+      flex: 1;
+      background: var(--surface2);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 10px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      text-align: center;
+      transition: all .12s;
+    }
+    .wedstrijd-club-btn:active { background: var(--accent-light); border-color: var(--accent); }
+    .wedstrijd-vs {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      flex-shrink: 0;
+      padding: 0 4px;
+    }
+    .wedstrijd-tijdstip {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    /* H2H bullets */
+    .h2h-card {
+      margin: 16px 16px 0;
+      background: #e0f4ff;
+      border: 1.5px solid #b3ddf2;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .h2h-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #0070a8;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      margin-bottom: 10px;
+    }
+    .h2h-bullet {
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--text);
+      padding: 6px 0;
+      border-bottom: 1px solid #c0dff0;
+    }
+    .h2h-bullet:last-child { border-bottom: none; padding-bottom: 0; }
+
+    /* Club in wedstrijd */
+    .viaplay-card {
+      margin: 16px 16px 0;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .viaplay-header {
+      background: var(--surface2);
+      padding: 10px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .viaplay-bullet {
+      padding: 10px 14px;
+      font-size: 14px;
+      line-height: 1.55;
+      border-bottom: 1px solid var(--border);
+    }
+    .viaplay-bullet:last-child { border-bottom: none; }
+
+    .selectie-knop {
+      display: block;
+      width: calc(100% - 32px);
+      margin: 16px 16px 0;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+    }
+    .selectie-knop:active { opacity: .85; }
+
+    /* Komende wedstrijden in club-view */
+    .komend-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      gap: 10px;
+      font-size: 13px;
+    }
+    .komend-datum {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      width: 52px;
+      flex-shrink: 0;
+    }
+    .komend-teams { flex: 1; font-weight: 500; }
+    .komend-tijd {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
@@ -544,6 +743,244 @@ function useFetch(url) {
       .catch(() => setLaden(false));
   }, [url]);
   return {data, laden};
+}
+
+// ── Club in wedstrijd pagina ───────────────────────────────────
+function ClubInWedstrijdPagina({club, geslacht, viaplayStats, programma, onTerug, onSelectie}) {
+  const g = geslacht === "heren" ? "heren" : "dames";
+  const {data: spelersData} = useFetch(`${BASE}/spelers/index.json`);
+  const {data: spelersnieuws} = useFetch(`${BASE}/nieuws/spelersnieuws.json`);
+
+  const alleSpelers = useMemo(() => {
+    return (spelersData?.spelers||[]).filter(s =>
+      (s.club||"").toLowerCase() === club.toLowerCase() &&
+      (s.geslacht||"").toLowerCase() === (geslacht === "heren" ? "heren" : "dames")
+    );
+  }, [spelersData, club, geslacht]);
+
+  // Nieuws van spelers van deze club
+  const clubNieuws = useMemo(() => {
+    if (!spelersnieuws) return [];
+    const res = [];
+    const clubSpelerNamen = new Set((alleSpelers||[]).filter(s =>
+      (s.club||"").toLowerCase() === club.toLowerCase()
+    ).map(s => slugify(s.naam)));
+    Object.entries(spelersnieuws).forEach(([id, items]) => {
+      if (clubSpelerNamen.has(id)) {
+        items.forEach(item => res.push({...item, spelerId: id}));
+      }
+    });
+    return res.sort((a,b) => (b.datum||"").localeCompare(a.datum||"")).slice(0,15);
+  }, [spelersnieuws, club, alleSpelers]);
+
+  // Komende wedstrijden van deze club
+  const komendeWedstrijden = useMemo(() => {
+    const vandaag = new Date().toISOString().slice(0,10);
+    return (programma?.wedstrijden||[])
+      .filter(w => !w.gespeeld && w.datum >= vandaag &&
+        ((w.thuis||"").toLowerCase() === club.toLowerCase() ||
+         (w.uit||"").toLowerCase() === club.toLowerCase()))
+      .sort((a,b) => (a.datum||"").localeCompare(b.datum||""))
+      .slice(0,5);
+  }, [programma, club]);
+
+  return (
+    <div className="page">
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Terug</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+
+      <div className="club-header">
+        <div className="club-name">{club}</div>
+        <span className="club-gender-tag">{geslacht === "heren" ? "💙 Heren" : "🩷 Dames"}</span>
+      </div>
+
+      {/* Viaplay stats */}
+      {viaplayStats && viaplayStats.length > 0 && (
+        <>
+          <div className="viaplay-card">
+            <div className="viaplay-header">▶ Viaplay info</div>
+            {viaplayStats.map((s,i) => (
+              <div key={i} className="viaplay-bullet">{s}</div>
+            ))}
+          </div>
+        </>
+      )}
+      {(!viaplayStats || viaplayStats.length === 0) && (
+        <div className="empty">Geen Viaplay info beschikbaar</div>
+      )}
+
+      {/* Knop naar selectie */}
+      <button className="selectie-knop" onClick={onSelectie}>
+        👥 Bekijk selectie
+      </button>
+
+      {/* Nieuws */}
+      {clubNieuws.length > 0 && (
+        <>
+          <div className="section-title">Nieuws</div>
+          <div className="bullet-list">
+            {clubNieuws.map((n,i) => {
+              const naam = (alleSpelers||[]).find(s => slugify(s.naam) === n.spelerId)?.naam || n.spelerId;
+              return (
+                <div key={i} className="bullet-item">
+                  <div className="bullet-datum">{formatDatum(n.datum)}</div>
+                  <div className="bullet-naam">{naam}</div>
+                  <div className="bullet-tekst">{n.bullet}</div>
+                </div>
+              );
+            })}
+          </div>
+        </>
+      )}
+
+      {/* Komende wedstrijden */}
+      {komendeWedstrijden.length > 0 && (
+        <>
+          <div className="section-title">Komende wedstrijden</div>
+          {komendeWedstrijden.map((w,i) => (
+            <div key={i} className="komend-item">
+              <div className="komend-datum">{w.datum?.slice(5).replace("-","/")||""}</div>
+              <div className="komend-teams">
+                {w.thuis?.toLowerCase() === club.toLowerCase()
+                  ? <><strong>{w.thuis}</strong> – {w.uit}</>
+                  : <>{w.thuis} – <strong>{w.uit}</strong></>
+                }
+              </div>
+              <div className="komend-tijd">{w.tijdstip}</div>
+            </div>
+          ))}
+        </>
+      )}
+
+      <div className="bottom-back">
+        <button className="bottom-back-btn" onClick={onTerug}>← Terug</button>
+      </div>
+    </div>
+  );
+}
+
+// ── Wedstrijd detail pagina ────────────────────────────────────
+function WedstrijdDetailPagina({wedstrijd, geslacht, programma, spelersnieuws, alleSpelers, topscorers, onTerug, onClub}) {
+  const w = wedstrijd;
+  const h2h = w.viaplay?.stats_onderling || [];
+  const thuisStats = w.viaplay?.stats_thuis || [];
+  const uitStats = w.viaplay?.stats_uit || [];
+
+  return (
+    <div className="page">
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Programma</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+
+      {/* Wedstrijd header */}
+      <div className="wedstrijd-detail-header">
+        <div className="wedstrijd-datum-groot">
+          {w.datum?.slice(0,10)} · {w.tijdstip}
+          {w.viaplay && <span style={{marginLeft:8,fontSize:10,fontWeight:700,color:"#0099cc"}}>▶ VP</span>}
+        </div>
+        <div className="wedstrijd-clubs">
+          <button className="wedstrijd-club-btn"
+            onClick={() => onClub(w.thuis, thuisStats, w)}>
+            {w.thuis}
+          </button>
+          <div className="wedstrijd-vs">vs</div>
+          <button className="wedstrijd-club-btn"
+            onClick={() => onClub(w.uit, uitStats, w)}>
+            {w.uit}
+          </button>
+        </div>
+      </div>
+
+      {/* H2H */}
+      {h2h.length > 0 && (
+        <div className="h2h-card">
+          <div className="h2h-title">Onderlinge duels</div>
+          {h2h.map((s,i) => (
+            <div key={i} className="h2h-bullet">{s}</div>
+          ))}
+        </div>
+      )}
+      {!w.viaplay && (
+        <div className="empty" style={{paddingTop:24}}>Geen Viaplay info voor deze wedstrijd</div>
+      )}
+
+      <div className="bottom-back">
+        <button className="bottom-back-btn" onClick={onTerug}>← Terug naar programma</button>
+      </div>
+    </div>
+  );
+}
+
+// ── Programma pagina ───────────────────────────────────────────
+function ProgrammaPagina({geslacht, onTerug, onWedstrijd}) {
+  const g = geslacht === "heren" ? "heren" : "dames";
+  const {data: progData, laden} = useFetch(`${BASE}/competities/${g}/programma.json`);
+
+  const vandaag = new Date().toISOString().slice(0,10);
+
+  // Ongespeelde wedstrijden gegroepeerd per datum
+  const gegroepeerd = useMemo(() => {
+    const ongespeeld = (progData?.wedstrijden||[])
+      .filter(w => !w.gespeeld && (w.datum||"") >= vandaag)
+      .sort((a,b) => {
+        const d = (a.datum||"").localeCompare(b.datum||"");
+        if (d !== 0) return d;
+        return (a.tijdstip||"").localeCompare(b.tijdstip||"");
+      });
+    const groepen = {};
+    ongespeeld.forEach(w => {
+      const d = w.datum||"";
+      if (!groepen[d]) groepen[d] = [];
+      groepen[d].push(w);
+    });
+    return Object.entries(groepen).sort((a,b) => a[0].localeCompare(b[0]));
+  }, [progData, vandaag]);
+
+  const formatGroepDatum = (d) => {
+    if (!d) return "";
+    const dt = new Date(d);
+    return dt.toLocaleDateString("nl-NL",{weekday:"long",day:"numeric",month:"long"});
+  };
+
+  return (
+    <div className="page">
+      <div className="header">
+        <button className="back-btn" onClick={onTerug}>← Clubs</button>
+        <div className="logo">🏑 Verslaggever</div>
+      </div>
+
+      <div style={{padding:"16px 16px 8px"}}>
+        <div style={{fontWeight:700,fontSize:17}}>
+          {geslacht === "heren" ? "💙 Heren" : "🩷 Dames"} — Programma
+        </div>
+        <div style={{fontSize:13,color:"var(--muted)",marginTop:2}}>Komende wedstrijden</div>
+      </div>
+
+      {laden && <div className="loader"><div className="spinner"/> Laden…</div>}
+      {!laden && gegroepeerd.length === 0 && (
+        <div className="empty">Geen komende wedstrijden</div>
+      )}
+      {gegroepeerd.map(([datum, wedstrijden]) => (
+        <div key={datum}>
+          <div className="prog-groep-header">{formatGroepDatum(datum)}</div>
+          {wedstrijden.map((w,i) => (
+            <div key={i} className="prog-item" onClick={() => onWedstrijd(w, progData)}>
+              <div className="prog-tijd">{w.tijdstip||""}</div>
+              <div className="prog-teams">{w.thuis} – {w.uit}</div>
+              {w.viaplay && <div className="prog-vp-badge">▶ VP</div>}
+            </div>
+          ))}
+        </div>
+      ))}
+
+      <div className="bottom-back">
+        <button className="bottom-back-btn" onClick={onTerug}>← Terug naar clubs</button>
+      </div>
+    </div>
+  );
 }
 
 // ── Speler pagina ──────────────────────────────────────────────
@@ -861,7 +1298,7 @@ function ClubPagina({club, geslacht, onTerug, onSpeler}) {
 }
 
 // ── Clubs pagina ───────────────────────────────────────────────
-function ClubsPagina({geslacht, onTerug, onClub}) {
+function ClubsPagina({geslacht, onTerug, onClub, onProgramma}) {
   const clubs = geslacht === "heren" ? CLUBS_H : CLUBS_D;
   return (
     <div className="page">
@@ -879,6 +1316,9 @@ function ClubsPagina({geslacht, onTerug, onClub}) {
           </button>
         ))}
       </div>
+      <button className="programma-btn" onClick={onProgramma}>
+        📅 Programma
+      </button>
     </div>
   );
 }
@@ -930,6 +1370,38 @@ function App() {
       geslacht={huidig.geslacht}
       onTerug={pop}
       onClub={c => push({view:"club", club:c, geslacht:huidig.geslacht})}
+      onProgramma={() => push({view:"programma", geslacht:huidig.geslacht})}
+    />;
+  }
+  if (huidig.view === "programma") {
+    return <ProgrammaPagina
+      geslacht={huidig.geslacht}
+      onTerug={pop}
+      onWedstrijd={(w, prog) => push({view:"wedstrijd", wedstrijd:w, geslacht:huidig.geslacht, programma:prog})}
+    />;
+  }
+  if (huidig.view === "wedstrijd") {
+    return <WedstrijdDetailPagina
+      wedstrijd={huidig.wedstrijd}
+      geslacht={huidig.geslacht}
+      programma={huidig.programma}
+      onTerug={pop}
+      onClub={(club, viaplayStats, wedstrijd) => push({
+        view:"club-in-wedstrijd",
+        club, geslacht:huidig.geslacht,
+        viaplayStats, wedstrijd,
+        programma: huidig.programma,
+      })}
+    />;
+  }
+  if (huidig.view === "club-in-wedstrijd") {
+    return <ClubInWedstrijdPagina
+      club={huidig.club}
+      geslacht={huidig.geslacht}
+      viaplayStats={huidig.viaplayStats}
+      programma={huidig.programma}
+      onTerug={pop}
+      onSelectie={() => push({view:"club", club:huidig.club, geslacht:huidig.geslacht})}
     />;
   }
   if (huidig.view === "club") {
