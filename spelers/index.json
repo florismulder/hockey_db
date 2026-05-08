@@ -8720,6 +8720,22 @@
       "vd": "",
       "sc": "",
       "sb": ""
+    },
+    {
+      "id": "yara_akkerman",
+      "naam": "Yara Akkerman",
+      "club": "HDM",
+      "geslacht": "dames",
+      "rugnummer": "",
+      "keeper": false,
+      "aanvoerder": false,
+      "nationaliteit": "",
+      "land_code": "",
+      "oranje": "",
+      "doelpunten_seizoen": "",
+      "vd": "",
+      "sc": "",
+      "sb": ""
     }
   ]
 }
