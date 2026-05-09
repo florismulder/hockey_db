@@ -7455,23 +7455,53 @@
       ]
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Klein Zwitserland",
       "uit": "Rotterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Pieter Hembrecht",
-          "Jonas van 't Hek"
-        ],
-        "stats_thuis": [],
-        "stats_uit": [],
-        "stats_onderling": [],
-        "bijgewerkt": "2026-05-09"
-      }
+      "score_thuis": 0,
+      "score_uit": 5,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Olivier Hortensius",
+          "club": "Rotterdam H1",
+          "minuut": 25,
+          "type": "veld"
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam H1",
+          "minuut": 47,
+          "type": "veld"
+        },
+        {
+          "naam": "Justen Blok",
+          "club": "Rotterdam H1",
+          "minuut": 54,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Joaquin Toscani",
+          "club": "Klein Zwitserland H1",
+          "minuut": 18,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-05-09",
@@ -7555,5 +7585,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:38.538Z"
+  "bijgewerkt": "2026-05-09T19:30:41.140Z"
 }
