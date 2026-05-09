@@ -2,6 +2,29 @@
   "entries": [
     {
       "type": "speler",
+      "id": "joren_romijn",
+      "naam": "Joren Romijn",
+      "velden": {
+        "club": "Hurley",
+        "geslacht": "heren",
+        "rugnummer": 1,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "vorige_clubs": "Qui Vive,Kampong,Amsterdam"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:10:20.949Z"
+    },
+    {
+      "type": "speler",
       "id": "estiaan_kriek",
       "naam": "Estiaan Kriek",
       "velden": {
