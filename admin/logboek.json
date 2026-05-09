@@ -21,6 +21,29 @@
       },
       "oud": {},
       "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:08:33.288Z"
+    },
+    {
+      "type": "speler",
+      "id": "balder_reyenga",
+      "naam": "Balder Reyenga",
+      "velden": {
+        "club": "Laren",
+        "geslacht": "heren",
+        "rugnummer": 24,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "jong",
+        "doelpunten_seizoen": 1,
+        "vd": 0,
+        "sc": 1,
+        "sb": 0,
+        "eerste_club": "Pinoké"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
       "datum": "2026-05-09T09:08:16.980Z"
     },
     {
