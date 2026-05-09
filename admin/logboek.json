@@ -2,6 +2,30 @@
   "entries": [
     {
       "type": "speler",
+      "id": "valentijn_charbon",
+      "naam": "Valentijn Charbon",
+      "velden": {
+        "club": "Laren",
+        "geslacht": "heren",
+        "rugnummer": 21,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": 4,
+        "vd": 3,
+        "sc": 0,
+        "sb": 1,
+        "eerste_club": "Laren",
+        "vorige_clubs": "Almere,Amsterdam"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:07:40.921Z"
+    },
+    {
+      "type": "speler",
       "id": "pelle_vos",
       "naam": "Pelle Vos",
       "velden": {
