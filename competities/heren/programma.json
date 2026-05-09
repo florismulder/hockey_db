@@ -7352,23 +7352,40 @@
       ]
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Laren",
       "uit": "Hurley",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "scheidsrechters": [
-          "Michiel Otten",
-          "Coen van Bunge"
-        ],
-        "stats_thuis": [],
-        "stats_uit": [],
-        "stats_onderling": [],
-        "bijgewerkt": "2026-05-09"
-      }
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Deegan Huisman",
+          "club": "Hurley",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Berend van Langeveld",
+          "club": "Laren",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Kenneth Bain",
+          "club": "Laren",
+          "minuut": 24,
+          "type": "sc"
+        },
+        {
+          "naam": "Fred Newbold",
+          "club": "Hurley",
+          "minuut": 41,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-05-09",
@@ -7480,5 +7497,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:10:48.304Z"
+  "bijgewerkt": "2026-05-09T19:30:36.030Z"
 }
