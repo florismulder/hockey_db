@@ -7388,13 +7388,71 @@
       "kaarten": []
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Amsterdam",
       "uit": "Schaerweijde",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 4,
+      "score_uit": 2,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam H1",
+          "minuut": 29,
+          "type": "veld"
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam H1",
+          "minuut": 34,
+          "type": "veld"
+        },
+        {
+          "naam": "Stijn Draaijer",
+          "club": "Schaerweijde H1",
+          "minuut": 42,
+          "type": "veld"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Floris Middendorp",
+          "club": "Amsterdam H1",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Teun van Aalderen",
+          "club": "Schaerweijde H1",
+          "minuut": 50,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Daan Troost",
+          "club": "Schaerweijde H1",
+          "minuut": 14,
+          "type": "groen"
+        },
+        {
+          "naam": "David Huussen",
+          "club": "Amsterdam H1",
+          "minuut": 47,
+          "type": "groen"
+        },
+        {
+          "naam": "Lucas Corstens",
+          "club": "Schaerweijde H1",
+          "minuut": 52,
+          "type": "groen"
+        }
+      ]
     },
     {
       "datum": "2026-05-09",
@@ -7497,5 +7555,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:36.030Z"
+  "bijgewerkt": "2026-05-09T19:30:38.538Z"
 }
