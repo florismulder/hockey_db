@@ -4895,7 +4895,8 @@
       "doelpunten_seizoen": 2,
       "vd": 0,
       "sc": 2,
-      "sb": 0
+      "sb": 0,
+      "vorige_clubs": "HGC,HGC"
     },
     {
       "id": "diederick_van_berckel",
