@@ -22,6 +22,30 @@
       },
       "oud": {},
       "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:07:11.152Z"
+    },
+    {
+      "type": "speler",
+      "id": "pelle_vos",
+      "naam": "Pelle Vos",
+      "velden": {
+        "club": "Laren",
+        "geslacht": "heren",
+        "rugnummer": 12,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "vorige_clubs": "Bloemendaal,HGC",
+        "eerste_club": "Laren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
       "datum": "2026-05-09T09:07:00.841Z"
     },
     {
