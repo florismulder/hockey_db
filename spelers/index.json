@@ -8491,12 +8491,13 @@
       "keeper": false,
       "aanvoerder": false,
       "nationaliteit": "",
-      "land_code": "",
+      "land_code": "SCO",
       "oranje": "",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1990-03-16"
     },
     {
       "id": "carlijn_van_geest",
