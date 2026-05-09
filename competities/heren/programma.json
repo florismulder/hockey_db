@@ -7309,7 +7309,17 @@
       "uit": "Rotterdam",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Pieter Hembrecht",
+          "Jonas van 't Hek"
+        ],
+        "stats_thuis": [],
+        "stats_uit": [],
+        "stats_onderling": [],
+        "bijgewerkt": "2026-05-09"
+      }
     },
     {
       "datum": "2026-05-09",
@@ -7393,5 +7403,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-05T04:37:54.191Z"
+  "bijgewerkt": "2026-05-09T08:50:56.756Z"
 }
