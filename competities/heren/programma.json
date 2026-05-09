@@ -7291,7 +7291,17 @@
       "uit": "Hurley",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Michiel Otten",
+          "Coen van Bunge"
+        ],
+        "stats_thuis": [],
+        "stats_uit": [],
+        "stats_onderling": [],
+        "bijgewerkt": "2026-05-09"
+      }
     },
     {
       "datum": "2026-05-09",
@@ -7403,5 +7413,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T08:50:56.756Z"
+  "bijgewerkt": "2026-05-09T08:55:54.600Z"
 }
