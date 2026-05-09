@@ -7467,7 +7467,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 6,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Olivier Hortensius",
@@ -7485,13 +7485,13 @@
           "naam": "Timme van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 47,
-          "type": "veld"
+          "type": "strafcorner"
         },
         {
           "naam": "Justen Blok",
           "club": "Rotterdam H1",
           "minuut": 54,
-          "type": "veld"
+          "type": "strafcorner"
         }
       ],
       "kaarten": [
@@ -7585,5 +7585,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:41.140Z"
+  "bijgewerkt": "2026-05-09T19:30:43.752Z"
 }
