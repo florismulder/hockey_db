@@ -2,6 +2,29 @@
   "entries": [
     {
       "type": "speler",
+      "id": "daan_dekker",
+      "naam": "Daan Dekker",
+      "velden": {
+        "club": "Hurley",
+        "geslacht": "heren",
+        "rugnummer": 3,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "vorige_clubs": "Almere,Amsterdam"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:11:24.369Z"
+    },
+    {
+      "type": "speler",
       "id": "joren_romijn",
       "naam": "Joren Romijn",
       "velden": {
