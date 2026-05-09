@@ -984,8 +984,12 @@ function ProgrammaPagina({geslacht, onTerug, onWedstrijd}) {
 }
 
 // ── Speler pagina ──────────────────────────────────────────────
-function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws, onTerug}) {
+function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws: propNieuws, onTerug}) {
   const [uitgeklapt, setUitgeklapt] = useState(null); // "veld"|"sc"|"sb"
+
+  // Fix: zelf fetchen — prop kan null zijn als ClubPagina nog aan het laden was bij klikmoment
+  const {data: fetchedNieuws} = useFetch(`${BASE}/nieuws/spelersnieuws.json`);
+  const spelersnieuws = fetchedNieuws || propNieuws;
 
   // Stats uit topscorers
   const ts = useMemo(() => {
