@@ -6085,13 +6085,13 @@
       "scorers": [
         {
           "naam": "Texas Bukkens",
-          "club": "Laren",
+          "club": "Pinoké",
           "minuut": 6,
           "type": "veld"
         },
         {
           "naam": "Indra Aerts",
-          "club": "Laren",
+          "club": "Pinoké",
           "minuut": 7,
           "type": "veld"
         },
@@ -6115,7 +6115,7 @@
         },
         {
           "naam": "Teun van Uunen",
-          "club": "Pinoké",
+          "club": "Laren",
           "minuut": 37,
           "type": "sc"
         },
@@ -6127,12 +6127,13 @@
         },
         {
           "naam": "Thomas Vis",
-          "club": "Pinoké",
+          "club": "Laren",
           "minuut": 44,
           "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [],
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
@@ -6249,7 +6250,7 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 4,
           "type": "veld"
         },
@@ -6278,8 +6279,8 @@
           "type": "veld"
         },
         {
-          "naam": "Kenny Bain",
-          "club": "Laren",
+          "naam": "Kenneth Bain",
+          "club": "Laren H1",
           "minuut": 28,
           "type": "veld"
         },
@@ -6291,7 +6292,7 @@
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren",
+          "club": "Laren H1",
           "minuut": 60,
           "type": "veld"
         }
@@ -6315,8 +6316,7 @@
           "type": "geel",
           "minuut": 46
         }
-      ],
-      "geverifieerd": false
+      ]
     },
     {
       "thuis": "Klein Zwitserland",
