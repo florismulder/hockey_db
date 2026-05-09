@@ -7504,13 +7504,28 @@
       ]
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Pinoké",
       "uit": "Bloemendaal",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Elian Mazkour",
+          "club": "Pinoké H1",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Bloemendaal H1",
+          "minuut": 27,
+          "type": "strafbal"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-05-17",
@@ -7585,5 +7600,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:43.752Z"
+  "bijgewerkt": "2026-05-09T19:30:46.183Z"
 }
