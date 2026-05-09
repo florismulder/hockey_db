@@ -7315,13 +7315,41 @@
       "kaarten": []
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Oranje-Rood",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 1,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Gerard Clapes",
+          "club": "Oranje-Rood",
+          "minuut": 3,
+          "type": "veld"
+        },
+        {
+          "naam": "Silas Lageman",
+          "club": "Kampong",
+          "minuut": 28,
+          "type": "veld"
+        },
+        {
+          "naam": "Isha Houben",
+          "club": "Oranje-Rood",
+          "minuut": 42,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Bram van Battum",
+          "club": "Kampong",
+          "type": "groen",
+          "minuut": 25
+        }
+      ]
     },
     {
       "datum": "2026-05-09",
@@ -7452,5 +7480,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:10:45.804Z"
+  "bijgewerkt": "2026-05-09T19:10:48.304Z"
 }
