@@ -6249,7 +6249,7 @@
       "scorers": [
         {
           "naam": "Berend van Langeveld",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 4,
           "type": "veld"
         },
@@ -6278,8 +6278,8 @@
           "type": "veld"
         },
         {
-          "naam": "Kenneth Bain",
-          "club": "Laren H1",
+          "naam": "Kenny Bain",
+          "club": "Laren",
           "minuut": 28,
           "type": "veld"
         },
@@ -6291,7 +6291,7 @@
         },
         {
           "naam": "Thomas Vis",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 60,
           "type": "veld"
         }
@@ -6315,7 +6315,8 @@
           "type": "geel",
           "minuut": 46
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Klein Zwitserland",
