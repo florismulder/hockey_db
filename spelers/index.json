@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-05-08",
+  "bijgewerkt": "2026-05-09",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -8486,7 +8486,7 @@
       "naam": "Kenny Bain",
       "club": "Laren",
       "geslacht": "heren",
-      "rugnummer": "",
+      "rugnummer": 13,
       "keeper": false,
       "aanvoerder": false,
       "nationaliteit": "",
