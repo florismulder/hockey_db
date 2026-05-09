@@ -5843,7 +5843,17 @@
       "uit": "Pinoké",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "scheidsrechters": [
+          "Sophie Bockelmann",
+          "Lisette Baljon"
+        ],
+        "stats_thuis": [],
+        "stats_uit": [],
+        "stats_onderling": [],
+        "bijgewerkt": "2026-05-09"
+      }
     },
     {
       "datum": "2026-05-10",
@@ -6017,5 +6027,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-08T16:19:18.041Z"
+  "bijgewerkt": "2026-05-09T08:10:54.823Z"
 }
