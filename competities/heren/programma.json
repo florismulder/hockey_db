@@ -7064,7 +7064,7 @@
           "type": "veld"
         },
         {
-          "naam": "Kenneth Bain",
+          "naam": "Kenny Bain",
           "club": "Laren",
           "minuut": 47,
           "type": "sc"
@@ -7076,7 +7076,7 @@
           "type": "veld"
         },
         {
-          "naam": "Kenneth Bain",
+          "naam": "Kenny Bain",
           "club": "Laren",
           "minuut": 55,
           "type": "veld"
@@ -7101,7 +7101,8 @@
           "type": "groen",
           "minuut": 50
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Hurley",
