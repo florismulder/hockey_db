@@ -4930,7 +4930,9 @@
       "doelpunten_seizoen": 4,
       "vd": 3,
       "sc": 0,
-      "sb": 1
+      "sb": 1,
+      "eerste_club": "Laren",
+      "vorige_clubs": "Almere,Amsterdam"
     },
     {
       "id": "luke_friederich",
