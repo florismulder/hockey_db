@@ -2,6 +2,29 @@
   "entries": [
     {
       "type": "speler",
+      "id": "kenneth_bain",
+      "naam": "Kenneth Bain",
+      "velden": {
+        "club": "Laren",
+        "geslacht": "heren",
+        "rugnummer": 13,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "GB-SCT",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "gestopt": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T08:15:53.918Z"
+    },
+    {
+      "type": "speler",
       "id": "kenny_bain",
       "naam": "Kenny Bain",
       "velden": {
