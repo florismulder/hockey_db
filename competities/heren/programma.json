@@ -4712,31 +4712,31 @@
       "scorers": [
         {
           "naam": "Luke Friederich",
-          "club": "Laren H1",
+          "club": "Laren",
           "minuut": 23,
           "type": "veld"
         },
         {
           "naam": "Balder Reyenga",
-          "club": "HDM H1",
+          "club": "Laren",
           "minuut": 34,
           "type": "sc"
         },
         {
           "naam": "Yorben Fontaine",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 50,
           "type": "sc"
         },
         {
           "naam": "Fabian Verzuu",
-          "club": "Laren H1",
+          "club": "HDM",
           "minuut": 51,
           "type": "veld"
         },
         {
           "naam": "Chris Taberima",
-          "club": "HDM H1",
+          "club": "HDM",
           "minuut": 57,
           "type": "sc"
         }
@@ -4748,7 +4748,8 @@
           "type": "groen",
           "minuut": 23
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
