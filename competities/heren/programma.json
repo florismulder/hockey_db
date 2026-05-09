@@ -7267,13 +7267,52 @@
       "kaarten": []
     },
     {
-      "datum": "2026-05-09",
-      "tijdstip": "16:30",
       "thuis": "Den Bosch",
       "uit": "HDM",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 3,
+      "score_uit": 3,
+      "datum": "2026-05-09",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Max Pastoor",
+          "club": "Den Bosch",
+          "minuut": 14,
+          "type": "veld"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM",
+          "minuut": 18,
+          "type": "sc"
+        },
+        {
+          "naam": "Timo Boers",
+          "club": "Den Bosch",
+          "minuut": 21,
+          "type": "sb"
+        },
+        {
+          "naam": "Chris Taberima",
+          "club": "HDM",
+          "minuut": 47,
+          "type": "sb"
+        },
+        {
+          "naam": "Guus van den Boezem",
+          "club": "HDM",
+          "minuut": 57,
+          "type": "sc"
+        },
+        {
+          "naam": "Thierry Brinkman",
+          "club": "Den Bosch",
+          "minuut": 60,
+          "type": "veld"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-05-09",
@@ -7413,5 +7452,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T08:55:54.600Z"
+  "bijgewerkt": "2026-05-09T19:10:45.804Z"
 }
