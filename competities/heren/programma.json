@@ -7514,15 +7514,15 @@
       "scorers": [
         {
           "naam": "Elian Mazkour",
-          "club": "Pinoké H1",
+          "club": "Bloemendaal H1",
           "minuut": 13,
           "type": "veld"
         },
         {
           "naam": "Miles Bukkens",
-          "club": "Bloemendaal H1",
+          "club": "Pinoké H1",
           "minuut": 27,
-          "type": "strafbal"
+          "type": "SB"
         }
       ],
       "kaarten": []
@@ -7600,5 +7600,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:46.183Z"
+  "bijgewerkt": "2026-05-09T19:30:48.600Z"
 }
