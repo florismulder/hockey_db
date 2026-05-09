@@ -3396,13 +3396,13 @@
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Laren",
+          "club": "Hurley",
           "minuut": 21,
           "type": "sc"
         },
         {
           "naam": "Joep Hagendoorn",
-          "club": "Hurley",
+          "club": "Laren",
           "minuut": 39,
           "type": "veld"
         },
@@ -3413,16 +3413,16 @@
           "type": "veld"
         },
         {
-          "naam": "Kenneth Bain",
-          "club": "Hurley",
+          "naam": "Kenny Bain",
+          "club": "Laren",
           "minuut": 50,
           "type": "veld"
         },
         {
           "naam": "Hjalmar Voskuil",
-          "club": "Laren",
+          "club": "Hurley",
           "minuut": 60,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -3444,7 +3444,8 @@
           "type": "geel",
           "minuut": 60
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "HDM",
