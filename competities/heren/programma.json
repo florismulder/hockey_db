@@ -6784,7 +6784,7 @@
       "scorers": [
         {
           "naam": "Olivier Hortensius",
-          "club": "Laren",
+          "club": "Rotterdam",
           "minuut": 4,
           "type": "veld"
         },
@@ -6808,7 +6808,7 @@
         },
         {
           "naam": "Thomas Vis",
-          "club": "Rotterdam",
+          "club": "Laren",
           "minuut": 32,
           "type": "sc"
         },
@@ -6838,7 +6838,8 @@
           "type": "groen",
           "minuut": 49
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
