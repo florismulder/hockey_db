@@ -2,6 +2,29 @@
   "entries": [
     {
       "type": "speler",
+      "id": "estiaan_kriek",
+      "naam": "Estiaan Kriek",
+      "velden": {
+        "club": "Laren",
+        "geslacht": "heren",
+        "rugnummer": 29,
+        "keeper": true,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "ZA",
+        "oranje": "",
+        "doelpunten_seizoen": "",
+        "vd": "",
+        "sc": "",
+        "sb": "",
+        "vorige_clubs": "Kampong"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-09T09:09:35.896Z"
+    },
+    {
+      "type": "speler",
       "id": "balder_reyenga",
       "naam": "Balder Reyenga",
       "velden": {
