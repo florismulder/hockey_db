@@ -7385,7 +7385,32 @@
           "type": "sc"
         }
       ],
-      "kaarten": []
+      "kaarten": [],
+      "viaplay": {
+        "stats_thuis": [
+          "Laren bezet de 11e plaats in de Tulp Hoofdklasse.",
+          "Vorige week verloren ze met 4-3 van Schaerweijde.",
+          "Kenneth Bain en Stan Thoolen scoorden voor Laren.",
+          "Laren verloor zijn laatste tien wedstrijden in de Hoofdklasse en wacht al dertien duels op een zege.",
+          "Laren is met 94 tegengoals de meest gepasseerde ploeg in de Hoofdklasse.",
+          "Laren verloor zijn laatste zes thuiswedstrijden met de doelcijfers 8-27."
+        ],
+        "stats_uit": [
+          "Hurley is nog steeds de hekkensluiter van de competitie.",
+          "Vorige week verloren ze net aan van Oranje-Rood met 0-1.",
+          "Bas Bogaard wordt aankomend seizoen de nieuwe coach van Hurley.",
+          "Hurley trekt voor komend seizoen Spanjaard Alfredo Baron Estrarellas aan.",
+          "Hurley is sinds drie duels puntloos.",
+          "Hurley bleef in dertig van zijn laatste 31 wedstrijden zonder winst."
+        ],
+        "stats_onderling": [
+          "Laren en Hurley gaan in dit onderlinge duel uitmaken wie er dit seizoen rechtstreeks degradeert uit de Hoofdklasse.",
+          "In speelronde 11, op 8 november, werd het een 3-3 gelijkspel tussen beide teams.",
+          "Laren en Hurley stonden in de Hoofdklasse pas negen keer tegenover elkaar.",
+          "De balans slaat uit in het voordeel van Laren, dat in zes van die negen duels ongeslagen bleef.",
+          "De laatste drie onderlinge duels eindigden echter in het voordeel van Hurley, dat drie keer ongeslagen bleef."
+        ]
+      }
     },
     {
       "thuis": "Amsterdam",
@@ -7600,5 +7625,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T19:30:48.600Z"
+  "bijgewerkt": "2026-05-10T05:17:15.965Z"
 }
