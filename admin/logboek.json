@@ -2,6 +2,32 @@
   "entries": [
     {
       "type": "speler",
+      "id": "xan_de_waard",
+      "naam": "Xan de Waard",
+      "velden": {
+        "club": "SCHC",
+        "geslacht": "dames",
+        "rugnummer": 7,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "NL",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 3,
+        "sc": 0,
+        "sb": 0,
+        "lengte": 163,
+        "geboortedatum": "1995-11-08",
+        "vorige_clubs": "Kampong",
+        "bio": "Debuut Oranje op 4 februari 2013. OS (2x goud): Rio 2016 zilver, Tokio 2020 goud, Parijs '24 goud. WK gewonnen (3x) in Den Haag 2014, Londen 20218, Amstelveen/Terassa 2022. EK: goud 4x gewonnen in Amstelveen 2017, Antwerpen 2019, Monchengladbach 2023, Monchengladbach 2025. 4x Hockey Pro League gewonnen."
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T09:10:47.006Z"
+    },
+    {
+      "type": "speler",
       "id": "kenny_bain",
       "naam": "Kenny Bain",
       "velden": {
