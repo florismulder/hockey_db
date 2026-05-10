@@ -1435,6 +1435,12 @@ function SpelersOverzicht({data, setPagina, toast, onRefresh}) {
           <div className="topbar-sub">{gefilterd.length} van {(data.spelers||[]).length} spelers</div>
         </div>
         <div className="topbar-actions">
+          <button className="btn btn-sm" onClick={async()=>{
+            if(!confirm("Dubbele spelers (zelfde naam+club) opruimen?")) return;
+            const res = await apiCall("dedupSpelers", {});
+            if(res.success) { toast(res.verwijderd > 0 ? `✅ ${res.verwijderd} dubbelen verwijderd` : "Geen dubbelen gevonden"); if(res.verwijderd > 0) onRefresh(); }
+            else toast("❌ " + res.error, "error");
+          }}>🧹 Dedup</button>
           <button className="btn btn-primary" onClick={()=>setToontNieuweSpeler(true)}>+ Nieuwe speler</button>
         </div>
       </div>
@@ -1951,7 +1957,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   const verwijderSpeler = async () => {
     setBusy(true);
     try {
-      const res = await apiCall("verwijderSpeler", {spelerId});
+      const res = await apiCall("verwijderSpeler", {spelerId, spelersNaam: speler.naam, spelersClub: speler.club});
       if (!res.success) throw new Error(res.error);
       toast("🗑 " + speler.naam + " verwijderd", "success");
       onRefresh();
