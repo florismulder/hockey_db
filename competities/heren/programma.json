@@ -7477,7 +7477,32 @@
           "minuut": 52,
           "type": "groen"
         }
-      ]
+      ],
+      "viaplay": {
+        "stats_thuis": [
+          "Amsterdam is de nieuwe nummer 4 van de competitie, door de winst van vorige week op Rotterdam (2-3).",
+          "Amsterdam heeft de beste papieren om het vierde en laatste ticket voor de play-offs te bemachtigen.",
+          "De regerend landskampioen heeft 41 punten uit 21 duels, twee punten meer dan nummer vijf Den Bosch.",
+          "Amsterdam is al een tijdje moeilijk te kloppen.",
+          "De ploeg verloor maar één van zijn laatste elf wedstrijden, met verder zeven overwinningen en drie gelijke spelen.",
+          "Amsterdam bleef ongeslagen in zijn laatste vijf thuiswedstrijden (W G W W G)."
+        ],
+        "stats_uit": [
+          "Schaerweijde is de nieuwe nummer 9 van de competitie, door de belangrijke zege op Laren van vorige week (4-3).",
+          "Schaerweijde kwam op 4-0 voorsprong door Daan Troost, Stijn Draaijer, Pepijn Leenhouts en Juup Veen.",
+          "Schaerweijde won vorige week met 4-3 van Laren en verliet door die zege de gevarenzone.",
+          "Met zestien punten uit 21 duels staat de ploeg uit Zeist nu op de veilige negende plek, met twee punten meer dan naaste concurrent HDM.",
+          "Die 4-3 zege op Laren maakte voor Schaerweijde een einde aan een reeks van drie nederlagen.",
+          "Schaerweijde bleef in zijn laatste vijf uitduels zonder zege (G1 V4)."
+        ],
+        "stats_onderling": [
+          "In speelronde 11, op 9 november, eindigde de heenwedstrijd in een 1-1 gelijkspel.",
+          "Amsterdam bleef in zijn laatste acht duels met Schaerweijde ongeslagen (W6 G2) sinds een 3-2 nederlaag in Zeist op 12 oktober 2014.",
+          "Het 1-1 gelijkspel in de heenwedstrijd maakte voor Amsterdam een einde aan een reeks van vijf opeenvolgende overwinningen op Schaerweijde.",
+          "Amsterdam won zijn laatste vijf thuiswedstrijden tegen Schaerweijde sinds een spectaculaire 4-4 in het Wagener Stadion op 28 oktober 2012.",
+          "De grootste thuiszege ooit van Amsterdam op Schaerweijde was een 7-0 op 25 mei 1986."
+        ]
+      }
     },
     {
       "thuis": "Klein Zwitserland",
@@ -7674,5 +7699,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:17:49.495Z"
+  "bijgewerkt": "2026-05-10T05:18:55.510Z"
 }
