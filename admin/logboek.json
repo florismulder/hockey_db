@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "75bf3b98-3c31-463c-80cb-c4cee43b4c6f",
+      "naam": "Hurley verlaat Hoofdklasse na D Day op Laren",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T05:44:06.727Z"
+    },
+    {
       "type": "speler",
       "id": "xan_de_waard",
       "naam": "Xan de Waard",
