@@ -5934,7 +5934,32 @@
       "uit": "SCHC",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Bloemendaal staat 6e in de Tulp Hoofdklasse en kan geen play-offs of play-outs meer spelen.",
+          "Bloemendaal stelde de 6e plek vorige speelronde veilig door met 1-2 te winnen van HDM.",
+          "Demi Hilterman zorgde met twee strafcorners voor de drie punten tegen HDM.",
+          "De overwinning op HDM maakte een einde aan een reeks van zes duels zonder winst voor Bloemendaal.",
+          "Bloemendaal verloor haar laatste drie thuiswedstrijden en wacht al zes thuisduels op een overwinning.",
+          "De laatste thuiszege van Bloemendaal was de 4-1 tegen Tilburg op 18 oktober 2025, de enige in de laatste zeventien thuisoptredens in de Hoofdklasse."
+        ],
+        "stats_uit": [
+          "SCHC is nog altijd de nummer 1 van de competitie en is zeker van plek 1 en een EHL-ticket.",
+          "SCHC is in de reguliere competitie al 35 duels op rij ongeslagen.",
+          "SCHC maakte in 21 wedstrijden 75 goals, het meeste van alle ploegen.",
+          "SCHC won haar laatste twee wedstrijden en incasseerde daarbij geen enkel doelpunt.",
+          "Yibbi Jansen is samen met Frédérique Matla in de race voor de topscorerstitel met 21 doelpunten.",
+          "Dit wordt de laatste reguliere competitiewedstrijd van Xan de Waard in de Hoofdklasse, die na dit seizoen afscheid neemt."
+        ],
+        "stats_onderling": [
+          "In de Hoofdklasse verloor SCHC nog nooit van Bloemendaal.",
+          "SCHC won haar laatste vier duels met Bloemendaal, sinds een 0-0 gelijkspel op 6 november 2022.",
+          "Bloemendaal pakte in elf thuisduels met SCHC slechts één punt, in de allereerste ontmoeting op 9 maart 2003 (1-1).",
+          "Bloemendaal leed tien thuisnederlagen op rij tegen SCHC, waarin ze in acht van die wedstrijden niet tot scoren kwamen.",
+          "De totale balans in 22 duels is 0x winst Bloemendaal, 3x gelijkspel en 19x winst SCHC."
+        ]
+      }
     },
     {
       "datum": "2026-05-15",
@@ -6099,5 +6124,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:19:16.145Z"
+  "bijgewerkt": "2026-05-10T05:19:35.917Z"
 }
