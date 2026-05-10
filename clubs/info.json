@@ -312,5 +312,12 @@
     "successen": {
       "Kampioen heren": "1960, 1970"
     }
+  },
+  "hockeyclub_oranje_rood": {
+    "club": "Hockeyclub Oranje-Rood",
+    "opgericht": "1921",
+    "stadion": "Sportpark Aalsterweg",
+    "website": "http://www.hcoranje-rood.nl/",
+    "successen": {}
   }
 }
