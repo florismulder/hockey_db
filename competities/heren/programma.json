@@ -7448,57 +7448,57 @@
       "scorers": [
         {
           "naam": "Mustapha Cassiem",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 29,
           "type": "veld"
         },
         {
           "naam": "Sam Steins Bisschop",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 34,
           "type": "veld"
         },
         {
           "naam": "Stijn Draaijer",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 42,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 43,
           "type": "veld"
         },
         {
           "naam": "Floris Middendorp",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 45,
-          "type": "veld"
+          "type": "sc"
         },
         {
           "naam": "Teun van Aalderen",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 50,
-          "type": "veld"
+          "type": "sc"
         }
       ],
       "kaarten": [
         {
           "naam": "Daan Troost",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 14,
           "type": "groen"
         },
         {
           "naam": "David Huussen",
-          "club": "Amsterdam H1",
+          "club": "Amsterdam",
           "minuut": 47,
           "type": "groen"
         },
         {
           "naam": "Lucas Corstens",
-          "club": "Schaerweijde H1",
+          "club": "Schaerweijde",
           "minuut": 52,
           "type": "groen"
         }
@@ -7527,7 +7527,8 @@
           "Amsterdam won zijn laatste vijf thuiswedstrijden tegen Schaerweijde sinds een spectaculaire 4-4 in het Wagener Stadion op 28 oktober 2012.",
           "De grootste thuiszege ooit van Amsterdam op Schaerweijde was een 7-0 op 25 mei 1986."
         ]
-      }
+      },
+      "geverifieerd": false
     },
     {
       "thuis": "Klein Zwitserland",
