@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "type": "speler_samengevoegd",
+      "id": "kenneth_bain",
+      "naam": "Kenneth Bain",
+      "velden": {
+        "doelId": "kenny_bain",
+        "doelNaam": "Kenny Bain"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T08:22:30.692Z"
+    },
+    {
       "type": "speler_verwijderd",
       "id": "brieuc_delemazure",
       "naam": "Brieuc Delemazure",
