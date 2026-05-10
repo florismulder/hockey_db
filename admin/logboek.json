@@ -1,6 +1,28 @@
 {
   "entries": [
     {
+      "type": "speler",
+      "id": "xan_de_waard",
+      "naam": "Xan de Waard",
+      "velden": {
+        "club": "SCHC",
+        "geslacht": "dames",
+        "rugnummer": 7,
+        "keeper": false,
+        "aanvoerder": false,
+        "nationaliteit": "",
+        "land_code": "",
+        "oranje": "senior",
+        "doelpunten_seizoen": 3,
+        "vd": 3,
+        "sc": 0,
+        "sb": 0
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T05:41:52.176Z"
+    },
+    {
       "type": "bullet",
       "id": "xan_de_waard",
       "naam": "xan_de_waard",
