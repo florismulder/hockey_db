@@ -2,6 +2,15 @@
   "entries": [
     {
       "type": "speler_verwijderd",
+      "id": "brieuc_delemazure",
+      "naam": "Brieuc Delemazure",
+      "velden": {},
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T08:14:39.009Z"
+    },
+    {
+      "type": "speler_verwijderd",
       "id": "alfredo_baron_estarellas",
       "naam": "alfredo_baron_estarellas",
       "velden": {},
