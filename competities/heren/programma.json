@@ -7575,7 +7575,31 @@
           "type": "SB"
         }
       ],
-      "kaarten": []
+      "kaarten": [],
+      "viaplay": {
+        "stats_thuis": [
+          "Pinoké bezet plaats 3 in de competitie.",
+          "Pinoké staat derde op de ranglijst met 44 punten uit 21 duels en heeft nog één puntje nodig om de derde plaats in de eindrangschikking te verzekeren.",
+          "Vorige week won Pinoké met 2-3 bij HDM.",
+          "Pinoké kan zelfs nu tweede worden, maar moet dan wel hopen op puntenverlies van Rotterdam.",
+          "Na een dip in maart heeft Pinoké zich hersteld met vier zeges in de laatste vier speelronden.",
+          "Joep Troost (23 goals), Miles Bukkens (15) en Florent van Aubel (13) namen dit seizoen samen 51 van de 76 goals van Pinoké voor hun rekening."
+        ],
+        "stats_uit": [
+          "Bloemendaal is de nummer 6 van de competitie.",
+          "De play-offs zijn voor Bloemendaal uit het zicht.",
+          "Vorige week won Bloemendaal met 1-0 van Klein Zwitserland.",
+          "Bloemendaal leed in maart en begin april twee nederlagen op rij, maar bleef ongeslagen in de laatste drie wedstrijden.",
+          "Het is voor het eerst sinds seizoen 2015-2016 dat Bloemendaal buiten de top-vier eindigt."
+        ],
+        "stats_onderling": [
+          "In het heenduel op 9 november werd het 3-3.",
+          "Pinoké wacht al vier duels op een overwinning tegen Bloemendaal.",
+          "De laatste zege van Pinoké tegen Bloemendaal was op 10 november 2023 met 2-1.",
+          "Die zege was de enige zege van Pinoké in de laatste zeven onderlinge wedstrijden tegen Bloemendaal.",
+          "Op eigen veld heeft Pinoké de laatste jaren de grootste moeite om te winnen van Bloemendaal, met slechts één overwinning in de laatste dertien duels."
+        ]
+      }
     },
     {
       "datum": "2026-05-17",
@@ -7650,5 +7674,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:17:31.472Z"
+  "bijgewerkt": "2026-05-10T05:17:49.495Z"
 }
