@@ -5917,14 +5917,27 @@
       "score_thuis": null,
       "score_uit": null,
       "viaplay": {
-        "scheidsrechters": [
-          "Sophie Bockelmann",
-          "Lisette Baljon"
+        "stats_thuis": [
+          "HGC is de nummer 9 van de Tulp Hoofdklasse.",
+          "Vorige week verloren ze kansloos met 4-0 bij SCHC.",
+          "HGC won twee van haar laatste drie wedstrijden (3-0 HDM en 2-1 Bloemendaal), maar is met negentien punten uit 21 wedstrijden nog steeds niet zeker van een langer verblijf in de Hoofdklasse.",
+          "HGC verloor acht van haar laatste twaalf wedstrijden in de Hoofdklasse (W3 G1).",
+          "Dit wordt de 743ste wedstrijd van HGC in de Hoofdklasse. Daarmee komt de ploeg op de eeuwige ranglijst op gelijke hoogte met Laren, dat al jaren niet meer op het hoogste niveau uitkomt.",
+          "Alleen Amsterdam (984 duels), Kampong (874) en Den Bosch (786) hebben meer ervaring dan HGC in de Hoofdklasse."
         ],
-        "stats_thuis": [],
-        "stats_uit": [],
-        "stats_onderling": [],
-        "bijgewerkt": "2026-05-09"
+        "stats_uit": [
+          "Pinoké bezet al een hele tijd de 5e plaats in de competitie. Daar komen ze ook niet meer van af.",
+          "Vorige speelronde verloor Pinoké van buren Amsterdam met 1-3. Florine Rodenburg scoorde nog wel voor Pinoké.",
+          "Pinoké won drie en verloor drie van de zes meest recente wedstrijden in de Hoofdklasse.",
+          "Dit is het zevende seizoen op rij dat Pinoké zich bij de vijf beste ploegen in de reguliere competitie schaart. De afgelopen zes seizoenen werd de ploeg achtereenvolgens vijfde, vijfde, vijfde, vijfde, vijfde en derde."
+        ],
+        "stats_onderling": [
+          "In speelronde 11, op 16 november, werd het 2-1 voor Pinoké.",
+          "HGC won maar één van haar laatste veertien duels met Pinoké.",
+          "Pinoké won vier van de laatste vijf onderlinge duels.",
+          "HGC verloor vijf van de laatste acht thuisduels met Pinoké.",
+          "In 30 onderlinge duels won HGC 13 keer, Pinoké 12 keer en eindigde het 5 keer gelijk."
+        ]
       }
     },
     {
@@ -6124,5 +6137,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:19:35.917Z"
+  "bijgewerkt": "2026-05-10T05:20:17.194Z"
 }
