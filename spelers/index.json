@@ -5164,23 +5164,6 @@
       "sb": ""
     },
     {
-      "id": "kenneth_bain",
-      "naam": "Kenneth Bain",
-      "club": "Laren",
-      "geslacht": "heren",
-      "rugnummer": 13,
-      "keeper": false,
-      "aanvoerder": false,
-      "nationaliteit": "",
-      "land_code": "GB-SCT",
-      "oranje": "",
-      "doelpunten_seizoen": "",
-      "vd": "",
-      "sc": "",
-      "sb": "",
-      "gestopt": true
-    },
-    {
       "id": "xavier_van_de_kasteele",
       "naam": "Xavier van de Kasteele",
       "club": "Laren",
