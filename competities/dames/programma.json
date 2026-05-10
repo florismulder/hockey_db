@@ -5807,7 +5807,32 @@
       "uit": "HDM",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Kampong is nu de nummer 3 van de competitie.",
+          "Kampong verloor maar twee van haar laatste vijftien thuiswedstrijden in de reguliere competitie (W9 G4).",
+          "Sinds de start van seizoen 2023-2024 leed Kampong steeds maximaal twee thuisnederlagen per seizoen.",
+          "Kampong kwam in de laatste twee wedstrijden niet tot winst: 0-0 in Utrecht op veld 9 tegen Hurley en 3-2 op bezoek bij Den Bosch.",
+          "Bij winst op HDM is Kampong sowieso verzekerd van plek drie in de eindranglijst.",
+          "Indien Den Bosch punten verspeelt tegen Oranje-Rood kan Kampong wellicht nog de tweede plek in handen krijgen."
+        ],
+        "stats_uit": [
+          "HDM is de nummer 8 van de Tulp Hoofdklasse.",
+          "HDM verloor vorige week met 1-2 van Bloemendaal, waarbij Roos Alkemade de enige HDM-goal scoorde.",
+          "Kaat Walhof, Pien van der Heide, Julia Duffhuis en Frederique Dekker verlengden afgelopen week hun contract bij HDM.",
+          "HDM is nog altijd niet verzekerd van handhaving op het hoogste niveau en kan nog terechtkomen in de gevarenzone.",
+          "HDM verloor de laatste drie wedstrijden, vijf van de laatste zes en negen van de laatste elf wedstrijden.",
+          "HDM maakte maar één doelpunt in haar laatste drie competitiewedstrijden."
+        ],
+        "stats_onderling": [
+          "De totale balans in 64 duels is 30 overwinningen voor Kampong, 12 gelijke spelen en 22 overwinningen voor HDM.",
+          "Kampong won de laatste vier onderlinge duels met HDM.",
+          "Vóór die vier opeenvolgende zeges leed Kampong vier opeenvolgende nederlagen tegen HDM.",
+          "Vorig jaar won Kampong thuis met 5-1 van HDM, wat een einde maakte aan een reeks van zes thuisduels zonder winst tegen de Haagse ploeg.",
+          "De laatste vijf onderlinge duels waren: 06-10-2023 Kampong - HDM 1-2, 14-03-2024 HDM - Kampong 1-2, 29-09-2024 HDM - Kampong 1-2, 16-03-2025 Kampong - HDM 5-1 en 16-11-2025 HDM - Kampong 0-3."
+        ]
+      }
     },
     {
       "datum": "2026-05-10",
@@ -6037,5 +6062,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-09T08:35:55.392Z"
+  "bijgewerkt": "2026-05-10T05:16:52.153Z"
 }
