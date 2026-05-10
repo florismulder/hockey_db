@@ -7312,7 +7312,32 @@
           "type": "veld"
         }
       ],
-      "kaarten": []
+      "kaarten": [],
+      "viaplay": {
+        "stats_thuis": [
+          "Den Bosch viel door het 6-5 (!) verlies tegen Kampong vorige week buiten de top-4.",
+          "De Bosschenaren hebben het niet meer in eigen hand; ze zijn afhankelijk van Amsterdam.",
+          "Timo Boers maakte voor de 3e week op rij een hattrick en staat nu op 30 goals.",
+          "Boers is de 1e Bossche speler die erin slaagt in één Hoofdklasseseizoen 30 competitietreffers te maken.",
+          "Den Bosch moet zelf winnen van HDM en hopen op een misstap van Amsterdam om nog in de play-offs te geraken.",
+          "Den Bosch scoorde dit seizoen in 21 duels al 81 keer, een nieuw clubrecord."
+        ],
+        "stats_uit": [
+          "HDM staat door het verlies van vorige week tegen Pinoké (2-3) nu op de 10e plaats en dus in de gevarenzone.",
+          "Yorben Fontaine en Chris Taberima scoorden tegen Pinoké.",
+          "Guus van den Boezem, Fenn Tellier en Tom Provily hebben afgelopen week hun contract verlengd.",
+          "HDM heeft tegen Den Bosch een zege nodig om de gevarenzone op de laatste speeldag van het seizoen te verlaten.",
+          "HDM is bezig aan een zwakke reeks en verloor zijn laatste vijf wedstrijden.",
+          "HDM verloor elf van zijn laatste dertien competitiewedstrijden."
+        ],
+        "stats_onderling": [
+          "In speelronde 11, op 9 november, werd het 0-4 voor Den Bosch.",
+          "Den Bosch won zijn laatste zes competitieduels met HDM.",
+          "De laatste Bossche nederlaag tegen HDM dateert van 6 november 2022, toen het in Den Haag 3-1 werd.",
+          "Op eigen veld is Den Bosch al twaalf duels op rij ongeslagen tegen HDM.",
+          "Van de 31 onderlinge duels won Den Bosch er 19, speelden ze 4 keer gelijk en won HDM er 8."
+        ]
+      }
     },
     {
       "thuis": "Oranje-Rood",
@@ -7699,5 +7724,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:18:55.510Z"
+  "bijgewerkt": "2026-05-10T05:20:01.179Z"
 }
