@@ -5882,7 +5882,31 @@
       "uit": "Rotterdam",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "viaplay": {
+        "stats_thuis": [
+          "Amsterdam is de nummer 4 van de Tulp Hoofdklasse en won vorig weekend met 1-3 van Pinoké.",
+          "Amsterdam won acht van haar laatste tien wedstrijden in de Hoofdklasse en verloor in die serie alleen van Den Bosch en SCHC.",
+          "Amsterdam verloor dit seizoen vier van haar tien thuiswedstrijden, het hoogste aantal thuisnederlagen sinds het seizoen 1994-1995.",
+          "Als Amsterdam dit weekend meer punten haalt dan Kampong, dan eindigt de ploeg op de derde plaats op de ranglijst en voorkomt het een clash met SCHC in de halve finale van de play-offs.",
+          "Het eerstvolgende doelpunt van Marijn Veen is haar vijftigste hoofdklassedoelpunt voor Amsterdam.",
+          "Amsterdam-aanvaller Freeke Moes staat op negen treffers dit seizoen en heeft nog één kans om voor het eerst sinds 2022-2023 in de dubbele cijfers terecht te komen."
+        ],
+        "stats_uit": [
+          "Rotterdam staat 7e in de competitie en kan géén play-offs of play-outs meer spelen.",
+          "Vorig weekend speelde Rotterdam met 1-1 gelijk tegen Tilburg, waarbij Bobbi Dijk voor het punt zorgde.",
+          "Rotterdam kwam in haar laatste vijf wedstrijden niet tot winst (G V V V G).",
+          "Het 1-1 gelijkspel thuis tegen Tilburg was genoeg voor handhaving in de Hoofdklasse.",
+          "Rotterdam is dit seizoen met 21 goals nog steeds de minst scorende ploeg in de Hoofdklasse."
+        ],
+        "stats_onderling": [
+          "In speelronde 11, op 16 november, eindigde het duel in een 0-0 gelijkspel.",
+          "Amsterdam bleef in haar laatste vijftien wedstrijden tegen Rotterdam ongeslagen (W14 G1).",
+          "Amsterdam verloor op 9 maart 2008 voor het laatst van Rotterdam.",
+          "Op eigen veld won Amsterdam de laatste acht duels met Rotterdam sinds een 1-1 gelijkspel op 18 maart 2007.",
+          "De totale balans in 57 duels is 39x winst voor Amsterdam, 11x gelijkspel en 7x winst voor Rotterdam."
+        ]
+      }
     },
     {
       "datum": "2026-05-10",
@@ -6075,5 +6099,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:18:32.140Z"
+  "bijgewerkt": "2026-05-10T05:19:16.145Z"
 }
