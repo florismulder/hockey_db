@@ -984,12 +984,8 @@ function ProgrammaPagina({geslacht, onTerug, onWedstrijd}) {
 }
 
 // ── Speler pagina ──────────────────────────────────────────────
-function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws: propNieuws, onTerug}) {
+function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws, onTerug}) {
   const [uitgeklapt, setUitgeklapt] = useState(null); // "veld"|"sc"|"sb"
-
-  // Fix: zelf fetchen — prop kan null zijn als ClubPagina nog aan het laden was bij klikmoment
-  const {data: fetchedNieuws} = useFetch(`${BASE}/nieuws/spelersnieuws.json`);
-  const spelersnieuws = fetchedNieuws || propNieuws;
 
   // Stats uit topscorers
   const ts = useMemo(() => {
@@ -1083,11 +1079,28 @@ function SpelerPagina({speler, geslacht, programma, topscorers, spelersnieuws: p
         )}
       </div>
 
-      {/* Bio */}
-      {speler.bio && (
+      {/* Spelersinfo */}
+      {(speler.geboortedatum || speler.nationaliteit || speler.positie || speler.keeper || speler.aanvoerder || speler.oranje) && (
         <>
-          <div className="section-title">Bio</div>
-          <div className="bio-card">{speler.bio}</div>
+          <div className="section-title">Info</div>
+          <div className="bio-card" style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"6px 16px"}}>
+            {speler.geboortedatum && (
+              <div><span style={{opacity:.6,fontSize:11}}>Geboren</span><br/><strong>{speler.geboortedatum}</strong></div>
+            )}
+            {speler.nationaliteit && (
+              <div><span style={{opacity:.6,fontSize:11}}>Nationaliteit</span><br/><strong>{speler.nationaliteit}</strong></div>
+            )}
+            {speler.positie && (
+              <div><span style={{opacity:.6,fontSize:11}}>Positie</span><br/><strong>{speler.positie}</strong></div>
+            )}
+            {(speler.keeper || speler.aanvoerder || speler.oranje) && (
+              <div style={{gridColumn:"1/-1",display:"flex",gap:6,flexWrap:"wrap",marginTop:4}}>
+                {speler.keeper     && <span style={{background:"rgba(99,102,241,.15)",color:"var(--accent)",borderRadius:4,padding:"2px 7px",fontSize:11,fontWeight:600}}>Keeper</span>}
+                {speler.aanvoerder && <span style={{background:"rgba(99,102,241,.15)",color:"var(--accent)",borderRadius:4,padding:"2px 7px",fontSize:11,fontWeight:600}}>Aanvoerder</span>}
+                {speler.oranje     && <span style={{background:"rgba(234,179,8,.15)",color:"#ca8a04",borderRadius:4,padding:"2px 7px",fontSize:11,fontWeight:600}}>Oranje {speler.oranje !== true ? speler.oranje : ""}</span>}
+              </div>
+            )}
+          </div>
         </>
       )}
 
