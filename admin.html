@@ -1933,6 +1933,11 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   const [blessureModal, setBlessureModal] = useState(false);
   const [spelersNieuws, setSpelersNieuws] = useState(null);
   const [ladtNieuws, setLadtNieuws] = useState(false);
+  const [verwijderModal, setVerwijderModal] = useState(false);
+  const [samenvoegModal, setSamenvoegModal] = useState(false);
+  const [samenvoegDoel, setSamenvoegDoel] = useState("");
+  const [samenvoegPreview, setSamenvoegPreview] = useState(null);
+  const [samenvoegBezig, setSamenvoegBezig] = useState(false);
 
   const blessureLijst = useMemo(() =>
     (data.blessures||{})[spelerId] || [],
@@ -1942,6 +1947,40 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   useEffect(() => {
     if (speler) setVelden({...speler});
   }, [speler]);
+
+  const verwijderSpeler = async () => {
+    setBusy(true);
+    try {
+      const res = await apiCall("verwijderSpeler", {spelerId});
+      if (!res.success) throw new Error(res.error);
+      toast("🗑 " + speler.naam + " verwijderd", "success");
+      onRefresh();
+      setPagina("spelers");
+    } catch(e) { toast(e.message, "error"); }
+    finally { setBusy(false); setVerwijderModal(false); }
+  };
+
+  const bouwSamenvoegPreview = () => {
+    const doel = (data.spelers||[]).find(s => (s.id||slugify(s.naam)) === samenvoegDoel);
+    if (!doel) { toast("Doelspeler niet gevonden","error"); return; }
+    setSamenvoegPreview({
+      bron: speler,
+      doel: doel,
+      nieuws: (data.spelersNieuws||{})[spelerId]?.length || 0,
+    });
+  };
+
+  const voerSamenvoegUit = async () => {
+    setSamenvoegBezig(true);
+    try {
+      const res = await apiCall("samenvoegSpeler", {bronId: spelerId, doelId: samenvoegDoel});
+      if (!res.success) throw new Error(res.error);
+      toast("✅ Samengevoegd: " + samenvoegPreview.bron.naam + " → " + samenvoegPreview.doel.naam, "success");
+      onRefresh();
+      setPagina("spelers");
+    } catch(e) { toast(e.message, "error"); }
+    finally { setSamenvoegBezig(false); setSamenvoegModal(false); setSamenvoegPreview(null); }
+  };
 
   useEffect(() => {
     if (tab === "nieuws" && spelersNieuws === null) {
@@ -1998,6 +2037,12 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           </div>
         </div>
         <div className="topbar-actions">
+          <button className="btn btn-secondary btn-sm" onClick={()=>setSamenvoegModal(true)}>
+            🔀 Samenvoegen
+          </button>
+          <button className="btn btn-danger btn-sm" onClick={()=>setVerwijderModal(true)}>
+            🗑 Verwijderen
+          </button>
           <a className="btn btn-secondary btn-sm"
             href={`${HOOFD_SITE_URL}/index.html#speler/${spelerId}`} target="_blank">
             🌐 Bekijk op site
@@ -2248,6 +2293,90 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           />
         )}
       </div>
+
+      {/* Verwijder modal */}
+      {verwijderModal && (
+        <div className="modal-overlay" onClick={()=>setVerwijderModal(false)}>
+          <div className="modal" style={{maxWidth:400}} onClick={e=>e.stopPropagation()}>
+            <div className="modal-header">
+              <div className="modal-title">🗑 Speler verwijderen</div>
+              <button className="modal-close" onClick={()=>setVerwijderModal(false)}>×</button>
+            </div>
+            <div className="modal-body">
+              <p style={{marginBottom:16}}>Weet je zeker dat je <strong>{speler.naam}</strong> wilt verwijderen uit de database?</p>
+              <div style={{background:"var(--red-light)",border:"1px solid rgba(239,68,68,.3)",borderRadius:8,padding:12,fontSize:13,color:"var(--red)",marginBottom:16}}>
+                ⚠️ Dit verwijdert de speler uit de spelerslijst. Wedstrijddata en nieuws blijven bewaard.
+              </div>
+              <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
+                <button className="btn btn-secondary" onClick={()=>setVerwijderModal(false)}>Annuleren</button>
+                <button className="btn btn-danger" onClick={verwijderSpeler} disabled={busy}>
+                  {busy ? <span className="spinner"/> : "🗑 Definitief verwijderen"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Samenvoeg modal */}
+      {samenvoegModal && (
+        <div className="modal-overlay" onClick={()=>{setSamenvoegModal(false);setSamenvoegPreview(null);}}>
+          <div className="modal" style={{maxWidth:500}} onClick={e=>e.stopPropagation()}>
+            <div className="modal-header">
+              <div className="modal-title">🔀 Speler samenvoegen</div>
+              <button className="modal-close" onClick={()=>{setSamenvoegModal(false);setSamenvoegPreview(null);}}>×</button>
+            </div>
+            <div className="modal-body" style={{display:"flex",flexDirection:"column",gap:16}}>
+              <p style={{fontSize:13,margin:0}}>
+                <strong>{speler.naam}</strong> wordt samengevoegd met een andere speler.
+                Nieuws-bullets gaan over naar de doelspeler. De huidige speler wordt daarna verwijderd.
+              </p>
+              {!samenvoegPreview ? (
+                <>
+                  <div>
+                    <label className="form-label">Kies doelspeler (de speler die overblijft)</label>
+                    <select className="form-select" value={samenvoegDoel} onChange={e=>setSamenvoegDoel(e.target.value)}>
+                      <option value="">— kies speler —</option>
+                      {(data.spelers||[])
+                        .filter(s=>(s.id||slugify(s.naam))!==spelerId)
+                        .sort((a,b)=>(a.naam||"").localeCompare(b.naam||""))
+                        .map(s=>(
+                          <option key={s.id||slugify(s.naam)} value={s.id||slugify(s.naam)}>
+                            {s.naam} ({s.club})
+                          </option>
+                        ))}
+                    </select>
+                  </div>
+                  <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
+                    <button className="btn btn-secondary" onClick={()=>setSamenvoegModal(false)}>Annuleren</button>
+                    <button className="btn btn-primary" onClick={bouwSamenvoegPreview} disabled={!samenvoegDoel}>
+                      Bekijk preview →
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:12,fontSize:13}}>
+                    <div style={{marginBottom:8,fontWeight:600}}>Wat er gaat gebeuren:</div>
+                    <ul style={{margin:0,paddingLeft:20,display:"flex",flexDirection:"column",gap:4}}>
+                      <li><strong>{samenvoegPreview.bron.naam}</strong> ({samenvoegPreview.bron.club}) wordt verwijderd</li>
+                      <li><strong>{samenvoegPreview.doel.naam}</strong> ({samenvoegPreview.doel.club}) blijft bestaan</li>
+                      <li>{samenvoegPreview.nieuws} nieuws-bullet(s) worden overgezet</li>
+                      <li>Wedstrijddata wordt <em>niet</em> herschreven (te risicovol)</li>
+                    </ul>
+                  </div>
+                  <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
+                    <button className="btn btn-secondary" onClick={()=>setSamenvoegPreview(null)}>← Terug</button>
+                    <button className="btn btn-primary" onClick={voerSamenvoegUit} disabled={samenvoegBezig}>
+                      {samenvoegBezig ? <span className="spinner"/> : "✅ Bevestig samenvoegen"}
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -2952,10 +3081,10 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
 
 // ── Wedstrijden Beheer ───────────────────────────────────────
 function WedstrijdenBeheer({data, toast, onRefresh}) {
-  const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
-    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC","Schaerweijde","Tilburg"];
+  const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
   const CLUBS_D = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
-    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC","Schaerweijde","Tilburg"];
+    "Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
 
   const [geslacht, setGeslacht] = useState("heren");
   const [wedstrijden, setWedstrijden] = useState([]);
@@ -2981,9 +3110,27 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       .catch(() => setLaden(false));
   }, [geslacht]);
 
+  // Normaliseert scorer/kaart type naar sc/sb/veld
+  const normalizeType = (t) => {
+    if (!t) return "veld";
+    const tl = t.toLowerCase().trim();
+    if (tl === "sc" || tl === "strafcorner" || tl === "penalty corner" || tl === "pc") return "sc";
+    if (tl === "sb" || tl === "strafbal" || tl === "penalty stroke" || tl === "ps") return "sb";
+    return "veld";
+  };
+
   const selecteer = (idx) => {
     setGeselecteerd(idx);
-    setEdit(JSON.parse(JSON.stringify(wedstrijden[idx])));
+    const w = JSON.parse(JSON.stringify(wedstrijden[idx]));
+    // Strip H1/D1 van club-velden zodat dropdowns correct inladen
+    (w.scorers || []).forEach(s => {
+      s.club = (s.club || "").replace(/\s+(H1|D1|Heren|Dames)$/i, "").trim();
+      s.type = normalizeType(s.type);
+    });
+    (w.kaarten || []).forEach(k => {
+      k.club = (k.club || "").replace(/\s+(H1|D1|Heren|Dames)$/i, "").trim();
+    });
+    setEdit(w);
   };
 
   const setVeld = (veld, val) => setEdit(e => ({...e, [veld]: val}));
