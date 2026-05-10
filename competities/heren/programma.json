@@ -7379,8 +7379,8 @@
     {
       "thuis": "Laren",
       "uit": "Hurley",
-      "score_thuis": 1,
-      "score_uit": 1,
+      "score_thuis": 2,
+      "score_uit": 2,
       "datum": "2026-05-09",
       "tijdstip": "16:30",
       "gespeeld": true,
@@ -7435,7 +7435,8 @@
           "De balans slaat uit in het voordeel van Laren, dat in zes van die negen duels ongeslagen bleef.",
           "De laatste drie onderlinge duels eindigden echter in het voordeel van Hurley, dat drie keer ongeslagen bleef."
         ]
-      }
+      },
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
