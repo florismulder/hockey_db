@@ -7526,7 +7526,32 @@
           "minuut": 18,
           "type": "groen"
         }
-      ]
+      ],
+      "viaplay": {
+        "stats_thuis": [
+          "Klein Zwitserland staat op de achtste plaats in de competitie.",
+          "Het seizoen is voor Klein Zwitserland al voorbij, de ploeg is al weken zeker van handhaving.",
+          "Klein Zwitserland won vier van de laatste negen wedstrijden en verloor de andere vijf.",
+          "Vorige week verloor Klein Zwitserland met 1-0 van Bloemendaal.",
+          "Klein Zwitserland is al zeven thuisduels op rij zonder winst tegen Rotterdam (G1 V6) sinds 2009.",
+          "Er zijn geen Play-offs of Play-outs voor Klein Zwitserland dit seizoen."
+        ],
+        "stats_uit": [
+          "Rotterdam staat nog steeds op de tweede plaats in de Tulp Hoofdklasse.",
+          "De Rotterdammers verloren de vorige speelronde met 2-3 van Amsterdam.",
+          "Rotterdam heeft zich voor komend seizoen versterkt met de Franse international Brieuc Delemazure.",
+          "Rotterdam hoopt de reguliere competitie met een goed gevoel af te sluiten richting de halve finale van de play-offs.",
+          "Rotterdam is met 83 doelpunten de meest productieve ploeg van dit seizoen, wat een nieuw clubrecord is.",
+          "Vier spelers van Rotterdam staan dit seizoen in de dubbele cijfers qua doelpunten: Pepijn van der Heijden (17), Guus Jansen (12), Timme van der Heijden (12) en Tjep Hoedemakers (10)."
+        ],
+        "stats_onderling": [
+          "In speelronde 11, op 9 november, won Rotterdam met 7-2 van Klein Zwitserland.",
+          "Rotterdam won zijn laatste vier duels met Klein Zwitserland, sinds een 1-1 gelijkspel op 11 november 2023.",
+          "Rotterdam hield in drie van de laatste vier onderlinge duels de nul en incasseerde slechts twee doelpunten.",
+          "Bij de 7-2 zege in de heenwedstrijd maakte verdediger Pepijn van der Heijden een hattrick.",
+          "Rotterdam verloor al vijftien wedstrijden op rij niet meer van Klein Zwitserland (W11 G4)."
+        ]
+      }
     },
     {
       "thuis": "Pinoké",
@@ -7625,5 +7650,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:17:15.965Z"
+  "bijgewerkt": "2026-05-10T05:17:31.472Z"
 }
