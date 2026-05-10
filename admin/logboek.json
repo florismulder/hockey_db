@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "bullet",
+      "id": "xan_de_waard",
+      "naam": "xan_de_waard",
+      "velden": {
+        "verborgen": true
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T05:41:42.752Z"
+    },
+    {
       "type": "speler",
       "id": "joren_romijn",
       "naam": "Joren Romijn",
