@@ -1,6 +1,15 @@
 {
   "entries": [
     {
+      "type": "speler_verwijderd",
+      "id": "alfredo_baron_estarellas",
+      "naam": "alfredo_baron_estarellas",
+      "velden": {},
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-10T07:37:57.916Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "48a9d28c-cb89-461a-9a30-02c1baf96116",
       "naam": "HK (H)  Hurley degradeert, Amsterdam naar play offs",
