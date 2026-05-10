@@ -1,6 +1,11 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Timo Boers kroonde zich met 31 treffers tot topscorer van de Tulp Hoofdklasse seizoen 25-26. Hij scoorde na de winterstop in alle 10 de speelronden.",
+      "bron_zin": "Timo Boers kroonde hij zich met 31 treffers tot topscorer van de Tulp Hoofdklasse.",
+      "origineel": "Timo Boers kroonde zich met 31 treffers tot topscorer van de Tulp Hoofdklasse."
+    },
+    {
       "bullet": "Kenny Bain speelde eerder voor Hurley en komt nu uit voor Laren.",
       "bron_zin": "Bain speelt inmiddels voor Laren, de ploeg die zaterdag juist moet voorkomen dat Hurley opnieuw toeslaat op Schaerweijde."
     },
@@ -234,11 +239,6 @@
       "bullet": "Xan de Waard kreeg een publiekswissel in haar laatste thuisduel in de reguliere competitie. Dat gebeurde op 2 mei tegen HGC (4-0, Xan de Waard scoorde zelf ook).",
       "bron_zin": "Vlak voor tijd kreeg zij een publiekswissel, samen met Famke Richardson die eveneens stopt.",
       "origineel": "Xan de Waard kreeg een publiekswissel in haar laatste thuisduel in de reguliere competitie."
-    },
-    {
-      "bullet": "Dylan Lucieer maakt zomer 26 de overstap van Rotterdam naar Kampong Heren 1.",
-      "bron_zin": "SV Kampong Heren 1 heeft zich voor komend seizoen versterkt met aanvaller Dylan Lucieer.",
-      "origineel": "Dylan Lucieer maakt de overstap van Rotterdam naar Kampong Heren 1."
     }
   ],
   "verborgen_bullets": []
