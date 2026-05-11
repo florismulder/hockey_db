@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "f5634759-acac-4705-8a30-8c90239a6af4",
+      "naam": "Carrousel HK  Brechtje van Santbrink naar Den Bosch",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-11T15:04:16.375Z"
+    },
+    {
       "type": "speler",
       "id": "xan_de_waard",
       "naam": "Xan de Waard",
