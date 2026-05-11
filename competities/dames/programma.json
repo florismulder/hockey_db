@@ -1,49 +1,6 @@
 {
   "wedstrijden": [
     {
-      "thuis": "Rotterdam",
-      "uit": "Tilburg",
-      "score_thuis": 1,
-      "score_uit": 1,
-      "datum": "2025-05-02",
-      "tijdstip": "16:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Mikki Roberts",
-          "club": "Rotterdam",
-          "minuut": 32,
-          "type": "sc"
-        },
-        {
-          "naam": "Bobbi Dijk",
-          "club": "Tilburg",
-          "minuut": 36,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Iris Dominicus",
-          "club": "Rotterdam",
-          "type": "groen",
-          "minuut": 20
-        },
-        {
-          "naam": "Caoimhe Perdue",
-          "club": "Rotterdam",
-          "type": "geel",
-          "minuut": 29
-        },
-        {
-          "naam": "Sanne Koks",
-          "club": "Tilburg",
-          "type": "groen",
-          "minuut": 35
-        }
-      ]
-    },
-    {
       "thuis": "Amsterdam",
       "uit": "Hurley",
       "score_thuis": 4,
@@ -5532,6 +5489,49 @@
       ]
     },
     {
+      "thuis": "Rotterdam",
+      "uit": "Tilburg",
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-02",
+      "tijdstip": "16:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "minuut": 32,
+          "type": "sc"
+        },
+        {
+          "naam": "Bobbi Dijk",
+          "club": "Rotterdam",
+          "minuut": 36,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Iris Dominicus",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 20
+        },
+        {
+          "naam": "Caoimhe Perdue",
+          "club": "Rotterdam",
+          "type": "geel",
+          "minuut": 29
+        },
+        {
+          "naam": "Sanne Koks",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
+    },
+    {
       "thuis": "HDM",
       "uit": "Bloemendaal",
       "score_thuis": 1,
@@ -5626,49 +5626,6 @@
           "club": "Pinoké",
           "type": "groen",
           "minuut": 49
-        }
-      ]
-    },
-    {
-      "thuis": "Rotterdam",
-      "uit": "Tilburg",
-      "score_thuis": 1,
-      "score_uit": 1,
-      "datum": "2026-05-02",
-      "tijdstip": "16:30",
-      "gespeeld": true,
-      "scorers": [
-        {
-          "naam": "Mikki Roberts",
-          "club": "Tilburg",
-          "minuut": 32,
-          "type": "sc"
-        },
-        {
-          "naam": "Bobbi Dijk",
-          "club": "Rotterdam",
-          "minuut": 36,
-          "type": "veld"
-        }
-      ],
-      "kaarten": [
-        {
-          "naam": "Iris Dominicus",
-          "club": "Tilburg",
-          "type": "groen",
-          "minuut": 20
-        },
-        {
-          "naam": "Caoimhe Perdue",
-          "club": "Rotterdam",
-          "type": "geel",
-          "minuut": 29
-        },
-        {
-          "naam": "Sanne Koks",
-          "club": "Tilburg",
-          "type": "groen",
-          "minuut": 35
         }
       ]
     },
@@ -6101,6 +6058,24 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-30",
+      "tijdstip": "12:30",
+      "thuis": "HDM",
+      "uit": "Promotieklasse Dames nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": "12:30",
+      "thuis": "Oranje-Rood",
+      "uit": "Promotieklasse Dames nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-31",
       "tijdstip": "n.n.b.",
       "thuis": "Hoofdklasse Dames nr 11",
@@ -6135,7 +6110,25 @@
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "12:30",
+      "thuis": "Promotieklasse Dames nr 3",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "12:30",
+      "thuis": "Promotieklasse Dames nr 2",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T05:20:17.194Z"
+  "bijgewerkt": "2026-05-11T07:25:03.279Z"
 }
