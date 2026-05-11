@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "0e5e49e9-1b17-48fc-9eac-6f2265dabf5e",
+      "naam": "Hurley verlaat Hoofdklasse na D Day op Laren",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-11T15:11:38.259Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "f5634759-acac-4705-8a30-8c90239a6af4",
       "naam": "Carrousel HK  Brechtje van Santbrink naar Den Bosch",
       "velden": {
