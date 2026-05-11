@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "1af48d17-3229-48ae-ad51-61b8e7449f11",
+      "naam": "Hurley clubjongen Mees Loman  ‘Dit wil je nooit meemaken’",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-11T15:14:52.152Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "0e5e49e9-1b17-48fc-9eac-6f2265dabf5e",
       "naam": "Hurley verlaat Hoofdklasse na D Day op Laren",
       "velden": {
