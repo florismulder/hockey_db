@@ -7708,6 +7708,24 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-30",
+      "tijdstip": "16:00",
+      "thuis": "HDM",
+      "uit": "Promotieklasse Heren nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": "16:00",
+      "thuis": "Laren",
+      "uit": "Promotieklasse Heren nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-31",
       "tijdstip": null,
       "thuis": "Promotieklasse Heren nr 2",
@@ -7724,7 +7742,25 @@
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "16:00",
+      "thuis": "Promotieklasse Heren nr 3",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "16:00",
+      "thuis": "Promotieklasse Heren nr 2",
+      "uit": "Laren",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-10T08:22:28.649Z"
+  "bijgewerkt": "2026-05-11T07:25:24.889Z"
 }
