@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "a868fbdb-de4a-46c4-b5de-e99444b04007",
+      "naam": "Hurley door het oog van de naald  ‘Play outs  Dat ging ons niet gebeuren’",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-11T15:40:19.712Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "434dad1e-d7ed-43bf-b889-ec67de58385f",
       "naam": "HK (D)  Hurley redt vege lijf, HDM en Oranje Rood in play outs",
       "velden": {
