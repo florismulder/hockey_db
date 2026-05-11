@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "434dad1e-d7ed-43bf-b889-ec67de58385f",
+      "naam": "HK (D)  Hurley redt vege lijf, HDM en Oranje Rood in play outs",
+      "velden": {
+        "goedgekeurd": 14
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-11T15:27:49.306Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "1af48d17-3229-48ae-ad51-61b8e7449f11",
       "naam": "Hurley clubjongen Mees Loman  ‘Dit wil je nooit meemaken’",
       "velden": {
