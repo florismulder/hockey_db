@@ -1951,7 +1951,17 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   );
 
   useEffect(() => {
-    if (speler) setVelden({...speler});
+    if (speler) {
+      var v = {...speler};
+      // Converteer array-velden naar string voor formulier
+      if (Array.isArray(v.vorige_clubs)) v.vorige_clubs = v.vorige_clubs.join(", ");
+      // Converteer DD-MM-YYYY naar YYYY-MM-DD voor date input
+      if (v.geboortedatum && /^\d{2}-\d{2}-\d{4}$/.test(v.geboortedatum)) {
+        var delen = v.geboortedatum.split("-");
+        v.geboortedatum = delen[2] + "-" + delen[1] + "-" + delen[0];
+      }
+      setVelden(v);
+    }
   }, [speler]);
 
   const verwijderSpeler = async () => {
