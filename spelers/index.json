@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-05-10",
+  "bijgewerkt": "2026-05-11",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -7671,13 +7671,15 @@
       "rugnummer": 9,
       "keeper": false,
       "aanvoerder": true,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 2,
       "vd": 0,
       "sc": 1,
-      "sb": 1
+      "sb": 1,
+      "geboortedatum": "15-10-1997",
+      "positie": "verdediger"
     },
     {
       "id": "lisa_post",
