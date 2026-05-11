@@ -5792,13 +5792,77 @@
       }
     },
     {
-      "datum": "2026-05-10",
-      "tijdstip": "15:00",
       "thuis": "Oranje-Rood",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 0,
+      "score_uit": 6,
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 2,
+          "type": "veld"
+        },
+        {
+          "naam": "Emma Reijnen",
+          "club": "Den Bosch",
+          "minuut": 5,
+          "type": "veld"
+        },
+        {
+          "naam": "Teuntje de Wit",
+          "club": "Den Bosch",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 17,
+          "type": "sc"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 31,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 45,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Merel Voermans",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 6
+        },
+        {
+          "naam": "Madelief de Beer",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 9
+        },
+        {
+          "naam": "Pien Sanders",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 12
+        },
+        {
+          "naam": "Charlotte Englebert",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 50
+        }
+      ]
     },
     {
       "thuis": "Tilburg",
@@ -6219,5 +6283,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-11T07:51:43.137Z"
+  "bijgewerkt": "2026-05-11T07:51:44.851Z"
 }
