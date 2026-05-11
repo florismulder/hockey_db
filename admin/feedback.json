@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Joren Romijn verlengde contract met een jaar, tot zomer 27 en besloot bij Hurley te blijven, ongeacht de degradatie naar de Promotieklasse. Hij kwam in zomer 25 terug nadat hij met Amsterdam landskampioen was geworden. ",
+      "bron_zin": "Ik had een paar weken geleden al besloten te blijven, ongeacht wat er zou gebeuren.",
+      "origineel": "Joren Romijn besloot bij Hurley te blijven, ongeacht de degradatie naar de Promotieklasse."
+    },
+    {
+      "bullet": "Mees Loman degradeert in seizoen 25-26 voor het eerst met Hurley, de club waar hij zijn hele leven speelt.",
+      "bron_zin": "dit is de eerste keer dat ik met Hurley degradeer.",
+      "origineel": "Mees Loman degradeert voor het eerst met Hurley, de club waar hij zijn hele leven speelt."
+    },
+    {
       "bullet": "Brechtje van Santbrink verkast volgend seizoen van Rotterdam naar Den Bosch. Ze werd afgelopen winter (dece 25) met Jong Oranje wereldkampioen in Santiago, Chili.",
       "bron_zin": "Brechtje van Santbrink verkast volgend seizoen van Rotterdam naar Den Bosch.",
       "origineel": "Brechtje van Santbrink verkast volgend seizoen van Rotterdam naar Den Bosch."
@@ -230,15 +240,6 @@
       "bullet": "Naomi Brunsveld keert na zomer 26 niet meer terug bij SCHC.",
       "bron_zin": "Bij Stichtsche keren [...] Naomi Brunsveld en Elodie Picard (Leuven) komend seizoen niet meer terug in Bilthoven.",
       "origineel": "Naomi Brunsveld keert komend seizoen niet meer terug bij SCHC."
-    },
-    {
-      "bullet": "Keeper Rifka Bakker keert na zomer 26 niet meer terug bij SCHC.",
-      "bron_zin": "Bij Stichtsche keren Xan de Waard, Famke Richardson, keeper Rifka Bakker [...] komend seizoen niet meer terug in Bilthoven.",
-      "origineel": "Keeper Rifka Bakker keert komend seizoen niet meer terug bij SCHC."
-    },
-    {
-      "bullet": "Famke Richardson stopt na dit seizoen bij SCHC.",
-      "bron_zin": "Vlak voor tijd kreeg zij een publiekswissel, samen met Famke Richardson die eveneens stopt."
     }
   ],
   "verborgen_bullets": []
