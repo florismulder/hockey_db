@@ -3304,7 +3304,7 @@ function SelectiesBeheer({toast, setPagina}) {
                               value={s.rugnummer||""} placeholder="–"
                               onChange={e => updateSpeler(i,"rugnummer",e.target.value)}/>
                           </td>
-                          <td style={{fontWeight:500,cursor:"pointer",color:"var(--accent)"}} onClick={()=>setPagina&&setPagina("speler_detail:"+s.id)}>{s.naam}</td>
+                          <td style={{fontWeight:500,cursor:"pointer",color:"var(--accent)"}} onClick={()=>setPagina&&setPagina("speler_"+s.id)}>{s.naam}</td>
                           <td style={{textAlign:"center"}}>
                             <input type="checkbox" checked={!!s.keeper}
                               onChange={e => updateSpeler(i,"keeper",e.target.checked)}/>
