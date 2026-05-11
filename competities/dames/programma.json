@@ -5801,36 +5801,47 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-10",
-      "tijdstip": "15:00",
       "thuis": "Tilburg",
       "uit": "Hurley",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "viaplay": {
-        "stats_thuis": [
-          "Tilburg is de hekkensluiter van de competitie.",
-          "Door het gelijke spel (1-1) tegen Rotterdam van vorige week, is Tilburg direct gedegradeerd.",
-          "Mikki Roberts scoorde in het vorige duel, maar miste ook twee strafballen.",
-          "Tilburg verloor de heenwedstrijd met 4-2 en bleef zonder winst in haar laatste twee duels."
-        ],
-        "stats_uit": [
-          "Hurley bezet de 11e plaats in de Tulp Hoofdklasse.",
-          "Vorige week speelden ze met 1-1 gelijk tegen Oranje-Rood.",
-          "Hurley kon al acht wedstrijden op rij niet meer winnen in de Hoofdklasse.",
-          "Hurley kwam in drie van haar laatste zes wedstrijden niet tot scoren en maakte in die serie slechts drie doelpunten.",
-          "Romée Corver is de topscorer van Hurley met vijf treffers, wat haar meest productieve seizoen tot nu toe is.",
-          "In het vorige duel zorgde Romée Corver vlak voor tijd nog voor een punt, maar miste Sophie Schelfhout een strafbal."
-        ],
-        "stats_onderling": [
-          "Van de zeven onderlinge duels won Tilburg er twee, speelden ze één keer gelijk en won Hurley vier keer.",
-          "In zes van de zeven onderlinge wedstrijden stapte een ploeg als winnaar van het veld.",
-          "Vijf keer was de marge tussen beide ploegen slechts één doelpunt.",
-          "Tilburg slaagde er nog niet in een thuisduel van Hurley te winnen.",
-          "De laatste vijf onderlinge duels eindigden in vier overwinningen voor Hurley en één gelijkspel."
-        ]
-      }
+      "score_thuis": 0,
+      "score_uit": 1,
+      "datum": "2026-05-10",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Margot van Hecking Colenbrander",
+          "club": "Hurley",
+          "minuut": 48,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Merlijn Roodenburg",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 19
+        },
+        {
+          "naam": "Olivia Huisman",
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 22
+        },
+        {
+          "naam": "Mikki Roberts",
+          "club": "Tilburg",
+          "type": "groen",
+          "minuut": 39
+        },
+        {
+          "naam": "Romée Corver",
+          "club": "Hurley",
+          "type": "groen",
+          "minuut": 44
+        }
+      ]
     },
     {
       "thuis": "Amsterdam",
@@ -6208,5 +6219,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-11T07:41:55.369Z"
+  "bijgewerkt": "2026-05-11T07:51:43.137Z"
 }
