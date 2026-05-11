@@ -473,7 +473,6 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
     {id:"teamnieuws",  icon:"📰", label:"Teamnieuws"},
     {id:"selecties",   icon:"📋", label:"Selecties"},
     {id:"wedstrijden", icon:"⚽", label:"Wedstrijden"},
-    {id:"logboek",    icon:"📋", label:"Logboek"},
   ];
   return (
     <div className="sidebar">
@@ -1106,7 +1105,7 @@ function Dashboard({data, setPagina, toast, onRefresh, loading}) {
             <div className="stat-lbl">Gemini voorstellen</div>
           </div>
           <div className="stat-card">
-            <div className="stat-val" style={{color:"var(--green)"}}>{(data.logboek||[]).length}</div>
+            <div className="stat-val" style={{color:"var(--green)"}}>–</div>
             <div className="stat-lbl">Wijzigingen (log)</div>
           </div>
         </div>
@@ -3119,7 +3118,7 @@ const DAMES_CLUBS_SEL = [
 const STAF_ROLLEN = ["coach","assistent-coach","manager","fysio","overig"];
 const BASE_GH = "https://florismulder.github.io/hockey_db";
 
-function SelectiesBeheer({toast}) {
+function SelectiesBeheer({toast, setPagina}) {
   const [geslacht, setGeslacht] = useState("heren");
   const [geselecteerdeClub, setGeselecteerdeClub] = useState(null);
   const [selectieData, setSelectieData] = useState(null);
@@ -3305,7 +3304,7 @@ function SelectiesBeheer({toast}) {
                               value={s.rugnummer||""} placeholder="–"
                               onChange={e => updateSpeler(i,"rugnummer",e.target.value)}/>
                           </td>
-                          <td style={{fontWeight:500}}>{s.naam}</td>
+                          <td style={{fontWeight:500,cursor:"pointer",color:"var(--accent)"}} onClick={()=>setPagina&&setPagina("speler_detail:"+s.id)}>{s.naam}</td>
                           <td style={{textAlign:"center"}}>
                             <input type="checkbox" checked={!!s.keeper}
                               onChange={e => updateSpeler(i,"keeper",e.target.checked)}/>
@@ -4065,12 +4064,11 @@ function App() {
           {paginaType==="teamnieuws" &&
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
           {paginaType==="selecties" &&
-            <SelectiesBeheer toast={toast}/>}
+            <SelectiesBeheer toast={toast} setPagina={setPagina}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
-          {paginaType==="logboek" &&
-            <Logboek data={data} setPagina={setPagina}/>}
+
         </div>
         <ToastContainer toasts={toasts}/>
       </div>
