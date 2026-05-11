@@ -1,6 +1,31 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Demi Hilterman nam afscheid van Bloemendaal, na de 3-4 tegen SCHC op 10 mei 2026.",
+      "bron_zin": "de afscheidnemende Demi Hilterman",
+      "origineel": "Demi Hilterman nam afscheid van Bloemendaal."
+    },
+    {
+      "bullet": "Marijn Veen scoorde haar vijftigste hoofdklassedoelpunt in het shirt van Amsterdam. De 6-0 tegen Rotterdam op 10 mei 2026.",
+      "bron_zin": "Met de 6-0 maakte ze haar vijftigste hoofdklassedoelpunt in het shirt van Amsterdam.",
+      "origineel": "Marijn Veen scoorde haar vijftigste hoofdklassedoelpunt in het shirt van Amsterdam."
+    },
+    {
+      "bullet": "Fay van der Elst maakte haar tweede hattrick in de Tulp Hoofdklasse. Tegen Rotterdam op 10 mei 2026. Ze maakte haar eerste hattrick ook tegen Rotterdam op 24 september 2023.",
+      "bron_zin": "Fay van der Elst maakte drie doelpunten. Het was daarmee haar tweede hattrick in de Tulp Hoofdklasse.",
+      "origineel": "Fay van der Elst maakte haar tweede hattrick in de Tulp Hoofdklasse."
+    },
+    {
+      "bullet": "Frédérique Matla is in seizoen 25-26 met 24 doelpunten topscorer van de Tulp Hoofdklasse. Ze ging speelronde 22 in met 21 doelpunten, even veel als Yibbi Jansen. Het is de 63 topscoorderstitel voor Matla.",
+      "bron_zin": "Daarmee bracht ze haar seizoentotaal op 24 doelpunten. Met dat aantal kroonde zij zich ook tot topscorer van de Tulp Hoofdklasse",
+      "origineel": "Frédérique Matla kroonde zich met 24 doelpunten tot topscorer van de Tulp Hoofdklasse."
+    },
+    {
+      "bullet": "Frédérique Matla completeerde een hattrick met twee treffers na rust tegen Oranje-Rood, speelronde 22 seizoen 25-26.",
+      "bron_zin": "Matla completeerde na rust haar hattrick met nog twee treffers.",
+      "origineel": "Frédérique Matla completeerde een hattrick met twee treffers na rust."
+    },
+    {
       "bullet": "Joren Romijn verlengde contract met een jaar, tot zomer 27 en besloot bij Hurley te blijven, ongeacht de degradatie naar de Promotieklasse. Hij kwam in zomer 25 terug nadat hij met Amsterdam landskampioen was geworden. ",
       "bron_zin": "Ik had een paar weken geleden al besloten te blijven, ongeacht wat er zou gebeuren.",
       "origineel": "Joren Romijn besloot bij Hurley te blijven, ongeacht de degradatie naar de Promotieklasse."
@@ -215,31 +240,6 @@
       "bullet": "Elin van Erk neemt zomer 26 afscheid van Pinoké.",
       "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
       "origineel": "Elin van Erk neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Brechtje van Santbrink neemt zomer 26 afscheid van Rotterdam; nieuwe club begin mei 26 onbekend.",
-      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
-      "origineel": "Brechtje van Santbrink neemt afscheid van Rotterdam; nieuwe club onbekend."
-    },
-    {
-      "bullet": "Iris Langejans verlaat zomer 26 Rotterdam en vertrekt naar Mannheim (Dui).",
-      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
-      "origineel": "Iris Langejans verlaat Rotterdam en vertrekt naar Mannheim (Dui)."
-    },
-    {
-      "bullet": "Joy Haarman neemt zomer 26 afscheid van Rotterdam.",
-      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
-      "origineel": "Joy Haarman neemt afscheid van Rotterdam."
-    },
-    {
-      "bullet": "Kirsten Zennemers neemt zomer 26 afscheid van Rotterdam.",
-      "bron_zin": "Rotterdam nam afscheid van Julie van Dam, Kirsten Zennemers, Joy Haarman, Iris Langejans (Mannheim, Dui) en Brechtje van Santbrink (nieuwe club nog onbekend).",
-      "origineel": "Kirsten Zennemers neemt afscheid van Rotterdam."
-    },
-    {
-      "bullet": "Naomi Brunsveld keert na zomer 26 niet meer terug bij SCHC.",
-      "bron_zin": "Bij Stichtsche keren [...] Naomi Brunsveld en Elodie Picard (Leuven) komend seizoen niet meer terug in Bilthoven.",
-      "origineel": "Naomi Brunsveld keert komend seizoen niet meer terug bij SCHC."
     }
   ],
   "verborgen_bullets": []
