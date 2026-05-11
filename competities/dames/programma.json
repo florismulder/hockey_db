@@ -5900,13 +5900,13 @@
           "naam": "Merlijn Roodenburg",
           "club": "Tilburg",
           "type": "groen",
-          "minuut": 19
+          "minuut": 22
         },
         {
           "naam": "Olivia Huisman",
           "club": "Hurley",
           "type": "groen",
-          "minuut": 22
+          "minuut": 19
         },
         {
           "naam": "Mikki Roberts",
@@ -5920,7 +5920,8 @@
           "type": "groen",
           "minuut": 44
         }
-      ]
+      ],
+      "geverifieerd": false
     },
     {
       "thuis": "Amsterdam",
