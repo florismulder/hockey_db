@@ -1,6 +1,16 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Margot van Hecking Colenbrander maakte zomer 25 de overstap van HDM naar Hurley. Ze speelde 14 jaar bij haar jeugdliefde HDM. Door haar doelpunt voor Hurley tegen Tilburg in speelronde 22 is HDM veroordeeld tot de play-outs.",
+      "bron_zin": "Van Hecking Colenbrander maakte afgelopen zomer na veertien jaar de overstap van haar jeugdliefde HDM.",
+      "origineel": "Margot van Hecking Colenbrander maakte afgelopen zomer de overstap van HDM naar Hurley."
+    },
+    {
+      "bullet": "Margot van Hecking Colenbrander werd seizoen 25-26 de clubtopscorer van Hurley. Ze scoorde 8x. Ze scoorde het beslissende doelpunt voor handhaving, speelronde 22 tegen Tilburg 0-1 uit een strafcorner.",
+      "bron_zin": "Clubtopscorer Margot van Hecking Colenbrander slaat de bal binnen: 0-1.",
+      "origineel": "Margot van Hecking Colenbrander is de clubtopscorer van Hurley."
+    },
+    {
       "bullet": "Demi Hilterman nam afscheid van Bloemendaal, na de 3-4 tegen SCHC op 10 mei 2026.",
       "bron_zin": "de afscheidnemende Demi Hilterman",
       "origineel": "Demi Hilterman nam afscheid van Bloemendaal."
@@ -230,16 +240,6 @@
       "bullet": "Nina van der Marel neemt zomer 26 afscheid van Pinoké.",
       "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
       "origineel": "Nina van der Marel neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Marloes Timmermans neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Marloes Timmermans neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Elin van Erk neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Elin van Erk neemt afscheid van Pinoké."
     }
   ],
   "verborgen_bullets": []
