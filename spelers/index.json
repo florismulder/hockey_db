@@ -3836,13 +3836,19 @@
       "rugnummer": 10,
       "keeper": false,
       "aanvoerder": true,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 7,
       "vd": 2,
       "sc": 5,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "2001-03-09",
+      "geboorteplaats": "Leidschendam",
+      "positie": "middenvelder",
+      "bio": "Luna Noa Fokke is een Nederlandse hockeyster, geboren op 9 maart 2001 in Leidschendam. Ze speelt als middenvelder voor SV Kampong en het Nederlands nationaal team sinds 2022. Met het nationale team won ze onder andere de FIH Pro League en het EuroHockey Championship in 2023.",
+      "caps": 30,
+      "internationale_goals": 5
     },
     {
       "id": "bente_van_der_veldt",
