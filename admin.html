@@ -2248,9 +2248,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
                 onClose={()=>setBlessureModal(false)}/>
             )}
           </div>
-          </div>
-          </div>
-          </>
         )}
 
 
@@ -3602,72 +3599,6 @@ function SelectiesBeheer({toast}) {
   );
 }
 
-'''
-
-# Invoegen v\u00f3\u00f3r WedstrijdenBeheer
-marker = '// \u2500\u2500 Wedstrijden Beheer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500'
-  if (!user) return (
-    <>
-      <style>{css}</style>
-      <style>{`
-        body { background: linear-gradient(135deg,#f0ece4 0%,#e8e3da 50%,#ede8e0 100%) !important; }
-        #root { width: 100% !important; min-height: 100vh !important; display: flex !important; align-items: center !important; justify-content: center !important; }
-      `}</style>
-      <LoginPagina onLogin={(u)=>setUser(u)}/>
-    </>
-  );
-
-  return (
-    <>
-      <style>{css}</style>
-      <div className="app">
-        <Sidebar
-          pagina={paginaType==="speler_detail"?"spelers":paginaType==="club_detail"?"clubs":pagina}
-          setPagina={setPagina}
-          user={user}
-          onLogout={uitloggen}
-          aantalVoorstellen={aantalVoorstellen}
-          aantalWachtrij={aantalWachtrij}
-        />
-        <div className="main">
-          {loading && (
-            <div style={{position:"fixed",top:0,left:"var(--sidebar-w)",right:0,height:3,
-              background:"var(--accent)",zIndex:999,animation:"laadbar 1.5s ease infinite"}}/>
-          )}
-          {paginaType==="wachtrij" &&
-            <WachterijPagina wachtrij={wachtrij} data={data} toast={toast} onRefresh={()=>{laadWachtrij();laadData();}} setPagina={setPagina}/>}
-          {paginaType==="spelers" &&
-            <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={laadData}/>}
-          {paginaType==="speler_detail" &&
-            <SpelerDetail spelerId={spelerId} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
-          {paginaType==="clubs" &&
-            <ClubsOverzicht data={data} setPagina={setPagina}/>}
-          {paginaType==="club_detail" &&
-            <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
-          {paginaType==="teamnieuws" &&
-            <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
-          {paginaType==="selecties" &&
-            <SelectiesBeheer toast={toast}/>}
-          {paginaType==="selecties" &&
-            <SelectiesBeheer toast={toast}/>}
-          {paginaType==="wedstrijden" &&
-            <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
-
-          {paginaType==="logboek" &&
-            <Logboek data={data} setPagina={setPagina}/>}
-        </div>
-        <ToastContainer toasts={toasts}/>
-      </div>
-      <style>{`
-        @keyframes laadbar {
-          0%{opacity:1} 50%{opacity:.4} 100%{opacity:1}
-        }
-      `}</style>
-    </>
-  );
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
 
 function App() {
   const [user, setUser] = useState(() => {
