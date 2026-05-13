@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-05-11",
+  "bijgewerkt": "2026-05-13",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -1497,13 +1497,21 @@
       "rugnummer": 20,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1995-01-26",
+      "geboorteplaats": "Eindhoven",
+      "positie": "middenvelder",
+      "bio": "Laura Nunnink is een Nederlandse hockeyster die tweevoudig Olympisch kampioen is. Ze heeft 197 interlands gespeeld en komt sinds het seizoen 2020-2021 uit voor HC Den Bosch. Eerder speelde ze voor Oranje-Rood uit Eindhoven.",
+      "vorige_clubs": [
+        "Oranje-Rood"
+      ],
+      "caps": 197
     },
     {
       "id": "maartje_krekelaar",
