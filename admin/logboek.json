@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "selectie_bijgewerkt",
+      "id": "den_bosch",
+      "naam": "Den Bosch",
+      "velden": {
+        "aantalSpelers": 22
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T20:15:56.667Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "43c53b4d-751b-47dc-bc91-a1cf07ad93ae",
       "naam": "Topscorers  Boers en Matla opnieuw de beste schutters van de Hoofdklasse",
