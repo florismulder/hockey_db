@@ -7798,13 +7798,20 @@
       "rugnummer": 5,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 1,
       "vd": 0,
       "sc": 1,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1999-01-27",
+      "geboorteplaats": "Veldhoven",
+      "positie": "verdediger",
+      "bio": "Lisa Post is een Nederlandse hockeyspeelster, geboren op 27 januari 1999 in Veldhoven. Ze speelt als verdediger voor SCHC en debuteerde in 2019 in de Nederlandse hockeyploeg. Met Jong Oranje won ze goud op het EK 2017 en in 2023 won ze met het nationale team goud op het EK in Mönchengladbach.",
+      "vorige_clubs": [
+        "Oranje-Rood"
+      ]
     },
     {
       "id": "pien_dicke",
