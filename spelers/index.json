@@ -7739,7 +7739,7 @@
       "rugnummer": 7,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "NL",
       "oranje": "senior",
       "doelpunten_seizoen": 3,
@@ -7748,8 +7748,13 @@
       "sb": 0,
       "lengte": 163,
       "geboortedatum": "1995-11-08",
-      "vorige_clubs": "Kampong",
-      "bio": "Debuut Oranje op 4 februari 2013. OS (2x goud): Rio 2016 zilver, Tokio 2020 goud, Parijs '24 goud. WK gewonnen (3x) in Den Haag 2014, Londen 20218, Amstelveen/Terassa 2022. EK: goud 4x gewonnen in Amstelveen 2017, Antwerpen 2019, Monchengladbach 2023, Monchengladbach 2025. 4x Hockey Pro League gewonnen."
+      "vorige_clubs": [
+        "HC Wageningen",
+        "Kampong"
+      ],
+      "bio": "Xan de Waard is een Nederlandse hockeyster, geboren in Renkum op 8 november 1995. Ze werd twee keer uitgeroepen tot beste hockyster van de wereld en is meervoudig olympisch, wereld- en Europees kampioen met de Nederlandse ploeg. Sinds 2015 speelt ze voor SCHC.",
+      "geboorteplaats": "Renkum",
+      "positie": "middenvelder"
     },
     {
       "id": "yibbi_jansen",
