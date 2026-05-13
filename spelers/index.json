@@ -1385,13 +1385,21 @@
       "rugnummer": 1,
       "keeper": true,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1995-09-02",
+      "geboorteplaats": "Amersfoort",
+      "positie": "keeper",
+      "bio": "Josine Koning is een Nederlandse hockeyster, geboren op 2 september 1995. Ze komt sinds 2015 uit voor Den Bosch en debuteerde in juni 2017 in de Nederlandse hockeyploeg. Met het nationale team won ze onder andere het Europees kampioenschap en het wereldkampioenschap.",
+      "vorige_clubs": [
+        "Amersfoort",
+        "SCHC"
+      ]
     },
     {
       "id": "charlotte_englebert",
