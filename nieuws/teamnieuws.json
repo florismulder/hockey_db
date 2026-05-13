@@ -211,6 +211,17 @@
   "Kampong": [
     {
       "datum": "2026-05-12T22:00:00.000Z",
+      "titel": "Wat je moeten weten over de halve finale…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/17wTbToD0kVbAglahfjiaof1tDwSTX9lB",
+      "bullets": [
+        "Kampong en Den Bosch staan seizoen 25-26 voor de derde keer tegenover elkaar in de play-offs.",
+        "Kampong staat seizoen 25-26 voor de twaalfde keer in de play-offs."
+      ],
+      "competitie": "HK",
+      "geslacht": "dames"
+    },
+    {
+      "datum": "2026-05-12T22:00:00.000Z",
       "titel": "Zelden vertoond  Rotterdam heeft vijf spelers in…   Tulp Hoofdklasse",
       "link": "https://drive.google.com/file/d/1aBW5E4il20t4vhhHNeX8OKHAw8QmTRBj",
       "bullets": [
@@ -627,6 +638,19 @@
     }
   ],
   "Den Bosch": [
+    {
+      "datum": "2026-05-12T22:00:00.000Z",
+      "titel": "Wat je moeten weten over de halve finale…   Tulp Hoofdklasse",
+      "link": "https://drive.google.com/file/d/17wTbToD0kVbAglahfjiaof1tDwSTX9lB",
+      "bullets": [
+        "Den Bosch won alle vier de play-offwedstrijden tegen Kampong, voorafgaande de halve finale play-offs 25-26.",
+        "Den Bosch behaalde met 7-0 de grootste zege ooit van een team in de historie van de play-offs. Tegen Kampong op 20 mei 2024.",
+        "Den Bosch staat seizoen 25-26 voor de 29ste keer in de play-offs.",
+        "Den Bosch doet seizoen 25-26 voor de 28ste keer op rij mee aan de play-offs."
+      ],
+      "competitie": "HK",
+      "geslacht": "dames"
+    },
     {
       "datum": "2026-05-09T22:00:00.000Z",
       "titel": "HK (D)  Hurley redt vege lijf, HDM en Oranje Rood in play outs",
