@@ -3919,9 +3919,13 @@
       "geboortedatum": "2001-03-09",
       "geboorteplaats": "Leidschendam",
       "positie": "middenvelder",
-      "bio": "Luna Noa Fokke is een Nederlandse hockeyster, geboren op 9 maart 2001 in Leidschendam. Ze speelt als middenvelder voor SV Kampong en het Nederlands nationaal team sinds 2022. Met het nationale team won ze onder andere de FIH Pro League en het EuroHockey Championship in 2023.",
+      "bio": "Luna Fokke is een Nederlandse hockeyspeelster die als middenvelder actief is bij HC Kampong. Ze debuteerde in 2022 voor de Nederlandse hockeyploeg. Met Jong Oranje won ze een gouden medaille op het WK 2022 en in 2023 won ze goud op het EK met de nationale ploeg.",
       "caps": 30,
-      "internationale_goals": 5
+      "internationale_goals": 5,
+      "vorige_clubs": [
+        "HC Ypenburg",
+        "HGC"
+      ]
     },
     {
       "id": "bente_van_der_veldt",
