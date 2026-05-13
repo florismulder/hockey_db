@@ -248,6 +248,10 @@
       "seizoen": "2025-2026"
     }
   ],
-  "staf": {},
-  "bijgewerkt": "2026-05-13T20:15:55.767Z"
+  "staf": {
+    "coach": [
+      "Marieke Dijkstra"
+    ]
+  },
+  "bijgewerkt": "2026-05-13T20:17:07.568Z"
 }
