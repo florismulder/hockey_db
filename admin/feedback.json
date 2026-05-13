@@ -1,6 +1,30 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Marijn Veen scoorde haar vijftigste Hoofdklasse-doelpunt voor Amsterdam. Tegen Rotterdam in speelronde 22 van seizoen 25-26.",
+      "bron_zin": "Marijn Veen maakte tegen Rotterdam haar vijftigste doelpunt voor Amsterdam in de Hoofdklasse."
+    },
+    {
+      "bullet": "Jip Dicke werd in seizoen 25-26 topscorer velddoelpunten in de Hoofdklasse met zeventien treffers.",
+      "bron_zin": "Ze maakte zeventien velddoelpunten en werd daarmee de speelster met de meeste doelpunten uit veldspel."
+    },
+    {
+      "bullet": "Frédérique Matla scoorde in in speelronde 22 van 25-26 tegen Oranje-Rood haar 22ste Hoofdklasse-hattrick, een indrukwekkende mijlpaal.",
+      "bron_zin": "Frédérique Matla scoorde drie keer in de uitwedstrijd tegen Oranje-Rood (0-6) en liet voor de 22ste keer een hattrick noteren in de Hoofdklasse."
+    },
+    {
+      "bullet": "Frédérique Matla werd in seizoen 25-26 voor de zesde keer topscorer van de Hoofdklasse, alleen Maartje Paumen vaker (9x)",
+      "bron_zin": "Het is de zesde keer in de historie dat Matla de topscorerstitel opeist. Alleen Maartje Paumen werd vaker topscorer (negen keer)."
+    },
+    {
+      "bullet": "Yibbi Jansen is voor het vijfde seizoen op rij topscorer strafcornergoals in de Hoofdklasse. Dat deed ze in seizoen 25-26.",
+      "bron_zin": "Yibbi Jansen is voor het vijfde seizoen op rij de speelster met de meeste strafcornergoals in de Hoofdklasse: ze maakte er deze jaargang negentien."
+    },
+    {
+      "bullet": "Fay van der Elst scoorde speelronde 22 van seizoen 25-26 haar tweede Hoofdklasse-hattrick, beide tegen Rotterdam.",
+      "bron_zin": "Amsterdam-aanvaller Fay van der Elst liet tegen Rotterdam (7-0) haar tweede hattrick in de Hoofdklasse aantekenen."
+    },
+    {
       "bullet": "Olivier Hortensius scoorde twee keer in de slotronde van seizoen 25-26 om precies op tien doelpunten uit te komen.",
       "bron_zin": "Hortensius stond voor de slotronde nog op acht, maar scoorde afgelopen zondag twee keer tegen Klein Zwitserland (0-5 zege) en kwam zo nog precies op tien uit."
     },
@@ -208,36 +232,6 @@
       "bullet": "Annelies Pos van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26",
       "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
       "origineel": "Annelies Pos kondigde haar afscheid van het tophockey aan."
-    },
-    {
-      "bullet": "Sterre Bregman van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26.",
-      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
-      "origineel": "Sterre Bregman kondigde haar afscheid van het tophockey aan."
-    },
-    {
-      "bullet": "Demi Hilterman van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26.",
-      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
-      "origineel": "Demi Hilterman kondigde haar afscheid van het tophockey aan."
-    },
-    {
-      "bullet": "Josephine Bekkers keert na zomer 26 niet meer terug bij Den Bosch.",
-      "bron_zin": "Verder zien we komend seizoen Teuntje de Wit en Josephine Bekkers niet meer terug bij Den Bosch",
-      "origineel": "Josephine Bekkers keert komend seizoen niet meer terug bij Den Bosch."
-    },
-    {
-      "bullet": "Teuntje de Wit keert na zomer 26 niet meer terug bij Den Bosch.",
-      "bron_zin": "Verder zien we komend seizoen Teuntje de Wit en Josephine Bekkers niet meer terug bij Den Bosch",
-      "origineel": "Teuntje de Wit keert komend seizoen niet meer terug bij Den Bosch."
-    },
-    {
-      "bullet": "Amber Ezechiels neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Amber Ezechiels neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Meeuw Tulp neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Meeuw Tulp neemt afscheid van Pinoké."
     }
   ],
   "verborgen_bullets": []
