@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "selectie_bijgewerkt",
+      "id": "kampong",
+      "naam": "Kampong",
+      "velden": {
+        "aantalSpelers": 20
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T20:20:19.514Z"
+    },
+    {
+      "type": "selectie_bijgewerkt",
       "id": "den_bosch",
       "naam": "Den Bosch",
       "velden": {
