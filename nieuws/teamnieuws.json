@@ -272,7 +272,10 @@
         "Kampong slaagt erin de speelstersgroep bij elkaar te houden ondanks interesse van concurrentie. Richting seizoen 26-27."
       ],
       "competitie": "HK",
-      "geslacht": "dames"
+      "geslacht": "dames",
+      "verborgen_bullets": [
+        0
+      ]
     }
   ],
   "Bloemendaal": [
