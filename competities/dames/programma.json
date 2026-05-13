@@ -6265,18 +6265,6 @@
     {
       "datum": "2026-05-30",
       "tijdstip": null,
-      "thuis": "Promotieklasse nr 2",
-      "uit": "Hoofdklasse nr 11",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null,
-      "scorers": [],
-      "kaarten": [],
-      "geverifieerd": false
-    },
-    {
-      "datum": "2026-05-30",
-      "tijdstip": null,
       "thuis": "Promotieklasse nr 3",
       "uit": "Hoofdklasse nr 10",
       "gespeeld": false,
@@ -6356,5 +6344,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T14:29:57.260Z"
+  "bijgewerkt": "2026-05-13T18:21:09.253Z"
 }
