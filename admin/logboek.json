@@ -2,6 +2,18 @@
   "entries": [
     {
       "type": "wedstrijd_verwijderd",
+      "id": "2026-05-23_Play-Offs Winnaar Halve finale_Play-Offs Winnaar Halve finale",
+      "naam": "Play-Offs Winnaar Halve finale – Play-Offs Winnaar Halve finale",
+      "velden": {
+        "datum": "2026-05-23",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:23:04.379Z"
+    },
+    {
+      "type": "wedstrijd_verwijderd",
       "id": "2026-05-16_Hoofdklasse Dames nr 2_Hoofdklasse Dames nr 3",
       "naam": "Hoofdklasse Dames nr 2 – Hoofdklasse Dames nr 3",
       "velden": {
