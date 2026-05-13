@@ -1449,13 +1449,20 @@
       "rugnummer": 14,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 2,
       "vd": 0,
       "sc": 2,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1996-03-23",
+      "geboorteplaats": "Nijmegen",
+      "positie": "verdediger",
+      "bio": "Sanne Koolen is een Nederlandse hockeyster, geboren op 23 maart 1996 in Nijmegen. Ze komt sinds 2011 uit voor Den Bosch en debuteerde in 2017 in de Nederlandse hockeyploeg. Met zowel haar club als het nationale team heeft ze meerdere landskampioenschappen en internationale titels gewonnen, waaronder Olympisch goud in 2020 en 2024.",
+      "vorige_clubs": [
+        "Union"
+      ]
     },
     {
       "id": "frederique_matla",
