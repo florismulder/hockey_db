@@ -6156,15 +6156,6 @@
     },
     {
       "datum": "2026-05-23",
-      "tijdstip": null,
-      "thuis": "Play-Offs Winnaar Halve finale",
-      "uit": "Play-Offs Winnaar Halve finale",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-23",
       "tijdstip": "12:45",
       "thuis": "Winnaar Halve Finale Play-Offs",
       "uit": "Winnaar Halve Finale Play-Offs",
@@ -6272,5 +6263,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:22:40.954Z"
+  "bijgewerkt": "2026-05-13T18:23:03.367Z"
 }
