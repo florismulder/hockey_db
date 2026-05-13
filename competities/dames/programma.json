@@ -6183,15 +6183,6 @@
     },
     {
       "datum": "2026-05-16",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse nr 1",
-      "uit": "Hoofdklasse nr 4",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-16",
       "tijdstip": "16:00",
       "thuis": "SCHC",
       "uit": "Amsterdam",
@@ -6353,5 +6344,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T14:29:57.260Z"
+  "bijgewerkt": "2026-05-13T18:18:53.078Z"
 }
