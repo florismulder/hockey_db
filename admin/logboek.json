@@ -2,6 +2,18 @@
   "entries": [
     {
       "type": "wedstrijd_verwijderd",
+      "id": "2026-05-31_Promotieklasse Heren nr 2_Hoofdklasse Heren nr 11",
+      "naam": "Promotieklasse Heren nr 2 – Hoofdklasse Heren nr 11",
+      "velden": {
+        "datum": "2026-05-31",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:18:31.531Z"
+    },
+    {
+      "type": "wedstrijd_verwijderd",
       "id": "2026-05-31_Promotieklasse Heren nr 3_Hoofdklasse Heren nr 10",
       "naam": "Promotieklasse Heren nr 3 – Hoofdklasse Heren nr 10",
       "velden": {
