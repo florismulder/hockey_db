@@ -409,13 +409,20 @@
       "rugnummer": 20,
       "keeper": false,
       "aanvoerder": true,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": 18,
       "vd": 8,
       "sc": 8,
-      "sb": 2
+      "sb": 2,
+      "geboortedatum": "1996-09-02",
+      "geboorteplaats": "Den Haag",
+      "positie": "aanvaller",
+      "bio": "Boris Burkhardt is een Nederlandse veld- en zaalhockeyer. Hij speelt voor de nationale mannenploeg (zaal) en Amsterdam, en kwam eerder uit voor HDM. Burkhardt maakte in juni 2023 zijn debuut voor de nationale veldhockeyploeg en nam deel aan het EK zaalhockey 2022 en WK zaalhockey 2023.",
+      "vorige_clubs": [
+        "HDM"
+      ]
     },
     {
       "id": "floris_middendorp",
