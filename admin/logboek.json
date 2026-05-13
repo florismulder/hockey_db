@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "aea0914f-881b-403b-a5a0-04f2f7abc36a",
+      "naam": "Jip Dicke grossiert in veldgoals, unieke prestatie…   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 10
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:09:57.917Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "3186be3b-aa04-44a0-a43e-5a6025310d81",
       "naam": "Zelden vertoond  Rotterdam heeft vijf spelers in…   Tulp Hoofdklasse",
       "velden": {
