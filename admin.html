@@ -3680,24 +3680,12 @@ function SelectiesBeheer({toast}) {
   );
 }
 
-'''
 
-# Invoegen v\u00f3\u00f3r WedstrijdenBeheer
-marker = '// \u2500\u2500 Wedstrijden Beheer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500'
-content = content.replace(marker, selecties_component + marker, 1)
 
-open('admin.html', 'w', encoding='utf-8').write(content)
-print("OK - regels:", content.count('\
 '))
-EOF",
-      "description": "Selecties-tab toevoegen aan admin.html"
     },
-    "message": "Selecties-tab toevoegen aan admin.html",
-    "integration_name": null,
     "integration_icon_url": null,
-    "icon_name": "commandLine",
     "context": null,
-    "display_content": {
         if (!user) return (
     <>
       <style>{css}</style>
@@ -3740,6 +3728,125 @@ EOF",
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
           {paginaType==="selecties" &&
             <SelectiesBeheer toast={toast}/>}
+          {paginaType==="selecties" &&
+            <SelectiesBeheer toast={toast}/>}
+          {paginaType==="wedstrijden" &&
+            <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
+
+          {paginaType==="logboek" &&
+            <Logboek data={data} setPagina={setPagina}/>}
+        </div>
+        <ToastContainer toasts={toasts}/>
+      </div>
+      <style>{`
+        @keyframes laadbar {
+          0%{opacity:1} 50%{opacity:.4} 100%{opacity:1}
+        }
+      `}</style>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+
+function App() {
+  const [user, setUser] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null"); } catch { return null; }
+  });
+  const [pagina, setPaginaRaw] = useState("wachtrij");
+  const [data, setData] = useState({spelers:[],logboek:[],blessures:{},voorstellen:[],clubsInfo:{},spelersNieuws:{},wachtrij_badge:0});
+  const [wachtrij, setWachtrij] = useState({items:[],badge:0});
+  const [loading, setLoading] = useState(false);
+  const {toasts, show:toast} = useToast();
+
+  // Navigatie-helper die ook naar detail-pagina's kan
+  const setPagina = useCallback((p) => {
+    setPaginaRaw(p);
+    window.scrollTo(0,0);
+  }, []);
+
+  const laadData = useCallback(async () => {
+    if (!user) return;
+    setLoading(true);
+    try {
+      const res = await apiCall("haalAdminData");
+      if (!res.success) throw new Error(res.error || "Data laden mislukt");
+      setData(res);
+    } catch(e) {
+      toast("Data laden mislukt: " + e.message, "error");
+    } finally {
+      setLoading(false);
+    }
+  }, [user]);
+
+  const laadWachtrij = useCallback(async () => {
+    if (!user) return;
+    try {
+      const res = await apiCall("haalNieuwsWachtrij");
+      if (res.success) { setWachtrij(res); setData(d=>({...d,wachtrij_badge:res.badge||0})); }
+    } catch(e) {}
+  }, [user]);
+
+  useEffect(() => { if (user) { laadData(); laadWachtrij(); } }, [user]);
+
+  const uitloggen = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(TOKEN_KEY);
+    if (window.google) window.google.accounts.id.disableAutoSelect();
+    setUser(null);
+  };
+
+  // Parseer de huidige pagina
+  const paginaType = pagina.startsWith("speler_") ? "speler_detail"
+    : pagina.startsWith("club_")   ? "club_detail"
+    : pagina;
+
+  const spelerId = pagina.startsWith("speler_") ? pagina.slice(7)  : null;
+  const clubKey  = pagina.startsWith("club_")   ? pagina.slice(5)  : null;
+
+  const aantalVoorstellen = (data.voorstellen||[]).length;
+  const aantalWachtrij = data.wachtrij_badge||0;
+
+  if (!user) return (
+    <>
+      <style>{css}</style>
+      <style>{`
+        body { background: linear-gradient(135deg,#f0ece4 0%,#e8e3da 50%,#ede8e0 100%) !important; }
+        #root { width: 100% !important; min-height: 100vh !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+      `}</style>
+      <LoginPagina onLogin={(u)=>setUser(u)}/>
+    </>
+  );
+
+  return (
+    <>
+      <style>{css}</style>
+      <div className="app">
+        <Sidebar
+          pagina={paginaType==="speler_detail"?"spelers":paginaType==="club_detail"?"clubs":pagina}
+          setPagina={setPagina}
+          user={user}
+          onLogout={uitloggen}
+          aantalVoorstellen={aantalVoorstellen}
+          aantalWachtrij={aantalWachtrij}
+        />
+        <div className="main">
+          {loading && (
+            <div style={{position:"fixed",top:0,left:"var(--sidebar-w)",right:0,height:3,
+              background:"var(--accent)",zIndex:999,animation:"laadbar 1.5s ease infinite"}}/>
+          )}
+          {paginaType==="wachtrij" &&
+            <WachterijPagina wachtrij={wachtrij} data={data} toast={toast} onRefresh={()=>{laadWachtrij();laadData();}} setPagina={setPagina}/>}
+          {paginaType==="spelers" &&
+            <SpelersOverzicht data={data} setPagina={setPagina} toast={toast} onRefresh={laadData}/>}
+          {paginaType==="speler_detail" &&
+            <SpelerDetail spelerId={spelerId} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
+          {paginaType==="clubs" &&
+            <ClubsOverzicht data={data} setPagina={setPagina}/>}
+          {paginaType==="club_detail" &&
+            <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
+          {paginaType==="teamnieuws" &&
+            <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
