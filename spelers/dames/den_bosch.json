@@ -9,8 +9,8 @@
       "naam": "Josine Koning",
       "id": "josine_koning",
       "rugnummer": "1",
-      "keeper": false,
-      "aanvoerder": true,
+      "keeper": true,
+      "aanvoerder": false,
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
@@ -240,12 +240,14 @@
       "naam": "Laurette Abelen",
       "id": "laurette_abelen",
       "rugnummer": "17",
-      "keeper": false,
-      "aanvoerder": true,
+      "keeper": true,
+      "aanvoerder": false,
       "club": "Den Bosch",
       "club_id": "den_bosch",
       "geslacht": "dames",
       "seizoen": "2025-2026"
     }
-  ]
+  ],
+  "staf": {},
+  "bijgewerkt": "2026-05-13T20:15:55.767Z"
 }
