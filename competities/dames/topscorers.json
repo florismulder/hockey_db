@@ -1,15 +1,15 @@
 {
   "geslacht": "dames",
   "seizoen": "2025-2026",
-  "bijgewerkt": "2026-05-06",
+  "bijgewerkt": "2026-05-13",
   "topscorers": [
     {
       "naam": "Frédérique Matla",
       "naam_slug": "frederique_matla",
       "club": "Den Bosch",
-      "doelpunten": 21,
-      "vd": 8,
-      "sc": 11,
+      "doelpunten": 24,
+      "vd": 10,
+      "sc": 12,
       "sb": 2,
       "seizoen": "2025-2026"
     },
@@ -17,9 +17,9 @@
       "naam": "Yibbi Jansen",
       "naam_slug": "yibbi_jansen",
       "club": "SCHC",
-      "doelpunten": 21,
+      "doelpunten": 22,
       "vd": 2,
-      "sc": 18,
+      "sc": 19,
       "sb": 1,
       "seizoen": "2025-2026"
     },
@@ -27,8 +27,8 @@
       "naam": "Jip Dicke",
       "naam_slug": "jip_dicke",
       "club": "SCHC",
-      "doelpunten": 19,
-      "vd": 16,
+      "doelpunten": 20,
+      "vd": 17,
       "sc": 3,
       "sb": 0,
       "seizoen": "2025-2026"
@@ -47,9 +47,29 @@
       "naam": "Trijntje Beljaars",
       "naam_slug": "trijntje_beljaars",
       "club": "Amsterdam",
-      "doelpunten": 13,
-      "vd": 10,
+      "doelpunten": 14,
+      "vd": 11,
       "sc": 3,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Demi Hilterman",
+      "naam_slug": "demi_hilterman",
+      "club": "Bloemendaal",
+      "doelpunten": 12,
+      "vd": 0,
+      "sc": 11,
+      "sb": 1,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Joosje Burg",
+      "naam_slug": "joosje_burg",
+      "club": "Den Bosch",
+      "doelpunten": 12,
+      "vd": 12,
+      "sc": 0,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -64,22 +84,12 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Demi Hilterman",
-      "naam_slug": "demi_hilterman",
-      "club": "Bloemendaal",
-      "doelpunten": 11,
-      "vd": 0,
-      "sc": 10,
-      "sb": 1,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Joosje Burg",
-      "naam_slug": "joosje_burg",
-      "club": "Den Bosch",
-      "doelpunten": 11,
-      "vd": 11,
-      "sc": 0,
+      "naam": "Pien Dicke",
+      "naam_slug": "pien_dicke",
+      "club": "SCHC",
+      "doelpunten": 12,
+      "vd": 9,
+      "sc": 3,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -87,19 +97,19 @@
       "naam": "Katerina Langedijk",
       "naam_slug": "katerina_langedijk",
       "club": "Amsterdam",
-      "doelpunten": 10,
-      "vd": 5,
+      "doelpunten": 11,
+      "vd": 6,
       "sc": 4,
       "sb": 1,
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Pien Dicke",
-      "naam_slug": "pien_dicke",
-      "club": "SCHC",
+      "naam": "Fay van der Elst",
+      "naam_slug": "fay_van_der_elst",
+      "club": "Amsterdam",
       "doelpunten": 10,
-      "vd": 8,
-      "sc": 2,
+      "vd": 9,
+      "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -124,6 +134,26 @@
       "seizoen": "2025-2026"
     },
     {
+      "naam": "Bente van der Veldt",
+      "naam_slug": "bente_van_der_veldt",
+      "club": "Kampong",
+      "doelpunten": 8,
+      "vd": 8,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Sosha Benninga",
+      "naam_slug": "sosha_benninga",
+      "club": "Kampong",
+      "doelpunten": 8,
+      "vd": 7,
+      "sc": 1,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
       "naam": "Maud van den Heuvel",
       "naam_slug": "maud_van_den_heuvel",
       "club": "SCHC",
@@ -134,13 +164,13 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Fay van der Elst",
-      "naam_slug": "fay_van_der_elst",
-      "club": "Amsterdam",
+      "naam": "Belén van den Broek",
+      "naam_slug": "belen_van_den_broek",
+      "club": "HDM",
       "doelpunten": 7,
-      "vd": 6,
+      "vd": 0,
       "sc": 1,
-      "sb": 0,
+      "sb": 6,
       "seizoen": "2025-2026"
     },
     {
@@ -154,22 +184,12 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Bente van der Veldt",
-      "naam_slug": "bente_van_der_veldt",
-      "club": "Kampong",
+      "naam": "Margot van Hecking C.",
+      "naam_slug": "margot_van_hecking_c",
+      "club": "Hurley",
       "doelpunten": 7,
-      "vd": 7,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Sosha Benninga",
-      "naam_slug": "sosha_benninga",
-      "club": "Kampong",
-      "doelpunten": 7,
-      "vd": 6,
-      "sc": 1,
+      "vd": 0,
+      "sc": 7,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -184,9 +204,9 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Mette Winter",
-      "naam_slug": "mette_winter",
-      "club": "SCHC",
+      "naam": "Iris de Kemp",
+      "naam_slug": "iris_de_kemp",
+      "club": "Kampong",
       "doelpunten": 7,
       "vd": 6,
       "sc": 1,
@@ -194,31 +214,11 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Belén van den Broek",
-      "naam_slug": "belen_van_den_broek",
-      "club": "HDM",
-      "doelpunten": 6,
-      "vd": 0,
-      "sc": 1,
-      "sb": 5,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Margot van Hecking C.",
-      "naam_slug": "margot_van_hecking_c",
-      "club": "Hurley",
-      "doelpunten": 6,
-      "vd": 0,
-      "sc": 6,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Iris de Kemp",
-      "naam_slug": "iris_de_kemp",
-      "club": "Kampong",
-      "doelpunten": 6,
-      "vd": 5,
+      "naam": "Mette Winter",
+      "naam_slug": "mette_winter",
+      "club": "SCHC",
+      "doelpunten": 7,
+      "vd": 6,
       "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
@@ -241,6 +241,26 @@
       "vd": 0,
       "sc": 5,
       "sb": 1,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Marijn Veen",
+      "naam_slug": "marijn_veen",
+      "club": "Amsterdam",
+      "doelpunten": 5,
+      "vd": 5,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Teuntje de Wit",
+      "naam_slug": "teuntje_de_wit",
+      "club": "Den Bosch",
+      "doelpunten": 5,
+      "vd": 4,
+      "sc": 1,
+      "sb": 0,
       "seizoen": "2025-2026"
     },
     {
@@ -304,32 +324,12 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Marijn Veen",
-      "naam_slug": "marijn_veen",
-      "club": "Amsterdam",
-      "doelpunten": 4,
-      "vd": 4,
-      "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Ankelein Baardemans",
       "naam_slug": "ankelein_baardemans",
       "club": "Bloemendaal",
       "doelpunten": 4,
       "vd": 4,
       "sc": 0,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Teuntje de Wit",
-      "naam_slug": "teuntje_de_wit",
-      "club": "Den Bosch",
-      "doelpunten": 4,
-      "vd": 3,
-      "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -360,6 +360,16 @@
       "doelpunten": 4,
       "vd": 2,
       "sc": 2,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Amy van den Bosch",
+      "naam_slug": "amy_van_den_bosch",
+      "club": "HGC",
+      "doelpunten": 4,
+      "vd": 3,
+      "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -476,16 +486,6 @@
     {
       "naam": "Marta Segú Rueda",
       "naam_slug": "marta_segu_rueda",
-      "club": "HGC",
-      "doelpunten": 3,
-      "vd": 2,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
-      "naam": "Amy van den Bosch",
-      "naam_slug": "amy_van_den_bosch",
       "club": "HGC",
       "doelpunten": 3,
       "vd": 2,
@@ -620,6 +620,16 @@
       "doelpunten": 2,
       "vd": 2,
       "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Daantje de Kruijff",
+      "naam_slug": "daantje_de_kruijff",
+      "club": "Amsterdam",
+      "doelpunten": 2,
+      "vd": 1,
+      "sc": 1,
       "sb": 0,
       "seizoen": "2025-2026"
     },
@@ -964,16 +974,6 @@
       "seizoen": "2025-2026"
     },
     {
-      "naam": "Daantje de Kruijff",
-      "naam_slug": "daantje_de_kruijff",
-      "club": "Amsterdam",
-      "doelpunten": 1,
-      "vd": 0,
-      "sc": 1,
-      "sb": 0,
-      "seizoen": "2025-2026"
-    },
-    {
       "naam": "Stella van Gils",
       "naam_slug": "stella_van_gils",
       "club": "Amsterdam",
@@ -1004,6 +1004,26 @@
       "seizoen": "2025-2026"
     },
     {
+      "naam": "Floks van der Beek",
+      "naam_slug": "floks_van_der_beek",
+      "club": "Bloemendaal",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Malou Nanninga",
+      "naam_slug": "malou_nanninga",
+      "club": "Bloemendaal",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
       "naam": "Elke Brinkman-Boers",
       "naam_slug": "elke_brinkman_boers",
       "club": "Den Bosch",
@@ -1026,6 +1046,16 @@
     {
       "naam": "Charlotte Englebert",
       "naam_slug": "charlotte_englebert",
+      "club": "Den Bosch",
+      "doelpunten": 1,
+      "vd": 1,
+      "sc": 0,
+      "sb": 0,
+      "seizoen": "2025-2026"
+    },
+    {
+      "naam": "Emma Reijnen",
+      "naam_slug": "emma_reijnen",
       "club": "Den Bosch",
       "doelpunten": 1,
       "vd": 1,
