@@ -1578,13 +1578,21 @@
       "rugnummer": 7,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "2000-11-29",
+      "geboorteplaats": "Landgraaf",
+      "positie": "verdediger",
+      "bio": "Danique van der Veerdonk is een Nederlandse hockeyspeelster, geboren op 29 november 2000 in Landgraaf. Ze is actief als verdediger bij HC Den Bosch en debuteerde in 2022 voor de Nederlandse hockeyploeg. Met Jong Oranje won ze in 2022 een gouden medaille op het WK.",
+      "vorige_clubs": [
+        "HC Kerkrade",
+        "HC Nova"
+      ]
     },
     {
       "id": "imme_van_der_hoek",
