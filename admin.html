@@ -1943,17 +1943,17 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
     if (speler) setVelden({...speler});
   }, [speler]);
 
+  // Laad spelersnieuws direct bij openen profiel
   useEffect(() => {
-    if (tab === "nieuws" && spelersNieuws === null) {
+    if (spelersNieuws === null) {
       setLadtNieuws(true);
-      // Haal direct van GitHub op — publiek bestand, geen API-call nodig
-      fetch("nieuws/spelersnieuws.json?t=" + Date.now())
+      fetch("https://florismulder.github.io/hockey_db/nieuws/spelersnieuws.json?t=" + Date.now())
         .then(r => r.json())
         .then(d => setSpelersNieuws(d[spelerId] || []))
         .catch(() => setSpelersNieuws([]))
         .finally(() => setLadtNieuws(false));
     }
-  }, [tab, spelerId]);
+  }, [spelerId]);
 
   if (!speler) return <div className="loading">Speler niet gevonden: {spelerId}</div>;
 
@@ -1985,7 +1985,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   };
 
   const heeftBlessure = velden.blessure?.actief;
-  const tabs = ["profiel","blessures","nieuws"];
+  const tabs = ["profiel","blessures"];
 
   return (
     <div className="fade">
@@ -1993,6 +1993,8 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
         <div>
           <div className="breadcrumb">
             <a onClick={()=>setPagina("spelers")}>Spelers</a>
+            <span>/</span>
+            <a onClick={()=>setPagina("club_"+slugify(speler.club||""))}>{speler.club}</a>
             <span>/</span>
             <span>{speler.naam}</span>
           </div>
@@ -2046,6 +2048,16 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
 
       <div className="content">
         {tab === "profiel" && (
+          <>
+          <SpelerNieuwsTab
+            spelerId={spelerId}
+            spelers={data.spelers}
+            spelersNieuws={spelersNieuws}
+            setSpelersNieuws={setSpelersNieuws}
+            ladtNieuws={ladtNieuws}
+            toast={toast}
+          />
+          <div style={{borderTop:"1px solid var(--border)",margin:"0 -24px",padding:"20px 24px 0"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20,alignItems:"start"}}>
             {/* Basisinfo */}
             <div className="card">
@@ -2237,16 +2249,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           </div>
         )}
 
-        {tab === "nieuws" && (
-          <SpelerNieuwsTab
-            spelerId={spelerId}
-            spelers={data.spelers}
-            spelersNieuws={spelersNieuws}
-            setSpelersNieuws={setSpelersNieuws}
-            ladtNieuws={ladtNieuws}
-            toast={toast}
-          />
-        )}
+
       </div>
     </div>
   );
