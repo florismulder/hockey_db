@@ -1465,13 +1465,22 @@
       "rugnummer": 15,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 14,
       "vd": 5,
       "sc": 8,
-      "sb": 1
+      "sb": 1,
+      "geboortedatum": "1996-12-28",
+      "geboorteplaats": "Huizen",
+      "positie": "aanvaller",
+      "bio": "Frédérique Matla is een Nederlandse hockeyster die als aanvaller speelt bij 's Hertogenbosch en sinds 2017 uitkomt voor het Nederlands elftal. Ze heeft met haar club meerdere landstitels en Europese titels gewonnen. Matla is tevens topscorer geweest op diverse internationale toernooien, waaronder de Olympische Spelen van Tokio 2020.",
+      "vorige_clubs": [
+        "HOD"
+      ],
+      "caps": 104,
+      "internationale_goals": 75
     },
     {
       "id": "joosje_burg",
