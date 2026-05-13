@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "153dd38d-5912-4069-8fad-ca559ef3dc42",
+      "naam": "Wat je moeten weten over de halve finale…   Tulp Hoofdklasse",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:27:58.634Z"
+    },
+    {
       "type": "wedstrijd_verwijderd",
       "id": "2026-05-23_Play-Offs Dames Winnaar Halve finale_Play-Offs Dames Winnaar Halve Finale",
       "naam": "Play-Offs Dames Winnaar Halve finale – Play-Offs Dames Winnaar Halve Finale",
