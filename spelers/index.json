@@ -1433,13 +1433,22 @@
       "rugnummer": 11,
       "keeper": false,
       "aanvoerder": true,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 1,
       "vd": 0,
       "sc": 1,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1998-06-11",
+      "geboorteplaats": "Udenhout",
+      "positie": "verdediger",
+      "bio": "Pien Sanders is een Nederlandse hockeyster die als verdedigster uitkomt voor Den Bosch. Ze debuteerde in 2017 in de Nederlandse hockeyploeg en heeft met het team meerdere internationale titels gewonnen, waaronder het Europees kampioenschap en twee Olympische gouden medailles.",
+      "vorige_clubs": [
+        "MHC Udenhout",
+        "MHC Berkel Enschot",
+        "TMHC Forward"
+      ]
     },
     {
       "id": "sanne_koolen",
