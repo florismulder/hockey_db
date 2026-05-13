@@ -6183,6 +6183,15 @@
     },
     {
       "datum": "2026-05-16",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 1",
+      "uit": "Hoofdklasse nr 4",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
       "tijdstip": "16:00",
       "thuis": "SCHC",
       "uit": "Amsterdam",
@@ -6237,12 +6246,33 @@
     },
     {
       "datum": "2026-05-30",
+      "tijdstip": "n.n.b.",
+      "thuis": "Promotieklasse Dames nr 2",
+      "uit": "Hoofdklasse Dames nr 11",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": "n.n.b.",
+      "thuis": "Promotieklasse Dames nr 3",
+      "uit": "Hoofdklasse Dames nr 10",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
       "tijdstip": null,
       "thuis": "Promotieklasse nr 2",
       "uit": "Hoofdklasse nr 11",
       "gespeeld": false,
       "score_thuis": null,
-      "score_uit": null
+      "score_uit": null,
+      "scorers": [],
+      "kaarten": [],
+      "geverifieerd": false
     },
     {
       "datum": "2026-05-30",
@@ -6273,6 +6303,42 @@
     },
     {
       "datum": "2026-05-31",
+      "tijdstip": "n.n.b.",
+      "thuis": "Hoofdklasse Dames nr 11",
+      "uit": "Promotieklasse Dames nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "n.n.b.",
+      "thuis": "Hoofdklasse Dames nr 10",
+      "uit": "Promotieklasse Dames nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 11",
+      "uit": "Promotieklasse nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": null,
+      "thuis": "Hoofdklasse nr 10",
+      "uit": "Promotieklasse nr 3",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
       "tijdstip": "12:30",
       "thuis": "Promotieklasse Dames nr 3",
       "uit": "HDM",
@@ -6290,5 +6356,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:20:11.909Z"
+  "bijgewerkt": "2026-05-13T14:29:57.260Z"
 }
