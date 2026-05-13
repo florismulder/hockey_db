@@ -2,6 +2,18 @@
   "entries": [
     {
       "type": "wedstrijd_verwijderd",
+      "id": "2026-05-17_Hoofdklasse Heren nr 2_Hoofdklasse Heren nr 3",
+      "naam": "Hoofdklasse Heren nr 2 – Hoofdklasse Heren nr 3",
+      "velden": {
+        "datum": "2026-05-17",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:17:36.338Z"
+    },
+    {
+      "type": "wedstrijd_verwijderd",
       "id": "2026-05-17_Hoofdklasse Heren nr 1_Hoofdklasse Heren nr 4",
       "naam": "Hoofdklasse Heren nr 1 – Hoofdklasse Heren nr 4",
       "velden": {
