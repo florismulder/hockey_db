@@ -1265,26 +1265,18 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                 },{})
               ).sort((a,b)=>new Date(b[1].datum||0)-new Date(a[1].datum||0))
               .map(([key,item],i)=>(
-                <div key={i} style={{marginBottom:10,padding:"9px 11px",
-                  background:"var(--surface2)",borderRadius:7,border:"1px solid var(--border)"}}>
-                  <div style={{fontSize:10,color:"var(--muted)",marginBottom:3,
-                    fontFamily:"'JetBrains Mono',monospace"}}>{formatNieuwsDatum((item.datum||"").slice(0,10))}</div>
-                  {item.titel&&(item.link?(
-                    <a href={item.link} target="_blank" rel="noopener noreferrer"
-                      style={{fontSize:12,fontWeight:600,marginBottom:4,display:"block",
-                        color:"var(--accent)",textDecoration:"none"}}
-                      onMouseEnter={e=>e.currentTarget.style.textDecoration="underline"}
-                      onMouseLeave={e=>e.currentTarget.style.textDecoration="none"}>
-                      {item.titel} ›
-                    </a>
-                  ):(
-                    <div style={{fontSize:12,fontWeight:600,marginBottom:4,color:"var(--muted)"}}>{item.titel}</div>
-                  ))}
-                  <ul style={{paddingLeft:13,margin:0,display:"flex",flexDirection:"column",gap:2}}>
+                <div key={i} style={{display:"flex",alignItems:"flex-start",gap:8,
+                  padding:"6px 0",borderBottom:"1px solid var(--border)"}}>
+                  <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,
+                    color:"var(--muted)",flexShrink:0,whiteSpace:"nowrap",marginTop:2,width:74}}>
+                    {formatNieuwsDatum((item.datum||"").slice(0,10))}
+                  </span>
+                  <div style={{flex:1}}>
                     {item.bullets.map((b,j)=>(
-                      <li key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45}}>{b}</li>
+                      <div key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45,
+                        marginBottom:j<item.bullets.length-1?4:0}}>{b}</div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))
             ):<div className="empty">Nog geen nieuwsbullets beschikbaar.</div>}
@@ -1459,7 +1451,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
     const ev=[
       ...scorers.map(s=>({...s,_evt:"goal"})),
       ...kaarten.map(k=>({...k,_evt:"kaart"})),
-    ].sort((a,b)=>(a.minuut??999)-(b.minuut??999));
+    ].sort((a,b)=>(b.minuut??-1)-(a.minuut??-1));
     let st=0,su=0;
     return ev.map(e=>{
       const th=eventIsThuis(e.club);

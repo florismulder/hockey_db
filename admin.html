@@ -3698,6 +3698,8 @@ function App() {
             <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
           {paginaType==="teamnieuws" &&
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
+          {paginaType==="selecties" &&
+            <SelectiesBeheer toast={toast}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
