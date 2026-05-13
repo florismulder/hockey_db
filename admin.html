@@ -471,8 +471,8 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
     {id:"spelers",    icon:"👥", label:"Spelers"},
     {id:"clubs",      icon:"🏒", label:"Clubs"},
     {id:"teamnieuws",  icon:"📰", label:"Teamnieuws"},
-    {id:"selecties",   icon:"📋", label:"Selecties"},
     {id:"wedstrijden", icon:"⚽", label:"Wedstrijden"},
+    {id:"logboek",    icon:"📋", label:"Logboek"},
   ];
   return (
     <div className="sidebar">
@@ -1105,7 +1105,7 @@ function Dashboard({data, setPagina, toast, onRefresh, loading}) {
             <div className="stat-lbl">Gemini voorstellen</div>
           </div>
           <div className="stat-card">
-            <div className="stat-val" style={{color:"var(--green)"}}>–</div>
+            <div className="stat-val" style={{color:"var(--green)"}}>{(data.logboek||[]).length}</div>
             <div className="stat-lbl">Wijzigingen (log)</div>
           </div>
         </div>
@@ -1435,12 +1435,6 @@ function SpelersOverzicht({data, setPagina, toast, onRefresh}) {
           <div className="topbar-sub">{gefilterd.length} van {(data.spelers||[]).length} spelers</div>
         </div>
         <div className="topbar-actions">
-          <button className="btn btn-sm" onClick={async()=>{
-            if(!confirm("Dubbele spelers (zelfde naam+club) opruimen?")) return;
-            const res = await apiCall("dedupSpelers", {});
-            if(res.success) { toast(res.verwijderd > 0 ? `✅ ${res.verwijderd} dubbelen verwijderd` : "Geen dubbelen gevonden"); if(res.verwijderd > 0) onRefresh(); }
-            else toast("❌ " + res.error, "error");
-          }}>🧹 Dedup</button>
           <button className="btn btn-primary" onClick={()=>setToontNieuweSpeler(true)}>+ Nieuwe speler</button>
         </div>
       </div>
@@ -1939,11 +1933,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   const [blessureModal, setBlessureModal] = useState(false);
   const [spelersNieuws, setSpelersNieuws] = useState(null);
   const [ladtNieuws, setLadtNieuws] = useState(false);
-  const [verwijderModal, setVerwijderModal] = useState(false);
-  const [samenvoegModal, setSamenvoegModal] = useState(false);
-  const [samenvoegDoel, setSamenvoegDoel] = useState("");
-  const [samenvoegPreview, setSamenvoegPreview] = useState(null);
-  const [samenvoegBezig, setSamenvoegBezig] = useState(false);
 
   const blessureLijst = useMemo(() =>
     (data.blessures||{})[spelerId] || [],
@@ -1951,52 +1940,8 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
   );
 
   useEffect(() => {
-    if (speler) {
-      var v = {...speler};
-      // Converteer array-velden naar string voor formulier
-      if (Array.isArray(v.vorige_clubs)) v.vorige_clubs = v.vorige_clubs.join(", ");
-      // Converteer DD-MM-YYYY naar YYYY-MM-DD voor date input
-      if (v.geboortedatum && /^\d{2}-\d{2}-\d{4}$/.test(v.geboortedatum)) {
-        var delen = v.geboortedatum.split("-");
-        v.geboortedatum = delen[2] + "-" + delen[1] + "-" + delen[0];
-      }
-      setVelden(v);
-    }
+    if (speler) setVelden({...speler});
   }, [speler]);
-
-  const verwijderSpeler = async () => {
-    setBusy(true);
-    try {
-      const res = await apiCall("verwijderSpeler", {spelerId, spelersNaam: speler.naam, spelersClub: speler.club});
-      if (!res.success) throw new Error(res.error);
-      toast("🗑 " + speler.naam + " verwijderd", "success");
-      onRefresh();
-      setPagina("spelers");
-    } catch(e) { toast(e.message, "error"); }
-    finally { setBusy(false); setVerwijderModal(false); }
-  };
-
-  const bouwSamenvoegPreview = () => {
-    const doel = (data.spelers||[]).find(s => (s.id||slugify(s.naam)) === samenvoegDoel);
-    if (!doel) { toast("Doelspeler niet gevonden","error"); return; }
-    setSamenvoegPreview({
-      bron: speler,
-      doel: doel,
-      nieuws: (data.spelersNieuws||{})[spelerId]?.length || 0,
-    });
-  };
-
-  const voerSamenvoegUit = async () => {
-    setSamenvoegBezig(true);
-    try {
-      const res = await apiCall("samenvoegSpeler", {bronId: spelerId, doelId: samenvoegDoel});
-      if (!res.success) throw new Error(res.error);
-      toast("✅ Samengevoegd: " + samenvoegPreview.bron.naam + " → " + samenvoegPreview.doel.naam, "success");
-      onRefresh();
-      setPagina("spelers");
-    } catch(e) { toast(e.message, "error"); }
-    finally { setSamenvoegBezig(false); setSamenvoegModal(false); setSamenvoegPreview(null); }
-  };
 
   useEffect(() => {
     if (tab === "nieuws" && spelersNieuws === null) {
@@ -2053,12 +1998,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           </div>
         </div>
         <div className="topbar-actions">
-          <button className="btn btn-secondary btn-sm" onClick={()=>setSamenvoegModal(true)}>
-            🔀 Samenvoegen
-          </button>
-          <button className="btn btn-danger btn-sm" onClick={()=>setVerwijderModal(true)}>
-            🗑 Verwijderen
-          </button>
           <a className="btn btn-secondary btn-sm"
             href={`${HOOFD_SITE_URL}/index.html#speler/${spelerId}`} target="_blank">
             🌐 Bekijk op site
@@ -2309,90 +2248,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           />
         )}
       </div>
-
-      {/* Verwijder modal */}
-      {verwijderModal && (
-        <div className="modal-overlay" onClick={()=>setVerwijderModal(false)}>
-          <div className="modal" style={{maxWidth:400}} onClick={e=>e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="modal-title">🗑 Speler verwijderen</div>
-              <button className="modal-close" onClick={()=>setVerwijderModal(false)}>×</button>
-            </div>
-            <div className="modal-body">
-              <p style={{marginBottom:16}}>Weet je zeker dat je <strong>{speler.naam}</strong> wilt verwijderen uit de database?</p>
-              <div style={{background:"var(--red-light)",border:"1px solid rgba(239,68,68,.3)",borderRadius:8,padding:12,fontSize:13,color:"var(--red)",marginBottom:16}}>
-                ⚠️ Dit verwijdert de speler uit de spelerslijst. Wedstrijddata en nieuws blijven bewaard.
-              </div>
-              <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
-                <button className="btn btn-secondary" onClick={()=>setVerwijderModal(false)}>Annuleren</button>
-                <button className="btn btn-danger" onClick={verwijderSpeler} disabled={busy}>
-                  {busy ? <span className="spinner"/> : "🗑 Definitief verwijderen"}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Samenvoeg modal */}
-      {samenvoegModal && (
-        <div className="modal-overlay" onClick={()=>{setSamenvoegModal(false);setSamenvoegPreview(null);}}>
-          <div className="modal" style={{maxWidth:500}} onClick={e=>e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="modal-title">🔀 Speler samenvoegen</div>
-              <button className="modal-close" onClick={()=>{setSamenvoegModal(false);setSamenvoegPreview(null);}}>×</button>
-            </div>
-            <div className="modal-body" style={{display:"flex",flexDirection:"column",gap:16}}>
-              <p style={{fontSize:13,margin:0}}>
-                <strong>{speler.naam}</strong> wordt samengevoegd met een andere speler.
-                Nieuws-bullets gaan over naar de doelspeler. De huidige speler wordt daarna verwijderd.
-              </p>
-              {!samenvoegPreview ? (
-                <>
-                  <div>
-                    <label className="form-label">Kies doelspeler (de speler die overblijft)</label>
-                    <select className="form-select" value={samenvoegDoel} onChange={e=>setSamenvoegDoel(e.target.value)}>
-                      <option value="">— kies speler —</option>
-                      {(data.spelers||[])
-                        .filter(s=>(s.id||slugify(s.naam))!==spelerId)
-                        .sort((a,b)=>(a.naam||"").localeCompare(b.naam||""))
-                        .map(s=>(
-                          <option key={s.id||slugify(s.naam)} value={s.id||slugify(s.naam)}>
-                            {s.naam} ({s.club})
-                          </option>
-                        ))}
-                    </select>
-                  </div>
-                  <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
-                    <button className="btn btn-secondary" onClick={()=>setSamenvoegModal(false)}>Annuleren</button>
-                    <button className="btn btn-primary" onClick={bouwSamenvoegPreview} disabled={!samenvoegDoel}>
-                      Bekijk preview →
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div style={{background:"var(--surface2)",border:"1px solid var(--border)",borderRadius:8,padding:12,fontSize:13}}>
-                    <div style={{marginBottom:8,fontWeight:600}}>Wat er gaat gebeuren:</div>
-                    <ul style={{margin:0,paddingLeft:20,display:"flex",flexDirection:"column",gap:4}}>
-                      <li><strong>{samenvoegPreview.bron.naam}</strong> ({samenvoegPreview.bron.club}) wordt verwijderd</li>
-                      <li><strong>{samenvoegPreview.doel.naam}</strong> ({samenvoegPreview.doel.club}) blijft bestaan</li>
-                      <li>{samenvoegPreview.nieuws} nieuws-bullet(s) worden overgezet</li>
-                      <li>Wedstrijddata wordt <em>niet</em> herschreven (te risicovol)</li>
-                    </ul>
-                  </div>
-                  <div style={{display:"flex",gap:8,justifyContent:"flex-end"}}>
-                    <button className="btn btn-secondary" onClick={()=>setSamenvoegPreview(null)}>← Terug</button>
-                    <button className="btn btn-primary" onClick={voerSamenvoegUit} disabled={samenvoegBezig}>
-                      {samenvoegBezig ? <span className="spinner"/> : "✅ Bevestig samenvoegen"}
-                    </button>
-                  </div>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -2736,657 +2591,345 @@ function TeamBulletRij({bullet, bi, verborgen, onToggle, onBewerk}) {
 }
 
 function TeamNieuwsBeheer({data, toast, onRefresh}) {
-  const CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
-    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC",
-    "Schaerweijde","Tilburg"].sort();
+  const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+  const CLUBS_D = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+  const ALLE_CLUBS = [...new Set([...CLUBS_H,...CLUBS_D])].sort();
 
   const [nieuwsData, setNieuwsData] = useState({});
   const [laden, setLaden] = useState(false);
   const [bezig, setBezig] = useState(false);
-  const [zoek, setZoek] = useState("");
-  const [filterBron, setFilterBron] = useState("alle");
-  const [herschrijven, setHerschrijven] = useState(false);
+  const [geselecteerdeClub, setGeselecteerdeClub] = useState(null);
+  const [actievTab, setActievTab] = useState("heren");
 
-  const herschrijfBullets = async () => {
-    if (!confirm("Dit herschrijft alle bullets zonder expliciet subject via Gemini. Dit kan enkele minuten duren. Doorgaan?")) return;
-    setHerschrijven(true);
-    try {
-      const club = filterBron !== "alle" ? filterBron : null;
-      const actie = club ? "herschrijfBulletsClub" : "herschrijfAlleBullets";
-      const params = club ? {club} : {};
-      const res = await apiCall(actie, params);
-      if (res.ok) {
-        toast("✅ " + (res.aangepast||0) + " bullets herschreven — pagina herladen...");
-        setTimeout(() => { setLaden(true); fetch("https://florismulder.github.io/hockey_db/nieuws/teamnieuws.json?t="+Date.now()).then(r=>r.json()).then(d=>{ setNieuwsData(d); setLaden(false); }); }, 2000);
-      } else throw new Error(res.fout||"Fout");
-    } catch(e) { toast("❌ "+e.message, "error"); }
-    finally { setHerschrijven(false); }
-  };
-
-  const setBulkGeslacht = (bronClub, geslacht) => {
-    setNieuwsData(huidig => {
-      const nieuw = JSON.parse(JSON.stringify(huidig));
-      const items = nieuw[bronClub]||[];
-      items.forEach((item, idx) => {
-        const sleutel = (item.titel||"")+("|")+(item.datum||"");
-        propageerNaarAlleKopieen(nieuw, sleutel, {geslacht});
-      });
-      return nieuw;
-    });
-  };
-
+  // Laad teamnieuws.json
   useEffect(() => {
     setLaden(true);
     fetch("https://florismulder.github.io/hockey_db/nieuws/teamnieuws.json?t="+Date.now())
-      .then(r=>r.json()).then(d=>{ setNieuwsData(d); setLaden(false); })
+      .then(r=>r.json())
+      .then(d=>{ setNieuwsData(d); setLaden(false); })
       .catch(()=>setLaden(false));
   }, []);
 
-  // Verzamel alle unieke berichten over alle clubs heen
-  const alleItems = useMemo(() => {
-    const map = new Map();
-    Object.entries(nieuwsData).forEach(([club, items]) => {
-      (items||[]).forEach(item => {
-        const sleutel = (item.titel||"")+"|"+(item.datum||"");
-        if (!map.has(sleutel)) {
-          // Zorg dat bronclub altijd in clubs array staat
-          const bestaandeClubs = item.clubs || [];
-          const clubs_met_bron = bestaandeClubs.length > 0
-            ? [...new Set([...bestaandeClubs])]
-            : [club];
-          map.set(sleutel, {...item, _bronClub: club, _sleutel: sleutel,
-            clubs: clubs_met_bron});
-        }
-      });
-    });
-    return Array.from(map.values())
-      .sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
+  // Hoeveel items per club
+  const telPerClub = useMemo(() => {
+    const tel = {};
+    ALLE_CLUBS.forEach(c => { tel[c] = (nieuwsData[c]||[]).length; });
+    return tel;
   }, [nieuwsData]);
 
-  const gefilterd = alleItems
-    .filter(item => filterBron === "alle" || item._bronClub === filterBron)
-    .filter(item => !zoek || (item.titel||"").toLowerCase().includes(zoek.toLowerCase()));
+  // Items voor geselecteerde club + geslacht
+  const itemsVoorView = useMemo(() => {
+    if (!geselecteerdeClub) return [];
+    const alle = nieuwsData[geselecteerdeClub] || [];
+    return alle
+      .filter(item => !actievTab || (item.geslacht||"heren") === actievTab)
+      .sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
+  }, [nieuwsData, geselecteerdeClub, actievTab]);
 
-  // Helper: propageer veld naar ALLE kopieën van hetzelfde artikel (zelfde titel+datum)
-  const propageerNaarAlleKopieen = (nieuw, sleutel, velden) => {
-    Object.keys(nieuw).forEach(key => {
-      const items = nieuw[key] || [];
-      const idx = items.findIndex(item => (item.titel||"")+("|")+(item.datum||"") === sleutel);
-      if (idx >= 0) items[idx] = {...items[idx], ...velden};
-    });
-  };
-
-  const toggleClub = (sleutel, club, bronClub) => {
+  // Verwijder een bullet
+  const verwijderBullet = (datum, titel, bi) => {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
-      const bronItems = nieuw[bronClub]||[];
-      const itemIdx = bronItems.findIndex(item =>
-        (item.titel||"")+("|")+(item.datum||"") === sleutel
-      );
-      if (itemIdx < 0) return huidig;
-      const item = bronItems[itemIdx];
-      const huidigeClubs = (item.clubs && item.clubs.length > 0) ? item.clubs : [bronClub];
-      const nieuweClubs = huidigeClubs.includes(club)
-        ? huidigeClubs.filter(c=>c!==club)
-        : [...new Set([...huidigeClubs, club])];
-      const definitiefClubs = nieuweClubs.length > 0 ? nieuweClubs : [bronClub];
-      propageerNaarAlleKopieen(nieuw, sleutel, {clubs: definitiefClubs});
-      return nieuw;
-    });
-  };
-
-  const toggleVerborg = (sleutel, bronClub) => {
-    setNieuwsData(huidig => {
-      const nieuw = JSON.parse(JSON.stringify(huidig));
-      const bronItems = nieuw[bronClub]||[];
-      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
-      if (itemIdx < 0) return huidig;
-      const nieuweWaarde = !bronItems[itemIdx].verborgen;
-      propageerNaarAlleKopieen(nieuw, sleutel, {verborgen: nieuweWaarde});
-      return nieuw;
-    });
-  };
-
-  const toggleBullet = (sleutel, bronClub, bi) => {
-    // Bullets zijn per bronclub uniek (verschillende Gemini extracties), NIET propageren
-    setNieuwsData(huidig => {
-      const nieuw = JSON.parse(JSON.stringify(huidig));
-      const bronItems = nieuw[bronClub]||[];
-      const itemIdx = bronItems.findIndex(item => (item.titel||"")+"|"+(item.datum||"") === sleutel);
-      if (itemIdx < 0) return huidig;
-      const item = bronItems[itemIdx];
-      const huidigV = item.verborgen_bullets||[];
-      bronItems[itemIdx] = {...item, verborgen_bullets:
-        huidigV.includes(bi) ? huidigV.filter(x=>x!==bi) : [...huidigV, bi]};
-      return nieuw;
-    });
-  };
-
-  const setGeslacht = (sleutel, bronClub, geslacht) => {
-    setNieuwsData(huidig => {
-      const nieuw = JSON.parse(JSON.stringify(huidig));
-      // Propageer geslacht naar ALLE kopieën (zelfde artikel, meerdere clubs)
-      propageerNaarAlleKopieen(nieuw, sleutel, {geslacht});
-      return nieuw;
-    });
-  };
-
-  // Auto-detecteer clubs op basis van clubnamen in de bullets
-  const ALLE_CLUBS = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
-    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC",
-    "Schaerweijde","Tilburg"];
-
-  const autoDetecteerClubs = (sleutel, bronClub) => {
-    setNieuwsData(huidig => {
-      const nieuw = JSON.parse(JSON.stringify(huidig));
-      const bronItems = nieuw[bronClub]||[];
-      const idx = bronItems.findIndex(item => (item.titel||"")+("|")+(item.datum||"") === sleutel);
+      const items = nieuw[geselecteerdeClub] || [];
+      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
       if (idx < 0) return huidig;
-      const item = bronItems[idx];
-      // Scan titel + bullets op clubnamen
-      const tekst = [item.titel||"", ...(item.bullets||[])].join(" ").toLowerCase();
-      const gevonden = ALLE_CLUBS.filter(club => tekst.includes(club.toLowerCase()));
-      // Voeg bronclub toe als die niet al gevonden is
-      if (!gevonden.includes(bronClub)) gevonden.push(bronClub);
-      propageerNaarAlleKopieen(nieuw, sleutel, {clubs: [...new Set(gevonden)]});
+      items[idx].bullets.splice(bi, 1);
+      // Verwijder heel artikel als geen bullets meer over
+      if (!items[idx].bullets.length) items.splice(idx, 1);
       return nieuw;
     });
   };
 
-  const autoDetecteerAlleClubs = (bronClub) => {
+  // Bewerk een bullet
+  const bewerkBullet = (datum, titel, bi, nieuweTekst) => {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
-      const items = bronClub === "alle"
-        ? Object.entries(nieuw).flatMap(([club, arr]) => (arr||[]).map(i=>({...i,_bc:club})))
-        : (nieuw[bronClub]||[]).map(i=>({...i,_bc:bronClub}));
-      items.forEach(item => {
-        const sleutel = (item.titel||"")+("|")+(item.datum||"");
-        const bc = item._bc;
-        const tekst = [item.titel||"", ...(item.bullets||[])].join(" ").toLowerCase();
-        const gevonden = ALLE_CLUBS.filter(club => tekst.includes(club.toLowerCase()));
-        if (!gevonden.includes(bc)) gevonden.push(bc);
-        propageerNaarAlleKopieen(nieuw, sleutel, {clubs: [...new Set(gevonden)]});
-      });
+      const items = nieuw[geselecteerdeClub] || [];
+      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
+      if (idx >= 0) items[idx].bullets[bi] = nieuweTekst;
       return nieuw;
     });
   };
 
-  const slaAllesOp = async () => {
+  // Bewerk artikel meta (titel, datum, link)
+  const bewerkMeta = (datum, titel, velden) => {
+    setNieuwsData(huidig => {
+      const nieuw = JSON.parse(JSON.stringify(huidig));
+      const items = nieuw[geselecteerdeClub] || [];
+      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
+      if (idx >= 0) items[idx] = {...items[idx], ...velden};
+      return nieuw;
+    });
+  };
+
+  // Sla club op
+  const slaClubOp = async () => {
+    if (!geselecteerdeClub) return;
     setBezig(true);
     try {
-      const res = await apiCall("updateAlleTeamnieuws", {alleNieuws: nieuwsData});
-      if (res.ok) { toast("✅ Teamnieuws opgeslagen"); onRefresh(); }
+      const res = await apiCall("updateTeamnieuws", {
+        club: geselecteerdeClub,
+        items: nieuwsData[geselecteerdeClub] || []
+      });
+      if (res.ok) toast("✅ " + geselecteerdeClub + " opgeslagen");
       else throw new Error(res.fout||res.error||"Fout");
-    } catch(e) { toast("❌ "+e.message,"error"); }
+    } catch(e) { toast("❌ "+e.message, "error"); }
     finally { setBezig(false); }
   };
 
-  return (
-    <div className="fade">
-      <div className="topbar">
-        <div>
-          <div className="topbar-title">Teamnieuws toewijzen</div>
-          <div className="topbar-sub">{alleItems.length} berichten</div>
-        </div>
-        <div className="topbar-actions" style={{gap:8}}>
-          <button className="btn btn-sm" onClick={herschrijfBullets}
-            disabled={bezig||laden||herschrijven}
-            title="Herschrijft bullets zonder expliciet subject via Gemini">
-            {herschrijven?<span className="spinner"/>:null} 🔄 Herschrijf subjects
-          </button>
-          <button className="btn btn-primary btn-sm" onClick={slaAllesOp} disabled={bezig||laden}>
-            {bezig?<span className="spinner"/>:null} Alles opslaan
-          </button>
-        </div>
-      </div>
-      <div className="content">
-        <input className="filter-input" placeholder="Zoek op titel…"
-          value={zoek} onChange={e=>setZoek(e.target.value)} style={{marginBottom:16,width:"100%"}}/>
-        {laden&&<div className="loading"><div className="spinner"/> Laden…</div>}
-        {/* Bronclub filter + bulk geslacht */}
-        <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:12,alignItems:"center"}}>
-          <select className="form-select" value={filterBron}
-            onChange={e=>setFilterBron(e.target.value)}
-            style={{width:"auto",fontSize:12,padding:"4px 8px"}}>
-            <option value="alle">Alle bronclubs ({alleItems.length})</option>
-            {Object.keys(nieuwsData).sort().map(k=>
-              <option key={k} value={k}>{k} ({(nieuwsData[k]||[]).length})</option>
-            )}
-          </select>
-          {filterBron!=="alle"&&(
-            <span style={{display:"flex",gap:6,alignItems:"center",flexWrap:"wrap"}}>
-              <span style={{fontSize:11,color:"var(--muted)"}}>Geslacht:</span>
-              {[["heren","H 💙"],["dames","D 🩷"],[null,"H+D ⚪"]].map(([g,label])=>(
-                <button key={String(g)} onClick={()=>setBulkGeslacht(filterBron,g)}
-                  style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
-                    border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--text)"}}>
-                  {label}
-                </button>
-              ))}
-              <span style={{width:1,background:"var(--border)",alignSelf:"stretch",margin:"0 4px"}}/>
-              <button onClick={()=>autoDetecteerAlleClubs(filterBron)}
-                title={"Scant alle bulletpoints op clubnamen en vult clubs-array automatisch in"}
-                style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
-                  border:"1px solid var(--accent)",background:"rgba(99,102,241,.1)",color:"var(--accent)",fontWeight:600}}>
-                🔍 Auto-detecteer clubs
+  // Inline bullet editor
+  const BulletRij = ({datum, titel, bi, tekst}) => {
+    const [bewerkenModus, setBewerkenModus] = useState(false);
+    const [waarde, setWaarde] = useState(tekst);
+    return (
+      <li style={{display:"flex",alignItems:"flex-start",gap:6,padding:"5px 0",
+        borderBottom:"1px solid var(--border)",fontSize:13,lineHeight:1.4}}>
+        {bewerkenModus ? (
+          <>
+            <textarea value={waarde} onChange={e=>setWaarde(e.target.value)}
+              rows={2} autoFocus
+              style={{flex:1,fontSize:12,padding:"4px 6px",borderRadius:4,
+                border:"1px solid var(--accent)",resize:"vertical",
+                background:"var(--surface)",color:"var(--text)"}}/>
+            <div style={{display:"flex",flexDirection:"column",gap:4,flexShrink:0}}>
+              <button onClick={()=>{ bewerkBullet(datum,titel,bi,waarde); setBewerkenModus(false); }}
+                style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",
+                  background:"var(--accent)",color:"#fff",border:"none",fontWeight:600}}>
+                ✓ Ok
               </button>
+              <button onClick={()=>{ setWaarde(tekst); setBewerkenModus(false); }}
+                style={{fontSize:11,padding:"3px 8px",borderRadius:4,cursor:"pointer",
+                  background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"}}>
+                ✕
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <span style={{flex:1}}>{tekst}</span>
+            <div style={{display:"flex",gap:4,flexShrink:0}}>
+              <button onClick={()=>setBewerkenModus(true)}
+                style={{fontSize:10,padding:"2px 6px",borderRadius:3,cursor:"pointer",
+                  border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--muted)"}}>
+                ✏️
+              </button>
+              <button onClick={()=>{ if(window.confirm("Bullet verwijderen?")) verwijderBullet(datum,titel,bi); }}
+                style={{fontSize:10,padding:"2px 6px",borderRadius:3,cursor:"pointer",
+                  border:"1px solid #fca5a5",background:"rgba(239,68,68,.07)",color:"#dc2626"}}>
+                🗑
+              </button>
+            </div>
+          </>
+        )}
+      </li>
+    );
+  };
+
+  // Inline artikel meta editor
+  const ArtikelHeader = ({item}) => {
+    const [editTitel, setEditTitel] = useState(false);
+    const [editDatum, setEditDatum] = useState(false);
+    const [editLink, setEditLink]   = useState(false);
+    const [titelWaarde, setTitelWaarde] = useState(item.titel||"");
+    const [datumWaarde, setDatumWaarde] = useState(item.datum||"");
+    const [linkWaarde,  setLinkWaarde]  = useState(item.link||"");
+
+    const bewerkVeld = (veld, waarde) => {
+      bewerkMeta(item.datum, item.titel, {[veld]: waarde});
+    };
+
+    return (
+      <div style={{marginBottom:8}}>
+        {/* Titel */}
+        <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:3}}>
+          {editTitel ? (
+            <>
+              <input value={titelWaarde} onChange={e=>setTitelWaarde(e.target.value)}
+                autoFocus style={{flex:1,fontSize:13,fontWeight:600,padding:"3px 6px",
+                  border:"1px solid var(--accent)",borderRadius:4,background:"var(--surface)",color:"var(--text)"}}/>
+              <button onClick={()=>{ bewerkVeld("titel",titelWaarde); setEditTitel(false); }}
+                style={{fontSize:11,padding:"2px 8px",borderRadius:4,background:"var(--accent)",
+                  color:"#fff",border:"none",cursor:"pointer",fontWeight:600}}>✓</button>
+              <button onClick={()=>{ setTitelWaarde(item.titel||""); setEditTitel(false); }}
+                style={{fontSize:11,padding:"2px 6px",borderRadius:4,background:"var(--surface2)",
+                  border:"1px solid var(--border)",color:"var(--muted)",cursor:"pointer"}}>✕</button>
+            </>
+          ) : (
+            <>
+              <span style={{flex:1,fontSize:13,fontWeight:600}}>{item.titel || "(geen titel)"}</span>
+              <button onClick={()=>setEditTitel(true)}
+                style={{fontSize:10,padding:"2px 6px",borderRadius:3,cursor:"pointer",
+                  border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--muted)"}}>✏️</button>
+            </>
+          )}
+        </div>
+
+        {/* Datum + link */}
+        <div style={{display:"flex",gap:8,alignItems:"center",flexWrap:"wrap"}}>
+          <span style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",flexShrink:0}}>
+            {editDatum ? (
+              <span style={{display:"flex",gap:4,alignItems:"center"}}>
+                <input type="date" value={datumWaarde} onChange={e=>setDatumWaarde(e.target.value)}
+                  autoFocus style={{fontSize:11,padding:"1px 4px",border:"1px solid var(--accent)",
+                    borderRadius:4,background:"var(--surface)",color:"var(--text)"}}/>
+                <button onClick={()=>{ bewerkVeld("datum",datumWaarde); setEditDatum(false); }}
+                  style={{fontSize:10,padding:"1px 6px",borderRadius:3,background:"var(--accent)",
+                    color:"#fff",border:"none",cursor:"pointer"}}>✓</button>
+                <button onClick={()=>{ setDatumWaarde(item.datum||""); setEditDatum(false); }}
+                  style={{fontSize:10,padding:"1px 4px",borderRadius:3,background:"var(--surface2)",
+                    border:"1px solid var(--border)",cursor:"pointer"}}>✕</button>
+              </span>
+            ) : (
+              <span style={{cursor:"pointer",textDecoration:"underline dotted"}}
+                onClick={()=>setEditDatum(true)} title="Datum aanpassen">
+                {item.datum || "geen datum"}
+              </span>
+            )}
+          </span>
+          <span style={{fontSize:10,color:"var(--muted)"}}>·</span>
+          {editLink ? (
+            <span style={{display:"flex",gap:4,alignItems:"center",flex:1}}>
+              <input value={linkWaarde} onChange={e=>setLinkWaarde(e.target.value)}
+                placeholder="https://..." autoFocus
+                style={{flex:1,fontSize:11,padding:"1px 6px",border:"1px solid var(--accent)",
+                  borderRadius:4,background:"var(--surface)",color:"var(--text)"}}/>
+              <button onClick={()=>{ bewerkVeld("link",linkWaarde); setEditLink(false); }}
+                style={{fontSize:10,padding:"1px 6px",borderRadius:3,background:"var(--accent)",
+                  color:"#fff",border:"none",cursor:"pointer"}}>✓</button>
+              <button onClick={()=>{ setLinkWaarde(item.link||""); setEditLink(false); }}
+                style={{fontSize:10,padding:"1px 4px",borderRadius:3,background:"var(--surface2)",
+                  border:"1px solid var(--border)",cursor:"pointer"}}>✕</button>
+            </span>
+          ) : (
+            <span style={{fontSize:10,display:"flex",alignItems:"center",gap:4}}>
+              {item.link
+                ? <a href={item.link} target="_blank" rel="noopener noreferrer"
+                    style={{color:"var(--accent)",textDecoration:"none",fontSize:10}}>🔗 bron</a>
+                : <span style={{color:"var(--muted)"}}>geen link</span>
+              }
+              <button onClick={()=>setEditLink(true)}
+                style={{fontSize:10,padding:"1px 5px",borderRadius:3,cursor:"pointer",
+                  border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--muted)"}}>✏️</button>
             </span>
           )}
-          {filterBron==="alle"&&(
-            <button onClick={()=>autoDetecteerAlleClubs("alle")}
-              title={"Scant ALLE artikelen op clubnamen"}
-              style={{fontSize:11,padding:"3px 10px",borderRadius:4,cursor:"pointer",
-                border:"1px solid var(--accent)",background:"rgba(99,102,241,.1)",color:"var(--accent)",fontWeight:600}}>
-              🔍 Auto-detecteer clubs (alles)
-            </button>
-          )}
+          <span style={{fontSize:10,color:"var(--muted)"}}>·</span>
+          <span style={{fontSize:10,color:"var(--muted)",textTransform:"capitalize"}}>{item.competitie||"onbekend"}</span>
         </div>
-        {!laden&&gefilterd.length===0&&<div className="empty">Geen berichten gevonden.</div>}
-        {!laden&&gefilterd.map((item)=>{
-          // Bereken sleutel live consistent met alleItems
-          const sleutel = (item.titel||"")+"|"+(item.datum||"");
-          const bronClub = item._bronClub;
-          // Lees altijd live uit nieuwsData
-          const liveItem = (nieuwsData[bronClub]||[]).find(x=>
-            (x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||"")
-          ) || item;
-          // Als geen clubs array: bronclub is default aangevinkt
-          const huidigeClubs = (liveItem.clubs && liveItem.clubs.length > 0)
-            ? liveItem.clubs
-            : [bronClub];
-          const verborgen = liveItem.verborgen_bullets||[];
-          const geslacht = liveItem.geslacht||null;
-          const isVerborgen = liveItem.verborgen||false;
-          return (
-            <div key={sleutel} className="card" style={{marginBottom:10}}>
-              <div className="card-body" style={{display:"flex",gap:16,alignItems:"flex-start"}}>
-                <div style={{flex:1,minWidth:0}}>
-                  <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:4}}>
-                    <div style={{fontSize:10,color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace",flex:1}}>
-                      {formatDatum(item.datum)||"geen datum"} · <span style={{color:"var(--accent)"}}>{bronClub}</span>
-                    </div>
-                    <button onClick={async()=>{
-                        try{
-                          const res=await apiCall("updateTeamnieuws",{club:bronClub,items:nieuwsData[bronClub]||[]});
-                          if(res.ok)toast("✅ "+bronClub+" opgeslagen");
-                          else throw new Error(res.fout||"Fout");
-                        }catch(e){toast("❌ "+e.message,"error");}
-                      }}
-                      style={{background:"var(--accent-light)",border:"1px solid var(--accent)",
-                        borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
-                        color:"var(--accent)",fontWeight:600,flexShrink:0}}>
-                      💾 Opslaan
-                    </button>
-                    <button onClick={()=>toggleVerborg(sleutel,bronClub)}
-                      title={isVerborgen?"Overal tonen":"Overal verbergen"}
-                      style={{background:isVerborgen?"#fee2e2":"var(--surface2)",
-                        border:"1px solid "+(isVerborgen?"#fca5a5":"var(--border)"),
-                        borderRadius:5,padding:"2px 8px",fontSize:11,cursor:"pointer",
-                        color:isVerborgen?"#dc2626":"var(--muted)",fontWeight:600,flexShrink:0}}>
-                      {isVerborgen?"🚫 Verborgen":"👁 Zichtbaar"}
-                    </button>
-                  </div>
-                  {item.titel&&<div style={{fontSize:12,fontWeight:600,marginBottom:6,
-                    opacity:isVerborgen?.4:1}}>{item.titel.replace(/_/g," ")}</div>}
-                  {item.bullets&&item.bullets.length>0&&(
-                    <ul style={{margin:0,paddingLeft:14,listStyle:"none"}}>
-                      {item.bullets.map((b,bi)=>(
-                        <TeamBulletRij key={bi} bullet={b} bi={bi}
-                          verborgen={verborgen.includes(bi)}
-                          onToggle={()=>toggleBullet(sleutel,bronClub,bi)}
-                          onBewerk={(t)=>{
-                            setNieuwsData(huidig=>{
-                              const nieuw=JSON.parse(JSON.stringify(huidig));
-                              const items2=nieuw[bronClub]||[];
-                              const idx2=items2.findIndex(x=>(x.titel||"")+(x.datum||"")===(item.titel||"")+(item.datum||""));
-                              if(idx2>=0&&nieuw[bronClub][idx2].bullets) nieuw[bronClub][idx2].bullets[bi]=t;
-                              return nieuw;
-                            });
-                          }}
-                        />
-                      ))}
-                    </ul>
-                  )}
-                </div>
-                <div style={{flexShrink:0,width:200}}>
-                  <div style={{fontSize:11,fontWeight:600,color:"var(--muted)",marginBottom:4}}>Team</div>
-                  <div style={{display:"flex",gap:8,marginBottom:10}}>
-                    {[["heren","H"],["dames","D"],[null,"H+D"]].map(([g,label])=>(
-                      <label key={String(g)} style={{display:"flex",alignItems:"center",gap:4,fontSize:11,cursor:"pointer"}}>
-                        <input type="radio" name={"g_"+sleutel} checked={geslacht===g}
-                          onChange={()=>setGeslacht(sleutel,bronClub,g)}/>
-                        {label}
-                      </label>
-                    ))}
-                  </div>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-                    <div style={{fontSize:11,fontWeight:600,color:"var(--muted)"}}>Tonen bij</div>
-                    <button onClick={()=>autoDetecteerClubs(sleutel,bronClub)}
-                      title="Detecteer clubs automatisch uit bulletpoints"
-                      style={{fontSize:10,padding:"1px 6px",borderRadius:3,cursor:"pointer",
-                        border:"1px solid var(--accent)",background:"none",color:"var(--accent)"}}>
-                      🔍 auto
-                    </button>
-                  </div>
-                  <div style={{display:"flex",flexWrap:"wrap",gap:4}}>
-                    {CLUBS.map(club=>{
-                      const aan = huidigeClubs.includes(club);
-                      return (
-                        <button key={club} onClick={()=>toggleClub(sleutel,club,bronClub)}
-                          style={{fontSize:10,padding:"2px 7px",borderRadius:4,border:"1px solid",cursor:"pointer",
-                            background:aan?"var(--accent)":"var(--surface2)",
-                            color:aan?"white":"var(--muted)",
-                            borderColor:aan?"var(--accent)":"var(--border)"}}>
-                          {club}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
       </div>
-    </div>
-  );
-}
-
-
-// ── Blessures overzicht ───────────────────────────────────────
-
-
-// ── Selecties Beheer ──────────────────────────────────────────
-const HEREN_CLUBS_SEL = [
-  {naam:"Amsterdam",      id:"amsterdam"},
-  {naam:"Bloemendaal",    id:"bloemendaal"},
-  {naam:"Den Bosch",      id:"den_bosch"},
-  {naam:"HDM",            id:"hdm"},
-  {naam:"Hurley",         id:"hurley"},
-  {naam:"Kampong",        id:"kampong"},
-  {naam:"Klein Zwitserland", id:"klein_zwitserland"},
-  {naam:"Laren",          id:"laren"},
-  {naam:"Oranje-Rood",    id:"oranje_rood"},
-  {naam:"Pinoké",         id:"pinoke"},
-  {naam:"Rotterdam",      id:"rotterdam"},
-  {naam:"Schaerweijde",   id:"schaerweijde"},
-];
-const DAMES_CLUBS_SEL = [
-  {naam:"Amsterdam",      id:"amsterdam"},
-  {naam:"Bloemendaal",    id:"bloemendaal"},
-  {naam:"Den Bosch",      id:"den_bosch"},
-  {naam:"HDM",            id:"hdm"},
-  {naam:"HGC",            id:"hgc"},
-  {naam:"Hurley",         id:"hurley"},
-  {naam:"Kampong",        id:"kampong"},
-  {naam:"Oranje-Rood",    id:"oranje_rood"},
-  {naam:"Pinoké",         id:"pinoke"},
-  {naam:"Rotterdam",      id:"rotterdam"},
-  {naam:"SCHC",           id:"schc"},
-  {naam:"Tilburg",        id:"tilburg"},
-];
-const STAF_ROLLEN = ["coach","assistent-coach","manager","fysio","overig"];
-const BASE_GH = "https://florismulder.github.io/hockey_db";
-
-function SelectiesBeheer({toast, setPagina}) {
-  const [geslacht, setGeslacht] = useState("heren");
-  const [geselecteerdeClub, setGeselecteerdeClub] = useState(null);
-  const [selectieData, setSelectieData] = useState(null);
-  const [laden, setLaden] = useState(false);
-  const [bezig, setBezig] = useState(false);
-  const [nieuwNaam, setNieuwNaam] = useState("");
-  const [nieuwRug, setNieuwRug] = useState("");
-  const [nieuwStafRol, setNieuwStafRol] = useState("coach");
-  const [nieuwStafNaam, setNieuwStafNaam] = useState("");
-
-  const clubs = geslacht === "heren" ? HEREN_CLUBS_SEL : DAMES_CLUBS_SEL;
-
-  const laadSelectie = async (clubId) => {
-    setGeselecteerdeClub(clubId);
-    setSelectieData(null);
-    setLaden(true);
-    try {
-      const pad = `${BASE_GH}/spelers/${geslacht}/${clubId}.json`;
-      const resp = await fetch(pad + "?t=" + Date.now());
-      if (resp.ok) {
-        const d = await resp.json();
-        // Zorg dat staf veld bestaat
-        if (!d.staf) d.staf = {};
-        setSelectieData(d);
-      } else {
-        // Nieuw bestand
-        const clubInfo = clubs.find(c => c.id === clubId);
-        setSelectieData({
-          club: clubInfo?.naam || clubId,
-          club_id: clubId,
-          geslacht,
-          seizoen: "2025-2026",
-          spelers: [],
-          staf: {}
-        });
-      }
-    } catch(e) { toast("❌ Laden mislukt: " + e.message, "error"); }
-    finally { setLaden(false); }
-  };
-
-  const opslaan = async () => {
-    if (!selectieData) return;
-    setBezig(true);
-    try {
-      const res = await apiCall("slaSelectieOp", {
-        geslacht,
-        clubId: geselecteerdeClub,
-        selectie: selectieData
-      });
-      if (!res.success) throw new Error(res.error || "Onbekende fout");
-      toast("✅ Selectie opgeslagen");
-    } catch(e) { toast("❌ " + e.message, "error"); }
-    finally { setBezig(false); }
-  };
-
-  const voegSpelerToe = () => {
-    if (!nieuwNaam.trim()) return;
-    const clubInfo = clubs.find(c => c.id === geselecteerdeClub);
-    const nieuw = {
-      naam: nieuwNaam.trim(),
-      id: slugify(nieuwNaam.trim()),
-      rugnummer: nieuwRug,
-      keeper: false,
-      aanvoerder: false,
-      club: clubInfo?.naam || geselecteerdeClub,
-      club_id: geselecteerdeClub,
-      geslacht,
-      seizoen: "2025-2026"
-    };
-    setSelectieData(d => ({...d, spelers: [...(d.spelers||[]), nieuw]}));
-    setNieuwNaam(""); setNieuwRug("");
-  };
-
-  const verwijderSpeler = (idx) => {
-    setSelectieData(d => ({...d, spelers: d.spelers.filter((_,i) => i !== idx)}));
-  };
-
-  const updateSpeler = (idx, veld, val) => {
-    setSelectieData(d => {
-      const s = [...d.spelers];
-      s[idx] = {...s[idx], [veld]: val};
-      return {...d, spelers: s};
-    });
-  };
-
-  const voegStafToe = () => {
-    if (!nieuwStafNaam.trim()) return;
-    setSelectieData(d => {
-      const staf = {...(d.staf||{})};
-      if (!staf[nieuwStafRol]) staf[nieuwStafRol] = [];
-      if (!staf[nieuwStafRol].includes(nieuwStafNaam.trim())) {
-        staf[nieuwStafRol] = [...staf[nieuwStafRol], nieuwStafNaam.trim()];
-      }
-      return {...d, staf};
-    });
-    setNieuwStafNaam("");
-  };
-
-  const verwijderStaf = (rol, naam) => {
-    setSelectieData(d => {
-      const staf = {...(d.staf||{})};
-      staf[rol] = (staf[rol]||[]).filter(n => n !== naam);
-      if (!staf[rol].length) delete staf[rol];
-      return {...d, staf};
-    });
+    );
   };
 
   return (
-    <div className="fade">
+    <div className="fade" style={{display:"flex",flexDirection:"column",height:"100%"}}>
       <div className="topbar">
         <div>
-          <div className="topbar-title">Selecties</div>
-          <div className="topbar-sub">Spelers en staf per team beheren</div>
+          <div className="topbar-title">Clubnieuws</div>
+          <div className="topbar-sub">{geselecteerdeClub ? geselecteerdeClub : "Kies een club"}</div>
         </div>
-        <div className="topbar-actions">
-          {geselecteerdeClub && (
-            <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
+        {geselecteerdeClub && (
+          <div className="topbar-actions">
+            <button className="btn btn-primary btn-sm" onClick={slaClubOp} disabled={bezig}>
               {bezig ? <span className="spinner"/> : null} Opslaan
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
-      <div className="content" style={{display:"grid",gridTemplateColumns:"220px 1fr",gap:20,alignItems:"start"}}>
 
-        {/* Linker kolom: club kiezen */}
-        <div>
-          <div style={{display:"flex",gap:4,marginBottom:12}}>
-            {["heren","dames"].map(g => (
-              <button key={g} className={`btn btn-sm ${geslacht===g?"btn-primary":"btn-secondary"}`}
-                onClick={()=>{setGeslacht(g);setGeselecteerdeClub(null);setSelectieData(null);}}>
-                {g.charAt(0).toUpperCase()+g.slice(1)}
-              </button>
-            ))}
-          </div>
-          <div className="card">
-            <div className="card-body" style={{padding:0}}>
-              {clubs.map(club => (
-                <div key={club.id}
-                  onClick={() => laadSelectie(club.id)}
-                  style={{
-                    padding:"10px 14px", cursor:"pointer", fontSize:13,
-                    background: geselecteerdeClub===club.id ? "var(--accent)" : "transparent",
-                    color: geselecteerdeClub===club.id ? "white" : "var(--text)",
-                    borderBottom:"1px solid var(--border)",
-                    fontWeight: geselecteerdeClub===club.id ? 600 : 400
-                  }}>
-                  {club.naam}
-                </div>
-              ))}
-            </div>
-          </div>
+      <div style={{display:"flex",flex:1,minHeight:0,overflow:"hidden"}}>
+
+        {/* Linkerkolom: clublijst */}
+        <div style={{width:200,flexShrink:0,borderRight:"1px solid var(--border)",
+          display:"flex",flexDirection:"column",overflowY:"auto"}}>
+          {laden && <div className="loading" style={{padding:16}}><div className="spinner"/> Laden…</div>}
+          {!laden && ALLE_CLUBS.map(club => {
+            const tel = telPerClub[club] || 0;
+            const isActief = geselecteerdeClub === club;
+            return (
+              <div key={club}
+                onClick={() => { setGeselecteerdeClub(club); setActievTab("heren"); }}
+                style={{padding:"9px 14px",cursor:"pointer",
+                  borderBottom:"1px solid var(--border)",
+                  background: isActief ? "var(--accent)" : "transparent",
+                  color: isActief ? "white" : "var(--text)",
+                  display:"flex",justifyContent:"space-between",alignItems:"center",
+                  fontSize:13,fontWeight: isActief ? 600 : 400,
+                  transition:"background .1s"}}>
+                <span>{club}</span>
+                {tel > 0 && (
+                  <span style={{fontSize:10,padding:"1px 6px",borderRadius:10,
+                    background: isActief ? "rgba(255,255,255,.25)" : "var(--surface2)",
+                    color: isActief ? "white" : "var(--muted)",fontWeight:600}}>
+                    {tel}
+                  </span>
+                )}
+              </div>
+            );
+          })}
         </div>
 
-        {/* Rechter kolom: spelers + staf */}
-        <div>
-          {!geselecteerdeClub && (
-            <div className="empty" style={{marginTop:60}}>Kies een club om de selectie te bewerken</div>
-          )}
-          {laden && <div className="loading">Laden...</div>}
-          {selectieData && !laden && (
+        {/* Rechterkolom: content */}
+        <div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden"}}>
+          {!geselecteerdeClub ? (
+            <div className="empty" style={{marginTop:80}}>
+              Selecteer een club om het nieuws te beheren
+            </div>
+          ) : (
             <>
-              {/* Spelerslijst */}
-              <div className="card" style={{marginBottom:16}}>
-                <div className="card-header">
-                  <div className="card-title">Spelers ({(selectieData.spelers||[]).length})</div>
-                </div>
-                <div className="card-body">
-                  <table className="tbl" style={{marginBottom:12}}>
-                    <thead>
-                      <tr>
-                        <th style={{width:50}}>#</th>
-                        <th>Naam</th>
-                        <th style={{width:70,textAlign:"center"}}>Keeper</th>
-                        <th style={{width:90,textAlign:"center"}}>Aanvoerder</th>
-                        <th style={{width:32}}></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {(selectieData.spelers||[]).map((s,i) => (
-                        <tr key={i}>
-                          <td>
-                            <input className="form-input" style={{width:46,padding:"3px 6px",fontSize:12}}
-                              value={s.rugnummer||""} placeholder="–"
-                              onChange={e => updateSpeler(i,"rugnummer",e.target.value)}/>
-                          </td>
-                          <td style={{fontWeight:500,cursor:"pointer",color:"var(--accent)"}} onClick={()=>setPagina&&setPagina("speler_"+s.id)}>{s.naam}</td>
-                          <td style={{textAlign:"center"}}>
-                            <input type="checkbox" checked={!!s.keeper}
-                              onChange={e => updateSpeler(i,"keeper",e.target.checked)}/>
-                          </td>
-                          <td style={{textAlign:"center"}}>
-                            <input type="checkbox" checked={!!s.aanvoerder}
-                              onChange={e => updateSpeler(i,"aanvoerder",e.target.checked)}/>
-                          </td>
-                          <td>
-                            <button onClick={()=>verwijderSpeler(i)}
-                              style={{background:"none",border:"none",cursor:"pointer",
-                                color:"var(--muted)",fontSize:16,padding:0}}>×</button>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-
-                  {/* Speler toevoegen */}
-                  <div style={{display:"flex",gap:8,alignItems:"center"}}>
-                    <input className="form-input" style={{width:50}} placeholder="#"
-                      value={nieuwRug} onChange={e=>setNieuwRug(e.target.value)}/>
-                    <input className="form-input" style={{flex:1}} placeholder="Naam speler"
-                      value={nieuwNaam} onChange={e=>setNieuwNaam(e.target.value)}
-                      onKeyDown={e=>e.key==="Enter"&&voegSpelerToe()}/>
-                    <button className="btn btn-sm btn-primary" onClick={voegSpelerToe}>+ Toevoegen</button>
-                  </div>
-                </div>
+              {/* Heren / Dames tabs */}
+              <div style={{display:"flex",gap:0,borderBottom:"1px solid var(--border)",
+                padding:"0 20px",flexShrink:0}}>
+                {["heren","dames"].map(g => {
+                  const aantalTab = (nieuwsData[geselecteerdeClub]||[])
+                    .filter(i => (i.geslacht||"heren")===g).length;
+                  return (
+                    <button key={g}
+                      onClick={() => setActievTab(g)}
+                      style={{padding:"10px 18px",border:"none",borderBottom:
+                        actievTab===g ? "2px solid var(--accent)" : "2px solid transparent",
+                        background:"transparent",cursor:"pointer",fontSize:13,fontWeight:600,
+                        color: actievTab===g ? "var(--accent)" : "var(--muted)",
+                        marginBottom:-1,transition:"color .15s"}}>
+                      {g==="heren" ? "💙 Heren" : "🩷 Dames"}
+                      {aantalTab > 0 && (
+                        <span style={{marginLeft:6,fontSize:10,background:"var(--surface2)",
+                          padding:"1px 6px",borderRadius:10,color:"var(--muted)"}}>
+                          {aantalTab}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
 
-              {/* Staf */}
-              <div className="card">
-                <div className="card-header">
-                  <div className="card-title">Staf</div>
-                </div>
-                <div className="card-body">
-                  {STAF_ROLLEN.map(rol => {
-                    const namen = (selectieData.staf||{})[rol] || [];
-                    if (!namen.length) return null;
-                    return (
-                      <div key={rol} style={{marginBottom:12}}>
-                        <div style={{fontSize:11,opacity:.6,textTransform:"capitalize",marginBottom:4}}>{rol}</div>
-                        <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
-                          {namen.map(naam => (
-                            <span key={naam} style={{
-                              display:"flex",alignItems:"center",gap:4,
-                              background:"var(--surface2)",borderRadius:4,
-                              padding:"3px 8px",fontSize:13
-                            }}>
-                              {naam}
-                              <button onClick={()=>verwijderStaf(rol,naam)}
-                                style={{background:"none",border:"none",cursor:"pointer",
-                                  color:"var(--muted)",fontSize:14,padding:0,lineHeight:1}}>×</button>
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    );
-                  })}
-
-                  {/* Staf toevoegen */}
-                  <div style={{display:"flex",gap:8,alignItems:"center",marginTop:12}}>
-                    <select className="form-select" style={{width:160}}
-                      value={nieuwStafRol} onChange={e=>setNieuwStafRol(e.target.value)}>
-                      {STAF_ROLLEN.map(r=><option key={r} value={r}>{r}</option>)}
-                    </select>
-                    <input className="form-input" style={{flex:1}} placeholder="Naam"
-                      value={nieuwStafNaam} onChange={e=>setNieuwStafNaam(e.target.value)}
-                      onKeyDown={e=>e.key==="Enter"&&voegStafToe()}/>
-                    <button className="btn btn-sm btn-primary" onClick={voegStafToe}>+ Toevoegen</button>
+              {/* Artikelen */}
+              <div style={{flex:1,overflowY:"auto",padding:"16px 20px"}}>
+                {itemsVoorView.length === 0 ? (
+                  <div className="empty" style={{marginTop:40}}>
+                    Geen {actievTab}nieuws voor {geselecteerdeClub}.
                   </div>
-                </div>
+                ) : (
+                  itemsVoorView.map((item, artIdx) => (
+                    <div key={artIdx} className="card" style={{marginBottom:12}}>
+                      <div className="card-body">
+                        <ArtikelHeader item={item} key={item.datum+item.titel}/>
+                        {item.bullets && item.bullets.length > 0 ? (
+                          <ul style={{margin:0,padding:0,listStyle:"none"}}>
+                            {item.bullets.map((b, bi) => (
+                              <BulletRij key={bi} datum={item.datum} titel={item.titel}
+                                bi={bi} tekst={b}/>
+                            ))}
+                          </ul>
+                        ) : (
+                          <div style={{fontSize:12,color:"var(--muted)",fontStyle:"italic"}}>
+                            Geen bullets (artikel wordt verwijderd bij opslaan).
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </>
           )}
@@ -3396,12 +2939,15 @@ function SelectiesBeheer({toast, setPagina}) {
   );
 }
 
+
+// ── Blessures overzicht ───────────────────────────────────────
+
 // ── Wedstrijden Beheer ───────────────────────────────────────
 function WedstrijdenBeheer({data, toast, onRefresh}) {
-  const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","Hurley","Kampong",
-    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","Schaerweijde"];
+  const CLUBS_H = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC","Schaerweijde","Tilburg"];
   const CLUBS_D = ["Amsterdam","Bloemendaal","Den Bosch","HDM","HGC","Hurley","Kampong",
-    "Oranje-Rood","Pinoké","Rotterdam","SCHC","Tilburg"];
+    "Klein Zwitserland","Laren","Oranje-Rood","Pinoké","Rotterdam","SCHC","Schaerweijde","Tilburg"];
 
   const [geslacht, setGeslacht] = useState("heren");
   const [wedstrijden, setWedstrijden] = useState([]);
@@ -3427,27 +2973,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
       .catch(() => setLaden(false));
   }, [geslacht]);
 
-  // Normaliseert scorer/kaart type naar sc/sb/veld
-  const normalizeType = (t) => {
-    if (!t) return "veld";
-    const tl = t.toLowerCase().trim();
-    if (tl === "sc" || tl === "strafcorner" || tl === "penalty corner" || tl === "pc") return "sc";
-    if (tl === "sb" || tl === "strafbal" || tl === "penalty stroke" || tl === "ps") return "sb";
-    return "veld";
-  };
-
   const selecteer = (idx) => {
     setGeselecteerd(idx);
-    const w = JSON.parse(JSON.stringify(wedstrijden[idx]));
-    // Strip H1/D1 van club-velden zodat dropdowns correct inladen
-    (w.scorers || []).forEach(s => {
-      s.club = (s.club || "").replace(/\s+(H1|D1|Heren|Dames)$/i, "").trim();
-      s.type = normalizeType(s.type);
-    });
-    (w.kaarten || []).forEach(k => {
-      k.club = (k.club || "").replace(/\s+(H1|D1|Heren|Dames)$/i, "").trim();
-    });
-    setEdit(w);
+    setEdit(JSON.parse(JSON.stringify(wedstrijden[idx])));
   };
 
   const setVeld = (veld, val) => setEdit(e => ({...e, [veld]: val}));
@@ -3483,6 +3011,29 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
     k.splice(i, 1);
     return {...e, kaarten: k};
   });
+
+  const verwijder = async () => {
+    if (!edit || geselecteerd === null) return;
+    const label = `${edit.thuis} – ${edit.uit} (${edit.datum})`;
+    if (!window.confirm(`Wedstrijd verwijderen?\n\n${label}\n\nDeze actie kan niet ongedaan worden gemaakt.`)) return;
+    setBezig(true);
+    try {
+      const res = await apiCall("verwijderWedstrijd", {
+        geslacht,
+        datum:  wedstrijden[geselecteerd].datum,
+        thuis:  wedstrijden[geselecteerd].thuis,
+        uit:    wedstrijden[geselecteerd].uit,
+      });
+      if (res.ok) {
+        toast("✅ Wedstrijd verwijderd");
+        const nieuw = wedstrijden.filter((_, i) => i !== geselecteerd);
+        setWedstrijden(nieuw);
+        setGeselecteerd(null);
+        setEdit(null);
+      } else throw new Error(res.fout || res.error || "Fout bij verwijderen");
+    } catch(e) { toast("❌ " + e.message, "error"); }
+    finally { setBezig(false); }
+  };
 
   const opslaan = async () => {
     setBezig(true);
@@ -3658,9 +3209,16 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
             <div style={{maxWidth:640}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:20}}>
                 <h2 style={{margin:0,fontSize:18}}>{edit.thuis} – {edit.uit}</h2>
-                <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
-                  {bezig ? <span className="spinner"/> : null} Opslaan
-                </button>
+                <div style={{display:"flex",gap:8}}>
+                  <button className="btn btn-danger btn-sm" onClick={verwijder} disabled={bezig}
+                    title="Wedstrijd verwijderen"
+                    style={{background:"#dc2626",borderColor:"#dc2626",color:"#fff"}}>
+                    🗑 Verwijderen
+                  </button>
+                  <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
+                    {bezig ? <span className="spinner"/> : null} Opslaan
+                  </button>
+                </div>
               </div>
 
               {/* Foutmelding bij verdachte data */}
@@ -4073,12 +3631,11 @@ function App() {
             <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
           {paginaType==="teamnieuws" &&
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
-          {paginaType==="selecties" &&
-            <SelectiesBeheer toast={toast} setPagina={setPagina}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
-
+          {paginaType==="logboek" &&
+            <Logboek data={data} setPagina={setPagina}/>}
         </div>
         <ToastContainer toasts={toasts}/>
       </div>
