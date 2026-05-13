@@ -472,7 +472,7 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
     {id:"clubs",      icon:"🏒", label:"Clubs"},
     {id:"teamnieuws",  icon:"📰", label:"Teamnieuws"},
     {id:"wedstrijden", icon:"⚽", label:"Wedstrijden"},
-    {id:"selecties",   icon:"📋", label:"Selecties"},
+    {id:"selecties",  icon:"📋", label:"Selecties"},
   ];
   return (
     <div className="sidebar">
@@ -1943,7 +1943,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
     if (speler) setVelden({...speler});
   }, [speler]);
 
-  // Laad spelersnieuws direct bij openen profiel
   useEffect(() => {
     if (spelersNieuws === null) {
       setLadtNieuws(true);
@@ -1994,7 +1993,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
           <div className="breadcrumb">
             <a onClick={()=>setPagina("spelers")}>Spelers</a>
             <span>/</span>
-            <a onClick={()=>setPagina("club_"+slugify(speler.club||""))}>{speler.club}</a>
+            <a onClick={()=>setPagina("club_"+(speler.club||"").toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,""))}>{speler.club}</a>
             <span>/</span>
             <span>{speler.naam}</span>
           </div>
@@ -2057,7 +2056,7 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
             ladtNieuws={ladtNieuws}
             toast={toast}
           />
-          <div style={{borderTop:"1px solid var(--border)",margin:"0 -24px",padding:"20px 24px 0"}}>
+          <div style={{borderTop:"1px solid var(--border)",margin:"4px -24px 0",padding:"20px 24px 0"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20,alignItems:"start"}}>
             {/* Basisinfo */}
             <div className="card">
@@ -2225,8 +2224,6 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
               </div>
             </div>
           </div>
-          </div>
-          </>
         )}
 
         {tab === "blessures" && (
@@ -2249,6 +2246,9 @@ function SpelerDetail({spelerId, data, toast, onRefresh, setPagina}) {
                 onClose={()=>setBlessureModal(false)}/>
             )}
           </div>
+          </div>
+          </div>
+          </>
         )}
 
 
@@ -2611,8 +2611,7 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
   useEffect(() => {
     setLaden(true);
     fetch("https://florismulder.github.io/hockey_db/nieuws/teamnieuws.json?t="+Date.now())
-      .then(r=>r.json())
-      .then(d=>{ setNieuwsData(d); setLaden(false); })
+      .then(r=>r.json()).then(d=>{ setNieuwsData(d); setLaden(false); })
       .catch(()=>setLaden(false));
   }, []);
 
@@ -2622,7 +2621,6 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     return tel;
   }, [nieuwsData]);
 
-  // Flatten: alle bullets voor geselecteerde club + geslacht, als losse rijen
   const bulletsVoorView = useMemo(() => {
     if (!geselecteerdeClub) return [];
     const items = (nieuwsData[geselecteerdeClub]||[])
@@ -2630,39 +2628,29 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     const rijen = [];
     items.forEach(item => {
       (item.bullets||[]).forEach((b, bi) => {
-        rijen.push({
-          bullet: b,
-          bi,
-          datum: item.datum||"",
-          titel: item.titel||"",
-          link: item.link||"",
-          verborgen: !!(item.verborgen_bullets||[]).includes(bi),
-        });
+        rijen.push({ bullet:b, bi, datum:item.datum||"", titel:item.titel||"",
+          verborgen:!!(item.verborgen_bullets||[]).includes(bi) });
       });
     });
-    // Sorteer op datum desc
-    rijen.sort((a,b) => (b.datum||"").localeCompare(a.datum||""));
-    return rijen;
+    return rijen.sort((a,b)=>(b.datum||"").localeCompare(a.datum||""));
   }, [nieuwsData, geselecteerdeClub, actievTab]);
 
   const ddmmjjjj = (d) => {
     if (!d) return "";
     const dt = new Date(d);
     if (isNaN(dt)) return d;
-    return String(dt.getDate()).padStart(2,"0")+"-"+
-           String(dt.getMonth()+1).padStart(2,"0")+"-"+
-           dt.getFullYear();
+    return String(dt.getDate()).padStart(2,"0")+"-"+String(dt.getMonth()+1).padStart(2,"0")+"-"+dt.getFullYear();
   };
 
   const toggleVerborgen = (datum, titel, bi) => {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
       const items = nieuw[geselecteerdeClub]||[];
-      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
-      if (idx < 0) return huidig;
+      const idx = items.findIndex(x=>x.datum===datum&&x.titel===titel);
+      if (idx<0) return huidig;
       const vb = [...(items[idx].verborgen_bullets||[])];
       const pos = vb.indexOf(bi);
-      if (pos >= 0) vb.splice(pos,1); else vb.push(bi);
+      if (pos>=0) vb.splice(pos,1); else vb.push(bi);
       items[idx].verborgen_bullets = vb;
       return nieuw;
     });
@@ -2672,25 +2660,22 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
       const items = nieuw[geselecteerdeClub]||[];
-      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
-      if (idx < 0) return huidig;
-      items[idx].bullets.splice(bi, 1);
-      // Herindex verborgen_bullets
-      const vb = (items[idx].verborgen_bullets||[])
-        .filter(x => x !== bi)
-        .map(x => x > bi ? x-1 : x);
+      const idx = items.findIndex(x=>x.datum===datum&&x.titel===titel);
+      if (idx<0) return huidig;
+      items[idx].bullets.splice(bi,1);
+      const vb = (items[idx].verborgen_bullets||[]).filter(x=>x!==bi).map(x=>x>bi?x-1:x);
       items[idx].verborgen_bullets = vb;
       if (!items[idx].bullets.length) items.splice(idx,1);
       return nieuw;
     });
   };
 
-  const bewerkBullet = (datum, titel, bi, nieuweTekst) => {
+  const bewerkBullet = (datum, titel, bi, tekst) => {
     setNieuwsData(huidig => {
       const nieuw = JSON.parse(JSON.stringify(huidig));
       const items = nieuw[geselecteerdeClub]||[];
-      const idx = items.findIndex(x => x.datum===datum && x.titel===titel);
-      if (idx >= 0) items[idx].bullets[bi] = nieuweTekst;
+      const idx = items.findIndex(x=>x.datum===datum&&x.titel===titel);
+      if (idx>=0) items[idx].bullets[bi] = tekst;
       return nieuw;
     });
   };
@@ -2699,50 +2684,35 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
     if (!geselecteerdeClub) return;
     setBezig(true);
     try {
-      const res = await apiCall("updateTeamnieuws", {
-        club: geselecteerdeClub,
-        items: nieuwsData[geselecteerdeClub]||[]
-      });
+      const res = await apiCall("updateTeamnieuws",{club:geselecteerdeClub,items:nieuwsData[geselecteerdeClub]||[]});
       if (res.ok) toast("✅ "+geselecteerdeClub+" opgeslagen");
       else throw new Error(res.fout||res.error||"Fout");
     } catch(e) { toast("❌ "+e.message,"error"); }
     finally { setBezig(false); }
   };
 
-  // Inline bullet editor rij
   const BulletRij = ({datum, titel, bi, bullet, verborgen}) => {
     const [bewerkModus, setBewerkModus] = useState(false);
     const [waarde, setWaarde] = useState(bullet);
     return (
       <div style={{display:"flex",alignItems:"flex-start",gap:8,padding:"7px 0",
-        borderBottom:"1px solid var(--border)",
-        opacity: verborgen ? 0.4 : 1}}>
-        {/* Datum */}
-        <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,
-          color:"var(--muted)",flexShrink:0,whiteSpace:"nowrap",marginTop:2,width:76}}>
-          {ddmmjjjj(datum)}
-        </span>
-        {/* Bullet tekst of editor */}
-        {bewerkModus ? (
-          <textarea value={waarde} onChange={e=>setWaarde(e.target.value)}
-            rows={2} autoFocus
-            style={{flex:1,fontSize:13,padding:"4px 6px",borderRadius:4,
-              border:"1px solid var(--accent)",resize:"vertical",
-              background:"var(--surface)",color:"var(--text)"}}/>
-        ) : (
-          <span style={{flex:1,fontSize:13,lineHeight:1.45,
-            textDecoration: verborgen ? "line-through" : "none"}}>
-            {bullet}
-          </span>
-        )}
-        {/* Acties */}
+        borderBottom:"1px solid var(--border)",opacity:verborgen?0.4:1}}>
+        <span style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,color:"var(--muted)",
+          flexShrink:0,whiteSpace:"nowrap",marginTop:2,width:76}}>{ddmmjjjj(datum)}</span>
+        {bewerkModus
+          ? <textarea value={waarde} onChange={e=>setWaarde(e.target.value)} rows={2} autoFocus
+              style={{flex:1,fontSize:13,padding:"4px 6px",borderRadius:4,border:"1px solid var(--accent)",
+                resize:"vertical",background:"var(--surface)",color:"var(--text)"}}/>
+          : <span style={{flex:1,fontSize:13,lineHeight:1.45,
+              textDecoration:verborgen?"line-through":"none"}}>{bullet}</span>
+        }
         <div style={{display:"flex",gap:3,flexShrink:0,marginTop:1}}>
           {bewerkModus ? (
             <>
-              <button onClick={()=>{ bewerkBullet(datum,titel,bi,waarde); setBewerkModus(false); }}
+              <button onClick={()=>{bewerkBullet(datum,titel,bi,waarde);setBewerkModus(false);}}
                 style={{fontSize:11,padding:"2px 8px",borderRadius:4,cursor:"pointer",
                   background:"var(--accent)",color:"#fff",border:"none",fontWeight:600}}>✓</button>
-              <button onClick={()=>{ setWaarde(bullet); setBewerkModus(false); }}
+              <button onClick={()=>{setWaarde(bullet);setBewerkModus(false);}}
                 style={{fontSize:11,padding:"2px 6px",borderRadius:4,cursor:"pointer",
                   background:"var(--surface2)",border:"1px solid var(--border)",color:"var(--muted)"}}>✕</button>
             </>
@@ -2752,15 +2722,13 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
                 style={{fontSize:11,padding:"2px 6px",borderRadius:3,cursor:"pointer",
                   border:"1px solid var(--border)",background:"var(--surface2)",color:"var(--muted)"}}>✏️</button>
               <button onClick={()=>toggleVerborgen(datum,titel,bi)}
-                title={verborgen ? "Tonen" : "Verbergen"}
+                title={verborgen?"Tonen":"Verbergen"}
                 style={{fontSize:11,padding:"2px 6px",borderRadius:3,cursor:"pointer",
                   border:"1px solid "+(verborgen?"var(--accent)":"var(--border)"),
-                  background: verborgen?"var(--accent-light)":"var(--surface2)",
-                  color: verborgen?"var(--accent)":"var(--muted)"}}>
-                {verborgen ? "👁 Tonen" : "🚫"}
-              </button>
-              <button onClick={()=>{ if(window.confirm("Bullet permanent verwijderen?")) verwijderBullet(datum,titel,bi); }}
-                title="Verwijderen"
+                  background:verborgen?"var(--accent-light)":"var(--surface2)",
+                  color:verborgen?"var(--accent)":"var(--muted)"}}>
+                {verborgen?"👁 Tonen":"🚫"}</button>
+              <button onClick={()=>{if(window.confirm("Bullet permanent verwijderen?")) verwijderBullet(datum,titel,bi);}}
                 style={{fontSize:11,padding:"2px 6px",borderRadius:3,cursor:"pointer",
                   border:"1px solid #fca5a5",background:"rgba(239,68,68,.07)",color:"#dc2626"}}>🗑</button>
             </>
@@ -2785,21 +2753,15 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
           </div>
         )}
       </div>
-
       <div style={{display:"flex",flex:1,minHeight:0,overflow:"hidden"}}>
-
-        {/* Clublijst links */}
         <div style={{width:200,flexShrink:0,borderRight:"1px solid var(--border)",overflowY:"auto"}}>
-          {laden && <div className="loading" style={{padding:16}}><div className="spinner"/> Laden…</div>}
-          {!laden && ALLE_CLUBS.map(club => {
-            const tel = telPerClub[club]||0;
-            const isActief = geselecteerdeClub===club;
+          {laden&&<div className="loading" style={{padding:16}}><div className="spinner"/> Laden…</div>}
+          {!laden&&ALLE_CLUBS.map(club=>{
+            const tel=telPerClub[club]||0, isActief=geselecteerdeClub===club;
             return (
-              <div key={club} onClick={()=>{ setGeselecteerdeClub(club); setActievTab("heren"); }}
-                style={{padding:"9px 14px",cursor:"pointer",
-                  borderBottom:"1px solid var(--border)",
-                  background:isActief?"var(--accent)":"transparent",
-                  color:isActief?"white":"var(--text)",
+              <div key={club} onClick={()=>{setGeselecteerdeClub(club);setActievTab("heren");}}
+                style={{padding:"9px 14px",cursor:"pointer",borderBottom:"1px solid var(--border)",
+                  background:isActief?"var(--accent)":"transparent",color:isActief?"white":"var(--text)",
                   display:"flex",justifyContent:"space-between",alignItems:"center",
                   fontSize:13,fontWeight:isActief?600:400,transition:"background .1s"}}>
                 <span>{club}</span>
@@ -2810,55 +2772,43 @@ function TeamNieuwsBeheer({data, toast, onRefresh}) {
             );
           })}
         </div>
-
-        {/* Content rechts */}
         <div style={{flex:1,display:"flex",flexDirection:"column",overflow:"hidden"}}>
-          {!geselecteerdeClub ? (
-            <div className="empty" style={{marginTop:80}}>Selecteer een club</div>
-          ) : (
-            <>
-              {/* Tabs */}
-              <div style={{display:"flex",borderBottom:"1px solid var(--border)",padding:"0 20px",flexShrink:0}}>
-                {["heren","dames"].map(g => {
-                  const tel = (nieuwsData[geselecteerdeClub]||[])
-                    .filter(i=>(i.geslacht||"heren")===g)
-                    .reduce((s,i)=>s+(i.bullets||[]).length,0);
-                  return (
-                    <button key={g} onClick={()=>setActievTab(g)}
-                      style={{padding:"10px 18px",border:"none",
-                        borderBottom:actievTab===g?"2px solid var(--accent)":"2px solid transparent",
-                        background:"transparent",cursor:"pointer",fontSize:13,fontWeight:600,
-                        color:actievTab===g?"var(--accent)":"var(--muted)",
-                        marginBottom:-1,transition:"color .15s"}}>
-                      {g==="heren"?"💙 Heren":"🩷 Dames"}
-                      {tel>0&&<span style={{marginLeft:6,fontSize:10,background:"var(--surface2)",
-                        padding:"1px 6px",borderRadius:10,color:"var(--muted)"}}>{tel}</span>}
-                    </button>
-                  );
-                })}
-              </div>
-
-              {/* Bullets */}
-              <div style={{flex:1,overflowY:"auto",padding:"12px 20px"}}>
-                {bulletsVoorView.length===0 ? (
-                  <div className="empty" style={{marginTop:40}}>
-                    Geen {actievTab}nieuws voor {geselecteerdeClub}.
-                  </div>
-                ) : (
-                  bulletsVoorView.map((rij,i) => (
-                    <BulletRij key={i} datum={rij.datum} titel={rij.titel}
-                      bi={rij.bi} bullet={rij.bullet} verborgen={rij.verborgen}/>
-                  ))
-                )}
-              </div>
-            </>
-          )}
+          {!geselecteerdeClub
+            ? <div className="empty" style={{marginTop:80}}>Selecteer een club</div>
+            : <>
+                <div style={{display:"flex",borderBottom:"1px solid var(--border)",padding:"0 20px",flexShrink:0}}>
+                  {["heren","dames"].map(g=>{
+                    const tel=(nieuwsData[geselecteerdeClub]||[])
+                      .filter(i=>(i.geslacht||"heren")===g).reduce((s,i)=>s+(i.bullets||[]).length,0);
+                    return (
+                      <button key={g} onClick={()=>setActievTab(g)}
+                        style={{padding:"10px 18px",border:"none",
+                          borderBottom:actievTab===g?"2px solid var(--accent)":"2px solid transparent",
+                          background:"transparent",cursor:"pointer",fontSize:13,fontWeight:600,
+                          color:actievTab===g?"var(--accent)":"var(--muted)",marginBottom:-1}}>
+                        {g==="heren"?"💙 Heren":"🩷 Dames"}
+                        {tel>0&&<span style={{marginLeft:6,fontSize:10,background:"var(--surface2)",
+                          padding:"1px 6px",borderRadius:10,color:"var(--muted)"}}>{tel}</span>}
+                      </button>
+                    );
+                  })}
+                </div>
+                <div style={{flex:1,overflowY:"auto",padding:"12px 20px"}}>
+                  {bulletsVoorView.length===0
+                    ? <div className="empty" style={{marginTop:40}}>Geen {actievTab}nieuws voor {geselecteerdeClub}.</div>
+                    : bulletsVoorView.map((rij,i)=>(
+                        <BulletRij key={i} datum={rij.datum} titel={rij.titel}
+                          bi={rij.bi} bullet={rij.bullet} verborgen={rij.verborgen}/>
+                      ))
+                  }
+                </div>
+              </>
+          }
         </div>
       </div>
     </div>
   );
 }
-
 
 // ── Blessures overzicht ───────────────────────────────────────
 
@@ -2931,29 +2881,6 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
     k.splice(i, 1);
     return {...e, kaarten: k};
   });
-
-  const verwijder = async () => {
-    if (!edit || geselecteerd === null) return;
-    const label = `${edit.thuis} – ${edit.uit} (${edit.datum})`;
-    if (!window.confirm(`Wedstrijd verwijderen?\n\n${label}\n\nDeze actie kan niet ongedaan worden gemaakt.`)) return;
-    setBezig(true);
-    try {
-      const res = await apiCall("verwijderWedstrijd", {
-        geslacht,
-        datum:  wedstrijden[geselecteerd].datum,
-        thuis:  wedstrijden[geselecteerd].thuis,
-        uit:    wedstrijden[geselecteerd].uit,
-      });
-      if (res.ok) {
-        toast("✅ Wedstrijd verwijderd");
-        const nieuw = wedstrijden.filter((_, i) => i !== geselecteerd);
-        setWedstrijden(nieuw);
-        setGeselecteerd(null);
-        setEdit(null);
-      } else throw new Error(res.fout || res.error || "Fout bij verwijderen");
-    } catch(e) { toast("❌ " + e.message, "error"); }
-    finally { setBezig(false); }
-  };
 
   const opslaan = async () => {
     setBezig(true);
@@ -3129,16 +3056,9 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
             <div style={{maxWidth:640}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:20}}>
                 <h2 style={{margin:0,fontSize:18}}>{edit.thuis} – {edit.uit}</h2>
-                <div style={{display:"flex",gap:8}}>
-                  <button className="btn btn-danger btn-sm" onClick={verwijder} disabled={bezig}
-                    title="Wedstrijd verwijderen"
-                    style={{background:"#dc2626",borderColor:"#dc2626",color:"#fff"}}>
-                    🗑 Verwijderen
-                  </button>
-                  <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
-                    {bezig ? <span className="spinner"/> : null} Opslaan
-                  </button>
-                </div>
+                <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
+                  {bezig ? <span className="spinner"/> : null} Opslaan
+                </button>
               </div>
 
               {/* Foutmelding bij verdachte data */}
@@ -3680,13 +3600,11 @@ function SelectiesBeheer({toast}) {
   );
 }
 
+'''
 
-
-'))
-    },
-    "integration_icon_url": null,
-    "context": null,
-        if (!user) return (
+# Invoegen v\u00f3\u00f3r WedstrijdenBeheer
+marker = '// \u2500\u2500 Wedstrijden Beheer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500'
+  if (!user) return (
     <>
       <style>{css}</style>
       <style>{`
