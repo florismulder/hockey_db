@@ -6147,15 +6147,6 @@
     },
     {
       "datum": "2026-05-16",
-      "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 4",
-      "uit": "Hoofdklasse Dames nr 1",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-16",
       "tijdstip": null,
       "thuis": "Hoofdklasse nr 1",
       "uit": "Hoofdklasse nr 4",
@@ -6308,5 +6299,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:21:59.154Z"
+  "bijgewerkt": "2026-05-13T18:22:09.839Z"
 }
