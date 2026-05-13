@@ -3893,13 +3893,18 @@
       "rugnummer": 1,
       "keeper": true,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "positie": "doelverdediger",
+      "bio": "Babette Backers is een Nederlandse hockeyspeelster en doelverdediger bij HC Kampong. Sinds 2024 komt ze ook uit voor de Nederlandse hockeyploeg. Ze werd jeugdwereldkampioen op het WK -21 in 2021 en 2023.",
+      "vorige_clubs": [
+        "HC Houten"
+      ]
     },
     {
       "id": "luna_fokke",
