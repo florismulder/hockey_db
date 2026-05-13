@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "type": "wedstrijd_verwijderd",
+      "id": "2026-05-17_Hoofdklasse Heren nr 1_Hoofdklasse Heren nr 4",
+      "naam": "Hoofdklasse Heren nr 1 – Hoofdklasse Heren nr 4",
+      "velden": {
+        "datum": "2026-05-17",
+        "geslacht": "heren"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:17:23.928Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "aea0914f-881b-403b-a5a0-04f2f7abc36a",
       "naam": "Jip Dicke grossiert in veldgoals, unieke prestatie…   Tulp Hoofdklasse",
