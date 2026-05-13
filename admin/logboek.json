@@ -2,6 +2,18 @@
   "entries": [
     {
       "type": "wedstrijd_verwijderd",
+      "id": "2026-05-31_Hoofdklasse Dames nr 11_Promotieklasse Dames nr 2",
+      "naam": "Hoofdklasse Dames nr 11 – Promotieklasse Dames nr 2",
+      "velden": {
+        "datum": "2026-05-31",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:19:11.870Z"
+    },
+    {
+      "type": "wedstrijd_verwijderd",
       "id": "2026-05-16_Hoofdklasse nr 1_Hoofdklasse nr 4",
       "naam": "Hoofdklasse nr 1 – Hoofdklasse nr 4",
       "velden": {
