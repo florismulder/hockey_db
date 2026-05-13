@@ -6292,15 +6292,6 @@
     {
       "datum": "2026-05-31",
       "tijdstip": null,
-      "thuis": "Hoofdklasse nr 11",
-      "uit": "Promotieklasse nr 2",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-31",
-      "tijdstip": null,
       "thuis": "Hoofdklasse nr 10",
       "uit": "Promotieklasse nr 3",
       "gespeeld": false,
@@ -6326,5 +6317,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:19:22.603Z"
+  "bijgewerkt": "2026-05-13T18:19:34.990Z"
 }
