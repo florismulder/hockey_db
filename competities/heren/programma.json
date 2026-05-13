@@ -7654,6 +7654,24 @@
       }
     },
     {
+      "datum": "2026-05-14",
+      "tijdstip": "18:30",
+      "thuis": "Amsterdam",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-14",
+      "tijdstip": "12:00",
+      "thuis": "Pinoké",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-17",
       "tijdstip": null,
       "thuis": "Hoofdklasse Heren nr 2",
@@ -7672,6 +7690,24 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-17",
+      "tijdstip": "17:00",
+      "thuis": "Oranje-Rood",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-17",
+      "tijdstip": "15:00",
+      "thuis": "Rotterdam",
+      "uit": "Pinoké",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-23",
       "tijdstip": null,
       "thuis": "Play-Offs Heren Winnaar Halve Finale",
@@ -7685,6 +7721,24 @@
       "tijdstip": null,
       "thuis": "Play-Offs Heren Verliezer Halve Finale",
       "uit": "Play-Offs Heren Verliezer Halve Finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-25",
+      "tijdstip": "16:00",
+      "thuis": "Play-Offs Heren Verliezer Halve Finale",
+      "uit": "Play-Offs Heren Verliezer Halve finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-25",
+      "tijdstip": "16:00",
+      "thuis": "Play-Offs Heren Winnaar Halve Finale",
+      "uit": "Play-Offs Heren Winnaar Halve finale",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -7762,5 +7816,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T12:40:25.292Z"
+  "bijgewerkt": "2026-05-13T14:34:54.593Z"
 }
