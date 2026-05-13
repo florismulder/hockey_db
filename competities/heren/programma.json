@@ -7745,15 +7745,6 @@
     },
     {
       "datum": "2026-05-31",
-      "tijdstip": null,
-      "thuis": "Promotieklasse Heren nr 2",
-      "uit": "Hoofdklasse Heren nr 11",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-31",
       "tijdstip": "16:00",
       "thuis": "Promotieklasse Heren nr 3",
       "uit": "HDM",
@@ -7771,5 +7762,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:18:21.412Z"
+  "bijgewerkt": "2026-05-13T18:18:30.265Z"
 }
