@@ -1481,13 +1481,20 @@
       "rugnummer": 16,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 9,
       "vd": 9,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1997-07-29",
+      "geboorteplaats": "Veghel",
+      "positie": "aanvaller",
+      "bio": "Joosje Burg is een Nederlandse hockeyster, geboren op 29 juli 1997 in Veghel. Ze begon haar carrière bij Geel-Zwart en speelt sinds 2009 voor Den Bosch, waarmee ze meerdere landstitels won. Burg debuteerde in 2021 in de Nederlandse hockeyploeg en won met hen onder meer het EK 2023 en de Olympische Spelen 2024.",
+      "vorige_clubs": [
+        "Geel-Zwart"
+      ]
     },
     {
       "id": "laura_nunnink",
