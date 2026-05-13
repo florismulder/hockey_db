@@ -2,6 +2,18 @@
   "entries": [
     {
       "type": "wedstrijd_verwijderd",
+      "id": "2026-05-15_Hoofdklasse nr 4_Hoofdklasse nr 1",
+      "naam": "Hoofdklasse nr 4 – Hoofdklasse nr 1",
+      "velden": {
+        "datum": "2026-05-15",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-13T18:21:42.171Z"
+    },
+    {
+      "type": "wedstrijd_verwijderd",
       "id": "2026-05-30_Promotieklasse nr 3_Hoofdklasse nr 10",
       "naam": "Promotieklasse nr 3 – Hoofdklasse nr 10",
       "velden": {
