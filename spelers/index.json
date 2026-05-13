@@ -7951,13 +7951,18 @@
       "rugnummer": 6,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": 1,
       "vd": 1,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "2001-06-24",
+      "geboorteplaats": "Tiel",
+      "positie": "middenvelder",
+      "bio": "Elzemiek Zandee is een Nederlandse hockeyspeelster, geboren in Tiel op 24 juni 2001. Ze speelt als middenvelder voor SCHC en debuteerde in 2022 voor de Nederlandse hockeyploeg. Met de nationale ploeg won ze in 2022/23 de Hockey Pro League.",
+      "internationale_goals": 2
     },
     {
       "id": "elodie_picard",
