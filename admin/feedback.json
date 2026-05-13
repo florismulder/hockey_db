@@ -1,6 +1,14 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Olivier Hortensius scoorde twee keer in de slotronde van seizoen 25-26 om precies op tien doelpunten uit te komen.",
+      "bron_zin": "Hortensius stond voor de slotronde nog op acht, maar scoorde afgelopen zondag twee keer tegen Klein Zwitserland (0-5 zege) en kwam zo nog precies op tien uit."
+    },
+    {
+      "bullet": "Pepijn van der Heijden werd seizoen 25-26 clubtopscorer van Rotterdam met 18 doelpunten.",
+      "bron_zin": "Topscorer Pepijn van der Heijden eindigde op 18 treffers voor Rotterdam"
+    },
+    {
       "bullet": "Margot van Hecking Colenbrander maakte zomer 25 de overstap van HDM naar Hurley. Ze speelde 14 jaar bij haar jeugdliefde HDM. Door haar doelpunt voor Hurley tegen Tilburg in speelronde 22 is HDM veroordeeld tot de play-outs.",
       "bron_zin": "Van Hecking Colenbrander maakte afgelopen zomer na veertien jaar de overstap van haar jeugdliefde HDM.",
       "origineel": "Margot van Hecking Colenbrander maakte afgelopen zomer de overstap van HDM naar Hurley."
@@ -230,16 +238,6 @@
       "bullet": "Meeuw Tulp neemt zomer 26 afscheid van Pinoké.",
       "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
       "origineel": "Meeuw Tulp neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Anouk Stam neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Anouk Stam neemt afscheid van Pinoké."
-    },
-    {
-      "bullet": "Nina van der Marel neemt zomer 26 afscheid van Pinoké.",
-      "bron_zin": "Bij Pinoké stonden er bosjes bloemen klaar voor Elin van Erk, Marloes Timmermans, Nina van der Marel, Anouk Stam, Meeuw Tulp en Amber Ezechiels.",
-      "origineel": "Nina van der Marel neemt afscheid van Pinoké."
     }
   ],
   "verborgen_bullets": []
