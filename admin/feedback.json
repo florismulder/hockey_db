@@ -1,6 +1,10 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Joosje Burg scoorde een hattrick in de play-offs tegen Kampong. In 2024 tijdens halve finale play-offs, het werd 7-0 (grootste overwinning ooit in de historie van de play-offs).",
+      "bron_zin": "Joosje Burg maakte in dat duel een hattrick voor de Bosschenaren."
+    },
+    {
       "bullet": "Marijn Veen scoorde haar vijftigste Hoofdklasse-doelpunt voor Amsterdam. Tegen Rotterdam in speelronde 22 van seizoen 25-26.",
       "bron_zin": "Marijn Veen maakte tegen Rotterdam haar vijftigste doelpunt voor Amsterdam in de Hoofdklasse."
     },
@@ -227,11 +231,6 @@
       "bullet": "Floks van der Beek verlaat Bloemendaal in de zomer van 26.",
       "bron_zin": "Keeper Phileine Hazen verkast naar SCHC, terwijl ook Floks van de Beek de club verlaat.",
       "origineel": "Floks van der Beek verlaat Bloemendaal."
-    },
-    {
-      "bullet": "Annelies Pos van Bloemendaal kondigde haar afscheid van het tophockey aan, ze stopt zomer 26",
-      "bron_zin": "Bloemendaal-speelsters Demi Hilterman, Sterre Bregman en Annelies Pos ook hun afscheid van het tophockey aan.",
-      "origineel": "Annelies Pos kondigde haar afscheid van het tophockey aan."
     }
   ],
   "verborgen_bullets": []
