@@ -1521,13 +1521,22 @@
       "rugnummer": 22,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": 2,
       "vd": 2,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1995-07-06",
+      "geboorteplaats": "Veghel",
+      "positie": "middenvelder",
+      "bio": "Maartje Krekelaar is een Nederlandse hockeyster, geboren in Veghel op 6 juli 1995. Ze speelt op het middenveld voor Hockeyclub 's-Hertogenbosch en heeft 43 interlands gespeeld voor de nationale vrouwenploeg.",
+      "vorige_clubs": [
+        "Hockeyclub Uden"
+      ],
+      "caps": 43,
+      "internationale_goals": 11
     },
     {
       "id": "danique_van_der_veerdonk",
