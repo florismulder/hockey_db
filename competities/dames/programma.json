@@ -6101,6 +6101,24 @@
       ]
     },
     {
+      "datum": "2026-05-14",
+      "tijdstip": "16:00",
+      "thuis": "Amsterdam",
+      "uit": "SCHC",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-14",
+      "tijdstip": "14:00",
+      "thuis": "Kampong",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-15",
       "tijdstip": null,
       "thuis": "Hoofdklasse nr 3",
@@ -6173,6 +6191,24 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-16",
+      "tijdstip": "16:00",
+      "thuis": "SCHC",
+      "uit": "Amsterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-16",
+      "tijdstip": "14:00",
+      "thuis": "Den Bosch",
+      "uit": "Kampong",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-23",
       "tijdstip": "n.n.b.",
       "thuis": "Play-Offs Dames Winnaar Halve finale",
@@ -6186,6 +6222,24 @@
       "tijdstip": null,
       "thuis": "Play-Offs Winnaar Halve finale",
       "uit": "Play-Offs Winnaar Halve finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-23",
+      "tijdstip": "12:45",
+      "thuis": "Winnaar Halve Finale Play-Offs",
+      "uit": "Winnaar Halve Finale Play-Offs",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-25",
+      "tijdstip": "12:45",
+      "thuis": "Winnaar Halve Finale Play-Offs",
+      "uit": "Winnaar Halve Finale Play-Offs",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -6299,5 +6353,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T12:45:18.038Z"
+  "bijgewerkt": "2026-05-13T14:29:57.260Z"
 }
