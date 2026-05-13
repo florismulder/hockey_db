@@ -7682,15 +7682,6 @@
     },
     {
       "datum": "2026-05-17",
-      "tijdstip": null,
-      "thuis": "Hoofdklasse Heren nr 1",
-      "uit": "Hoofdklasse Heren nr 4",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-17",
       "tijdstip": "17:00",
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
@@ -7816,5 +7807,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T14:34:54.593Z"
+  "bijgewerkt": "2026-05-13T18:17:22.724Z"
 }
