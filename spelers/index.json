@@ -4127,13 +4127,22 @@
       "rugnummer": 7,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1997-05-15",
+      "geboorteplaats": "Maastricht",
+      "positie": "aanvaller",
+      "bio": "Kyra Fortuin is een Nederlandse hockeyster, geboren op 15 mei 1997 in Maastricht. Ze speelt als aanvallende middenvelder of aanvaller. Vanaf juni 2024 komt ze uit voor Kampong.",
+      "vorige_clubs": [
+        "Oranje Zwart",
+        "Oranje-Rood",
+        "SCHC"
+      ]
     },
     {
       "id": "charlotte_hoctin_boes",
