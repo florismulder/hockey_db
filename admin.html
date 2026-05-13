@@ -472,7 +472,7 @@ function Sidebar({pagina, setPagina, user, onLogout, aantalVoorstellen, aantalWa
     {id:"clubs",      icon:"🏒", label:"Clubs"},
     {id:"teamnieuws",  icon:"📰", label:"Teamnieuws"},
     {id:"wedstrijden", icon:"⚽", label:"Wedstrijden"},
-    {id:"logboek",    icon:"📋", label:"Logboek"},
+    {id:"selecties",   icon:"📋", label:"Selecties"},
   ];
   return (
     <div className="sidebar">
@@ -3380,6 +3380,350 @@ function BlessuresOverzicht({data, setPagina}) {
 }
 
 // ── Logboek ───────────────────────────────────────────────────
+
+const HEREN_CLUBS_SEL = [
+  {naam:"Amsterdam",      id:"amsterdam"},
+  {naam:"Bloemendaal",    id:"bloemendaal"},
+  {naam:"Den Bosch",      id:"den_bosch"},
+  {naam:"HDM",            id:"hdm"},
+  {naam:"Hurley",         id:"hurley"},
+  {naam:"Kampong",        id:"kampong"},
+  {naam:"Klein Zwitserland", id:"klein_zwitserland"},
+  {naam:"Laren",          id:"laren"},
+  {naam:"Oranje-Rood",    id:"oranje_rood"},
+  {naam:"Pinoké",         id:"pinoke"},
+  {naam:"Rotterdam",      id:"rotterdam"},
+  {naam:"Schaerweijde",   id:"schaerweijde"},
+];
+const DAMES_CLUBS_SEL = [
+  {naam:"Amsterdam",      id:"amsterdam"},
+  {naam:"Bloemendaal",    id:"bloemendaal"},
+  {naam:"Den Bosch",      id:"den_bosch"},
+  {naam:"HDM",            id:"hdm"},
+  {naam:"HGC",            id:"hgc"},
+  {naam:"Hurley",         id:"hurley"},
+  {naam:"Kampong",        id:"kampong"},
+  {naam:"Oranje-Rood",    id:"oranje_rood"},
+  {naam:"Pinoké",         id:"pinoke"},
+  {naam:"Rotterdam",      id:"rotterdam"},
+  {naam:"SCHC",           id:"schc"},
+  {naam:"Tilburg",        id:"tilburg"},
+];
+const STAF_ROLLEN = ["coach","assistent-coach","manager","fysio","overig"];
+const BASE_GH = "https://florismulder.github.io/hockey_db";
+
+function SelectiesBeheer({toast}) {
+  const [geslacht, setGeslacht] = useState("heren");
+  const [geselecteerdeClub, setGeselecteerdeClub] = useState(null);
+  const [selectieData, setSelectieData] = useState(null);
+  const [laden, setLaden] = useState(false);
+  const [bezig, setBezig] = useState(false);
+  const [nieuwNaam, setNieuwNaam] = useState("");
+  const [nieuwRug, setNieuwRug] = useState("");
+  const [nieuwStafRol, setNieuwStafRol] = useState("coach");
+  const [nieuwStafNaam, setNieuwStafNaam] = useState("");
+
+  const clubs = geslacht === "heren" ? HEREN_CLUBS_SEL : DAMES_CLUBS_SEL;
+
+  const laadSelectie = async (clubId) => {
+    setGeselecteerdeClub(clubId);
+    setSelectieData(null);
+    setLaden(true);
+    try {
+      const pad = `${BASE_GH}/spelers/${geslacht}/${clubId}.json`;
+      const resp = await fetch(pad + "?t=" + Date.now());
+      if (resp.ok) {
+        const d = await resp.json();
+        // Zorg dat staf veld bestaat
+        if (!d.staf) d.staf = {};
+        setSelectieData(d);
+      } else {
+        // Nieuw bestand
+        const clubInfo = clubs.find(c => c.id === clubId);
+        setSelectieData({
+          club: clubInfo?.naam || clubId,
+          club_id: clubId,
+          geslacht,
+          seizoen: "2025-2026",
+          spelers: [],
+          staf: {}
+        });
+      }
+    } catch(e) { toast("❌ Laden mislukt: " + e.message, "error"); }
+    finally { setLaden(false); }
+  };
+
+  const opslaan = async () => {
+    if (!selectieData) return;
+    setBezig(true);
+    try {
+      const res = await apiCall("slaSelectieOp", {
+        geslacht,
+        clubId: geselecteerdeClub,
+        selectie: selectieData
+      });
+      if (!res.success) throw new Error(res.error || "Onbekende fout");
+      toast("✅ Selectie opgeslagen");
+    } catch(e) { toast("❌ " + e.message, "error"); }
+    finally { setBezig(false); }
+  };
+
+  const voegSpelerToe = () => {
+    if (!nieuwNaam.trim()) return;
+    const clubInfo = clubs.find(c => c.id === geselecteerdeClub);
+    const nieuw = {
+      naam: nieuwNaam.trim(),
+      id: slugify(nieuwNaam.trim()),
+      rugnummer: nieuwRug,
+      keeper: false,
+      aanvoerder: false,
+      club: clubInfo?.naam || geselecteerdeClub,
+      club_id: geselecteerdeClub,
+      geslacht,
+      seizoen: "2025-2026"
+    };
+    setSelectieData(d => ({...d, spelers: [...(d.spelers||[]), nieuw]}));
+    setNieuwNaam(""); setNieuwRug("");
+  };
+
+  const verwijderSpeler = (idx) => {
+    setSelectieData(d => ({...d, spelers: d.spelers.filter((_,i) => i !== idx)}));
+  };
+
+  const updateSpeler = (idx, veld, val) => {
+    setSelectieData(d => {
+      const s = [...d.spelers];
+      s[idx] = {...s[idx], [veld]: val};
+      return {...d, spelers: s};
+    });
+  };
+
+  const voegStafToe = () => {
+    if (!nieuwStafNaam.trim()) return;
+    setSelectieData(d => {
+      const staf = {...(d.staf||{})};
+      if (!staf[nieuwStafRol]) staf[nieuwStafRol] = [];
+      if (!staf[nieuwStafRol].includes(nieuwStafNaam.trim())) {
+        staf[nieuwStafRol] = [...staf[nieuwStafRol], nieuwStafNaam.trim()];
+      }
+      return {...d, staf};
+    });
+    setNieuwStafNaam("");
+  };
+
+  const verwijderStaf = (rol, naam) => {
+    setSelectieData(d => {
+      const staf = {...(d.staf||{})};
+      staf[rol] = (staf[rol]||[]).filter(n => n !== naam);
+      if (!staf[rol].length) delete staf[rol];
+      return {...d, staf};
+    });
+  };
+
+  return (
+    <div className="fade">
+      <div className="topbar">
+        <div>
+          <div className="topbar-title">Selecties</div>
+          <div className="topbar-sub">Spelers en staf per team beheren</div>
+        </div>
+        <div className="topbar-actions">
+          {geselecteerdeClub && (
+            <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
+              {bezig ? <span className="spinner"/> : null} Opslaan
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="content" style={{display:"grid",gridTemplateColumns:"220px 1fr",gap:20,alignItems:"start"}}>
+
+        {/* Linker kolom: club kiezen */}
+        <div>
+          <div style={{display:"flex",gap:4,marginBottom:12}}>
+            {["heren","dames"].map(g => (
+              <button key={g} className={`btn btn-sm ${geslacht===g?"btn-primary":"btn-secondary"}`}
+                onClick={()=>{setGeslacht(g);setGeselecteerdeClub(null);setSelectieData(null);}}>
+                {g.charAt(0).toUpperCase()+g.slice(1)}
+              </button>
+            ))}
+          </div>
+          <div className="card">
+            <div className="card-body" style={{padding:0}}>
+              {clubs.map(club => (
+                <div key={club.id}
+                  onClick={() => laadSelectie(club.id)}
+                  style={{
+                    padding:"10px 14px", cursor:"pointer", fontSize:13,
+                    background: geselecteerdeClub===club.id ? "var(--accent)" : "transparent",
+                    color: geselecteerdeClub===club.id ? "white" : "var(--text)",
+                    borderBottom:"1px solid var(--border)",
+                    fontWeight: geselecteerdeClub===club.id ? 600 : 400
+                  }}>
+                  {club.naam}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Rechter kolom: spelers + staf */}
+        <div>
+          {!geselecteerdeClub && (
+            <div className="empty" style={{marginTop:60}}>Kies een club om de selectie te bewerken</div>
+          )}
+          {laden && <div className="loading">Laden...</div>}
+          {selectieData && !laden && (
+            <>
+              {/* Spelerslijst */}
+              <div className="card" style={{marginBottom:16}}>
+                <div className="card-header">
+                  <div className="card-title">Spelers ({(selectieData.spelers||[]).length})</div>
+                </div>
+                <div className="card-body">
+                  <table className="tbl" style={{marginBottom:12}}>
+                    <thead>
+                      <tr>
+                        <th style={{width:50}}>#</th>
+                        <th>Naam</th>
+                        <th style={{width:70,textAlign:"center"}}>Keeper</th>
+                        <th style={{width:90,textAlign:"center"}}>Aanvoerder</th>
+                        <th style={{width:32}}></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {(selectieData.spelers||[]).map((s,i) => (
+                        <tr key={i}>
+                          <td>
+                            <input className="form-input" style={{width:46,padding:"3px 6px",fontSize:12}}
+                              value={s.rugnummer||""} placeholder="\u2013"
+                              onChange={e => updateSpeler(i,"rugnummer",e.target.value)}/>
+                          </td>
+                          <td style={{fontWeight:500}}>{s.naam}</td>
+                          <td style={{textAlign:"center"}}>
+                            <input type="checkbox" checked={!!s.keeper}
+                              onChange={e => updateSpeler(i,"keeper",e.target.checked)}/>
+                          </td>
+                          <td style={{textAlign:"center"}}>
+                            <input type="checkbox" checked={!!s.aanvoerder}
+                              onChange={e => updateSpeler(i,"aanvoerder",e.target.checked)}/>
+                          </td>
+                          <td>
+                            <button onClick={()=>verwijderSpeler(i)}
+                              style={{background:"none",border:"none",cursor:"pointer",
+                                color:"var(--muted)",fontSize:16,padding:0}}>\u00d7</button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+
+                  {/* Speler toevoegen */}
+                  <div style={{display:"flex",gap:8,alignItems:"center"}}>
+                    <input className="form-input" style={{width:50}} placeholder="#"
+                      value={nieuwRug} onChange={e=>setNieuwRug(e.target.value)}/>
+                    <input className="form-input" style={{flex:1}} placeholder="Naam speler"
+                      value={nieuwNaam} onChange={e=>setNieuwNaam(e.target.value)}
+                      onKeyDown={e=>e.key==="Enter"&&voegSpelerToe()}/>
+                    <button className="btn btn-sm btn-primary" onClick={voegSpelerToe}>+ Toevoegen</button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Staf */}
+              <div className="card">
+                <div className="card-header">
+                  <div className="card-title">Staf</div>
+                </div>
+                <div className="card-body">
+                  {STAF_ROLLEN.map(rol => {
+                    const namen = (selectieData.staf||{})[rol] || [];
+                    if (!namen.length) return null;
+                    return (
+                      <div key={rol} style={{marginBottom:12}}>
+                        <div style={{fontSize:11,opacity:.6,textTransform:"capitalize",marginBottom:4}}>{rol}</div>
+                        <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
+                          {namen.map(naam => (
+                            <span key={naam} style={{
+                              display:"flex",alignItems:"center",gap:4,
+                              background:"var(--surface2)",borderRadius:4,
+                              padding:"3px 8px",fontSize:13
+                            }}>
+                              {naam}
+                              <button onClick={()=>verwijderStaf(rol,naam)}
+                                style={{background:"none",border:"none",cursor:"pointer",
+                                  color:"var(--muted)",fontSize:14,padding:0,lineHeight:1}}>\u00d7</button>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  {/* Staf toevoegen */}
+                  <div style={{display:"flex",gap:8,alignItems:"center",marginTop:12}}>
+                    <select className="form-select" style={{width:160}}
+                      value={nieuwStafRol} onChange={e=>setNieuwStafRol(e.target.value)}>
+                      {STAF_ROLLEN.map(r=><option key={r} value={r}>{r}</option>)}
+                    </select>
+                    <input className="form-input" style={{flex:1}} placeholder="Naam"
+                      value={nieuwStafNaam} onChange={e=>setNieuwStafNaam(e.target.value)}
+                      onKeyDown={e=>e.key==="Enter"&&voegStafToe()}/>
+                    <button className="btn btn-sm btn-primary" onClick={voegStafToe}>+ Toevoegen</button>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+'''
+
+# Invoegen v\u00f3\u00f3r WedstrijdenBeheer
+marker = '// \u2500\u2500 Wedstrijden Beheer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500'
+content = content.replace(marker, selecties_component + marker, 1)
+
+open('admin.html', 'w', encoding='utf-8').write(content)
+print("OK - regels:", content.count('\
+'))
+EOF",
+      "description": "Selecties-tab toevoegen aan admin.html"
+    },
+    "message": "Selecties-tab toevoegen aan admin.html",
+    "integration_name": null,
+    "integration_icon_url": null,
+    "icon_name": "commandLine",
+    "context": null,
+    "display_content": {
+      "type": "json_block",
+      "json_block": "{"language": "bash", "code": "cd /home/claude && python3 - << 'EOF'\
+content = open('admin.html', encoding='utf-8').read()\
+\
+# 1. Tab toevoegen aan sidebar\
+old_tabs = '    {id:\"wedstrijden\", icon:\"\u26bd\", label:\"Wedstrijden\"},'\
+new_tabs = '    {id:\"selecties\",   icon:\"\ud83d\udccb\", label:\"Selecties\"},\\
+    {id:\"wedstrijden\", icon:\"\u26bd\", label:\"Wedstrijden\"},'\
+content = content.replace(old_tabs, new_tabs, 1)\
+\
+# 2. Routing toevoegen\
+old_routing = '          {paginaType===\"wedstrijden\" &&\\
+            <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/> }'\
+new_routing = '''          {paginaType===\"selecties\" &&\
+            <SelectiesBeheer toast={toast}/>}\
+          {paginaType===\"wedstrijden\" &&\
+            <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}'''\
+content = content.replace(\
+    '          {paginaType===\"wedstrijden\" &&\\
+            <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}',\
+    new_routing, 1\
+)\
+\
+# 3. Selecties component invoegen v\u00f3\u00f3r WedstrijdenBeheer\
+selecties_component = '''\
+// \u2500\u2500 Selecties Beheer \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
 function Logboek({data, setPagina}) {
   const [zoek, setZoek] = useState("");
   const [pagina, setPag] = useState(0);
@@ -3551,6 +3895,8 @@ function App() {
             <ClubDetail clubKey={clubKey} data={data} toast={toast} onRefresh={laadData} setPagina={setPagina}/>}
           {paginaType==="teamnieuws" &&
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
+          {paginaType==="selecties" &&
+            <SelectiesBeheer toast={toast}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
