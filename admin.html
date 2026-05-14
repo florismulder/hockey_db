@@ -3331,7 +3331,7 @@ const DAMES_CLUBS_SEL = [
 const STAF_ROLLEN = ["coach","assistent-coach","manager","fysio","overig"];
 const BASE_GH = "https://florismulder.github.io/hockey_db";
 
-function SelectiesBeheer({toast}) {
+function SelectiesBeheer({toast, setPagina}) {
   const [geslacht, setGeslacht] = useState("heren");
   const [geselecteerdeClub, setGeselecteerdeClub] = useState(null);
   const [selectieData, setSelectieData] = useState(null);
@@ -3517,7 +3517,9 @@ function SelectiesBeheer({toast}) {
                               value={s.rugnummer||""} placeholder="\u2013"
                               onChange={e => updateSpeler(i,"rugnummer",e.target.value)}/>
                           </td>
-                          <td style={{fontWeight:500}}>{s.naam}</td>
+                          <td style={{fontWeight:500,cursor:"pointer",color:"var(--accent)"}}
+                            onClick={()=>setPagina&&setPagina("speler_"+slugify(s.naam||""))}
+                            title="Bewerk spelersprofiel">{s.naam}</td>
                           <td style={{textAlign:"center"}}>
                             <input type="checkbox" checked={!!s.keeper}
                               onChange={e => updateSpeler(i,"keeper",e.target.checked)}/>
@@ -3529,7 +3531,7 @@ function SelectiesBeheer({toast}) {
                           <td>
                             <button onClick={()=>verwijderSpeler(i)}
                               style={{background:"none",border:"none",cursor:"pointer",
-                                color:"var(--muted)",fontSize:16,padding:0}}>\u00d7</button>
+                                color:"var(--muted)",fontSize:16,padding:0}}>×</button>
                           </td>
                         </tr>
                       ))}
@@ -3570,7 +3572,7 @@ function SelectiesBeheer({toast}) {
                               {naam}
                               <button onClick={()=>verwijderStaf(rol,naam)}
                                 style={{background:"none",border:"none",cursor:"pointer",
-                                  color:"var(--muted)",fontSize:14,padding:0,lineHeight:1}}>\u00d7</button>
+                                  color:"var(--muted)",fontSize:14,padding:0,lineHeight:1}}>×</button>
                             </span>
                           ))}
                         </div>
@@ -3699,7 +3701,7 @@ function App() {
           {paginaType==="teamnieuws" &&
             <TeamNieuwsBeheer data={data} toast={toast} onRefresh={laadData}/>}
           {paginaType==="selecties" &&
-            <SelectiesBeheer toast={toast}/>}
+            <SelectiesBeheer toast={toast} setPagina={setPagina}/>}
           {paginaType==="wedstrijden" &&
             <WedstrijdenBeheer data={data} toast={toast} onRefresh={laadData}/>}
 
