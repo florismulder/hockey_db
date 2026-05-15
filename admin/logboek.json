@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "c721741f-3326-4052-ba05-7cc971be361d",
+      "naam": "Rotterdam met minimale zege langs Pinoké in eerste halve finale",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T15:14:57.324Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "ddc90ae2-876a-4aea-8ebd-2b4dc248042e",
       "naam": "Veen na verrassende zege op SCHC  ‘We groeien nog steeds als team’",
       "velden": {
