@@ -1451,7 +1451,7 @@ function WedstrijdDetail({wedstrijd, nav, spelers, geslacht: geslachtProp}) {
     const ev=[
       ...scorers.map(s=>({...s,_evt:"goal"})),
       ...kaarten.map(k=>({...k,_evt:"kaart"})),
-    ].sort((a,b)=>(b.minuut??-1)-(a.minuut??-1));
+    ].sort((a,b)=>(a.minuut??999)-(b.minuut??999));
     let st=0,su=0;
     return ev.map(e=>{
       const th=eventIsThuis(e.club);
