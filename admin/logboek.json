@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "ddc90ae2-876a-4aea-8ebd-2b4dc248042e",
+      "naam": "Veen na verrassende zege op SCHC  ‘We groeien nog steeds als team’",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T14:57:16.913Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "b93c65cc-6bf9-4b7d-a3d7-8d95d7c0b78a",
       "naam": "Laren aanvoerder Van Berckel  ‘Nog nooit zoveel over hockey gepraat’",
       "velden": {
