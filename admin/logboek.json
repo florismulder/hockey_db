@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "0fdb0f01-e480-4cfc-8543-395960dda909",
+      "naam": "Kampioenen SCHC  ‘Kans met beide handen aangegrepen’",
+      "velden": {
+        "goedgekeurd": 4
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T11:05:24.776Z"
+    },
+    {
       "type": "selectie_bijgewerkt",
       "id": "kampong",
       "naam": "Kampong",
