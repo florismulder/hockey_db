@@ -1,6 +1,14 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Jacob Draper (Pinoké) mist mogelijk de play-offs mei 26 door een hamstringblessure.",
+      "bron_zin": "Een belangrijke afwezige aan Amsterdamse zijde was aanvoerder Jacob Draper, die een hamstringblessure heeft."
+    },
+    {
+      "bullet": "Pieter Sutorius van Pinoké neemt zomer 26 afscheid van het tophockey.",
+      "bron_zin": "De verdediger neemt na dit seizoen afscheid van het tophockey."
+    },
+    {
       "bullet": "Jip Dicke was in seizoen 25-26  de speelster met de meeste velddoelpunten in de Hoofdklasse Dames.",
       "bron_zin": "Haar ploeggenote Jip Dicke mag zich de speelster met de meeste velddoelpunten noemen."
     },
@@ -221,15 +229,6 @@
       "bullet": "Rutger Plat zet een punt achter zijn loopbaan bij Hurley, eind seizoen 25-26",
       "bron_zin": "Bij de mannen nam Hurley zondag afscheid van Pim Wasser, Rutger Plat en Noam Sheridan.",
       "origineel": "Rutger Plat zet een punt achter zijn loopbaan bij Hurley."
-    },
-    {
-      "bullet": "Pim Wasser zet een punt achter zijn loopbaan bij Hurley, eind seizoen 25-26.",
-      "bron_zin": "Bij de mannen nam Hurley zondag afscheid van Pim Wasser, Rutger Plat en Noam Sheridan.",
-      "origineel": "Pim Wasser zet een punt achter zijn loopbaan bij Hurley."
-    },
-    {
-      "bullet": "Sabine Plönissen bergt haar stick voorgoed op en stopt met hockey.",
-      "bron_zin": "Eerder al werd bekend dat Julia Remmerswaal vertrekt bij HDM en dat Sabine Plönissen (Amsterdam) haar stick voorgoed opbergt."
     }
   ],
   "verborgen_bullets": []
