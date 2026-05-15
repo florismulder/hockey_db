@@ -6110,13 +6110,28 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-14",
-      "tijdstip": "14:00",
       "thuis": "Kampong",
       "uit": "Den Bosch",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 1,
+      "datum": "2026-05-14",
+      "tijdstip": "14:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Kyra Fortuin",
+          "club": "Kampong",
+          "minuut": 6,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 26,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-05-16",
@@ -6254,5 +6269,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:23:12.698Z"
+  "bijgewerkt": "2026-05-15T10:09:54.747Z"
 }
