@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "04c09d3e-953b-4b2e-8cab-5e3a96a7980f",
+      "naam": "Pinoké wil directer zijn  ‘We waren iets te lief met de bal’",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T11:12:27.786Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "0fdb0f01-e480-4cfc-8543-395960dda909",
       "naam": "Kampioenen SCHC  ‘Kans met beide handen aangegrepen’",
       "velden": {
