@@ -1,6 +1,18 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Joep Troost is de clubtopscorer van Pinoké met 23 treffers seizoen 25-26.",
+      "bron_zin": "Uit een reeks van drie strafcorners, kon de clubtopscorer (met 23 treffers) het verschil niet maken."
+    },
+    {
+      "bullet": "Florent van Aubel was in de eerste halve finale play-offs mei '26 tegen Rotterdam de gelegenheidsaanvoerder van Pinoké. Draper was geblesseerd.",
+      "bron_zin": "De Belg en gelegenheidsaanvoerder werkte de 1-1 zo binnen."
+    },
+    {
+      "bullet": "Jacob Draper miste de halve finale play-offs tegen Rotterdam door een hamstringblessure opgelopen tegen HDM.",
+      "bron_zin": "Twee weken geleden liep hij in het duel met HDM een hamstringblessure op."
+    },
+    {
       "bullet": "Imke Verstraeten maakte zomer 26 de overstap van Pinoké naar Amsterdam.",
       "bron_zin": "Imke Verstraeten, die afgelopen zomer overkwam van Pinoké, sleepte de 1-1 binnen."
     },
@@ -209,21 +221,6 @@
       "bullet": "Clubicoon Jannis van Hattum stopt na dit seizoen 25-26 bij Pinoké.",
       "bron_zin": "En bij Pinoké stoppen twee clubiconen: Jannis van Hattum en Pieter Sutorius.",
       "origineel": "Clubicoon Jannis van Hattum stopt na dit seizoen bij Pinoké."
-    },
-    {
-      "bullet": "Marco Miltkau heeft besloten een punt achter zijn loopbaan te zetten, eind seizoen 25-26.",
-      "bron_zin": "Ook Marco Miltkau (Bloemendaal) heeft besloten een punt achter zijn loopbaan te zetten.",
-      "origineel": "Marco Miltkau heeft besloten een punt achter zijn loopbaan te zetten."
-    },
-    {
-      "bullet": "Floris van der Kroon van HDM hangt de stick aan de wilgen en stopt met hockey eind seizoen 25-26.",
-      "bron_zin": "Van der Kroon hangt de stick aan de wilgen.",
-      "origineel": "Floris van der Kroon hangt de stick aan de wilgen en stopt met hockey."
-    },
-    {
-      "bullet": "Rick van den IJssel zwaait af bij HDM eind seizoen 25-26 en gaat spelen in HDM H2.",
-      "bron_zin": "Bij HDM zwaaien Cedric de Gier, Rick van den IJssel en Floris van der Kroon af.",
-      "origineel": "Rick van den IJssel zwaait af bij HDM en gaat spelen in HDM H2."
     }
   ],
   "verborgen_bullets": []
