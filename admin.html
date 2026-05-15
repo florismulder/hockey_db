@@ -2881,6 +2881,30 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
     return {...e, kaarten: k};
   });
 
+
+  const verwijder = async () => {
+    if (!edit || geselecteerd === null) return;
+    const label = `${edit.thuis} – ${edit.uit} (${edit.datum})`;
+    if (!window.confirm(`Wedstrijd verwijderen?\n\n${label}\n\nDeze actie kan niet ongedaan worden gemaakt.`)) return;
+    setBezig(true);
+    try {
+      const res = await apiCall("verwijderWedstrijd", {
+        geslacht,
+        datum:  wedstrijden[geselecteerd].datum,
+        thuis:  wedstrijden[geselecteerd].thuis,
+        uit:    wedstrijden[geselecteerd].uit,
+      });
+      if (res.ok) {
+        toast("✅ Wedstrijd verwijderd");
+        const nieuw = wedstrijden.filter((_, i) => i !== geselecteerd);
+        setWedstrijden(nieuw);
+        setGeselecteerd(null);
+        setEdit(null);
+      } else throw new Error(res.fout || res.error || "Fout bij verwijderen");
+    } catch(e) { toast("❌ " + e.message, "error"); }
+    finally { setBezig(false); }
+  };
+
   const opslaan = async () => {
     setBezig(true);
     try {
@@ -3055,9 +3079,16 @@ function WedstrijdenBeheer({data, toast, onRefresh}) {
             <div style={{maxWidth:640}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:20}}>
                 <h2 style={{margin:0,fontSize:18}}>{edit.thuis} – {edit.uit}</h2>
-                <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
-                  {bezig ? <span className="spinner"/> : null} Opslaan
-                </button>
+                <div style={{display:"flex",gap:8}}>
+                  <button onClick={verwijder} disabled={bezig}
+                    style={{padding:"6px 12px",borderRadius:6,cursor:"pointer",fontSize:13,
+                      background:"#dc2626",color:"#fff",border:"none",fontWeight:600}}>
+                    🗑 Verwijderen
+                  </button>
+                  <button className="btn btn-primary" onClick={opslaan} disabled={bezig}>
+                    {bezig ? <span className="spinner"/> : null} Opslaan
+                  </button>
+                </div>
               </div>
 
               {/* Foutmelding bij verdachte data */}
