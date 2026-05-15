@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "9101eb0e-6bcb-4bb5-aa0e-c93bed2475dc",
+      "naam": "Kampong reist met geloof naar Den Bosch  ‘Zijn er nu meer klaar voor’",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T15:17:59.706Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "c721741f-3326-4052-ba05-7cc971be361d",
       "naam": "Rotterdam met minimale zege langs Pinoké in eerste halve finale",
       "velden": {
