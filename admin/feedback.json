@@ -1,6 +1,14 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Mea de Vries kampt eveneens met een zware knieblessure, ze is niet bij de play-offs mei 26. In de halve finale speelt Kampong tegen Den Bosch.",
+      "bron_zin": "Mea [de Vries, die eveneens met een zware knieblessure kampt]"
+    },
+    {
+      "bullet": "Laurette Abelen verving de geblesseerde Josine Koning als goalie voor Den Bosch in de eerste halve finale play-offs tegen Kampong, 14 mei 26.",
+      "bron_zin": "Laurette Abelen, die de geblesseerde Josine Koning verving"
+    },
+    {
       "bullet": "Joep Troost is de clubtopscorer van Pinoké met 23 treffers seizoen 25-26.",
       "bron_zin": "Uit een reeks van drie strafcorners, kon de clubtopscorer (met 23 treffers) het verschil niet maken."
     },
@@ -211,16 +219,6 @@
       "bullet": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM. Stopt na 25-26.",
       "bron_zin": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM.",
       "origineel": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM."
-    },
-    {
-      "bullet": "Clubicoon Pieter Sutorius stopt na dit seizoen 25-26 bij Pinoké.",
-      "bron_zin": "En bij Pinoké stoppen twee clubiconen: Jannis van Hattum en Pieter Sutorius.",
-      "origineel": "Clubicoon Pieter Sutorius stopt na dit seizoen bij Pinoké."
-    },
-    {
-      "bullet": "Clubicoon Jannis van Hattum stopt na dit seizoen 25-26 bij Pinoké.",
-      "bron_zin": "En bij Pinoké stoppen twee clubiconen: Jannis van Hattum en Pieter Sutorius.",
-      "origineel": "Clubicoon Jannis van Hattum stopt na dit seizoen bij Pinoké."
     }
   ],
   "verborgen_bullets": []
