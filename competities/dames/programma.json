@@ -6101,13 +6101,77 @@
       ]
     },
     {
-      "datum": "2026-05-14",
-      "tijdstip": "16:00",
       "thuis": "Amsterdam",
       "uit": "SCHC",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2026-05-14",
+      "tijdstip": "16:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Pien Dicke",
+          "club": "SCHC",
+          "minuut": 18,
+          "type": "veld"
+        },
+        {
+          "naam": "Imke Verstraeten",
+          "club": "Amsterdam",
+          "minuut": 20,
+          "type": "sc"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 41,
+          "type": "sc"
+        },
+        {
+          "naam": "Mette Winter",
+          "club": "SCHC",
+          "minuut": 45,
+          "type": "veld"
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "minuut": 49,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Famke Richardson",
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 10
+        },
+        {
+          "naam": "Alessia Norbiato",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 36
+        },
+        {
+          "naam": "Yibbi Jansen",
+          "club": "SCHC",
+          "type": "groen",
+          "minuut": 50
+        },
+        {
+          "naam": "Daantje de Kruijff",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 50
+        },
+        {
+          "naam": "Marijn Veen",
+          "club": "Amsterdam",
+          "type": "geel",
+          "minuut": 60
+        }
+      ]
     },
     {
       "thuis": "Kampong",
@@ -6269,5 +6333,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-15T10:09:54.747Z"
+  "bijgewerkt": "2026-05-15T10:09:57.302Z"
 }
