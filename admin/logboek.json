@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "b93c65cc-6bf9-4b7d-a3d7-8d95d7c0b78a",
+      "naam": "Laren aanvoerder Van Berckel  ‘Nog nooit zoveel over hockey gepraat’",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-15T14:51:42.119Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "04c09d3e-953b-4b2e-8cab-5e3a96a7980f",
       "naam": "Pinoké wil directer zijn  ‘We waren iets te lief met de bal’",
       "velden": {
