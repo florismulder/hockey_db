@@ -7544,7 +7544,7 @@
           "naam": "Pepijn van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 6,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Olivier Hortensius",
@@ -7562,13 +7562,13 @@
           "naam": "Timme van der Heijden",
           "club": "Rotterdam H1",
           "minuut": 47,
-          "type": "strafcorner"
+          "type": "sc"
         },
         {
           "naam": "Justen Blok",
           "club": "Rotterdam H1",
           "minuut": 54,
-          "type": "strafcorner"
+          "type": "sc"
         }
       ],
       "kaarten": [
@@ -7624,7 +7624,7 @@
           "naam": "Miles Bukkens",
           "club": "Pinoké H1",
           "minuut": 27,
-          "type": "SB"
+          "type": "sb"
         }
       ],
       "kaarten": [],
@@ -7654,13 +7654,59 @@
       }
     },
     {
-      "datum": "2026-05-14",
-      "tijdstip": "18:30",
       "thuis": "Amsterdam",
       "uit": "Oranje-Rood",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 2,
+      "score_uit": 2,
+      "datum": "2026-05-14",
+      "tijdstip": "18:30",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Musthapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 4,
+          "type": "veld"
+        },
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "minuut": 11,
+          "type": "sc"
+        },
+        {
+          "naam": "Musthapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 13,
+          "type": "veld"
+        },
+        {
+          "naam": "Henrik Mertgens",
+          "club": "Oranje-Rood",
+          "minuut": 27,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Robbert Kemperman",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 30
+        },
+        {
+          "naam": "Sam Steins Bisschop",
+          "club": "Amsterdam",
+          "type": "groen",
+          "minuut": 56
+        },
+        {
+          "naam": "Borja LaCalle",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 60
+        }
+      ]
     },
     {
       "datum": "2026-05-14",
@@ -7762,5 +7808,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-13T18:18:30.265Z"
+  "bijgewerkt": "2026-05-15T10:09:59.750Z"
 }
