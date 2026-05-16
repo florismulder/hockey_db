@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-05-13",
+  "bijgewerkt": "2026-05-16",
   "spelers": [
     {
       "id": "anne_veenendaal",
@@ -9,13 +9,21 @@
       "rugnummer": 1,
       "keeper": true,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "1995-09-07",
+      "geboorteplaats": "Haarlem",
+      "positie": "keeper",
+      "bio": "Anne Veenendaal is een Nederlandse hockeyster, geboren op 7 september 1995 in Haarlem. Ze is keeper en speelt sinds 2012 voor Amsterdam, na eerder voor Hilversum en Laren te hebben gespeeld. Veenendaal debuteerde in 2015 voor de Nederlandse hockeyploeg en won met hen onder andere het Europees kampioenschap en het Wereldkampioenschap.",
+      "vorige_clubs": [
+        "Hilversum",
+        "Laren"
+      ]
     },
     {
       "id": "freeke_moes",
