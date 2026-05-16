@@ -59,13 +59,20 @@
       "rugnummer": 10,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 4,
       "vd": 3,
       "sc": 1,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1999-12-27",
+      "geboorteplaats": "Amstelveen",
+      "positie": "middenvelder",
+      "bio": "Felice Albers is een Nederlandse hockeyster die als middenvelder uitkomt voor Hockeyclub Amsterdam. Ze debuteerde in 2019 in de Nederlandse hockeyploeg en won goud op de Olympische Spelen van 2020 en 2024. In 2022 werd ze uitgeroepen tot 's werelds beste hockeyster.",
+      "vorige_clubs": [
+        "Qui Vive"
+      ]
     },
     {
       "id": "fay_van_der_elst",
