@@ -7860,13 +7860,20 @@
       "rugnummer": 21,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 8,
       "vd": 7,
       "sc": 1,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1999-08-28",
+      "geboorteplaats": "Den Haag",
+      "positie": "aanvaller",
+      "bio": "Pien Dicke is een Nederlandse hockeyer die sinds 2019 uitkomt voor SCHC. Eerder speelde ze voor HDM. Met de nationale ploeg werd ze Olympisch kampioen in 2024 en Europees kampioen in 2021, 2023 en 2025.",
+      "vorige_clubs": [
+        "HDM"
+      ]
     },
     {
       "id": "marleen_jochems",
