@@ -7868,13 +7868,17 @@
       "rugnummer": 17,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": "",
       "vd": "",
       "sc": "",
-      "sb": ""
+      "sb": "",
+      "geboortedatum": "2000-01-24",
+      "geboorteplaats": "Baarn",
+      "positie": "middenvelder",
+      "bio": "Marleen Jochems is een Nederlandse hockeyspeelster die als middenvelder uitkomt voor SCHC. Ze debuteerde in 2023 bij de Nederlandse hockeyploeg en won met Jong Oranje het WK in 2022. In 2024 behaalde ze een gouden medaille op de Olympische Spelen in Parijs."
     },
     {
       "id": "mette_winter",
