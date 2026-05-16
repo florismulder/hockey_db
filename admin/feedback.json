@@ -1,6 +1,14 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Joep de Mol liep een snee aan zijn wang op door een rebound van Cassiem, in 1e halve finale play-offs tegen Amsterdam, mei 26 (2-2).",
+      "bron_zin": "De Mol hield er wel een snee aan zijn wang aan over: de rebound van Cassiem belandde in zijn gezicht."
+    },
+    {
+      "bullet": "Robbert Kemperman liep een flinke snee boven zijn linkerwenkbrauw op na een ongelukkig duel, in 1e halve finale play-offs tegen Oranje-Rood (2-2). Hij stopt na seizoen 25-26 met tophockey.",
+      "bron_zin": "Robbert Kemperman kreeg in een ongelukkig duel de stick van Henrik Mertgens in zijn gezicht en liep daarbij een flinke snee boven zijn linkerwenkbrauw op."
+    },
+    {
       "bullet": "Mea de Vries kampt eveneens met een zware knieblessure, ze is niet bij de play-offs mei 26. In de halve finale speelt Kampong tegen Den Bosch.",
       "bron_zin": "Mea [de Vries, die eveneens met een zware knieblessure kampt]"
     },
@@ -209,16 +217,6 @@
     {
       "bullet": "Rotterdam heeft zich versterkt met de Amerikaanse aanvallende middenvelder Maddie Zimmer.",
       "bron_zin": "Rotterdam heeft zich versterkt met Maddie Zimmer."
-    },
-    {
-      "bullet": "Elin van Erk stopt na dit seizoen 25-26 met tophockey bij Pinoké. Werd in 23 wereldkampioen zaalhockey in Zuid-Afrika.",
-      "bron_zin": "Pinoké-speelster Elin van Erk is bezig aan haar laatste seizoen.",
-      "origineel": "Elin van Erk stopt na dit seizoen met tophockey bij Pinoké."
-    },
-    {
-      "bullet": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM. Stopt na 25-26.",
-      "bron_zin": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM.",
-      "origineel": "Julia Remmerswaal is bezig aan haar laatste seizoen bij HDM."
     }
   ],
   "verborgen_bullets": []
