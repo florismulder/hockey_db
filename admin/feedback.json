@@ -1,6 +1,14 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Felice Albers is de voormalig Wereldspeelster van het Jaar 2021-2022.",
+      "bron_zin": "De voormalig Wereldspeelster van het Jaar zocht met haar backhand de verre hoek, maar schoot voorlangs."
+    },
+    {
+      "bullet": "Lisa Post mist 1e halve finale play-offs mei 26 tegen Amsterdam door een duimblessure.",
+      "bron_zin": "SCHC – zonder topverdediger Lisa Post (duimblessure) – kwam sterk uit de startblokken."
+    },
+    {
       "bullet": "Joep de Mol liep een snee aan zijn wang op door een rebound van Cassiem, in 1e halve finale play-offs tegen Amsterdam, mei 26 (2-2).",
       "bron_zin": "De Mol hield er wel een snee aan zijn wang aan over: de rebound van Cassiem belandde in zijn gezicht."
     },
@@ -208,15 +216,6 @@
       "bullet": "Noam Sheridan stopt na dit seizoen met tophockey. Speelt sinds 2019 bij Hurley.",
       "bron_zin": "Daar vertelde Sheridan dat hij ging stoppen en maakte hij ook een belofte.",
       "origineel": "Noam Sheridan stopt na dit seizoen met tophockey."
-    },
-    {
-      "bullet": "Pepijn Reyenga stopt na dit seizoen 25-26 bij Den Bosch voor een maatschappelijke carrière. Speelde in 23 negen interlands voor Oranje. Stond eerder een jaar buitenspel ivm een hersenschudding.",
-      "bron_zin": "Pepijn Reyenga stopt na dit seizoen bij Den Bosch.",
-      "origineel": "Pepijn Reyenga stopt na dit seizoen bij Den Bosch voor een maatschappelijke carrière."
-    },
-    {
-      "bullet": "Rotterdam heeft zich versterkt met de Amerikaanse aanvallende middenvelder Maddie Zimmer.",
-      "bron_zin": "Rotterdam heeft zich versterkt met Maddie Zimmer."
     }
   ],
   "verborgen_bullets": []
