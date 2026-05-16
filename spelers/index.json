@@ -7790,13 +7790,21 @@
       "rugnummer": 8,
       "keeper": false,
       "aanvoerder": false,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 18,
       "vd": 2,
       "sc": 15,
-      "sb": 1
+      "sb": 1,
+      "geboortedatum": "1999-11-18",
+      "geboorteplaats": "Tilburg",
+      "positie": "middenvelder",
+      "bio": "Yibbi Jansen is een Nederlandse hockeyspeelster, geboren op 18 november 1999 in Tilburg. Ze debuteerde in 2018 voor de Nederlandse hockeyploeg en werd in 2024 olympisch kampioen en verkozen tot Wereldspeelster van het Jaar. Jansen speelt als middenvelder voor SCHC en staat bekend om haar strafcorner.",
+      "vorige_clubs": [
+        "HC Den Bosch",
+        "HC Oranje Rood"
+      ]
     },
     {
       "id": "renee_van_laarhoven",
