@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "615ea572-cc78-4b26-88a5-780fa6d7c295",
+      "naam": "Geen winnaar in spektakelstuk tussen Amsterdam en Oranje Rood  2 2",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-16T07:35:50.017Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "9101eb0e-6bcb-4bb5-aa0e-c93bed2475dc",
       "naam": "Kampong reist met geloof naar Den Bosch  ‘Zijn er nu meer klaar voor’",
       "velden": {
