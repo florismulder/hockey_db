@@ -33,13 +33,23 @@
       "rugnummer": 18,
       "keeper": false,
       "aanvoerder": true,
-      "nationaliteit": "",
+      "nationaliteit": "Nederlands",
       "land_code": "",
       "oranje": "senior",
       "doelpunten_seizoen": 6,
       "vd": 6,
       "sc": 0,
-      "sb": 0
+      "sb": 0,
+      "geboortedatum": "1998-11-29",
+      "geboorteplaats": "Breda",
+      "positie": "aanvaller",
+      "bio": "Freeke Moes is een Nederlandse hockeyster die als aanvalster speelt bij Amsterdam in de Hoofdklasse Dames. Ze debuteerde in 2019 voor het Nederlands elftal en won goud op de Olympische Spelen van Parijs in 2024. Eerder speelde ze onder andere voor Oranje-Rood.",
+      "vorige_clubs": [
+        "MHC HOCO",
+        "HC Tilburg",
+        "Oranje Rood"
+      ],
+      "internationale_goals": 1
     },
     {
       "id": "felice_albers",
