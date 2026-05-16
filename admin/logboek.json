@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "80eab2bb-9a7d-45c4-b5ae-5f4650f91687",
+      "naam": "Amsterdam slaat toe tegen ongeslagen SCHC  3 2",
+      "velden": {
+        "goedgekeurd": 3
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-16T07:50:28.010Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "615ea572-cc78-4b26-88a5-780fa6d7c295",
       "naam": "Geen winnaar in spektakelstuk tussen Amsterdam en Oranje Rood  2 2",
       "velden": {
