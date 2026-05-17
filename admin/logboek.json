@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "8300d5df-6164-4bbd-8999-408b80bf0d6b",
+      "naam": "Matla na thriller  'Geen seconde getwijfeld of we het zouden redden'",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-17T07:38:14.547Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "80eab2bb-9a7d-45c4-b5ae-5f4650f91687",
       "naam": "Amsterdam slaat toe tegen ongeslagen SCHC  3 2",
       "velden": {
