@@ -618,6 +618,16 @@ function BulletRij({bullet: b, spelerOpties, clubs, onChange, onNieuweSpeler}) {
               </select>
             </div>
           )}
+          <div style={{display:"flex",gap:6,alignItems:"center",marginTop:4,flexWrap:"wrap"}}>
+            <select value={b.seizoen||"2025-2026"}
+              onChange={e=>onChange({seizoen:e.target.value})}
+              style={{fontSize:10,padding:"1px 5px",border:"1px solid var(--border2)",borderRadius:4,
+                background:"var(--surface)",color:"var(--muted)",fontFamily:"'JetBrains Mono',monospace"}}>
+              {["2025-2026","2024-2025","2023-2024","2022-2023"].map(s=>(
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
           <div style={{display:"flex",gap:6,alignItems:"center",marginTop:2,flexWrap:"wrap"}}>
             {b.bewerkt&&<span style={{fontSize:10,color:"var(--accent)",fontStyle:"italic"}}>bewerkt</span>}
             {!b.gekoppeld&&b.type==="speler"&&

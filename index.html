@@ -1272,10 +1272,20 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                     {formatNieuwsDatum((item.datum||"").slice(0,10))}
                   </span>
                   <div style={{flex:1}}>
-                    {item.bullets.map((b,j)=>(
-                      <div key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45,
-                        marginBottom:j<item.bullets.length-1?4:0}}>{b}</div>
-                    ))}
+                    {item.bullets.map((b,j)=>{
+                      const sz=item.seizoen||"2025-2026";
+                      const szk=sz.replace("20","").replace("-20","/");
+                      return (
+                        <div key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45,
+                          marginBottom:j<item.bullets.length-1?4:0,display:"flex",alignItems:"baseline",gap:6,flexWrap:"wrap"}}>
+                          <span style={{flex:1}}>{b}</span>
+                          <span style={{fontSize:9,fontFamily:"'JetBrains Mono',monospace",
+                            color:"var(--muted)",background:"var(--surface2)",
+                            border:"1px solid var(--border)",borderRadius:3,
+                            padding:"0px 4px",flexShrink:0,letterSpacing:".3px"}}>{szk}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ))
