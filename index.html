@@ -1259,8 +1259,11 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                   const link =item.link ||item.artikel_link ||"";
                   const bullet=item.bullet||"";
                   const key=titel||link||item.datum||"";
-                  if(!acc[key]) acc[key]={datum:item.datum,titel:titel.replace(/_/g," "),link,bullets:[]};
-                  if(bullet&&!acc[key].bullets.includes(bullet)) acc[key].bullets.push(bullet);
+                  if(!acc[key]) acc[key]={datum:item.datum,titel:titel.replace(/_/g," "),link,bullets:[],seizoenen:[]};
+                  if(bullet&&!acc[key].bullets.includes(bullet)){
+                    acc[key].bullets.push(bullet);
+                    acc[key].seizoenen.push(item.seizoen||"2025-2026");
+                  }
                   return acc;
                 },{})
               ).sort((a,b)=>new Date(b[1].datum||0)-new Date(a[1].datum||0))
@@ -1273,8 +1276,8 @@ function SpelerDetail({speler,nav,nieuws,programma,oranje}) {
                   </span>
                   <div style={{flex:1}}>
                     {item.bullets.map((b,j)=>{
-                      const sz=item.seizoen||"2025-2026";
-                      const szk=sz.replace("20","").replace("-20","/");
+                      const sz=(item.seizoenen&&item.seizoenen[j])||"2025-2026";
+                      const szk=sz.slice(2,4)+"/"+sz.slice(7,9);
                       return (
                         <div key={j} style={{fontSize:12,color:"var(--text)",lineHeight:1.45,
                           marginBottom:j<item.bullets.length-1?4:0,display:"flex",alignItems:"baseline",gap:6,flexWrap:"wrap"}}>
