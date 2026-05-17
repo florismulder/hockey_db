@@ -6302,15 +6302,6 @@
     },
     {
       "datum": "2026-05-31",
-      "tijdstip": "n.n.b.",
-      "thuis": "Hoofdklasse Dames nr 11",
-      "uit": "Promotieklasse Dames nr 2",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
-    },
-    {
-      "datum": "2026-05-31",
       "tijdstip": "12:30",
       "thuis": "Promotieklasse Dames nr 3",
       "uit": "HDM",
@@ -6328,5 +6319,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-17T07:47:26.969Z"
+  "bijgewerkt": "2026-05-17T07:47:35.156Z"
 }
