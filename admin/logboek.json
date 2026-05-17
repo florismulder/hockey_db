@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "c3643db0-6be5-4a20-8f3b-d0ded26881e4",
+      "naam": "De Waard  'Vind het moeilijk dit achter mij te laten'",
+      "velden": {
+        "goedgekeurd": 7
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-17T07:45:34.496Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "8300d5df-6164-4bbd-8999-408b80bf0d6b",
       "naam": "Matla na thriller  'Geen seconde getwijfeld of we het zouden redden'",
       "velden": {
