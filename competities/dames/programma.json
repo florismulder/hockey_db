@@ -6207,13 +6207,22 @@
       "score_uit": null
     },
     {
-      "datum": "2026-05-16",
-      "tijdstip": "16:00",
       "thuis": "SCHC",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 0,
+      "datum": "2026-05-16",
+      "tijdstip": "16:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Lotte Ruts",
+          "club": "SCHC",
+          "minuut": 29,
+          "type": "sc"
+        }
+      ],
+      "kaarten": []
     },
     {
       "datum": "2026-05-16",
@@ -6333,5 +6342,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-15T10:09:57.302Z"
+  "bijgewerkt": "2026-05-17T06:56:49.831Z"
 }
