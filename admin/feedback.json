@@ -1,6 +1,10 @@
 {
   "positieve_bullets": [
     {
+      "bullet": "Timo Boers won net als vorig seizoen opnieuw de topscorerstitel in de Tulp Hoofdklasse Heren.",
+      "bron_zin": "Net als vorig seizoen is de topscorerstitel in de Tulp Hoofdklasse Dames en Heren in Bossche handen terechtgekomen."
+    },
+    {
       "bullet": "Felice Albers is de voormalig Wereldspeelster van het Jaar 2021-2022.",
       "bron_zin": "De voormalig Wereldspeelster van het Jaar zocht met haar backhand de verre hoek, maar schoot voorlangs."
     },
@@ -211,11 +215,6 @@
       "bullet": "Noam Sheridan promoveerde met zijn vader als teammanager naar de Hoofdklasse.",
       "bron_zin": "Met je vader promoveren naar de Hoofdklasse, wie kan dat nou zeggen?",
       "origineel": "Noam Sheridan promoveerde met zijn vader naar de Hoofdklasse."
-    },
-    {
-      "bullet": "Noam Sheridan stopt na dit seizoen met tophockey. Speelt sinds 2019 bij Hurley.",
-      "bron_zin": "Daar vertelde Sheridan dat hij ging stoppen en maakte hij ook een belofte.",
-      "origineel": "Noam Sheridan stopt na dit seizoen met tophockey."
     }
   ],
   "verborgen_bullets": []
