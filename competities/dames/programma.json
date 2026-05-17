@@ -6225,13 +6225,53 @@
       "kaarten": []
     },
     {
-      "datum": "2026-05-16",
-      "tijdstip": "14:00",
       "thuis": "Den Bosch",
       "uit": "Kampong",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 3,
+      "score_uit": 2,
+      "datum": "2026-05-16",
+      "tijdstip": "14:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Iris de Kemp",
+          "club": "Kampong",
+          "minuut": 27,
+          "type": "veld"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 39,
+          "type": "sc"
+        },
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "minuut": 53,
+          "type": "sb"
+        },
+        {
+          "naam": "Charlotte Hoctin Boes",
+          "club": "Kampong",
+          "minuut": 58,
+          "type": "sc"
+        },
+        {
+          "naam": "Joosje Burg",
+          "club": "Den Bosch",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Frédérique Matla",
+          "club": "Den Bosch",
+          "type": "groen",
+          "minuut": 35
+        }
+      ]
     },
     {
       "datum": "2026-05-23",
@@ -6342,5 +6382,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-17T06:56:49.831Z"
+  "bijgewerkt": "2026-05-17T06:56:51.552Z"
 }
