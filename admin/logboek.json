@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "type": "wedstrijd_verwijderd",
+      "id": "2026-05-16_Hoofdklasse nr 1_Hoofdklasse nr 4",
+      "naam": "Hoofdklasse nr 1 – Hoofdklasse nr 4",
+      "velden": {
+        "datum": "2026-05-16",
+        "geslacht": "dames"
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-17T07:46:22.987Z"
+    },
+    {
       "type": "nieuws_gepubliceerd",
       "id": "c3643db0-6be5-4a20-8f3b-d0ded26881e4",
       "naam": "De Waard  'Vind het moeilijk dit achter mij te laten'",
