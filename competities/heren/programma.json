@@ -7788,6 +7788,15 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-23",
+      "tijdstip": "16:00",
+      "thuis": "Amsterdam",
+      "uit": "Rotterdam",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-25",
       "tijdstip": "16:00",
       "thuis": "Play-Offs Heren Verliezer Halve Finale",
@@ -7801,6 +7810,15 @@
       "tijdstip": "16:00",
       "thuis": "Play-Offs Heren Winnaar Halve Finale",
       "uit": "Play-Offs Heren Winnaar Halve finale",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-25",
+      "tijdstip": "16:00",
+      "thuis": "Rotterdam",
+      "uit": "Amsterdam",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -7840,7 +7858,16 @@
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
+    },
+    {
+      "datum": "2026-05-31",
+      "tijdstip": "16:00",
+      "thuis": "Laren",
+      "uit": "Promotieklasse Heren nr 2",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-15T10:10:02.487Z"
+  "bijgewerkt": "2026-05-18T04:35:24.825Z"
 }
