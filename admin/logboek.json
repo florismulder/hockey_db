@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "type": "nieuws_gepubliceerd",
+      "id": "475133c1-e27f-4ee9-8305-0eea82d02f13",
+      "naam": "Trainerscarrousel HK  Bas Bogaard nieuwe hoofdcoach Hurley",
+      "velden": {
+        "goedgekeurd": 1
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-18T18:07:51.882Z"
+    },
+    {
       "type": "wedstrijd_verwijderd",
       "id": "2026-05-31_Hoofdklasse Dames nr 11_Promotieklasse Dames nr 2",
       "naam": "Hoofdklasse Dames nr 11 – Promotieklasse Dames nr 2",
