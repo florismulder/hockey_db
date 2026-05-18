@@ -7752,13 +7752,59 @@
       ]
     },
     {
-      "datum": "2026-05-17",
-      "tijdstip": "17:00",
       "thuis": "Oranje-Rood",
       "uit": "Amsterdam",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 1,
+      "score_uit": 4,
+      "datum": "2026-05-17",
+      "tijdstip": "17:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Dayaan Cassiem",
+          "club": "Amsterdam",
+          "minuut": 39,
+          "type": "veld"
+        },
+        {
+          "naam": "Boris Burkhardt",
+          "club": "Amsterdam",
+          "minuut": 41,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 43,
+          "type": "veld"
+        },
+        {
+          "naam": "Mustapha Cassiem",
+          "club": "Amsterdam",
+          "minuut": 57,
+          "type": "veld"
+        },
+        {
+          "naam": "Jelle Galema",
+          "club": "Oranje-Rood",
+          "minuut": 59,
+          "type": "veld"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Tijmen Reyenga",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 37
+        },
+        {
+          "naam": "Arthur de Sloover",
+          "club": "Oranje-Rood",
+          "type": "groen",
+          "minuut": 39
+        }
+      ]
     },
     {
       "datum": "2026-05-17",
@@ -7869,5 +7915,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-18T04:35:24.825Z"
+  "bijgewerkt": "2026-05-18T06:06:16.347Z"
 }
