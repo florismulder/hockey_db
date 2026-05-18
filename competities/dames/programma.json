@@ -6274,10 +6274,28 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-23",
+      "tijdstip": "12:45",
+      "thuis": "Amsterdam",
+      "uit": "Den Bosch",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-25",
       "tijdstip": "12:45",
       "thuis": "Winnaar Halve Finale Play-Offs",
       "uit": "Winnaar Halve Finale Play-Offs",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-25",
+      "tijdstip": "12:45",
+      "thuis": "Den Bosch",
+      "uit": "Amsterdam",
       "gespeeld": false,
       "score_thuis": null,
       "score_uit": null
@@ -6301,6 +6319,24 @@
       "score_uit": null
     },
     {
+      "datum": "2026-05-30",
+      "tijdstip": "12:30",
+      "thuis": "Promotieklasse Dames nr 3",
+      "uit": "HDM",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
+      "datum": "2026-05-30",
+      "tijdstip": "12:30",
+      "thuis": "Promotieklasse Dames nr 2",
+      "uit": "Oranje-Rood",
+      "gespeeld": false,
+      "score_thuis": null,
+      "score_uit": null
+    },
+    {
       "datum": "2026-05-31",
       "tijdstip": "12:30",
       "thuis": "Promotieklasse Dames nr 3",
@@ -6319,5 +6355,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-17T07:47:35.156Z"
+  "bijgewerkt": "2026-05-18T04:32:22.490Z"
 }
