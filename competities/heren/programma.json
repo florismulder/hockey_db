@@ -7807,13 +7807,77 @@
       ]
     },
     {
-      "datum": "2026-05-17",
-      "tijdstip": "15:00",
       "thuis": "Rotterdam",
       "uit": "Pinoké",
-      "gespeeld": false,
-      "score_thuis": null,
-      "score_uit": null
+      "score_thuis": 4,
+      "score_uit": 3,
+      "datum": "2026-05-17",
+      "tijdstip": "15:00",
+      "gespeeld": true,
+      "scorers": [
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam",
+          "minuut": 17,
+          "type": "veld"
+        },
+        {
+          "naam": "Miles Bukkens",
+          "club": "Pinoké",
+          "minuut": 19,
+          "type": "sc"
+        },
+        {
+          "naam": "Tjep Hoedemakers",
+          "club": "Rotterdam",
+          "minuut": 21,
+          "type": "veld"
+        },
+        {
+          "naam": "Indra Aerts",
+          "club": "Pinoké",
+          "minuut": 28,
+          "type": "sc"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 52,
+          "type": "sc"
+        },
+        {
+          "naam": "Florent van Aubel",
+          "club": "Pinoké",
+          "minuut": 54,
+          "type": "veld"
+        },
+        {
+          "naam": "Pepijn van der Heijden",
+          "club": "Rotterdam",
+          "minuut": 60,
+          "type": "sc"
+        }
+      ],
+      "kaarten": [
+        {
+          "naam": "Boris Aardenburg",
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 16
+        },
+        {
+          "naam": "Timme van der Heijden",
+          "club": "Rotterdam",
+          "type": "groen",
+          "minuut": 30
+        },
+        {
+          "naam": "Tim Knapper",
+          "club": "Pinoké",
+          "type": "groen",
+          "minuut": 40
+        }
+      ]
     },
     {
       "datum": "2026-05-23",
@@ -7915,5 +7979,5 @@
       "score_uit": null
     }
   ],
-  "bijgewerkt": "2026-05-18T06:06:16.347Z"
+  "bijgewerkt": "2026-05-18T06:06:18.360Z"
 }
