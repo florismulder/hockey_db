@@ -2,6 +2,17 @@
   "entries": [
     {
       "type": "nieuws_gepubliceerd",
+      "id": "e2123f7e-44b2-4908-a090-5b6909cc52bd",
+      "naam": "Backers baalt na gemiste stunt van Kampong  ‘We waren goed genoeg’",
+      "velden": {
+        "goedgekeurd": 2
+      },
+      "oud": {},
+      "email": "fm.florismulder@gmail.com",
+      "datum": "2026-05-18T18:12:37.344Z"
+    },
+    {
+      "type": "nieuws_gepubliceerd",
       "id": "475133c1-e27f-4ee9-8305-0eea82d02f13",
       "naam": "Trainerscarrousel HK  Bas Bogaard nieuwe hoofdcoach Hurley",
       "velden": {
